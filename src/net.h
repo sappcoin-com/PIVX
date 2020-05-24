@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2015 The Bitcoin developers
-// Copyright (c) 2015-2020 The PIVX developers
+// Copyright (c) 2009-2014 The Bitcoin developers
+// Copyright (c) 2015-2019 The PIVX developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -71,8 +71,6 @@ static const unsigned int DEFAULT_MAX_PEER_CONNECTIONS = 125;
 /** Maximum number of peers added to setOffsetDisconnectedPeers before triggering a warning */
 #define MAX_TIMEOFFSET_DISCONNECTIONS 16
 
-static const ServiceFlags REQUIRED_SERVICES = NODE_NETWORK;
-
 unsigned int ReceiveFloodSize();
 unsigned int SendBufferSize();
 
@@ -132,12 +130,11 @@ bool GetLocal(CService& addr, const CNetAddr* paddrPeer = NULL);
 bool IsReachable(enum Network net);
 bool IsReachable(const CNetAddr& addr);
 CAddress GetLocalAddress(const CNetAddr* paddrPeer = NULL);
-bool validateMasternodeIP(const std::string& addrStr);          // valid, reachable and routable address
 
 
 extern bool fDiscover;
 extern bool fListen;
-extern ServiceFlags nLocalServices;
+extern uint64_t nLocalServices;
 extern uint64_t nLocalHostNonce;
 extern CAddrMan addrman;
 extern int nMaxConnections;
@@ -170,7 +167,7 @@ class CNodeStats
 {
 public:
     NodeId nodeid;
-    ServiceFlags nServices;
+    uint64_t nServices;
     int64_t nLastSend;
     int64_t nLastRecv;
     int64_t nTimeConnected;
@@ -297,8 +294,7 @@ class CNode
 {
 public:
     // socket
-    ServiceFlags nServices;
-    ServiceFlags nServicesExpected;
+    uint64_t nServices;
     SOCKET hSocket;
     CDataStream ssSend;
     size_t nSendSize;   // total size of all vSendMsg entries

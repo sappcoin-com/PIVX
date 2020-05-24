@@ -1,25 +1,20 @@
-// Copyright (c) 2019-2020 The PIVX developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "qt/pivx/masternodewizarddialog.h"
 #include "qt/pivx/forms/ui_masternodewizarddialog.h"
-
-#include "activemasternode.h"
+#include "qt/pivx/qtutils.h"
 #include "optionsmodel.h"
 #include "pairresult.h"
-#include "qt/pivx/mnmodel.h"
+#include "activemasternode.h"
 #include "qt/pivx/guitransactionsutils.h"
-#include "qt/pivx/qtutils.h"
-
 #include <QFile>
 #include <QIntValidator>
 #include <QHostAddress>
-#include <QRegularExpression>
-#include <QRegularExpressionValidator>
 
 MasterNodeWizardDialog::MasterNodeWizardDialog(WalletModel *model, QWidget *parent) :
-    FocusedDialog(parent),
+    QDialog(parent),
     ui(new Ui::MasterNodeWizardDialog),
     icConfirm1(new QPushButton()),
     icConfirm3(new QPushButton()),
@@ -53,26 +48,29 @@ MasterNodeWizardDialog::MasterNodeWizardDialog(WalletModel *model, QWidget *pare
     setCssProperty(ui->labelTitle3, "text-title-dialog");
     setCssProperty(ui->labelMessage3, "text-main-grey");
 
+    ui->lineEditName->setPlaceholderText(tr("e.g user_masternode"));
     initCssEditLine(ui->lineEditName);
-    // MN alias must not contain spaces or "#" character
-    QRegularExpression rx("^(?:(?![\\#\\s]).)*");
-    ui->lineEditName->setValidator(new QRegularExpressionValidator(rx, ui->lineEditName));
+    ui->lineEditName->setValidator(new QRegExpValidator(QRegExp("^[A-Za-z0-9]+"), ui->lineEditName));
 
     // Frame 4
     setCssProperty(ui->labelTitle4, "text-title-dialog");
     setCssProperty({ui->labelSubtitleIp, ui->labelSubtitlePort}, "text-title");
     setCssSubtitleScreen(ui->labelSubtitleAddressIp);
 
+    ui->lineEditIpAddress->setPlaceholderText("e.g 18.255.255.255");
+    ui->lineEditPort->setPlaceholderText("e.g 45328");
     initCssEditLine(ui->lineEditIpAddress);
     initCssEditLine(ui->lineEditPort);
     ui->stackedWidget->setCurrentIndex(pos);
-    ui->lineEditPort->setEnabled(false);    // use default port number
+    ui->lineEditPort->setValidator(new QIntValidator(0, 9999999, ui->lineEditPort));
     if (walletModel->isRegTestNetwork()) {
+        ui->lineEditPort->setEnabled(false);
         ui->lineEditPort->setText("51476");
     } else if (walletModel->isTestNetwork()) {
+        ui->lineEditPort->setEnabled(false);
         ui->lineEditPort->setText("51474");
     } else {
-        ui->lineEditPort->setText("51472");
+        ui->lineEditPort->setText("45328");
     }
 
     // Confirm icons
@@ -84,12 +82,14 @@ MasterNodeWizardDialog::MasterNodeWizardDialog(WalletModel *model, QWidget *pare
 
     // Connect btns
     setCssBtnPrimary(ui->btnNext);
+    ui->btnNext->setText(tr("NEXT"));
     setCssProperty(ui->btnBack , "btn-dialog-cancel");
     ui->btnBack->setVisible(false);
+    ui->btnBack->setText(tr("BACK"));
     setCssProperty(ui->pushButtonSkip, "ic-close");
 
     connect(ui->pushButtonSkip, &QPushButton::clicked, this, &MasterNodeWizardDialog::close);
-    connect(ui->btnNext, &QPushButton::clicked, this, &MasterNodeWizardDialog::accept);
+    connect(ui->btnNext, &QPushButton::clicked, this, &MasterNodeWizardDialog::onNextClicked);
     connect(ui->btnBack, &QPushButton::clicked, this, &MasterNodeWizardDialog::onBackClicked);
 }
 
@@ -98,7 +98,7 @@ void MasterNodeWizardDialog::showEvent(QShowEvent *event)
     if (ui->btnNext) ui->btnNext->setFocus();
 }
 
-void MasterNodeWizardDialog::accept()
+void MasterNodeWizardDialog::onNextClicked()
 {
     switch(pos) {
         case 0:{
@@ -142,7 +142,7 @@ void MasterNodeWizardDialog::accept()
             ui->btnBack->setVisible(true);
             ui->btnBack->setVisible(true);
             isOk = createMN();
-            QDialog::accept();
+            accept();
         }
     }
     pos++;
@@ -180,18 +180,19 @@ bool MasterNodeWizardDialog::createMN()
             returnStr = tr("IP or port cannot be empty");
             return false;
         }
-        if (!MNModel::validateMNIP(addressStr)) {
-            returnStr = tr("Invalid IP address");
+        // TODO: Validate IP address..
+        int portInt = portStr.toInt();
+        if (portInt <= 0 && portInt > 999999) {
+            returnStr = tr("Invalid port number");
             return false;
         }
-
         // ip + port
         std::string ipAddress = addressStr.toStdString();
         std::string port = portStr.toStdString();
 
         // New receive address
-        Destination dest;
-        PairResult r = walletModel->getNewAddress(dest, alias);
+        CBitcoinAddress address;
+        PairResult r = walletModel->getNewAddress(address, alias);
 
         if (!r.result) {
             // generate address fail
@@ -200,11 +201,7 @@ bool MasterNodeWizardDialog::createMN()
         }
 
         // const QString& addr, const QString& label, const CAmount& amount, const QString& message
-        SendCoinsRecipient sendCoinsRecipient(
-                QString::fromStdString(dest.ToString()),
-                QString::fromStdString(alias),
-                CAmount(10000) * COIN,
-                "");
+        SendCoinsRecipient sendCoinsRecipient(QString::fromStdString(address.ToString()), QString::fromStdString(alias), CAmount(10000) * COIN, "");
 
         // Send the 10 tx to one of your address
         QList<SendCoinsRecipient> recipients;
@@ -215,7 +212,7 @@ bool MasterNodeWizardDialog::createMN()
         // no coincontrol, no P2CS delegations
         prepareStatus = walletModel->prepareTransaction(currentTransaction, nullptr, false);
 
-        QString returnMsg = tr("Unknown error");
+        QString returnMsg = "Unknown error";
         // process prepareStatus and on error generate message shown to user
         CClientUIInterface::MessageBoxFlags informType;
         returnMsg = GuiTransactionsUtils::ProcessSendCoinsReturn(
@@ -289,7 +286,7 @@ bool MasterNodeWizardDialog::createMN()
                 if (lineCopy.size() == 0) {
                     lineCopy = "# Masternode config file\n"
                                "# Format: alias IP:port masternodeprivkey collateral_output_txid collateral_output_index\n"
-                               "# Example: mn1 127.0.0.2:51472 93HaYBVUCYjEMeeH1Y4sBGLALQZE1Yc1K64xiqgX37tGBDQL8Xg 2bcd3c84c84f87eaa86e4e56834c92927a07f9e18718810b92e0d0324456a67c 0"
+                               "# Example: mn1 127.0.0.2:45328 93HaYBVUCYjEMeeH1Y4sBGLALQZE1Yc1K64xiqgX37tGBDQL8Xg 2bcd3c84c84f87eaa86e4e56834c92927a07f9e18718810b92e0d0324456a67c 0"
                                "#";
                 }
                 lineCopy += "\n";
@@ -301,7 +298,7 @@ bool MasterNodeWizardDialog::createMN()
                 int indexOut = -1;
                 for (int i=0; i < (int)walletTx->vout.size(); i++) {
                     CTxOut& out = walletTx->vout[i];
-                    if (out.nValue == 10000 * COIN) {
+                    if (out.nValue == GetMstrNodCollateral(chainActive.Height()) * COIN) {
                         indexOut = i;
                     }
                 }
@@ -344,7 +341,7 @@ bool MasterNodeWizardDialog::createMN()
 
                 returnStr = tr("Master node created! Wait %1 confirmations before starting it.").arg(MASTERNODE_MIN_CONFIRMATIONS);
                 return true;
-            } else {
+            } else{
                 returnStr = tr("masternode.conf file doesn't exists");
             }
         } else {

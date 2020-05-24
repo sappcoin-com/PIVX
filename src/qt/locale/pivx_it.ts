@@ -130,12 +130,12 @@
         <translation>Indirizzi di ricezione</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Questi sono gli indirizzi PIVX per l'invio di pagamenti. Controlla sempre l'importo e l'indirizzo di ricezione prima di inviare valuta.</translation>
+        <source>These are your SAPP addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Questi sono gli indirizzi SAPP per l'invio di pagamenti. Controlla sempre l'importo e l'indirizzo di ricezione prima di inviare valuta.</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Questi sono gli indirizzi PIVX per la ricezione di pagamenti. Si raccomanda di utilizzare un indirizzo diverso per ogni transazione.</translation>
+        <source>These are your SAPP addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Questi sono gli indirizzi SAPP per la ricezione di pagamenti. Si raccomanda di utilizzare un indirizzo diverso per ogni transazione.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -196,10 +196,6 @@
         <translation>Data</translation>
     </message>
     <message>
-        <source>Type</source>
-        <translation>Tipo</translation>
-    </message>
-    <message>
         <source>(no label)</source>
         <translation>(nessuna etichetta)</translation>
     </message>
@@ -219,8 +215,8 @@
         <translation>Etichetta</translation>
     </message>
     <message>
-        <source>N/A</source>
-        <translation>N/D</translation>
+        <source>No active Master Node yet</source>
+        <translation>Ancora nessun MasterNode attivo</translation>
     </message>
     <message>
         <source>Contact name</source>
@@ -249,6 +245,10 @@
     <message>
         <source>e.g. John Doe</source>
         <translation>ad es. John Doe</translation>
+    </message>
+    <message>
+        <source>Enter a SAPP address</source>
+        <translation>Inserisci un indirizzo SAPP</translation>
     </message>
     <message>
         <source>SAVE</source>
@@ -369,19 +369,23 @@ per lo staking</translation>
     </message>
     <message>
         <source>ENCRYPT</source>
-        <translation>CRITTOGRAFA</translation>
+        <translation>Crittografa</translation>
     </message>
     <message>
         <source>CANCEL</source>
         <translation>CANCELLA</translation>
     </message>
     <message>
-        <source>PIVX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
-        <translation>PIVX verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi PIV dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
+        <source>SAPP will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your RPDs from being stolen by malware infecting your computer.</source>
+        <translation>SAPP verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi SAPP dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Confermi di voler crittografare il portafoglio?</translation>
+    </message>
+    <message>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SAPP&lt;/b&gt;!</source>
+        <translation>Attenzione: Se crittografi il portafoglio e poi perdi la parola d'ordine, &lt;b&gt;PERDERAI TUTTI I TUOI SAPP&lt;7b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -423,6 +427,10 @@ per lo staking</translation>
         <source>Wallet passphrase was successfully changed.</source>
         <translation>La passphrase del portafoglio è stata modificata correttamente.</translation>
     </message>
+    <message>
+        <source>Warning: The Caps Lock key is on!</source>
+        <translation>Attenzione: il tasto Caps Lock è attivo!</translation>
+    </message>
 </context>
 <context>
     <name>BanTableModel</name>
@@ -436,6 +444,37 @@ per lo staking</translation>
     </message>
 </context>
 <context>
+    <name>BlockExplorer</name>
+    <message>
+        <source>Blockchain Explorer</source>
+        <translation>Esplora catena dei blocchi</translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation>Indietro</translation>
+    </message>
+    <message>
+        <source>Forward</source>
+        <translation>Avanti</translation>
+    </message>
+    <message>
+        <source>Address / Block / Transaction</source>
+        <translation>Indirizzo / Blocco / Transazione</translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>Cerca</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>Etichetta</translation>
+    </message>
+    <message>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (sap.conf).</source>
+        <translation>Non tutte le transazioni verranno visualizzate. Per vedere tutte le transazioni è necessario aggiungere txindex=1 nel file di configurazione (sap.conf)</translation>
+    </message>
+</context>
+<context>
     <name>CSRow</name>
     <message>
         <source>Form</source>
@@ -446,8 +485,8 @@ per lo staking</translation>
         <translation>Risparmi</translation>
     </message>
     <message>
-        <source>0,00 PIV</source>
-        <translation>0,00 PIV</translation>
+        <source>0,00 SAPP</source>
+        <translation>0,00 SAPP</translation>
     </message>
     <message>
         <source>address</source>
@@ -467,6 +506,10 @@ per lo staking</translation>
     <message>
         <source>Total: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / Unknown: %5)</source>
         <translation>Totale: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / Sconosciuti: %5)</translation>
+    </message>
+    <message>
+        <source>Network Alert</source>
+        <translation>Avviso di rete</translation>
     </message>
 </context>
 <context>
@@ -512,8 +555,16 @@ per lo staking</translation>
         <translation>Ammontare</translation>
     </message>
     <message>
-        <source>0.00 PIV</source>
-        <translation>0.00 PIV</translation>
+        <source>Transaction Details</source>
+        <translation>Dettagli della transazione</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Premi il bottone</translation>
+    </message>
+    <message>
+        <source>0.00 SAPP</source>
+        <translation>0.00 SAPP</translation>
     </message>
     <message>
         <source>0</source>
@@ -578,6 +629,34 @@ per lo staking</translation>
     <message>
         <source>Unlock unspent</source>
         <translation>Sblocca non spesi</translation>
+    </message>
+    <message>
+        <source>Copy quantity</source>
+        <translation>Copia importo</translation>
+    </message>
+    <message>
+        <source>Copy fee</source>
+        <translation>Copia commissione</translation>
+    </message>
+    <message>
+        <source>Copy after fee</source>
+        <translation>Copia importo al netto della commissione</translation>
+    </message>
+    <message>
+        <source>Copy bytes</source>
+        <translation>Copia byte</translation>
+    </message>
+    <message>
+        <source>Copy priority</source>
+        <translation>Copia priorità</translation>
+    </message>
+    <message>
+        <source>Copy dust</source>
+        <translation>Copia polvere</translation>
+    </message>
+    <message>
+        <source>Copy change</source>
+        <translation>Copia resto</translation>
     </message>
     <message>
         <source>Unselect all</source>
@@ -681,6 +760,89 @@ per lo staking</translation>
     </message>
 </context>
 <context>
+    <name>CoinControlPivWidget</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Finestra di dialogo</translation>
+    </message>
+    <message>
+        <source>Transaction Details</source>
+        <translation>Dettagli della transazione</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Premi il bottone</translation>
+    </message>
+    <message>
+        <source>SAPP:</source>
+        <translation>SAPP:</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>Etichetta</translation>
+    </message>
+    <message>
+        <source>Quantity:</source>
+        <translation>Quantità:</translation>
+    </message>
+    <message>
+        <source>Fee:</source>
+        <translation>Commissione:</translation>
+    </message>
+    <message>
+        <source>Amount</source>
+        <translation>Ammontare</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Etichetta</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Indirizzo</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>Tipo</translation>
+    </message>
+    <message>
+        <source>Date</source>
+        <translation>Data</translation>
+    </message>
+    <message>
+        <source>Confirmations</source>
+        <translation>Conferme</translation>
+    </message>
+    <message>
+        <source>CheckBox</source>
+        <translation>CheckBox</translation>
+    </message>
+    <message>
+        <source>Bytes:</source>
+        <translation>Byte:</translation>
+    </message>
+    <message>
+        <source>Dust:</source>
+        <translation>Polvere:</translation>
+    </message>
+    <message>
+        <source>Change:</source>
+        <translation>Differenza:</translation>
+    </message>
+    <message>
+        <source>After Fee: </source>
+        <translation>Al netto della commissione:</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>CANCELLA</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
+</context>
+<context>
     <name>ColdStakingWidget</name>
     <message>
         <source>Form</source>
@@ -695,8 +857,24 @@ per lo staking</translation>
         <translation>Etichetta</translation>
     </message>
     <message>
+        <source>PushButton</source>
+        <translation>Premi il bottone</translation>
+    </message>
+    <message>
+        <source>Owner Address (optional, if empty a new address will be created)</source>
+        <translation>Indirizzo del proprietario (facoltativo, se vuoto verrà creato un nuovo indirizzo)</translation>
+    </message>
+    <message>
         <source>List of delegated balance by address</source>
         <translation>Lista dei saldi delegati per indirizzo</translation>
+    </message>
+    <message>
+        <source>Total</source>
+        <translation>Totale</translation>
+    </message>
+    <message>
+        <source>Unconfirmed balance will not be shown</source>
+        <translation>Il saldo non confermato non verrà visualizzato</translation>
     </message>
     <message>
         <source>No balance delegated</source>
@@ -715,12 +893,30 @@ per lo staking</translation>
         <translation>Delega</translation>
     </message>
     <message>
+        <source>You can delegate your RPDs and let a hot node (24/7 online node)
+stake in your behalf, keeping the keys in a secure place offline.</source>
+        <translation>Puoi delegare i tuoi SAPP e lasciare un nodo attivo (nodo online 24/7) ad
+effettuare lo stake a tuo nome, mantenendo le chiavi in ​​un luogo sicuro offline.</translation>
+    </message>
+    <message>
+        <source>Add owner address</source>
+        <translation>Aggiungi indirizzo proprietario</translation>
+    </message>
+    <message>
+        <source>Delegate or Accept SAPP delegation</source>
+        <translation>Delegare o accettare la delega SAPP</translation>
+    </message>
+    <message>
         <source>Delegate</source>
         <translation>Delegato</translation>
     </message>
     <message>
         <source>Clear All</source>
         <translation>Cancella tutto</translation>
+    </message>
+    <message>
+        <source>Add the staking address</source>
+        <translation>Aggiungere l'indirizzo di staking</translation>
     </message>
     <message>
         <source>Delegated balance history</source>
@@ -749,6 +945,10 @@ per lo staking</translation>
     <message>
         <source>Invalid entry</source>
         <translation>Valore non valido</translation>
+    </message>
+    <message>
+        <source>Invalid entry, minimum delegable amount is 10 SAPP</source>
+        <translation>Voce non valida, importo minimo delegabile è 10 SAPP</translation>
     </message>
     <message>
         <source>Owner address invalid</source>
@@ -787,8 +987,8 @@ Vuoi procedere?</translation>
         <translation>Valute delegate</translation>
     </message>
     <message>
-        <source>You don't have any PIV to select.</source>
-        <translation>Non hai alcun PIV da selezionare.</translation>
+        <source>You don't have any SAPP to select.</source>
+        <translation>Non hai alcun SAPP da selezionare.</translation>
     </message>
     <message>
         <source>URI copied to clipboard</source>
@@ -903,6 +1103,10 @@ proprietario</translation>
         <translation>Nessuna transazione</translation>
     </message>
     <message>
+        <source>PushButton</source>
+        <translation>Premi il bottone</translation>
+    </message>
+    <message>
         <source>Staking Rewards</source>
         <translation>Premi dello Staking</translation>
     </message>
@@ -915,12 +1119,12 @@ proprietario</translation>
         <translation>Statistiche dello Staking</translation>
     </message>
     <message>
-        <source>PIV</source>
-        <translation>PIV</translation>
+        <source>SAPP</source>
+        <translation>SAPP</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>zRPD</source>
+        <translation>zRPD</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -951,8 +1155,52 @@ proprietario</translation>
         <translation>Puoi vedere la cronologia del tuo account</translation>
     </message>
     <message>
-        <source>Amount of PIV and zPIV staked.</source>
-        <translation>Quantità di PIV e zPIV dallo stake.</translation>
+        <source>Amount of SAPP and zRPD staked.</source>
+        <translation>Quantità di SAPP e zRPD dallo stake.</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Tutto</translation>
+    </message>
+    <message>
+        <source>Received</source>
+        <translation>Ricevuto</translation>
+    </message>
+    <message>
+        <source>Sent</source>
+        <translation>Inviato</translation>
+    </message>
+    <message>
+        <source>Mined</source>
+        <translation>Minato</translation>
+    </message>
+    <message>
+        <source>Minted</source>
+        <translation>Forgiato</translation>
+    </message>
+    <message>
+        <source>MN reward</source>
+        <translation>Premio del MN</translation>
+    </message>
+    <message>
+        <source>To yourself</source>
+        <translation>A te stesso</translation>
+    </message>
+    <message>
+        <source>Cold stakes</source>
+        <translation>Cold stakes</translation>
+    </message>
+    <message>
+        <source>Hot stakes</source>
+        <translation>Hot stakes</translation>
+    </message>
+    <message>
+        <source>Delegated</source>
+        <translation>Delegato</translation>
+    </message>
+    <message>
+        <source>Delegations</source>
+        <translation>Deleghe</translation>
     </message>
     <message>
         <source>Please wait until the wallet is fully synced to see your correct balance</source>
@@ -963,8 +1211,8 @@ proprietario</translation>
         <translation>Ancora nessuna transazione</translation>
     </message>
     <message>
-        <source>How to get PIV or zPIV</source>
-        <translation>Come ottenere PIV o zPIV</translation>
+        <source>How to get SAPP or zRPD</source>
+        <translation>Come ottenere SAPP o zRPD</translation>
     </message>
     <message>
         <source>You can verify the staking activity in the status bar at the top right of the wallet.
@@ -1021,6 +1269,69 @@ Si avvierà automaticamente non appena il portafoglio avrà sufficienti conferme
     </message>
 </context>
 <context>
+    <name>DenomGenerationDialog</name>
+    <message>
+        <source>Form</source>
+        <translation>Modulo</translation>
+    </message>
+    <message>
+        <source>Transaction Details</source>
+        <translation>Dettagli della transazione</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Premi il bottone</translation>
+    </message>
+    <message>
+        <source>This will unlock your wallet fully, so that anyone with access to it can spend until the wallet is closed or locked again.</source>
+        <translation>Questo sbloccherà completamente il tuo portafoglio, in modo che chiunque abbia accesso ad esso possa spendere fino a quando il portafoglio non verrà chiuso o nuovamente bloccato.</translation>
+    </message>
+    <message>
+        <source>5000</source>
+        <translation>5000</translation>
+    </message>
+    <message>
+        <source>100</source>
+        <translation>100</translation>
+    </message>
+    <message>
+        <source>10</source>
+        <translation>10</translation>
+    </message>
+    <message>
+        <source>1000</source>
+        <translation>1000</translation>
+    </message>
+    <message>
+        <source>50</source>
+        <translation>50</translation>
+    </message>
+    <message>
+        <source>500</source>
+        <translation>500</translation>
+    </message>
+    <message>
+        <source>5</source>
+        <translation>5</translation>
+    </message>
+    <message>
+        <source>1</source>
+        <translation>1</translation>
+    </message>
+    <message>
+        <source>Select All</source>
+        <translation>Seleziona tutto</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>CANCELLA</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>SALVA</translation>
+    </message>
+</context>
+<context>
     <name>EditAddressDialog</name>
     <message>
         <source>Edit Address</source>
@@ -1059,8 +1370,8 @@ Si avvierà automaticamente non appena il portafoglio avrà sufficienti conferme
         <translation>Modifica indirizzo di invio</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid PIVX address.</source>
-        <translation>L'indirizzo inserito "%1" non è un indirizzo PIVX valido.</translation>
+        <source>The entered address "%1" is not a valid SAPP address.</source>
+        <translation>L'indirizzo inserito "%1" non è un indirizzo SAPP valido.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1106,22 +1417,65 @@ Si avvierà automaticamente non appena il portafoglio avrà sufficienti conferme
     </message>
 </context>
 <context>
+    <name>GovernancePage</name>
+    <message>
+        <source>Form</source>
+        <translation>Modulo</translation>
+    </message>
+    <message>
+        <source>GOVERNANCE</source>
+        <translation>GOVERNANCE</translation>
+    </message>
+    <message>
+        <source>Update Proposals</source>
+        <translation>Proposte di aggiornamento</translation>
+    </message>
+    <message>
+        <source>Next super block:</source>
+        <translation>Prossimo super blocco:</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <source>Blocks to next super block:</source>
+        <translation>Blocchi al prossimo super blocco:</translation>
+    </message>
+    <message>
+        <source>Days to budget payout (estimate):</source>
+        <translation>Giorni di pagamento del budget (stima):</translation>
+    </message>
+    <message>
+        <source>Allotted budget:</source>
+        <translation>Budget assegnato:</translation>
+    </message>
+    <message>
+        <source>Budget left:</source>
+        <translation>Budget residuo:</translation>
+    </message>
+    <message>
+        <source>Masternodes count:</source>
+        <translation>Numero dei Masternodes:</translation>
+    </message>
+</context>
+<context>
     <name>HelpMessageDialog</name>
     <message>
         <source>version</source>
         <translation>versione</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Sap</source>
+        <translation>Sap</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About PIVX Core</source>
-        <translation>Informazioni su PIVX Core</translation>
+        <source>About Sap</source>
+        <translation>Informazioni su Sap</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1171,16 +1525,16 @@ Si avvierà automaticamente non appena il portafoglio avrà sufficienti conferme
         <translation>Benvenuto</translation>
     </message>
     <message>
-        <source>Welcome to PIVX Core.</source>
+        <source>Welcome to Sap.</source>
         <translation>Benvenuto in PIVIX Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where PIVX Core will store its data.</source>
-        <translation>Essendo il primo avvio dell'applicazione, puoi scegliere dove PIVX Core salverà i propri dati.</translation>
+        <source>As this is the first time the program is launched, you can choose where Sap will store its data.</source>
+        <translation>Essendo il primo avvio dell'applicazione, puoi scegliere dove Sap salverà i propri dati.</translation>
     </message>
     <message>
-        <source>PIVX Core will download and store a copy of the PIVX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>PIVX Core scaricherà e salverà una copia della blockchain PIVX. Verranno salvati almeno %1GB di dati in questa cartella, che cresceranno nel tempo. In questa cartella verrà salvato anche il portafoglio.</translation>
+        <source>Sap will download and store a copy of the SAPP block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Sap scaricherà e salverà una copia della blockchain SAPP. Verranno salvati almeno %1GB di dati in questa cartella, che cresceranno nel tempo. In questa cartella verrà salvato anche il portafoglio.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1199,8 +1553,8 @@ Si avvierà automaticamente non appena il portafoglio avrà sufficienti conferme
         <translation>OK</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Sap</source>
+        <translation>Sap</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1263,6 +1617,18 @@ Si avvierà automaticamente non appena il portafoglio avrà sufficienti conferme
         <source>Form</source>
         <translation>Modulo</translation>
     </message>
+    <message>
+        <source>user_masternode</source>
+        <translation>user_masternode</translation>
+    </message>
+    <message>
+        <source>Address: 88.26.164.88:51474</source>
+        <translation>Address: 88.26.164.88:51474</translation>
+    </message>
+    <message>
+        <source>Jan. 19, 2019</source>
+        <translation>19 Gennaio 2019</translation>
+    </message>
 </context>
 <context>
     <name>MasterNodeWizardDialog</name>
@@ -1295,12 +1661,28 @@ Si avvierà automaticamente non appena il portafoglio avrà sufficienti conferme
         <translation>Indirizzo</translation>
     </message>
     <message>
+        <source>Create New Master Node Controller</source>
+        <translation>Crea nuovo controller Masternode</translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a SAPP Masternode you must dedicate 10.000 SAPP (the unit of SAPP) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Per creare un Masternode SAPP devi dedicare 10.000 SAPP (l'unità di SAPP) alla rete (tuttavia, queste valute sono ancora tue e saranno sempre in tuo possesso). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Puoi disattivare il nodo e sbloccare le valute in qualsiasi momento.</translation>
+    </message>
+    <message>
         <source>Make sure you have this amount of coins.</source>
         <translation>Assicurati di avere questa quantità di valuta.</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 PIV will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Verrà effettuata una transazione di 10.000 PIV&lt;/p&gt;&lt;p&gt;a un nuovo indirizzo vuoto nel tuo portafoglio.&lt;p&gt;L'indirizzo è etichettato con il nome del Masternode.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>Set Master Node’s Name</source>
+        <translation>Imposta il nome del Masternode</translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 SAPP will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Verrà effettuata una transazione di 10.000 SAPP&lt;/p&gt;&lt;p&gt;a un nuovo indirizzo vuoto nel tuo portafoglio.&lt;p&gt;L'indirizzo è etichettato con il nome del Masternode.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <source>Set Master Node’s IP and port</source>
+        <translation>Imposta indirizzo IP e porta del Masternode</translation>
     </message>
     <message>
         <source>Address of the node that must always be online running the actual master node.</source>
@@ -1309,6 +1691,10 @@ Si avvierà automaticamente non appena il portafoglio avrà sufficienti conferme
     <message>
         <source>Enter IP address</source>
         <translation>Inserire indirizzo IP</translation>
+    </message>
+    <message>
+        <source>Enter Port</source>
+        <translation>Inserisci porta</translation>
     </message>
     <message>
         <source>CANCEL</source>
@@ -1339,6 +1725,14 @@ Si avvierà automaticamente non appena il portafoglio avrà sufficienti conferme
         <translation>IP o porta non possono essere vuoti</translation>
     </message>
     <message>
+        <source>Invalid port number</source>
+        <translation>Valore della porta non valido</translation>
+    </message>
+    <message>
+        <source>Prepare master node failed..</source>
+        <translation>Preparazione del Masternode non riuscita...</translation>
+    </message>
+    <message>
         <source>Invalid masternode.conf file</source>
         <translation>Il file masternode.conf non è valido</translation>
     </message>
@@ -1347,8 +1741,56 @@ Si avvierà automaticamente non appena il portafoglio avrà sufficienti conferme
         <translation>Errore durante l'analisi del file masternode.conf</translation>
     </message>
     <message>
+        <source>Invalid collaterall output index</source>
+        <translation>Indice di output collaterale non valido</translation>
+    </message>
+    <message>
+        <source>Master node created!</source>
+        <translation>Masternode creato!</translation>
+    </message>
+    <message>
         <source>masternode.conf file doesn't exists</source>
         <translation>il file masternode.conf non esiste</translation>
+    </message>
+    <message>
+        <source>The recipient address is not valid, please recheck.</source>
+        <translation>L'indirizzo destinatario non è un indirizzo valido, controllare.</translation>
+    </message>
+    <message>
+        <source>The amount to pay must be larger than 0.</source>
+        <translation>L'importo da pagare deve essere maggiore di 0.</translation>
+    </message>
+    <message>
+        <source>The amount exceeds your balance.</source>
+        <translation>L'importo eccede il tuo saldo.</translation>
+    </message>
+    <message>
+        <source>The total exceeds your balance when the %1 transaction fee is included.</source>
+        <translation>Il totale supera il saldo quando è incluso %1 quale commissione di transazione.</translation>
+    </message>
+    <message>
+        <source>Duplicate address found, can only send to each address once per send operation.</source>
+        <translation>È stato trovato un indirizzo duplicato, può essere inviato a ciascun indirizzo solo una volta per operazione di invio.</translation>
+    </message>
+    <message>
+        <source>Transaction creation failed!</source>
+        <translation>Creazione della transazione non riuscita!</translation>
+    </message>
+    <message>
+        <source>The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation>La transazione è stata rifiutata! Ciò può accadere se alcune delle valute nel tuo portafoglio fossero già state spese, come se tu avessi usato una copia di wallet.dat e le valute fossero state spese nella copia ma non contrassegnate come spese qui.</translation>
+    </message>
+    <message>
+        <source>Error: The wallet was unlocked only to anonymize coins.</source>
+        <translation>Errore: il portafoglio è stato sbloccato solo per rendere anonime le valute.</translation>
+    </message>
+    <message>
+        <source>A fee %1 times higher than %2 per kB is considered an insanely high fee.</source>
+        <translation>Una commissione %1 volte superiore a %2 per kB è considerata una commissione follemente alta.</translation>
+    </message>
+    <message>
+        <source>Error: The wallet was unlocked only to anonymize coins. Unlock canceled.</source>
+        <translation>Errore: il portafoglio è stato sbloccato solo per rendere anonime le valute. Sblocco annullato.</translation>
     </message>
 </context>
 <context>
@@ -1362,8 +1804,12 @@ Si avvierà automaticamente non appena il portafoglio avrà sufficienti conferme
         <translation>Etichetta</translation>
     </message>
     <message>
-        <source>N/A</source>
-        <translation>N/D</translation>
+        <source>No active Master Node yet</source>
+        <translation>Ancora nessun MasterNode attivo</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Premi il bottone</translation>
     </message>
     <message>
         <source>Masternodes</source>
@@ -1406,6 +1852,12 @@ e votano il sistema di tesoreria ricevendo una ricompensa periodica.</translatio
 </translation>
     </message>
     <message>
+        <source>Cannot start masternode, the collateral transaction has not been accepted by the network.
+Please wait few more minutes.</source>
+        <translation>Impossibile avviare il masternode, la transazione collaterale non è stata accettata dalla rete.
+Per favore, attendi qualche minuto.</translation>
+    </message>
+    <message>
         <source>Remote Masternode Data</source>
         <translation>Remote Masternode Data</translation>
     </message>
@@ -1414,7 +1866,7 @@ e votano il sistema di tesoreria ricevendo una ricompensa periodica.</translatio
 on a remote server to your clipboard.
 
 
-You will only have to paste the data in the pivx.conf file
+You will only have to paste the data in the sap.conf file
 of your remote server and start it, then start the Masternode using
 this controller wallet (select the Masternode in the list and press "start").
 </source>
@@ -1422,10 +1874,14 @@ this controller wallet (select the Masternode in the list and press "start").
 un Masternode su un server remoto .
 
 
-Dovrai solo incollare i dati nel file pivx.conf del server remoto
+Dovrai solo incollare i dati nel file sap.conf del server remoto
 e avviarlo, quindi avviare il Masternode utilizzando questo portafoglio
 come controller (selezionare il Masternode nell'elenco e premere "start").
 </translation>
+    </message>
+    <message>
+        <source>Masternode exported!, check your clipboard</source>
+        <translation>Masternode esportato!, controlla gli appunti</translation>
     </message>
     <message>
         <source>Delete Masternode</source>
@@ -1443,7 +1899,7 @@ Sei sicuro?</translation>
     </message>
     <message>
         <source>Invalid masternode.conf file</source>
-        <translation>Il file masternode.conf non è valido</translation>
+        <translation>il file masternode.conf non è valido</translation>
     </message>
     <message>
         <source>Error parsing masternode.conf file</source>
@@ -1454,8 +1910,8 @@ Sei sicuro?</translation>
         <translation>il file masternode.conf non esiste</translation>
     </message>
     <message>
-        <source>Not enough balance to create a masternode, 10,000 PIV required.</source>
-        <translation>Saldo insufficiente per creare un masternode, sono necessari 10.000 PIV.</translation>
+        <source>Not enough balance to create a masternode, 10,000 SAPP required.</source>
+        <translation>Saldo insufficiente per creare un masternode, sono necessari 10.000 SAPP.</translation>
     </message>
     <message>
         <source>Error creating masternode</source>
@@ -1467,6 +1923,10 @@ Sei sicuro?</translation>
     <message>
         <source>Form</source>
         <translation>Modulo</translation>
+    </message>
+    <message>
+        <source>Master Node Information</source>
+        <translation>Informazioni sul Masternode</translation>
     </message>
     <message>
         <source>Public Key:</source>
@@ -1504,7 +1964,11 @@ Sei sicuro?</translation>
         <source>MISSING</source>
         <translation>MANCANTE</translation>
     </message>
-    </context>
+    <message>
+        <source>Export data to run the Master Node on a remote server</source>
+        <translation>Esporta i dati per eseguire il Masternode su un server remoto</translation>
+    </message>
+</context>
 <context>
     <name>MyAddressRow</name>
     <message>
@@ -1628,8 +2092,8 @@ Sei sicuro?</translation>
         <translation>Se si disabilita la spesa per la modifica non confermata, la modifica da una transazione&lt;br/&gt;non può essere utilizzata fino a quando tale transazione non ha almeno una conferma.&lt;br/&gt;Ciò influisce anche sul modo in cui viene calcolato il saldo.</translation>
     </message>
     <message>
-        <source>Automatically open the PIVX client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Apri automaticamente la porta client PIVX sul router. Funziona solo quando il router supporta UPnP ed è abilitato.</translation>
+        <source>Automatically open the SAPP client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Apri automaticamente la porta client SAPP sul router. Funziona solo quando il router supporta UPnP ed è abilitato.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1648,12 +2112,12 @@ Sei sicuro?</translation>
         <translation>Esperto</translation>
     </message>
     <message>
-        <source>Automatically start PIVX after logging in to the system.</source>
-        <translation>Avvia automaticamente PIVX dopo aver effettuato l'accesso al sistema.</translation>
+        <source>Automatically start SAPP after logging in to the system.</source>
+        <translation>Avvia automaticamente SAPP dopo aver effettuato l'accesso al sistema.</translation>
     </message>
     <message>
-        <source>&amp;Start PIVX on system login</source>
-        <translation>&amp;Start PIVX all'accesso al sistema</translation>
+        <source>&amp;Start SAPP on system login</source>
+        <translation>&amp;Start SAPP all'accesso al sistema</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1680,8 +2144,8 @@ Sei sicuro?</translation>
         <translation>&amp;Network</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting PIVX.</source>
-        <translation>La lingua dell'interfaccia utente può essere impostata qui. Questa impostazione avrà effetto dopo il riavvio di PIVX.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting SAPP.</source>
+        <translation>La lingua dell'interfaccia utente può essere impostata qui. Questa impostazione avrà effetto dopo il riavvio di SAPP.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1694,44 +2158,44 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Mappa la porta utilizzando &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of PIV units to zPIV</source>
-        <translation>Attiva la forgiatura automatica di unità PIV in zPIV</translation>
+        <source>Enable automatic minting of SAPP units to zRPD</source>
+        <translation>Attiva la forgiatura automatica di unità SAPP in zRPD</translation>
     </message>
     <message>
-        <source>Enable zPIV Automint</source>
-        <translation>Attiva forgiatura automatica zPIV</translation>
+        <source>Enable zRPD Automint</source>
+        <translation>Attiva forgiatura automatica zRPD</translation>
     </message>
     <message>
-        <source>Enable automatic zPIV minting from specific addresses</source>
-        <translation>Attiva la forgiatura automatica di zPIV da indirizzi specifici</translation>
+        <source>Enable automatic zRPD minting from specific addresses</source>
+        <translation>Attiva la forgiatura automatica di zRPD da indirizzi specifici</translation>
     </message>
     <message>
         <source>Enable Automint Addresses</source>
         <translation>Abilita indirizzi forgiatura automatica</translation>
     </message>
     <message>
-        <source>Percentage of incoming PIV which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
-        <translation>Percentuale di PIV in entrata che viene automaticamente convertita in zPIV attraverso il protocollo Zerocoin (min: 10%)</translation>
+        <source>Percentage of incoming SAPP which get automatically converted to zRPD via Zerocoin Protocol (min: 10%)</source>
+        <translation>Percentuale di SAPP in entrata che viene automaticamente convertita in zRPD attraverso il protocollo Zerocoin (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPIV</source>
-        <translation>Percentuale di zPIV Percentuale di zPIV da forgiare automaticamente</translation>
+        <source>Percentage of autominted zRPD</source>
+        <translation>Percentuale di zRPD Percentuale di zRPD da forgiare automaticamente</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough PIV for this denomination is available</source>
-        <translation>Attendere la conversione automatica in Zerocoin fino a quando non saranno disponibili abbastanza PIV per questa denominazione</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough SAPP for this denomination is available</source>
+        <translation>Attendere la conversione automatica in Zerocoin fino a quando non saranno disponibili abbastanza SAPP per questa denominazione</translation>
     </message>
     <message>
-        <source>Preferred Automint zPIV Denomination</source>
-        <translation>Denominazione preferita forgiatura automatica zPIV</translation>
+        <source>Preferred Automint zRPD Denomination</source>
+        <translation>Denominazione preferita forgiatura automatica zRPD</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
         <translation>Soglia di divisione dello stake</translation>
     </message>
     <message>
-        <source>Connect to the PIVX network through a SOCKS5 proxy.</source>
-        <translation>Connettiti alla rete PIVX tramite un proxy SOCKS5.</translation>
+        <source>Connect to the SAPP network through a SOCKS5 proxy.</source>
+        <translation>Connettiti alla rete SAPP tramite un proxy SOCKS5.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1877,8 +2341,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
 <context>
     <name>PIVXGUI</name>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Sap</source>
+        <translation>Sap</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -1905,8 +2369,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Chiude l'applicazione</translation>
     </message>
     <message>
-        <source>PIVX Core client</source>
-        <translation>PIVX Core</translation>
+        <source>Sap client</source>
+        <translation>Sap</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1949,8 +2413,15 @@ Indirizzo: %4
 </translation>
     </message>
     <message>
-        <source>A fatal error occurred. PIVX can no longer continue safely and will quit.</source>
-        <translation>Si è verificato un errore irreversibile. PIVX non può più continuare in modo sicuro e verrà chiuso.</translation>
+        <source>A fatal error occurred. SAPP can no longer continue safely and will quit.</source>
+        <translation>Si è verificato un errore irreversibile. SAPP non può più continuare in modo sicuro e verrà chiuso.</translation>
+    </message>
+</context>
+<context>
+    <name>PWidget</name>
+    <message>
+        <source>Wallet locked, you need to unlock it to perform this action</source>
+        <translation>Portafoglio bloccato, è necessario sbloccarlo per eseguire questa azione</translation>
     </message>
 </context>
 <context>
@@ -1976,12 +2447,12 @@ Indirizzo: %4
         <translation>Indirizzo di pagamento %1 invalido</translation>
     </message>
     <message>
-        <source>Cannot start pivx: click-to-pay handler</source>
-        <translation>Impossibile avviare pivx: gestore click-to-pay</translation>
+        <source>Cannot start sap: click-to-pay handler</source>
+        <translation>Impossibile avviare sap: gestore click-to-pay</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid PIVX address or malformed URI parameters.</source>
-        <translation>Impossibile leggere il file della richiesta di pagamento! Ciò può essere causato da un indirizzo PIVX non valido o parametri URI non validi.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid SAPP address or malformed URI parameters.</source>
+        <translation>Impossibile leggere il file della richiesta di pagamento! Ciò può essere causato da un indirizzo SAPP non valido o parametri URI non validi.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2078,8 +2549,8 @@ Indirizzo: %4
         <translation>Premi il bottone</translation>
     </message>
     <message>
-        <source>N/A</source>
-        <translation>N/D</translation>
+        <source>No active Master Node yet</source>
+        <translation>Ancora nessun MasterNode attivo</translation>
     </message>
     <message>
         <source>Privacy</source>
@@ -2094,46 +2565,50 @@ Indirizzo: %4
         <translation>Forgiatura</translation>
     </message>
     <message>
-        <source>Minting zPIV anonymizes your PIV by removing any
+        <source>Minting zRPD anonymizes your SAPP by removing any
 transaction history, making transactions untraceable </source>
-        <translation>La forgiatura zPIV anonimizza il tuo PIV rimuovendo qualsiasi
+        <translation>La forgiatura zRPD anonimizza il tuo SAPP rimuovendo qualsiasi
 cronologia delle transazioni, rendendo le transazioni non rintracciabili</translation>
     </message>
     <message>
-        <source>Mint new zPIV or convert back to PIV</source>
-        <translation>Forgia nuovi zPIV o converti nuovamente in PIV</translation>
+        <source>Mint new zRPD or convert back to SAPP</source>
+        <translation>Forgia nuovi zRPD o converti nuovamente in SAPP</translation>
+    </message>
+    <message>
+        <source>Last Zerocoin Movements</source>
+        <translation>Ultimi movimenti Zerocoin</translation>
     </message>
     <message>
         <source>No transactions yet</source>
         <translation>Ancora nessuna transazione</translation>
     </message>
     <message>
-        <source>Mint zPIV</source>
-        <translation>Forgiatura zPIV</translation>
+        <source>Mint zRPD</source>
+        <translation>Forgiatura zRPD</translation>
     </message>
     <message>
-        <source>Enter amount of PIV to mint into zPIV</source>
-        <translation>Immetti un importo di PIV da convertire in zPIV</translation>
+        <source>Enter amount of SAPP to mint into zRPD</source>
+        <translation>Immetti un importo di SAPP da convertire in zRPD</translation>
     </message>
     <message>
-        <source>Convert back to PIV</source>
-        <translation>Converti nuovamente in PIV</translation>
+        <source>Convert back to SAPP</source>
+        <translation>Converti nuovamente in SAPP</translation>
     </message>
     <message>
-        <source>Enter amount of zPIV to convert back into PIV</source>
-        <translation>Immetti un importo di zPIV da convertire in PIV</translation>
+        <source>Enter amount of zRPD to convert back into SAPP</source>
+        <translation>Immetti un importo di zRPD da convertire in SAPP</translation>
     </message>
     <message>
         <source>Zerocoin</source>
         <translation>Zerocoin</translation>
     </message>
     <message>
-        <source>zPIV is currently undergoing maintenance</source>
-        <translation>zPIV è attualmente in fase di manutenzione</translation>
+        <source>zRPD is currently undergoing maintenance</source>
+        <translation>zRPD è attualmente in fase di manutenzione</translation>
     </message>
     <message>
-        <source>You need to unlock the wallet to be able to %1 zPIV</source>
-        <translation>Devi sbloccare il portafoglio per %1 zPIV</translation>
+        <source>You need to unlock the wallet to be able to %1 zRPD</source>
+        <translation>Devi sbloccare il portafoglio per %1 zRPD</translation>
     </message>
     <message>
         <source>convert</source>
@@ -2148,16 +2623,16 @@ cronologia delle transazioni, rendendo le transazioni non rintracciabili</transl
         <translation>Valore non valido</translation>
     </message>
     <message>
-        <source>zPIV minted successfully</source>
-        <translation>zPIV forgiati con successo</translation>
+        <source>zRPD minted successfully</source>
+        <translation>zRPD forgiati con successo</translation>
     </message>
     <message>
-        <source>zPIV converted back to PIV</source>
-        <translation>zPIV riconvertito in PIV</translation>
+        <source>zRPD converted back to SAPP</source>
+        <translation>zRPD riconvertito in SAPP</translation>
     </message>
     <message>
-        <source>You don't have any PIV to select.</source>
-        <translation>Non hai alcun PIV da selezionare.</translation>
+        <source>You don't have any SAPP to select.</source>
+        <translation>Non hai alcun SAPP da selezionare.</translation>
     </message>
     <message>
         <source>Rescan Mints</source>
@@ -2166,6 +2641,10 @@ cronologia delle transazioni, rendendo le transazioni non rintracciabili</transl
     <message>
         <source>Your zerocoin mints are going to be scanned from the blockchain from scratch</source>
         <translation>I tuoi movimenti Zerocoin forgiati saranno ora ricercati sulla blockchain da capo</translation>
+    </message>
+    <message>
+        <source>Reset Spent Zerocoins</source>
+        <translation>Azzera movimenti Zerocoin</translation>
     </message>
     <message>
         <source>Your zerocoin spends are going to be scanned from the blockchain from scratch</source>
@@ -2177,10 +2656,83 @@ cronologia delle transazioni, rendendo le transazioni non rintracciabili</transl
     </message>
 </context>
 <context>
+    <name>ProposalFrame</name>
+    <message>
+        <source>Open proposal page in browser</source>
+        <translation>Apri la pagina della proposta nel browser</translation>
+    </message>
+    <message>
+        <source> remaining payment(s).</source>
+        <translation>pagamenti rimanenti.</translation>
+    </message>
+    <message>
+        <source>Yes:</source>
+        <translation>Si:</translation>
+    </message>
+    <message>
+        <source>Abstain:</source>
+        <translation>Astenersi:</translation>
+    </message>
+    <message>
+        <source>No:</source>
+        <translation>No:</translation>
+    </message>
+    <message>
+        <source>A proposal URL can be used for phishing, scams and computer viruses. Open this link only if you trust the following URL.
+</source>
+        <translation>Un URL proposto può essere utilizzato per phishing, truffe e virus informatici. Apri questo link solo se ti fidi del seguente URL.
+</translation>
+    </message>
+    <message>
+        <source>Open link</source>
+        <translation>Apri link</translation>
+    </message>
+    <message>
+        <source>Copy link</source>
+        <translation>Copia link</translation>
+    </message>
+    <message>
+        <source>Wallet Locked</source>
+        <translation>Portafoglio bloccato</translation>
+    </message>
+    <message>
+        <source>You must unlock your wallet to vote.</source>
+        <translation>Devi sbloccare il portafoglio per votare</translation>
+    </message>
+    <message>
+        <source>Do you want to vote %1 on</source>
+        <translation>Vuoi votare %1 su</translation>
+    </message>
+    <message>
+        <source>using all your masternodes?</source>
+        <translation>utilizzare tutti i masternode?</translation>
+    </message>
+    <message>
+        <source>Proposal Hash:</source>
+        <translation>Hash proposto:</translation>
+    </message>
+    <message>
+        <source>Proposal URL:</source>
+        <translation>URL proposto:</translation>
+    </message>
+    <message>
+        <source>Confirm Vote</source>
+        <translation>Conferma il voto</translation>
+    </message>
+    <message>
+        <source>Vote Results</source>
+        <translation>Risultati del voto</translation>
+    </message>
+</context>
+<context>
     <name>QObject</name>
     <message>
         <source>Amount</source>
         <translation>Ammontare</translation>
+    </message>
+    <message>
+        <source>Enter a SAPP address (e.g. %1)</source>
+        <translation>Inserisci un indirizzo SAPP (ad es. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2207,6 +2759,10 @@ cronologia delle transazioni, rendendo le transazioni non rintracciabili</transl
         <translation>BLOOM</translation>
     </message>
     <message>
+        <source>ZK_BLOOM</source>
+        <translation>ZK_BLOOM</translation>
+    </message>
+    <message>
         <source>UNKNOWN</source>
         <translation>SCONOSCIUTO</translation>
     </message>
@@ -2223,8 +2779,8 @@ cronologia delle transazioni, rendendo le transazioni non rintracciabili</transl
         <translation>%1 ms</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Sap</source>
+        <translation>Sap</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" does not exist.</source>
@@ -2243,66 +2799,10 @@ cronologia delle transazioni, rendendo le transazioni non rintracciabili</transl
         <translation>Errore durante la lettura del file di configurazione del Masternode: %1</translation>
     </message>
     <message>
-        <source>PIVX Core didn't yet exit safely...</source>
-        <translation>PIVX Core non è ancora uscito in modo sicuro...</translation>
+        <source>Sap didn't yet exit safely...</source>
+        <translation>Sap non è ancora uscito in modo sicuro...</translation>
     </message>
-    <message>
-        <source>Cold Staking</source>
-        <translation>Cold Staking</translation>
-    </message>
-    <message>
-        <source>Unknown</source>
-        <translation>Sconosciuto</translation>
-    </message>
-    <message>
-        <source>All</source>
-        <translation>Tutto</translation>
-    </message>
-    <message>
-        <source>Contacts</source>
-        <translation>Contatti</translation>
-    </message>
-    <message>
-        <source>Received</source>
-        <translation>Ricevuto</translation>
-    </message>
-    <message>
-        <source>Sent</source>
-        <translation>Inviato</translation>
-    </message>
-    <message>
-        <source>Mined</source>
-        <translation>Minato</translation>
-    </message>
-    <message>
-        <source>Minted</source>
-        <translation>Forgiato</translation>
-    </message>
-    <message>
-        <source>MN reward</source>
-        <translation>Premio del MN</translation>
-    </message>
-    <message>
-        <source>To yourself</source>
-        <translation>A te stesso</translation>
-    </message>
-    <message>
-        <source>Cold stakes</source>
-        <translation>Cold stakes</translation>
-    </message>
-    <message>
-        <source>Hot stakes</source>
-        <translation>Hot stakes</translation>
-    </message>
-    <message>
-        <source>Delegated</source>
-        <translation>Delegato</translation>
-    </message>
-    <message>
-        <source>Delegations</source>
-        <translation>Deleghe</translation>
-    </message>
-    </context>
+</context>
 <context>
     <name>RPCConsole</name>
     <message>
@@ -2374,8 +2874,8 @@ cronologia delle transazioni, rendendo le transazioni non rintracciabili</transl
         <translation>Blockchain</translation>
     </message>
     <message>
-        <source>Open the PIVX debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Aprire il file di registro di debug PIVX dalla directory dei dati corrente. Questa operazione può richiedere alcuni secondi per file di registro di grandi dimensioni.</translation>
+        <source>Open the SAPP debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Aprire il file di registro di debug SAPP dalla directory dei dati corrente. Questa operazione può richiedere alcuni secondi per file di registro di grandi dimensioni.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2518,8 +3018,8 @@ cronologia delle transazioni, rendendo le transazioni non rintracciabili</transl
         <translation>Percorso di backup personalizzato:</translation>
     </message>
     <message>
-        <source>Custom zPIV Backup Path:</source>
-        <translation>Percorso di backup zPIV personalizzato:</translation>
+        <source>Custom zRPD Backup Path:</source>
+        <translation>Percorso di backup zRPD personalizzato:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -2598,8 +3098,8 @@ cronologia delle transazioni, rendendo le transazioni non rintracciabili</transl
         <translation>Out:</translation>
     </message>
     <message>
-        <source>Welcome to the PIVX RPC console.</source>
-        <translation>Benvenuti nella console RPC di PIVX.</translation>
+        <source>Welcome to the SAPP RPC console.</source>
+        <translation>Benvenuti nella console RPC di SAPP.</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -2721,6 +3221,10 @@ cronologia delle transazioni, rendendo le transazioni non rintracciabili</transl
         <translation>Dettagli della transazione</translation>
     </message>
     <message>
+        <source>PushButton</source>
+        <translation>Premi il bottone</translation>
+    </message>
+    <message>
         <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
         <translation>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </translation>
     </message>
@@ -2764,8 +3268,8 @@ cronologia delle transazioni, rendendo le transazioni non rintracciabili</transl
         <translation>Ricevi</translation>
     </message>
     <message>
-        <source>Scan the QR code or copy the address to receive PIV.</source>
-        <translation>Scansiona il codice QR o copia l'indirizzo per ricevere PIV.</translation>
+        <source>Scan the QR code or copy the address to receive SAPP.</source>
+        <translation>Scansiona il codice QR o copia l'indirizzo per ricevere SAPP.</translation>
     </message>
     <message>
         <source>No address </source>
@@ -2780,8 +3284,8 @@ cronologia delle transazioni, rendendo le transazioni non rintracciabili</transl
         <translation>Errore generando l'indirizzo</translation>
     </message>
     <message>
-        <source>Edit Label</source>
-        <translation>Modifica etichetta</translation>
+        <source>Change Label</source>
+        <translation>Cambia etichetta</translation>
     </message>
     <message>
         <source>Edit Address Label</source>
@@ -2866,8 +3370,8 @@ cronologia delle transazioni, rendendo le transazioni non rintracciabili</transl
         <translation>Ammontare</translation>
     </message>
     <message>
-        <source>PIV</source>
-        <translation>PIV</translation>
+        <source>SAPP</source>
+        <translation>SAPP</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -2894,12 +3398,24 @@ cronologia delle transazioni, rendendo le transazioni non rintracciabili</transl
         <translation>RICHIESTA</translation>
     </message>
     <message>
+        <source>Instead of only sharing a SAPP address, you can create a Payment Request message which bundles up more information than is contained in just a SAPP address.</source>
+        <translation>Invece di condividere solo un indirizzo SAPP, è possibile creare un messaggio di richiesta di pagamento che raggruppa più informazioni di quelle contenute in un solo indirizzo SAPP.</translation>
+    </message>
+    <message>
         <source>Label</source>
         <translation>Etichetta</translation>
     </message>
     <message>
+        <source>Enter a label to be saved within the address</source>
+        <translation>Inserisci un'etichetta da salvare con l'indirizzo</translation>
+    </message>
+    <message>
         <source>Description (optional)</source>
         <translation>Descrizione (opzionale)</translation>
+    </message>
+    <message>
+        <source>Add description </source>
+        <translation>Aggiungi descrizione</translation>
     </message>
     <message>
         <source>Error</source>
@@ -2917,7 +3433,7 @@ cronologia delle transazioni, rendendo le transazioni non rintracciabili</transl
         <source>New Cold Staking Address</source>
         <translation>Nuovo indirizzo di Cold Staking</translation>
     </message>
-    </context>
+</context>
 <context>
     <name>SendChangeAddressDialog</name>
     <message>
@@ -2927,6 +3443,10 @@ cronologia delle transazioni, rendendo le transazioni non rintracciabili</transl
     <message>
         <source>Transaction Details</source>
         <translation>Dettagli della transazione</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Premi il bottone</translation>
     </message>
     <message>
         <source>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</source>
@@ -2945,16 +3465,8 @@ cronologia delle transazioni, rendendo le transazioni non rintracciabili</transl
         <translation>Modifica indirizzo personalizzata</translation>
     </message>
     <message>
-        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" PIVX address</source>
-        <translation>Il resto del valore risultante dagli ingressi meno il valore delle uscite va all'indirizzo PIVX "cambio"</translation>
-    </message>
-    <message>
-        <source>SAVE</source>
-        <translation>SALVA</translation>
-    </message>
-    <message>
-        <source>Invalid address</source>
-        <translation>Indirizzo non valido</translation>
+        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" SAPP address</source>
+        <translation>Il resto del valore risultante dagli ingressi meno il valore delle uscite va all'indirizzo SAPP "cambio"</translation>
     </message>
 </context>
 <context>
@@ -2972,12 +3484,20 @@ cronologia delle transazioni, rendendo le transazioni non rintracciabili</transl
         <translation>Personalizza la commissione di transazione a tuo piacimento; a seconda del valore della commissione, la transazione verrà inclusa o meno nella blockchain.</translation>
     </message>
     <message>
+        <source>Recomended</source>
+        <translation>Raccomandato</translation>
+    </message>
+    <message>
         <source>0.00 KB</source>
         <translation>0.00 KB</translation>
     </message>
     <message>
         <source>Custom</source>
         <translation>Personalizzato</translation>
+    </message>
+    <message>
+        <source>Per kilobyte</source>
+        <translation>Per kilobyte</translation>
     </message>
     <message>
         <source>CANCEL</source>
@@ -2990,6 +3510,10 @@ cronologia delle transazioni, rendendo le transazioni non rintracciabili</transl
     <message>
         <source>Customize Fee</source>
         <translation>Tariffa personalizzata</translation>
+    </message>
+    <message>
+        <source>Customize the transaction fee, depending on the fee value your transaction will be included or not in the blockchain.</source>
+        <translation>Personalizza la commissione di transazione; a seconda del valore della commissione, la transazione verrà inclusa o meno nella blockchain.</translation>
     </message>
     <message>
         <source>Normal</source>
@@ -3007,7 +3531,7 @@ cronologia delle transazioni, rendendo le transazioni non rintracciabili</transl
         <source>SAVE</source>
         <translation>SALVA</translation>
     </message>
-    </context>
+</context>
 <context>
     <name>SendMultiRow</name>
     <message>
@@ -3019,10 +3543,14 @@ cronologia delle transazioni, rendendo le transazioni non rintracciabili</transl
         <translation>Etichetta</translation>
     </message>
     <message>
-        <source>Enter address</source>
-        <translation>Inserire indirizzo</translation>
+        <source>Add address</source>
+        <translation>Aggiungi indirizzo</translation>
     </message>
-    </context>
+    <message>
+        <source>Add description</source>
+        <translation>Aggiungi descrizione</translation>
+    </message>
+</context>
 <context>
     <name>SendWidget</name>
     <message>
@@ -3030,12 +3558,16 @@ cronologia delle transazioni, rendendo le transazioni non rintracciabili</transl
         <translation>Invia</translation>
     </message>
     <message>
-        <source>You can transfer public coins (PIV) or private coins (zPIV)</source>
-        <translation>È possibile trasferire valuta pubblica (PIV) o valuta privata (zPIV)</translation>
+        <source>You can transfer public coins (SAPP) or private coins (zRPD)</source>
+        <translation>È possibile trasferire valuta pubblica (SAPP) o valuta privata (zRPD)</translation>
     </message>
     <message>
         <source>Select coin type to spend</source>
         <translation>Seleziona il tipo di valuta da spendere</translation>
+    </message>
+    <message>
+        <source>Enter a SAPP address or contact label</source>
+        <translation>Inserisci un indirizzo SAPP o etichetta</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -3062,12 +3594,12 @@ cronologia delle transazioni, rendendo le transazioni non rintracciabili</transl
         <translation>Totale da mandare</translation>
     </message>
     <message>
-        <source>Send PIV</source>
-        <translation>Invia PIV</translation>
+        <source>Send SAPP</source>
+        <translation>Invia SAPP</translation>
     </message>
     <message>
-        <source>Send zPIV</source>
-        <translation>Invia zPIV</translation>
+        <source>Send zRPD</source>
+        <translation>Invia zRPD</translation>
     </message>
     <message>
         <source>Total remaining from the selected UTXO</source>
@@ -3122,8 +3654,8 @@ Questa valuta non sarà più in cold-stake.</translation>
         <translation>Spendi Zerocoin</translation>
     </message>
     <message>
-        <source>zPIV is currently undergoing maintenance.</source>
-        <translation>zPIV è attualmente in fase di manutenzione.</translation>
+        <source>zRPD is currently undergoing maintenance.</source>
+        <translation>zRPD è attualmente in fase di manutenzione.</translation>
     </message>
     <message>
         <source>Coin control mint not found</source>
@@ -3142,12 +3674,12 @@ Questa valuta non sarà più in cold-stake.</translation>
 %2</translation>
     </message>
     <message>
-        <source>zPIV transaction sent!</source>
-        <translation>Transazione zPIV inviata!</translation>
+        <source>zRPD transaction sent!</source>
+        <translation>Transazione zRPD inviata!</translation>
     </message>
     <message>
-        <source>Version 1 zPIV require a security level of 100 to successfully spend.</source>
-        <translation>La versione 1 zPIV richiede un livello di sicurezza di 100 per poter essere utilizzata con successo.</translation>
+        <source>Version 1 zRPD require a security level of 100 to successfully spend.</source>
+        <translation>La versione 1 zRPD richiede un livello di sicurezza di 100 per poter essere utilizzata con successo.</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -3170,6 +3702,10 @@ Alternativamente forgia denominazioni più alte (quindi sono necessari meno inpu
         <translation>Aggiornamento dell'etichetta dell'indirizzo non riuscito per l'indirizzo: %1</translation>
     </message>
     <message>
+        <source>Invalid change address</source>
+        <translation>Indirizzo di cambio non valido</translation>
+    </message>
+    <message>
         <source>Invalid URI</source>
         <translation>URI non valido</translation>
     </message>
@@ -3182,12 +3718,12 @@ Alternativamente forgia denominazioni più alte (quindi sono necessari meno inpu
         <translation>Tariffa personalizzata %1</translation>
     </message>
     <message>
-        <source>You don't have any PIV to select.</source>
-        <translation>Non hai alcun PIV da selezionare.</translation>
+        <source>You don't have any SAPP to select.</source>
+        <translation>Non hai alcun SAPP da selezionare.</translation>
     </message>
     <message>
-        <source>You don't have any zPIV in your balance to select.</source>
-        <translation>Non hai alcun zPIV nel tuo saldo da selezionare.</translation>
+        <source>You don't have any zRPD in your balance to select.</source>
+        <translation>Non hai alcun zRPD nel tuo saldo da selezionare.</translation>
     </message>
     <message>
         <source>No contacts available, you can go to the contacts screen and add some there!</source>
@@ -3237,12 +3773,22 @@ Alternativamente forgia denominazioni più alte (quindi sono necessari meno inpu
         <translation>Etichetta</translation>
     </message>
     <message>
+        <source>PushButton</source>
+        <translation>Premi il bottone</translation>
+    </message>
+    <message>
         <source>Backup Wallet </source>
         <translation>Backup portafoglio</translation>
     </message>
     <message>
         <source>Change Wallet Passphrase</source>
         <translation>Cambia frase d'accesso al wallet</translation>
+    </message>
+    <message>
+        <source>Keep your wallet safe doing regular backups, store your backup file externally.
+This option creates a wallet.dat file that can be used to recover your whole balance (transactions and addresses) from another device.</source>
+        <translation>Mantieni il tuo portafoglio sicuro eseguendo backup regolari, archivia il tuo file di backup esternamente.
+Questa opzione crea un file wallet.dat che può essere utilizzato per recuperare l'intero saldo (transazioni e indirizzi) da un altro dispositivo.</translation>
     </message>
     <message>
         <source>This will decrypt the whole wallet data and encrypt it back with the new passphrase.
@@ -3253,6 +3799,14 @@ Ricordati di scriverlo e conservarlo in modo sicuro, altrimenti potresti perdere
     <message>
         <source>Where</source>
         <translation>Dove</translation>
+    </message>
+    <message>
+        <source>Set a folder location</source>
+        <translation>Imposta un percorso per la cartella</translation>
+    </message>
+    <message>
+        <source>Backup</source>
+        <translation>Backup</translation>
     </message>
     <message>
         <source>Change Passphrase</source>
@@ -3346,12 +3900,16 @@ Ricordati di scriverlo e conservarlo in modo sicuro, altrimenti potresti perdere
         <translation>DECRITTOGRAFA LA CHIAVE</translation>
     </message>
     <message>
-        <source>Enter address</source>
-        <translation>Inserire indirizzo</translation>
+        <source>Enter a SAPP address</source>
+        <translation>Inserisci un indirizzo SAPP</translation>
     </message>
     <message>
-        <source>Enter passphrase</source>
-        <translation>Inserire parola d'ordine</translation>
+        <source>Add address</source>
+        <translation>Aggiungi indirizzo</translation>
+    </message>
+    <message>
+        <source>Write a message</source>
+        <translation>Scrivi un messaggio</translation>
     </message>
     <message>
         <source>Encrypted Key</source>
@@ -3433,7 +3991,11 @@ Ricordati di scriverlo e conservarlo in modo sicuro, altrimenti potresti perdere
         <source>Error adding key to the wallet</source>
         <translation>Errore nell'inserimento della chiave nel portafoglio</translation>
     </message>
-    </context>
+    <message>
+        <source>Successfully added pivate key to the wallet</source>
+        <translation>Chiave privata inserita correttamente nel portafoglio</translation>
+    </message>
+</context>
 <context>
     <name>SettingsConsoleWidget</name>
     <message>
@@ -3467,8 +4029,8 @@ Verify that you have installed a predetermined text editor.</source>
 Verifica di aver installato un editor di testo predeterminato.</translation>
     </message>
     <message>
-        <source>Welcome to the PIVX RPC console.</source>
-        <translation>Benvenuti nella console RPC di PIVX.</translation>
+        <source>Welcome to the SAPP RPC console.</source>
+        <translation>Benvenuti nella console RPC di SAPP.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
@@ -3492,6 +4054,10 @@ Verifica di aver installato un editor di testo predeterminato.</translation>
     <message>
         <source>TextLabel</source>
         <translation>Etichetta</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Premi il bottone</translation>
     </message>
     <message>
         <source>Reset to default</source>
@@ -3543,41 +4109,6 @@ Verifica di aver installato un editor di testo predeterminato.</translation>
     </message>
 </context>
 <context>
-    <name>SettingsExportCSV</name>
-    <message>
-        <source>Form</source>
-        <translation>Modulo</translation>
-    </message>
-    <message>
-        <source>Where</source>
-        <translation>Dove</translation>
-    </message>
-    <message>
-        <source>Export Address List</source>
-        <translation>Esporta elenco indirizzi</translation>
-    </message>
-    <message>
-        <source>Confirmed</source>
-        <translation>Confermata</translation>
-    </message>
-    <message>
-        <source>Date</source>
-        <translation>Data</translation>
-    </message>
-    <message>
-        <source>Type</source>
-        <translation>Tipo</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Etichetta</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Indirizzo</translation>
-    </message>
-    </context>
-<context>
     <name>SettingsFaqWidget</name>
     <message>
         <source>Form</source>
@@ -3592,72 +4123,80 @@ Verifica di aver installato un editor di testo predeterminato.</translation>
         <translation>Premi il bottone</translation>
     </message>
     <message>
-        <source>1) What is PIVX?</source>
-        <translation>1) Che cos'è PIVX?</translation>
+        <source>1) What is SAPP?</source>
+        <translation>1) Che cos'è SAPP?</translation>
     </message>
     <message>
-        <source>2) Why are my PIV unspendable?</source>
-        <translation>2) Perché i miei PIV non sono spendibili?</translation>
+        <source>2) Why are my SAPP unspendable?</source>
+        <translation>2) Perché i miei SAPP non sono spendibili?</translation>
     </message>
     <message>
-        <source>3) PIVX privacy? What is Zerocoin (zPIV)?</source>
-        <translation>3) Privacy PIVX? Che cos'è Zerocoin (zPIV)?</translation>
+        <source>3) SAPP privacy? What is Zerocoin (zRPD)?</source>
+        <translation>3) Privacy SAPP? Che cos'è Zerocoin (zRPD)?</translation>
     </message>
     <message>
-        <source>4) Why are my zPIV unspendable?</source>
-        <translation>4) Perché i miei zPIV non sono spendibili?</translation>
+        <source>4) Why are my zRPD unspendable?</source>
+        <translation>4) Perché i miei zRPD non sono spendibili?</translation>
     </message>
     <message>
         <source>5) Why did my wallet convert the balance
-    into zPIV automatically?</source>
+    into zRPD automatically?</source>
         <translation>5) Perché il mio portafoglio ha convertito il saldo
-  in zPIV automaticamente?</translation>
+  in zRPD automaticamente?</translation>
     </message>
     <message>
-        <source>6) How do I receive PIV/zPIV?</source>
-        <translation>6) Come ottenere PIV o zPIV?</translation>
+        <source>6) How do I receive SAPP/zRPD?</source>
+        <translation>6) Come ottenere SAPP o zRPD?</translation>
     </message>
     <message>
-        <source>7) How do I stake PIV/zPIV?</source>
-        <translation>7) Come posso fare lo stake di PIV / zPIV?</translation>
+        <source>7) How do I stake SAPP/zRPD?</source>
+        <translation>7) Come posso fare lo stake di SAPP / zRPD?</translation>
     </message>
     <message>
         <source>8) Where I should go if I need support?</source>
         <translation>8) Dove dovrei andare se ho bisogno di supporto?</translation>
     </message>
     <message>
+        <source>9) What is a Master Node?</source>
+        <translation>9) Cos'è un Masternode?</translation>
+    </message>
+    <message>
+        <source>10) What is a Master Node Controller?</source>
+        <translation>10) Cos'è un Masternode controller?</translation>
+    </message>
+    <message>
         <source>1</source>
         <translation>1</translation>
     </message>
     <message>
-        <source>What is PIVX?</source>
-        <translation>Che cos'è PIVX?</translation>
+        <source>What is SAPP?</source>
+        <translation>Che cos'è SAPP?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           PIVX is a form of digital online money using blockchain technology
+                           SAPP is a form of digital online money using blockchain technology
                            that can be easily transferred globally, instantly, and with near
-                           zero fees.  PIVX incorporates market leading security &amp;
+                           zero fees.  SAPP incorporates market leading security &amp;
                            privacy and is also the first PoS (Proof of Stake) Cryptocurrency
-                           to implement ZeroCoin(zPIV) and Zerocoin staking.
+                           to implement ZeroCoin(zRPD) and Zerocoin staking.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           PIVX utilizes a Proof of Stake (PoS) consensus system algorithm,
-                           allowing all owners of PIVX to participate in earning block rewards
+                           SAPP utilizes a Proof of Stake (PoS) consensus system algorithm,
+                           allowing all owners of SAPP to participate in earning block rewards
                            while securing the network with full node wallets, as well as to
                            run Masternodes to create and vote on proposals.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-PIVX è una forma di denaro online digitale che utilizza la tecnologia blockchain
+SAPP è una forma di denaro online digitale che utilizza la tecnologia blockchain
 che può essere facilmente trasferito a livello globale, istantaneamente e con quasi
-zero costi. PIVX incorpora le tecniche di sicurezza e privacy più avanzate del mercato
+zero costi. SAPP incorpora le tecniche di sicurezza e privacy più avanzate del mercato
 ed è anche la prima criptovaluta PoS (Proof of Stake)
-ad implementare lo staking di ZeroCoin (zPIV) e Zerocoin.
+ad implementare lo staking di ZeroCoin (zRPD) e Zerocoin.
 &lt;/p&gt;&lt;p align="justify"&gt;
-PIVX utilizza un algoritmo del sistema di consenso Proof of Stake (PoS),
-consentendo a tutti i proprietari di PIVX di partecipare alle ricompense dei blocchi
+SAPP utilizza un algoritmo del sistema di consenso Proof of Stake (PoS),
+consentendo a tutti i proprietari di SAPP di partecipare alle ricompense dei blocchi
 proteggendo la rete con portafogli full node, oltre a
 eseguire Masternode per creare e votare proposte.
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -3668,25 +4207,25 @@ eseguire Masternode per creare e votare proposte.
         <translation>2</translation>
     </message>
     <message>
-        <source>Why are my PIV unspendable?</source>
-        <translation>Perché i miei PIV non sono spendibili?</translation>
+        <source>Why are my SAPP unspendable?</source>
+        <translation>Perché i miei SAPP non sono spendibili?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Newly received PIVX requires 6 confirmations on the network
+                           Newly received SAPP requires 6 confirmations on the network
                            to become eligible for spending which can take ~6 minutes.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           Your PIVX wallet also needs to be completely synchronized
+                           Your SAPP wallet also needs to be completely synchronized
                            to see and spend balances on the network.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           PIVX appeni ricevuti richiedono 6 conferme sulla rete
+                           SAPP appeni ricevuti richiedono 6 conferme sulla rete
  per poter essere spendibili, cioè può richiedere ~6 minuti.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           Anche il tuo portafoglio PIVX deve essere completamente sincronizzato
+                           Anche il tuo portafoglio SAPP deve essere completamente sincronizzato
 per vedere e spendere i saldi sulla rete.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
@@ -3696,26 +4235,26 @@ per vedere e spendere i saldi sulla rete.
         <translation>3</translation>
     </message>
     <message>
-        <source>PIVX privacy? What is Zerocoin (zPIV)?</source>
-        <translation>PIVX privacy? What is Zerocoin (zPIV)?</translation>
+        <source>SAPP privacy? What is Zerocoin (zRPD)?</source>
+        <translation>SAPP privacy? What is Zerocoin (zRPD)?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zPIV is an optional privacy-centric method of coin mixing on the
-                           PIVX blockchain. Basically all your transactions cannot be tracked
+                           zRPD is an optional privacy-centric method of coin mixing on the
+                           SAPP blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
-                           &lt;a style='color: #b088ff' href='https://PIVX.org/zpiv/'&gt;
-                           "PIVX Zerocoin (zPIV) Technical Paper"&lt;/a&gt;.
+                           &lt;a style='color: #b088ff' href='https://SAPP.org/zpiv/'&gt;
+                           "SAPP Zerocoin (zRPD) Technical Paper"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zPIV è un metodo opzionale incentrato sulla privacy per la miscelazione delle valute sulla
-Blockchain PIVX. Essenzialmente, tutte le tue transazioni non potranno essere tracciate
+                           zRPD è un metodo opzionale incentrato sulla privacy per la miscelazione delle valute sulla
+Blockchain SAPP. Essenzialmente, tutte le tue transazioni non potranno essere tracciate
 su un block explorer. Puoi leggere di più sugli aspetti tecnici nel
-                           &lt;a style='color: #b088ff' href='https://PIVX.org/zpiv/'&gt;
-                           "PIVX Zerocoin (zPIV) Technical Paper"&lt;/a&gt;.
+                           &lt;a style='color: #b088ff' href='https://SAPP.org/zpiv/'&gt;
+                           "SAPP Zerocoin (zRPD) Technical Paper"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
     </message>
@@ -3724,20 +4263,20 @@ su un block explorer. Puoi leggere di più sugli aspetti tecnici nel
         <translation>4</translation>
     </message>
     <message>
-        <source>Why are my zPIV unspendable?</source>
-        <translation>Perché i miei zPIV non sono spendibili?</translation>
+        <source>Why are my zRPD unspendable?</source>
+        <translation>Perché i miei zRPD non sono spendibili?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           After minting, zPIV will require 20 confirmations as well as 1
+                           After minting, zRPD will require 20 confirmations as well as 1
                            additional mint of the same denomination on the network to
                            become eligible for spending.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Dopo la forgiatura, zPIV richiederà 20 conferme e 1
+                           Dopo la forgiatura, zRPD richiederà 20 conferme e 1
 forgiatura aggiuntiva della stessa denominazione sulla rete
 per diventare idoneo alla spesa.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -3748,41 +4287,41 @@ per diventare idoneo alla spesa.
         <translation>5</translation>
     </message>
     <message>
-        <source>Why did my wallet convert the balance into zPIV automatically?</source>
-        <translation>Perché il mio portafoglio ha convertito il saldo in zPIV automaticamente?</translation>
+        <source>Why did my wallet convert the balance into zRPD automatically?</source>
+        <translation>Perché il mio portafoglio ha convertito il saldo in zRPD automaticamente?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           By default the PIVX wallet will convert 10% of your entire PIV
-                           balance to zPIV to assist the network. If you do not wish to
-                           stake zPIV or take advantage of the privacy benefit it brings,
-                           you can disable the automatic minting in your PIVX wallet by
-                           going to Settings-&gt;Options and deselecting “Enable zPIV Automint”.
-                           If you are not making use of the PIVX-QT or GUI you can simply open
-                           your pivx.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
+                           By default the SAPP wallet will convert 10% of your entire SAPP
+                           balance to zRPD to assist the network. If you do not wish to
+                           stake zRPD or take advantage of the privacy benefit it brings,
+                           you can disable the automatic minting in your SAPP wallet by
+                           going to Settings-&gt;Options and deselecting “Enable zRPD Automint”.
+                           If you are not making use of the SAPP-QT or GUI you can simply open
+                           your sap.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           You can read more about zPIV in the
-                           &lt;a style='color: #b088ff' href='https://PIVX.org/zpiv/'&gt; "PIVX Zerocoin (zPIV) Technical Paper"&lt;/a&gt;.
-                           If you would like to keep and stake your zPIV, please read the "How do I stake"
+                           You can read more about zRPD in the
+                           &lt;a style='color: #b088ff' href='https://SAPP.org/zpiv/'&gt; "SAPP Zerocoin (zRPD) Technical Paper"&lt;/a&gt;.
+                           If you would like to keep and stake your zRPD, please read the "How do I stake"
                            section of the FAQ below.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-Come impostazione predefinita, il portafoglio PIVX convertirà il 10% dell'intero
-saldo PIV con zPIV, per supportare la rete. Se non desideri effettuare lo
-staking di zPIV o sfruttare il vantaggio sulla privacy che ne comporta,
-puoi disabilitare la forgiatura automatica nel tuo portafoglio PIVX
-andando su Impostazioni-&gt;Opzioni e deselezionando “Abilita zPIV Automint”.
-Se non si utilizzi PIVX-QT o la GUI, è possibile aprire semplicemente
-il tuo file pivx.conf e aggiungere&lt;i&gt;enablezeromint=0&lt;/i&gt; senza gli apostrofi
+Come impostazione predefinita, il portafoglio SAPP convertirà il 10% dell'intero
+saldo SAPP con zRPD, per supportare la rete. Se non desideri effettuare lo
+staking di zRPD o sfruttare il vantaggio sulla privacy che ne comporta,
+puoi disabilitare la forgiatura automatica nel tuo portafoglio SAPP
+andando su Impostazioni-&gt;Opzioni e deselezionando “Abilita zRPD Automint”.
+Se non si utilizzi SAPP-QT o la GUI, è possibile aprire semplicemente
+il tuo file sap.conf e aggiungere&lt;i&gt;enablezeromint=0&lt;/i&gt; senza gli apostrofi
 e far ripartire il portafoglio per disabilitare la forgiatura automatica.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           Puoi leggere di più su zPIV nel
-                           &lt;a style='color: #b088ff' href='https://PIVX.org/zpiv/'&gt; "PIVX Zerocoin (zPIV) Technical Paper"&lt;/a&gt;.
-                           Se desideri effettuare lo staking dei tuoi zPIV, leggi "Come faccio ad effettuare lo staking"
+                           Puoi leggere di più su zRPD nel
+                           &lt;a style='color: #b088ff' href='https://SAPP.org/zpiv/'&gt; "SAPP Zerocoin (zRPD) Technical Paper"&lt;/a&gt;.
+                           Se desideri effettuare lo staking dei tuoi zRPD, leggi "Come faccio ad effettuare lo staking"
 nella sezione delle FAQ di seguito.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
@@ -3792,24 +4331,24 @@ nella sezione delle FAQ di seguito.
         <translation>6</translation>
     </message>
     <message>
-        <source>How do I receive PIV/zPIV?</source>
-        <translation>Come ottenere PIV o zPIV?</translation>
+        <source>How do I receive SAPP/zRPD?</source>
+        <translation>Come ottenere SAPP o zRPD?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zPIV can be spent and sent to any PIVX address. The receiver will
-                           receive standard PIVX but the origin of the PIVX is anonymized by the zPIV Protocol.
+                           zRPD can be spent and sent to any SAPP address. The receiver will
+                           receive standard SAPP but the origin of the SAPP is anonymized by the zRPD Protocol.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           If you want more zPIV you will need to mint your balance in the “Privacy” tab.
+                           If you want more zRPD you will need to mint your balance in the “Privacy” tab.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zPIV può essere speso e inviato a qualsiasi indirizzo PIVX. Il ricevente
-otterrà PIVX standard ma l'origine dei PIVX è anonimizzata dal protocollo zPIV.
+                           zRPD può essere speso e inviato a qualsiasi indirizzo SAPP. Il ricevente
+otterrà SAPP standard ma l'origine dei SAPP è anonimizzata dal protocollo zRPD.
 &lt;/p&gt;&lt;p align="justify"&gt;
-Se desideri più zPIV, dovrai forgiare il saldo nella scheda "Privacy".
+Se desideri più zRPD, dovrai forgiare il saldo nella scheda "Privacy".
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
     </message>
@@ -3818,26 +4357,110 @@ Se desideri più zPIV, dovrai forgiare il saldo nella scheda "Privacy".
         <translation>7</translation>
     </message>
     <message>
-        <source>How do I stake PIV/zPIV?</source>
-        <translation>Come posso fare lo stake di PIV / zPIV?</translation>
+        <source>How do I stake SAPP/zRPD?</source>
+        <translation>Come posso fare lo stake di SAPP / zRPD?</translation>
     </message>
     <message>
-        <source>What is a Masternode?</source>
-        <translation>Cos'è un Masternode?</translation>
+        <source>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+                           To Stake SAPP:
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           &lt;ol&gt;&lt;li&gt;
+                           Make sure your wallet is completely synchronized and you are using the latest release.
+                           &lt;li&gt;
+                           You must have a balance of SAPP with a minimum of 101 confirmations.
+                           &lt;li&gt;
+                           Your wallet must stay online and be unlocked for anonymization and staking purposes.
+                           &lt;li&gt;
+                           Once all those steps are followed staking should be enabled.
+                           &lt;li&gt;
+                           You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state "Staking Enabled" to indicate it is staking.  Using the command line interface (pivx-cli); the command &lt;i&gt;getstakingstatus&lt;/i&gt; will confirm that staking is active.
+                           &lt;/li&gt;&lt;/ol&gt;
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           To Stake zRPD:
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           &lt;ol&gt;&lt;li&gt;
+                           Make sure your wallet is completely synchronized and you are using the latest release.
+                           &lt;li&gt;
+                           Your newly minted or existing zRPD balance must have a minimum of 200 confirmations.
+                           &lt;li&gt;
+                           Your wallet must stay online and be unlocked for anonymization and staking purposes.
+                           Staking should now be enabled.
+                           &lt;/li&gt;&lt;/ol&gt;
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </source>
+        <translation>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+                           Per fare lo Stake di SAPP:
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           &lt;ol&gt;&lt;li&gt;
+                           Assicurati che il tuo portafoglio sia completamente sincronizzato e stai utilizzando l'ultima versione.
+                           &lt;li&gt;
+                           Devi avere un saldo di SAPP con un minimo di 101 conferme.
+                           &lt;li&gt;
+                           Il tuo portafoglio deve rimanere online ed essere sbloccato per scopi di anonimizzazione e staking.
+                           &lt;li&gt;
+                           Una volta seguiti tutti questi passaggi, è necessario abilitare lo staking.
+                           &lt;li&gt;
+                           Puoi vedere lo stato dello staking nel portafoglio spostando il mouse sull'icona del pacchetto nella riga in alto a sinistra dell'interfaccia del portafoglio. Il pacchetto verrà illuminato e indicherà "Staking Enabled" per indicare che sta effettuando lo staking. Utilizzando l'interfaccia della riga di comando (pivx-cli); il comando&lt;i&gt;getstakingstatus&lt;/i&gt; confermerà che lo staking é attivo.
+                           &lt;/li&gt;&lt;/ol&gt;
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           Per fare Staking zRPD:
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           &lt;ol&gt;&lt;li&gt;
+                           Assicurati che il tuo portafoglio sia completamente sincronizzato e stai utilizzando l'ultima versione.
+                           &lt;li&gt;
+                           Il saldo zRPD appena forgiato o esistente deve avere un minimo di 200 conferme.
+                           &lt;li&gt;
+                           Il tuo portafoglio deve rimanere online ed essere sbloccato per scopi di anonimizzazione e staking.
+                           Lo Staking dovrebbe ora essere attivo.
+                           &lt;/li&gt;&lt;/ol&gt;
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </translation>
     </message>
     <message>
         <source>8</source>
         <translation>8</translation>
     </message>
     <message>
-        <source>9</source>
-        <translation>9</translation>
+        <source>Where I should go if I need support?</source>
+        <translation>Dove dovrei andare se ho bisogno di supporto?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           A masternode is a computer running a full node PIVX core wallet with a
-                           requirement of 10,000 PIV secured collateral to provide extra services
+                           We have support channels in most of our official chat groups, for example
+                           &lt;a style='color: #b088ff' href='https://Discord.SAPP.com'&gt;
+                           #support in our Discord&lt;/a&gt;.
+                           If you prefer to submit a ticket, One can be
+                           &lt;a style='color: #b088ff' href='https://SAPP.FreshDesk.com'&gt;
+                           our Freshdesk support site&lt;/a&gt;.
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </source>
+        <translation>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+                           Abbiamo canali di supporto nella maggior parte dei nostri gruppi di chat ufficiali, ad esempio
+                           &lt;a style='color: #b088ff' href='https://Discord.SAPP.com'&gt;
+                           #support nel nostro Discord&lt;/a&gt;.
+                           Se preferisci aprire un ticket, puoi farlo su
+                           &lt;a style='color: #b088ff' href='https://SAPP.FreshDesk.com'&gt;
+                           il nostro sito di supporto Freshdesk&lt;/a&gt;.
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </translation>
+    </message>
+    <message>
+        <source>9</source>
+        <translation>9</translation>
+    </message>
+    <message>
+        <source>What is a Master Node?</source>
+        <translation>Cos'è un Masternode?</translation>
+    </message>
+    <message>
+        <source>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+                           A masternode is a computer running a full node SAPP core wallet with a
+                           requirement of 10,000 SAPP secured collateral to provide extra services
                            to the network and in return, receive a portion of the block reward
                            regularly.  These services include:
                            &lt;/p&gt;&lt;p align="justify"&gt;
@@ -3859,17 +4482,17 @@ Se desideri più zPIV, dovrai forgiare il saldo nella scheda "Privacy".
                            Masternode Perks:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;Participate in PIVX Governance&lt;/li&gt;
+                           &lt;li&gt;Participate in SAPP Governance&lt;/li&gt;
                            &lt;li&gt;Earn Masternode Rewards&lt;/li&gt;
                            &lt;li&gt;Commodity option for future sale&lt;/li&gt;
-                           &lt;li&gt;Help secure the PIVX network&lt;/li&gt;
+                           &lt;li&gt;Help secure the SAPP network&lt;/li&gt;
                            &lt;/ul&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
 
                            Requirements:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;10,000 PIV per single Masternode instance&lt;/li&gt;
+                           &lt;li&gt;10,000 SAPP per single Masternode instance&lt;/li&gt;
                            &lt;li&gt;Must be stored in a core wallet&lt;/li&gt;
                            &lt;li&gt;Need dedicated IP address&lt;/li&gt;
                            &lt;li&gt;Masternode wallet to remain online&lt;/li&gt;
@@ -3878,8 +4501,8 @@ Se desideri più zPIV, dovrai forgiare il saldo nella scheda "Privacy".
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Un masternode è un computer che esegue un portafoglio core PIVX a nodo completo
-con un requisito di 10.000 PIV a garanzia per fornire servizi extra
+                           Un masternode è un computer che esegue un portafoglio core SAPP a nodo completo
+con un requisito di 10.000 SAPP a garanzia per fornire servizi extra
 alla rete e, in cambio, riceve una parte del premio del blocco
 regolarmente. Questi servizi includono:
                            &lt;/p&gt;&lt;p align="justify"&gt;
@@ -3901,17 +4524,17 @@ regolarmente. Questi servizi includono:
                            Vantaggi del Masternode:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;Partecipare alla Governance di PIVX &lt;/li&gt;
+                           &lt;li&gt;Partecipare alla Governance di SAPP &lt;/li&gt;
                            &lt;li&gt;Guadagnare i premi del Masternode&lt;/li&gt;
                            &lt;li&gt;Opzione di una commodity per vendita futura&lt;/li&gt;
-                           &lt;li&gt;Aiuta a proteggere la rete PIVX&lt;/li&gt;
+                           &lt;li&gt;Aiuta a proteggere la rete SAPP&lt;/li&gt;
                            &lt;/ul&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
 
                            Requisiti:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;10,000 PIV per singolo Masternode
+                           &lt;li&gt;10,000 SAPP per singolo Masternode
                            &lt;li&gt;Devono essere conservati in un portafoglio core&lt;/li&gt;
                            &lt;li&gt;Necessita un indirizzo IP dedicato&lt;/li&gt;
                            &lt;li&gt;Il portafoglio del Masternode deve rimanere online&lt;/li&gt;
@@ -3922,6 +4545,14 @@ regolarmente. Questi servizi includono:
     <message>
         <source>10</source>
         <translation>10</translation>
+    </message>
+    <message>
+        <source>What is a Master Node Controller?</source>
+        <translation>Cos'è un Masternode controller?</translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;A Masternode Controller wallet is where the 10,000 SAPP collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet/s and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;Un portafoglio Masternode Controller è dove i 10.000 SAPP collaterali possono risiedere durante l'impostazione del Masternode Controller remoto. È un portafoglio che può attivare uno o più portafogli masternode remoti e ti consente di mantenere offline le tue valute collaterali mentre il masternode remoto rimane online.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Frequently Asked Questions</source>
@@ -3943,6 +4574,10 @@ regolarmente. Questi servizi includono:
         <translation>Modulo</translation>
     </message>
     <message>
+        <source>TextLabel</source>
+        <translation>Etichetta</translation>
+    </message>
+    <message>
         <source>Network Monitor</source>
         <translation>Monitor rete</translation>
     </message>
@@ -3955,8 +4590,24 @@ regolarmente. Questi servizi includono:
         <translation>Generale</translation>
     </message>
     <message>
+        <source>Client Version: </source>
+        <translation>Versione del client:</translation>
+    </message>
+    <message>
         <source>User Agent:</source>
         <translation>User Agent:</translation>
+    </message>
+    <message>
+        <source>Using BerkeleyDB version:</source>
+        <translation>Utilizza versione BerkeleyDB:</translation>
+    </message>
+    <message>
+        <source>Datadir: </source>
+        <translation>Datadir: </translation>
+    </message>
+    <message>
+        <source>Startup Time:  </source>
+        <translation>Tempo di avvio:</translation>
     </message>
     <message>
         <source>Network</source>
@@ -3967,12 +4618,28 @@ regolarmente. Questi servizi includono:
         <translation>Nome:</translation>
     </message>
     <message>
+        <source>Number Connections:</source>
+        <translation>Numero delle connessioni:</translation>
+    </message>
+    <message>
         <source>Blockchain</source>
         <translation>Blockchain</translation>
     </message>
     <message>
+        <source>Current Number of Blocks:</source>
+        <translation>Numero attuale dei blocchi:</translation>
+    </message>
+    <message>
+        <source>Last Block Time:</source>
+        <translation>Ultimo blocco:</translation>
+    </message>
+    <message>
         <source>Memory Pool</source>
         <translation>Pool di memoria</translation>
+    </message>
+    <message>
+        <source>Current Number of Transactions:</source>
+        <translation>Numero attuale delle transazioni:</translation>
     </message>
     <message>
         <source>Main</source>
@@ -3995,8 +4662,8 @@ regolarmente. Questi servizi includono:
         <translation>Impossibile aprire la cartella dei backup</translation>
     </message>
     <message>
-        <source>Unable to open pivx.conf with default application</source>
-        <translation>Impossibile aprire pivx.conf con l'applicazione predefinita</translation>
+        <source>Unable to open sap.conf with default application</source>
+        <translation>Impossibile aprire sap.conf con l'applicazione predefinita</translation>
     </message>
     <message>
         <source>In:</source>
@@ -4054,8 +4721,8 @@ regolarmente. Questi servizi includono:
         <translation>Numero di script e processi di verifica</translation>
     </message>
     <message>
-        <source>Start PIVX on system login</source>
-        <translation>Avvia PIVX all'accesso al sistema</translation>
+        <source>Start SAPP on system login</source>
+        <translation>Avvia SAPP all'accesso al sistema</translation>
     </message>
     <message>
         <source>Minimize to the tray instead of the taskbar</source>
@@ -4111,6 +4778,14 @@ Sei sicuro?
         <translation>Nuovo destinatario per multisend</translation>
     </message>
     <message>
+        <source>Label (optional)</source>
+        <translation>Etichetta (opzionale)</translation>
+    </message>
+    <message>
+        <source>Enter a label to add this address in your address book</source>
+        <translation>Inserisci un'etichetta per questo indirizzo da aggiungere alla tua rubrica</translation>
+    </message>
+    <message>
         <source>Percentage</source>
         <translation>Percentuale</translation>
     </message>
@@ -4126,16 +4801,16 @@ Sei sicuro?
         <translation>Etichetta</translation>
     </message>
     <message>
-        <source>N/A</source>
-        <translation>N/D</translation>
+        <source>No active Master Node yet</source>
+        <translation>Ancora nessun MasterNode attivo</translation>
     </message>
     <message>
         <source>CheckBox</source>
         <translation>CheckBox</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other PIVX addresses after it matures.</source>
-        <translation>MultiSend ti consente di inviare automaticamente fino al 100% dei tuoi stake o ricompense masternode a un elenco di altri indirizzi PIVX dopo la loro maturazione.</translation>
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other SAPP addresses after it matures.</source>
+        <translation>MultiSend ti consente di inviare automaticamente fino al 100% dei tuoi stake o ricompense masternode a un elenco di altri indirizzi SAPP dopo la loro maturazione.</translation>
     </message>
     <message>
         <source>Active</source>
@@ -4233,12 +4908,24 @@ Seleziona una o entrambe le caselle di controllo per inviare gli stake e/o i pre
         <translation>Etichetta</translation>
     </message>
     <message>
+        <source>PushButton</source>
+        <translation>Premi il bottone</translation>
+    </message>
+    <message>
         <source>Clear</source>
         <translation>Cancella</translation>
     </message>
     <message>
         <source>Sign/Verify Message</source>
         <translation>Firma/Verifica messaggio</translation>
+    </message>
+    <message>
+        <source>Enter a SAPP address or contact label</source>
+        <translation>Inserisci un indirizzo SAPP o etichetta</translation>
+    </message>
+    <message>
+        <source>Add address</source>
+        <translation>Aggiungi indirizzo</translation>
     </message>
     <message>
         <source>Sign</source>
@@ -4257,8 +4944,8 @@ Seleziona una o entrambe le caselle di controllo per inviare gli stake e/o i pre
         <translation>Messaggio</translation>
     </message>
     <message>
-        <source>Enter address</source>
-        <translation>Inserire indirizzo</translation>
+        <source>Write a message</source>
+        <translation>Scrivi un messaggio</translation>
     </message>
     <message>
         <source>Signature</source>
@@ -4364,6 +5051,10 @@ Seleziona una o entrambe le caselle di controllo per inviare gli stake e/o i pre
         <translation>Non salvare le modifiche</translation>
     </message>
     <message>
+        <source>PushButton</source>
+        <translation>Premi il bottone</translation>
+    </message>
+    <message>
         <source>Wallet</source>
         <translation>Portafoglio</translation>
     </message>
@@ -4429,6 +5120,10 @@ Seleziona una o entrambe le caselle di controllo per inviare gli stake e/o i pre
     <message>
         <source>TextLabel</source>
         <translation>Etichetta</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Premi il bottone</translation>
     </message>
     <message>
         <source>Wallet Repair</source>
@@ -4522,6 +5217,10 @@ Seleziona una o entrambe le caselle di controllo per inviare gli stake e/o i pre
         <translation>Modulo</translation>
     </message>
     <message>
+        <source>TextLabel</source>
+        <translation>Etichetta</translation>
+    </message>
+    <message>
         <source>Wallet Data</source>
         <translation>Wallet Data</translation>
     </message>
@@ -4582,8 +5281,8 @@ Seleziona una o entrambe le caselle di controllo per inviare gli stake e/o i pre
         <translation>FAQ</translation>
     </message>
     <message>
-        <source>About PIVX</source>
-        <translation>Informazioni su PIVX</translation>
+        <source>About SAPP</source>
+        <translation>Informazioni su SAPP</translation>
     </message>
     <message>
         <source>Settings</source>
@@ -4649,8 +5348,8 @@ Sei sicuro?
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>PIVX Core is shutting down...</source>
-        <translation>PIVX Core si sta spegnendo...</translation>
+        <source>Sap is shutting down...</source>
+        <translation>Sap si sta spegnendo...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -4679,15 +5378,15 @@ Sei sicuro?
         <translation>Caricamento...</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Sap</source>
+        <translation>Sap</translation>
     </message>
 </context>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Sap</source>
+        <translation>Sap</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -4702,8 +5401,8 @@ Sei sicuro?
         <translation>Gli sviluppatori di Dash Core</translation>
     </message>
     <message>
-        <source>The PIVX Core developers</source>
-        <translation>Gli sviluppatori di PIVX Core</translation>
+        <source>The Sap developers</source>
+        <translation>Gli sviluppatori di Sap</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -4740,6 +5439,14 @@ Sei sicuro?
         <translation>Modulo</translation>
     </message>
     <message>
+        <source>480.0685 SAPP</source>
+        <translation>480.0685 SAPP</translation>
+    </message>
+    <message>
+        <source>1,000 zRPD</source>
+        <translation>1,000 zRPD</translation>
+    </message>
+    <message>
         <source>Available</source>
         <translation>Disponibile</translation>
     </message>
@@ -4748,8 +5455,24 @@ Sei sicuro?
         <translation>In attesa</translation>
     </message>
     <message>
+        <source>6.943 SAPP</source>
+        <translation>6.943 SAPP</translation>
+    </message>
+    <message>
         <source>Immature</source>
         <translation>Immaturo</translation>
+    </message>
+    <message>
+        <source>10 SAPP</source>
+        <translation>10 SAPP</translation>
+    </message>
+    <message>
+        <source>60 zRPD</source>
+        <translation>60 zRPD</translation>
+    </message>
+    <message>
+        <source>10 zRPD</source>
+        <translation>10 zRPD</translation>
     </message>
     <message>
         <source>Wallet Unlocked for staking</source>
@@ -4764,6 +5487,14 @@ Sei sicuro?
         <translation>Indirizzo copiato</translation>
     </message>
     <message>
+        <source>Automint enabled</source>
+        <translation>Forgiatura automatica abilitata</translation>
+    </message>
+    <message>
+        <source>Automint disabled</source>
+        <translation>Forgiatura automatica disabilitata</translation>
+    </message>
+    <message>
         <source>Staking active</source>
         <translation>Stacking attivo</translation>
     </message>
@@ -4771,27 +5502,35 @@ Sei sicuro?
         <source>Staking not active</source>
         <translation>Stacking non attivo</translation>
     </message>
+    <message numerus="yes">
+        <source>%n active connection(s)</source>
+        <translation><numerusform>%n connessioni attive</numerusform><numerusform>%n connessioni attive</numerusform></translation>
+    </message>
+    <message>
+        <source>Synchronized</source>
+        <translation>Sincronizzato</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n hour(s)</source>
+        <translation><numerusform>%n ora</numerusform><numerusform>%n ore</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <source>%n day(s)</source>
+        <translation><numerusform>%n giorno</numerusform><numerusform>%n giorni</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <source>%n week(s)</source>
+        <translation><numerusform>%n settimana</numerusform><numerusform>%n settimane</numerusform></translation>
+    </message>
     <message>
         <source>%1 and %2</source>
         <translation>%1 e %2</translation>
     </message>
-    <message>
-        <source>Backup Wallet</source>
-        <translation>Backup portafoglio</translation>
+    <message numerus="yes">
+        <source>%n year(s)</source>
+        <translation><numerusform>%n anno</numerusform><numerusform>%n anni</numerusform></translation>
     </message>
-    <message>
-        <source>Wallet Data (*.dat)</source>
-        <translation>Wallet Data (*.dat)</translation>
-    </message>
-    <message>
-        <source>Backup created</source>
-        <translation>Backup creato</translation>
-    </message>
-    <message>
-        <source>Backup creation failed</source>
-        <translation>Creazione del backup non riuscita</translation>
-    </message>
-    </context>
+</context>
 <context>
     <name>TrafficGraphWidget</name>
     <message>
@@ -4801,6 +5540,10 @@ Sei sicuro?
 </context>
 <context>
     <name>TransactionDesc</name>
+    <message numerus="yes">
+        <source>Open for %n more block(s)</source>
+        <translation><numerusform>Aperto per altro %n blocco</numerusform><numerusform>Aperto per altri %n blocchi</numerusform></translation>
+    </message>
     <message>
         <source>Open until %1</source>
         <translation>Apri fino a %1</translation>
@@ -4861,6 +5604,10 @@ Sei sicuro?
         <source>, has not been successfully broadcast yet</source>
         <translation>, non è stato ancora trasmesso con successo</translation>
     </message>
+    <message numerus="yes">
+        <source>, broadcast through %n node(s)</source>
+        <translation><numerusform>, trasmesso attraverso %n nodo</numerusform><numerusform>, trasmesso attraverso %n nodi</numerusform></translation>
+    </message>
     <message>
         <source>Date</source>
         <translation>Data</translation>
@@ -4900,6 +5647,10 @@ Sei sicuro?
     <message>
         <source>Credit</source>
         <translation>Credito</translation>
+    </message>
+    <message numerus="yes">
+        <source>matures in %n more block(s)</source>
+        <translation><numerusform>matura in %n blocco</numerusform><numerusform>matura in altri %n blocchi</numerusform></translation>
     </message>
     <message>
         <source>not accepted</source>
@@ -4984,6 +5735,10 @@ Sei sicuro?
         <source>Address</source>
         <translation>Indirizzo</translation>
     </message>
+    <message numerus="yes">
+        <source>Open for %n more block(s)</source>
+        <translation><numerusform>Aperto per %n blocco</numerusform><numerusform>Aperto per altri %n blocchi</numerusform></translation>
+    </message>
     <message>
         <source>Open until %1</source>
         <translation>Apri fino a %1</translation>
@@ -5029,40 +5784,64 @@ Sei sicuro?
         <translation>Ricevuto da</translation>
     </message>
     <message>
-        <source>PIV Stake</source>
-        <translation>PIV Stake</translation>
+        <source>Received via Obfuscation</source>
+        <translation>Ricevuto tramite offuscamento</translation>
     </message>
     <message>
-        <source>zPIV Stake</source>
-        <translation>zPIV Stake</translation>
+        <source>SAPP Stake</source>
+        <translation>SAPP Stake</translation>
     </message>
     <message>
-        <source>PIV Cold Stake</source>
-        <translation>PIV Cold Stake</translation>
+        <source>zRPD Stake</source>
+        <translation>zRPD Stake</translation>
+    </message>
+    <message>
+        <source>SAPP Cold Stake</source>
+        <translation>SAPP Cold Stake</translation>
+    </message>
+    <message>
+        <source>SAPP Stake in behalf of</source>
+        <translation>SAPP Stake per conto di</translation>
     </message>
     <message>
         <source>Stake delegation</source>
         <translation>Delega allo stake</translation>
     </message>
     <message>
-        <source>Converted PIV to zPIV</source>
-        <translation>Convertito PIV in zPIV</translation>
+        <source>Obfuscation Denominate</source>
+        <translation>Denominazione Offuscamento</translation>
     </message>
     <message>
-        <source>Spent zPIV</source>
-        <translation>zPIV spesi</translation>
+        <source>Obfuscation Collateral Payment</source>
+        <translation>Offuscamento del pagamento collaterale</translation>
     </message>
     <message>
-        <source>Received PIV from zPIV</source>
-        <translation>Ricevuto PIV da zPIV</translation>
+        <source>Obfuscation Make Collateral Inputs</source>
+        <translation>L'offuscamento produce input collaterali</translation>
     </message>
     <message>
-        <source>Minted Change as zPIV from zPIV Spend</source>
-        <translation>Forgiatura cambiata in zPIV da zPIV spesi</translation>
+        <source>Obfuscation Create Denominations</source>
+        <translation>L'offuscamento crea denominazioni</translation>
     </message>
     <message>
-        <source>Converted zPIV to PIV</source>
-        <translation>Convertito zPIV in PIV</translation>
+        <source>Converted SAPP to zRPD</source>
+        <translation>Convertito SAPP in zRPD</translation>
+    </message>
+    <message>
+        <source>Spent zRPD</source>
+        <translation>zRPD spesi</translation>
+    </message>
+    <message>
+        <source>Received SAPP from zRPD</source>
+        <translation>Ricevuto SAPP da zRPD</translation>
+    </message>
+    <message>
+        <source>Minted Change as zRPD from zRPD Spend</source>
+        <translation>Forgiatura cambiata in zRPD da zRPD spesi</translation>
+    </message>
+    <message>
+        <source>Converted zRPD to SAPP</source>
+        <translation>Convertito zRPD in SAPP</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -5079,6 +5858,10 @@ Sei sicuro?
     <message>
         <source>Mined</source>
         <translation>Minato</translation>
+    </message>
+    <message>
+        <source>Obfuscated</source>
+        <translation>Offuscato</translation>
     </message>
     <message>
         <source>watch-only</source>
@@ -5132,8 +5915,36 @@ Sei sicuro?
         <translation>Dettagli della transazione</translation>
     </message>
     <message>
+        <source>ID:</source>
+        <translation>ID:</translation>
+    </message>
+    <message>
+        <source>492526e7fa3c810b35016...40a5df85ee227ab00b1156994</source>
+        <translation>492526e7fa3c810b35016...40a5df85ee227ab00b1156994</translation>
+    </message>
+    <message>
+        <source>Sending to: </source>
+        <translation>Inviando a:</translation>
+    </message>
+    <message>
+        <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
+        <translation>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </translation>
+    </message>
+    <message>
         <source>Total amount</source>
         <translation>Importo totale</translation>
+    </message>
+    <message>
+        <source>2 SAPP</source>
+        <translation>2 SAPP</translation>
+    </message>
+    <message>
+        <source>Coin inputs:</source>
+        <translation>Coin inputs:</translation>
+    </message>
+    <message>
+        <source>1 Inputs</source>
+        <translation>1 Input</translation>
     </message>
     <message>
         <source>Previous Transaction</source>
@@ -5144,28 +5955,52 @@ Sei sicuro?
         <translation>Indice di uscita</translation>
     </message>
     <message>
+        <source>Fee:</source>
+        <translation>Commissione:</translation>
+    </message>
+    <message>
+        <source>0.0001 SAPP</source>
+        <translation>0.0001 SAPP</translation>
+    </message>
+    <message>
+        <source>Change address:</source>
+        <translation>Modifica indirizzo:</translation>
+    </message>
+    <message>
         <source>D7VFR83SQbie…BhjcWJtcfip5krte2Z </source>
         <translation>D7VFR83SQbie…BhjcWJtcfip5krte2Z </translation>
+    </message>
+    <message>
+        <source>Confirmations:</source>
+        <translation>Conferme:</translation>
+    </message>
+    <message>
+        <source>12</source>
+        <translation>12</translation>
+    </message>
+    <message>
+        <source>Size:</source>
+        <translation>Dimensione:</translation>
+    </message>
+    <message>
+        <source>2 kB</source>
+        <translation>2 kB</translation>
+    </message>
+    <message>
+        <source>Date:</source>
+        <translation>Data:</translation>
     </message>
     <message>
         <source>May 25, 2017</source>
         <translation>25 Maggio, 2017</translation>
     </message>
     <message>
+        <source>Status:</source>
+        <translation>Stato:</translation>
+    </message>
+    <message>
         <source>Spendable</source>
         <translation>Spendibile</translation>
-    </message>
-    <message>
-        <source>Confirmations</source>
-        <translation>Conferme</translation>
-    </message>
-    <message>
-        <source>Status</source>
-        <translation>Stato</translation>
-    </message>
-    <message>
-        <source>Date</source>
-        <translation>Data</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -5211,8 +6046,8 @@ Sei sicuro?
         <translation>18/05/18</translation>
     </message>
     <message>
-        <source>+0.000585 PIV</source>
-        <translation>+0.000585 PIV</translation>
+        <source>+0.000585 SAPP</source>
+        <translation>+0.000585 SAPP</translation>
     </message>
 </context>
 <context>
@@ -5222,12 +6057,43 @@ Sei sicuro?
         <translation>Invia Valuta</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 PIV.</source>
-        <translation>SwiftX non supporta ancora l'invio di valori così elevati. Le transazioni sono attualmente limitate a %1 PIV.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 SAPP.</source>
+        <translation>SwiftX non supporta ancora l'invio di valori così elevati. Le transazioni sono attualmente limitate a %1 SAPP.</translation>
+    </message>
+</context>
+<context>
+    <name>WalletPasswordDialog</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Finestra di dialogo</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>Etichetta</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Premi il bottone</translation>
+    </message>
+    <message>
+        <source>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</source>
+        <translation>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>CANCELLA</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
     <name>WelcomeContentWidget</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Finestra di dialogo</translation>
+    </message>
     <message>
         <source>1</source>
         <translation>1</translation>
@@ -5266,25 +6132,25 @@ Sei sicuro?
     </message>
     <message>
         <source>Welcome to
-PIVX Core Wallet</source>
+Sap Wallet</source>
         <translation>Benvenuto in
-Portafoglio PIVX Core.</translation>
+Portafoglio Sap.</translation>
     </message>
     <message>
-        <source>PIVX is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
-        <translation>PIVX è la tecnologia basata su blockchain Proof of Stake più innovativa al mondo. Sviluppato da un team di sviluppatori e crittografi di grande esperienza.</translation>
+        <source>SAPP is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
+        <translation>SAPP è la tecnologia basata su blockchain Proof of Stake più innovativa al mondo. Sviluppato da un team di sviluppatori e crittografi di grande esperienza.</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - PIVX believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Come dice il nostro manifesto: la privacy è un diritto umano di base non negoziabile; garantisce agli utenti la libertà di condividere i propri dati quando e con chi vuole - PIVX crede nell'auto sovranità.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - SAPP believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Come dice il nostro manifesto: la privacy è un diritto umano di base non negoziabile; garantisce agli utenti la libertà di condividere i propri dati quando e con chi vuole - SAPP crede nell'auto sovranità.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <source>The masternode network is PIVX's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
-        <translation>La rete masternode è la rete di secondo livello di PIVX sopra alla blockchain che consente al nostro DAO di fornire governance decentralizzata e tesoreria.</translation>
+        <source>The masternode network is SAPP's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
+        <translation>La rete masternode è la rete di secondo livello di SAPP sopra alla blockchain che consente al nostro DAO di fornire governance decentralizzata e tesoreria.</translation>
     </message>
     <message>
-        <source>How PIVX respects your privacy?</source>
-        <translation>In che modo PIVX rispetta la tua privacy?</translation>
+        <source>How SAPP respects your privacy?</source>
+        <translation>In che modo SAPP rispetta la tua privacy?</translation>
     </message>
     <message>
         <source>What is a Masternode?</source>
@@ -5298,8 +6164,8 @@ Portafoglio PIVX Core.</translation>
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zPIV to Spend</source>
-        <translation>Seleziona zPIV da spendere</translation>
+        <source>Select zRPD to Spend</source>
+        <translation>Seleziona zRPD da spendere</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -5334,8 +6200,8 @@ Portafoglio PIVX Core.</translation>
         <translation>Seleziona/Deseleziona tutto</translation>
     </message>
     <message>
-        <source>Select zPIV Denominations to Spend</source>
-        <translation>Seleziona le denominazioni zPIV da spendere</translation>
+        <source>Select zRPD Denominations to Spend</source>
+        <translation>Seleziona le denominazioni zRPD da spendere</translation>
     </message>
 </context>
 <context>
@@ -5361,8 +6227,12 @@ Portafoglio PIVX Core.</translation>
         <translation>Associa l'indirizzo indicato per ascoltare le connessioni JSON-RPC. Usa la notazione [host]:porta per IPv6. Questa opzione può essere specificata più volte (impostazione predefinita: associa a tutte le interfacce)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. PIVX Core is probably already running.</source>
-        <translation>Impossibile allocare la directory di dati %s. Probabilmente PIVX Core è già in esecuzione.</translation>
+        <source>Calculated accumulator checkpoint is not what is recorded by block index</source>
+        <translation>Il punto di controllo dell'accumulatore calcolato non è ciò che viene registrato dall'indice di blocco</translation>
+    </message>
+    <message>
+        <source>Cannot obtain a lock on data directory %s. Sap is probably already running.</source>
+        <translation>Impossibile allocare la directory di dati %s. Probabilmente Sap è già in esecuzione.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -5389,16 +6259,24 @@ Portafoglio PIVX Core.</translation>
         <translation>Distribuito sotto la licenza del software MIT, consultare il file di accompagnamento COPYING o &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
+        <source>Enable automatic Zerocoin minting from specific addresses (0-1, default: %u)</source>
+        <translation>Abilita forgiatura automatica Zerocoin da indirizzi specifici (0-1, impostazione predefinita: %u)</translation>
+    </message>
+    <message>
+        <source>Enable automatic wallet backups triggered after each zRPD minting (0-1, default: %u)</source>
+        <translation>Abilita i backup automatici del portafoglio attivati ​​dopo ogni forgiatura zRPD (0-1, impostazione predefinita: %u)</translation>
+    </message>
+    <message>
         <source>Enable cold staking functionality (0-1, default: %u). Disabled if staking=0</source>
         <translation>Abilita la funzionalità di cold staking (0-1, default: %u). Disabilitato se staking=0</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for PIV inputs (0-1, default: %u)</source>
-        <translation>Abilita o disabilita la funzionalità di cold staking per gli input PIV (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for SAPP inputs (0-1, default: %u)</source>
+        <translation>Abilita o disabilita la funzionalità di cold staking per gli input SAPP (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zPIV inputs (0-1, default: %u)</source>
-        <translation>Abilita o disabilita la funzionalità di cold staking per gli input zPIV (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for zRPD inputs (0-1, default: %u)</source>
+        <translation>Abilita o disabilita la funzionalità di cold staking per gli input zRPD (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -5433,12 +6311,12 @@ Portafoglio PIVX Core.</translation>
         <translation>Esegui comando quando cambia il blocco migliore (%s in cmd è sostituito dall'hash del blocco)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Le commissioni (in PIV/Kb) inferiori a questa sono considerate zero per l'inoltro (impostazione predefinita: %s)</translation>
+        <source>Fees (in SAPP/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Le commissioni (in SAPP/Kb) inferiori a questa sono considerate zero per l'inoltro (impostazione predefinita: %s)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Le commissioni (in PIV/Kb) inferiori a questa sono considerate zero per la creazione della transazione (impostazione predefinita: %s)</translation>
+        <source>Fees (in SAPP/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Le commissioni (in SAPP/Kb) inferiori a questa sono considerate zero per la creazione della transazione (impostazione predefinita: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -5493,6 +6371,10 @@ Portafoglio PIVX Core.</translation>
         <translation>Numero di secondi per impedire la riconnessione dei peer che si comportano male (impostazione predefinita: %u)</translation>
     </message>
     <message>
+        <source>Obfuscation uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
+        <translation>L'offuscamento utilizza importi esatti per inviare fondi, potrebbe essere necessario anonimizzare altre valute.</translation>
+    </message>
+    <message>
         <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
         <translation>Informazioni sul debug dell'output (impostazione predefinita: %u, fornitura &lt;category&gt; è opzionale)</translation>
     </message>
@@ -5515,6 +6397,10 @@ Portafoglio PIVX Core.</translation>
     <message>
         <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
         <translation>Imposta la dimensione massima delle transazioni ad alta priorità / a basso costo in byte (impostazione predefinita: %d)</translation>
+    </message>
+    <message>
+        <source>Set the number of included blocks to precompute per cycle. (minimum: %d) (maximum: %d) (default: %d)</source>
+        <translation>Imposta il numero di blocchi inclusi da pre-calcolare per ciclo. (minimo: %d) (massimo: %d) (valore predefinito: %d)</translation>
     </message>
     <message>
         <source>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</source>
@@ -5545,8 +6431,20 @@ Portafoglio PIVX Core.</translation>
         <translation>La lunghezza totale della stringa della versione di rete (%i) supera la lunghezza massima (%i). Ridurre il numero o la dimensione degli uacomments.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. PIVX Core is probably already running.</source>
-        <translation>Impossibile associare %s su questo computer. Probabilmente PIVX Core è già in esecuzione.</translation>
+        <source>Unable to bind to %s on this computer. Sap is probably already running.</source>
+        <translation>Impossibile associare %s su questo computer. Probabilmente Sap è già in esecuzione.</translation>
+    </message>
+    <message>
+        <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
+        <translation>Impossibile individuare abbastanza fondi denominati di offuscamento per questa transazione.</translation>
+    </message>
+    <message>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 SAPP.</source>
+        <translation>Impossibile individuare fondi non denominati di offuscamento sufficienti per questa transazione non uguali a 10000 SAPP.</translation>
+    </message>
+    <message>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 SAPP.</source>
+        <translation>Impossibile individuare fondi per questa transazione non uguali a 10000 SAPP.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5561,8 +6459,12 @@ Portafoglio PIVX Core.</translation>
         <translation>Attenzione: -paytxfee è impostato molto alto! Questa è la commissione di transazione che dovrai pagare se invii una transazione.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong PIVX Core will not work properly.</source>
-        <translation>Avvertenza: verificare che la data e l'ora del computer siano corrette! Se l'orologio è sbagliato, PIVX Core non funzionerà correttamente.</translation>
+        <source>Warning: Peers are being disconnected due time differences. Please check that your computer's date and time are correct! If your clock is wrong Sap will not work properly.</source>
+        <translation>Avvertenza: i peer vengono disconnessi a causa di differenze temporali. Verifica che la data e l'ora del tuo computer siano corrette! Se l'orologio è sbagliato, Sap non funzionerà correttamente.</translation>
+    </message>
+    <message>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Sap will not work properly.</source>
+        <translation>Avvertenza: verificare che la data e l'ora del computer siano corrette! Se l'orologio è sbagliato, Sap non funzionerà correttamente.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -5625,6 +6527,10 @@ Portafoglio PIVX Core.</translation>
         <translation>Aggiungere un nodo a cui connettersi e tentare di mantenere aperta la connessione</translation>
     </message>
     <message>
+        <source>Adding Wrapped Serials supply...</source>
+        <translation>Aggiunta la fornitura dei Wrapped Serials...</translation>
+    </message>
+    <message>
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
         <translation>Consenti ricerche DNS per -addnode, -seednode e -connect</translation>
     </message>
@@ -5649,8 +6555,28 @@ Portafoglio PIVX Core.</translation>
         <translation>Opzioni di creazione del blocco:</translation>
     </message>
     <message>
+        <source>Calculating missing accumulators...</source>
+        <translation>Calcolo degli accumulatori mancanti...</translation>
+    </message>
+    <message>
         <source>Cannot downgrade wallet</source>
         <translation>Impossibile eseguire il downgrade del portafoglio</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -bind address: '%s'</source>
+        <translation>Impossibile risolvere l'indirizzo -bind: '%s'</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -externalip address: '%s'</source>
+        <translation>Impossibile risolvere l'indirizzo -externalip: '%s'</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -whitebind address: '%s'</source>
+        <translation>Impossibile risolvere l'indirizzo -whitebind: '%s'</translation>
+    </message>
+    <message>
+        <source>CoinSpend: failed check</source>
+        <translation>CoinSpend: controllo fallito</translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>
@@ -5677,8 +6603,8 @@ Portafoglio PIVX Core.</translation>
         <translation>Copyright (C) 2014-%i Gli sviluppatori di Dash Core</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The PIVX Core Developers</source>
-        <translation>Copyright (C) 2015-%i Gli sviluppatori di PIVX Core</translation>
+        <source>Copyright (C) 2015-%i The Sap Developers</source>
+        <translation>Copyright (C) 2015-%i Gli sviluppatori di Sap</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -5687,6 +6613,10 @@ Portafoglio PIVX Core.</translation>
     <message>
         <source>Could not parse masternode.conf</source>
         <translation>Impossibile effettuare l'analisi del file masternode.conf</translation>
+    </message>
+    <message>
+        <source>Couldn't generate the accumulator witness</source>
+        <translation>Impossibile generare il testimone dell'accumulatore</translation>
     </message>
     <message>
         <source>Debugging/Testing options:</source>
@@ -5721,6 +6651,14 @@ Portafoglio PIVX Core.</translation>
         <translation>Caricamento completato</translation>
     </message>
     <message>
+        <source>Enable automatic Zerocoin minting (0-1, default: %u)</source>
+        <translation>Abilita forgiatura automatica Zerocoin (0-1, impostazione predefinita: %u)</translation>
+    </message>
+    <message>
+        <source>Enable precomputation of zRPD spends and stakes (0-1, default %u)</source>
+        <translation>Abilita pre-calcolo delle spese e degli stake di zRPD (0-1, valore predefinito %u)</translation>
+    </message>
+    <message>
         <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
         <translation>Abilita la pubblicazione dell'hash transazione (bloccata tramite SwiftX) in &lt;address&gt;</translation>
     </message>
@@ -5753,8 +6691,8 @@ Portafoglio PIVX Core.</translation>
         <translation>Errore durante il caricamento di wallet.dat: portafoglio corrotto </translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of PIVX Core</source>
-        <translation>Errore durante il caricamento di wallet.dat: il portafoglio richiede una versione più recente di PIVX Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Sap</source>
+        <translation>Errore durante il caricamento di wallet.dat: il portafoglio richiede una versione più recente di Sap</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -5789,6 +6727,10 @@ Portafoglio PIVX Core.</translation>
         <translation>Errore: portafoglio bloccato, impossibile creare la transazione!</translation>
     </message>
     <message>
+        <source>Failed to calculate accumulator checkpoint</source>
+        <translation>Calcolo del checkpoint dell'accumulatore non riuscito</translation>
+    </message>
+    <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>Impossibile ascoltare su qualsiasi porta. Usa -listen=0 se vuoi questo.</translation>
     </message>
@@ -5801,8 +6743,8 @@ Portafoglio PIVX Core.</translation>
         <translation>Lettura del blocco non riuscita</translation>
     </message>
     <message>
-        <source>Fee (in PIV/kB) to add to transactions you send (default: %s)</source>
-        <translation>Commissione (in PIV/kB) da aggiungere alle transazioni inviate (impostazione predefinita: %s)</translation>
+        <source>Fee (in SAPP/kB) to add to transactions you send (default: %s)</source>
+        <translation>Commissione (in SAPP/kB) da aggiungere alle transazioni inviate (impostazione predefinita: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -5841,8 +6783,8 @@ Portafoglio PIVX Core.</translation>
         <translation>Informazioni</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. PIVX Core is shutting down.</source>
-        <translation>Verifica dell'integrità dell'inizializzazione non riuscita. PIVX Core si sta spegnendo.</translation>
+        <source>Initialization sanity check failed. Sap is shutting down.</source>
+        <translation>Verifica dell'integrità dell'inizializzazione non riuscita. Sap si sta spegnendo.</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -5857,8 +6799,28 @@ Portafoglio PIVX Core.</translation>
         <translation>Invalid -proxy address or hostname: '%s'</translation>
     </message>
     <message>
+        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Importo invalido per -maxtxfee=&lt;amount&gt;: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -mintxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Importo invalido per -mintxfee=&lt;amount&gt;: '%s'</translation>
+    </message>
+    <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
         <translation>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (deve essere almeno %s)</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -reservebalance=&lt;amount&gt;</source>
+        <translation>Invalid amount for -reservebalance=&lt;amount&gt;</translation>
     </message>
     <message>
         <source>Invalid amount</source>
@@ -5877,12 +6839,24 @@ Portafoglio PIVX Core.</translation>
         <translation>Invalid port detected in masternode.conf</translation>
     </message>
     <message>
-        <source>Recalculating PIV supply...</source>
-        <translation>Ricalcolo della supply PIV...</translation>
+        <source>Percentage of automatically minted Zerocoin  (1-100, default: %u)</source>
+        <translation>Percentuale di Zerocoin forgiati automaticamente (1-100, valore predefinito: %u)</translation>
     </message>
     <message>
-        <source>Reindex the PIV and zPIV money supply statistics</source>
-        <translation>Reindicizza le statistiche sulla supply di PIV e zPIV</translation>
+        <source>Recalculating SAPP supply...</source>
+        <translation>Ricalcolo della supply SAPP...</translation>
+    </message>
+    <message>
+        <source>Recalculating minted ZPIV...</source>
+        <translation>Ricalcolo ZPIV forgiati...</translation>
+    </message>
+    <message>
+        <source>Recalculating spent ZPIV...</source>
+        <translation>Ricalcolo spese ZPIV...</translation>
+    </message>
+    <message>
+        <source>Reindex the SAPP and zRPD money supply statistics</source>
+        <translation>Reindicizza le statistiche sulla supply di SAPP e zRPD</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -5895,6 +6869,10 @@ Portafoglio PIVX Core.</translation>
     <message>
         <source>Selected coins value is less than payment target</source>
         <translation>Il valore delle coin selezionate è inferiore all'obiettivo di pagamento</translation>
+    </message>
+    <message>
+        <source>Support the zerocoin light node protocol (default: %u)</source>
+        <translation>Supporta il protocollo zerocoin light node (impostazione predefinita: %u)</translation>
     </message>
     <message>
         <source>SwiftX options:</source>
@@ -5921,8 +6899,8 @@ Portafoglio PIVX Core.</translation>
 </translation>
     </message>
     <message>
-        <source>Disable all PIVX specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>Disabilita tutte le funzionalità specifiche di PIVX (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</translation>
+        <source>Disable all SAPP specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Disabilita tutte le funzionalità specifiche di SAPP (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
@@ -5931,6 +6909,10 @@ Portafoglio PIVX Core.</translation>
     <message>
         <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation>Errore: la transazione è stata rifiutata! Ciò potrebbe accadere se alcune delle coin nel tuo portafoglio fossero già state spese, come se tu avessi usato una copia di wallet.dat e le coin fossero state spese nella copia ma non contrassegnate come spese qui.</translation>
+    </message>
+    <message>
+        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
+        <translation>Errore: questa transazione richiede una commissione di transazione di almeno %s a causa della sua quantità, complessità o utilizzo dei fondi ricevuti di recente!</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
@@ -5947,6 +6929,14 @@ Portafoglio PIVX Core.</translation>
     <message>
         <source>In rare cases, a spend with 7 coins exceeds our maximum allowable transaction size, please retry spend using 6 or less coins</source>
         <translation>In rari casi, una spesa con 7 coin supera la dimensione massima consentita della transazione, riprovare a utilizzare 6 o meno coin</translation>
+    </message>
+    <message>
+        <source>Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)</source>
+        <translation>Denominazione preferita per Zerocoin forgiato automaticamente (1/5/10/50/100/500/1000/5000), 0 per nessuna preferenza. impostazione predefinita: %u)</translation>
+    </message>
+    <message>
+        <source>Specify custom backup path to add a copy of any automatic zRPD backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Specificare il percorso di backup personalizzato per aggiungere una copia di qualsiasi backup zRPD automatico. Se impostato come dir, ogni backup genera un file con data e ora. Se impostato come file, riscriverà su quel file ogni backup. Se viene impostato anche il backuppath, verranno eseguiti 4 backup</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -5967,6 +6957,10 @@ Portafoglio PIVX Core.</translation>
     <message>
         <source>Cannot create public spend input</source>
         <translation>Impossibile creare input di spesa pubblica</translation>
+    </message>
+    <message>
+        <source>CoinSpend: Accumulator witness does not verify</source>
+        <translation>CoinSpend: il testimone dell'accumulatore non verifica</translation>
     </message>
     <message>
         <source>Display the stake modifier calculations in the debug.log file.</source>
@@ -6003,6 +6997,10 @@ Portafoglio PIVX Core.</translation>
     <message>
         <source>Error: No valid utxo!</source>
         <translation>Errore: Nessun utxo valido!</translation>
+    </message>
+    <message>
+        <source>Failed to create mint</source>
+        <translation>Errore durante la forgiatura</translation>
     </message>
     <message>
         <source>Failed to find Zerocoins in wallet.dat</source>
@@ -6067,6 +7065,10 @@ Portafoglio PIVX Core.</translation>
     <message>
         <source>Loading sporks...</source>
         <translation>Caricamento sporks...</translation>
+    </message>
+    <message>
+        <source>Loading wallet... (%3.2f %%)</source>
+        <translation>Caricamento portafoglio... (%3.2f %%)</translation>
     </message>
     <message>
         <source>Loading wallet...</source>
@@ -6153,6 +7155,10 @@ Portafoglio PIVX Core.</translation>
         <translation>Usa il filtro antispam di blocco (default: %u)</translation>
     </message>
     <message>
+        <source>could not get lock on cs_spendcache</source>
+        <translation>impossibile ottenere il blocco su cs_spendcache</translation>
+    </message>
+    <message>
         <source>isValid(): Invalid -proxy address or hostname: '%s'</source>
         <translation>isValid(): Invalid -proxy address or hostname: '%s'</translation>
     </message>
@@ -6193,6 +7199,14 @@ Portafoglio PIVX Core.</translation>
         <translation>Ricostruisce l'indice della blockchain dai file blk000??.dat corrente.</translation>
     </message>
     <message>
+        <source>Receive and display P2P network alerts (default: %u)</source>
+        <translation>Ricevi e visualizza avvisi di rete P2P (default: %u)</translation>
+    </message>
+    <message>
+        <source>Reindex the accumulator database</source>
+        <translation>Reindicizzazione del database accumulatore</translation>
+    </message>
+    <message>
         <source>Relay and mine data carrier transactions (default: %u)</source>
         <translation>Transazioni e operazioni di estrazione dati da mining (default: %u)</translation>
     </message>
@@ -6227,6 +7241,10 @@ Portafoglio PIVX Core.</translation>
     <message>
         <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
         <translation>Invia transazioni come transazioni a costo zero, se possibile (default: %u)</translation>
+    </message>
+    <message>
+        <source>Session timed out.</source>
+        <translation>La sessione è scaduta.</translation>
     </message>
     <message>
         <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
@@ -6271,6 +7289,10 @@ Portafoglio PIVX Core.</translation>
     <message>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
         <translation>Riduci il file debug.log all'avvio del client (impostazione predefinita: 1 se non -debug)</translation>
+    </message>
+    <message>
+        <source>Signing timed out.</source>
+        <translation>Firma scaduta.</translation>
     </message>
     <message>
         <source>Signing transaction failed</source>
@@ -6329,6 +7351,10 @@ Portafoglio PIVX Core.</translation>
         <translation>Sincronizzazione finita</translation>
     </message>
     <message>
+        <source>Synchronization pending...</source>
+        <translation>Sincronizzazione in attesa...</translation>
+    </message>
+    <message>
         <source>Synchronizing budgets...</source>
         <translation>Sincronizzazione budgets...</translation>
     </message>
@@ -6345,8 +7371,16 @@ Portafoglio PIVX Core.</translation>
         <translation>Sincronizzazione sporks...</translation>
     </message>
     <message>
-        <source>Syncing zPIV wallet...</source>
-        <translation>Sincronizzazione del portafoglio zPIV...</translation>
+        <source>Syncing zRPD wallet...</source>
+        <translation>Sincronizzazione del portafoglio zRPD...</translation>
+    </message>
+    <message>
+        <source>The coin spend has been used</source>
+        <translation>La coin spend è stata utilizzata</translation>
+    </message>
+    <message>
+        <source>The transaction did not verify</source>
+        <translation>La transazione non è stata verificata</translation>
     </message>
     <message>
         <source>This help message</source>
@@ -6453,8 +7487,8 @@ Portafoglio PIVX Core.</translation>
         <translation>Nome utente per connessioni JSON-RPC</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zPIV</source>
-        <translation>Il valore è inferiore alla denominazione più piccola disponibile (=1) di zPIV</translation>
+        <source>Value is below the smallest available denomination (= 1) of zRPD</source>
+        <translation>Il valore è inferiore alla denominazione più piccola disponibile (=1) di zRPD</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -6469,8 +7503,8 @@ Portafoglio PIVX Core.</translation>
         <translation>Il portafoglio %s risiede al di fuori della directory di dati %s</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart PIVX Core to complete</source>
-        <translation>Il portafoglio doveva essere riscritto: riavviare PIVX Core per completare</translation>
+        <source>Wallet needed to be rewritten: restart Sap to complete</source>
+        <translation>Il portafoglio doveva essere riscritto: riavviare Sap per completare</translation>
     </message>
     <message>
         <source>Wallet options:</source>

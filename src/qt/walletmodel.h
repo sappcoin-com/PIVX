@@ -105,7 +105,7 @@ public:
     }
 };
 
-/** Interface to PIVX wallet from Qt view code. */
+/** Interface to SAPP wallet from Qt view code. */
 class WalletModel : public QObject
 {
     Q_OBJECT
@@ -122,7 +122,7 @@ public:
         AmountExceedsBalance,
         AmountWithFeeExceedsBalance,
         DuplicateAddress,
-        TransactionCreationFailed,
+        TransactionCreationFailed, // Error returned when wallet is still locked
         TransactionCommitFailed,
         StakingOnlyUnlocked,
         InsaneFee,
@@ -178,7 +178,7 @@ public:
     void decryptKey(const std::vector<unsigned char>& crypted, const std::string& slt, const std::string& pwd, CKey& key);
     void emitBalanceChanged(); // Force update of UI-elements even when no values have changed
 
-    // return minted zPIV
+    // return minted zRPD
     bool getMint(const uint256& hashSerial, CZerocoinMint& mint);
 
     // Check address for validity
@@ -204,21 +204,21 @@ public:
 
     // Send coins to a list of recipients
     SendCoinsReturn sendCoins(WalletModelTransaction& transaction);
-    // Mint zPIV
+    // Mint zRPD
     bool mintCoins(CAmount value, CCoinControl* coinControl, std::string &strError);
 
     bool createZpivSpend(
             CWalletTx &wtxNew,
             std::vector<CZerocoinMint> &vMintsSelected,
             CZerocoinSpendReceipt &receipt,
-            std::list<std::pair<CTxDestination, CAmount>> outputs,
+            std::list<std::pair<CBitcoinAddress*, CAmount>> outputs,
             std::string changeAddress = ""
     );
 
     bool sendZpiv(
             std::vector<CZerocoinMint> &vMintsSelected,
             CZerocoinSpendReceipt &receipt,
-            std::list<std::pair<CTxDestination, CAmount>> outputs,
+            std::list<std::pair<CBitcoinAddress*, CAmount>> outputs,
             std::string changeAddress = ""
     );
 
@@ -273,12 +273,12 @@ public:
     bool getPubKey(const CKeyID& address, CPubKey& vchPubKeyOut) const;
     int64_t getCreationTime() const;
     int64_t getKeyCreationTime(const CPubKey& key);
-    int64_t getKeyCreationTime(const CTxDestination& address);
-    PairResult getNewAddress(Destination& ret, std::string label = "") const;
+    int64_t getKeyCreationTime(const CBitcoinAddress& address);
+    PairResult getNewAddress(CBitcoinAddress& ret, std::string label = "") const;
     /**
      * Return a new address used to receive for delegated cold stake purpose.
      */
-    PairResult getNewStakingAddress(Destination& ret, std::string label = "") const;
+    PairResult getNewStakingAddress(CBitcoinAddress& ret, std::string label = "") const;
 
     bool whitelistAddressFromColdStaking(const QString &addressStr);
     bool blacklistAddressFromColdStaking(const QString &address);
@@ -286,7 +286,7 @@ public:
     std::string getLabelForAddress(const CBitcoinAddress& address);
     bool getKeyId(const CBitcoinAddress& address, CKeyID& keyID);
 
-    bool isMine(const CTxDestination& address);
+    bool isMine(CBitcoinAddress address);
     bool isMine(const QString& addressStr);
     bool isUsed(CBitcoinAddress address);
     void getOutputs(const std::vector<COutPoint>& vOutpoints, std::vector<COutput>& vOutputs);
@@ -360,7 +360,7 @@ Q_SIGNALS:
     void requireUnlock();
 
     // Fired when a message should be reported to the user
-    void message(const QString& title, const QString& body, unsigned int style, bool* ret = nullptr);
+    void message(const QString& title, const QString& message, unsigned int style);
 
     // Coins sent: from wallet, to recipient, in (serialized) transaction:
     void coinsSent(CWallet* wallet, SendCoinsRecipient recipient, QByteArray transaction);

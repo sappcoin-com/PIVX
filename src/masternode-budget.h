@@ -298,7 +298,7 @@ public:
     template <typename Stream, typename Operation>
     inline void SerializationOp(Stream& s, Operation ser_action, int nType, int nVersion)
     {
-        READWRITE(*(CScriptBase*)(&payee));
+        READWRITE(payee);
         READWRITE(nAmount);
         READWRITE(nProposalHash);
     }
@@ -519,7 +519,7 @@ public:
         ss << nBlockStart;
         ss << nBlockEnd;
         ss << nAmount;
-        ss << std::vector<unsigned char>(address.begin(), address.end());
+        ss << address;
         uint256 h1 = ss.GetHash();
 
         return h1;
@@ -537,7 +537,7 @@ public:
         READWRITE(nBlockStart);
         READWRITE(nBlockEnd);
         READWRITE(nAmount);
-        READWRITE(*(CScriptBase*)(&address));
+        READWRITE(address);
         READWRITE(nTime);
         READWRITE(nFeeTXHash);
 
@@ -594,7 +594,7 @@ public:
         READWRITE(nBlockStart);
         READWRITE(nBlockEnd);
         READWRITE(nAmount);
-        READWRITE(*(CScriptBase*)(&address));
+        READWRITE(address);
         READWRITE(nFeeTXHash);
     }
 };

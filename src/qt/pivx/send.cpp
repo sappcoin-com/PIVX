@@ -41,38 +41,47 @@ SendWidget::SendWidget(PIVXGUI* parent) :
     fontLight.setWeight(QFont::Light);
 
     /* Title */
+    ui->labelTitle->setText(tr("Send"));
     setCssProperty(ui->labelTitle, "text-title-screen");
     ui->labelTitle->setFont(fontLight);
 
-    /* Button Group */
-    setCssProperty(ui->pushLeft, "btn-check-left");
-    ui->pushLeft->setChecked(true);
-    setCssProperty(ui->pushRight, "btn-check-right");
-
     /* Subtitle */
-    setCssProperty({ui->labelSubtitle1, ui->labelSubtitle2}, "text-subtitle");
+    ui->labelSubtitle1->setText(tr("You can transfer SAPP"));
+    setCssProperty(ui->labelSubtitle1, "text-subtitle");
 
-    /* Address - Amount*/
-    setCssProperty({ui->labelSubtitleAddress, ui->labelSubtitleAmount}, "text-title");
+    /* Address */
+    ui->labelSubtitleAddress->setText(tr("SAPP address or contact label"));
+    setCssProperty(ui->labelSubtitleAddress, "text-title");
+
+    /* Amount */
+    ui->labelSubtitleAmount->setText(tr("Amount"));
+    setCssProperty(ui->labelSubtitleAmount, "text-title");
 
     /* Buttons */
+    ui->pushButtonFee->setText(tr("Customize fee"));
     setCssBtnSecondary(ui->pushButtonFee);
+
+    ui->pushButtonClear->setText(tr("Clear all"));
     setCssProperty(ui->pushButtonClear, "btn-secundary-clear");
+
+    ui->pushButtonAddRecipient->setText(tr("Add recipient"));
     setCssProperty(ui->pushButtonAddRecipient, "btn-secundary-add");
+
     setCssBtnPrimary(ui->pushButtonSave);
+    ui->pushButtonReset->setText(tr("Reset to default"));
     setCssBtnSecondary(ui->pushButtonReset);
 
     // Coin control
-    ui->btnCoinControl->setTitleClassAndText("btn-title-grey", tr("Coin Control"));
-    ui->btnCoinControl->setSubTitleClassAndText("text-subtitle", tr("Select the source of the coins"));
+    ui->btnCoinControl->setTitleClassAndText("btn-title-grey", "Coin Control");
+    ui->btnCoinControl->setSubTitleClassAndText("text-subtitle", "Select the source of the coins.");
 
     // Change address option
-    ui->btnChangeAddress->setTitleClassAndText("btn-title-grey", tr("Change Address"));
-    ui->btnChangeAddress->setSubTitleClassAndText("text-subtitle", tr("Customize the change address"));
+    ui->btnChangeAddress->setTitleClassAndText("btn-title-grey", "Change Address");
+    ui->btnChangeAddress->setSubTitleClassAndText("text-subtitle", "Customize the change address.");
 
     // Uri
-    ui->btnUri->setTitleClassAndText("btn-title-grey", tr("Open URI"));
-    ui->btnUri->setSubTitleClassAndText("text-subtitle", tr("Parse a payment request"));
+    ui->btnUri->setTitleClassAndText("btn-title-grey", "Open URI");
+    ui->btnUri->setSubTitleClassAndText("text-subtitle", "Parse a payment request.");
 
     connect(ui->pushButtonFee, &QPushButton::clicked, this, &SendWidget::onChangeCustomFeeClicked);
     connect(ui->btnCoinControl, &OptionButton::clicked, this, &SendWidget::onCoinControlClicked);
@@ -81,16 +90,18 @@ SendWidget::SendWidget(PIVXGUI* parent) :
     connect(ui->pushButtonReset, &QPushButton::clicked, [this](){ onResetCustomOptions(true); });
     connect(ui->checkBoxDelegations, &QCheckBox::stateChanged, this, &SendWidget::onCheckBoxChanged);
 
-    setCssProperty(ui->coinWidget, "container-coin-type");
     setCssProperty(ui->labelLine, "container-divider");
 
-
     // Total Send
+    ui->labelTitleTotalSend->setText(tr("Total to send"));
     setCssProperty(ui->labelTitleTotalSend, "text-title");
+
+    ui->labelAmountSend->setText("0.00 SAPP");
     setCssProperty(ui->labelAmountSend, "text-body1");
 
     // Total Remaining
     setCssProperty(ui->labelTitleTotalRemaining, "text-title");
+
     setCssProperty(ui->labelAmountRemaining, "text-body1");
 
     // Icon Send
@@ -115,8 +126,6 @@ SendWidget::SendWidget(PIVXGUI* parent) :
     setCustomFeeSelected(false);
 
     // Connect
-    connect(ui->pushLeft, &QPushButton::clicked, [this](){onPIVSelected(true);});
-    connect(ui->pushRight,  &QPushButton::clicked, [this](){onPIVSelected(false);});
     connect(ui->pushButtonSave, &QPushButton::clicked, this, &SendWidget::onSendClicked);
     connect(ui->pushButtonAddRecipient, &QPushButton::clicked, this, &SendWidget::onAddEntryClicked);
     connect(ui->pushButtonClear, &QPushButton::clicked, [this](){clearAll(true);});
@@ -124,8 +133,8 @@ SendWidget::SendWidget(PIVXGUI* parent) :
 
 void SendWidget::refreshView()
 {
-    const bool isChecked = ui->pushLeft->isChecked();
-    ui->pushButtonSave->setText((isChecked ? tr("Send ") : tr("Send z")) + QString(CURRENCY_UNIT.c_str()));
+    const bool isChecked = true;
+    ui->pushButtonSave->setText(tr("Send SAPP"));
     ui->pushButtonAddRecipient->setVisible(isChecked);
     refreshAmounts();
 }
@@ -141,7 +150,7 @@ void SendWidget::refreshAmounts()
             total += amount;
     }
 
-    bool isZpiv = ui->pushRight->isChecked();
+    bool isZpiv = false;
     nDisplayUnit = walletModel->getOptionsModel()->getDisplayUnit();
 
     ui->labelAmountSend->setText(GUIUtil::formatBalance(total, nDisplayUnit, isZpiv));
@@ -153,9 +162,7 @@ void SendWidget::refreshAmounts()
         ui->labelTitleTotalRemaining->setText(tr("Total remaining from the selected UTXO"));
     } else {
         // Wallet's balance
-        totalAmount = (isZpiv ?
-                walletModel->getZerocoinBalance() :
-                walletModel->getBalance(nullptr, fDelegationsChecked)) - total;
+        totalAmount = (walletModel->getBalance(nullptr, fDelegationsChecked)) - total;
         ui->labelTitleTotalRemaining->setText(tr("Total remaining"));
     }
     ui->labelAmountRemaining->setText(
@@ -319,8 +326,8 @@ void SendWidget::setFocusOnLastEntry()
 void SendWidget::showHideCheckBoxDelegations()
 {
     // Show checkbox only when there is any available owned delegation,
-    // coincontrol is not selected, and we are trying to spend PIV (not zPIV)
-    const bool isZpiv = ui->pushRight->isChecked();
+    // coincontrol is not selected, and we are trying to spend SAPP (not zRPD)
+    const bool isZpiv = false;
     const bool isCControl = CoinControlDialog::coinControl->HasSelected();
     const bool hasDel = cachedDelegatedBalance > 0;
 
@@ -356,7 +363,7 @@ void SendWidget::onSendClicked()
         return;
     }
 
-    bool sendPiv = ui->pushLeft->isChecked();
+    bool sendPiv = true;
 
     WalletModel::UnlockContext ctx(walletModel->requestUnlock());
     if (!ctx.isValid()) {
@@ -433,94 +440,7 @@ bool SendWidget::send(QList<SendCoinsRecipient> recipients)
 
 bool SendWidget::sendZpiv(QList<SendCoinsRecipient> recipients)
 {
-    if (!walletModel || !walletModel->getOptionsModel())
-        return false;
-
-    if (sporkManager.IsSporkActive(SPORK_16_ZEROCOIN_MAINTENANCE_MODE)) {
-        Q_EMIT message(tr("Spend Zerocoin"), tr("zPIV is currently undergoing maintenance."), CClientUIInterface::MSG_ERROR);
-        return false;
-    }
-
-    std::list<std::pair<CTxDestination, CAmount>> outputs;
-    CAmount total = 0;
-    for (SendCoinsRecipient rec : recipients) {
-        total += rec.amount;
-        outputs.push_back(std::pair<CTxDestination, CAmount>(DecodeDestination(rec.address.toStdString()),rec.amount));
-    }
-
-    // use mints from zPIV selector if applicable
-    std::vector<CMintMeta> vMintsToFetch;
-    std::vector<CZerocoinMint> vMintsSelected;
-    if (!ZPivControlDialog::setSelectedMints.empty()) {
-        vMintsToFetch = ZPivControlDialog::GetSelectedMints();
-
-        for (auto& meta : vMintsToFetch) {
-            CZerocoinMint mint;
-            if (!walletModel->getMint(meta.hashSerial, mint)) {
-                inform(tr("Coin control mint not found"));
-                return false;
-            }
-            vMintsSelected.emplace_back(mint);
-        }
-    }
-
-    QString sendBody = outputs.size() == 1 ?
-            tr("Sending %1 to address %2\n")
-            .arg(BitcoinUnits::formatWithUnit(walletModel->getOptionsModel()->getDisplayUnit(), total, false, BitcoinUnits::separatorAlways))
-            .arg(recipients.first().address)
-            :
-           tr("Sending %1 to addresses:\n%2")
-           .arg(BitcoinUnits::formatWithUnit(walletModel->getOptionsModel()->getDisplayUnit(), total, false, BitcoinUnits::separatorAlways))
-           .arg(recipientsToString(recipients));
-
-    bool ret = false;
-    Q_EMIT message(
-            tr("Spend Zerocoin"),
-            sendBody,
-            CClientUIInterface::MSG_INFORMATION | CClientUIInterface::BTN_MASK | CClientUIInterface::MODAL,
-            &ret);
-
-    if (!ret) return false;
-
-    CZerocoinSpendReceipt receipt;
-
-    std::string changeAddress = "";
-    if (!boost::get<CNoDestination>(&CoinControlDialog::coinControl->destChange)) {
-        changeAddress = EncodeDestination(CoinControlDialog::coinControl->destChange);
-    } else {
-        changeAddress = walletModel->getAddressTableModel()->getAddressToShow().toStdString();
-    }
-
-    if (walletModel->sendZpiv(
-            vMintsSelected,
-            receipt,
-            outputs,
-            changeAddress
-    )
-            ) {
-        inform(tr("zPIV transaction sent!"));
-        ZPivControlDialog::setSelectedMints.clear();
-        clearAll(false);
-        return true;
-    } else {
-        QString body;
-        if (receipt.GetStatus() == ZPIV_SPEND_V1_SEC_LEVEL) {
-            body = tr("Version 1 zPIV require a security level of 100 to successfully spend.");
-        } else {
-            int nNeededSpends = receipt.GetNeededSpends(); // Number of spends we would need for this transaction
-            const int nMaxSpends = Params().GetConsensus().ZC_MaxSpendsPerTx; // Maximum possible spends for one zPIV transaction
-            if (nNeededSpends > nMaxSpends) {
-                body = tr("Too much inputs (") + QString::number(nNeededSpends, 10) +
-                       tr(") needed.\nMaximum allowed: ") + QString::number(nMaxSpends, 10);
-                body += tr(
-                        "\nEither mint higher denominations (so fewer inputs are needed) or reduce the amount to spend.");
-            } else {
-                body = QString::fromStdString(receipt.GetStatusMessage());
-            }
-        }
-        Q_EMIT message("zPIV transaction failed", body, CClientUIInterface::MSG_ERROR);
-        return false;
-    }
+    return false;
 }
 
 QString SendWidget::recipientsToString(QList<SendCoinsRecipient> recipients)
@@ -539,7 +459,7 @@ void SendWidget::updateEntryLabels(QList<SendCoinsRecipient> recipients)
         if (!label.isNull()) {
             QString labelOld = walletModel->getAddressTableModel()->labelForAddress(rec.address);
             if (label.compare(labelOld) != 0) {
-                CTxDestination dest = DecodeDestination(rec.address.toStdString());
+                CTxDestination dest = CBitcoinAddress(rec.address.toStdString()).Get();
                 if (!walletModel->updateAddressBookLabels(dest, label.toStdString(),
                                                           this->walletModel->isMine(dest) ?
                                                                   AddressBook::AddressBookPurpose::RECEIVE :
@@ -558,23 +478,29 @@ void SendWidget::updateEntryLabels(QList<SendCoinsRecipient> recipients)
 void SendWidget::onChangeAddressClicked()
 {
     showHideOp(true);
-    SendChangeAddressDialog* dialog = new SendChangeAddressDialog(window, walletModel);
+    SendChangeAddressDialog* dialog = new SendChangeAddressDialog(window);
     if (!boost::get<CNoDestination>(&CoinControlDialog::coinControl->destChange)) {
-        dialog->setAddress(QString::fromStdString(EncodeDestination(CoinControlDialog::coinControl->destChange)));
+        dialog->setAddress(QString::fromStdString(CBitcoinAddress(CoinControlDialog::coinControl->destChange).ToString()));
     }
     if (openDialogWithOpaqueBackgroundY(dialog, window, 3, 5)) {
-        CTxDestination dest = DecodeDestination(dialog->getAddress().toStdString());
-        // Ask if it's what the user really wants
-        if (!walletModel->isMine(dest) &&
-            !ask(tr("Warning!"), tr("The change address doesn't belong to this wallet.\n\nDo you want to continue?"))) {
-            return;
+        if (dialog->selected) {
+            QString ret;
+            if (dialog->getAddress(walletModel, &ret)) {
+                CBitcoinAddress address(ret.toStdString());
+
+                // Ask if it's what the user really wants
+                if (!walletModel->isMine(address) &&
+                    !ask(tr("Warning!"), tr("The change address doesn't belong to this wallet.\n\nDo you want to continue?"))) {
+                    return;
+                }
+                CoinControlDialog::coinControl->destChange = address.Get();
+                ui->btnChangeAddress->setActive(true);
+            } else {
+                inform(tr("Invalid change address"));
+                ui->btnChangeAddress->setActive(false);
+            }
         }
-        CoinControlDialog::coinControl->destChange = dest;
-        ui->btnChangeAddress->setActive(true);
     }
-    // check if changeAddress has been reset to NoDestination (or wasn't set at all)
-    if (boost::get<CNoDestination>(&CoinControlDialog::coinControl->destChange))
-        ui->btnChangeAddress->setActive(false);
     dialog->deleteLater();
 }
 
@@ -618,7 +544,8 @@ void SendWidget::onChangeCustomFeeClicked()
 {
     showHideOp(true);
     if (!customFeeDialog) {
-        customFeeDialog = new SendCustomFeeDialog(window, walletModel);
+        customFeeDialog = new SendCustomFeeDialog(window);
+        customFeeDialog->setWalletModel(walletModel);
     }
     if (openDialogWithOpaqueBackgroundY(customFeeDialog, window, 3, 5)) {
         const CAmount& nFeePerKb = customFeeDialog->getFeeRate().GetFeePerK();
@@ -628,30 +555,18 @@ void SendWidget::onChangeCustomFeeClicked()
 
 void SendWidget::onCoinControlClicked()
 {
-    if (isPIV) {
-        if (walletModel->getBalance() > 0) {
-            if (!coinControlDialog) {
-                coinControlDialog = new CoinControlDialog();
-                coinControlDialog->setModel(walletModel);
-            } else {
-                coinControlDialog->refreshDialog();
-            }
-            coinControlDialog->exec();
-            ui->btnCoinControl->setActive(CoinControlDialog::coinControl->HasSelected());
-            refreshAmounts();
+    if (walletModel->getBalance() > 0) {
+        if (!coinControlDialog) {
+            coinControlDialog = new CoinControlDialog();
+            coinControlDialog->setModel(walletModel);
         } else {
-            inform(tr("You don't have any %1 to select.").arg(CURRENCY_UNIT.c_str()));
+            coinControlDialog->refreshDialog();
         }
+        coinControlDialog->exec();
+        ui->btnCoinControl->setActive(CoinControlDialog::coinControl->HasSelected());
+        refreshAmounts();
     } else {
-        if (walletModel->getZerocoinBalance() > 0) {
-            ZPivControlDialog *zPivControl = new ZPivControlDialog(this);
-            zPivControl->setModel(walletModel);
-            zPivControl->exec();
-            ui->btnCoinControl->setActive(!ZPivControlDialog::setSelectedMints.empty());
-            zPivControl->deleteLater();
-        } else {
-            inform(tr("You don't have any zPIV in your balance to select."));
-        }
+        inform(tr("You don't have any SAPP to select."));
     }
 }
 
@@ -702,8 +617,7 @@ void SendWidget::onContactsClicked(SendMultiRow* entry)
         menuContacts->setWalletModel(walletModel, AddressTableModel::Send);
         connect(menuContacts, &ContactsDropdown::contactSelected, [this](QString address, QString label) {
             if (focusedEntry) {
-                if (label != "(no label)")
-                    focusedEntry->setLabel(label);
+                focusedEntry->setLabel(label);
                 focusedEntry->setAddress(address);
             }
         });
@@ -769,7 +683,7 @@ void SendWidget::onContactMultiClicked()
             inform(tr("Invalid address"));
             return;
         }
-        CTxDestination pivAdd = DecodeDestination(address.toStdString());
+        CBitcoinAddress pivAdd = CBitcoinAddress(address.toStdString());
         if (walletModel->isMine(pivAdd)) {
             inform(tr("Cannot store your own address as contact"));
             return;
@@ -790,7 +704,7 @@ void SendWidget::onContactMultiClicked()
             if (label == dialog->getLabel()) {
                 return;
             }
-            if (walletModel->updateAddressBookLabels(pivAdd, dialog->getLabel().toStdString(),
+            if (walletModel->updateAddressBookLabels(pivAdd.Get(), dialog->getLabel().toStdString(),
                     AddressBook::AddressBookPurpose::SEND)) {
                 inform(tr("New Contact Stored"));
             } else {

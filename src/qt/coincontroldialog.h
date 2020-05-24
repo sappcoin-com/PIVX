@@ -67,7 +67,6 @@ private:
     int sortColumn;
     Qt::SortOrder sortOrder;
     bool fMultisigEnabled;
-    bool fSelectAllToggled{true};     // false when pushButtonSelectAll text is "Unselect All"
 
     QMenu* contextMenu;
     QTreeWidgetItem* contextMenuItem;

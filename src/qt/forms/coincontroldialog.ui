@@ -97,8 +97,11 @@
             <height>40</height>
            </size>
           </property>
+          <property name="styleSheet">
+           <string notr="true">padding-left:30px;</string>
+          </property>
           <property name="text">
-           <string>Select PIV Outputs to Spend</string>
+           <string>Select SAPP Outputs to Spend</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignCenter</set>
@@ -120,6 +123,25 @@
            </size>
           </property>
          </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnEsc">
+          <property name="minimumSize">
+           <size>
+            <width>24</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>24</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
         </item>
        </layout>
       </item>
@@ -144,7 +166,7 @@
            <item>
             <widget class="QLabel" name="labelCoinControlAmount">
              <property name="text">
-              <string>0.00 PIV</string>
+              <string>0.00 SAPP</string>
              </property>
             </widget>
            </item>
@@ -268,7 +290,7 @@ padding-right:4px;</string>
            <item>
             <widget class="QLabel" name="labelCoinControlFee">
              <property name="text">
-              <string>0.00 PIV</string>
+              <string>0.00 SAPP</string>
              </property>
             </widget>
            </item>
@@ -729,7 +751,7 @@ padding-right:4px;</string>
            <item>
             <widget class="QLabel" name="labelCoinControlAfterFee">
              <property name="text">
-              <string>0.00 PIV</string>
+              <string>0.00 SAPP</string>
              </property>
             </widget>
            </item>

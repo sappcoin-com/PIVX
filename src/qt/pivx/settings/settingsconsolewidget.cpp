@@ -1,4 +1,4 @@
-// Copyright (c) 2019-2020 The PIVX developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -250,6 +250,7 @@ SettingsConsoleWidget::SettingsConsoleWidget(PIVXGUI* _window, QWidget *parent) 
     ui->left->setContentsMargins(10,10,10,10);
 
     // Title
+    ui->labelTitle->setText(tr("Console"));
     setCssTitleScreen(ui->labelTitle);
 
     // Console container
@@ -262,14 +263,17 @@ SettingsConsoleWidget::SettingsConsoleWidget(PIVXGUI* _window, QWidget *parent) 
 
     // Buttons
     ui->pushButton->setProperty("cssClass", "ic-arrow");
+    ui->pushButtonCommandOptions->setText(tr("Command Line Options "));
+    ui->pushButtonOpenDebug->setText(tr("Open Debug File"));
     setCssBtnSecondary(ui->pushButtonOpenDebug);
     setCssBtnSecondary(ui->pushButtonClear);
     setCssBtnSecondary(ui->pushButtonCommandOptions);
 
     setShadow(ui->pushButtonClear);
+    ui->pushButtonClear->setToolTip(tr("Clear history"));
     connect(ui->pushButtonClear, &QPushButton::clicked, [this]{ clear(false); });
     connect(ui->pushButtonOpenDebug, &QPushButton::clicked, [this](){
-        if (!GUIUtil::openDebugLogfile()) {
+        if(!GUIUtil::openDebugLogfile()){
             inform(tr("Cannot open debug file.\nVerify that you have installed a predetermined text editor."));
         }
     });
@@ -329,7 +333,7 @@ bool SettingsConsoleWidget::eventFilter(QObject* obj, QEvent* event)
             case Qt::Key_Return:
             case Qt::Key_Enter:
                 // forward these events to lineEdit
-                if (obj == autoCompleter->popup()) {
+                if(obj == autoCompleter->popup()) {
                     QApplication::postEvent(ui->lineEdit, new QKeyEvent(*keyevt));
                     return true;
                 }
@@ -349,8 +353,7 @@ bool SettingsConsoleWidget::eventFilter(QObject* obj, QEvent* event)
     return QWidget::eventFilter(obj, event);
 }
 
-void SettingsConsoleWidget::loadClientModel()
-{
+void SettingsConsoleWidget::loadClientModel() {
     if (clientModel){
 
         //Setup autocomplete and attach it
@@ -388,8 +391,7 @@ static QString categoryClass(int category)
     }
 }
 
-void SettingsConsoleWidget::clear(bool clearHistory)
-{
+void SettingsConsoleWidget::clear(bool clearHistory){
     ui->messagesWidget->clear();
     if (clearHistory) {
         history.clear();
@@ -416,7 +418,7 @@ void SettingsConsoleWidget::clear(bool clearHistory)
     QString clsKey = "Ctrl-L";
 #endif
 
-    message(CMD_REPLY, (tr("Welcome to the PIVX RPC console.") + "<br>" +
+    message(CMD_REPLY, (tr("Welcome to the SAPP RPC console.") + "<br>" +
                         tr("Use up and down arrows to navigate history, and %1 to clear screen.").arg("<b>"+clsKey+"</b>") + "<br>" +
                         tr("Type <b>help</b> for an overview of available commands.") +
                         "<br><span class=\"secwarning\"><br>" +
@@ -533,8 +535,7 @@ void SettingsConsoleWidget::changeTheme(bool isLightTheme, QString &theme)
     updateStyle(ui->messagesWidget);
 }
 
-void SettingsConsoleWidget::onCommandsClicked()
-{
+void SettingsConsoleWidget::onCommandsClicked() {
     if (!clientModel)
         return;
 

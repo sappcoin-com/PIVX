@@ -1,17 +1,15 @@
-// Copyright (c) 2019-2020 The PIVX developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "qt/pivx/settings/settingsinformationwidget.h"
 #include "qt/pivx/settings/forms/ui_settingsinformationwidget.h"
-
 #include "clientmodel.h"
 #include "chainparams.h"
 #include "db.h"
 #include "util.h"
 #include "guiutil.h"
 #include "qt/pivx/qtutils.h"
-
 #include <QDir>
 
 SettingsInformationWidget::SettingsInformationWidget(PIVXGUI* _window,QWidget *parent) :
@@ -28,7 +26,18 @@ SettingsInformationWidget::SettingsInformationWidget(PIVXGUI* _window,QWidget *p
     setCssProperty({ui->layoutOptions1, ui->layoutOptions2, ui->layoutOptions3}, "container-options");
 
     // Title
+    ui->labelTitle->setText(tr("Information"));
     setCssTitleScreen(ui->labelTitle);
+
+    ui->labelTitleGeneral->setText(tr("General"));
+    ui->labelTitleClient->setText(tr("Client Version: "));
+    ui->labelTitleAgent->setText(tr("User Agent:"));
+    ui->labelTitleBerkeley->setText(tr("BerkeleyDB version:"));
+    ui->labelTitleDataDir->setText(tr("Datadir: "));
+    ui->labelTitleTime->setText(tr("Startup time:  "));
+    ui->labelTitleNetwork->setText(tr("Network"));
+    ui->labelTitleName->setText(tr("Name:"));
+    ui->labelTitleConnections->setText(tr("Connections:"));
 
     setCssProperty({
         ui->labelTitleDataDir,
@@ -38,10 +47,8 @@ SettingsInformationWidget::SettingsInformationWidget(PIVXGUI* _window,QWidget *p
         ui->labelTitleTime,
         ui->labelTitleName,
         ui->labelTitleConnections,
-        ui->labelTitleMasternodes,
         ui->labelTitleBlockNumber,
         ui->labelTitleBlockTime,
-        ui->labelTitleBlockHash,
         ui->labelTitleNumberTransactions,
         ui->labelInfoNumberTransactions,
         ui->labelInfoClient,
@@ -50,7 +57,6 @@ SettingsInformationWidget::SettingsInformationWidget(PIVXGUI* _window,QWidget *p
         ui->labelInfoDataDir,
         ui->labelInfoTime,
         ui->labelInfoConnections,
-        ui->labelInfoMasternodes,
         ui->labelInfoBlockNumber
         }, "text-main-settings");
 
@@ -62,25 +68,33 @@ SettingsInformationWidget::SettingsInformationWidget(PIVXGUI* _window,QWidget *p
 
     },"text-title");
 
-    // TODO: Mempool section is not currently implemented and instead, hidden for now
+    ui->labelTitleBlockchain->setText(tr("Blockchain"));
+    ui->labelTitleBlockNumber->setText(tr("Current number of blocks:"));
+    ui->labelTitleBlockTime->setText(tr("Last block time:"));
+
+    ui->labelTitleMemory->setText(tr("Memory Pool"));
     ui->labelTitleMemory->setVisible(false);
+
+    ui->labelTitleNumberTransactions->setText(tr("Current number of transactions:"));
     ui->labelTitleNumberTransactions->setVisible(false);
+
     ui->labelInfoNumberTransactions->setText("0");
     ui->labelInfoNumberTransactions->setVisible(false);
 
     // Information Network
     ui->labelInfoName->setText(tr("Main"));
     ui->labelInfoName->setProperty("cssClass", "text-main-settings");
-    ui->labelInfoConnections->setText("0 (In: 0 / Out: 0)");
-    ui->labelInfoMasternodes->setText("Total: 0 (IPv4: 0 / IPv6: 0 / Tor: 0 / Unknown: 0");
+    ui->labelInfoConnections->setText("0 (In: 0 / Out:0)");
 
     // Information Blockchain
     ui->labelInfoBlockNumber->setText("0");
     ui->labelInfoBlockTime->setText("Sept 6, 2018. Thursday, 8:21:49 PM");
     ui->labelInfoBlockTime->setProperty("cssClass", "text-main-grey");
-    ui->labelInfoBlockHash->setProperty("cssClass", "text-main-hash");
 
     // Buttons
+    ui->pushButtonFile->setText(tr("Wallet Conf"));
+    ui->pushButtonNetworkMonitor->setText(tr("Network Monitor"));
+    ui->pushButtonBackups->setText(tr("Backups"));
     setCssBtnSecondary(ui->pushButtonBackups);
     setCssBtnSecondary(ui->pushButtonFile);
     setCssBtnSecondary(ui->pushButtonNetworkMonitor);
@@ -100,14 +114,13 @@ SettingsInformationWidget::SettingsInformationWidget(PIVXGUI* _window,QWidget *p
     });
     connect(ui->pushButtonFile, &QPushButton::clicked, [this](){
         if (!GUIUtil::openConfigfile())
-            inform(tr("Unable to open pivx.conf with default application"));
+            inform(tr("Unable to open sap.conf with default application"));
     });
     connect(ui->pushButtonNetworkMonitor, &QPushButton::clicked, this, &SettingsInformationWidget::openNetworkMonitor);
 }
 
 
-void SettingsInformationWidget::loadClientModel()
-{
+void SettingsInformationWidget::loadClientModel(){
     if (clientModel && clientModel->getPeerTableModel() && clientModel->getBanTableModel()) {
         // Provide initial values
         ui->labelInfoClient->setText(clientModel->formatFullVersion());
@@ -120,13 +133,10 @@ void SettingsInformationWidget::loadClientModel()
 
         setNumBlocks(clientModel->getNumBlocks());
         connect(clientModel, &ClientModel::numBlocksChanged, this, &SettingsInformationWidget::setNumBlocks);
-
-        connect(clientModel, &ClientModel::strMasternodesChanged, this, &SettingsInformationWidget::setMasternodeCount);
     }
 }
 
-void SettingsInformationWidget::setNumConnections(int count)
-{
+void SettingsInformationWidget::setNumConnections(int count){
     if (!clientModel)
         return;
 
@@ -137,30 +147,20 @@ void SettingsInformationWidget::setNumConnections(int count)
     ui->labelInfoConnections->setText(connections);
 }
 
-void SettingsInformationWidget::setNumBlocks(int count)
-{
+void SettingsInformationWidget::setNumBlocks(int count){
     ui->labelInfoBlockNumber->setText(QString::number(count));
-    if (clientModel) {
+    if (clientModel)
         ui->labelInfoBlockTime->setText(clientModel->getLastBlockDate().toString());
-        ui->labelInfoBlockHash->setText(clientModel->getLastBlockHash());
-    }
 }
 
-void SettingsInformationWidget::setMasternodeCount(const QString& strMasternodes)
-{
-    ui->labelInfoMasternodes->setText(strMasternodes);
-}
-
-void SettingsInformationWidget::openNetworkMonitor()
-{
-    if (!rpcConsole) {
+void SettingsInformationWidget::openNetworkMonitor(){
+    if(!rpcConsole){
         rpcConsole = new RPCConsole(0);
         rpcConsole->setClientModel(clientModel);
     }
     rpcConsole->showNetwork();
 }
 
-SettingsInformationWidget::~SettingsInformationWidget()
-{
+SettingsInformationWidget::~SettingsInformationWidget(){
     delete ui;
 }

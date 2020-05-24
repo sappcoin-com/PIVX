@@ -2,100 +2,46 @@
 <context>
     <name>AddNewAddressDialog</name>
     <message>
-        <source>Dialog</source>
-        <translation>Dijaloški okvir</translation>
-    </message>
-    <message>
-        <source>My Address</source>
-        <translation>Moja adresa</translation>
-    </message>
-    <message>
         <source>Address</source>
         <translation>Adresa</translation>
     </message>
-    <message>
-        <source>PushButton</source>
-        <translation>TipkaZaPritisak</translation>
-    </message>
-    <message>
-        <source>CANCEL</source>
-        <translation>PONIŠTI</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation>OK</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>AddNewContactDialog</name>
     <message>
-        <source>Dialog</source>
-        <translation>Dijaloški okvir</translation>
-    </message>
-    <message>
         <source>TextLabel</source>
-        <translation>TekstOznake</translation>
+        <translation>TextLabel</translation>
     </message>
-    <message>
-        <source>CANCEL</source>
-        <translation>PONIŠTI</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation>OK</translation>
-    </message>
-    <message>
-        <source>Edit Contact</source>
-        <translation>Uredi kontakt</translation>
-    </message>
-    <message>
-        <source>Set a label for the selected address</source>
-        <translation>Postavite oznaku za odabranu adresu</translation>
-    </message>
-    <message>
-        <source>Enter a name for the address (e.g Exchange)</source>
-        <translation>Upišite ime adrese (npr. Mjenjačnica)</translation>
-    </message>
-    <message>
-        <source>SAVE</source>
-        <translation>SPREMI</translation>
-    </message>
-    <message>
-        <source>Edit label for the selected address:
-%1</source>
-        <translation>Uredite oznaku za odabranu adresu:
-%1</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
-        <translation>Desni klik miša da bi ste uredili adresu ili oznaku</translation>
+        <translation>Desnom tipkom miša kliknite za uređivanje adrese ili oznake</translation>
     </message>
     <message>
         <source>Create a new address</source>
-        <translation>Izradi novu adresu</translation>
+        <translation>Stvori novu adresu</translation>
     </message>
     <message>
         <source>&amp;New</source>
-        <translation>&amp;Novo</translation>
+        <translation>Novo</translation>
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
-        <translation>Kopirajte trenutno označenu adresu u međjuspremnik sustava</translation>
+        <translation>Kopirajte trenutno odabranu adresu u međuspremnik sustava</translation>
     </message>
     <message>
         <source>&amp;Copy</source>
-        <translation>&amp;Kopiraj</translation>
+        <translation>Kopiraj</translation>
     </message>
     <message>
         <source>Delete the currently selected address from the list</source>
-        <translation>Izbriši trenutno označenu adresu s popisa</translation>
+        <translation>Izbrisati trenutno odabranu adresu s popisa</translation>
     </message>
     <message>
         <source>&amp;Delete</source>
-        <translation>&amp;Izbriši</translation>
+        <translation>Izbriši</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
@@ -103,51 +49,51 @@
     </message>
     <message>
         <source>&amp;Export</source>
-        <translation>&amp;Izvezi</translation>
+        <translation>Izvoz</translation>
     </message>
     <message>
         <source>C&amp;lose</source>
-        <translation>Z&amp;atvori</translation>
+        <translation>Zatvori</translation>
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Odaberite adresu na koju ćete poslati novčiće</translation>
+        <translation>Odaberite adresu za slanje novčića</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Odaberite adresu s kojom ćete primiti novčiće</translation>
+        <translation>Odaberite adresu za primanje novčića</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
-        <translation>O&amp;daberi</translation>
+        <translation>Odaberi</translation>
     </message>
     <message>
         <source>Sending addresses</source>
-        <translation>Adrese za slanje</translation>
+        <translation>Adresa primatelja</translation>
     </message>
     <message>
         <source>Receiving addresses</source>
-        <translation>Adrese za primanje</translation>
+        <translation>Adresa primatelja</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>To su vaše PIVX adrese za slanje plaćanja. Uvijek provjerite iznos i adresu primatelja prije slanja novca.</translation>
+        <source>These are your SAPP addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>To su vaše SAPP adrese za slanje plaćanja. Uvijek provjerite iznos i adresu primatelja prije slanja novca.</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>To su vaše PIVX adrese za primanje uplata. Preporuča se upotreba nove adrese primatelja za svaku transakciju.</translation>
+        <source>These are your SAPP addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>To su vaše SAPP adrese za primanje uplata. Preporuča se upotreba nove adrese primatelja za svaku transakciju.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
-        <translation>&amp;Kopiraj adresu</translation>
+        <translation>Kopiraj adresu</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
-        <translation>Kopiraj &amp;oznaku</translation>
+        <translation>Kopiraj oznaku</translation>
     </message>
     <message>
         <source>&amp;Edit</source>
-        <translation>&amp;Uredi</translation>
+        <translation>Uredi</translation>
     </message>
     <message>
         <source>Export Address List</source>
@@ -155,7 +101,7 @@
     </message>
     <message>
         <source>Comma separated file (*.csv)</source>
-        <translation>Datoteka odvojena zarezom (*.csv)</translation>
+        <translation>Datoteka odvojena zarezom (* .csv)</translation>
     </message>
     <message>
         <source>Exporting Failed</source>
@@ -172,15 +118,7 @@
         <source>Form</source>
         <translation>Obrazac</translation>
     </message>
-    <message>
-        <source>Bob Allen</source>
-        <translation>Bob Allen</translation>
-    </message>
-    <message>
-        <source>DN6i46dytMPVhV1JMGZFuQBh7BZZ6nNLox</source>
-        <translation>DN6i46dytMPVhV1JMGZFuQBh7BZZ6nNLox</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>AddressTableModel</name>
     <message>
@@ -196,10 +134,6 @@
         <translation>Datum</translation>
     </message>
     <message>
-        <source>Type</source>
-        <translation>Tip</translation>
-    </message>
-    <message>
         <source>(no label)</source>
         <translation>(bez oznake)</translation>
     </message>
@@ -211,127 +145,23 @@
         <translation>Obrazac</translation>
     </message>
     <message>
-        <source>Send</source>
-        <translation>Pošalji</translation>
-    </message>
-    <message>
         <source>TextLabel</source>
-        <translation>TekstOznake</translation>
+        <translation>TextLabel</translation>
     </message>
-    <message>
-        <source>N/A</source>
-        <translation>N/A</translation>
-    </message>
-    <message>
-        <source>Contact name</source>
-        <translation>Ime kontakta</translation>
-    </message>
-    <message>
-        <source>Enter address</source>
-        <translation>Unesite adresu</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation>OK</translation>
-    </message>
-    <message>
-        <source>Contacts</source>
-        <translation>Kontakti</translation>
-    </message>
-    <message>
-        <source>You can add a new one in the options menu to the side.</source>
-        <translation>Možete dodati novi u opcijama izbornika sa strane.</translation>
-    </message>
-    <message>
-        <source>No contacts yet</source>
-        <translation>Nema još kontakata</translation>
-    </message>
-    <message>
-        <source>e.g. John Doe</source>
-        <translation>npr. Ivan Ivić</translation>
-    </message>
-    <message>
-        <source>Enter PIVX address</source>
-        <translation>Unesite PIVX adresu</translation>
-    </message>
-    <message>
-        <source>SAVE</source>
-        <translation>SPREMI</translation>
-    </message>
-    <message>
-        <source>Invalid Contact Address</source>
-        <translation>Neispravna adresa kontakta</translation>
-    </message>
-    <message>
-        <source>Cannot store your own address as contact</source>
-        <translation>Ne možete pohraniti vlastitu adresu kao kontakt</translation>
-    </message>
-    <message>
-        <source>Address already stored, label: %1</source>
-        <translation>Adresa je već pohranjena, oznaka: %1</translation>
-    </message>
-    <message>
-        <source>New Contact Stored</source>
-        <translation>Novi kontakt spremljen</translation>
-    </message>
-    <message>
-        <source>Error Storing Contact</source>
-        <translation>Greška pri spremanju kontakta</translation>
-    </message>
-    <message>
-        <source>Contact edited</source>
-        <translation>Kontakt uređjen</translation>
-    </message>
-    <message>
-        <source>Contact edit failed</source>
-        <translation>Uredjivanje kontakta neuspjelo</translation>
-    </message>
-    <message>
-        <source>Delete Contact</source>
-        <translation>Izbriši kontakt</translation>
-    </message>
-    <message>
-        <source>You are just about to remove the contact:
-
-%1
-
-Are you sure?</source>
-        <translation>Upravo ćete ukloniti kontakt:
-
-%1
-
-Jeste li sigurni?</translation>
-    </message>
-    <message>
-        <source>Contact Deleted</source>
-        <translation>Kontakt izbrisan</translation>
-    </message>
-    <message>
-        <source>Error deleting a contact</source>
-        <translation>Greška pri brisanju kontakta</translation>
-    </message>
-    <message>
-        <source>Address copied</source>
-        <translation>Adresa kopirana</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>AskPassphraseDialog</name>
     <message>
         <source>Passphrase Dialog</source>
-        <translation>Dijaloški okvir za lozinku</translation>
+        <translation>Passphrase Dialog (tajni dijalog)</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation>TekstOznake</translation>
-    </message>
-    <message>
-        <source>PushButton</source>
-        <translation>TipkaZaPritisak</translation>
+        <translation>TextLabel</translation>
     </message>
     <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>Unesite novu zaporku za novčanik. &lt;br/&gt;Molimo koristite lozinku od &lt;b&gt;deset ili više nasumičnih znakova&lt;/b&gt;, ili &lt;b&gt;osam ili više riječi&lt;/b&gt;.</translation>
+        <translation>Unesi novu zaporku za novčanik. 1. Molimo koristite zaporku od 2. 10 ili više nasumičnih simbola, ili 3. osam i više riječi 3. </translation>
     </message>
     <message>
         <source>Encrypt wallet</source>
@@ -339,13 +169,7 @@ Jeste li sigurni?</translation>
     </message>
     <message>
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
-        <translation>Ova operacija zahtjeva lozinku da biste otključali novčanik.</translation>
-    </message>
-    <message>
-        <source>Unlock wallet
-for staking</source>
-        <translation>Otključaj novčanik
-za staking</translation>
+        <translation>Ova operacija zahtijeva zaporku za otključavanje novčanika.</translation>
     </message>
     <message>
         <source>Unlock wallet</source>
@@ -353,7 +177,7 @@ za staking</translation>
     </message>
     <message>
         <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
-        <translation>Ova operacija zahtjeva lozinku novčanika da biste dešifrirali novčanik.</translation>
+        <translation>Ova operacija zahtjeva zaporku novčanika za dešifriranje novčanika</translation>
     </message>
     <message>
         <source>Decrypt wallet</source>
@@ -361,47 +185,27 @@ za staking</translation>
     </message>
     <message>
         <source>Change passphrase</source>
-        <translation>Promijeni lozinku</translation>
+        <translation>Promijeni zaporku</translation>
     </message>
     <message>
         <source>Enter the old and new passphrase to the wallet.</source>
-        <translation>Unesi staru i novu lozinku novčanika.</translation>
+        <translation>Unesi staru i novu zaporku novčanika.</translation>
     </message>
     <message>
         <source>Confirm wallet encryption</source>
         <translation>Potvrdi šifriranje novčanika</translation>
     </message>
     <message>
-        <source>WARNING</source>
-        <translation>UPOZORENJE</translation>
-    </message>
-    <message>
-        <source>If you encrypt your wallet and lose your passphrase, you will</source>
-        <translation>Ako napravite enkripciju Vašeg novčanika i izgubite lozinku, tada ćete</translation>
-    </message>
-    <message>
-        <source>LOSE ALL OF YOUR PIV</source>
-        <translation>IZGUBITI SVE VAŠE PIV-ove</translation>
-    </message>
-    <message>
-        <source>ENCRYPT</source>
-        <translation>KRIPTIRAJ</translation>
-    </message>
-    <message>
-        <source>CANCEL</source>
-        <translation>PONIŠTI</translation>
-    </message>
-    <message>
-        <source>WARNING: The Caps Lock key is on!</source>
-        <translation>UPOZORENJE: Caps Lock tipka je uključena!</translation>
-    </message>
-    <message>
-        <source>PIVX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
-        <translation>PIVX će se sada zatvoriti kako bi se dovršio proces šifriranja. Ne zaboravite da šifriranje Vašeg novčanika ne može u potpunosti zaštititi vaše PIV od krađje zlonamjernog softvera koji zarazi vaše računalo.</translation>
+        <source>SAPP will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your RPDs from being stolen by malware infecting your computer.</source>
+        <translation>SAPP se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše SAPP od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Jeste li sigurni da želite šifrirati svoj novčanik?</translation>
+    </message>
+    <message>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SAPP&lt;/b&gt;!</source>
+        <translation>Upozorenje: Ako šifrirate svoj novčanik i izgubite zaporku, 1 izgubit ćete sve Vaše PIVove 1 !</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -409,19 +213,15 @@ za staking</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
-        <translation>VAŽNO: Sve prethodne sigurnosne kopije svog novčanika koje ste napravili trebale bi se zamijeniti novom, šifriranom datotekom novčanika. Iz sigurnosnih razloga, prethodne nešifrirane sigurnosne kopije novčanika će postati beskorisne čim počnete koristiti novi, šifrirani novčanik.</translation>
+        <translation>VAŽNO: Bilo kakve prethodne sigurnosne kopije koje ste napravili iz svoje datoteke lisnice trebale bi se zamijeniti novom generičkom, šifriranom datotekom lisnice. Iz sigurnosnih razloga, prethodne sigurnosne kopije nekodirane datoteke novčanika postat će beskorisne čim počnete koristiti novi, šifrirani novčanik.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
-        <translation>Šifriranje novčanika neuspjelo</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation>OK</translation>
+        <translation>Šifriranje novčanika neuspijelo</translation>
     </message>
     <message>
         <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
-        <translation>Šifriranje novčanika neuspjelo zbog unutarnje greške. Vaš novčanik nije šifriran.</translation>
+        <translation>Šifriranje novčanika neuspijelo zbog unutarnje greške. Vaš novčanik nije šifriran.</translation>
     </message>
     <message>
         <source>The supplied passphrases do not match.</source>
@@ -429,11 +229,11 @@ za staking</translation>
     </message>
     <message>
         <source>Wallet unlock failed</source>
-        <translation>Otključavanje novčanika neuspjelo</translation>
+        <translation>Otključavanje novčanika neuspijelo</translation>
     </message>
     <message>
         <source>The passphrase entered for the wallet decryption was incorrect.</source>
-        <translation>Lozinka za šifriranje novčanika je bila netočna.</translation>
+        <translation>Zaporka za šifriranje novčanika bila je netočna.</translation>
     </message>
     <message>
         <source>Wallet decryption failed</source>
@@ -441,7 +241,11 @@ za staking</translation>
     </message>
     <message>
         <source>Wallet passphrase was successfully changed.</source>
-        <translation>Lozinka novčanika uspješno promijenjena.</translation>
+        <translation>Zaporka novčanika uspješno promijenjena.</translation>
+    </message>
+    <message>
+        <source>Warning: The Caps Lock key is on!</source>
+        <translation>Upozorenje: Caps Lock uključen!</translation>
     </message>
 </context>
 <context>
@@ -456,37 +260,52 @@ za staking</translation>
     </message>
 </context>
 <context>
+    <name>BlockExplorer</name>
+    <message>
+        <source>Blockchain Explorer</source>
+        <translation>Blockchain preglednik</translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation>Natrag</translation>
+    </message>
+    <message>
+        <source>Forward</source>
+        <translation>Naprijed</translation>
+    </message>
+    <message>
+        <source>Address / Block / Transaction</source>
+        <translation>Adresa / Block / Transakcija</translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>Pretraga</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (sap.conf).</source>
+        <translation>Nisu prikazane sve transakcije. Za pregled svih transakcija morate postaviti txindex = 1 u konfiguracijskoj datoteci (sap.conf).</translation>
+    </message>
+</context>
+<context>
     <name>CSRow</name>
     <message>
         <source>Form</source>
         <translation>Obrazac</translation>
     </message>
-    <message>
-        <source>Savings</source>
-        <translation>Ušteđjevina</translation>
-    </message>
-    <message>
-        <source>0,00 PIV</source>
-        <translation>0,00 PIV</translation>
-    </message>
-    <message>
-        <source>address</source>
-        <translation>adresa</translation>
-    </message>
-    <message>
-        <source>Not Staking</source>
-        <translation>Staking neaktivan</translation>
-    </message>
-    <message>
-        <source>Own delegation</source>
-        <translation>Vlastita delegacija</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>ClientModel</name>
     <message>
         <source>Total: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / Unknown: %5)</source>
         <translation>Ukupno: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / Nepoznato: %5)</translation>
+    </message>
+    <message>
+        <source>Network Alert</source>
+        <translation>Upozorenje o mreži</translation>
     </message>
 </context>
 <context>
@@ -497,7 +316,7 @@ za staking</translation>
     </message>
     <message>
         <source>Bytes:</source>
-        <translation>Bajtovi:</translation>
+        <translation>Bytovi:</translation>
     </message>
     <message>
         <source>Fee:</source>
@@ -508,16 +327,12 @@ za staking</translation>
         <translation>Odabir novčića</translation>
     </message>
     <message>
-        <source>Select PIV Outputs to Spend</source>
-        <translation>Odaberi PIV za potrošiti</translation>
-    </message>
-    <message>
         <source>Dust:</source>
-        <translation>Sitniš:</translation>
+        <translation>Dust:</translation>
     </message>
     <message>
         <source>Change:</source>
-        <translation>Ostatak:</translation>
+        <translation>Razlika:</translation>
     </message>
     <message>
         <source>Tree mode</source>
@@ -536,20 +351,8 @@ za staking</translation>
         <translation>Iznos</translation>
     </message>
     <message>
-        <source>0.00 PIV</source>
-        <translation>0.00 PIV</translation>
-    </message>
-    <message>
         <source>0</source>
         <translation>0</translation>
-    </message>
-    <message>
-        <source>Select all</source>
-        <translation>Označi sve</translation>
-    </message>
-    <message>
-        <source>Toggle lock state</source>
-        <translation>Zamijeni stanje zaključanih</translation>
     </message>
     <message>
         <source>Received with label</source>
@@ -558,14 +361,6 @@ za staking</translation>
     <message>
         <source>Received with address</source>
         <translation>Primljeno s adresom</translation>
-    </message>
-    <message>
-        <source>After Fee: </source>
-        <translation>Nakon troška transakcije:</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation>OK</translation>
     </message>
     <message>
         <source>Date</source>
@@ -604,40 +399,36 @@ za staking</translation>
         <translation>Otključaj neiskorišteno</translation>
     </message>
     <message>
-        <source>Unselect all</source>
-        <translation>Odznači sve</translation>
+        <source>Copy quantity</source>
+        <translation>Kopirajte količinu</translation>
+    </message>
+    <message>
+        <source>Copy fee</source>
+        <translation>Kopiraj naknadu</translation>
+    </message>
+    <message>
+        <source>Copy after fee</source>
+        <translation>Kopiraj naknadnu naknadu</translation>
+    </message>
+    <message>
+        <source>Copy bytes</source>
+        <translation>Kopiraj bitove</translation>
+    </message>
+    <message>
+        <source>Copy priority</source>
+        <translation>Kopiraj prioritet</translation>
+    </message>
+    <message>
+        <source>Copy dust</source>
+        <translation>Kopiraj dust</translation>
+    </message>
+    <message>
+        <source>Copy change</source>
+        <translation>Kopiraj razliku</translation>
     </message>
     <message>
         <source>Please switch to "List mode" to use this function.</source>
         <translation>Prebacite se na "popis" kako biste koristili ovu funkciju.</translation>
-    </message>
-    <message>
-        <source>Quantity Copied</source>
-        <translation>Količina kopirana</translation>
-    </message>
-    <message>
-        <source>Amount Copied</source>
-        <translation>Iznos kopiran</translation>
-    </message>
-    <message>
-        <source>Fee Copied</source>
-        <translation>Naknada kopirana</translation>
-    </message>
-    <message>
-        <source>After Fee Copied</source>
-        <translation>Iznos nakon naknade kopiran</translation>
-    </message>
-    <message>
-        <source>Bytes Copied</source>
-        <translation>Bajtovi kopirani</translation>
-    </message>
-    <message>
-        <source>Dust Copied</source>
-        <translation>Sitniš kopiran</translation>
-    </message>
-    <message>
-        <source>Change Copied</source>
-        <translation>Ostatak kopiran</translation>
     </message>
     <message>
         <source>highest</source>
@@ -657,7 +448,7 @@ za staking</translation>
     </message>
     <message>
         <source>medium</source>
-        <translation>srednji</translation>
+        <translation>srednje</translation>
     </message>
     <message>
         <source>low-medium</source>
@@ -688,16 +479,12 @@ za staking</translation>
         <translation>da</translation>
     </message>
     <message>
-        <source>delegated to %1 for cold staking</source>
-        <translation>delegirano %1 za cold staking</translation>
-    </message>
-    <message>
         <source>no</source>
         <translation>ne</translation>
     </message>
     <message>
         <source>This label turns red, if the transaction size is greater than 1000 bytes.</source>
-        <translation>Ova oznaka postaje crvena, ako je veličina transakcije veća od 1000 bajtova.</translation>
+        <translation>Ova oznaka postaje crvena, ako je veličina transakcije veća od 1000 bajta.</translation>
     </message>
     <message>
         <source>This means a fee of at least %1 per kB is required.</source>
@@ -705,7 +492,7 @@ za staking</translation>
     </message>
     <message>
         <source>Can vary +/- 1 byte per input.</source>
-        <translation>Može varirati +/- 1 bajt po unosu.</translation>
+        <translation>Varira +/- 1 byte po unosu.</translation>
     </message>
     <message>
         <source>Transactions with higher priority are more likely to get included into a block.</source>
@@ -737,245 +524,74 @@ za staking</translation>
     </message>
 </context>
 <context>
+    <name>CoinControlPivWidget</name>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>Quantity:</source>
+        <translation>Količina:</translation>
+    </message>
+    <message>
+        <source>Fee:</source>
+        <translation>Naknada:</translation>
+    </message>
+    <message>
+        <source>Amount</source>
+        <translation>Iznos</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Oznaka</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Adresa</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>Tip</translation>
+    </message>
+    <message>
+        <source>Date</source>
+        <translation>Datum</translation>
+    </message>
+    <message>
+        <source>Confirmations</source>
+        <translation>Potvrde</translation>
+    </message>
+    <message>
+        <source>Bytes:</source>
+        <translation>Bytovi:</translation>
+    </message>
+    <message>
+        <source>Dust:</source>
+        <translation>Dust:</translation>
+    </message>
+    <message>
+        <source>Change:</source>
+        <translation>Razlika:</translation>
+    </message>
+    </context>
+<context>
     <name>ColdStakingWidget</name>
     <message>
         <source>Form</source>
         <translation>Obrazac</translation>
     </message>
     <message>
-        <source>Title</source>
-        <translation>Naslov</translation>
-    </message>
-    <message>
         <source>TextLabel</source>
-        <translation>TekstOznake</translation>
+        <translation>TextLabel</translation>
     </message>
-    <message>
-        <source>Owner address (optional, if empty a new address will be created)</source>
-        <translation>Adresa vlasnika (neobavezno, ako ostavite prazno nova adresa će biti napravljena)</translation>
-    </message>
-    <message>
-        <source>Total Staking:</source>
-        <translation>Ukupan staking:</translation>
-    </message>
-    <message>
-        <source>List of delegated balance by address</source>
-        <translation>Popis delegiranih iznosa po adresama</translation>
-    </message>
-    <message>
-        <source>No balance delegated</source>
-        <translation>Nema delegiranog iznosa</translation>
-    </message>
-    <message>
-        <source>Cold Staking</source>
-        <translation>Cold Staking</translation>
-    </message>
-    <message>
-        <source>Staker</source>
-        <translation>Staker</translation>
-    </message>
-    <message>
-        <source>Delegation</source>
-        <translation>Delegacija</translation>
-    </message>
-    <message>
-        <source>Delegate</source>
-        <translation>Delegiraj</translation>
-    </message>
-    <message>
-        <source>Clear All</source>
-        <translation>Očisti sve</translation>
-    </message>
-    <message>
-        <source>Delegated balance history</source>
-        <translation>Povijest delegiranih iznosa</translation>
-    </message>
-    <message>
-        <source>No delegations yet</source>
-        <translation>Nema još delegacija</translation>
-    </message>
-    <message>
-        <source>Total Staking: %1</source>
-        <translation>Ukupan staking: %1</translation>
-    </message>
-    <message>
-        <source>Error loading delegations: %1</source>
-        <translation>Greška pri učitavanju delegacija: %1</translation>
-    </message>
-    <message>
-        <source>You can delegate your PIVs, letting a hot node (24/7 online node)
-stake on your behalf, while you keep the keys securely offline.</source>
-        <translation>Možete delegirati svoje PIV-ove, dopuštajući hot node-u (24/7 online node) da stake-a za Vas, dok su Vaši ključevi offline na sigurnom.</translation>
-    </message>
-    <message>
-        <source>Enter owner address</source>
-        <translation>Unesi adresu vlasnika</translation>
-    </message>
-    <message>
-        <source>Accept PIV delegation / Delegate PIV</source>
-        <translation>Prihvati PIV delegaciju / Delegiraj PIV</translation>
-    </message>
-    <message>
-        <source>Cold Staking address</source>
-        <translation>Cold Staking adresa</translation>
-    </message>
-    <message>
-        <source>No receive addresses available, you can go to the receive screen and create some there!</source>
-        <translation>Nema dostupnih adresa, možete otići na zaslon primanja i tamo ih stvoriti!</translation>
-    </message>
-    <message>
-        <source>No contacts available, you can go to the contacts screen and add some there!</source>
-        <translation>Nema dostupnih kontakata, možete otići na zaslon s kontaktima i tamo ih dodati!</translation>
-    </message>
-    <message>
-        <source>Cannot send delegation, wallet locked</source>
-        <translation>Ne mogu poslati delegaciju, novčanik je zaključan</translation>
-    </message>
-    <message>
-        <source>Cold staking is networkely disabled</source>
-        <translation>Cold staking je mrežno onemogućen</translation>
-    </message>
-    <message>
-        <source>Invalid entry</source>
-        <translation>Neispravan unos</translation>
-    </message>
-    <message>
-        <source>Invalid entry, minimum delegable amount is </source>
-        <translation>Neispravan unos, minimalni delegirajući iznos je</translation>
-    </message>
-    <message>
-        <source>Owner address invalid</source>
-        <translation>Neispravna adresa vlasnika</translation>
-    </message>
-    <message>
-        <source>ALERT!</source>
-        <translation>PAŽNJA!</translation>
-    </message>
-    <message>
-        <source>Delegating to an external owner address!
-
-The delegated coins will NOT be spendable by this wallet.
-Spending these coins will need to be done from the wallet or
-device containing the owner address.
-
-Do you wish to proceed?</source>
-        <translation>Preusmjeravanje na vanjsku adresu vlasnik!
-
-Delegirani novčići NEĆE se moći potrošiti s ovim novčanikom.
-Potrošnja ovih novčića morat će se obaviti iz novčanika ili uredjaja koji sadržava adresu vlasnika.
-
-Želite li nastaviti?</translation>
-    </message>
-    <message>
-        <source>Staking address corresponds to this wallet, change it to an external node</source>
-        <translation>Adresa za staking odgovara ovom novčaniku, promijenite je na vanjsku adresu</translation>
-    </message>
-    <message>
-        <source>Cannot create transaction.</source>
-        <translation>Neuspjelo stvaranje transakcije.</translation>
-    </message>
-    <message>
-        <source>Coins delegated</source>
-        <translation>Novčići delegirani</translation>
-    </message>
-    <message>
-        <source>You don't have any PIV to select.</source>
-        <translation>Nemate PIV-a za odabrati</translation>
-    </message>
-    <message>
-        <source>Cannot perform operation, wallet locked</source>
-        <translation>Ne može se izvršiti operacija, novčanik je zaključan</translation>
-    </message>
-    <message>
-        <source>URI copied to clipboard</source>
-        <translation>URI kopiran u medjuspremnik</translation>
-    </message>
-    <message>
-        <source>Address copied to clipboard</source>
-        <translation>Adresa kopirana u medjuspremnik</translation>
-    </message>
-    <message>
-        <source>Copy</source>
-        <translation>Kopiraj</translation>
-    </message>
-    <message>
-        <source>Edit</source>
-        <translation>Uredi</translation>
-    </message>
-    <message>
-        <source>Stake</source>
-        <translation>Stakeaj</translation>
-    </message>
-    <message>
-        <source>Blacklist</source>
-        <translation>Crna lista</translation>
-    </message>
-    <message>
-        <source>Edit Label</source>
-        <translation>Uredi naziv</translation>
-    </message>
-    <message>
-        <source>Copy owner
-address</source>
-        <translation>Kopiraj adresu
-vlasnika</translation>
-    </message>
-    <message>
-        <source>Address copied</source>
-        <translation>Adresa kopirana</translation>
-    </message>
-    <message>
-        <source>Edit Cold Address Label</source>
-        <translation>Uredi naziv Cold adrese</translation>
-    </message>
-    <message>
-        <source>Whitelist failed, please check the logs</source>
-        <translation>Dodavanje na popis dozvoljenih neuspjelo, molimo provjerite zapisnik</translation>
-    </message>
-    <message>
-        <source> staking!</source>
-        <translation>staking!</translation>
-    </message>
-    <message>
-        <source>Blacklist failed, please check the logs</source>
-        <translation>Dodavanje na popis zabranjenih neuspjelo, molimo provjerite zapisnik</translation>
-    </message>
-    <message>
-        <source> blacklisted from staking</source>
-        <translation>na crnoj listi za staking</translation>
-    </message>
-    <message>
-        <source>Owner address copied</source>
-        <translation>Adresa vlasnika kopirana</translation>
-    </message>
-    <message>
-        <source>Edit Owner Address Label</source>
-        <translation>Uredi oznaku adrese vlasnika</translation>
-    </message>
-    <message>
-        <source>Address label saved</source>
-        <translation>Naziv adrese spremljen</translation>
-    </message>
-    <message>
-        <source>Error storing address label</source>
-        <translation>Greška pri spremanju oznake adrese</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>ContactDropdownRow</name>
     <message>
         <source>Form</source>
         <translation>Obrazac</translation>
     </message>
-    <message>
-        <source>Bob Allen</source>
-        <translation>Bob Allen</translation>
-    </message>
-    <message>
-        <source>DN6i46dytMPVhV1JMGZFuQBh7BZZ6nNLox</source>
-        <translation>DN6i46dytMPVhV1JMGZFuQBh7BZZ6nNLox</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>DashboardWidget</name>
     <message>
@@ -983,139 +599,56 @@ vlasnika</translation>
         <translation>Obrazac</translation>
     </message>
     <message>
-        <source>Transactions</source>
-        <translation>Tranksacije</translation>
-    </message>
-    <message>
-        <source>You can see here the history of your account</source>
-        <translation>Ovdje možete vidjeti povijest vašeg računa</translation>
-    </message>
-    <message>
         <source>Warning</source>
         <translation>Upozorenje</translation>
     </message>
     <message>
-        <source>No transactions</source>
-        <translation>Nema transakcija</translation>
-    </message>
-    <message>
-        <source>Staking Rewards</source>
-        <translation>Staking nagrade</translation>
-    </message>
-    <message>
         <source>TextLabel</source>
-        <translation>TekstOznake</translation>
+        <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Staking statistics</source>
-        <translation>Statistika stakinga</translation>
+        <source>zRPD</source>
+        <translation>zRPD</translation>
     </message>
     <message>
-        <source>PIV</source>
-        <translation>PIV</translation>
+        <source>All</source>
+        <translation>Sve</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>Received</source>
+        <translation>Primljeno</translation>
     </message>
     <message>
-        <source>Sort by</source>
-        <translation>Sortiraj prema</translation>
+        <source>Sent</source>
+        <translation>Poslano</translation>
     </message>
     <message>
-        <source>Days</source>
-        <translation>Dani</translation>
+        <source>Mined</source>
+        <translation>Mined</translation>
     </message>
     <message>
-        <source>Months</source>
-        <translation>Mjeseci</translation>
+        <source>Minted</source>
+        <translation>Minted</translation>
     </message>
     <message>
-        <source>Years</source>
-        <translation>Godine</translation>
+        <source>To yourself</source>
+        <translation>Sam sebi</translation>
     </message>
-    <message>
-        <source>Filter by</source>
-        <translation>Filtriraj prema</translation>
-    </message>
-    <message>
-        <source>LabelText</source>
-        <translation>TekstNaziva</translation>
-    </message>
-    <message>
-        <source>You can view your account's history</source>
-        <translation>Možete pregledati povijest računa</translation>
-    </message>
-    <message>
-        <source>Amount of PIV and zPIV staked.</source>
-        <translation>Iznos PIV i zPIV koji se stakea.</translation>
-    </message>
-    <message>
-        <source>Please wait until the wallet is fully synced to see your correct balance</source>
-        <translation>Molimo pričekajte dok se novčanik u potpunosti ne sinkronizira kako bi vidjeli Vaš ispravan saldo</translation>
-    </message>
-    <message>
-        <source>No transactions yet</source>
-        <translation>Nema još transakcija</translation>
-    </message>
-    <message>
-        <source>How to get PIV or zPIV</source>
-        <translation>Kako nabaviti PIV ili zPIV</translation>
-    </message>
-    <message>
-        <source>You can verify the staking activity in the status bar at the top right of the wallet.
-It will start automatically as soon as the wallet has enough confirmations on any unspent balances, and the wallet has synced.</source>
-        <translation>Staking aktivnost možete provjeriti u traci statusa u gornjem desnom dijelu novčanika.
-Automatski će se pokrenuti čim novčanik dobije dovoljno potvrda o neiskorištenim ostacima i novčanik je sinkroniziran.</translation>
-    </message>
-    <message>
-        <source>You have no staking rewards</source>
-        <translation>Nemate staking nagrada</translation>
-    </message>
-    <message>
-        <source>No charts library</source>
-        <translation>Nema biblioteke grafikona</translation>
-    </message>
-    <message>
-        <source>Loading chart..</source>
-        <translation>Učitavam grafikon..</translation>
-    </message>
-    <message>
-        <source>Error loading chart, invalid show option</source>
-        <translation>Pogreška pri učitavanju grafikona, nevažeća opcija prikazivanja</translation>
-    </message>
-    <message>
-        <source>Error loading chart, invalid data</source>
-        <translation>Greška pri učitavanju grafa, neispravni podaci</translation>
-    </message>
-    <message>
-        <source>Error loading chart: %1</source>
-        <translation>Greška pri učitavanju grafa: %1</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>DefaultDialog</name>
     <message>
         <source>Form</source>
         <translation>Obrazac</translation>
     </message>
+    </context>
+<context>
+    <name>DenomGenerationDialog</name>
     <message>
-        <source>Transaction Details</source>
-        <translation>Detalji tranksacije</translation>
+        <source>Form</source>
+        <translation>Obrazac</translation>
     </message>
-    <message>
-        <source>Text Label</source>
-        <translation>Oznaka teksta</translation>
-    </message>
-    <message>
-        <source>CANCEL</source>
-        <translation>PONIŠTI</translation>
-    </message>
-    <message>
-        <source>SAVE</source>
-        <translation>SPREMI</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>EditAddressDialog</name>
     <message>
@@ -1124,7 +657,7 @@ Automatski će se pokrenuti čim novčanik dobije dovoljno potvrda o neiskorišt
     </message>
     <message>
         <source>&amp;Label</source>
-        <translation>&amp;Oznaka</translation>
+        <translation>Oznaka</translation>
     </message>
     <message>
         <source>The label associated with this address list entry</source>
@@ -1132,7 +665,7 @@ Automatski će se pokrenuti čim novčanik dobije dovoljno potvrda o neiskorišt
     </message>
     <message>
         <source>&amp;Address</source>
-        <translation>&amp;Adresa</translation>
+        <translation>Adresa</translation>
     </message>
     <message>
         <source>The address associated with this address list entry. This can only be modified for sending addresses.</source>
@@ -1148,15 +681,15 @@ Automatski će se pokrenuti čim novčanik dobije dovoljno potvrda o neiskorišt
     </message>
     <message>
         <source>Edit receiving address</source>
-        <translation>Uredi adresu primatelja</translation>
+        <translation>Uređivanje adrese primatelja</translation>
     </message>
     <message>
         <source>Edit sending address</source>
-        <translation>Uredi adresu pošiljatelja</translation>
+        <translation>Uređivanje adrese slanja</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid PIVX address.</source>
-        <translation>Unesena adresa "%1" nije ispravna PIVX adresa.</translation>
+        <source>The entered address "%1" is not a valid SAPP address.</source>
+        <translation>Unesena adresa "%1" nije važeća SAPP adresa.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1186,7 +719,7 @@ Automatski će se pokrenuti čim novčanik dobije dovoljno potvrda o neiskorišt
     </message>
     <message>
         <source>name</source>
-        <translation>ime</translation>
+        <translation>naziv</translation>
     </message>
     <message>
         <source>Directory already exists. Add %1 if you intend to create a new directory here.</source>
@@ -1202,22 +735,33 @@ Automatski će se pokrenuti čim novčanik dobije dovoljno potvrda o neiskorišt
     </message>
 </context>
 <context>
+    <name>GovernancePage</name>
+    <message>
+        <source>Form</source>
+        <translation>Obrazac</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    </context>
+<context>
     <name>HelpMessageDialog</name>
     <message>
         <source>version</source>
         <translation>verzija</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Sap</source>
+        <translation>Sap</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About PIVX Core</source>
-        <translation>O PIVX Core-u</translation>
+        <source>About Sap</source>
+        <translation>O Sap</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1229,7 +773,7 @@ Automatski će se pokrenuti čim novčanik dobije dovoljno potvrda o neiskorišt
     </message>
     <message>
         <source>command-line options</source>
-        <translation>opcije naredbene linije</translation>
+        <translation>opcije naredbenog retka</translation>
     </message>
     <message>
         <source>UI Options:</source>
@@ -1244,10 +788,6 @@ Automatski će se pokrenuti čim novčanik dobije dovoljno potvrda o neiskorišt
         <translation>Prikažite zaslon prilikom pokretanja (zadano: %u)</translation>
     </message>
     <message>
-        <source>Hide QT staking charts on startup (default: %u)</source>
-        <translation>Sakrij QT oznake grafikona pri pokretanju (zadano: %u)</translation>
-    </message>
-    <message>
         <source>Set language, for example "de_DE" (default: system locale)</source>
         <translation>Postavite jezik, na primjer "de_DE" (zadano: regionalni sustav)</translation>
     </message>
@@ -1259,11 +799,7 @@ Automatski će se pokrenuti čim novčanik dobije dovoljno potvrda o neiskorišt
         <source>Set SSL root certificates for payment request (default: -system-)</source>
         <translation>Postavite SSL potvrde korijena za zahtjev za plaćanje (zadano: -system-)</translation>
     </message>
-    <message>
-        <source>OK</source>
-        <translation>OK</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>Intro</name>
     <message>
@@ -1271,36 +807,24 @@ Automatski će se pokrenuti čim novčanik dobije dovoljno potvrda o neiskorišt
         <translation>Dobrodošli</translation>
     </message>
     <message>
-        <source>Welcome to PIVX Core.</source>
-        <translation>Dobrodošli u PIVX Core.</translation>
+        <source>Welcome to Sap.</source>
+        <translation>Dobrodošli u Sap.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where PIVX Core will store its data.</source>
-        <translation>Budući da je prvi put pokrenut program, možete odabrati gdje će PIVX Core pohraniti svoje podatke.</translation>
+        <source>As this is the first time the program is launched, you can choose where Sap will store its data.</source>
+        <translation>Budući da je prvi put pokrenut program, možete odabrati gdje će Sap pohraniti svoje podatke.</translation>
     </message>
     <message>
-        <source>PIVX Core will download and store a copy of the PIVX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>PIVX Core preuzima i pohranjuje kopiju PIVX blok-lanca. Barem će %1GB podataka biti pohranjeno u ovom direktoriju i to će s vremenom rasti. Novčanik će također biti pohranjena u ovom direktoriju.</translation>
+        <source>Sap will download and store a copy of the SAPP block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Sap preuzima i pohranjuje kopiju SAPP blok-lanca. Barem će %1GB podataka biti pohranjeno u ovom direktoriju i to će s vremenom rasti. Novčanik će također biti pohranjena u ovom direktoriju.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
         <translation>Upotrijebite zadani direktorij podataka</translation>
     </message>
     <message>
-        <source>Use a custom data directory</source>
-        <translation>Koristite prilagodjeni direktorij za podatke</translation>
-    </message>
-    <message>
-        <source>CANCEL</source>
-        <translation>PONIŠTI</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation>OK</translation>
-    </message>
-    <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Sap</source>
+        <translation>Sap</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1327,65 +851,25 @@ Automatski će se pokrenuti čim novčanik dobije dovoljno potvrda o neiskorišt
     </message>
     <message>
         <source>TextLabel</source>
-        <translation>TekstOznake</translation>
+        <translation>TextLabel</translation>
     </message>
-    <message>
-        <source>Loading</source>
-        <translation>Učitavanje</translation>
-    </message>
-    <message>
-        <source>.</source>
-        <translation>.</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>LockUnlock</name>
     <message>
         <source>Form</source>
         <translation>Obrazac</translation>
     </message>
-    <message>
-        <source>Unlock Wallet</source>
-        <translation>Otključaj novčanik</translation>
-    </message>
-    <message>
-        <source>Lock Wallet</source>
-        <translation>Zaključaj novčanik</translation>
-    </message>
-    <message>
-        <source>Staking Only</source>
-        <translation>Samo staking</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>MNRow</name>
     <message>
         <source>Form</source>
         <translation>Obrazac</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>MasterNodeWizardDialog</name>
-    <message>
-        <source>Dialog</source>
-        <translation>Dijaloški okvir</translation>
-    </message>
-    <message>
-        <source>1</source>
-        <translation>1</translation>
-    </message>
-    <message>
-        <source>2</source>
-        <translation>2</translation>
-    </message>
-    <message>
-        <source>3</source>
-        <translation>3</translation>
-    </message>
-    <message>
-        <source>Intro</source>
-        <translation>Uvod</translation>
-    </message>
     <message>
         <source>Name</source>
         <translation>Naziv</translation>
@@ -1395,110 +879,44 @@ Automatski će se pokrenuti čim novčanik dobije dovoljno potvrda o neiskorišt
         <translation>Adresa</translation>
     </message>
     <message>
-        <source>Create New Masternode Controller</source>
-        <translation>Stvori novi Masternode Controller</translation>
+        <source>The recipient address is not valid, please recheck.</source>
+        <translation>Adresa primatelja nije važeća, ponovo provjerite.</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a PIVX Masternode you must dedicate 10,000 PIV (the unit of PIVX) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Da biste stvoriti PIVX Masternode, morate odvojiti 10,000 PIV (jedinica PIVX-a) prema mreži (međjutim, ti novčići su i dalje vaši i nikad neće napustiti vaše vlasništvo). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt; Možete isključiti node i otključati novčiće u bilo kojem trenutku.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>The amount to pay must be larger than 0.</source>
+        <translation>Iznos za plaćanje mora biti veći od 0.</translation>
     </message>
     <message>
-        <source>Set Masternode Name</source>
-        <translation>Postavi ime za Masternode</translation>
+        <source>The amount exceeds your balance.</source>
+        <translation>Iznos prelazi vaš saldo.</translation>
     </message>
     <message>
-        <source>Set Masternode IP and Port</source>
-        <translation>Postavi IP adresu i ulaz za Masternode</translation>
+        <source>The total exceeds your balance when the %1 transaction fee is included.</source>
+        <translation>Ukupni iznos prelazi vaš saldo kada je uključena naknada za transakciju %1.</translation>
     </message>
     <message>
-        <source>Enter port</source>
-        <translation>Unesite ulaz</translation>
+        <source>Duplicate address found, can only send to each address once per send operation.</source>
+        <translation>Duplicirana adresa pronađena, može poslati samo na svaku adresu jednom po pošiljci.</translation>
     </message>
     <message>
-        <source>Make sure you have this amount of coins.</source>
-        <translation>Obavezno imajte tu količinu novčića.</translation>
+        <source>Transaction creation failed!</source>
+        <translation>Izrada transakcija nije uspjela!</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 PIV will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Transakcija od 10,000 PIV će biti napravljena&lt;/p&gt;&lt;p&gt;u novu praznu adresu u Vašem novčaniku.&lt;/p&gt;&lt;p&gt;Adresa je označena pod imenom Masternode-a.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation>Transakcija je odbijena! To se može dogoditi ako su neki od novčića u vašem novčaniku već bili potrošeni, primjerice, ako ste upotrijebili kopiju wallet.data, a novčići su potrošeni u kopiji, ali nisu označeni kao ovdje potrošeni.</translation>
     </message>
     <message>
-        <source>Address of the node that must always be online running the actual master node.</source>
-        <translation>Adresa čvora koji uvijek mora biti na mreži pokrečući stvarni masternode.</translation>
+        <source>Error: The wallet was unlocked only to anonymize coins.</source>
+        <translation>Pogreška: novčanik je otključan samo za anonimizaciju kovanica.</translation>
     </message>
     <message>
-        <source>Enter IP address</source>
-        <translation>Unesite IP adresu</translation>
+        <source>A fee %1 times higher than %2 per kB is considered an insanely high fee.</source>
+        <translation>Naknada %1 puta veća od %2 po kB smatra se nerazumljivo visokom naknadom.</translation>
     </message>
     <message>
-        <source>CANCEL</source>
-        <translation>PONIŠTI</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation>OK</translation>
-    </message>
-    <message>
-        <source>e.g user_masternode</source>
-        <translation>npr. korisnik_masternode</translation>
-    </message>
-    <message>
-        <source>NEXT</source>
-        <translation>DALJE</translation>
-    </message>
-    <message>
-        <source>BACK</source>
-        <translation>NAZAD</translation>
-    </message>
-    <message>
-        <source>address label cannot be empty</source>
-        <translation>oznaka adrese ne može biti prazna</translation>
-    </message>
-    <message>
-        <source>IP or port cannot be empty</source>
-        <translation>IP ili ulaz ne mogu biti prazni</translation>
-    </message>
-    <message>
-        <source>Invalid IP address</source>
-        <translation>Neispravna IP adresa</translation>
-    </message>
-    <message>
-        <source>Prepare master node failed.
-
-%1
-</source>
-        <translation>Priprema masternode neuspjela.
-
-%1
-</translation>
-    </message>
-    <message>
-        <source>Invalid collateral output index</source>
-        <translation>Nevažeći izlazni indeks zaloga</translation>
-    </message>
-    <message>
-        <source>Master node created! Wait %1 confirmations before starting it.</source>
-        <translation>Masternode stvoren! Pričekajte %1 potvrda prije pokretanja.</translation>
-    </message>
-    <message>
-        <source>Cannot send collateral transaction.
-
-%1</source>
-        <translation>Nije moguće poslati transakciju sa zalogom.
-
-%1</translation>
-    </message>
-    <message>
-        <source>Invalid masternode.conf file</source>
-        <translation>Nevažeća masternode.conf datoteka </translation>
-    </message>
-    <message>
-        <source>Error parsing masternode.conf file</source>
-        <translation>Greška pri parsiranju masternode.conf datoteke</translation>
-    </message>
-    <message>
-        <source>masternode.conf file doesn't exists</source>
-        <translation>masternode.conf datoteka ne postoji</translation>
+        <source>Error: The wallet was unlocked only to anonymize coins. Unlock canceled.</source>
+        <translation>Pogreška: novčanik je otključan samo za anonimizaciju kovanica. Otključavanje je otkazano.</translation>
     </message>
 </context>
 <context>
@@ -1509,167 +927,13 @@ Automatski će se pokrenuti čim novčanik dobije dovoljno potvrda o neiskorišt
     </message>
     <message>
         <source>TextLabel</source>
-        <translation>TekstOznake</translation>
-    </message>
-    <message>
-        <source>N/A</source>
-        <translation>N/A</translation>
-    </message>
-    <message>
-        <source>Start All</source>
-        <translation>Pokreni sve</translation>
-    </message>
-    <message>
-        <source>Start Inactive/s</source>
-        <translation>Pokreni neaktivne</translation>
-    </message>
-    <message>
-        <source>Masternodes</source>
-        <translation>Masternodeovi</translation>
-    </message>
-    <message>
-        <source>Full nodes that incentivize node operators to perform the core consensus functions
-and vote on the treasury system receiving a periodic reward.</source>
-        <translation>Potpuni node-ovi koji potiču node operatore na izvršavanje glavnih funkcija konsenzusa
-i glasaju o sustavu riznice koji prima periodičnu nagradu.</translation>
-    </message>
-    <message>
-        <source>Create Masternode Controller</source>
-        <translation>Stvori Masternode Controller</translation>
-    </message>
-    <message>
-        <source>No active Masternode yet</source>
-        <translation>Još nema aktivnih Masternodeova</translation>
-    </message>
-    <message>
-        <source>Start</source>
-        <translation>Započni</translation>
+        <translation>TextLabel</translation>
     </message>
     <message>
         <source>Delete</source>
         <translation>Izbriši</translation>
     </message>
-    <message>
-        <source>Info</source>
-        <translation>Informacije</translation>
-    </message>
-    <message>
-        <source>Please wait until the node is fully synced</source>
-        <translation>Pričekajte dok se čvor u potpunosti ne sinkronizira</translation>
-    </message>
-    <message>
-        <source>Start Masternode</source>
-        <translation>Pokreni Masternode</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to start masternode %1?
-</source>
-        <translation>Jeste li sigurni da želite pokrenuti masternode %1?
-</translation>
-    </message>
-    <message>
-        <source>Cannot edit masternode, wallet locked</source>
-        <translation>Ne može se urediti masternode, novčanik je zaključan</translation>
-    </message>
-    <message>
-        <source>Cannot start masternode, the collateral transaction has not been confirmed by the network yet.
-Please wait few more minutes (masternode collaterals require %1 confirmations).</source>
-        <translation>Masternode se ne može pokrenuti, transakcija sa zalogom još nije potvrdjena.
-Molimo pričekajte nekoliko minuta (zalog za Masternode zahtjeva %1 potvrda).</translation>
-    </message>
-    <message>
-        <source>Background task is being executed, please wait</source>
-        <translation>Pozadinski zadatak se izvršava, molimo pričekajte</translation>
-    </message>
-    <message>
-        <source>Start ALL masternodes failed</source>
-        <translation>Pokreni SVE masternodeove neuspjelo</translation>
-    </message>
-    <message>
-        <source>Wallet unlock cancelled</source>
-        <translation>Otključavanje novčanika je otkazano</translation>
-    </message>
-    <message>
-        <source>Cannot perform Masternodes start</source>
-        <translation>Ne mogu izvršiti pokretanje Masternodea</translation>
-    </message>
-    <message>
-        <source>%1 Masternodes failed to start, %2 started</source>
-        <translation>%1 Masternode se nije uspio pokrenuti, %2 je započeo</translation>
-    </message>
-    <message>
-        <source>All Masternodes started!</source>
-        <translation>Svi Masternodeovi pokrenuti!</translation>
-    </message>
-    <message>
-        <source>Cannot show Masternode information, wallet locked</source>
-        <translation>Ne mogu se prikazati informacije o Masternode-u, novčanik je zaključan</translation>
-    </message>
-    <message>
-        <source>Masternode data copied to the clipboard.</source>
-        <translation>Podaci za Masternode kopirani u međjuspremnik.</translation>
-    </message>
-    <message>
-        <source>Remote Masternode Data</source>
-        <translation>Podaci za udaljeni Masternode</translation>
-    </message>
-    <message>
-        <source>You are just about to export the required data to run a Masternode
-on a remote server to your clipboard.
-
-
-You will only have to paste the data in the pivx.conf file
-of your remote server and start it, then start the Masternode using
-this controller wallet (select the Masternode in the list and press "start").
-</source>
-        <translation>Upravo ćete izvesti potrebne podatke da biste pokrenuli Masternode
-na udaljenom poslužitelju u medjuspremnik.
-
-
-Podatke ćete morati zalijepiti u datoteku pivx.conf
-na udaljenom poslužitelju i pokrenuti ga, a zatim pokrenite Masternode
-koristeći ovaj controller novčanik (na popisu odaberite Masternode i pritisnite "start").
-</translation>
-    </message>
-    <message>
-        <source>Delete Masternode</source>
-        <translation>Izbriši Masternode</translation>
-    </message>
-    <message>
-        <source>You are just about to delete Masternode:
-%1
-
-Are you sure?</source>
-        <translation>Upravo ćete izbrisati Masternode:
-%1
-
-Jeste li sigurni?</translation>
-    </message>
-    <message>
-        <source>Invalid masternode.conf file</source>
-        <translation>Nevažeća masternode.conf datoteka </translation>
-    </message>
-    <message>
-        <source>Error parsing masternode.conf file</source>
-        <translation>Greška pri parsiranju masternode.conf datoteke</translation>
-    </message>
-    <message>
-        <source>masternode.conf file doesn't exists</source>
-        <translation>masternode.conf datoteka ne postoji</translation>
-    </message>
-    <message>
-        <source>Cannot create Masternode controller, wallet locked</source>
-        <translation>Ne može se kreirati Masternode controller, novčanik je zaključan</translation>
-    </message>
-    <message>
-        <source>Not enough balance to create a masternode, 10,000 PIV required.</source>
-        <translation>Nema dovoljno novčića za stvaranje Masternodea, potrebno je 10000 PIV.</translation>
-    </message>
-    <message>
-        <source>Error creating masternode</source>
-        <translation>Greška pri stvaranju Masternode-a</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>MnInfoDialog</name>
     <message>
@@ -1677,84 +941,24 @@ Jeste li sigurni?</translation>
         <translation>Obrazac</translation>
     </message>
     <message>
-        <source>Masternode Information</source>
-        <translation>Informacije o Masternode-u</translation>
-    </message>
-    <message>
-        <source>Public Key:</source>
-        <translation>Javni ključ:</translation>
-    </message>
-    <message>
-        <source>492526e7fa3c810b35016...40a5df85ee227ab00b1156994</source>
-        <translation>492526e7fa3c810b35016...40a5df85ee227ab00b1156994</translation>
-    </message>
-    <message>
-        <source>Address: </source>
-        <translation>Adresa:</translation>
-    </message>
-    <message>
-        <source>127.0.0.2:43223</source>
-        <translation>127.0.0.2:43223</translation>
-    </message>
-    <message>
-        <source>Collaterall tx id:</source>
-        <translation>ID transakcije zaloga:</translation>
-    </message>
-    <message>
-        <source>Output index:</source>
-        <translation>Izlazni indeks:</translation>
-    </message>
-    <message>
-        <source>1 Inputs</source>
-        <translation>1 Unosi</translation>
-    </message>
-    <message>
         <source>Status:</source>
         <translation>Status:</translation>
     </message>
-    <message>
-        <source>MISSING</source>
-        <translation>NEDOSTAJE</translation>
-    </message>
-    <message>
-        <source>Export data to run the Masternode on a remote server</source>
-        <translation>Izvoz podataka za pokretanje Masternode-a na udaljenom poslužitelju</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>MyAddressRow</name>
     <message>
         <source>Form</source>
         <translation>Obrazac</translation>
     </message>
-    <message>
-        <source>Savings</source>
-        <translation>Ušteđjevina</translation>
-    </message>
-    <message>
-        <source>Jan. 19, 2019</source>
-        <translation>19. siječanj, 2020</translation>
-    </message>
-    <message>
-        <source>DN6i46dytMPVhV1JMGZFuQBh7BZZ6nNLox</source>
-        <translation>DN6i46dytMPVhV1JMGZFuQBh7BZZ6nNLox</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>NavMenuWidget</name>
     <message>
         <source>Form</source>
         <translation>Obrazac</translation>
     </message>
-    <message>
-        <source>V 1.0.0</source>
-        <translation>V 1.0.0</translation>
-    </message>
-    <message>
-        <source>v%1</source>
-        <translation>v%1</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>OpenURIDialog</name>
     <message>
@@ -1767,15 +971,7 @@ Jeste li sigurni?</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation>TekstOznake</translation>
-    </message>
-    <message>
-        <source>CANCEL</source>
-        <translation>PONIŠTI</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation>OK</translation>
+        <translation>TextLabel</translation>
     </message>
     <message>
         <source>Select payment request file</source>
@@ -1783,21 +979,9 @@ Jeste li sigurni?</translation>
     </message>
     <message>
         <source>Select payment request file to open</source>
-        <translation>Odaberite datoteku sa zahtjevom za plaćanje</translation>
+        <translation>Odaberite datoteku zahtjeva za plaćanje za otvaranje</translation>
     </message>
-    <message>
-        <source>File not found</source>
-        <translation>Datoteka nije pronadjena</translation>
-    </message>
-    <message>
-        <source>Parsed data too large</source>
-        <translation>Parsirani podaci preveliki</translation>
-    </message>
-    <message>
-        <source>Invalid URI, not starting with "pivx" prefix</source>
-        <translation>Nevažeći URI, ne počinje "pivx" prefiksom</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>OptionButton</name>
     <message>
@@ -1806,7 +990,7 @@ Jeste li sigurni?</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation>TekstOznake</translation>
+        <translation>TextLabel</translation>
     </message>
 </context>
 <context>
@@ -1817,11 +1001,11 @@ Jeste li sigurni?</translation>
     </message>
     <message>
         <source>&amp;Main</source>
-        <translation>&amp;Glavno</translation>
+        <translation>Glavno</translation>
     </message>
     <message>
         <source>Size of &amp;database cache</source>
-        <translation>Veličina predmemorije &amp;baze podataka</translation>
+        <translation>Veličina database cachea</translation>
     </message>
     <message>
         <source>MB</source>
@@ -1829,23 +1013,23 @@ Jeste li sigurni?</translation>
     </message>
     <message>
         <source>Number of script &amp;verification threads</source>
-        <translation>Number of script &amp;verification threads</translation>
+        <translation>Broj skripti i foruma za potvrdu</translation>
     </message>
     <message>
         <source>(0 = auto, &lt;0 = leave that many cores free)</source>
-        <translation>(0 = auto, &lt;0 = ostavi toliko slobodnih jezgri)</translation>
+        <translation>(0 = auto, &lt;0 = ostavi toliko jezgri)</translation>
     </message>
     <message>
         <source>W&amp;allet</source>
-        <translation>N&amp;ovčanik</translation>
+        <translation>Novčanik</translation>
     </message>
     <message>
         <source>If you disable the spending of unconfirmed change, the change from a transaction&lt;br/&gt;cannot be used until that transaction has at least one confirmation.&lt;br/&gt;This also affects how your balance is computed.</source>
-        <translation>Ako onemogućite potrošnju nepotvrđjenog ostatka, ostatak od transakcije &lt;br/&gt;ne može se koristiti dok ta transakcija nema barem jednu potvrdu. &lt;br/&gt;Ovo takođjer utječe na izračun vašeg salda.</translation>
+        <translation>Ako onemogućite potrošnju nepotvrđenih promjena, promjena s transakcijskog kanala bit će upotrijebljena sve dok ta transakcija nema barem jednu potvrdu. To također utječe na izračun salda.</translation>
     </message>
     <message>
-        <source>Automatically open the PIVX client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatski otvorite PIVX klijentski ulaz na ruteru. To funkcionira samo kada vaš ruter podržava UPnP i omogućen je.</translation>
+        <source>Automatically open the SAPP client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatski otvorite SAPP klijentski priključak na rooteru. To funkcionira samo kada vaš rooter podržava UPnP i omogućen je.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1857,101 +1041,94 @@ Jeste li sigurni?</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
-        <translation>&amp;Povežite se putem SOCKS5 proxyja (zadani proxy):</translation>
+        <translation>Povežite se putem SOCKS5 proxyja (zadani proxy):</translation>
     </message>
     <message>
         <source>Expert</source>
         <translation>Stručnjak</translation>
     </message>
     <message>
-        <source>Automatically start PIVX after logging in to the system.</source>
-        <translation>Automatski pokrenite PIVX nakon prijave u sustav.</translation>
+        <source>Automatically start SAPP after logging in to the system.</source>
+        <translation>Automatski pokrenite SAPP nakon prijave u sustav.</translation>
     </message>
     <message>
-        <source>&amp;Start PIVX on system login</source>
-        <translation>&amp;Pokrenite PIVX pri pokretanju sustava</translation>
+        <source>&amp;Start SAPP on system login</source>
+        <translation>Pokrenite SAPP na prijavi u sustav</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
-        <translation>Bilo da pokazuju značajke upravljanja novčićima ili ne.</translation>
+        <translation>Bilo da pokazuju značajke kontrole novčića ili ne.</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
-        <translation>Omogući značajke &amp;upravljanja novčićima</translation>
+        <translation>Omogućite značajke kontrole novčića</translation>
     </message>
     <message>
         <source>Show additional tab listing all your masternodes in first sub-tab&lt;br/&gt;and all masternodes on the network in second sub-tab.</source>
-        <translation>Prikaži dodatnu karticu s popisom svih svojih masternode-ova u prvoj pod-kartici&lt;br/&gt;i sve masternode-ove na mreži u drugoj pod-kartici.</translation>
+        <translation>Prikaži dodatnu karticu s popisom svih svojih masternoda u prvom pod-tabu i sve masternode na mreži u drugoj podkartici.</translation>
     </message>
     <message>
         <source>Show Masternodes Tab</source>
-        <translation>Prikaži Masternodes karticu</translation>
+        <translation>Prikaži Masternodes Tab</translation>
     </message>
     <message>
         <source>&amp;Spend unconfirmed change</source>
-        <translation>&amp;Potroši nepotvrđjeni ostatak</translation>
+        <translation>Provedite nepotvrđene promjene</translation>
     </message>
     <message>
         <source>&amp;Network</source>
-        <translation>&amp;Mreža</translation>
+        <translation>Mreža</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting PIVX.</source>
-        <translation>Jezik korisničkog sučelja možete postaviti ovdje. Postavke će stupiti na snagu nakon ponovnog pokretanja PIVX novčanika.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting SAPP.</source>
+        <translation>Ovdje se može postaviti jezik korisničkog sučelja. Ova postavka će stupiti na snagu nakon ponovnog pokretanja SAPP-a.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
 https://www.transifex.com/pivx-project/pivx-project-translations</source>
-        <translation>Jezik nedostaje ili prijevod nije potpun? Pomozite s prijevodom ovdje:
+        <translation>Jezik nedostaje ili prijevod nije potpun? Pomozite s prijevodima ovdje:
 https://www.transifex.com/pivx-project/pivx-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
-        <translation>Mapiranje porta koristeći &amp;UPnP</translation>
+        <translation>Karte porta pomoću UPnP
+</translation>
     </message>
     <message>
-        <source>Enable automatic minting of PIV units to zPIV</source>
-        <translation>Omogući automatsko stvaranje PIV jedinica na zPIV</translation>
+        <source>Enable automatic minting of SAPP units to zRPD</source>
+        <translation>Omogućite automint SAPP jedinica na zRPD</translation>
     </message>
     <message>
-        <source>Enable zPIV Automint</source>
-        <translation>Omogući automatsko stvaranje zPIV-a</translation>
+        <source>Enable zRPD Automint</source>
+        <translation>Omogući zRPD Automint</translation>
     </message>
     <message>
-        <source>Enable automatic zPIV minting from specific addresses</source>
-        <translation>Omogući automatsko stvaranje zPIV-a s određjenih adresa</translation>
+        <source>Percentage of incoming SAPP which get automatically converted to zRPD via Zerocoin Protocol (min: 10%)</source>
+        <translation>Postotak dolaznih SAPP koji se automatski pretvara u zRPD putem protokola Zerocoin (min: 10%)</translation>
     </message>
     <message>
-        <source>Enable Automint Addresses</source>
-        <translation>Omogući Automint adrese</translation>
+        <source>Percentage of autominted zRPD</source>
+        <translation>Postotak automatiziranog zRPD</translation>
     </message>
     <message>
-        <source>Percentage of incoming PIV which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
-        <translation>Postotak dolaznih PIV koji se automatski pretvara u zPIV putem Zerocoin Protokola (min: 10%)</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough SAPP for this denomination is available</source>
+        <translation>Pričekajte s automatskom pretvorbom u Zerocoin dok ne bude dostupno dovoljno SAPP za apoen</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPIV</source>
-        <translation>Postotak automatski stvorenog zPIV-a</translation>
-    </message>
-    <message>
-        <source>Wait with automatic conversion to Zerocoin until enough PIV for this denomination is available</source>
-        <translation>Pričekajte s automatskom pretvorbom u Zerocoin dok ne bude dostupno dovoljno PIV-a za ovu denominaciju</translation>
-    </message>
-    <message>
-        <source>Preferred Automint zPIV Denomination</source>
-        <translation>Preferirana denominacija za automatsko stvaranje zPIV-a</translation>
+        <source>Preferred Automint zRPD Denomination</source>
+        <translation>Preferirana Automint zRPD denominacijad</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
         <translation>Prag razdvajanja Stake-a:</translation>
     </message>
     <message>
-        <source>Connect to the PIVX network through a SOCKS5 proxy.</source>
-        <translation>Povežite se s PIVX mrežom putem SOCKS5 proxy poslužitelja.</translation>
+        <source>Connect to the SAPP network through a SOCKS5 proxy.</source>
+        <translation>Povežite se s SAPP mrežom putem SOCKS5 proxy poslužitelja.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
-        <translation>Proxy &amp;IP:</translation>
+        <translation>Proxy IP:</translation>
     </message>
     <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
@@ -1959,15 +1136,15 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
     </message>
     <message>
         <source>&amp;Port:</source>
-        <translation>&amp;Ulaz:</translation>
+        <translation>Port:</translation>
     </message>
     <message>
         <source>Port of the proxy (e.g. 9050)</source>
-        <translation>Ulaz proxya (npr. 9050)</translation>
+        <translation>Port proxya (npr. 9050)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
-        <translation>&amp;Prozor</translation>
+        <translation>Prozor</translation>
     </message>
     <message>
         <source>Show only a tray icon after minimizing the window.</source>
@@ -1975,7 +1152,7 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
     </message>
     <message>
         <source>&amp;Minimize to the tray instead of the taskbar</source>
-        <translation>&amp;Minimaliziraj na traku umjesto Taskbar</translation>
+        <translation>Minimaliziraj na traku umjesto Taskbar</translation>
     </message>
     <message>
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
@@ -1983,43 +1160,31 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
     </message>
     <message>
         <source>M&amp;inimize on close</source>
-        <translation>M&amp;inimiziraj pri zatvaranju</translation>
+        <translation>Minimiziraj pri zatvaranju</translation>
     </message>
     <message>
         <source>&amp;Display</source>
-        <translation>&amp;Prikaz</translation>
+        <translation>Prikaz</translation>
     </message>
     <message>
         <source>User Interface &amp;language:</source>
-        <translation>Jezik korisničkog &amp;sučelja:</translation>
+        <translation>Jezik sučelja korisnika:</translation>
     </message>
     <message>
         <source>User Interface Theme:</source>
-        <translation>Tema korisničkog sučelja:</translation>
-    </message>
-    <message>
-        <source>Unit to show amounts in:</source>
-        <translation>Jedinica za prikaz iznosa:</translation>
+        <translation>Tema sučelja korisnika:</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Odaberite zadanu pododjelnu jedinicu za prikaz u sučelju i kod slanja novčića.</translation>
+        <translation>Odaberite zadanu jedinicu podjele za prikazivanje u sučelju i za slanje novca.</translation>
     </message>
     <message>
         <source>Decimal digits</source>
-        <translation>Decimalne znamenke</translation>
+        <translation>Decimalnih znamenki</translation>
     </message>
     <message>
         <source>Hide empty balances</source>
-        <translation>Sakrij prazni saldo</translation>
-    </message>
-    <message>
-        <source>Hide orphan stakes in transaction lists</source>
-        <translation>Sakrij odbijene stake-ove u listi transakcija</translation>
-    </message>
-    <message>
-        <source>Hide orphan stakes</source>
-        <translation>Sakrij odbijene stake-ove</translation>
+        <translation>Sakri praznu bilancu</translation>
     </message>
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
@@ -2039,23 +1204,23 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
     </message>
     <message>
         <source>&amp;Reset Options</source>
-        <translation>&amp;Mogućnosti ponovnog postavljanja</translation>
+        <translation>Mogućnosti ponovnog postavljanja</translation>
     </message>
     <message>
         <source>&amp;OK</source>
-        <translation>&amp;OK</translation>
+        <translation>U redu</translation>
     </message>
     <message>
         <source>&amp;Cancel</source>
-        <translation>&amp;Poništi</translation>
+        <translation>Poništi</translation>
     </message>
     <message>
         <source>Any</source>
-        <translation>Bilo koji</translation>
+        <translation>bilo koji</translation>
     </message>
     <message>
         <source>default</source>
-        <translation>zadani</translation>
+        <translation>Zadani</translation>
     </message>
     <message>
         <source>none</source>
@@ -2093,8 +1258,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
 <context>
     <name>PIVXGUI</name>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Sap</source>
+        <translation>Sap</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -2102,11 +1267,11 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
     </message>
     <message>
         <source>Node</source>
-        <translation>Node</translation>
+        <translation>Node ( čvor )</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
-        <translation>&amp;Prikaži / Sakrij</translation>
+        <translation>Prikaži / Sakrij</translation>
     </message>
     <message>
         <source>Show or hide the main Window</source>
@@ -2114,14 +1279,14 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
-        <translation>I&amp;zlaz</translation>
+        <translation>Izlaz</translation>
     </message>
     <message>
         <source>Quit application</source>
         <translation>Napusti aplikaciju</translation>
     </message>
     <message>
-        <source>PIVX Core client</source>
+        <source>Sap client</source>
         <translation>PIVIX Core Klijent</translation>
     </message>
     <message>
@@ -2137,20 +1302,16 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Informacije</translation>
     </message>
     <message>
-        <source>System Message</source>
-        <translation>Sistemska poruka</translation>
-    </message>
-    <message>
         <source>Sent MultiSend transaction</source>
         <translation>Pošalji Višestruku transakciju</translation>
     </message>
     <message>
         <source>Sent transaction</source>
-        <translation>Poslana transakcija</translation>
+        <translation>Poslane transakcije</translation>
     </message>
     <message>
         <source>Incoming transaction</source>
-        <translation>Dolazna transakcija</translation>
+        <translation>Dolazne transakcije</translation>
     </message>
     <message>
         <source>Date: %1
@@ -2164,20 +1325,19 @@ Tip: %3
 Adresa: %4
 </translation>
     </message>
-    <message>
-        <source>A fatal error occurred. PIVX can no longer continue safely and will quit.</source>
-        <translation>Dogodila se fatalna pogreška. PIVX ne može sigurno nastaviti i izaći će.</translation>
-    </message>
-</context>
+    </context>
+<context>
+    <name>PWidget</name>
+    </context>
 <context>
     <name>PaymentServer</name>
     <message>
         <source>Payment request error</source>
-        <translation>Greška sa zahtjevom za plaćanje</translation>
+        <translation>Greška zahtjeva za plaćanje</translation>
     </message>
     <message>
         <source>URI handling</source>
-        <translation>Rukovanje s URI</translation>
+        <translation>rukovanje s URI</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -2192,12 +1352,12 @@ Adresa: %4
         <translation>Nevažeća adresa za plaćanje %1</translation>
     </message>
     <message>
-        <source>Cannot start pivx: click-to-pay handler</source>
-        <translation>Ne može se pokrenuti pivx: clik-to-pay handler</translation>
+        <source>Cannot start sap: click-to-pay handler</source>
+        <translation>Ne može se pokrenuti sap: clik-to-pay handler</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid PIVX address or malformed URI parameters.</source>
-        <translation>URI se ne može analizirati! To može biti uzrokovana nevažećom PIVX adresom ili nepravilnim URI parametrima.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid SAPP address or malformed URI parameters.</source>
+        <translation>URI se ne može analizirati! To može biti uzrokovana nevažećom SAPP adresom ili nepravilnim URI parametrima.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2225,7 +1385,7 @@ Adresa: %4
     </message>
     <message>
         <source>Requested payment amount of %1 is too small (considered dust).</source>
-        <translation>Zatraženi iznos plaćanja u iznosu od %1 je premali (smatra se sitnišem).</translation>
+        <translation>Zatražena uplata od %1 je premala (smatra se prašinom).</translation>
     </message>
     <message>
         <source>Refund from %1</source>
@@ -2237,7 +1397,7 @@ Adresa: %4
     </message>
     <message>
         <source>Payment request DoS protection</source>
-        <translation>Zahtjev za plaćanje DoS zaštita</translation>
+        <translation>Zahtjev za plaćanje DoS zaštitu</translation>
     </message>
     <message>
         <source>Error communicating with %1: %2</source>
@@ -2253,7 +1413,7 @@ Adresa: %4
     </message>
     <message>
         <source>Network request error</source>
-        <translation>Greška kod mrežnog zahtjeva</translation>
+        <translation>Greška odgovora mreže</translation>
     </message>
     <message>
         <source>Payment acknowledged</source>
@@ -2264,7 +1424,7 @@ Adresa: %4
     <name>PeerTableModel</name>
     <message>
         <source>Address/Hostname</source>
-        <translation>Adresa/Naziv poslužitelja</translation>
+        <translation>Adresa / Naziv poslužitelja</translation>
     </message>
     <message>
         <source>Version</source>
@@ -2282,124 +1442,13 @@ Adresa: %4
         <translation>Obrazac</translation>
     </message>
     <message>
-        <source>Title</source>
-        <translation>Naslov</translation>
-    </message>
-    <message>
         <source>TextLabel</source>
-        <translation>TekstOznake</translation>
+        <translation>TextLabel</translation>
     </message>
-    <message>
-        <source>PushButton</source>
-        <translation>TipkaZaPritisak</translation>
-    </message>
-    <message>
-        <source>N/A</source>
-        <translation>N/A</translation>
-    </message>
-    <message>
-        <source>Privacy</source>
-        <translation>Privatnost</translation>
-    </message>
-    <message>
-        <source>Convert</source>
-        <translation>Konvertiraj</translation>
-    </message>
-    <message>
-        <source>Mint</source>
-        <translation>Stvori</translation>
-    </message>
-    <message>
-        <source>Minting zPIV anonymizes your PIV by removing any
-transaction history, making transactions untraceable </source>
-        <translation>Stvaranje zPIV-a anonimizira Vaš PIV brišući cijelu
-povijest transakcija, čineći transakcije nepratljivima</translation>
-    </message>
-    <message>
-        <source>Mint new zPIV or convert back to PIV</source>
-        <translation>Stvori novi zPIV ili pretvori natrag u PIV</translation>
-    </message>
-    <message>
-        <source>Last zPIV Movements</source>
-        <translation>Posljednja zPIV kretanja</translation>
-    </message>
-    <message>
-        <source>No transactions yet</source>
-        <translation>Nema još transakcija</translation>
-    </message>
-    <message>
-        <source>Mint zPIV</source>
-        <translation>Stvori zPIV</translation>
-    </message>
-    <message>
-        <source>Enter amount of PIV to mint into zPIV</source>
-        <translation>Unesite iznos PIV-a za pretvorbu u zPIV</translation>
-    </message>
-    <message>
-        <source>Convert back to PIV</source>
-        <translation>Pretvori natrag u PIV</translation>
-    </message>
-    <message>
-        <source>Enter amount of zPIV to convert back into PIV</source>
-        <translation>Upišite iznos zPIV za konverziju natrag u PIV</translation>
-    </message>
-    <message>
-        <source>Zerocoin</source>
-        <translation>Zerocoin</translation>
-    </message>
-    <message>
-        <source>zPIV is currently undergoing maintenance</source>
-        <translation>zPIV se trenutno održava</translation>
-    </message>
-    <message>
-        <source>You need to unlock the wallet to be able to %1 zPIV</source>
-        <translation>Morate otključati novčanik kako biste mogli %1 zPIV</translation>
-    </message>
-    <message>
-        <source>convert</source>
-        <translation>konvert</translation>
-    </message>
-    <message>
-        <source>mint</source>
-        <translation>stvori</translation>
-    </message>
-    <message>
-        <source>Invalid value</source>
-        <translation>Nevažeća vrijednost</translation>
-    </message>
-    <message>
-        <source>zPIV minted successfully</source>
-        <translation>zPIV uspješno stvoren</translation>
-    </message>
-    <message>
-        <source>zPIV converted back to PIV</source>
-        <translation>zPIV pretvoren natrag u PIV</translation>
-    </message>
-    <message>
-        <source>You don't have any PIV to select.</source>
-        <translation>Nemate PIV-a za odabrati</translation>
-    </message>
-    <message>
-        <source>Rescan Mints</source>
-        <translation>Ponovno pretraži stvorene novčiće</translation>
-    </message>
-    <message>
-        <source>Your zerocoin mints are going to be scanned from the blockchain from scratch</source>
-        <translation>Vaši zerocoin novčići skenirat će se iz blockchaina od samog početka</translation>
-    </message>
-    <message>
-        <source>Reset Spent zPIV</source>
-        <translation>Resetiraj potrošeni zPIV</translation>
-    </message>
-    <message>
-        <source>Your zerocoin spends are going to be scanned from the blockchain from scratch</source>
-        <translation>Vaša zerocoin potrošnja će biti skenirana s blockchaina od početka</translation>
-    </message>
-    <message>
-        <source>Total %1</source>
-        <translation>Ukupno %1</translation>
-    </message>
-</context>
+    </context>
+<context>
+    <name>ProposalFrame</name>
+    </context>
 <context>
     <name>QObject</name>
     <message>
@@ -2407,8 +1456,8 @@ povijest transakcija, čineći transakcije nepratljivima</translation>
         <translation>Iznos</translation>
     </message>
     <message>
-        <source>Enter PIVX address (e.g. %1)</source>
-        <translation>Upišite PIVX adresu (npr. %1)</translation>
+        <source>Enter a SAPP address (e.g. %1)</source>
+        <translation>Unesite SAPP adresu (npr., %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2444,149 +1493,17 @@ povijest transakcija, čineći transakcije nepratljivima</translation>
     </message>
     <message>
         <source>N/A</source>
-        <translation>N/A</translation>
+        <translation>N/D</translation>
     </message>
     <message>
         <source>%1 ms</source>
         <translation>%1 ms</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Sap</source>
+        <translation>Sap</translation>
     </message>
-    <message>
-        <source>Error: Specified data directory "%1" does not exist.</source>
-        <translation>Greška: Specificirana mapa podataka "%1" ne postoji.</translation>
-    </message>
-    <message>
-        <source>Error: Cannot parse configuration file: %1. Only use key=value syntax.</source>
-        <translation>Greška: Ne mogu parsirati konfiguracijsku datoteku: %1. Koristite samo sintaksu key=value.</translation>
-    </message>
-    <message>
-        <source>Error: Invalid combination of -regtest and -testnet.</source>
-        <translation>Greška: Neispravna kombinacija -regtest i -testnet.</translation>
-    </message>
-    <message>
-        <source>Error reading masternode configuration file: %1</source>
-        <translation>Greška pri čitanju masternode konfiguracijske datoteke: %1</translation>
-    </message>
-    <message>
-        <source>PIVX Core didn't yet exit safely...</source>
-        <translation>PIVX Core nije ugašen sigurno...</translation>
-    </message>
-    <message>
-        <source>Contact</source>
-        <translation>Kontakt</translation>
-    </message>
-    <message>
-        <source>Receiving</source>
-        <translation>Primanje</translation>
-    </message>
-    <message>
-        <source>Delegator</source>
-        <translation>Delegator</translation>
-    </message>
-    <message>
-        <source>Cold Staking</source>
-        <translation>Cold Staking</translation>
-    </message>
-    <message>
-        <source>Cold Staking Contact</source>
-        <translation>Cold Staking kontakt</translation>
-    </message>
-    <message>
-        <source>Hidden</source>
-        <translation>Skriveno</translation>
-    </message>
-    <message>
-        <source>Unknown</source>
-        <translation>Nepoznato</translation>
-    </message>
-    <message>
-        <source>All</source>
-        <translation>Sve</translation>
-    </message>
-    <message>
-        <source>Contacts</source>
-        <translation>Kontakti</translation>
-    </message>
-    <message>
-        <source>Delegators</source>
-        <translation>Delegatori</translation>
-    </message>
-    <message>
-        <source>Staking Contacts</source>
-        <translation>Staking kontakti</translation>
-    </message>
-    <message>
-        <source>Date desc</source>
-        <translation>Datum padajući</translation>
-    </message>
-    <message>
-        <source>Date asc</source>
-        <translation>Datum rastući</translation>
-    </message>
-    <message>
-        <source>Amount desc</source>
-        <translation>Iznos padajući</translation>
-    </message>
-    <message>
-        <source>Amount asc</source>
-        <translation>Iznos rastući</translation>
-    </message>
-    <message>
-        <source>Received</source>
-        <translation>Primljeno</translation>
-    </message>
-    <message>
-        <source>Sent</source>
-        <translation>Poslano</translation>
-    </message>
-    <message>
-        <source>Mined</source>
-        <translation>Mined</translation>
-    </message>
-    <message>
-        <source>Minted</source>
-        <translation>Minted</translation>
-    </message>
-    <message>
-        <source>MN reward</source>
-        <translation>MN nagrade</translation>
-    </message>
-    <message>
-        <source>To yourself</source>
-        <translation>Sebi</translation>
-    </message>
-    <message>
-        <source>Cold stakes</source>
-        <translation>Cold stake-ovi</translation>
-    </message>
-    <message>
-        <source>Hot stakes</source>
-        <translation>Hot stake-ovi</translation>
-    </message>
-    <message>
-        <source>Delegated</source>
-        <translation>Delegirano</translation>
-    </message>
-    <message>
-        <source>Delegations</source>
-        <translation>Delegacije</translation>
-    </message>
-    <message>
-        <source>by Label</source>
-        <translation>po Oznaci</translation>
-    </message>
-    <message>
-        <source>by Address</source>
-        <translation>po Adresi</translation>
-    </message>
-    <message>
-        <source>by Date</source>
-        <translation>po Datumu</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>RPCConsole</name>
     <message>
@@ -2595,11 +1512,11 @@ povijest transakcija, čineći transakcije nepratljivima</translation>
     </message>
     <message>
         <source>&amp;Information</source>
-        <translation>&amp;Informacije</translation>
+        <translation>Informacije</translation>
     </message>
     <message>
         <source>General</source>
-        <translation>Općenito</translation>
+        <translation>Opće</translation>
     </message>
     <message>
         <source>Name</source>
@@ -2607,11 +1524,12 @@ povijest transakcija, čineći transakcije nepratljivima</translation>
     </message>
     <message>
         <source>Client name</source>
-        <translation>Ime klijenta</translation>
+        <translation>Ime klijenta
+</translation>
     </message>
     <message>
         <source>N/A</source>
-        <translation>N/A</translation>
+        <translation>N/D</translation>
     </message>
     <message>
         <source>Number of connections</source>
@@ -2619,7 +1537,7 @@ povijest transakcija, čineći transakcije nepratljivima</translation>
     </message>
     <message>
         <source>&amp;Open</source>
-        <translation>&amp;Otvori</translation>
+        <translation>Otvori</translation>
     </message>
     <message>
         <source>Startup time</source>
@@ -2643,7 +1561,7 @@ povijest transakcija, čineći transakcije nepratljivima</translation>
     </message>
     <message>
         <source>Current number of blocks</source>
-        <translation>Trenutni broj blokova</translation>
+        <translation>Trenutan broj blokova</translation>
     </message>
     <message>
         <source>Client version</source>
@@ -2658,24 +1576,16 @@ povijest transakcija, čineći transakcije nepratljivima</translation>
         <translation>Block chain</translation>
     </message>
     <message>
-        <source>Open the PIVX debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Otvorite PIVX debug log datoteku iz aktualnog direktorija podataka. To može potrajati nekoliko sekundi za velike datoteke zapisnika.</translation>
+        <source>Open the SAPP debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Otvorite SAPP debug log datoteku iz aktualnog direktorija podataka. To može potrajati nekoliko sekundi za velike datoteke zapisnika.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
-        <translation>Broj Masternode-ova</translation>
-    </message>
-    <message>
-        <source>Data Directory</source>
-        <translation>Direktorij podataka</translation>
-    </message>
-    <message>
-        <source>Last block hash</source>
-        <translation>Hash zadnjeg bloka</translation>
+        <translation>Broj Masternoda</translation>
     </message>
     <message>
         <source>&amp;Console</source>
-        <translation>&amp;Konzola</translation>
+        <translation>Konzola</translation>
     </message>
     <message>
         <source>Clear console</source>
@@ -2683,11 +1593,11 @@ povijest transakcija, čineći transakcije nepratljivima</translation>
     </message>
     <message>
         <source>&amp;Network Traffic</source>
-        <translation>&amp;Promet mreže</translation>
+        <translation>Promet Mreže</translation>
     </message>
     <message>
         <source>&amp;Clear</source>
-        <translation>&amp;Očisti</translation>
+        <translation>Očisti</translation>
     </message>
     <message>
         <source>Totals</source>
@@ -2703,19 +1613,19 @@ povijest transakcija, čineći transakcije nepratljivima</translation>
     </message>
     <message>
         <source>&amp;Peers</source>
-        <translation>&amp;Korisnici</translation>
+        <translation>Peers</translation>
     </message>
     <message>
         <source>Banned peers</source>
-        <translation>Blokirani korisnici</translation>
+        <translation>Blokirani peer-ovi</translation>
     </message>
     <message>
         <source>Select a peer to view detailed information.</source>
-        <translation>Odaberite korisnika da biste vidjeli detaljne informacije.</translation>
+        <translation>Odaberite peer da biste vidjeli detaljne informacije.</translation>
     </message>
     <message>
         <source>Whitelisted</source>
-        <translation>Dopušteni</translation>
+        <translation>Whitelisted</translation>
     </message>
     <message>
         <source>Direction</source>
@@ -2731,11 +1641,11 @@ povijest transakcija, čineći transakcije nepratljivima</translation>
     </message>
     <message>
         <source>Services</source>
-        <translation>Usluge</translation>
+        <translation>Servis</translation>
     </message>
     <message>
         <source>Ban Score</source>
-        <translation>Blokiraj rezultat</translation>
+        <translation>Ban rezultat</translation>
     </message>
     <message>
         <source>Connection Time</source>
@@ -2743,19 +1653,19 @@ povijest transakcija, čineći transakcije nepratljivima</translation>
     </message>
     <message>
         <source>Last Send</source>
-        <translation>Zadnje slanje</translation>
+        <translation>Zadnji slanje</translation>
     </message>
     <message>
         <source>Last Receive</source>
-        <translation>Zadnje primljeno</translation>
+        <translation>Zadnji prijem</translation>
     </message>
     <message>
         <source>Bytes Sent</source>
-        <translation>Bajtova poslano</translation>
+        <translation>Poslani Bytovi</translation>
     </message>
     <message>
         <source>Bytes Received</source>
-        <translation>Bajtova primljeno</translation>
+        <translation>Primljeni Bytovi</translation>
     </message>
     <message>
         <source>Ping Time</source>
@@ -2763,7 +1673,7 @@ povijest transakcija, čineći transakcije nepratljivima</translation>
     </message>
     <message>
         <source>&amp;Wallet Repair</source>
-        <translation>&amp;Popravak novčanika</translation>
+        <translation>Popravak novčanika</translation>
     </message>
     <message>
         <source>Delete local Blockchain Folders</source>
@@ -2771,11 +1681,11 @@ povijest transakcija, čineći transakcije nepratljivima</translation>
     </message>
     <message>
         <source>Wallet In Use:</source>
-        <translation>Novčanik u upotrebi:</translation>
+        <translation>Novčanik u uporabi:</translation>
     </message>
     <message>
         <source>Starting Block</source>
-        <translation>Početni blok</translation>
+        <translation>Zapoćinje Block</translation>
     </message>
     <message>
         <source>Synced Headers</source>
@@ -2783,7 +1693,7 @@ povijest transakcija, čineći transakcije nepratljivima</translation>
     </message>
     <message>
         <source>Synced Blocks</source>
-        <translation>Sinkronizirani blokovi</translation>
+        <translation>Sinkronizirana zaglavlja</translation>
     </message>
     <message>
         <source>The duration of a currently outstanding ping.</source>
@@ -2791,7 +1701,7 @@ povijest transakcija, čineći transakcije nepratljivima</translation>
     </message>
     <message>
         <source>Ping Wait</source>
-        <translation>Čekanje pinga</translation>
+        <translation>Pingaj Novčanik</translation>
     </message>
     <message>
         <source>Time Offset</source>
@@ -2802,8 +1712,8 @@ povijest transakcija, čineći transakcije nepratljivima</translation>
         <translation>Put prilagođenog sigurnosnog kopiranja:</translation>
     </message>
     <message>
-        <source>Custom zPIV Backup Path:</source>
-        <translation>Prilagođeni put zPIV sigurnosne kopije:</translation>
+        <source>Custom zRPD Backup Path:</source>
+        <translation>Prilagođeni put zRPD sigurnosne kopije:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -2827,15 +1737,15 @@ povijest transakcija, čineći transakcije nepratljivima</translation>
     </message>
     <message>
         <source>Recover transactions 1</source>
-        <translation>Oporavak transakcija 1</translation>
+        <translation>Oporavak transakcije 1</translation>
     </message>
     <message>
         <source>Recover transactions from blockchain (keep meta-data, e.g. account owner).</source>
-        <translation>Obnovi transakcije iz blockchaina (zadrži meta-podatke, npr. vlasnika računa).</translation>
+        <translation>Obnova transakcija od blockchaina (zadržite meta-podatke, npr. Vlasnika računa).</translation>
     </message>
     <message>
         <source>Recover transactions 2</source>
-        <translation>Oporavak transakcija 2</translation>
+        <translation>Oporavak transakcije 2</translation>
     </message>
     <message>
         <source>Recover transactions from blockchain (drop meta-data).</source>
@@ -2843,19 +1753,19 @@ povijest transakcija, čineći transakcije nepratljivima</translation>
     </message>
     <message>
         <source>Upgrade wallet format</source>
-        <translation>Nadogradnja formata novčanika</translation>
+        <translation>Nadogradnja formata Novčanika</translation>
     </message>
     <message>
         <source>Rebuild block chain index from current blk000??.dat files.</source>
-        <translation>Obnovi blockchain indeks iz trenutnih blk000??.dat datoteka.</translation>
+        <translation>Obnovi indeks blok lanca iz trenutnih blk000 ?? dat datoteka.</translation>
     </message>
     <message>
         <source>-resync:</source>
-        <translation>-resinkronizacija:</translation>
+        <translation>-resync:</translation>
     </message>
     <message>
         <source>Deletes all local blockchain folders so the wallet synchronizes from scratch.</source>
-        <translation>Briše sve lokalne blockchain direktorije pa se novčanik sinkronizira od početka.</translation>
+        <translation>Briše sve lokalne mape blokiranja tako da se novčanik sinkronizira ispočetka.</translation>
     </message>
     <message>
         <source>The buttons below will restart the wallet with command-line options to repair the wallet, fix issues with corrupt blockhain files or missing/obsolete transactions.</source>
@@ -2882,68 +1792,60 @@ povijest transakcija, čineći transakcije nepratljivima</translation>
         <translation>Iz:</translation>
     </message>
     <message>
-        <source>Welcome to the PIVX RPC console.</source>
-        <translation>Dobrodošli na PIVX RPC konzolu.</translation>
+        <source>Welcome to the SAPP RPC console.</source>
+        <translation>Dobrodošli na SAPP RPC konzolu.</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
-        <translation>&amp;Odspoji Node</translation>
+        <translation>Odspoji Node</translation>
     </message>
     <message>
         <source>Ban Node for</source>
-        <translation>Blokiraj Node na:</translation>
+        <translation>Ban Node za</translation>
     </message>
     <message>
         <source>1 &amp;hour</source>
-        <translation>1 &amp;sat</translation>
+        <translation>1 sat</translation>
     </message>
     <message>
         <source>1 &amp;day</source>
-        <translation>1 &amp;dan</translation>
+        <translation>1 dan</translation>
     </message>
     <message>
         <source>1 &amp;week</source>
-        <translation>1 &amp;tjedan</translation>
+        <translation>1 tjedan</translation>
     </message>
     <message>
         <source>1 &amp;year</source>
-        <translation>1 &amp;godinu</translation>
+        <translation>1 godinu</translation>
     </message>
     <message>
         <source>&amp;Unban Node</source>
-        <translation>&amp;Odblokiraj Node</translation>
+        <translation>Nebanani Nodovi</translation>
     </message>
     <message>
         <source>This will delete your local blockchain folders and the wallet will synchronize the complete Blockchain from scratch.&lt;br /&gt;&lt;br /&gt;</source>
-        <translation>Ovo će izbrisati vaše lokalne blockchain foldere i novčanik će sinkronizirati cjelokupan blockchain od početka.&lt;br /&gt;&lt;br /&gt;</translation>
+        <translation>To će izbrisati vaše lokalne mape blockcahaina i novčanik će uskladiti cijeli Blockchain od nule.</translation>
     </message>
     <message>
         <source>This needs quite some time and downloads a lot of data.&lt;br /&gt;&lt;br /&gt;</source>
-        <translation>Ovo treba prilično više vremena i preuzet će puno podataka.&lt;br /&gt;&lt;br /&gt;</translation>
+        <translation>To treba dosta vremena i preuzimanja puno podataka.</translation>
     </message>
     <message>
         <source>Your transactions and funds will be visible again after the download has completed.&lt;br /&gt;&lt;br /&gt;</source>
-        <translation>Vaše transakcije i sredstva bit će ponovno vidljivi nakon preuzimanja završe.&lt;br /&gt;&lt;br /&gt;</translation>
+        <translation>Vaše transakcije i sredstva bit će ponovno vidljivi nakon preuzimanja.</translation>
     </message>
     <message>
         <source>Do you want to continue?.&lt;br /&gt;</source>
-        <translation>Želite li nastaviti?&lt;br /&gt;</translation>
+        <translation>Želite li nastaviti?</translation>
     </message>
     <message>
         <source>Confirm resync Blockchain</source>
-        <translation>Potvrdite resinkronizaciju Blockchaina</translation>
-    </message>
-    <message>
-        <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
-        <translation>Koristi strelice prema gore i dolje za kretanje kroz povijest, i %1 da očistite ekran.</translation>
+        <translation>Potvrdite resync Blockchain</translation>
     </message>
     <message>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
-        <translation>Upišite &lt;b&gt;pomoć&lt;/b&gt; za pregled dostupnih naredbi.</translation>
-    </message>
-    <message>
-        <source>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramifications of a command.</source>
-        <translation>UPOZORENJE: Prevaranti su aktivni, govore korisnicima da ovdje unesu naredbe te im tako ukradu novčiće iz novčanika. Nemojte koristiti ovu konzonu bez potpunog razumijevanja posljedica komandi koje unosite.</translation>
+        <translation>Upišite pomoć za pregled dostupnih naredbi.</translation>
     </message>
     <message>
         <source>%1 B</source>
@@ -2975,11 +1877,11 @@ povijest transakcija, čineći transakcije nepratljivima</translation>
     </message>
     <message>
         <source>Inbound</source>
-        <translation>Dolazni</translation>
+        <translation>Dolazno</translation>
     </message>
     <message>
         <source>Outbound</source>
-        <translation>Odlazni</translation>
+        <translation>Odlazno</translation>
     </message>
     <message>
         <source>Yes</source>
@@ -2996,27 +1898,7 @@ povijest transakcija, čineći transakcije nepratljivima</translation>
 </context>
 <context>
     <name>ReceiveDialog</name>
-    <message>
-        <source>Dialog</source>
-        <translation>Dijaloški okvir</translation>
-    </message>
-    <message>
-        <source>Transaction Details</source>
-        <translation>Detalji tranksacije</translation>
-    </message>
-    <message>
-        <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
-        <translation>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z</translation>
-    </message>
-    <message>
-        <source>CANCEL</source>
-        <translation>PONIŠTI</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation>OK</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>ReceiveWidget</name>
     <message>
@@ -3025,85 +1907,9 @@ povijest transakcija, čineći transakcije nepratljivima</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation>TekstOznake</translation>
+        <translation>TextLabel</translation>
     </message>
-    <message>
-        <source>No address</source>
-        <translation>Nema adrese</translation>
-    </message>
-    <message>
-        <source>Add Label</source>
-        <translation>Dodaj naziv</translation>
-    </message>
-    <message>
-        <source>Generate Address</source>
-        <translation>Generiraj adresu</translation>
-    </message>
-    <message>
-        <source>Copy</source>
-        <translation>Kopiraj</translation>
-    </message>
-    <message>
-        <source>Receive</source>
-        <translation>Primi</translation>
-    </message>
-    <message>
-        <source>Scan the QR code or copy the address to receive PIV.</source>
-        <translation>Skenirajte QR kod ili kopirajte adresu da biste primili PIV.</translation>
-    </message>
-    <message>
-        <source>No address </source>
-        <translation>Nema adrese</translation>
-    </message>
-    <message>
-        <source>No available address, try unlocking the wallet</source>
-        <translation>Nema dostupne adrese, pokušajte otključati novčanik</translation>
-    </message>
-    <message>
-        <source>Error generating address</source>
-        <translation>Greška pri generiranju adrese</translation>
-    </message>
-    <message>
-        <source>Edit Label</source>
-        <translation>Uredi naziv</translation>
-    </message>
-    <message>
-        <source>Edit Address Label</source>
-        <translation>Uredi naziv adrese</translation>
-    </message>
-    <message>
-        <source>Address label saved</source>
-        <translation>Naziv adrese spremljen</translation>
-    </message>
-    <message>
-        <source>Error storing address label</source>
-        <translation>Greška pri spremanju oznake adrese</translation>
-    </message>
-    <message>
-        <source>Cannot create new address, wallet locked</source>
-        <translation>Ne može se kreirati nova adresa, novčanik je zaključan</translation>
-    </message>
-    <message>
-        <source>New address created</source>
-        <translation>Nova adresa stvorena</translation>
-    </message>
-    <message>
-        <source>Address copied</source>
-        <translation>Adresa kopirana</translation>
-    </message>
-    <message>
-        <source>Cannot perform operation, wallet locked</source>
-        <translation>Ne može se izvršiti operacija, novčanik je zaključan</translation>
-    </message>
-    <message>
-        <source>URI copied to clipboard</source>
-        <translation>URI kopiran u medjuspremnik</translation>
-    </message>
-    <message>
-        <source>Address copied to clipboard</source>
-        <translation>Adresa kopirana u medjuspremnik</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>RecentRequestsTableModel</name>
     <message>
@@ -3142,198 +1948,30 @@ povijest transakcija, čineći transakcije nepratljivima</translation>
 <context>
     <name>RequestDialog</name>
     <message>
-        <source>Dialog</source>
-        <translation>Dijaloški okvir</translation>
-    </message>
-    <message>
-        <source>New Request Payment</source>
-        <translation>Novi zahtjev za plaćanje</translation>
-    </message>
-    <message>
-        <source>Lorem ipsum dolor sit amet, consectur cling elit, sed do </source>
-        <translation>Lorem ipsum dolor sit amet, consectur cling elit, sed do</translation>
-    </message>
-    <message>
         <source>Amount</source>
         <translation>Iznos</translation>
     </message>
     <message>
-        <source>PIV</source>
-        <translation>PIV</translation>
-    </message>
-    <message>
         <source>TextLabel</source>
-        <translation>TekstOznake</translation>
-    </message>
-    <message>
-        <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
-        <translation>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </translation>
-    </message>
-    <message>
-        <source>COPY ADDRESS</source>
-        <translation>KOPIRAJ ADRESU</translation>
-    </message>
-    <message>
-        <source>COPY URL</source>
-        <translation>KOPIRAJ POVEZNICU</translation>
-    </message>
-    <message>
-        <source>CANCEL</source>
-        <translation>PONIŠTI</translation>
-    </message>
-    <message>
-        <source>REQUEST</source>
-        <translation>ZAHTJEV</translation>
+        <translation>TextLabel</translation>
     </message>
     <message>
         <source>Label</source>
         <translation>Oznaka</translation>
     </message>
     <message>
-        <source>Description (optional)</source>
-        <translation>Opis (neobavezno)</translation>
-    </message>
-    <message>
-        <source>New Payment Request</source>
-        <translation>Novi zahtjev za plaćanje</translation>
-    </message>
-    <message>
-        <source>Instead of sharing only a PIVX address, you can create a payment request, bundling up more information.</source>
-        <translation>Umjesto da dijelite samo PIVX adresu, možete stvoriti zahtjev za plaćanje i povezivati više informacija.</translation>
-    </message>
-    <message>
-        <source>Enter a label for the address</source>
-        <translation>Unesite oznaku za adresu</translation>
-    </message>
-    <message>
-        <source>Enter description</source>
-        <translation>Unesite opis</translation>
-    </message>
-    <message>
         <source>Error</source>
         <translation>Greška</translation>
     </message>
-    <message>
-        <source>GENERATE</source>
-        <translation>GENERIRAJ</translation>
-    </message>
-    <message>
-        <source>Creates an address to receive coin delegations and be able to stake them.</source>
-        <translation>Stvara adresu za primanje delegacija novčića i mogućnost njihovog stake-anja.</translation>
-    </message>
-    <message>
-        <source>New Cold Staking Address</source>
-        <translation>Nova Cold Staking adresa</translation>
-    </message>
-    <message>
-        <source>Amount (optional)</source>
-        <translation>Iznos (neobavezno)</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>SendChangeAddressDialog</name>
-    <message>
-        <source>Dialog</source>
-        <translation>Dijaloški okvir</translation>
-    </message>
-    <message>
-        <source>Transaction Details</source>
-        <translation>Detalji tranksacije</translation>
-    </message>
-    <message>
-        <source>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</source>
-        <translation>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</translation>
-    </message>
-    <message>
-        <source>CANCEL</source>
-        <translation>PONIŠTI</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation>OK</translation>
-    </message>
-    <message>
-        <source>Custom Change Address</source>
-        <translation>Prilagođjena adresa za ostatak</translation>
-    </message>
-    <message>
-        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" PIVX address</source>
-        <translation>Ostatak vrijednosti koja proizlazi iz ulaza umanjen za izlaznu vrijednost ide na PIVX adresu za "ostatak"</translation>
-    </message>
-    <message>
-        <source>SAVE</source>
-        <translation>SPREMI</translation>
-    </message>
-    <message>
-        <source>RESET</source>
-        <translation>RESETIRAJ</translation>
-    </message>
-    <message>
-        <source>Invalid address</source>
-        <translation>Nevažeća adresa</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>SendCustomFeeDialog</name>
     <message>
         <source>Form</source>
         <translation>Obrazac</translation>
-    </message>
-    <message>
-        <source>Transaction Details</source>
-        <translation>Detalji tranksacije</translation>
-    </message>
-    <message>
-        <source>Customize the transaction fee at your to your liking, depending on the fee value your transaction will be included or not in the blockchain.</source>
-        <translation>Prilagodite naknadu za transakciju po Vašoj želji, ovisno o visini naknade vaša transakcija će biti uključena brže u blockchain.</translation>
-    </message>
-    <message>
-        <source>Recommended</source>
-        <translation>Preporučeno</translation>
-    </message>
-    <message>
-        <source>PIV/kilobyte</source>
-        <translation>PIV/kilobajt</translation>
-    </message>
-    <message>
-        <source>0.00 KB</source>
-        <translation>0.00 KB</translation>
-    </message>
-    <message>
-        <source>Custom</source>
-        <translation>Prilagodi</translation>
-    </message>
-    <message>
-        <source>CANCEL</source>
-        <translation>PONIŠTI</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation>OK</translation>
-    </message>
-    <message>
-        <source>Customize Fee</source>
-        <translation>Prilagodite naknadu</translation>
-    </message>
-    <message>
-        <source>Customize the transaction fee, depending on the fee value your transaction might be included faster in the blockchain.</source>
-        <translation>Prilagodite naknadu za transakciju, ovisno o visini naknade Vaša transakcija mogla bi biti brže uključena u blockchain.</translation>
-    </message>
-    <message>
-        <source>Normal</source>
-        <translation>Normalno</translation>
-    </message>
-    <message>
-        <source>Slow</source>
-        <translation>Sporo</translation>
-    </message>
-    <message>
-        <source>Fast</source>
-        <translation>Brzo</translation>
-    </message>
-    <message>
-        <source>SAVE</source>
-        <translation>SPREMI</translation>
     </message>
     </context>
 <context>
@@ -3344,162 +1982,26 @@ povijest transakcija, čineći transakcije nepratljivima</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation>TekstOznake</translation>
+        <translation>TextLabel</translation>
     </message>
-    <message>
-        <source>Enter address</source>
-        <translation>Unesite adresu</translation>
-    </message>
-    <message>
-        <source>Enter label</source>
-        <translation>Unesite oznaku</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>SendWidget</name>
     <message>
-        <source>Send</source>
-        <translation>Pošalji</translation>
-    </message>
-    <message>
-        <source>You can transfer public coins (PIV) or private coins (zPIV)</source>
-        <translation>Mogućnost prijenosa javnih novčića (PIV) ili anonimnih novčića (zPIV)</translation>
-    </message>
-    <message>
-        <source>Select coin type to spend</source>
-        <translation>Označi tip novčića za potrošiti</translation>
-    </message>
-    <message>
         <source>Amount</source>
         <translation>Iznos</translation>
-    </message>
-    <message>
-        <source>Customize fee</source>
-        <translation>Prilagodite naknadu</translation>
-    </message>
-    <message>
-        <source>Clear all</source>
-        <translation>Očisti sve</translation>
-    </message>
-    <message>
-        <source>Add recipient</source>
-        <translation>Dodaj primatelja</translation>
-    </message>
-    <message>
-        <source>Reset to default</source>
-        <translation>Resetiraj na početno stanje</translation>
-    </message>
-    <message>
-        <source>Total to send</source>
-        <translation>Ukupno za slanje</translation>
-    </message>
-    <message>
-        <source>Send PIV</source>
-        <translation>Pošalji PIV</translation>
-    </message>
-    <message>
-        <source>Send zPIV</source>
-        <translation>Pošalji zPIV</translation>
-    </message>
-    <message>
-        <source>Total remaining from the selected UTXO</source>
-        <translation>Ukupno preostalo od odabranog UTXO</translation>
-    </message>
-    <message>
-        <source>Total remaining</source>
-        <translation>Ukupno preostalo</translation>
-    </message>
-    <message>
-        <source>Warning!</source>
-        <translation>Upozorenje!</translation>
-    </message>
-    <message>
-        <source>The change address doesn't belong to this wallet.
-
-Do you want to continue?</source>
-        <translation>Adresa za ostatak ne pripada ovom novčaniku.
-
-Želite li nastaviti?</translation>
-    </message>
-    <message>
-        <source>Customize Fee</source>
-        <translation>Prilagodite naknadu</translation>
-    </message>
-    <message>
-        <source>Maximum amount of outputs reached</source>
-        <translation>Maksimalni iznos rezultata dosegnut</translation>
-    </message>
-    <message>
-        <source>PIVX address or contact label</source>
-        <translation>PIVX adresa ili naziv kontakta</translation>
-    </message>
-    <message>
-        <source>Invalid entry, previous entries must be valid before add a new one</source>
-        <translation>Neispravan unos, prethodni unosi moraju biti ispravni prije dodavanja novog</translation>
-    </message>
-    <message>
-        <source>Possibly spend coins delegated for cold-staking (currently available: %1</source>
-        <translation>Moguća potrošnja novčića delegiranih za cold-staking (trenutno dostupno: %1</translation>
-    </message>
-    <message>
-        <source>Invalid entry</source>
-        <translation>Nevažeći unos</translation>
-    </message>
-    <message>
-        <source>No set recipients</source>
-        <translation>Nema postavljenih primatelja</translation>
-    </message>
-    <message>
-        <source>Cannot send, wallet locked</source>
-        <translation>Ne može se poslati, novčanik je zaključan</translation>
-    </message>
-    <message>
-        <source>Cannot create transaction.</source>
-        <translation>Neuspjelo stvaranje transakcije.</translation>
-    </message>
-    <message>
-        <source>WARNING:
-Transaction spends a cold-stake delegation, voiding it.
-These coins will no longer be cold-staked.</source>
-        <translation>UPOZORENJE:
-Transakcija troši cold-stake delegaciju, uklanjajući ju.
-Ovi novčići više neće biti cold-stakeani.</translation>
-    </message>
-    <message>
-        <source>Transaction sent</source>
-        <translation>Transakcija poslana</translation>
     </message>
     <message>
         <source>Spend Zerocoin</source>
         <translation>Potroši Zerocoin</translation>
     </message>
     <message>
-        <source>zPIV is currently undergoing maintenance.</source>
-        <translation>Radovi u tijeku na zPIV.</translation>
+        <source>zRPD is currently undergoing maintenance.</source>
+        <translation>Radovi u tijeku na zRPD.</translation>
     </message>
     <message>
-        <source>Coin control mint not found</source>
-        <translation>Novčić nije pronađen u Upravljanju novčićima</translation>
-    </message>
-    <message>
-        <source>Sending %1 to address %2
-</source>
-        <translation>Slanje %1 na adresu %2
-</translation>
-    </message>
-    <message>
-        <source>Sending %1 to addresses:
-%2</source>
-        <translation>Slanje %1 na adrese:
-%2</translation>
-    </message>
-    <message>
-        <source>zPIV transaction sent!</source>
-        <translation>zPIV transakcija poslana!</translation>
-    </message>
-    <message>
-        <source>Version 1 zPIV require a security level of 100 to successfully spend.</source>
-        <translation>Verzija 1 zPIV zahtjeva sigurnosnu razinu 100 da se uspješno utroši.</translation>
+        <source>Version 1 zRPD require a security level of 100 to successfully spend.</source>
+        <translation>Verzija 1 zRPD zahtjeva sigurnosnu razinu 100 da se uspješno utroši.</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -3514,70 +2016,9 @@ Maksimalno dopušteno:</translation>
     <message>
         <source>
 Either mint higher denominations (so fewer inputs are needed) or reduce the amount to spend.</source>
-        <translation>
-Ili mintaj više vrijedne denominacije (tako da je potrebno manje ulaza) ili smanjiti iznos potrošnje</translation>
+        <translation>Ili mintaj više vrijedne denominacije (tako da je potrebno manje ulaza) ili smanjiti iznos potrošnje</translation>
     </message>
-    <message>
-        <source>Address label update failed for address: %1</source>
-        <translation>Ažuriranje oznake adrese nije uspjelo za adresu: %1</translation>
-    </message>
-    <message>
-        <source>Invalid URI</source>
-        <translation>Nevažeći URI</translation>
-    </message>
-    <message>
-        <source>Invalid address in URI</source>
-        <translation>Nevažeća adresa u URI-u</translation>
-    </message>
-    <message>
-        <source>Custom Fee %1</source>
-        <translation>Prilagođjena naknada %1</translation>
-    </message>
-    <message>
-        <source>You don't have any PIV to select.</source>
-        <translation>Nemate PIV-a za odabrati</translation>
-    </message>
-    <message>
-        <source>You don't have any zPIV in your balance to select.</source>
-        <translation>Nemate zPIV u svom saldu za odabir.</translation>
-    </message>
-    <message>
-        <source>No contacts available, you can go to the contacts screen and add some there!</source>
-        <translation>Nema dostupnih kontakata, možete otići na zaslon s kontaktima i tamo ih dodati!</translation>
-    </message>
-    <message>
-        <source>Save contact</source>
-        <translation>Spremi kontakt</translation>
-    </message>
-    <message>
-        <source>Address field is empty</source>
-        <translation>Polje adrese je prazno</translation>
-    </message>
-    <message>
-        <source>Invalid address</source>
-        <translation>Nevažeća adresa</translation>
-    </message>
-    <message>
-        <source>Cannot store your own address as contact</source>
-        <translation>Ne možete pohraniti vlastitu adresu kao kontakt</translation>
-    </message>
-    <message>
-        <source>Update Contact</source>
-        <translation>Ažuriraj kontakt</translation>
-    </message>
-    <message>
-        <source>Create New Contact</source>
-        <translation>Stvori novi kontakt</translation>
-    </message>
-    <message>
-        <source>New Contact Stored</source>
-        <translation>Novi kontakt spremljen</translation>
-    </message>
-    <message>
-        <source>Error Storing Contact</source>
-        <translation>Greška pri spremanju kontakta</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>SettingsBackupWallet</name>
     <message>
@@ -3586,39 +2027,7 @@ Ili mintaj više vrijedne denominacije (tako da je potrebno manje ulaza) ili sma
     </message>
     <message>
         <source>TextLabel</source>
-        <translation>TekstOznake</translation>
-    </message>
-    <message>
-        <source>Backup Wallet </source>
-        <translation>Pohrani novčanik</translation>
-    </message>
-    <message>
-        <source>Change Wallet Passphrase</source>
-        <translation>Promjeni lozinku novčanika</translation>
-    </message>
-    <message>
-        <source>This will decrypt the whole wallet data and encrypt it back with the new passphrase.
-Remember to write it down and store it safely, otherwise you might lose access to your funds.</source>
-        <translation>Ovo će dekriptirati sve podatke novčanika i kriptirati ih ponovno s novom lozinkom.
-Ne zaboravite zapisati lozinku i spremite je na sigurno, u suprotnom ćete izgubiti pristup vašim sredstvima.</translation>
-    </message>
-    <message>
-        <source>Where</source>
-        <translation>Gdje</translation>
-    </message>
-    <message>
-        <source>Keep your wallet safe by doing regular backups and storing your backup file externally.
-This option creates a wallet.dat file that can be used to recover your whole balance (transactions and addresses) on another device.</source>
-        <translation>Čuvajte svoj novčanik radeći redovite sigurnosne kopije i pohranjivanjem datoteke sigurnosne kopije na sigurnom.
-Ova opcija stvara datoteku wallet.dat koja se može koristiti za oporavak cijelog stanja (transakcija i adresa) na drugom uređjaju.</translation>
-    </message>
-    <message>
-        <source>Select folder...</source>
-        <translation>Odaberi folder...</translation>
-    </message>
-    <message>
-        <source>Change Passphrase</source>
-        <translation>Promjeni lozinku</translation>
+        <translation>TextLabel</translation>
     </message>
     <message>
         <source>Backup Wallet</source>
@@ -3626,21 +2035,9 @@ Ova opcija stvara datoteku wallet.dat koja se može koristiti za oporavak cijelo
     </message>
     <message>
         <source>Wallet Data (*.dat)</source>
-        <translation>Podaci novčanika (*.dat)</translation>
+        <translation>Wallet Data (*.dat)</translation>
     </message>
-    <message>
-        <source>Backup created</source>
-        <translation>Sigurnosna kopija napravljena</translation>
-    </message>
-    <message>
-        <source>Backup creation failed</source>
-        <translation>Stvaranje sigurnosne kopije neuspjelo</translation>
-    </message>
-    <message>
-        <source>Please select a folder to export the backup first.</source>
-        <translation>Molimo prvo odaberite mapu za izvoz sigurnosne kopije.</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>SettingsBitToolWidget</name>
     <message>
@@ -3649,99 +2046,23 @@ Ova opcija stvara datoteku wallet.dat koja se može koristiti za oporavak cijelo
     </message>
     <message>
         <source>TextLabel</source>
-        <translation>TekstOznake</translation>
-    </message>
-    <message>
-        <source>PushButton</source>
-        <translation>TipkaZaPritisak</translation>
-    </message>
-    <message>
-        <source>Decrypt Address Result</source>
-        <translation>Rezultat dešifrirane adrese</translation>
+        <translation>TextLabel</translation>
     </message>
     <message>
         <source>Import Address</source>
-        <translation>Uvezi adresu</translation>
+        <translation>Uvoz adrese</translation>
     </message>
     <message>
         <source>Clear</source>
         <translation>Izbriši</translation>
     </message>
     <message>
-        <source>BIP38 Tool</source>
-        <translation>BIP38 alat</translation>
-    </message>
-    <message>
-        <source>Encrypt</source>
-        <translation>Kriptiraj</translation>
-    </message>
-    <message>
-        <source>Decrypt</source>
-        <translation>Dekriptiraj</translation>
-    </message>
-    <message>
-        <source>Encrypted key</source>
-        <translation>Kriptirani ključ</translation>
-    </message>
-    <message>
-        <source>Enter a encrypted key</source>
-        <translation>Unesite šifrirani ključ</translation>
-    </message>
-    <message>
-        <source>Passphrase</source>
-        <translation>Lozinka</translation>
-    </message>
-    <message>
-        <source>Enter a passphrase </source>
-        <translation>Unesite lozinku</translation>
-    </message>
-    <message>
-        <source>Decrypted address result</source>
-        <translation>Rezultat dešifrirane adrese</translation>
-    </message>
-    <message>
-        <source>Decrypted Address</source>
-        <translation>Dešifrirana adresa</translation>
-    </message>
-    <message>
-        <source>DECRYPT KEY</source>
-        <translation>DEŠIFRIRAJ KLJUČ</translation>
-    </message>
-    <message>
-        <source>PIVX address</source>
-        <translation>PIVX adresa</translation>
-    </message>
-    <message>
-        <source>Enter address</source>
-        <translation>Unesite adresu</translation>
-    </message>
-    <message>
-        <source>Enter passphrase</source>
-        <translation>Unesite lozinku</translation>
-    </message>
-    <message>
-        <source>Encrypted Key</source>
-        <translation>Šifrirani ključ</translation>
-    </message>
-    <message>
-        <source>ENCRYPT</source>
-        <translation>KRIPTIRATI</translation>
-    </message>
-    <message>
-        <source>CLEAR ALL</source>
-        <translation>OČISTI SVE</translation>
-    </message>
-    <message>
-        <source>CLEAR</source>
-        <translation>OČISTI</translation>
-    </message>
-    <message>
         <source>The entered passphrase is invalid. </source>
-        <translation>Unesena lozinka je nevažeća.</translation>
+        <translation>Unesena zaporka je nevažeća.</translation>
     </message>
     <message>
         <source>Allowed: 0-9,a-z,A-Z,</source>
-        <translation>Dozvoljeno: 0-9, a-z, A-Z,</translation>
+        <translation>Dozvoljeno: 0-9, a-z, A-Z.</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -3764,14 +2085,6 @@ Ova opcija stvara datoteku wallet.dat koja se može koristiti za oporavak cijelo
         <translation>Privatni ključ za unesenu adresu nije dostupan.</translation>
     </message>
     <message>
-        <source>Address encrypted.</source>
-        <translation>Adresa kriptirana.</translation>
-    </message>
-    <message>
-        <source>No addresses available, you can go to the receive screen and add some there!</source>
-        <translation>Nema dostupnih adresa, možete otići na zaslon primanja i tamo ih dodati!</translation>
-    </message>
-    <message>
         <source>Failed to decrypt.</source>
         <translation>Dešifriranje neuspijelo</translation>
     </message>
@@ -3785,25 +2098,13 @@ Ova opcija stvara datoteku wallet.dat koja se može koristiti za oporavak cijelo
     </message>
     <message>
         <source>Please try again.</source>
-        <translation>Molimo pokušajte ponovno.</translation>
+        <translation>Pokušajte ponovno.</translation>
     </message>
     <message>
         <source>Please wait while key is imported</source>
         <translation>Molimo pričekajte dok se ključ uvozi</translation>
     </message>
-    <message>
-        <source>Cannot import address, key already held by the wallet</source>
-        <translation>Nije moguće uvesti adresu, novčanik već sadrži ključ</translation>
-    </message>
-    <message>
-        <source>Error adding key to the wallet</source>
-        <translation>Greška pri dodavanju ključa u novčanik</translation>
-    </message>
-    <message>
-        <source>Successfully added private key to the wallet</source>
-        <translation>Privatni ključ je uspješno dodan u novčanik</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>SettingsConsoleWidget</name>
     <message>
@@ -3812,51 +2113,17 @@ Ova opcija stvara datoteku wallet.dat koja se može koristiti za oporavak cijelo
     </message>
     <message>
         <source>TextLabel</source>
-        <translation>TekstOznake</translation>
+        <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Console</source>
-        <translation>Konzola</translation>
-    </message>
-    <message>
-        <source>Console input</source>
-        <translation>Unos u konzolu</translation>
-    </message>
-    <message>
-        <source>Command Line Options </source>
-        <translation>Mogućnosti naredbene linije</translation>
-    </message>
-    <message>
-        <source>Open Debug File</source>
-        <translation>Otvori datoteku za uklanjanje pogrešaka</translation>
-    </message>
-    <message>
-        <source>Clear history</source>
-        <translation>Očisti povijest</translation>
-    </message>
-    <message>
-        <source>Cannot open debug file.
-Verify that you have installed a predetermined text editor.</source>
-        <translation>Datoteka za uklanjanje pogrešaka ne može se otvoriti.
-Provjerite jeste li instalirali unaprijed određjeni uređjivač teksta.</translation>
-    </message>
-    <message>
-        <source>Welcome to the PIVX RPC console.</source>
-        <translation>Dobrodošli na PIVX RPC konzolu.</translation>
-    </message>
-    <message>
-        <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
-        <translation>Koristi strelice prema gore i dolje za kretanje kroz povijest, i %1 da očistite ekran.</translation>
+        <source>Welcome to the SAPP RPC console.</source>
+        <translation>Dobrodošli na SAPP RPC konzolu.</translation>
     </message>
     <message>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
-        <translation>Upišite &lt;b&gt;pomoć&lt;/b&gt; za pregled dostupnih naredbi.</translation>
+        <translation>Upišite pomoć za pregled dostupnih naredbi.</translation>
     </message>
-    <message>
-        <source>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramifications of a command.</source>
-        <translation>UPOZORENJE: Prevaranti su aktivni, govore korisnicima da ovdje unesu naredbe te im tako ukradu novčiće iz novčanika. Nemojte koristiti ovu konzonu bez potpunog razumijevanja posljedica komandi koje unosite.</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>SettingsDisplayOptionsWidget</name>
     <message>
@@ -3865,164 +2132,21 @@ Provjerite jeste li instalirali unaprijed određjeni uređjivač teksta.</transl
     </message>
     <message>
         <source>TextLabel</source>
-        <translation>TekstOznake</translation>
-    </message>
-    <message>
-        <source>Hide stake charts in the dashboard</source>
-        <translation>Sakrijte stake grafikone na nadzornoj ploči</translation>
-    </message>
-    <message>
-        <source>Reset to default</source>
-        <translation>Resetiraj na početno stanje</translation>
-    </message>
-    <message>
-        <source>Discard changes</source>
-        <translation>Odbaci promjene</translation>
-    </message>
-    <message>
-        <source>Display</source>
-        <translation>Prikaz</translation>
-    </message>
-    <message>
-        <source>Customize the display view options</source>
-        <translation>Prilagodite opcije prikaza na zaslonu</translation>
-    </message>
-    <message>
-        <source>Language</source>
-        <translation>Jezik</translation>
-    </message>
-    <message>
-        <source>Unit to show amount</source>
-        <translation>Jedinica za prikaz iznosa</translation>
+        <translation>TextLabel</translation>
     </message>
     <message>
         <source>Decimal digits</source>
-        <translation>Decimalne znamenke</translation>
-    </message>
-    <message>
-        <source>Third party transactions URLs</source>
-        <translation>URL-ovi transakcija trećih strana</translation>
+        <translation>Decimalnih znamenki</translation>
     </message>
     <message>
         <source>Hide empty balances</source>
-        <translation>Sakrij prazna salda</translation>
-    </message>
-    <message>
-        <source>SAVE</source>
-        <translation>SPREMI</translation>
+        <translation>Sakri praznu bilancu</translation>
     </message>
     <message>
         <source>default</source>
-        <translation>zadano</translation>
+        <translation>Zadani</translation>
     </message>
-    <message>
-        <source>Options reset succeed</source>
-        <translation>Poništavanje postavki uspjelo</translation>
-    </message>
-</context>
-<context>
-    <name>SettingsExportCSV</name>
-    <message>
-        <source>Form</source>
-        <translation>Obrazac</translation>
-    </message>
-    <message>
-        <source>Export Accounting</source>
-        <translation>Izvezi računovodstvene podatke</translation>
-    </message>
-    <message>
-        <source>Export your wallet's accounting data to a csv file.</source>
-        <translation>Izvezite računovodstvene podatke Vašeg novčanika u CSV datoteku.</translation>
-    </message>
-    <message>
-        <source>Where</source>
-        <translation>Gdje</translation>
-    </message>
-    <message>
-        <source>Select folder...</source>
-        <translation>Odaberi folder...</translation>
-    </message>
-    <message>
-        <source>Export Address Book</source>
-        <translation>Izvezi imenik</translation>
-    </message>
-    <message>
-        <source>Export CSV</source>
-        <translation>Izvezi CSV</translation>
-    </message>
-    <message>
-        <source>Export Address List</source>
-        <translation>Izvezi popis adresa</translation>
-    </message>
-    <message>
-        <source>PIVX_tx_csv_export(*.csv)</source>
-        <translation>PIVX_transakcije_csv_izvoz(*.csv)</translation>
-    </message>
-    <message>
-        <source>PIVX_addresses_csv_export(*.csv)</source>
-        <translation>PIVX_adrese_csv_izvoz(*.csv)</translation>
-    </message>
-    <message>
-        <source>Please select a folder to export the csv file first.</source>
-        <translation>Najprije odaberite mapu gdje biste izvezli CSV datoteku.</translation>
-    </message>
-    <message>
-        <source>Confirmed</source>
-        <translation>Potvrđeno</translation>
-    </message>
-    <message>
-        <source>Watch-only</source>
-        <translation>Samo za gledanje</translation>
-    </message>
-    <message>
-        <source>Date</source>
-        <translation>Datum</translation>
-    </message>
-    <message>
-        <source>Type</source>
-        <translation>Tip</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Oznaka</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Adresa</translation>
-    </message>
-    <message>
-        <source>ID</source>
-        <translation>ID</translation>
-    </message>
-    <message>
-        <source>Exporting Successful
-The transaction history was successfully saved to %1.</source>
-        <translation>Izvoz uspješno izvršen
-Povijest transakcija uspješno je spremljena u %1.</translation>
-    </message>
-    <message>
-        <source>Exporting Failed
-There was an error trying to save the transaction history to %1.</source>
-        <translation>Izvoz nije uspio
-Došlo je do greške prilikom pokušaja spremanja povijesti transakcija u %1.</translation>
-    </message>
-    <message>
-        <source>No available addresses to export under the selected filter</source>
-        <translation>Nema dostupnih adresa za izvoz pod odabranim filtrom</translation>
-    </message>
-    <message>
-        <source>Exporting Successful
-The address book was successfully saved to %1.</source>
-        <translation>Izvoz uspješan
-Adresar je uspješno spremljen u %1.</translation>
-    </message>
-    <message>
-        <source>Exporting Failed
-There was an error trying to save the address list to %1. Please try again.</source>
-        <translation>Izvoz nije uspio
-Došlo je do greške prilikom spremanja popisa adresa u %1. Molimo pokušajte ponovno.</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>SettingsFaqWidget</name>
     <message>
@@ -4031,452 +2155,9 @@ Došlo je do greške prilikom spremanja popisa adresa u %1. Molimo pokušajte po
     </message>
     <message>
         <source>TextLabel</source>
-        <translation>TekstOznake</translation>
+        <translation>TextLabel</translation>
     </message>
-    <message>
-        <source>PushButton</source>
-        <translation>TipkaZaPritisak</translation>
-    </message>
-    <message>
-        <source>1) What is PIVX?</source>
-        <translation>1) Što je PIVX?</translation>
-    </message>
-    <message>
-        <source>2) Why are my PIV unspendable?</source>
-        <translation>2) Zašto se moji PIV ne mogu potrošiti?</translation>
-    </message>
-    <message>
-        <source>3) PIVX privacy? What is Zerocoin (zPIV)?</source>
-        <translation>3) PIVX privatnost? Što je Zerocoin (zPIV)?</translation>
-    </message>
-    <message>
-        <source>4) Why are my zPIV unspendable?</source>
-        <translation>4) Zašto se moji zPIV ne mogu potrošiti?</translation>
-    </message>
-    <message>
-        <source>5) Why did my wallet convert the balance
-    into zPIV automatically?</source>
-        <translation>5) Zašto je moj novčanik pretvorio saldo
-u zPIV automatski?</translation>
-    </message>
-    <message>
-        <source>6) How do I receive PIV/zPIV?</source>
-        <translation>6) Kako mogu primiti PIV/zPIV?</translation>
-    </message>
-    <message>
-        <source>7) How do I stake PIV/zPIV?</source>
-        <translation>7) Kako stakeam PIV/zPIV?</translation>
-    </message>
-    <message>
-        <source>8) Where I should go if I need support?</source>
-        <translation>8) Gdje se trebam javiti ako mi treba pomoć?</translation>
-    </message>
-    <message>
-        <source>9) What is a Masternode?</source>
-        <translation>9) Što je Masternode?</translation>
-    </message>
-    <message>
-        <source>10) What is a Masternode Controller?</source>
-        <translation>10) Što je Masternode Controller?</translation>
-    </message>
-    <message>
-        <source>1</source>
-        <translation>1</translation>
-    </message>
-    <message>
-        <source>What is PIVX?</source>
-        <translation>Što je PIVX?</translation>
-    </message>
-    <message>
-        <source>
-                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           PIVX is a form of digital online money using blockchain technology
-                           that can be easily transferred globally, instantly, and with near
-                           zero fees.  PIVX incorporates market leading security &amp;
-                           privacy and is also the first PoS (Proof of Stake) Cryptocurrency
-                           to implement ZeroCoin(zPIV) and Zerocoin staking.
-                           &lt;/p&gt;&lt;p align="justify"&gt;
-                           PIVX utilizes a Proof of Stake (PoS) consensus system algorithm,
-                           allowing all owners of PIVX to participate in earning block rewards
-                           while securing the network with full node wallets, as well as to
-                           run Masternodes to create and vote on proposals.
-                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-                         </source>
-        <translation>
-&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-PIVX je oblik digitalnog online novca koji koristi blockchain tehnologiju
-koji se lako može slati i primati globalno, trenutno, i gotovo bez naknade.
-PIVX uključuje vodeću sigurnost  i privatnost na tržištu
-i takođjer je prva PoS (Proof of Stake) kriptovaluta
-koja je implementirala ZeroCoin (zPIV) i Zerocoin staking.
-&lt;/p&gt;&lt;p align="justify"&gt;
-PIVX koristi algoritam konsenzusa Proof of Stake (PoS),
-omogućujući svim vlasnicima PIVX-a sudjelovanje u zarađi blokovih nagrada
-dok osiguravaju mrežu full node novčanicima, kao i
-vodjenje Masternode-ova za stvaranje i glasanje o prijedlozima.
-&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-</translation>
-    </message>
-    <message>
-        <source>2</source>
-        <translation>2</translation>
-    </message>
-    <message>
-        <source>Why are my PIV unspendable?</source>
-        <translation>Zašto se moji PIV ne mogu potrošiti?</translation>
-    </message>
-    <message>
-        <source>
-                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Newly received PIVX requires 6 confirmations on the network
-                           to become eligible for spending which can take ~6 minutes.
-                           &lt;/p&gt;&lt;p align="justify"&gt;
-                           Your PIVX wallet also needs to be completely synchronized
-                           to see and spend balances on the network.
-                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-                         </source>
-        <translation>
-&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-Novoprimljeni PIVX zahtjeva 6 potvrda na mreži
-da bi se mogao potrošiti što može potrajati ~6 minuta.
-&lt;/p&gt;&lt;p align="justify"&gt;
-Vaš PIVX novčanik takođjer treba biti u potpunosti sinkroniziran
-da biste vidjeli i mogli potrošiti sredstva na mreži.
-&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-</translation>
-    </message>
-    <message>
-        <source>3</source>
-        <translation>3</translation>
-    </message>
-    <message>
-        <source>PIVX privacy? What is Zerocoin (zPIV)?</source>
-        <translation>PIVX privatnost? Što je Zerocoin (zPIV)?</translation>
-    </message>
-    <message>
-        <source>
-                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zPIV is an optional privacy-centric method of coin mixing on the
-                           PIVX blockchain. Basically all your transactions cannot be tracked
-                           on to any block explorer. You can read more about the technicals in the
-                           &lt;a style='color: #b088ff' href='https://PIVX.org/zpiv/'&gt;
-                           "PIVX Zerocoin (zPIV) Technical Paper"&lt;/a&gt;.
-                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-                         </source>
-        <translation>
-&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-zPIV je opcionalna metoda miješanja novčića usmjerena na privatnost
-na PIVX blockchainu. Sve transakcije ne mogu biti praćene na bilo kojem block exploreru. Više o tehničkim detaljima možete pročitati na
-&lt;a style='color: #b088ff' href='https://PIVX.org/zpiv/'&gt;
-"PIVX Zerocoin (zPIV) Technical Paper"&lt;/a&gt;.
-&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-</translation>
-    </message>
-    <message>
-        <source>4</source>
-        <translation>4</translation>
-    </message>
-    <message>
-        <source>Why are my zPIV unspendable?</source>
-        <translation>Zašto se moji zPIV ne mogu potrošiti?</translation>
-    </message>
-    <message>
-        <source>
-                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           After minting, zPIV will require 20 confirmations as well as 1
-                           additional mint of the same denomination on the network to
-                           become eligible for spending.
-                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-                         </source>
-        <translation>
-&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-Nakon stvaranja, zPIV će zahtjevati 20 potvrda kao i 1
-dodatno stvaranje iste denominacije na mreži
-da bi se mogli potrošiti.
-&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-</translation>
-    </message>
-    <message>
-        <source>5</source>
-        <translation>5</translation>
-    </message>
-    <message>
-        <source>Why did my wallet convert the balance into zPIV automatically?</source>
-        <translation>Zašto je moj novčanik automatski pretvorio saldo u zPIV?</translation>
-    </message>
-    <message>
-        <source>
-                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           By default the PIVX wallet will convert 10% of your entire PIV
-                           balance to zPIV to assist the network. If you do not wish to
-                           stake zPIV or take advantage of the privacy benefit it brings,
-                           you can disable the automatic minting in your PIVX wallet by
-                           going to Settings-&gt;Options and deselecting “Enable zPIV Automint”.
-                           If you are not making use of the PIVX-QT or GUI you can simply open
-                           your pivx.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
-                           marks and restart your wallet to disable automint.&lt;/p&gt;
-                           &lt;/p&gt;&lt;p align="justify"&gt;
-                           You can read more about zPIV in the
-                           &lt;a style='color: #b088ff' href='https://PIVX.org/zpiv/'&gt; "PIVX Zerocoin (zPIV) Technical Paper"&lt;/a&gt;.
-                           If you would like to keep and stake your zPIV, please read the "How do I stake"
-                           section of the FAQ below.
-                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-                         </source>
-        <translation>
-&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-Prema početno zadanom PIVX novčanik će pretvoriti 10% vaših PIV sredstava u zPIV da pomognu mreži. Ako ne želite stake-ati zPIV ili iskoristiti prednosti privatnosti koje donosi,
-možete onemogućiti autoamtsko stvaranje u vašem PIVX novčaniku tako da
-odete u Postavke -&gt; Mogućnosti i odznačite "Omogući automatsko stvaranje zPIV-a".
-Ako ne koristite PIVX-QT ili grafičko sučelje, jednostavno možete otvoriti
-vašu pivx.conf datoteku i dodati &lt;i&gt;enablezeromint=0&lt;/i&gt; bez navodnika
-i ponovno pokrenuti novčanik da biste onemogućili automatsko stvaranje.&lt;/p&gt;
-&lt;/p&gt;&lt;p align="justify"&gt;
-Više o zPIV-u možete pročitati u
-&lt;a style='color: #b088ff' href='https://PIVX.org/zpiv/'&gt;"PIVX Zerocoin (zPIV) Technical Paper"&lt;/a&gt;.
-Ako želite zadržati i stake-ati vaš zPIV, molimo pročitajte "Kako mogu stake-ati"
-odjeljak u najčešće postavljenim pitanjima ispod.
-&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-        <source>6</source>
-        <translation>6</translation>
-    </message>
-    <message>
-        <source>How do I receive PIV/zPIV?</source>
-        <translation>Kako mogu primiti PIV/zPIV?</translation>
-    </message>
-    <message>
-        <source>
-                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zPIV can be spent and sent to any PIVX address. The receiver will
-                           receive standard PIVX but the origin of the PIVX is anonymized by the zPIV Protocol.
-                           &lt;/p&gt;&lt;p align="justify"&gt;
-                           If you want more zPIV you will need to mint your balance in the “Privacy” tab.
-                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-                         </source>
-        <translation>
-&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-zPIV se može trošiti i slati na bilo koju PIVX adresu. Primatelj će
-primiti standardni PIVX, ali podrijetlo PIVX-a je postalo anonimno zPIV Protokolom.
-&lt;/p&gt;&lt;p align="justify"&gt;
-Ako želite više zPIV-a, morat ćete stvoriti svoj saldo u kartici "Privatnost" .
-&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-</translation>
-    </message>
-    <message>
-        <source>7</source>
-        <translation>7</translation>
-    </message>
-    <message>
-        <source>How do I stake PIV/zPIV?</source>
-        <translation>Kako stakeam PIV/zPIV?</translation>
-    </message>
-    <message>
-        <source>
-                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           To Stake PIVX:
-                           &lt;/p&gt;&lt;p align="justify"&gt;
-                           &lt;ol&gt;&lt;li&gt;
-                           Make sure your wallet is completely synchronized and you are using the latest release.
-                           &lt;li&gt;
-                           You must have a balance of PIVX with a minimum of 600 confirmations.
-                           &lt;li&gt;
-                           Your wallet must stay online and be unlocked for staking purposes.
-                           &lt;li&gt;
-                           Once all those steps are followed staking should be enabled.
-                           &lt;li&gt;
-                           You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state "Staking Enabled" to indicate it is staking.  Using the command line interface (pivx-cli); the command &lt;i&gt;getstakingstatus&lt;/i&gt; will confirm that staking is active.
-                           &lt;/li&gt;&lt;/ol&gt;
-                           &lt;/p&gt;&lt;p align="justify"&gt;
-                           To Stake zPIV:
-                           &lt;/p&gt;&lt;p align="justify"&gt;
-                           &lt;ol&gt;&lt;li&gt;
-                           Make sure your wallet is completely synchronized and you are using the latest release.
-                           &lt;li&gt;
-                           Your newly minted or existing zPIV balance must have a minimum of 200 confirmations.
-                           &lt;li&gt;
-                           Your wallet must stay online and be unlocked for anonymization and staking purposes.
-                           Staking should now be enabled.
-                           &lt;/li&gt;&lt;/ol&gt;
-                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-                         </source>
-        <translation>
-&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-Da biste stake-ali PIVX:
-&lt;/p&gt;&lt;p align="justify"&gt;
-&lt;ol&gt;&lt;li&gt;
-Provjerite da je vaš wallet u potpunosti sinkroniziran i koristite li najnoviju verziju.
-&lt;li&gt;
-Saldo PIVX-a mora imati najmanje 600 potvrda.
-&lt;li&gt;
-Vaš novčanik mora ostati online i biti otključan za staking.
-&lt;li&gt;
-Kada su svi navedeni koraci napravljeni, tada će staking biti omogućen.
-&lt;li&gt;
-Status stakinga možete vidjeti u vašem novčaniku prelaskom miša preko Staking ikone u gornjem desnom kutu. Ikona će zasvjetliti i ispisati "Staking omogućen" i potvrditi staking. Koristeći sučelje naredbene linije (pivx-cli); naredba &lt;i&gt;getstakingstatus&lt;/i&gt;će potvrditi da je staking aktivan.
-&lt;/li&gt;&lt;/ol&gt;
-&lt;/p&gt;&lt;p align="justify"&gt;
-Da biste stake-ali zPIV:&lt;/p&gt;&lt;p align="justify"&gt;
-&lt;ol&gt;&lt;li&gt;
-Provjerite da je vaš wallet u potpunosti sinkroniziran i koristite li najnoviju verziju.
-&lt;li&gt;
-Vaši novostvoreni ili postojeći zPIV saldo mora imati najmanje 200 potvrda.
-&lt;li&gt;
-Vaš novčanik mora ostati online i biti otključan za staking.
-Sada bi staking trebao biti omogućen.
-&lt;/li&gt;&lt;/ol&gt;
-&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-</translation>
-    </message>
-    <message>
-        <source>Where should I go if I need support?</source>
-        <translation>Gdje se trebam javiti ako mi treba pomoć?</translation>
-    </message>
-    <message>
-        <source>What is a Masternode?</source>
-        <translation>Što je Masternode?</translation>
-    </message>
-    <message>
-        <source>What is a Masternode Controller?</source>
-        <translation>Što je Masternode Controller?</translation>
-    </message>
-    <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;A Masternode Controller wallet is where the 10,000 PIV collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet(s) and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;Masternode Controller novčanik je mjesto gdje zalog od 10,000 PIV može stajati tijekom Controller-Remote podešavanja masternode-a. To je novčanik koji može aktivirati Remote masternode novčanik(e) i omogućiti Vam držanje zaloga novčića offline dok Remote masternode novčanik ostaje online.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-        <source>8</source>
-        <translation>8</translation>
-    </message>
-    <message>
-        <source>
-                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           We have support channels in most of our official chat groups, for example
-                           &lt;a style='color: #b088ff' href='https://discord.PIVX.org'&gt;
-                           #support in our Discord&lt;/a&gt;.
-                           If you prefer to submit a ticket, One can be
-                           &lt;a style='color: #b088ff' href='https://PIVX.freshdesk.com'&gt;
-                           our Freshdesk support site&lt;/a&gt;.
-                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-                         </source>
-        <translation>
-&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-Imamo korisničku podršku u većini naših službenih chat grupa, na primjer
-&lt;a style='color: #b088ff' href='https://discord.PIVX.org'&gt;
-#support na Discordu&lt;/a&gt;.
-Možete i podnijeti zahtjev, a to možete
-&lt;a style='color: #b088ff' href='https://PIVX.freshdesk.com'&gt;
-na našoj Freshdesk stranici za podršku&lt;/a&gt;.
-&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-</translation>
-    </message>
-    <message>
-        <source>9</source>
-        <translation>9</translation>
-    </message>
-    <message>
-        <source>
-                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           A masternode is a computer running a full node PIVX core wallet with a
-                           requirement of 10,000 PIV secured collateral to provide extra services
-                           to the network and in return, receive a portion of the block reward
-                           regularly.  These services include:
-                           &lt;/p&gt;&lt;p align="justify"&gt;
-
-                           &lt;ul&gt;
-                           &lt;li&gt;Instant transactions (SwiftX)&lt;/li&gt;
-                           &lt;li&gt;A decentralized governance (Proposal Voting)&lt;/li&gt;
-                           &lt;li&gt;A decentralized budgeting system (Treasury)&lt;/li&gt;
-                           &lt;li&gt;Validation of transactions within each block&lt;/li&gt;
-                           &lt;li&gt;Act as an additional full node in the network&lt;/li&gt;
-                           &lt;/ul&gt;
-
-                           &lt;/p&gt;&lt;p align="justify"&gt;
-                           For providing such services, masternodes are also paid a certain portion
-                           of reward for each block. This can serve as a passive income to the
-                           masternode owners minus their running cost.
-                           &lt;/p&gt;&lt;p align="justify"&gt;
-
-                           Masternode Perks:
-                           &lt;/p&gt;&lt;p align="justify"&gt;
-                           &lt;ul&gt;
-                           &lt;li&gt;Participate in PIVX Governance&lt;/li&gt;
-                           &lt;li&gt;Earn Masternode Rewards&lt;/li&gt;
-                           &lt;li&gt;Commodity option for future sale&lt;/li&gt;
-                           &lt;li&gt;Help secure the PIVX network&lt;/li&gt;
-                           &lt;/ul&gt;
-                           &lt;/p&gt;&lt;p align="justify"&gt;
-
-                           Requirements:
-                           &lt;/p&gt;&lt;p align="justify"&gt;
-                           &lt;ul&gt;
-                           &lt;li&gt;10,000 PIV per single Masternode instance&lt;/li&gt;
-                           &lt;li&gt;Must be stored in a core wallet&lt;/li&gt;
-                           &lt;li&gt;Need dedicated IP address&lt;/li&gt;
-                           &lt;li&gt;Masternode wallet to remain online&lt;/li&gt;
-                           &lt;/ul&gt;
-                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-                         </source>
-        <translation>
-&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-Masternode je računalo koje pokreće full node PIVX Core novčanik sa
-zahtjevanih 10,000 PIV-a osiguranog zaloga da pruži dodatne usluge
-mreži, i zauzvrat redovito primi dio nagrade blokova.
-Te usluge uključuju:
-&lt;/p&gt;&lt;p align="justify"&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Trenutne transakcije (SwiftX)&lt;/li&gt;
-&lt;li&gt;Decentralizirano upravljanje (glasanje o zahtjevima)&lt;/li&gt;
-&lt;li&gt;Decentralizirani sustav proračuna (riznica)&lt;/li&gt;
-&lt;li&gt;Validacija transakcija unutar svakog bloka&lt;/li&gt;
-&lt;li&gt;Djeluje kao dodatni full node u mreži&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;/p&gt;&lt;p align="justify"&gt;
-Za pružanje takvih usluga, masternode-ovi bivaju plaćeni odredjenim
-dijelom nagrade za svaki blok. To može služiti kao pasivan dohodak
-vlasnicima masternode-ova umanjeno za troškove održavanja.
-&lt;/p&gt;&lt;p align="justify"&gt;
-
-Povlastice masternode-ova:
-&lt;/p&gt;&lt;p align="justify"&gt;
-&lt;ul&gt;
-&lt;li&gt;Sudjelovanje u upravljanju PIVX-a&lt;/li&gt;
-&lt;li&gt;Zaradjivanje Masternode nagrada&lt;/li&gt;
-&lt;li&gt;Robna opcija za buduću prodaju&lt;/li&gt;
-&lt;li&gt;Pomaže u osiguravanju PIVX mreže&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;&lt;p align="justify"&gt;
-
-Zahtjevi:
-&lt;/p&gt;&lt;p align="justify"&gt;
-&lt;ul&gt;
-&lt;li&gt;10,000 PIV po svakom Masternode-u&lt;/li&gt;
-&lt;li&gt;Mora biti pohranjem u Core novčaniku&lt;/li&gt;
-&lt;li&gt;Mora biti jedinstvena IP adresa&lt;/li&gt;
-&lt;li&gt;Masternode novčanik treba ostati online&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-</translation>
-    </message>
-    <message>
-        <source>10</source>
-        <translation>10</translation>
-    </message>
-    <message>
-        <source>Frequently Asked Questions</source>
-        <translation>Najčešće postavljena pitanja</translation>
-    </message>
-    <message>
-        <source>You can read more here</source>
-        <translation>Možete pročitati o više ovdje</translation>
-    </message>
-    <message>
-        <source>Exit</source>
-        <translation>Izlaz</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>SettingsInformationWidget</name>
     <message>
@@ -4484,8 +2165,8 @@ Zahtjevi:
         <translation>Obrazac</translation>
     </message>
     <message>
-        <source>Network Monitor</source>
-        <translation>Mrežni nadzor</translation>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
     </message>
     <message>
         <source>Information</source>
@@ -4493,91 +2174,11 @@ Zahtjevi:
     </message>
     <message>
         <source>General</source>
-        <translation>Općenito</translation>
-    </message>
-    <message>
-        <source>Client Version:</source>
-        <translation>Verzija klijenta:</translation>
-    </message>
-    <message>
-        <source>BerkeleyDB version:</source>
-        <translation>BerkeleyDB verzija:</translation>
-    </message>
-    <message>
-        <source>Datadir:</source>
-        <translation>Direktorijpodataka:</translation>
-    </message>
-    <message>
-        <source>Startup time:</source>
-        <translation>Vrijeme pokretanja:</translation>
-    </message>
-    <message>
-        <source>Connections:</source>
-        <translation>Veze:</translation>
-    </message>
-    <message>
-        <source>Number of Masternodes:</source>
-        <translation>Broj Masternodeova:</translation>
-    </message>
-    <message>
-        <source>Current number of blocks:</source>
-        <translation>Trenutni broj blokova:</translation>
-    </message>
-    <message>
-        <source>Last block time:</source>
-        <translation>Vrijeme posljednjeg bloka:</translation>
-    </message>
-    <message>
-        <source>Last block hash:</source>
-        <translation>Hash posljednjeg bloka:</translation>
-    </message>
-    <message>
-        <source>Current number of transactions:</source>
-        <translation>Trenutni broj transakcija:</translation>
-    </message>
-    <message>
-        <source>User Agent:</source>
-        <translation>User Agent:</translation>
+        <translation>Opće</translation>
     </message>
     <message>
         <source>Network</source>
         <translation>Mreža</translation>
-    </message>
-    <message>
-        <source>Name:</source>
-        <translation>Ime:</translation>
-    </message>
-    <message>
-        <source>Blockchain</source>
-        <translation>Blockchain</translation>
-    </message>
-    <message>
-        <source>Memory Pool</source>
-        <translation>Memorijski bazen</translation>
-    </message>
-    <message>
-        <source>Main</source>
-        <translation>Glavno</translation>
-    </message>
-    <message>
-        <source>Wallet Conf</source>
-        <translation>Konfiguracija novčanika</translation>
-    </message>
-    <message>
-        <source>Backups</source>
-        <translation>Sigurnosne kopije</translation>
-    </message>
-    <message>
-        <source>No information</source>
-        <translation>Nema informacija</translation>
-    </message>
-    <message>
-        <source>Unable to open backups folder</source>
-        <translation>Ne može se otvoriti mapa sigurnosne kopije</translation>
-    </message>
-    <message>
-        <source>Unable to open pivx.conf with default application</source>
-        <translation>Nije moguće otvoriti pivx.conf sa zadanom aplikacijom</translation>
     </message>
     <message>
         <source>In:</source>
@@ -4596,75 +2197,9 @@ Zahtjevi:
     </message>
     <message>
         <source>TextLabel</source>
-        <translation>TekstOznake</translation>
+        <translation>TextLabel</translation>
     </message>
-    <message>
-        <source>Window</source>
-        <translation>Prozor</translation>
-    </message>
-    <message>
-        <source>Customize the application window options</source>
-        <translation>Prilagodite opcije prozora aplikacije</translation>
-    </message>
-    <message>
-        <source>CheckBox</source>
-        <translation>PotvrdniOkvir</translation>
-    </message>
-    <message>
-        <source>Reset to default</source>
-        <translation>Resetiraj na početno stanje</translation>
-    </message>
-    <message>
-        <source>Discard changes</source>
-        <translation>Odbaci promjene</translation>
-    </message>
-    <message>
-        <source>SAVE</source>
-        <translation>SPREMI</translation>
-    </message>
-    <message>
-        <source>Main</source>
-        <translation>Glavno</translation>
-    </message>
-    <message>
-        <source>Size of database cache</source>
-        <translation>Veličina predmemorije baze podataka</translation>
-    </message>
-    <message>
-        <source>Number of script verification threads</source>
-        <translation>Number of script verification threads</translation>
-    </message>
-    <message>
-        <source>Start PIVX on system login</source>
-        <translation>Pokrenite PIVX pri pokretanju računala</translation>
-    </message>
-    <message>
-        <source>Minimize to the tray instead of the taskbar</source>
-        <translation>Smanjite na ladicu umjesto na programsku traku</translation>
-    </message>
-    <message>
-        <source>Minimize on close</source>
-        <translation>Minimiziraj pri zatvaranju</translation>
-    </message>
-    <message>
-        <source>Reset Options</source>
-        <translation>Resetiraj postavke</translation>
-    </message>
-    <message>
-        <source>You are just about to reset the app's options to the default values.
-
-Are you sure?
-</source>
-        <translation>Upravo ćete vratiti postavke aplikacije na zadane vrijednosti.
-
-Jeste li sigurni?
-</translation>
-    </message>
-    <message>
-        <source>Options reset succeed</source>
-        <translation>Poništavanje postavki uspjelo</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>SettingsMultisendDialog</name>
     <message>
@@ -4672,38 +2207,10 @@ Jeste li sigurni?
         <translation>Obrazac</translation>
     </message>
     <message>
-        <source>Transaction Details</source>
-        <translation>Detalji tranksacije</translation>
-    </message>
-    <message>
         <source>TextLabel</source>
-        <translation>TekstOznake</translation>
+        <translation>TextLabel</translation>
     </message>
-    <message>
-        <source>CANCEL</source>
-        <translation>PONIŠTI</translation>
-    </message>
-    <message>
-        <source>SAVE</source>
-        <translation>SPREMI</translation>
-    </message>
-    <message>
-        <source>New recipient for multisend</source>
-        <translation>Novi primatelj za multisend</translation>
-    </message>
-    <message>
-        <source>Address Label (optional)</source>
-        <translation>Oznaka adrese (neobavezno)</translation>
-    </message>
-    <message>
-        <source>Enter label to be saved with this address</source>
-        <translation>Unesite oznaku koju želite spremiti s ovom adresom</translation>
-    </message>
-    <message>
-        <source>Percentage</source>
-        <translation>Postotak</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>SettingsMultisendWidget</name>
     <message>
@@ -4712,113 +2219,13 @@ Jeste li sigurni?
     </message>
     <message>
         <source>TextLabel</source>
-        <translation>TekstOznake</translation>
-    </message>
-    <message>
-        <source>N/A</source>
-        <translation>N/A</translation>
-    </message>
-    <message>
-        <source>CheckBox</source>
-        <translation>PotvrdniOkvir</translation>
-    </message>
-    <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other PIVX addresses after it matures.</source>
-        <translation>MultiSend vam omogućuje da automatski pošaljete do 100% svog uloga ili nagrade masternode na popis drugih PIVX adresa nakon što sazriju.</translation>
+        <translation>TextLabel</translation>
     </message>
     <message>
         <source>Active</source>
         <translation>Aktivno </translation>
     </message>
-    <message>
-        <source>Disable</source>
-        <translation>Onemogući</translation>
-    </message>
-    <message>
-        <source>No active recipient yet</source>
-        <translation>Još nema aktivnog primatelja</translation>
-    </message>
-    <message>
-        <source>Send stakes</source>
-        <translation>Pošalji stake-ove</translation>
-    </message>
-    <message>
-        <source>Send masternode rewards</source>
-        <translation>Pošalji masternode nagrade</translation>
-    </message>
-    <message>
-        <source>ADD RECIPIENT</source>
-        <translation>DODAJ PRIMATELJA</translation>
-    </message>
-    <message>
-        <source>CLEAR ALL</source>
-        <translation>OČISTI SVE</translation>
-    </message>
-    <message>
-        <source>Cannot perform operation, wallet locked</source>
-        <translation>Ne može se izvršiti operacija, novčanik je zaključan</translation>
-    </message>
-    <message>
-        <source>Clear succeed</source>
-        <translation>Čišćenje uspjelo</translation>
-    </message>
-    <message>
-        <source>Clear all failed, could not locate address in wallet file</source>
-        <translation>Brisanje svega nije uspjelo, nije bilo moguće locirati adresu u datoteci novčanika</translation>
-    </message>
-    <message>
-        <source>Cannot add multisend recipient, wallet locked</source>
-        <translation>Ne može se dodati multisend primatelj, novčanik je zaključan</translation>
-    </message>
-    <message>
-        <source>The entered address: %1 is invalid.
-Please check the address and try again.</source>
-        <translation>Unesena adresa: %1 nije važeća.
-Molimo provjerite adresu i pokušajte ponovo.</translation>
-    </message>
-    <message>
-        <source>Invalid percentage, please enter values from 1 to 100.</source>
-        <translation>Nevažeći postotak, unesite vrijednosti od 1 do 100.</translation>
-    </message>
-    <message>
-        <source>The total amount of your MultiSend vector is over 100% of your stake reward</source>
-        <translation>Ukupan iznos MultiSend vektora je preko 100% nagrade</translation>
-    </message>
-    <message>
-        <source>Error saving  MultiSend, failed saving properties to the database.</source>
-        <translation>Pogreška prilikom spremanja MultiSenda, neuspješno spremanje svojstava u bazu podataka.</translation>
-    </message>
-    <message>
-        <source>Unable to activate MultiSend, no available recipients</source>
-        <translation>MultiSend nije moguće aktivirati, nema dostupnih primatelja</translation>
-    </message>
-    <message>
-        <source>Unable to activate MultiSend
-Check one or both of the check boxes to send on stake and/or masternode rewards</source>
-        <translation>Ne mogu aktivirati MultiSend
-Označite jedan ili oba polja za potvrdu da biste poslali staking i/ili masternode nagrade</translation>
-    </message>
-    <message>
-        <source>MultiSend activated but writing settings to DB failed</source>
-        <translation>MultiSend je aktiviran, ali postavke pisanja u bazu podataka nisu uspjele</translation>
-    </message>
-    <message>
-        <source>MultiSend activated</source>
-        <translation>MultiSend aktiviran</translation>
-    </message>
-    <message>
-        <source>First multiSend address invalid</source>
-        <translation>Prva MultiSend adresa nije važeća</translation>
-    </message>
-    <message>
-        <source>MultiSend deactivated but writing settings to DB failed</source>
-        <translation>MultiSend je deaktiviran, ali postavke pisanja u bazu podataka nisu uspjele</translation>
-    </message>
-    <message>
-        <source>MultiSend deactivated</source>
-        <translation>MultiSend deaktiviran</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>SettingsSignMessageWidgets</name>
     <message>
@@ -4827,55 +2234,19 @@ Označite jedan ili oba polja za potvrdu da biste poslali staking i/ili masterno
     </message>
     <message>
         <source>TextLabel</source>
-        <translation>TekstOznake</translation>
+        <translation>TextLabel</translation>
     </message>
     <message>
         <source>Clear</source>
         <translation>Izbriši</translation>
     </message>
     <message>
-        <source>Sign/Verify Message</source>
-        <translation>Potpiši/verificiraj poruku</translation>
-    </message>
-    <message>
-        <source>Sign</source>
-        <translation>Potpiši</translation>
-    </message>
-    <message>
-        <source>Verify</source>
-        <translation>Ovjeri</translation>
-    </message>
-    <message>
-        <source>Select mode</source>
-        <translation>Odaberite način rada</translation>
-    </message>
-    <message>
         <source>Message</source>
         <translation>Poruka</translation>
     </message>
     <message>
-        <source>PIVX address or contact label</source>
-        <translation>PIVX adresa ili naziv kontakta</translation>
-    </message>
-    <message>
-        <source>Enter address</source>
-        <translation>Unesite adresu</translation>
-    </message>
-    <message>
-        <source>Write message</source>
-        <translation>Napiši poruku</translation>
-    </message>
-    <message>
         <source>Signature</source>
         <translation>Potpis</translation>
-    </message>
-    <message>
-        <source>SIGN</source>
-        <translation>POTPIŠI</translation>
-    </message>
-    <message>
-        <source>CLEAR ALL</source>
-        <translation>OČISTI SVE</translation>
     </message>
     <message>
         <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
@@ -4886,20 +2257,16 @@ Označite jedan ili oba polja za potvrdu da biste poslali staking i/ili masterno
         <translation>Unesite adresu potpisivanja, poruku (provjerite da točno kopirate presjeke, razmake, kartice itd.) I potpis ispod da biste potvrdili poruku. Budite pažljivi da ne čitate više u potpisu od onoga što je u samoj potpisanoj poruci kako bi se izbjegla prijevara s čovjekom u sredini.</translation>
     </message>
     <message>
-        <source>VERIFY</source>
-        <translation>VERIFICIRAJ</translation>
-    </message>
-    <message>
         <source>The entered address is invalid.</source>
         <translation>Unesena adresa je nevažeća.</translation>
     </message>
     <message>
         <source>Please check the address and try again.</source>
-        <translation>Molimo provjerite adresu i pokušajte ponovno.</translation>
+        <translation>Provjerite adresu i pokušajte ponovno.</translation>
     </message>
     <message>
         <source>The entered address does not refer to a key.</source>
-        <translation>Unesena adresa se ne odnosi na ključ.</translation>
+        <translation>Unesena adresa ne odnosi se na ključ.</translation>
     </message>
     <message>
         <source>Wallet unlock was cancelled.</source>
@@ -4937,11 +2304,7 @@ Označite jedan ili oba polja za potvrdu da biste poslali staking i/ili masterno
         <source>Message verified.</source>
         <translation>Poruka je potvrđena.</translation>
     </message>
-    <message>
-        <source>No addresses available, you can go to the receive screen and add some there!</source>
-        <translation>Nema dostupnih adresa, možete otići na zaslon primanja i tamo ih dodati!</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>SettingsWalletOptionsWidget</name>
     <message>
@@ -4950,81 +2313,25 @@ Označite jedan ili oba polja za potvrdu da biste poslali staking i/ili masterno
     </message>
     <message>
         <source>TextLabel</source>
-        <translation>TekstOznake</translation>
-    </message>
-    <message>
-        <source>CheckBox</source>
-        <translation>PotvrdniOkvir</translation>
-    </message>
-    <message>
-        <source>RadioButton</source>
-        <translation>RadioTipka</translation>
-    </message>
-    <message>
-        <source>Reset to default</source>
-        <translation>Resetiraj na početno stanje</translation>
-    </message>
-    <message>
-        <source>Discard changes</source>
-        <translation>Odbaci promjene</translation>
+        <translation>TextLabel</translation>
     </message>
     <message>
         <source>Wallet</source>
         <translation>Novčanik</translation>
     </message>
     <message>
-        <source>Customize the internal wallet options</source>
-        <translation>Prilagodite postavke internog novčanika</translation>
-    </message>
-    <message>
         <source>Stake split threshold:</source>
         <translation>Prag razdvajanja Stake-a:</translation>
-    </message>
-    <message>
-        <source>Spend unconfirmed change</source>
-        <translation>Potroši nepotvrđjeni ostatak</translation>
     </message>
     <message>
         <source>Network</source>
         <translation>Mreža</translation>
     </message>
     <message>
-        <source>Customize the node network options</source>
-        <translation>Prilagodite postavke čvorova mreže</translation>
-    </message>
-    <message>
-        <source>Proxy IP:</source>
-        <translation>Proxy IP:</translation>
-    </message>
-    <message>
-        <source>Enter proxy IP</source>
-        <translation>Unesite IP proxyja</translation>
-    </message>
-    <message>
-        <source>Port:</source>
-        <translation>Ulaz:</translation>
-    </message>
-    <message>
-        <source>Map port using UPnP</source>
-        <translation>Mapiranje porta koristeći UPnP</translation>
-    </message>
-    <message>
         <source>Allow incoming connections</source>
         <translation>Dopusti dolazne veze</translation>
     </message>
-    <message>
-        <source>Connect through SOCKS5 proxy (default proxy):</source>
-        <translation>Spajanje putem proxy SOCKS5 (zadani proxy):</translation>
-    </message>
-    <message>
-        <source>SAVE</source>
-        <translation>SPREMI</translation>
-    </message>
-    <message>
-        <source>Options reset succeed</source>
-        <translation>Poništavanje postavki uspjelo</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>SettingsWalletRepairWidget</name>
     <message>
@@ -5033,39 +2340,15 @@ Označite jedan ili oba polja za potvrdu da biste poslali staking i/ili masterno
     </message>
     <message>
         <source>TextLabel</source>
-        <translation>TekstOznake</translation>
-    </message>
-    <message>
-        <source>Wallet Repair</source>
-        <translation>Popravak novčanika</translation>
-    </message>
-    <message>
-        <source>The buttons below will restart the wallet with command-line options to repair this wallet, fix issues with corrupt blockchain files or missing/obsolete transactions.</source>
-        <translation>Tipke ispod će ponovno pokrenuti novčanik s mogućnostima naredbene linije da popravi novčanik, riješi probleme s oštećenim datotekama blockchaina ili nedostajalim/zastarjelim transakcijama.</translation>
+        <translation>TextLabel</translation>
     </message>
     <message>
         <source>Attempt to recover private keys from a corrupt wallet.dat.</source>
         <translation>Pokušaj oporavka privatnih ključeva iz korumpirane wallet.dat.</translation>
     </message>
     <message>
-        <source>Rescan the blockchain for missing wallet transactions.</source>
-        <translation>Ponovno skenirajte blockchain za transakcije koje nedostaju u novčaniku.</translation>
-    </message>
-    <message>
-        <source>Recover transactions from blockchain (keep-meta-data, e.g. account owner).</source>
-        <translation>Oporavi transakcije iz blockchaina (zadrži meta-podatke, npr. Vlasnika računa).</translation>
-    </message>
-    <message>
         <source>Recover transactions from blockchain (drop meta-data).</source>
         <translation>Obnova transakcija iz blockchaina (izbaci meta-podatake).</translation>
-    </message>
-    <message>
-        <source>Upgrade wallet to latest format on startup. (Note: this is NOT an update of the wallet itself)</source>
-        <translation>Nadogradite novčanik na najnoviji format pri pokretanju. (Napomena: ovo NIJE ažuriranje samog novčanika)</translation>
-    </message>
-    <message>
-        <source>Rebuild blockchain index from current blk000???.dat files.</source>
-        <translation>Ponovno izgradite blockchain indeks iz trenutnih blk000 ???.dat datoteka.</translation>
     </message>
     <message>
         <source>Deletes all local blockchain folders so the wallet synchronizes from scratch.</source>
@@ -5074,10 +2357,6 @@ Označite jedan ili oba polja za potvrdu da biste poslali staking i/ili masterno
     <message>
         <source>Salvage wallet</source>
         <translation>Spasi novčanik</translation>
-    </message>
-    <message>
-        <source>Rescan blockchain file</source>
-        <translation>Preskenirajte blockchain datoteku</translation>
     </message>
     <message>
         <source>Recover transactions 1</source>
@@ -5096,24 +2375,20 @@ Označite jedan ili oba polja za potvrdu da biste poslali staking i/ili masterno
         <translation>Obnovi indeks</translation>
     </message>
     <message>
-        <source>Delete local blockchain </source>
-        <translation>Izbrišite lokalni blockchain</translation>
-    </message>
-    <message>
         <source>This will delete your local blockchain folders and the wallet will synchronize the complete Blockchain from scratch.&lt;br /&gt;&lt;br /&gt;</source>
-        <translation>Ovo će izbrisati vaše lokalne blockchain direktorije i novčanik će sinkronizirati cjelokupan Blockchain ispočetka.&lt;br /&gt;&lt;br /&gt;</translation>
+        <translation>To će izbrisati vaše lokalne mape blockcahaina i novčanik će uskladiti cijeli Blockchain od nule.</translation>
     </message>
     <message>
         <source>This needs quite some time and downloads a lot of data.&lt;br /&gt;&lt;br /&gt;</source>
-        <translation>Ovo treba prilično više vremena i preuzet će puno podataka.&lt;br /&gt;&lt;br /&gt;</translation>
+        <translation>To treba dosta vremena i preuzimanja puno podataka.</translation>
     </message>
     <message>
         <source>Your transactions and funds will be visible again after the download has completed.&lt;br /&gt;&lt;br /&gt;</source>
-        <translation>Vaše transakcije i sredstva bit će ponovno vidljivi nakon što se preuzimanje završi.&lt;br /&gt;&lt;br /&gt;</translation>
+        <translation>Vaše transakcije i sredstva bit će ponovno vidljivi nakon preuzimanja.</translation>
     </message>
     <message>
         <source>Do you want to continue?.&lt;br /&gt;</source>
-        <translation>Želite li nastaviti?&lt;br /&gt;</translation>
+        <translation>Želite li nastaviti?</translation>
     </message>
     <message>
         <source>Confirm resync Blockchain</source>
@@ -5127,76 +2402,20 @@ Označite jedan ili oba polja za potvrdu da biste poslali staking i/ili masterno
         <translation>Obrazac</translation>
     </message>
     <message>
-        <source>Wallet Data</source>
-        <translation>Podaci o novčaniku</translation>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
     </message>
     <message>
         <source>Wallet</source>
         <translation>Novčanik</translation>
     </message>
     <message>
-        <source>Multisend</source>
-        <translation>Multisend</translation>
-    </message>
-    <message>
-        <source>Export Accounting</source>
-        <translation>Izvezi računovodstvo</translation>
-    </message>
-    <message>
-        <source>Tools</source>
-        <translation>Alati</translation>
-    </message>
-    <message>
-        <source>Sign/Verify Message</source>
-        <translation>Potpiši/verificiraj poruku</translation>
-    </message>
-    <message>
-        <source>BIP38 Tool</source>
-        <translation>BIP38 alat</translation>
-    </message>
-    <message>
         <source>Options</source>
         <translation>Mogućnosti</translation>
     </message>
     <message>
-        <source>Main</source>
-        <translation>Glavno</translation>
-    </message>
-    <message>
-        <source>Display</source>
-        <translation>Prikaz</translation>
-    </message>
-    <message>
-        <source>Debug</source>
-        <translation>Otkloni neispravnost</translation>
-    </message>
-    <message>
         <source>Information</source>
         <translation>Informacije</translation>
-    </message>
-    <message>
-        <source>Console</source>
-        <translation>Konzola</translation>
-    </message>
-    <message>
-        <source>Wallet Repair</source>
-        <translation>Popravak novčanika</translation>
-    </message>
-    <message>
-        <source>Help</source>
-        <translation>Pomoć</translation>
-    </message>
-    <message>
-        <source>FAQ</source>
-        <translation>Najčešće postavljena pitanja</translation>
-    </message>
-    <message>
-        <source>About PIVX</source>
-        <translation>O PIVX-u</translation>
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation>Postavke</translation>
     </message>
     <message>
         <source>Confirm options reset</source>
@@ -5204,62 +2423,18 @@ Označite jedan ili oba polja za potvrdu da biste poslali staking i/ili masterno
     </message>
     <message>
         <source>Client restart required to activate changes.</source>
-        <translation>Ponovno pokretanje klijenta je potrebno za aktiviranje promjena.</translation>
+        <translation>Ponovno pokretanje klijenta potrebno je za aktiviranje promjena.</translation>
     </message>
     <message>
         <source>Client will be shutdown, do you want to proceed?</source>
         <translation>Klijent će biti isključen, želite li nastaviti?</translation>
     </message>
-    <message>
-        <source>Restart required</source>
-        <translation>Potrebno ponovno pokretanje</translation>
-    </message>
-    <message>
-        <source>Your wallet needs to be restarted to apply the changes
-</source>
-        <translation>Vaš novčanik treba biti ponovno pokrenut da bi se primjenile promjene
-</translation>
-    </message>
-    <message>
-        <source>Restart Now</source>
-        <translation>Ponovno pokreni</translation>
-    </message>
-    <message>
-        <source>Restart Later</source>
-        <translation>Ponovno pokreni kasnije</translation>
-    </message>
-    <message>
-        <source>Options will be applied on next wallet restart</source>
-        <translation>Opcije će se primijeniti prilikom sljedećeg pokretanja novčanika</translation>
-    </message>
-    <message>
-        <source>Options stored</source>
-        <translation>Postavke spremljene</translation>
-    </message>
-    <message>
-        <source>Options store failed</source>
-        <translation>Spremanje postavki neuspjelo</translation>
-    </message>
-    <message>
-        <source>Discard Unsaved Changes</source>
-        <translation>Odbaci nespremljene promjene</translation>
-    </message>
-    <message>
-        <source>You are just about to discard all of your unsaved options.
-
-Are you sure?
-</source>
-        <translation>Upravo ćete odbaciti sve nespremljene postavke.
-
-Jeste li sigurni?
-</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>PIVX Core is shutting down...</source>
-        <translation>PIVX Core se zatvara...</translation>
+        <source>Sap is shutting down...</source>
+        <translation>Sap se zatvara ...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -5272,11 +2447,7 @@ Jeste li sigurni?
         <source>Form</source>
         <translation>Obrazac</translation>
     </message>
-    <message>
-        <source>Contact Stored</source>
-        <translation>Kontakt spremljen</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>Splash</name>
     <message>
@@ -5284,19 +2455,15 @@ Jeste li sigurni?
         <translation>Obrazac</translation>
     </message>
     <message>
-        <source>Loading…</source>
-        <translation>Učitavanje...</translation>
-    </message>
-    <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Sap</source>
+        <translation>Sap</translation>
     </message>
 </context>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Sap</source>
+        <translation>Sap</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -5311,8 +2478,8 @@ Jeste li sigurni?
         <translation>Dash Core programeri</translation>
     </message>
     <message>
-        <source>The PIVX Core developers</source>
-        <translation>PIVX Core programeri</translation>
+        <source>The Sap developers</source>
+        <translation>Sap programeri</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -5326,22 +2493,10 @@ Jeste li sigurni?
         <translation>Obrazac</translation>
     </message>
     <message>
-        <source>Copy</source>
-        <translation>Kopiraj</translation>
-    </message>
-    <message>
-        <source>Edit</source>
-        <translation>Uredi</translation>
-    </message>
-    <message>
         <source>Delete</source>
         <translation>Izbriši</translation>
     </message>
-    <message>
-        <source>Last</source>
-        <translation>Zadnji</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>TopBar</name>
     <message>
@@ -5349,150 +2504,10 @@ Jeste li sigurni?
         <translation>Obrazac</translation>
     </message>
     <message>
-        <source>Available</source>
-        <translation>Raspoloživo</translation>
-    </message>
-    <message>
-        <source>Pending</source>
-        <translation>Na čekanju</translation>
-    </message>
-    <message>
-        <source>Immature</source>
-        <translation>Nedospjelo</translation>
-    </message>
-    <message>
-        <source>Wallet Unlocked for staking</source>
-        <translation>Novčanik otključan za staking</translation>
-    </message>
-    <message>
-        <source>Error generating address</source>
-        <translation>Greška pri generiranju adrese</translation>
-    </message>
-    <message>
-        <source>Address Copied</source>
-        <translation>Adresa kopirana</translation>
-    </message>
-    <message>
-        <source>Staking active</source>
-        <translation>Staking aktivan</translation>
-    </message>
-    <message>
-        <source>Staking not active</source>
-        <translation>Staking nije aktivan</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n active connection(s)</source>
-        <translation><numerusform>%n aktivna veza</numerusform><numerusform>%n aktivnih veza</numerusform><numerusform>%n aktivnih veza</numerusform></translation>
-    </message>
-    <message>
-        <source>Synchronized - Block: %1</source>
-        <translation>Sinkronizirano - Blok: %1</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n hour(s)</source>
-        <translation><numerusform>%n sat</numerusform><numerusform>%n sati</numerusform><numerusform>%n sati</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n day(s)</source>
-        <translation><numerusform>%n dan</numerusform><numerusform>%n dana</numerusform><numerusform>%n dana</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n week(s)</source>
-        <translation><numerusform>%n tjedan</numerusform><numerusform>%n tjedana</numerusform><numerusform>%n tjedana</numerusform></translation>
-    </message>
-    <message>
         <source>%1 and %2</source>
         <translation>%1 i %2</translation>
     </message>
-    <message numerus="yes">
-        <source>%n year(s)</source>
-        <translation><numerusform>%n godina</numerusform><numerusform>%n godina</numerusform><numerusform>%n godina</numerusform></translation>
-    </message>
-    <message>
-        <source>Wallet Upgrade</source>
-        <translation>Nadogradnja novčanika</translation>
-    </message>
-    <message>
-        <source>Upgrading to HD wallet will improve
-the wallet's reliability and security.
-
-
-NOTE: after the upgrade, a new
-backup will be created.
-</source>
-        <translation>Nadogradnja na HD novčanik će će poboljšati
-pouzdanost i sigurnost novčanika.
-
-
-NAPOMENA: Nakon nadogradnje, napravit će
-se nova sigurnosna kopija.
-</translation>
-    </message>
-    <message>
-        <source>Upgrade Wallet</source>
-        <translation>Nadogradi novčanik</translation>
-    </message>
-    <message>
-        <source>Wallet unlock cancelled</source>
-        <translation>Otključavanje novčanika je otkazano</translation>
-    </message>
-    <message>
-        <source>Tor Active: %1</source>
-        <translation>Tor aktivan: %1</translation>
-    </message>
-    <message>
-        <source>Tor Disabled</source>
-        <translation>Tor onemogućen</translation>
-    </message>
-    <message>
-        <source>Available (Locked included)</source>
-        <translation>Raspoloživo (Zaključani uključeni)</translation>
-    </message>
-    <message>
-        <source>The wallet has been successfully upgraded to HD.</source>
-        <translation>Novčanik je uspješno nadogradjen na HD.</translation>
-    </message>
-    <message>
-        <source>It is advised to make a backup.</source>
-        <translation>Preporučljivo je napraviti sigurnosnu kopiju.</translation>
-    </message>
-    <message>
-        <source>Do you wish to backup now?</source>
-        <translation>Želite li stvoriti sigurnosnu kopiju?</translation>
-    </message>
-    <message>
-        <source>Backup Wallet</source>
-        <translation>Sigurnosna kopija novčanika</translation>
-    </message>
-    <message>
-        <source>Wallet Data (*.dat)</source>
-        <translation>Wallet Data (*.dat)</translation>
-    </message>
-    <message>
-        <source>Backup created</source>
-        <translation>Sigurnosna kopija napravljena</translation>
-    </message>
-    <message>
-        <source>Backup creation failed</source>
-        <translation>Stvaranje sigurnosne kopije neuspjelo</translation>
-    </message>
-    <message>
-        <source>no file selected</source>
-        <translation>nije odabrana nijedna datoteka</translation>
-    </message>
-    <message>
-        <source>Wallet upgraded successfully, but no backup created.</source>
-        <translation>Novčanik je uspješno nadograđen, ali nije izrađena sigurnosna kopija.</translation>
-    </message>
-    <message>
-        <source>WARNING: remember to make a copy of your wallet.dat file!</source>
-        <translation>UPOZORENJE: ne zaboravite napraviti kopiju datoteke wallet.dat!</translation>
-    </message>
-    <message>
-        <source>Upgrade Wallet Error</source>
-        <translation>Greška pri nadogradnji novčanika</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>TrafficGraphWidget</name>
     <message>
@@ -5502,17 +2517,13 @@ se nova sigurnosna kopija.
 </context>
 <context>
     <name>TransactionDesc</name>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>Otvoreno za još %n blok</numerusform><numerusform>Otvoreno za još %n blokova</numerusform><numerusform>Otvoreno za još %n blokova</numerusform></translation>
-    </message>
     <message>
         <source>Open until %1</source>
-        <translation>Otvoreno do %1</translation>
+        <translation>Otvori dok %1</translation>
     </message>
     <message>
         <source>conflicted</source>
-        <translation>sukobljena</translation>
+        <translation>u sukobu</translation>
     </message>
     <message>
         <source>%1/offline</source>
@@ -5524,7 +2535,7 @@ se nova sigurnosna kopija.
     </message>
     <message>
         <source>%1 confirmations</source>
-        <translation>%1 potvrda</translation>
+        <translation>%1 potvrđeno</translation>
     </message>
     <message>
         <source>%1/offline (verified via SwiftX)</source>
@@ -5566,10 +2577,6 @@ se nova sigurnosna kopija.
         <source>, has not been successfully broadcast yet</source>
         <translation>, još nije uspješno emitiran</translation>
     </message>
-    <message numerus="yes">
-        <source>, broadcast through %n node(s)</source>
-        <translation><numerusform>, emitiraju se putem %n čvora</numerusform><numerusform>, emitiraju se putem %n čvorova</numerusform><numerusform>, emitiraju se putem %n čvorova</numerusform></translation>
-    </message>
     <message>
         <source>Date</source>
         <translation>Datum</translation>
@@ -5596,7 +2603,7 @@ se nova sigurnosna kopija.
     </message>
     <message>
         <source>own address</source>
-        <translation>vlastita adresa</translation>
+        <translation>moja adresa</translation>
     </message>
     <message>
         <source>watch-only</source>
@@ -5609,10 +2616,6 @@ se nova sigurnosna kopija.
     <message>
         <source>Credit</source>
         <translation>Kredit</translation>
-    </message>
-    <message numerus="yes">
-        <source>matures in %n more block(s)</source>
-        <translation><numerusform>sazrijeva za %n blok</numerusform><numerusform>sazrijeva za %n blokova</numerusform><numerusform>sazrijeva za %n blokova</numerusform></translation>
     </message>
     <message>
         <source>not accepted</source>
@@ -5697,13 +2700,9 @@ se nova sigurnosna kopija.
         <source>Address</source>
         <translation>Adresa</translation>
     </message>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>Otvoreno još %n blok</numerusform><numerusform>Otvoreno još %n blokova</numerusform><numerusform>Otvoreno još %n blokova</numerusform></translation>
-    </message>
     <message>
         <source>Open until %1</source>
-        <translation>Otvoreno do %1</translation>
+        <translation>Otvori dok %1</translation>
     </message>
     <message>
         <source>Offline</source>
@@ -5723,7 +2722,7 @@ se nova sigurnosna kopija.
     </message>
     <message>
         <source>Conflicted</source>
-        <translation>Sukobljen</translation>
+        <translation>u sukobu</translation>
     </message>
     <message>
         <source>Immature (%1 confirmations, will be available after %2)</source>
@@ -5746,44 +2745,56 @@ se nova sigurnosna kopija.
         <translation>Zaprimljeno s</translation>
     </message>
     <message>
-        <source>PIV Stake</source>
-        <translation>PIV Stake</translation>
+        <source>Received via Obfuscation</source>
+        <translation>Zaprimljeno preko Zametanja</translation>
     </message>
     <message>
-        <source>zPIV Stake</source>
-        <translation>zPIV Stake</translation>
+        <source>SAPP Stake</source>
+        <translation>SAPP Stake</translation>
     </message>
     <message>
-        <source>PIV Cold Stake</source>
-        <translation>PIV Cold Stake</translation>
+        <source>zRPD Stake</source>
+        <translation>zRPD Stake</translation>
     </message>
     <message>
-        <source>Stake delegation</source>
-        <translation>Stake delegacija</translation>
+        <source>Obfuscation Denominate</source>
+        <translation>Zameteni denonimi</translation>
     </message>
     <message>
-        <source>Converted PIV to zPIV</source>
-        <translation>Pretvoreni PIV u zPIV</translation>
+        <source>Obfuscation Collateral Payment</source>
+        <translation>Zametena kolateralna plačanja</translation>
     </message>
     <message>
-        <source>Spent zPIV</source>
-        <translation>Potrošeni zPIV</translation>
+        <source>Obfuscation Make Collateral Inputs</source>
+        <translation>Prikrivanje Izrade Kolateralnih Unosa</translation>
     </message>
     <message>
-        <source>Received PIV from zPIV</source>
-        <translation>Primljeni PIV od zPIV</translation>
+        <source>Obfuscation Create Denominations</source>
+        <translation>Prikrivanje Stvara Denominacije</translation>
     </message>
     <message>
-        <source>Minted Change as zPIV from zPIV Spend</source>
-        <translation>Mintana razlika zPIV od zPIV Utroška</translation>
+        <source>Converted SAPP to zRPD</source>
+        <translation>Pretvoreni SAPP u zRPD</translation>
     </message>
     <message>
-        <source>Converted zPIV to PIV</source>
-        <translation>Pretvoreni zPIV u PIV</translation>
+        <source>Spent zRPD</source>
+        <translation>Utrošeni zRPD</translation>
+    </message>
+    <message>
+        <source>Received SAPP from zRPD</source>
+        <translation>Primljeni SAPP od zRPD</translation>
+    </message>
+    <message>
+        <source>Minted Change as zRPD from zRPD Spend</source>
+        <translation>Mintana razlika zRPD od zRPD Utroška</translation>
+    </message>
+    <message>
+        <source>Converted zRPD to SAPP</source>
+        <translation>Pretvoreni zRPD u SAPP</translation>
     </message>
     <message>
         <source>Sent to</source>
-        <translation>Poslano prema</translation>
+        <translation>Pošalji za:</translation>
     </message>
     <message>
         <source>Orphan Block - Generated but not accepted. This does not impact your holdings.</source>
@@ -5791,35 +2802,23 @@ se nova sigurnosna kopija.
     </message>
     <message>
         <source>Payment to yourself</source>
-        <translation>Plaćanje sebi</translation>
-    </message>
-    <message>
-        <source>PIV Stake on behalf of</source>
-        <translation>PIV Stake u korist</translation>
-    </message>
-    <message>
-        <source>Stake delegation spent by</source>
-        <translation>Stake delegacija potrošena od strane</translation>
+        <translation>Plačanje samom sebi</translation>
     </message>
     <message>
         <source>Mined</source>
-        <translation>Stvoreno</translation>
+        <translation>Mined</translation>
+    </message>
+    <message>
+        <source>Obfuscated</source>
+        <translation>Obfuscated</translation>
     </message>
     <message>
         <source>watch-only</source>
         <translation>samo za gledanje</translation>
     </message>
     <message>
-        <source>Anonymous</source>
-        <translation>Anonimno</translation>
-    </message>
-    <message>
-        <source>No information</source>
-        <translation>Nema informacija</translation>
-    </message>
-    <message>
         <source>(n/a)</source>
-        <translation>(n/a)</translation>
+        <translation>(n/d)</translation>
     </message>
     <message>
         <source>Transaction status. Hover over this field to show number of confirmations.</source>
@@ -5853,92 +2852,20 @@ se nova sigurnosna kopija.
         <translation>Obrazac</translation>
     </message>
     <message>
-        <source>Transaction Details</source>
-        <translation>Detalji tranksacije</translation>
+        <source>Fee:</source>
+        <translation>Naknada:</translation>
     </message>
     <message>
-        <source>Total amount</source>
-        <translation>Ukupni iznos</translation>
-    </message>
-    <message>
-        <source>Previous Transaction</source>
-        <translation>Prethodna transakcija</translation>
-    </message>
-    <message>
-        <source>Output Index</source>
-        <translation>Izlazni indeks</translation>
-    </message>
-    <message>
-        <source>D7VFR83SQbie…BhjcWJtcfip5krte2Z </source>
-        <translation>D7VFR83SQbie…BhjcWJtcfip5krte2Z </translation>
-    </message>
-    <message>
-        <source>May 25, 2017</source>
-        <translation>May 25, 2017</translation>
-    </message>
-    <message>
-        <source>ID</source>
-        <translation>ID</translation>
-    </message>
-    <message>
-        <source>Sending to</source>
-        <translation>Šalje se prema</translation>
-    </message>
-    <message>
-        <source>Coin inputs</source>
-        <translation>Unosi novčića</translation>
-    </message>
-    <message>
-        <source>Fee</source>
-        <translation>Naknada</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>Veličina</translation>
-    </message>
-    <message>
-        <source>Change address</source>
-        <translation>Adresa za ostatak</translation>
-    </message>
-    <message>
-        <source>Spendable</source>
-        <translation>Raspoloživo</translation>
-    </message>
-    <message>
-        <source>Confirmations</source>
-        <translation>Potvrde</translation>
-    </message>
-    <message>
-        <source>Status</source>
-        <translation>Status</translation>
-    </message>
-    <message>
-        <source>Date</source>
-        <translation>Datum</translation>
+        <source>Status:</source>
+        <translation>Status:</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation>TekstOznake</translation>
-    </message>
-    <message>
-        <source>CANCEL</source>
-        <translation>PONIŠTI</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation>OK</translation>
-    </message>
-    <message>
-        <source>Confirm Your Transaction</source>
-        <translation>Potvrdite svoju transakciju</translation>
+        <translation>TextLabel</translation>
     </message>
     <message>
         <source>SEND</source>
-        <translation>ŠALJI</translation>
-    </message>
-    <message>
-        <source>ID copied</source>
-        <translation>ID kopiran</translation>
+        <translation>Šalji</translation>
     </message>
     <message>
         <source>Unknown</source>
@@ -5951,120 +2878,49 @@ se nova sigurnosna kopija.
         <source>Form</source>
         <translation>Obrazac</translation>
     </message>
-    <message>
-        <source>Received from Bob</source>
-        <translation>Primljeno od Marka</translation>
-    </message>
-    <message>
-        <source>18/05/18</source>
-        <translation>18/05/18</translation>
-    </message>
-    <message>
-        <source>+0.000585 PIV</source>
-        <translation>+0.000585 PIV</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>Šalji novčiće</translation>
+        <translation>Salji novac</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 PIV.</source>
-        <translation>SwiftX ne podržava slanje visokih vrijednosti. Transakcije su trenutačno ograničene na %1 PIV.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 SAPP.</source>
+        <translation>SwiftX ne podržava slanje visokih vrijednosti. Transakcije su trenutačno ograničene na %1 SAPP.</translation>
     </message>
 </context>
 <context>
+    <name>WalletPasswordDialog</name>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    </context>
+<context>
     <name>WelcomeContentWidget</name>
-    <message>
-        <source>1</source>
-        <translation>1</translation>
-    </message>
-    <message>
-        <source>2</source>
-        <translation>2</translation>
-    </message>
-    <message>
-        <source>3</source>
-        <translation>3</translation>
-    </message>
-    <message>
-        <source>4</source>
-        <translation>4</translation>
-    </message>
-    <message>
-        <source>Language</source>
-        <translation>Jezik</translation>
-    </message>
     <message>
         <source>Welcome</source>
         <translation>Dobrodošli</translation>
     </message>
     <message>
-        <source>Privacy</source>
-        <translation>Privatnost</translation>
-    </message>
-    <message>
-        <source>Masternodes</source>
-        <translation>Masternodeovi</translation>
-    </message>
-    <message>
-        <source>Select your language</source>
-        <translation>Odaberite jezik</translation>
-    </message>
-    <message>
-        <source>Welcome to
-PIVX Core Wallet</source>
-        <translation>Dobrodošli u
-PIVX temeljni novčanik</translation>
-    </message>
-    <message>
-        <source>PIVX is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
-        <translation>PIVX je najinovativnija blockchain tehnologija na svijetu bazirana na Proof of Stake tehnologiji. Razvijena je od strane vrlo iskusnih programera i kriptografa.</translation>
-    </message>
-    <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - PIVX believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Kao što kaže naš manifest: Privatnost je temeljno ljudsko pravo o kojemu se ne pregovara; korisnicima daje slobodu dijeljenja svojih podataka kad god i s kim god žele - PIVX vjeruje u suverenitet.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-        <source>The masternode network is PIVX's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
-        <translation>Masternode mreža je mreža drugog sloja PIVX-a na vrhu blockchaina koja omogućuje našem DAO-u pružanje decentraliziranog upravljanja i riznice.</translation>
-    </message>
-    <message>
-        <source>How PIVX respects your privacy?</source>
-        <translation>Kako PIVX poštuje Vašu privatnost?</translation>
-    </message>
-    <message>
-        <source>What is a Masternode?</source>
-        <translation>Što je Masternode?</translation>
-    </message>
-    <message>
         <source>default</source>
-        <translation>zadano</translation>
+        <translation>Zadani</translation>
     </message>
 </context>
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zPIV to Spend</source>
-        <translation>Odabrani zPIV za utrošiti</translation>
+        <source>Select zRPD to Spend</source>
+        <translation>Odabrani zRPD za utrošiti</translation>
     </message>
     <message>
         <source>Coin Control</source>
-        <translation>Upravljanje novčićima</translation>
-    </message>
-    <message>
-        <source>PushButton</source>
-        <translation>TipkaZaPritisak</translation>
+        <translation>Upravljanje novčićem</translation>
     </message>
     <message>
         <source>zPiv</source>
         <translation>zPiv</translation>
-    </message>
-    <message>
-        <source>0.00 </source>
-        <translation>0.00</translation>
     </message>
     <message>
         <source>Quantity:</source>
@@ -6082,11 +2938,7 @@ PIVX temeljni novčanik</translation>
         <source>Select/Deselect All</source>
         <translation>Odaberite/poništi odabir za Sve</translation>
     </message>
-    <message>
-        <source>Select zPIV Denominations to Spend</source>
-        <translation>Odaberite zPIV denominacije za potrošnju</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>pivx-core</name>
     <message>
@@ -6110,8 +2962,12 @@ PIVX temeljni novčanik</translation>
         <translation>Pridržavajte se na navedenu adresu da biste slušali veze JSON-RPC. Koristite [host]: port notation za IPv6. Ova se opcija može odrediti više puta (zadano: vezati se na sva sučelja)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. PIVX Core is probably already running.</source>
-        <translation>Nije moguće dobiti zaključavanje na direktoriju podataka %s. PIVX Core vjerojatno već radi.</translation>
+        <source>Calculated accumulator checkpoint is not what is recorded by block index</source>
+        <translation>Izračunata kontrolna točka akumulatora nije ono što se bilježi indeksom blokova</translation>
+    </message>
+    <message>
+        <source>Cannot obtain a lock on data directory %s. Sap is probably already running.</source>
+        <translation>Nije moguće dobiti zaključavanje na direktoriju podataka %s. Sap vjerojatno već radi.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -6138,16 +2994,16 @@ PIVX temeljni novčanik</translation>
         <translation>Distribuirano pod MIT softverskom licencom, pogledajte priloženu datoteku COPYING ili &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable cold staking functionality (0-1, default: %u). Disabled if staking=0</source>
-        <translation>Omogući cold staking funkcionalnost (0-1, zadano: %u). Onemogućeno ako je staking=0</translation>
+        <source>Enable automatic wallet backups triggered after each zRPD minting (0-1, default: %u)</source>
+        <translation>Omogući automatsko sigurnosno kopiranje novčanika nakon svakog zRPD mintanja (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for PIV inputs (0-1, default: %u)</source>
-        <translation>Omogući ili onemogući staking funkcionalnosti za PIV unose (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for SAPP inputs (0-1, default: %u)</source>
+        <translation>Omogući ili onemogući staking funkcionalnosti za SAPP unose (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zPIV inputs (0-1, default: %u)</source>
-        <translation>Omogući ili onemogući staking funkcionalnosti za zPIV unose (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for zRPD inputs (0-1, default: %u)</source>
+        <translation>Omogući ili onemogući staking funkcionalnosti za zRPD unose (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -6170,28 +3026,24 @@ PIVX temeljni novčanik</translation>
         <translation>Pogreška: nepodržani argument - pronađeni su kanali. Postavljanje SOCKS verzije više nije moguće, samo SOCKS5 proksiji su podržani.</translation>
     </message>
     <message>
-        <source>Exclude debugging information for a category. Can be used in conjunction with -debug=1 to output debug logs for all categories except one or more specified categories.</source>
-        <translation>Isključi podatke za uklanjanje pogrešaka za kategoriju. Može se koristiti zajedno s -debug=1 za ispis dnevnika za uklanjanje pogrešaka za sve kategorije, osim jedne ili više određjenih kategorija.</translation>
-    </message>
-    <message>
         <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
         <translation>Izvršite naredbu kada se primi odgovarajuće upozorenje ili vidimo jako dugo račvanje (%s u cmd zamjenjuje se porukom)</translation>
     </message>
     <message>
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
-        <translation>Izvrši naredbu kada se dogodi promjena s transakcijom u novčaniku (%s u cmd je zamijenjen s TxID)</translation>
+        <translation>Izvrši naredbu prilikom promjene transakcije naočanika (%s u cmd zamjenjuje se TxID-om)</translation>
     </message>
     <message>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
         <translation>Izvrši naredbu kada se promijeni najbolji blok (%s u cmd zamjenjuje se blokovskim raspršivanjem)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Naknade (u PIV / Kb) manje od toga smatraju se nulom naknadom za prosljeđivanje (zadano: %s)</translation>
+        <source>Fees (in SAPP/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Naknade (u SAPP / Kb) manje od toga smatraju se nulom naknadom za prosljeđivanje (zadano: %s)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Naknade (u PIV / Kb) manje od toga smatraju se nulom naknadom za izradu transakcija (zadano: %s)</translation>
+        <source>Fees (in SAPP/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Naknade (u SAPP / Kb) manje od toga smatraju se nulom naknadom za izradu transakcija (zadano: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -6226,16 +3078,8 @@ PIVX temeljni novčanik</translation>
         <translation>Održavajte cijeli indeks transakcija, koji se koristi pozivom getrawtransaction rpc (zadano: %u)</translation>
     </message>
     <message>
-        <source>Maximum average size of an index occurrence in the block spam filter (default: %u)</source>
-        <translation>Maksimalna prosječna veličina indeksa pojave u bloku filtera neželjene pošte (zadano: %u)</translation>
-    </message>
-    <message>
         <source>Maximum size of data in data carrier transactions we relay and mine (default: %u)</source>
         <translation>Maksimalna veličina podataka u transakcijama nosača podataka koje šaljemo i minamo (zadana vrijednost: %u)</translation>
-    </message>
-    <message>
-        <source>Maximum size of the list of indexes in the block spam filter (default: %u)</source>
-        <translation>Maksimalna veličina popisa indeksa u bloku filtera neželjene pošte (zadano: %u)</translation>
     </message>
     <message>
         <source>Maximum total fees to use in a single wallet transaction, setting too low may abort large transactions (default: %s)</source>
@@ -6244,6 +3088,10 @@ PIVX temeljni novčanik</translation>
     <message>
         <source>Number of seconds to keep misbehaving peers from reconnecting (default: %u)</source>
         <translation>Broj sekundi za neprimjereno ponašanje vršnjaka iz ponovnog povezivanja (zadano: %u)</translation>
+    </message>
+    <message>
+        <source>Obfuscation uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
+        <translation>Prikrivanje koristi točno iznose denominiranih sredstava za slanje sredstava, možda ćete jednostavno morati anonimizirati još novca.</translation>
     </message>
     <message>
         <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
@@ -6286,20 +3134,24 @@ PIVX temeljni novčanik</translation>
         <translation>Podržite filtriranje blokova i transakciju s filtrima za cvjetanje (zadano: %u)</translation>
     </message>
     <message>
-        <source>The block database contains a block which appears to be from the future. This may be due to your computer's date and time being set incorrectly. Only rebuild the block database if you are sure that your computer's date and time are correct</source>
-        <translation>Baza podataka bloka sadrži blok koji izgleda kao da je iz budućnosti. To se može dogoditi zbog toga što su datum i vrijeme Vašeg računala pogrešno postavljeni. Obnovite bazu podataka blokova samo ako ste sigurni da su datum i vrijeme Vašeg računala ispravni</translation>
-    </message>
-    <message>
         <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
         <translation>Ovaj proizvod uključuje softver razvijen od strane OpenSSL projekta za uporabu u OpenSSL Toolkitu i kriptografskom softveru kojeg je napisao Eric Young i UPnP softver koji je napisao Thomas Bernard.</translation>
     </message>
     <message>
-        <source>Total length of network version string (%i) exceeds maximum length (%i). Reduce the number or size of uacomments.</source>
-        <translation>Ukupna duljina teksta mrežne verzije (%i) prelazi maksimalnu duljinu (%i). Smanjite broj ili veličinu uacommentsa.</translation>
+        <source>Unable to bind to %s on this computer. Sap is probably already running.</source>
+        <translation>Nije moguće vezati se na %s na ovom računalu. Sap vjerojatno već radi.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. PIVX Core is probably already running.</source>
-        <translation>Nije moguće vezati se na %s na ovom računalu. PIVX Core vjerojatno već radi.</translation>
+        <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
+        <translation>Nije moguće locirati dovoljno sredstava s domenom Prikrivanja za tu transakciju.</translation>
+    </message>
+    <message>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 SAPP.</source>
+        <translation>Nije moguće pronaći dovoljno prikrivenih sredstava koja nisu denominirana za ovu transakciju koja nisu jednaka 10000 SAPP.</translation>
+    </message>
+    <message>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 SAPP.</source>
+        <translation>Nije moguće pronaći dovoljno sredstava za ovu transakciju koja nije jednaka 10000 SAPP.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -6314,8 +3166,8 @@ PIVX temeljni novčanik</translation>
         <translation>Upozorenje: -paytxfee je vrlo visoka! To je transakcijska naknada koju ćete platiti ako šaljete transakciju.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong PIVX Core will not work properly.</source>
-        <translation>Upozorenje: Provjerite jesu li datum i vrijeme vašeg računala točni! Ako je vaš sat pogrešan, PIVX Core neće raditi ispravno.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Sap will not work properly.</source>
+        <translation>Upozorenje: Provjerite jesu li datum i vrijeme vašeg računala točni! Ako je vaš sat pogrešan, Sap neće raditi ispravno.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -6323,7 +3175,7 @@ PIVX temeljni novčanik</translation>
     </message>
     <message>
         <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
-        <translation>Upozorenje: Čini se da se ne slažemo s našim kolegama! Možda ćete morati nadograditi ili možda drugi node-ovi moraju nadograditi novčanik.</translation>
+        <translation>Upozorenje: Čini se da se ne slažemo s našim vršnjacima! Možda ćete morati nadograditi ili možda želite nadograditi druge čvorove.</translation>
     </message>
     <message>
         <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
@@ -6386,10 +3238,6 @@ PIVX temeljni novčanik</translation>
         <translation>Uvijek se upita za peer adrese putem DNS pretraživanja (zadano: %u)</translation>
     </message>
     <message>
-        <source>Append comment to the user agent string</source>
-        <translation>Dodajte komentar user agent stringu</translation>
-    </message>
-    <message>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
         <translation>Pokušaj oporavka privatnih ključeva iz korumpirane wallet.dat</translation>
     </message>
@@ -6402,8 +3250,24 @@ PIVX temeljni novčanik</translation>
         <translation>Opcije izrade blokova:</translation>
     </message>
     <message>
+        <source>Calculating missing accumulators...</source>
+        <translation>Izračun akumulatora koji nedostaju ...</translation>
+    </message>
+    <message>
         <source>Cannot downgrade wallet</source>
         <translation>Nije moguće novčanik vratiti na nižu verziju</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -bind address: '%s'</source>
+        <translation>Nije moguće riješiti adresu pošiljatelja: '%s'</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -externalip address: '%s'</source>
+        <translation>Nije moguće riješiti vanjsku adresu: '%s'</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -whitebind address: '%s'</source>
+        <translation>Nije moguće riješiti -whitebind adresu: '%s'</translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>
@@ -6415,7 +3279,7 @@ PIVX temeljni novčanik</translation>
     </message>
     <message>
         <source>Connect to a node to retrieve peer addresses, and disconnect</source>
-        <translation>Spojite se na node za preuzimanje adresa korisnika, i odspajanje</translation>
+        <translation>Povežite se s čvorom za preuzimanje peer adresa i odspojite se</translation>
     </message>
     <message>
         <source>Connection options:</source>
@@ -6430,8 +3294,8 @@ PIVX temeljni novčanik</translation>
         <translation>Autorska prava (C) 2014-%i The Dash Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The PIVX Core Developers</source>
-        <translation>Autorska prava (C) 2015-%i The PIVX Core Developers</translation>
+        <source>Copyright (C) 2015-%i The Sap Developers</source>
+        <translation>Autorska prava (C) 2015-%i The Sap Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -6468,19 +3332,23 @@ PIVX temeljni novčanik</translation>
     </message>
     <message>
         <source>Do you want to rebuild the block database now?</source>
-        <translation>Želite li sada obnoviti bazu podataka blokova?</translation>
+        <translation>Želite li sada obnoviti blok bazu podataka?</translation>
     </message>
     <message>
         <source>Done loading</source>
-        <translation>Završeno učitavanje</translation>
+        <translation>Gotovo učitavanje</translation>
+    </message>
+    <message>
+        <source>Enable automatic Zerocoin minting (0-1, default: %u)</source>
+        <translation>Omogući automatsko Zerocoin stvaranje (0-1, zadano: %u)</translation>
     </message>
     <message>
         <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
-        <translation>Omogući objavu hasha transakcije (zaključano putem usluge SwiftX) u &lt;address&gt;</translation>
+        <translation>Omogući objavu hash transakcije (zaključano putem usluge SwiftX) u </translation>
     </message>
     <message>
         <source>Enable publish raw transaction (locked via SwiftX) in &lt;address&gt;</source>
-        <translation>Omogući objavljivanje neobrađjene transakcije (zaključano putem usluge SwiftX) u &lt;address&gt;</translation>
+        <translation>Omogući objavljivanje neobrađene transakcije (zaključano putem usluge SwiftX) u</translation>
     </message>
     <message>
         <source>Enable the client to act as a masternode (0-1, default: %u)</source>
@@ -6488,7 +3356,7 @@ PIVX temeljni novčanik</translation>
     </message>
     <message>
         <source>Error initializing block database</source>
-        <translation>Pogreška prilikom inicijalizacije baze podataka blokova</translation>
+        <translation>Pogreška prilikom inicijalizacije baze blokova</translation>
     </message>
     <message>
         <source>Error initializing wallet database environment %s!</source>
@@ -6504,11 +3372,11 @@ PIVX temeljni novčanik</translation>
     </message>
     <message>
         <source>Error loading wallet.dat: Wallet corrupted</source>
-        <translation>Pogreška pri učitavanju wallet.dat: Novčanik oštećen</translation>
+        <translation>Pogreška pri učitavanju wallet.dat: novčanik oštećen</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of PIVX Core</source>
-        <translation>Pogreška prilikom učitavanja wallet.dat: Novčanik zahtijeva noviju verziju PIVX jezgre</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Sap</source>
+        <translation>Pogreška prilikom učitavanja wallet.dat: Novčanik zahtijeva noviju verziju SAPP jezgre</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -6527,16 +3395,12 @@ PIVX temeljni novčanik</translation>
         <translation>Greška</translation>
     </message>
     <message>
-        <source>Error: </source>
-        <translation>Greška:</translation>
-    </message>
-    <message>
         <source>Error: A fatal internal error occured, see debug.log for details</source>
         <translation>Pogreška: Došlo je do kobne interne pogreške, pogledajte detalje o debug.logu</translation>
     </message>
     <message>
         <source>Error: Disk space is low!</source>
-        <translation>Pogreška: prostor na disku je premalen!</translation>
+        <translation>Pogreška: prostor na disku je nizak!</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -tor found, use -onion.</source>
@@ -6547,20 +3411,20 @@ PIVX temeljni novčanik</translation>
         <translation>Pogreška: Novčanik zaključan, ne može stvoriti transakciju!</translation>
     </message>
     <message>
-        <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
-        <translation>Slušanje nije bilo na bilo kojem priključku. Koristite -listen = 0 ako to želite.</translation>
+        <source>Failed to calculate accumulator checkpoint</source>
+        <translation>Nije uspjelo izračunavanje kontrolne točke akumulatora</translation>
     </message>
     <message>
-        <source>Failed to parse host:port string</source>
-        <translation>Failed to parse host:port string</translation>
+        <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
+        <translation>Slušanje nije bilo na bilo kojem priključku. Koristite -listen = 0 ako to želite.</translation>
     </message>
     <message>
         <source>Failed to read block</source>
         <translation>Greška čitanja bloka</translation>
     </message>
     <message>
-        <source>Fee (in PIV/kB) to add to transactions you send (default: %s)</source>
-        <translation>Naknada (u PIV / kB) za dodavanje transakcija koje šaljete (zadano: %s)</translation>
+        <source>Fee (in SAPP/kB) to add to transactions you send (default: %s)</source>
+        <translation>Naknada (u SAPP / kB) za dodavanje transakcija koje šaljete (zadano: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -6576,7 +3440,7 @@ PIVX temeljni novčanik</translation>
     </message>
     <message>
         <source>If &lt;category&gt; is not supplied, output all debugging information.</source>
-        <translation>Ako &lt;category&gt;nije isporučen, ispiši sve informacije za uklanjanje pogrešaka.</translation>
+        <translation>ako &lt;category&gt;nije isporučen, ispišite sve informacije o uklanjanju pogrešaka.</translation>
     </message>
     <message>
         <source>Importing...</source>
@@ -6599,8 +3463,8 @@ PIVX temeljni novčanik</translation>
         <translation>Informacije</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. PIVX Core is shutting down.</source>
-        <translation>Provjera ispravnosti inicijalizacije nije uspjela. PIVX Core se zatvara.</translation>
+        <source>Initialization sanity check failed. Sap is shutting down.</source>
+        <translation>Provjera ispravnosti inicijalizacije nije uspjela. Sap se zatvara.</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -6615,12 +3479,32 @@ PIVX temeljni novčanik</translation>
         <translation>nevažeća -onion adresa ili naziv hosta: '%s'</translation>
     </message>
     <message>
+        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Nevažeći iznos za -maxtxfee =&lt;amount&gt;: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Nevažeći iznos za -minrelaytxfee =&lt;amount&gt;: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -mintxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Nevažeći iznos za -mintfee=&lt;amount&gt;: '%s'</translation>
+    </message>
+    <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
         <translation>Nevažeći iznos za -paytxfee =&lt;amount&gt;: '%s' (mora biti barem %s)</translation>
     </message>
     <message>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Nevažeći iznos za -paytxfee =&lt;amount&gt;: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -reservebalance=&lt;amount&gt;</source>
+        <translation>Nevažeći iznos za -reservebalance =&lt;amount&gt;</translation>
+    </message>
+    <message>
         <source>Invalid amount</source>
-        <translation>Neispravan iznos</translation>
+        <translation>Nevažeći iznos</translation>
     </message>
     <message>
         <source>Invalid masternodeprivkey. Please see documenation.</source>
@@ -6635,12 +3519,12 @@ PIVX temeljni novčanik</translation>
         <translation>Nevažeći port otkriven u masternode.conf</translation>
     </message>
     <message>
-        <source>Recalculating PIV supply...</source>
-        <translation>Preračunavanje PIV-a u optjecaju...</translation>
+        <source>Percentage of automatically minted Zerocoin  (1-100, default: %u)</source>
+        <translation>Postotak automatskog kovanog Zerocoina (1-100, zadano: %u)</translation>
     </message>
     <message>
-        <source>Reindex the PIV and zPIV money supply statistics</source>
-        <translation>Ponovno indeksirati statistiku PIV i zPIV ponude novca</translation>
+        <source>Reindex the SAPP and zRPD money supply statistics</source>
+        <translation>Ponovno indeksirati statistiku SAPP i zRPD ponude novca</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -6665,22 +3549,21 @@ PIVX temeljni novčanik</translation>
     <message>
         <source> mints deleted
 </source>
-        <translation>novčići izbrisani
+        <translation>mints izbrisana
 </translation>
     </message>
     <message>
         <source> mints updated, </source>
-        <translation>novčići ažurirani,</translation>
+        <translation>mintova ažurirano</translation>
     </message>
     <message>
         <source> unconfirmed transactions removed
 </source>
-        <translation>uklonjene nepotvrđjene transakcije
-</translation>
+        <translation>uklonjene nepotvrđene transakcije</translation>
     </message>
     <message>
-        <source>Disable all PIVX specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>Onemogući sve specifične funkcije PIVX (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, zadano: %u)</translation>
+        <source>Disable all SAPP specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Onemogući sve specifične funkcije SAPP (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, zadano: %u)</translation>
     </message>
     <message>
         <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
@@ -6691,12 +3574,16 @@ PIVX temeljni novčanik</translation>
         <translation>Pogreška: transakcija je odbijena! To se može dogoditi ako su neki od novčića u vašem novčaniku već bili potrošeni, primjerice, ako ste upotrijebili kopiju wallet.data, a novčići su potrošeni u kopiji, ali nisu označeni kao ovdje potrošeni.</translation>
     </message>
     <message>
+        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
+        <translation>Pogreška: ova transakcija zahtijeva naknadu za transakciju od najmanje %s zbog svoje količine, složenosti ili korištenja nedavno primljenih sredstava!</translation>
+    </message>
+    <message>
         <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
         <translation>Pogreška: pronađen je nepotpuni argument. Checklevel mora biti razina 4.</translation>
     </message>
     <message>
         <source>Execute command when the best block changes and its size is over (%s in cmd is replaced by block hash, %d with the block size)</source>
-        <translation>Izvrši naredbu kada se najbolji blok promjeni i kada njegova veličina premaši (%s u cmd je zamijenjen s blok hashom, %d s veličinom bloka)</translation>
+        <translation>Izvrši naredbu kada se promijeni najbolji blok i njezina veličina je gotova (%s u cmd zamjenjuje blok hash, %d s veličinom bloka)</translation>
     </message>
     <message>
         <source>Failed to find coin set amongst held coins with less than maxNumber of Spends</source>
@@ -6705,6 +3592,14 @@ PIVX temeljni novčanik</translation>
     <message>
         <source>In rare cases, a spend with 7 coins exceeds our maximum allowable transaction size, please retry spend using 6 or less coins</source>
         <translation>U rijetkim slučajevima, potrošnja s 7 kovanica premašuje našu maksimalnu dopuštenu veličinu transakcije, pokušajte ponovo pokušati potrošiti 6 ili manje kovanica</translation>
+    </message>
+    <message>
+        <source>Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)</source>
+        <translation>Preferirana denominacija za automatski ovjereni Zerocoin (1/5/10/50/100/500/1000/5000), 0 bez preferencije. zadana vrijednost: %u)</translation>
+    </message>
+    <message>
+        <source>Specify custom backup path to add a copy of any automatic zRPD backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Navedite put prilagođenog sigurnosnog kopiranja da biste dodali kopiju bilo koje automatske zRPD sigurnosne kopije. Ako je postavljeno kao dir, svaka sigurnosna kopija generira vremensku datoteku. Ako je postavljen kao datoteka, prepisat će na tu datoteku svaku kopiju. Ako je postavljen backuppath, dogodit će se 4 sigurnosne kopije</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -6723,8 +3618,8 @@ PIVX temeljni novčanik</translation>
         <translation>Pokušaj prisiljavanja blokiranja korupcije na oporavak</translation>
     </message>
     <message>
-        <source>Cannot create public spend input</source>
-        <translation>Ne mogu se stvoriti unosi javne potrošnje</translation>
+        <source>CoinSpend: Accumulator witness does not verify</source>
+        <translation>CoinSpend: Svjedok akumulatora ne potvrđuje</translation>
     </message>
     <message>
         <source>Display the stake modifier calculations in the debug.log file.</source>
@@ -6736,11 +3631,11 @@ PIVX temeljni novčanik</translation>
     </message>
     <message>
         <source>Enable publish hash block in &lt;address&gt;</source>
-        <translation>Omogući objavljivanje block hasha u &lt;address&gt;</translation>
+        <translation>Omogući blokiranje zbirke oglasa u sustavu&lt;address&gt;</translation>
     </message>
     <message>
         <source>Enable publish hash transaction in &lt;address&gt;</source>
-        <translation>Omogući objavljivanje hasha transakcije u &lt;address&gt;</translation>
+        <translation>Omogući transakciju hash transakcije u sustavu &lt;address&gt;</translation>
     </message>
     <message>
         <source>Enable publish raw block in &lt;address&gt;</source>
@@ -6763,12 +3658,12 @@ PIVX temeljni novčanik</translation>
         <translation>Pogreška: Nema valjanog utxo!</translation>
     </message>
     <message>
-        <source>Failed to find Zerocoins in wallet.dat</source>
-        <translation>Neuspjelo pronalaženje Zerocoina u wallet.dat</translation>
+        <source>Failed to create mint</source>
+        <translation>Nije uspjelo kovanje</translation>
     </message>
     <message>
-        <source>Failed to parse public spend</source>
-        <translation>Failed to parse public spend</translation>
+        <source>Failed to find Zerocoins in wallet.dat</source>
+        <translation>Neuspjelo pronalaženje Zerocoina u wallet.dat</translation>
     </message>
     <message>
         <source>Failed to select a zerocoin</source>
@@ -6781,10 +3676,6 @@ PIVX temeljni novčanik</translation>
     <message>
         <source>Failed to write coin serial number into wallet</source>
         <translation>Nije uspio zapisi serijskog broja novčića u novčanik</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -%s=&lt;amount&gt;: '%s'</source>
-        <translation>Nevažeći iznos za -%s=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
@@ -6808,31 +3699,31 @@ PIVX temeljni novčanik</translation>
     </message>
     <message>
         <source>Loading addresses...</source>
-        <translation>Učitavanje adresa...</translation>
-    </message>
-    <message>
-        <source>Loading banlist...</source>
-        <translation>Učitavanje liste zabranjenih...</translation>
+        <translation>Učitavanje adresa ...</translation>
     </message>
     <message>
         <source>Loading block index...</source>
-        <translation>Učitavanje indeksa blokova...</translation>
+        <translation>Učitavanje indeksa blokova ...</translation>
     </message>
     <message>
         <source>Loading budget cache...</source>
-        <translation>Učitavanje predmemorije proračuna...</translation>
+        <translation>Učitavanje predmemorije proračuna ...</translation>
     </message>
     <message>
         <source>Loading masternode cache...</source>
-        <translation>Učitavanje predmemorije masternodea...</translation>
+        <translation>Učitavanje predmemorije masternoda ...</translation>
     </message>
     <message>
         <source>Loading masternode payment cache...</source>
-        <translation>Učitavanje predmemorije plaćanja masternodea...</translation>
+        <translation>Učitavanje predmemorije plaćanja masternoda ...</translation>
     </message>
     <message>
         <source>Loading sporks...</source>
-        <translation>Učitavanje sporkova...</translation>
+        <translation>Učitavanje aplikacije ...</translation>
+    </message>
+    <message>
+        <source>Loading wallet... (%3.2f %%)</source>
+        <translation>Učitavanje novčanika ... (%3.2f %%)</translation>
     </message>
     <message>
         <source>Loading wallet...</source>
@@ -6851,16 +3742,12 @@ PIVX temeljni novčanik</translation>
         <translation>Potražnja(): nevažeća adresa -proxy ili naziv hosta: '%s'</translation>
     </message>
     <message>
-        <source>MNs synchronization pending...</source>
-        <translation>Sinkronizacija MN-ova je na čekanju ...</translation>
-    </message>
-    <message>
         <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>
-        <translation>Održavajte najviše &lt;n&gt; vezu s korisnicima (zadano: %u)</translation>
+        <translation>Održavajte najviše &lt;n&gt; veza s vršnjacima (zadano: %u)</translation>
     </message>
     <message>
         <source>Masternode options:</source>
-        <translation>Masternode mogućnosti:</translation>
+        <translation>Opcije Masternoda:</translation>
     </message>
     <message>
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
@@ -6872,7 +3759,7 @@ PIVX temeljni novčanik</translation>
     </message>
     <message>
         <source>Mint did not make it into blockchain</source>
-        <translation>Novčić nije ušao u blockchain</translation>
+        <translation>Kovanje nije ušlo u blockchain</translation>
     </message>
     <message>
         <source>Need to specify a port with -whitebind: '%s'</source>
@@ -6895,10 +3782,6 @@ PIVX temeljni novčanik</translation>
         <translation>Broj sigurnosnih kopija prilagođenih lokacija za zadržavanje (zadano: %d)</translation>
     </message>
     <message>
-        <source>On first run, create a legacy wallet instead of a HD wallet</source>
-        <translation>Pri prvom pokretanju napravite naslijeđjeni novčanik umjesto HD novčanika</translation>
-    </message>
-    <message>
         <source>Only accept block chain matching built-in checkpoints (default: %u)</source>
         <translation>Prihvatite blok lanac koji odgovara ugrađenim kontrolnim točkama (zadano: %u)</translation>
     </message>
@@ -6908,55 +3791,19 @@ PIVX temeljni novčanik</translation>
     </message>
     <message>
         <source>Options:</source>
-        <translation>Mogućnosti:</translation>
+        <translation>Mogučnosti:</translation>
     </message>
     <message>
         <source>Password for JSON-RPC connections</source>
         <translation>Lozinka za JSON-RPC veze</translation>
     </message>
     <message>
-        <source>Peers are being disconnected due time differences.</source>
-        <translation>Druga računala se isključuju zbog vremenskih razlika.</translation>
-    </message>
-    <message>
-        <source>Unable to find transaction containing mint %s</source>
-        <translation>Nije moguće pronaći transakciju koja sadrži novčić %s</translation>
-    </message>
-    <message>
-        <source>Unable to find transaction containing mint, txHash: %s</source>
-        <translation>Nije moguće pronaći transakciju koja sadrži novčić, txHash: %s</translation>
-    </message>
-    <message>
-        <source>Use block spam filter (default: %u)</source>
-        <translation>Koristi filter za block spam (zadano: %u)</translation>
-    </message>
-    <message>
         <source>isValid(): Invalid -proxy address or hostname: '%s'</source>
-        <translation>isValid (): Nevažeća -proxy adresa ili naziv hosta: '%s'</translation>
+        <translation>isValid (): Nevažeća proxy adresa ili naziv hosta: '%s'</translation>
     </message>
     <message>
         <source>Preparing for resync...</source>
-        <translation>Priprema za resinkronizaciju...</translation>
-    </message>
-    <message>
-        <source>Please check that your computer's date and time are correct! If your clock is wrong PIVX Core will not work properly.</source>
-        <translation>Provjerite jesu li datum i vrijeme vašeg računala točni! Ako je vaš sat pogrešan, PIVX Core neće raditi ispravno.</translation>
-    </message>
-    <message>
-        <source>Specify location of debug log file: this can be an absolute path or a path relative to the data directory (default: %s)</source>
-        <translation>Navedite lokaciju datoteke dnevnika za uklanjanje pogrešaka: to može biti apsolutna putanja ili putanja u odnosu na direktorij podataka (zadano: %s)</translation>
-    </message>
-    <message>
-        <source>Cannot resolve -%s address: '%s'</source>
-        <translation>Ne mogu riješiti -%s adresu: '%s'</translation>
-    </message>
-    <message>
-        <source>Cannot upgrade to HD wallet (already running HD support). Version: %d</source>
-        <translation>Nije moguće nadograditi na HD novčanik (već ima podršku za HD). Verzija: %d</translation>
-    </message>
-    <message>
-        <source>Need destination or change address because change is not exact</source>
-        <translation>Potrebno odredište ili promjenu adrese jer promjena nije točna</translation>
+        <translation>Priprema za resync ...</translation>
     </message>
     <message>
         <source>Prepend debug output with timestamp (default: %u)</source>
@@ -6964,11 +3811,7 @@ PIVX temeljni novčanik</translation>
     </message>
     <message>
         <source>Print version and exit</source>
-        <translation>Ispiši verziju i izađji</translation>
-    </message>
-    <message>
-        <source>Pubcoin not found in mint tx</source>
-        <translation>Pubcoin nije pronadjen u transakciji stvaranja</translation>
+        <translation>Ispis verzije i izlaz</translation>
     </message>
     <message>
         <source>RPC server options:</source>
@@ -6987,6 +3830,14 @@ PIVX temeljni novčanik</translation>
         <translation>Obnovi indeks blok lanca iz trenutnih blk000??.dat datoteka</translation>
     </message>
     <message>
+        <source>Receive and display P2P network alerts (default: %u)</source>
+        <translation>Primanje i prikaz upozorenja P2P mreže (zadano: %u)</translation>
+    </message>
+    <message>
+        <source>Reindex the accumulator database</source>
+        <translation>Ponovno indeksirati bazu podataka akumulatora</translation>
+    </message>
+    <message>
         <source>Relay and mine data carrier transactions (default: %u)</source>
         <translation>Transakcije prijenosnika i minanja podataka (zadano: %u)</translation>
     </message>
@@ -7000,11 +3851,11 @@ PIVX temeljni novčanik</translation>
     </message>
     <message>
         <source>Rescanning...</source>
-        <translation>Ponovno skeniranje...</translation>
+        <translation>Ponovno skeniranje ...</translation>
     </message>
     <message>
         <source>ResetMintZerocoin finished: </source>
-        <translation>Završeno ResetiranjeStvaranjaZerocoina:</translation>
+        <translation>ResetMintZerocoin je završio:</translation>
     </message>
     <message>
         <source>ResetSpentZerocoin finished: </source>
@@ -7021,6 +3872,10 @@ PIVX temeljni novčanik</translation>
     <message>
         <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
         <translation>Ako je moguće, pošaljite transakcije kao transakcije s nultom naknadom (zadano: %u)</translation>
+    </message>
+    <message>
+        <source>Session timed out.</source>
+        <translation>Sjednica je istekla.</translation>
     </message>
     <message>
         <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
@@ -7065,6 +3920,10 @@ PIVX temeljni novčanik</translation>
     <message>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
         <translation>Smanji datoteku debug.log na pokretanju klijenta (zadano: 1 kada nema -debug)</translation>
+    </message>
+    <message>
+        <source>Signing timed out.</source>
+        <translation>Potpisivanje je isteklo.</translation>
     </message>
     <message>
         <source>Signing transaction failed</source>
@@ -7123,24 +3982,36 @@ PIVX temeljni novčanik</translation>
         <translation>Sinkronizacija završena</translation>
     </message>
     <message>
+        <source>Synchronization pending...</source>
+        <translation>Sinkronizacija je na čekanju ...</translation>
+    </message>
+    <message>
         <source>Synchronizing budgets...</source>
-        <translation>Sinkronizacija proračuna...</translation>
+        <translation>Sinkronizacija proračuna ...</translation>
     </message>
     <message>
         <source>Synchronizing masternode winners...</source>
-        <translation>Usklađivanje masternode pobjednika...</translation>
+        <translation>Usklađivanje dobitnika masternoda...</translation>
     </message>
     <message>
         <source>Synchronizing masternodes...</source>
-        <translation>Sinkronizacija masternodeova...</translation>
+        <translation>Sinkronizacija masternoda...</translation>
     </message>
     <message>
         <source>Synchronizing sporks...</source>
-        <translation>Sinkronizacija sporkova...</translation>
+        <translation>Sinkronizacija sporka...</translation>
     </message>
     <message>
-        <source>Syncing zPIV wallet...</source>
-        <translation>Sinkronizacija zPIV novčanika...</translation>
+        <source>Syncing zRPD wallet...</source>
+        <translation>Sinkronizacija zRPD novčanika...</translation>
+    </message>
+    <message>
+        <source>The coin spend has been used</source>
+        <translation>Korištena je potrošnja novčića</translation>
+    </message>
+    <message>
+        <source>The transaction did not verify</source>
+        <translation>Transakcija nije potvrđena</translation>
     </message>
     <message>
         <source>This help message</source>
@@ -7148,7 +4019,7 @@ PIVX temeljni novčanik</translation>
     </message>
     <message>
         <source>This is experimental software.</source>
-        <translation>Ovo je eksperimentalni softver.</translation>
+        <translation>Ovo je pokusni software</translation>
     </message>
     <message>
         <source>This is intended for regression testing tools and app development.</source>
@@ -7156,11 +4027,11 @@ PIVX temeljni novčanik</translation>
     </message>
     <message>
         <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
-        <translation>Prag za odspajanje loših korisnika (zadano: %u)</translation>
+        <translation>Prag za odspajanje loših vršnjaka (zadano: %u)</translation>
     </message>
     <message>
         <source>Too many spends needed</source>
-        <translation>Potrebno je previše potrošnji</translation>
+        <translation>Potrebno je previše Potrošnji</translation>
     </message>
     <message>
         <source>Tor control port password (default: empty)</source>
@@ -7176,11 +4047,11 @@ PIVX temeljni novčanik</translation>
     </message>
     <message>
         <source>Transaction Mint Started</source>
-        <translation>Transakcija stvaranja započeta</translation>
+        <translation>Transakcijsko kovanje započeto</translation>
     </message>
     <message>
         <source>Transaction amount too small</source>
-        <translation>Iznos transakcije je premali</translation>
+        <translation>Iznos transakcije premali</translation>
     </message>
     <message>
         <source>Transaction amounts must be positive</source>
@@ -7188,7 +4059,7 @@ PIVX temeljni novčanik</translation>
     </message>
     <message>
         <source>Transaction too large for fee policy</source>
-        <translation>Transakcija prevelika za politiku naknada za transakcije</translation>
+        <translation>Transakcija prevelika da bi bila besplatna</translation>
     </message>
     <message>
         <source>Transaction too large</source>
@@ -7196,19 +4067,11 @@ PIVX temeljni novčanik</translation>
     </message>
     <message>
         <source>Trying to spend an already spent serial #, try again.</source>
-        <translation>Pokušavate potrošiti već potrošeni serijski broj #, pokušajte ponovo.</translation>
+        <translation>Pokušavate potrošiti već utrošeni serijski broj #, pokušajte ponovo.</translation>
     </message>
     <message>
         <source>Unable to bind to %s on this computer (bind returned error %s)</source>
         <translation>Nije moguće vezati se na %s na ovom računalu (vezanje vraćene pogreške %s)</translation>
-    </message>
-    <message>
-        <source>Unable to generate initial key</source>
-        <translation>Nije moguće generiranje početnog ključa</translation>
-    </message>
-    <message>
-        <source>Unable to generate keys</source>
-        <translation>Nije moguće generiranje ključeva</translation>
     </message>
     <message>
         <source>Unable to sign spork message, wrong key?</source>
@@ -7221,10 +4084,6 @@ PIVX temeljni novčanik</translation>
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
         <translation>Nepoznata mreža specificirana u -onlynet: '%s'</translation>
-    </message>
-    <message>
-        <source>Unsupported logging category %s=%s.</source>
-        <translation>Nepodržana kategorija zapisivanja %s=%s.</translation>
     </message>
     <message>
         <source>Upgrade wallet to latest format</source>
@@ -7247,20 +4106,16 @@ PIVX temeljni novčanik</translation>
         <translation>Koristi testnu mrežu</translation>
     </message>
     <message>
-        <source>User Agent comment (%s) contains unsafe characters.</source>
-        <translation>Komentar Korisničkog Agenta (%s) sadrži nesigurne znakove.</translation>
-    </message>
-    <message>
         <source>Username for JSON-RPC connections</source>
         <translation>Korisničko ime za JSON-RPC veze</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zPIV</source>
-        <translation>Vrijednost je niža od najmanje dostupne denominacije (= 1) zPIV-a</translation>
+        <source>Value is below the smallest available denomination (= 1) of zRPD</source>
+        <translation>Vrijednost je niža od najmanje dostupne denominacije (= 1) zRPD-a</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
-        <translation>Provjera blokova...</translation>
+        <translation>Provjera blokova ...</translation>
     </message>
     <message>
         <source>Verifying wallet...</source>
@@ -7271,8 +4126,8 @@ PIVX temeljni novčanik</translation>
         <translation>Novčanik %s nalazi se izvan direktorija podataka %s</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart PIVX Core to complete</source>
-        <translation>Potrebno je prepisati novčanik: ponovo pokrenite PIVX Core</translation>
+        <source>Wallet needed to be rewritten: restart Sap to complete</source>
+        <translation>Potrebno je prepisati novčanik: ponovo pokrenite Sap</translation>
     </message>
     <message>
         <source>Wallet options:</source>
@@ -7315,16 +4170,12 @@ PIVX temeljni novčanik</translation>
         <translation>Mogućnosti ZeroMQ obavijesti:</translation>
     </message>
     <message>
-        <source>Zerocoin minting available only on regtest</source>
-        <translation>Stvaranje Zerocoina dostupno je samo na regtestu</translation>
-    </message>
-    <message>
         <source>Zerocoin options:</source>
         <translation>Zerocoin mogućnosti:</translation>
     </message>
     <message>
         <source>on startup</source>
-        <translation>pri pokretanju</translation>
+        <translation>na pokretanju</translation>
     </message>
     <message>
         <source>wallet.dat corrupt, salvage failed</source>
@@ -7338,20 +4189,8 @@ PIVX temeljni novčanik</translation>
         <translation>Obrazac</translation>
     </message>
     <message>
-        <source>Send</source>
-        <translation>Pošalji</translation>
-    </message>
-    <message>
         <source>TextLabel</source>
-        <translation>TekstOznake</translation>
+        <translation>TextLabel</translation>
     </message>
-    <message>
-        <source>Include delegated</source>
-        <translation>Uključi delegirane</translation>
-    </message>
-    <message>
-        <source>PushButton</source>
-        <translation>TipkaZaPritisak</translation>
-    </message>
-</context>
+    </context>
 </TS>

@@ -3,11 +3,9 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "qt/pivx/mnmodel.h"
-
-#include "activemasternode.h"
 #include "masternode-sync.h"
 #include "masternodeman.h"
-#include "net.h"        // for validateMasternodeIP
+#include "activemasternode.h"
 #include "sync.h"
 #include "uint256.h"
 #include "wallet/wallet.h"
@@ -33,7 +31,7 @@ void MNModel::updateMNList()
         if (!pmn) {
             pmn = new CMasternode();
             pmn->vin = txIn;
-            pmn->activeState = CMasternode::MASTERNODE_MISSING;
+            pmn->activeState = CMasternode::MASTERNODE_EXPIRED;
         }
         nodes.insert(QString::fromStdString(mne.getAlias()), std::make_pair(QString::fromStdString(mne.getIp()), pmn));
         if (pwalletMain) {
@@ -89,7 +87,7 @@ QVariant MNModel::data(const QModelIndex &index, int role) const
                 return (isAvailable) ? QString::number(rec->vin.prevout.n) : "Not available";
             case STATUS: {
                 std::pair<QString, CMasternode*> pair = nodes.values().value(row);
-                return (pair.second) ? QString::fromStdString(pair.second->Status()) : "MISSING";
+                return (pair.second) ? QString::fromStdString(pair.second->Status()) : "EXPIRED";
             }
             case PRIV_KEY: {
                 for (CMasternodeConfig::CMasternodeEntry mne : masternodeConfig.getEntries()) {
@@ -167,7 +165,7 @@ int MNModel::getMNState(QString mnAlias)
 bool MNModel::isMNInactive(QString mnAlias)
 {
     int activeState = getMNState(mnAlias);
-    return activeState == CMasternode::MASTERNODE_MISSING || activeState == CMasternode::MASTERNODE_EXPIRED || activeState == CMasternode::MASTERNODE_REMOVE;
+    return activeState == CMasternode::MASTERNODE_EXPIRED || activeState == CMasternode::MASTERNODE_REMOVE;
 }
 
 bool MNModel::isMNActive(QString mnAlias)
@@ -186,9 +184,4 @@ bool MNModel::isMNCollateralMature(QString mnAlias)
 bool MNModel::isMNsNetworkSynced()
 {
     return masternodeSync.IsSynced();
-}
-
-bool MNModel::validateMNIP(const QString& addrStr)
-{
-    return validateMasternodeIP(addrStr.toStdString());
 }

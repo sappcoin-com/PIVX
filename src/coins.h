@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
-// Copyright (c) 2016-2020 The PIVX developers
+// Copyright (c) 2016-2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -8,7 +8,6 @@
 #define BITCOIN_COINS_H
 
 #include "compressor.h"
-#include "memusage.h"
 #include "consensus/consensus.h"  // can be removed once policy/ established
 #include "script/standard.h"
 #include "serialize.h"
@@ -285,14 +284,6 @@ public:
                 return false;
         return true;
     }
-
-    size_t DynamicMemoryUsage() const {
-        size_t ret = memusage::DynamicUsage(vout);
-        for(const CTxOut &out : vout) {
-            ret += memusage::DynamicUsage(*static_cast<const CScriptBase*>(&out.scriptPubKey));
-        }
-        return ret;
-    }
 };
 
 class CCoinsKeyHasher
@@ -399,8 +390,7 @@ class CCoinsModifier
 private:
     CCoinsViewCache& cache;
     CCoinsMap::iterator it;
-    size_t cachedCoinUsage; // Cached memory usage of the CCoins object before modification
-    CCoinsModifier(CCoinsViewCache& cache_, CCoinsMap::iterator it_, size_t usage);
+    CCoinsModifier(CCoinsViewCache& cache_, CCoinsMap::iterator it_);
 
 public:
     CCoins* operator->() { return &it->second.coins; }
@@ -422,9 +412,6 @@ protected:
      */
     mutable uint256 hashBlock;
     mutable CCoinsMap cacheCoins;
-
-    /* Cached dynamic memory usage for the inner CCoins objects. */
-    mutable size_t cachedCoinsUsage;
 
 public:
     CCoinsViewCache(CCoinsView* baseIn);
@@ -461,9 +448,6 @@ public:
     //! Calculate the size of the cache (in number of transactions)
     unsigned int GetCacheSize() const;
 
-    //! Calculate the size of the cache (in bytes)
-    size_t DynamicMemoryUsage() const;
-
     /** 
      * Amount of pivx coming in to a transaction
      * Note that lightweight clients may not know anything besides the hash of previous transactions,
@@ -490,11 +474,6 @@ public:
 private:
     CCoinsMap::iterator FetchCoins(const uint256& txid);
     CCoinsMap::const_iterator FetchCoins(const uint256& txid) const;
-
-    /**
-      * By making the copy constructor private, we prevent accidentally using it when one intends to create a cache on top of a base cache.
-      */
-    CCoinsViewCache(const CCoinsViewCache &);
 };
 
 #endif // BITCOIN_COINS_H

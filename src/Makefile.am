@@ -67,20 +67,19 @@ TESTS =
 BENCHMARKS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += pivxd
+  bin_PROGRAMS += sapd
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += pivx-cli pivx-tx
+  bin_PROGRAMS += sap-cli sap-tx
 endif
 
 .PHONY: FORCE check-symbols check-security
-# pivx core #
+# sap core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   addrman.h \
   allocators.h \
-  arith_uint256.h \
   amount.h \
   base58.h \
   bip38.h \
@@ -113,6 +112,8 @@ BITCOIN_CORE_H = \
   pairresult.h \
   addressbook.h \
   denomination_functions.h \
+  obfuscation.h \
+  obfuscation-relay.h \
   wallet/db.h \
   hash.h \
   httprpc.h \
@@ -121,7 +122,6 @@ BITCOIN_CORE_H = \
   invalid.h \
   invalid_outpoints.json.h \
   invalid_serials.json.h \
-  legacy/stakemodifier.h \
   kernel.h \
   swifttx.h \
   key.h \
@@ -131,7 +131,6 @@ BITCOIN_CORE_H = \
   limitedmap.h \
   logging.h \
   main.h \
-  memusage.h \
   masternode.h \
   masternode-payments.h \
   masternode-budget.h \
@@ -146,7 +145,6 @@ BITCOIN_CORE_H = \
   net.h \
   noui.h \
   pow.h \
-  prevector.h \
   protocol.h \
   pubkey.h \
   random.h \
@@ -180,8 +178,6 @@ BITCOIN_CORE_H = \
   guiinterface.h \
   guiinterfaceutil.h \
   uint256.h \
-  uint512.h \
-  blob_uint256.h \
   undo.h \
   util/memory.h \
   util.h \
@@ -216,7 +212,7 @@ obj/build.h: FORCE
 	  "$(abs_top_srcdir)"
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between pivxd and pivx-qt
+# server: shared between sapd and sap-qt
 libbitcoin_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 libbitcoin_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_server_a_SOURCES = \
@@ -265,7 +261,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 endif
 
-# wallet: shared between pivxd and pivx-qt, but only linked
+# wallet: shared between sapd and sap-qt, but only linked
 # when wallet enabled
 libbitcoin_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
@@ -273,6 +269,8 @@ libbitcoin_wallet_a_SOURCES = \
   activemasternode.cpp \
   bip38.cpp \
   denomination_functions.cpp \
+  obfuscation.cpp \
+  obfuscation-relay.cpp \
   addressbook.cpp \
   crypter.cpp \
   key_io.cpp \
@@ -284,7 +282,6 @@ libbitcoin_wallet_a_SOURCES = \
   masternodeconfig.cpp \
   masternodeman.cpp \
   messagesigner.cpp \
-  legacy/stakemodifier.cpp \
   kernel.cpp \
   wallet/db.cpp \
   wallet/rpcdump.cpp \
@@ -309,8 +306,6 @@ libbitcoin_wallet_a_SOURCES = \
 crypto_libbitcoin_crypto_a_CPPFLAGS = $(AM_CPPFLAGS) $(PIC_FLAGS)
 crypto_libbitcoin_crypto_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIC_FLAGS)
 crypto_libbitcoin_crypto_a_SOURCES = \
-  crypto/aes.cpp \
-  crypto/aes.h \
   crypto/sha1.cpp \
   crypto/sha256.cpp \
   crypto/sha512.cpp \
@@ -345,6 +340,33 @@ crypto_libbitcoin_crypto_a_SOURCES = \
   crypto/sph_skein.h \
   crypto/sph_types.h
 
+# specifically for xevan hash
+crypto_libbitcoin_crypto_a_SOURCES += \
+  crypto/sha3/sph_jh.c \
+  crypto/sha3/sph_blake.c \
+  crypto/sha3/sph_bmw.c \
+  crypto/sha3/sph_groestl.c \
+  crypto/sha3/sph_skein.c \
+  crypto/sha3/sph_keccak.c \
+  crypto/sha3/sph_luffa.c \
+  crypto/sha3/sph_cubehash.c \
+  crypto/sha3/sph_shavite.c \
+  crypto/sha3/sph_simd.c \
+  crypto/sha3/sph_echo.c \
+  crypto/sha3/sph_fugue.c \
+  crypto/sha3/sph_hamsi.c \
+  crypto/sha3/sph_shabal.c \
+  crypto/sha3/sph_whirlpool.c \
+  crypto/sha3/sph_haval.c \
+  crypto/sha3/sph_hefty1.c \
+  crypto/sha3/sph_ripemd.c \
+  crypto/sha3/sph_sha2.c \
+  crypto/sha3/sph_sha2big.c \
+  crypto/sha3/sph_tiger.c \
+  crypto/sha3/blake2s.c \
+  crypto/sha3/blake2b.c \
+  crypto/xevan.c
+
 # libzerocoin library
 libzerocoin_libbitcoin_zerocoin_a_CPPFLAGS = $(AM_CPPFLAGS) $(BOOST_CPPFLAGS)
 libzerocoin_libbitcoin_zerocoin_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
@@ -375,7 +397,7 @@ if USE_NUM_OPENSSL
   libzerocoin_libbitcoin_zerocoin_a_SOURCES += libzerocoin/bignum_openssl.cpp
 endif
 
-# common: shared between pivxd, and pivx-qt and non-server tools
+# common: shared between sapd, and sap-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_common_a_SOURCES = \
@@ -416,7 +438,6 @@ libbitcoin_common_a_SOURCES = \
 libbitcoin_util_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_util_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_util_a_SOURCES = \
-  arith_uint256.cpp \
   allocators.cpp \
   chainparamsbase.cpp \
   clientversion.cpp \
@@ -429,7 +450,6 @@ libbitcoin_util_a_SOURCES = \
   support/cleanse.cpp \
   sync.cpp \
   uint256.cpp \
-  blob_uint256.cpp \
   util.cpp \
   utilmoneystr.cpp \
   util/threadnames.cpp \
@@ -442,7 +462,7 @@ libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 AM_LDFLAGS += $(COMPAT_LDFLAGS)
 endif
 
-# cli: shared between pivx-cli and pivx-qt
+# cli: shared between sap-cli and sap-qt
 libbitcoin_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_cli_a_SOURCES = \
@@ -452,16 +472,16 @@ libbitcoin_cli_a_SOURCES = \
 nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
-# pivxd binary #
-pivxd_SOURCES = pivxd.cpp
-pivxd_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-pivxd_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-pivxd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# sapd binary #
+sapd_SOURCES = sapd.cpp
+sapd_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+sapd_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+sapd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-pivxd_SOURCES += pivxd-res.rc
+sapd_SOURCES += sapd-res.rc
 endif
-pivxd_LDADD = \
+sapd_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_WALLET) \
   $(LIBBITCOIN_COMMON) \
@@ -475,38 +495,38 @@ pivxd_LDADD = \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
 
-pivxd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+sapd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
-# pivx-cli binary #
-pivx_cli_SOURCES = pivx-cli.cpp
-pivx_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
-pivx_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-pivx_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# sap-cli binary #
+sap_cli_SOURCES = sap-cli.cpp
+sap_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+sap_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+sap_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-pivx_cli_SOURCES += pivx-cli-res.rc
+sap_cli_SOURCES += sap-cli-res.rc
 endif
 
-pivx_cli_LDADD = \
+sap_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_UTIL) \
   $(LIBBITCOIN_CRYPTO)
 
-pivx_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+sap_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
-# pivx-tx binary #
-pivx_tx_SOURCES = pivx-tx.cpp
-pivx_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-pivx_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-pivx_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# sap-tx binary #
+sap_tx_SOURCES = sap-tx.cpp
+sap_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+sap_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+sap_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-pivx_tx_SOURCES += pivx-tx-res.rc
+sap_tx_SOURCES += sap-tx-res.rc
 endif
 
-pivx_tx_LDADD = \
+sap_tx_LDADD = \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_ZEROCOIN) \
@@ -514,14 +534,13 @@ pivx_tx_LDADD = \
   $(LIBBITCOIN_CRYPTO) \
   $(LIBSECP256K1)
 
-pivx_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+sap_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
 # bitcoinconsensus library #
 if BUILD_BITCOIN_LIBS
 include_HEADERS = script/bitcoinconsensus.h
 libbitcoinconsensus_la_SOURCES = \
-  arith_uint256.cpp \
   allocators.cpp \
   primitives/transaction.cpp \
   crypto/hmac_sha512.cpp \
@@ -536,7 +555,6 @@ libbitcoinconsensus_la_SOURCES = \
   script/interpreter.cpp \
   script/bitcoinconsensus.cpp \
   uint256.cpp \
-  blob_uint256.cpp \
   utilstrencodings.cpp
 
 if GLIBC_BACK_COMPAT
@@ -569,21 +587,15 @@ CLEANFILES += zmq/*.gcda zmq/*.gcno
 CLEANFILES += zpiv/*.gcda zpiv/*.gcno
 CLEANFILES += obj/build.h
 
-CTAES_DIST =  crypto/ctaes/bench.c
-CTAES_DIST += crypto/ctaes/ctaes.c
-CTAES_DIST += crypto/ctaes/ctaes.h
-CTAES_DIST += crypto/ctaes/README.md
-CTAES_DIST += crypto/ctaes/test.c
-
-EXTRA_DIST = $(CTAES_DIST)
+EXTRA_DIST =
 
 
-config/pivx-config.h: config/stamp-h1
+config/sap-config.h: config/stamp-h1
 	@$(MAKE) -C $(top_builddir) $(subdir)/$(@)
-config/stamp-h1: $(top_srcdir)/$(subdir)/config/pivx-config.h.in $(top_builddir)/config.status
+config/stamp-h1: $(top_srcdir)/$(subdir)/config/sap-config.h.in $(top_builddir)/config.status
 	$(AM_V_at)$(MAKE) -C $(top_builddir) $(subdir)/$(@)
-$(top_srcdir)/$(subdir)/config/pivx-config.h.in:  $(am__configure_deps)
-	$(AM_V_at)$(MAKE) -C $(top_srcdir) $(subdir)/config/pivx-config.h.in
+$(top_srcdir)/$(subdir)/config/sap-config.h.in:  $(am__configure_deps)
+	$(AM_V_at)$(MAKE) -C $(top_srcdir) $(subdir)/config/sap-config.h.in
 
 clean-local:
 	-$(MAKE) -C secp256k1 clean

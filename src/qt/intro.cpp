@@ -68,7 +68,7 @@ void FreespaceChecker::check()
     fs::path dataDir = GUIUtil::qstringToBoostPath(dataDirStr);
     uint64_t freeBytesAvailable = 0;
     int replyStatus = ST_OK;
-    QString replyMessage = tr("A new data directory will be created.");
+    QString replyMessage = tr("");
 
     /* Find first parent that exists, so that fs::space does not fail */
     fs::path parentDir = dataDir;
@@ -199,7 +199,7 @@ bool Intro::pickDataDirectory()
                 TryCreateDirectory(GUIUtil::qstringToBoostPath(dataDir));
                 break;
             } catch (const fs::filesystem_error& e) {
-                QMessageBox::critical(0, tr("PIVX Core"),
+                QMessageBox::critical(0, tr("Sap"),
                     tr("Error: Specified data directory \"%1\" cannot be created.").arg(dataDir));
                 // fall through, back to choosing screen
             }
@@ -209,7 +209,7 @@ bool Intro::pickDataDirectory()
     }
 
     /* Only override -datadir if different from the default, to make it possible to
-     * override -datadir in the pivx.conf file in the default data directory
+     * override -datadir in the sap.conf file in the default data directory
      * (to be consistent with pivxd behavior)
      */
 
@@ -241,6 +241,7 @@ void Intro::setStatus(int status, const QString& message, quint64 bytesAvailable
         } else {
             ui->freeSpace->setStyleSheet("");
         }
+        ui->freeSpace->setStyleSheet("QLabel { color: #000000 }");
         ui->freeSpace->setText(freeString + ".");
     }
     /* Don't allow confirm in ERROR state */

@@ -1,4 +1,4 @@
-// Copyright (c) 2019-2020 The PIVX developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -213,7 +213,7 @@ QColor getRowColor(bool isLightTheme, bool isHovered, bool isSelected)
 {
     if (isLightTheme) {
         if (isSelected) {
-            return QColor("#25b088ff");
+            return QColor("#25175201");
         } else if (isHovered) {
             return QColor("#25bababa");
         } else {
@@ -221,11 +221,11 @@ QColor getRowColor(bool isLightTheme, bool isHovered, bool isSelected)
         }
     } else {
         if (isSelected) {
-            return QColor("#25b088ff");
+            return QColor("#250A2900");
         } else if (isHovered) {
-            return QColor("#25bababa");
+            return QColor("#25175201");
         } else {
-            return QColor("#0f0b16");
+            return QColor("#123C00");
         }
     }
 }

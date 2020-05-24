@@ -22,7 +22,7 @@
 QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* wallet, const CWalletTx& wtx)
 {
     QList<TransactionRecord> parts;
-    int64_t nTime = wtx.GetTxTime();
+    int64_t nTime = wtx.GetComputedTxTime();
     CAmount nCredit = wtx.GetCredit(ISMINE_ALL);
     CAmount nDebit = wtx.GetDebit(ISMINE_ALL);
     CAmount nNet = nCredit - nDebit;
@@ -43,7 +43,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
             return parts;
 
         if (wtx.HasZerocoinSpendInputs() && (fZSpendFromMe || wallet->zpivTracker->HasMintTx(hash))) {
-            //zPIV stake reward
+            //zRPD stake reward
             sub.involvesWatchAddress = false;
             sub.type = TransactionRecord::StakeZPIV;
             sub.address = mapValue["zerocoinmint"];
@@ -63,10 +63,10 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
                 parts.append(sub);
                 return parts;
             } else {
-                // PIV stake reward
+                // SAPP stake reward
                 sub.involvesWatchAddress = mine & ISMINE_WATCH_ONLY;
                 sub.type = TransactionRecord::StakeMint;
-                sub.address = EncodeDestination(address);
+                sub.address = CBitcoinAddress(address).ToString();
                 sub.credit = nNet;
             }
         } else {
@@ -77,7 +77,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
                 isminetype mine = wallet->IsMine(wtx.vout[nIndexMN]);
                 sub.involvesWatchAddress = mine & ISMINE_WATCH_ONLY;
                 sub.type = TransactionRecord::MNReward;
-                sub.address = EncodeDestination(destMN);
+                sub.address = CBitcoinAddress(destMN).ToString();
                 sub.credit = wtx.vout[nIndexMN].nValue;
             }
         }
@@ -86,8 +86,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
     } else if (wtx.HasZerocoinSpendInputs()) {
         //zerocoin spend outputs
         bool fFeeAssigned = false;
-        for (unsigned int nOut = 0; nOut < wtx.vout.size(); nOut++) {
-            const CTxOut& txout = wtx.vout[nOut];
+        for (const CTxOut& txout : wtx.vout) {
             // change that was reminted as zerocoins
             if (txout.IsZerocoinMint()) {
                 // do not display record if this isn't from our wallet
@@ -103,7 +102,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
                     sub.debit -= (wtx.GetZerocoinSpent() - wtx.GetValueOut());
                     fFeeAssigned = true;
                 }
-                sub.idx = nOut;
+                sub.idx = parts.size();
                 parts.append(sub);
                 continue;
             }
@@ -111,7 +110,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
             std::string strAddress = "";
             CTxDestination address;
             if (ExtractDestination(txout.scriptPubKey, address))
-                strAddress = EncodeDestination(address);
+                strAddress = CBitcoinAddress(address).ToString();
 
             // a zerocoinspend that was sent to an address held by this wallet
             isminetype mine = wallet->IsMine(txout);
@@ -127,7 +126,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
                 sub.address = mapValue["recvzerocoinspend"];
                 if (strAddress != "")
                     sub.address = strAddress;
-                sub.idx = nOut;
+                sub.idx = parts.size();
                 parts.append(sub);
                 continue;
             }
@@ -144,7 +143,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
             sub.address = mapValue["zerocoinspend"];
             if (strAddress != "")
                 sub.address = strAddress;
-            sub.idx = nOut;
+            sub.idx = parts.size();
             parts.append(sub);
         }
     } else if (wtx.HasP2CSOutputs()) {
@@ -165,19 +164,18 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
         //
         // Credit
         //
-        for (unsigned int nOut = 0; nOut < wtx.vout.size(); nOut++) {
-            const CTxOut& txout = wtx.vout[nOut];
+        for (const CTxOut& txout : wtx.vout) {
             isminetype mine = wallet->IsMine(txout);
             if (mine) {
                 TransactionRecord sub(hash, nTime, wtx.GetTotalSize());
                 CTxDestination address;
-                sub.idx = nOut; // vout index
+                sub.idx = parts.size(); // sequence number
                 sub.credit = txout.nValue;
                 sub.involvesWatchAddress = mine & ISMINE_WATCH_ONLY;
                 if (ExtractDestination(txout.scriptPubKey, address) && IsMine(*wallet, address)) {
-                    // Received by PIVX Address
+                    // Received by SAPP Address
                     sub.type = TransactionRecord::RecvWithAddress;
-                    sub.address = EncodeDestination(address);
+                    sub.address = CBitcoinAddress(address).ToString();
                 } else {
                     // Received by IP connection (deprecated features), or a multisignature or other non-simple transaction
                     sub.type = TransactionRecord::RecvFromOther;
@@ -225,10 +223,15 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
             sub.type = TransactionRecord::SendToSelf;
             sub.address = "";
 
+            for (unsigned int nOut = 0; nOut < wtx.vout.size(); nOut++) {
+                const CTxOut& txout = wtx.vout[nOut];
+                sub.idx = parts.size();
+            }
+
             // Label for payment to self
             CTxDestination address;
             if (ExtractDestination(wtx.vout[0].scriptPubKey, address)) {
-                sub.address = EncodeDestination(address);
+                sub.address = CBitcoinAddress(address).ToString();
             }
 
             CAmount nChange = wtx.GetChange();
@@ -246,7 +249,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
             for (unsigned int nOut = 0; nOut < wtx.vout.size(); nOut++) {
                 const CTxOut& txout = wtx.vout[nOut];
                 TransactionRecord sub(hash, nTime, wtx.GetTotalSize());
-                sub.idx = nOut;
+                sub.idx = parts.size();
                 sub.involvesWatchAddress = involvesWatchAddress;
 
                 if (wallet->IsMine(txout)) {
@@ -261,9 +264,9 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
                     //private keys that the change was sent to. Do not display a "sent to" here.
                     if (wtx.HasZerocoinMintOutputs())
                         continue;
-                    // Sent to PIVX Address
+                    // Sent to SAPP Address
                     sub.type = TransactionRecord::SendToAddress;
-                    sub.address = EncodeDestination(address);
+                    sub.address = CBitcoinAddress(address).ToString();
                 } else if (txout.IsZerocoinMint()){
                     sub.type = TransactionRecord::ZerocoinMint;
                     sub.address = mapValue["zerocoinmint"];
@@ -385,10 +388,10 @@ bool TransactionRecord::ExtractAddress(const CScript& scriptPubKey, bool fColdSt
         addressStr = "No available address";
         return false;
     } else {
-        addressStr = EncodeDestination(
+        addressStr = CBitcoinAddress(
                 address,
                 (fColdStake ? CChainParams::STAKING_ADDRESS : CChainParams::PUBKEY_ADDRESS)
-        );
+        ).ToString();
         return true;
     }
 }
@@ -421,15 +424,11 @@ void TransactionRecord::updateStatus(const CWalletTx& wtx)
 
     // Determine transaction status
 
-    // Update time if needed
-    int64_t nTxTime = wtx.GetTxTime();
-    if (time != nTxTime) time = nTxTime;
-
     // Sort order, unrecorded transactions sort to the top
     status.sortKey = strprintf("%010d-%01d-%010u-%03d",
         (pindex ? pindex->nHeight : std::numeric_limits<int>::max()),
         (wtx.IsCoinBase() ? 1 : 0),
-        time,
+        wtx.nTimeReceived,
         idx);
 
     bool fConflicted = false;

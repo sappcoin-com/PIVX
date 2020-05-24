@@ -1,4 +1,4 @@
-// Copyright (c) 2019-2020 The PIVX developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -36,6 +36,7 @@ namespace GuiTransactionsUtils {
                         "Duplicate address found, can only send to each address once per send operation.");
                 break;
             case WalletModel::TransactionCreationFailed:
+                retStr = parent->translate("Transaction creation failed!");
                 informType = CClientUIInterface::MSG_ERROR;
                 break;
             case WalletModel::TransactionCommitFailed:

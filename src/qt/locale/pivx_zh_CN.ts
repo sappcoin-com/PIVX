@@ -130,11 +130,11 @@
         <translation>接收地址</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your SAPP addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>这是用于发送PIVX的地址。在发送PIVX之前，请认真核查发送金额和接收地址。</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your SAPP addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>这是用于接收PIVX的钱包地址。建议每一笔交易都使用一个新的钱包地址。</translation>
     </message>
     <message>
@@ -196,10 +196,6 @@
         <translation>日期</translation>
     </message>
     <message>
-        <source>Type</source>
-        <translation>类别</translation>
-    </message>
-    <message>
         <source>(no label)</source>
         <translation>未设置标签</translation>
     </message>
@@ -219,8 +215,8 @@
         <translation>文本标签</translation>
     </message>
     <message>
-        <source>N/A</source>
-        <translation>N/A</translation>
+        <source>No active Master Node yet</source>
+        <translation>暂无活跃主节点</translation>
     </message>
     <message>
         <source>Contact name</source>
@@ -251,8 +247,8 @@
         <translation>例如John Doe</translation>
     </message>
     <message>
-        <source>Enter PIVX address</source>
-        <translation>输入PIVX地址</translation>
+        <source>Enter a SAPP address</source>
+        <translation>输入一个PIVX地址</translation>
     </message>
     <message>
         <source>SAVE</source>
@@ -372,18 +368,6 @@ for staking</source>
         <translation>确认钱包加密</translation>
     </message>
     <message>
-        <source>WARNING</source>
-        <translation>注意</translation>
-    </message>
-    <message>
-        <source>If you encrypt your wallet and lose your passphrase, you will</source>
-        <translation>如果你对钱包进行加密但丢失密码的话，你会</translation>
-    </message>
-    <message>
-        <source>LOSE ALL OF YOUR PIV</source>
-        <translation>丢失你所有的PIV</translation>
-    </message>
-    <message>
         <source>ENCRYPT</source>
         <translation>加密</translation>
     </message>
@@ -392,16 +376,16 @@ for staking</source>
         <translation>删除</translation>
     </message>
     <message>
-        <source>WARNING: The Caps Lock key is on!</source>
-        <translation>注意：键盘目前为大写锁定状态。</translation>
-    </message>
-    <message>
-        <source>PIVX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
-        <translation>PIVX将关闭以完成加密过程。但是，仅仅加密您的钱包是不够的，因为它并不能阻止恶意软件从您的电脑里面偷取PIVs。</translation>
+        <source>SAPP will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your RPDs from being stolen by malware infecting your computer.</source>
+        <translation>PIVX将关闭以完成加密过程。但是，仅仅加密您的钱包是不够的，因为它并不能阻止恶意软件从您的电脑里面偷取RPDs。</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>您确定加密您的钱包吗？</translation>
+    </message>
+    <message>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SAPP&lt;/b&gt;!</source>
+        <translation>注意：请妥善保管好你的密码，因为在加密后，没有密码将无法打开钱包。这将会让您&lt;b&gt;损失钱包中所有的PIV&lt;/b&gt;！</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -443,6 +427,10 @@ for staking</source>
         <source>Wallet passphrase was successfully changed.</source>
         <translation>钱包密码已经更换为新密码</translation>
     </message>
+    <message>
+        <source>Warning: The Caps Lock key is on!</source>
+        <translation>注意：键盘目前为大写锁定状态。</translation>
+    </message>
 </context>
 <context>
     <name>BanTableModel</name>
@@ -456,6 +444,37 @@ for staking</source>
     </message>
 </context>
 <context>
+    <name>BlockExplorer</name>
+    <message>
+        <source>Blockchain Explorer</source>
+        <translation>区块链浏览器</translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation>返回</translation>
+    </message>
+    <message>
+        <source>Forward</source>
+        <translation>下一步</translation>
+    </message>
+    <message>
+        <source>Address / Block / Transaction</source>
+        <translation>地址/区块/交易</translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>搜索</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>文本标签</translation>
+    </message>
+    <message>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (sap.conf).</source>
+        <translation>并不显示所有的交易。要查看所有交易，您需要在配置文件(sap.conf)中设置txindex=1。</translation>
+    </message>
+</context>
+<context>
     <name>CSRow</name>
     <message>
         <source>Form</source>
@@ -466,8 +485,8 @@ for staking</source>
         <translation>存款</translation>
     </message>
     <message>
-        <source>0,00 PIV</source>
-        <translation>0,00 PIV</translation>
+        <source>0,00 SAPP</source>
+        <translation>0,00 SAPP</translation>
     </message>
     <message>
         <source>address</source>
@@ -488,6 +507,10 @@ for staking</source>
         <source>Total: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / Unknown: %5)</source>
         <translation>总数: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / 未知: %5)</translation>
     </message>
+    <message>
+        <source>Network Alert</source>
+        <translation>网络预警</translation>
+    </message>
 </context>
 <context>
     <name>CoinControlDialog</name>
@@ -506,10 +529,6 @@ for staking</source>
     <message>
         <source>Coin Selection</source>
         <translation>币选择</translation>
-    </message>
-    <message>
-        <source>Select PIV Outputs to Spend</source>
-        <translation>选择PIV支出花费</translation>
     </message>
     <message>
         <source>Dust:</source>
@@ -536,8 +555,16 @@ for staking</source>
         <translation>金额</translation>
     </message>
     <message>
-        <source>0.00 PIV</source>
-        <translation>0.00 PIV</translation>
+        <source>Transaction Details</source>
+        <translation>交易明细</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>按钮</translation>
+    </message>
+    <message>
+        <source>0.00 SAPP</source>
+        <translation>0.00 SAPP</translation>
     </message>
     <message>
         <source>0</source>
@@ -565,7 +592,7 @@ for staking</source>
     </message>
     <message>
         <source>OK</source>
-        <translation>好的</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Date</source>
@@ -604,40 +631,40 @@ for staking</source>
         <translation>解锁未花费</translation>
     </message>
     <message>
+        <source>Copy quantity</source>
+        <translation>复制数量</translation>
+    </message>
+    <message>
+        <source>Copy fee</source>
+        <translation>复制费用</translation>
+    </message>
+    <message>
+        <source>Copy after fee</source>
+        <translation>缴费后复制</translation>
+    </message>
+    <message>
+        <source>Copy bytes</source>
+        <translation>复制字节</translation>
+    </message>
+    <message>
+        <source>Copy priority</source>
+        <translation>复制优先级</translation>
+    </message>
+    <message>
+        <source>Copy dust</source>
+        <translation>复制dust</translation>
+    </message>
+    <message>
+        <source>Copy change</source>
+        <translation>复制更改</translation>
+    </message>
+    <message>
         <source>Unselect all</source>
         <translation>全都不选</translation>
     </message>
     <message>
         <source>Please switch to "List mode" to use this function.</source>
         <translation>请切换到“列表模式”使用此功能。</translation>
-    </message>
-    <message>
-        <source>Quantity Copied</source>
-        <translation>数量完成复制</translation>
-    </message>
-    <message>
-        <source>Amount Copied</source>
-        <translation>金额完成复制</translation>
-    </message>
-    <message>
-        <source>Fee Copied</source>
-        <translation>费用完成复制</translation>
-    </message>
-    <message>
-        <source>After Fee Copied</source>
-        <translation>完成费用复制之后</translation>
-    </message>
-    <message>
-        <source>Bytes Copied</source>
-        <translation>字节完成复制</translation>
-    </message>
-    <message>
-        <source>Dust Copied</source>
-        <translation>尘埃完成复制</translation>
-    </message>
-    <message>
-        <source>Change Copied</source>
-        <translation>修改完成复制</translation>
     </message>
     <message>
         <source>highest</source>
@@ -688,10 +715,6 @@ for staking</source>
         <translation>是</translation>
     </message>
     <message>
-        <source>delegated to %1 for cold staking</source>
-        <translation>委托到%1进行冷加注</translation>
-    </message>
-    <message>
         <source>no</source>
         <translation>否</translation>
     </message>
@@ -737,6 +760,89 @@ for staking</source>
     </message>
 </context>
 <context>
+    <name>CoinControlPivWidget</name>
+    <message>
+        <source>Dialog</source>
+        <translation>对话框</translation>
+    </message>
+    <message>
+        <source>Transaction Details</source>
+        <translation>交易明细</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>按钮</translation>
+    </message>
+    <message>
+        <source>SAPP:</source>
+        <translation>SAPP:</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>文本标签</translation>
+    </message>
+    <message>
+        <source>Quantity:</source>
+        <translation>数量：</translation>
+    </message>
+    <message>
+        <source>Fee:</source>
+        <translation>费用：</translation>
+    </message>
+    <message>
+        <source>Amount</source>
+        <translation>金额</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>标签</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>地址</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>类别</translation>
+    </message>
+    <message>
+        <source>Date</source>
+        <translation>日期</translation>
+    </message>
+    <message>
+        <source>Confirmations</source>
+        <translation>确认</translation>
+    </message>
+    <message>
+        <source>CheckBox</source>
+        <translation>查看列表</translation>
+    </message>
+    <message>
+        <source>Bytes:</source>
+        <translation>字节:</translation>
+    </message>
+    <message>
+        <source>Dust:</source>
+        <translation>Dust:</translation>
+    </message>
+    <message>
+        <source>Change:</source>
+        <translation>变化：</translation>
+    </message>
+    <message>
+        <source>After Fee: </source>
+        <translation>缴费以后：</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>删除</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
+</context>
+<context>
     <name>ColdStakingWidget</name>
     <message>
         <source>Form</source>
@@ -751,16 +857,24 @@ for staking</source>
         <translation>文本标签</translation>
     </message>
     <message>
-        <source>Owner address (optional, if empty a new address will be created)</source>
-        <translation>所有者地址(可选项，如果为空，将创建一个新地址)</translation>
+        <source>PushButton</source>
+        <translation>按钮</translation>
     </message>
     <message>
-        <source>Total Staking:</source>
-        <translation>加注总额：</translation>
+        <source>Owner Address (optional, if empty a new address will be created)</source>
+        <translation>所有者地址（如果为空，将创建一个新地址，可选）</translation>
     </message>
     <message>
         <source>List of delegated balance by address</source>
         <translation>按地址划分的委托余额清单</translation>
+    </message>
+    <message>
+        <source>Total</source>
+        <translation>总数</translation>
+    </message>
+    <message>
+        <source>Unconfirmed balance will not be shown</source>
+        <translation>未确认的余额将不会显示</translation>
     </message>
     <message>
         <source>No balance delegated</source>
@@ -779,12 +893,30 @@ for staking</source>
         <translation>宪法</translation>
     </message>
     <message>
+        <source>You can delegate your RPDs and let a hot node (24/7 online node)
+stake in your behalf, keeping the keys in a secure place offline.</source>
+        <translation>您可以委派您的PIV并让热节点（24/7在线节点）
+代表您进行放样并将密钥离线保存在安全的位置。</translation>
+    </message>
+    <message>
+        <source>Add owner address</source>
+        <translation>添加地址</translation>
+    </message>
+    <message>
+        <source>Delegate or Accept SAPP delegation</source>
+        <translation>授予权限或接受PIV权限</translation>
+    </message>
+    <message>
         <source>Delegate</source>
         <translation>分配</translation>
     </message>
     <message>
         <source>Clear All</source>
         <translation>清除全部</translation>
+    </message>
+    <message>
+        <source>Add the staking address</source>
+        <translation>添加放样地址</translation>
     </message>
     <message>
         <source>Delegated balance history</source>
@@ -803,34 +935,8 @@ for staking</source>
         <translation>加载委托时出错：%1</translation>
     </message>
     <message>
-        <source>You can delegate your PIVs, letting a hot node (24/7 online node)
-stake on your behalf, while you keep the keys securely offline.</source>
-        <translation>您可以委托您的PIV并让一个热节点(24/7在线节点)
-代表你加注，而且保持密钥离线安全。</translation>
-    </message>
-    <message>
-        <source>Enter owner address</source>
-        <translation>输入所有者地址</translation>
-    </message>
-    <message>
-        <source>Accept PIV delegation / Delegate PIV</source>
-        <translation>接受PIV委托／委托PIV </translation>
-    </message>
-    <message>
-        <source>Cold Staking address</source>
-        <translation>冷加注地址</translation>
-    </message>
-    <message>
-        <source>No receive addresses available, you can go to the receive screen and create some there!</source>
-        <translation>没有可用接收地址，您可以到接收屏幕那里创建!</translation>
-    </message>
-    <message>
         <source>No contacts available, you can go to the contacts screen and add some there!</source>
         <translation>没有可用的联系人，您可以到联系人界面那里添加!</translation>
-    </message>
-    <message>
-        <source>Cannot send delegation, wallet locked</source>
-        <translation>无法发送委托，钱包被锁了</translation>
     </message>
     <message>
         <source>Cold staking is networkely disabled</source>
@@ -841,8 +947,8 @@ stake on your behalf, while you keep the keys securely offline.</source>
         <translation>条目无效</translation>
     </message>
     <message>
-        <source>Invalid entry, minimum delegable amount is </source>
-        <translation>输入无效，最小委托数量为</translation>
+        <source>Invalid entry, minimum delegable amount is 10 SAPP</source>
+        <translation>输入无效，最小委托量为10 SAPP</translation>
     </message>
     <message>
         <source>Owner address invalid</source>
@@ -881,12 +987,8 @@ Do you wish to proceed?</source>
         <translation>委托硬币</translation>
     </message>
     <message>
-        <source>You don't have any PIV to select.</source>
+        <source>You don't have any SAPP to select.</source>
         <translation>您没有任何PIV可选择。</translation>
-    </message>
-    <message>
-        <source>Cannot perform operation, wallet locked</source>
-        <translation>无法进行操作，钱包被锁了</translation>
     </message>
     <message>
         <source>URI copied to clipboard</source>
@@ -1001,6 +1103,10 @@ address</source>
         <translation>无交易</translation>
     </message>
     <message>
+        <source>PushButton</source>
+        <translation>按钮</translation>
+    </message>
+    <message>
         <source>Staking Rewards</source>
         <translation>加注奖励</translation>
     </message>
@@ -1013,12 +1119,12 @@ address</source>
         <translation>加注数据</translation>
     </message>
     <message>
-        <source>PIV</source>
-        <translation>PIV</translation>
+        <source>SAPP</source>
+        <translation>SAPP</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>zRPD</source>
+        <translation>zRPD</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -1049,8 +1155,52 @@ address</source>
         <translation>您可以查看您的帐户的历史</translation>
     </message>
     <message>
-        <source>Amount of PIV and zPIV staked.</source>
-        <translation>已加注的PIV 和 zPIV 金额</translation>
+        <source>Amount of SAPP and zRPD staked.</source>
+        <translation>已加注的PIV 和 zRPD 金额</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>所有</translation>
+    </message>
+    <message>
+        <source>Received</source>
+        <translation>已接收</translation>
+    </message>
+    <message>
+        <source>Sent</source>
+        <translation>已发送</translation>
+    </message>
+    <message>
+        <source>Mined</source>
+        <translation>已挖矿</translation>
+    </message>
+    <message>
+        <source>Minted</source>
+        <translation>已铸币</translation>
+    </message>
+    <message>
+        <source>MN reward</source>
+        <translation>MN奖励</translation>
+    </message>
+    <message>
+        <source>To yourself</source>
+        <translation>给您自己</translation>
+    </message>
+    <message>
+        <source>Cold stakes</source>
+        <translation>感冒</translation>
+    </message>
+    <message>
+        <source>Hot stakes</source>
+        <translation>热提</translation>
+    </message>
+    <message>
+        <source>Delegated</source>
+        <translation>委托</translation>
+    </message>
+    <message>
+        <source>Delegations</source>
+        <translation>宪法</translation>
     </message>
     <message>
         <source>Please wait until the wallet is fully synced to see your correct balance</source>
@@ -1061,8 +1211,8 @@ address</source>
         <translation>暂无交易</translation>
     </message>
     <message>
-        <source>How to get PIV or zPIV</source>
-        <translation>如何获取PIV 或 zPIV</translation>
+        <source>How to get SAPP or zRPD</source>
+        <translation>如何获取PIV 或 zRPD</translation>
     </message>
     <message>
         <source>You can verify the staking activity in the status bar at the top right of the wallet.
@@ -1119,6 +1269,69 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
 </context>
 <context>
+    <name>DenomGenerationDialog</name>
+    <message>
+        <source>Form</source>
+        <translation>来自</translation>
+    </message>
+    <message>
+        <source>Transaction Details</source>
+        <translation>交易明细</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>按钮</translation>
+    </message>
+    <message>
+        <source>This will unlock your wallet fully, so that anyone with access to it can spend until the wallet is closed or locked again.</source>
+        <translation>这会完全解锁你的钱包，直到钱包再次关闭或锁定，不然这样任何人都可以使用它，</translation>
+    </message>
+    <message>
+        <source>5000</source>
+        <translation>5000</translation>
+    </message>
+    <message>
+        <source>100</source>
+        <translation>100</translation>
+    </message>
+    <message>
+        <source>10</source>
+        <translation>10</translation>
+    </message>
+    <message>
+        <source>1000</source>
+        <translation>1000</translation>
+    </message>
+    <message>
+        <source>50</source>
+        <translation>50</translation>
+    </message>
+    <message>
+        <source>500</source>
+        <translation>500</translation>
+    </message>
+    <message>
+        <source>5</source>
+        <translation>5</translation>
+    </message>
+    <message>
+        <source>1</source>
+        <translation>1</translation>
+    </message>
+    <message>
+        <source>Select All</source>
+        <translation>选择所有</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>删除</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>保存</translation>
+    </message>
+</context>
+<context>
     <name>EditAddressDialog</name>
     <message>
         <source>Edit Address</source>
@@ -1157,7 +1370,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>编辑发送地址</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid PIVX address.</source>
+        <source>The entered address "%1" is not a valid SAPP address.</source>
         <translation>所输入的地址“%1”不是有效的PIVX地址。</translation>
     </message>
     <message>
@@ -1204,21 +1417,64 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
 </context>
 <context>
+    <name>GovernancePage</name>
+    <message>
+        <source>Form</source>
+        <translation>来自</translation>
+    </message>
+    <message>
+        <source>GOVERNANCE</source>
+        <translation>治理</translation>
+    </message>
+    <message>
+        <source>Update Proposals</source>
+        <translation>更新提议</translation>
+    </message>
+    <message>
+        <source>Next super block:</source>
+        <translation>下一个超级区块：</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <source>Blocks to next super block:</source>
+        <translation>区块到下一个超级区块:</translation>
+    </message>
+    <message>
+        <source>Days to budget payout (estimate):</source>
+        <translation>预算需要天数(预估):</translation>
+    </message>
+    <message>
+        <source>Allotted budget:</source>
+        <translation>分配预算:</translation>
+    </message>
+    <message>
+        <source>Budget left:</source>
+        <translation>剩余预算：</translation>
+    </message>
+    <message>
+        <source>Masternodes count:</source>
+        <translation>主节点计数：</translation>
+    </message>
+</context>
+<context>
     <name>HelpMessageDialog</name>
     <message>
         <source>version</source>
         <translation>版本</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Sap</source>
+        <translation>Sap</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-位)</translation>
     </message>
     <message>
-        <source>About PIVX Core</source>
+        <source>About Sap</source>
         <translation>关于PIVX Core</translation>
     </message>
     <message>
@@ -1246,10 +1502,6 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>启动时显示启动画面(默认:%u)</translation>
     </message>
     <message>
-        <source>Hide QT staking charts on startup (default: %u)</source>
-        <translation>在启动时隐藏QT标记图表(默认值:%u)</translation>
-    </message>
-    <message>
         <source>Set language, for example "de_DE" (default: system locale)</source>
         <translation>设置语言，例如“de_DE”(默认:系统语言环境)</translation>
     </message>
@@ -1263,7 +1515,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <source>OK</source>
-        <translation>好的</translation>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
@@ -1273,16 +1525,16 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>欢迎</translation>
     </message>
     <message>
-        <source>Welcome to PIVX Core.</source>
-        <translation>欢迎使用 PIVX Core</translation>
+        <source>Welcome to Sap.</source>
+        <translation>欢迎使用 Sap</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where PIVX Core will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where Sap will store its data.</source>
         <translation>由于这是该程序第一次启动，您可以选择存储PIVX Core 数据的位置。</translation>
     </message>
     <message>
-        <source>PIVX Core will download and store a copy of the PIVX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>PIVX Core将下载并存储PIVX区块链副本。 至少 %1 GB的数据将存储在此目录中，并且会随着时间的推移而增长。 钱包也将存储在此目录中。</translation>
+        <source>Sap will download and store a copy of the SAPP block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>SAPP Core将下载并存储PIVX区块链副本。 至少 %1 GB的数据将存储在此目录中，并且会随着时间的推移而增长。 钱包也将存储在此目录中。</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1298,11 +1550,11 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <source>OK</source>
-        <translation>好的</translation>
+        <translation>OK</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Sap</source>
+        <translation>Sap</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1365,6 +1617,18 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <source>Form</source>
         <translation>来自</translation>
     </message>
+    <message>
+        <source>user_masternode</source>
+        <translation>用户_主节点</translation>
+    </message>
+    <message>
+        <source>Address: 88.26.164.88:51474</source>
+        <translation>地址: 88.26.164.88:51474</translation>
+    </message>
+    <message>
+        <source>Jan. 19, 2019</source>
+        <translation>2019年1月19日</translation>
+    </message>
 </context>
 <context>
     <name>MasterNodeWizardDialog</name>
@@ -1397,32 +1661,28 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>地址</translation>
     </message>
     <message>
-        <source>Create New Masternode Controller</source>
+        <source>Create New Master Node Controller</source>
         <translation>创建新的主节点控制器</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a PIVX Masternode you must dedicate 10,000 PIV (the unit of PIVX) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;要去创建一个PIVX主节点，你必须奉献10,000 PIV（PIVX的单位）到网络（但是这些币还是属于你的，一直为你所有）。&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;你可以在任何时候关闭该节点并解锁币。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-        <source>Set Masternode Name</source>
-        <translation>设置主节点名称</translation>
-    </message>
-    <message>
-        <source>Set Masternode IP and Port</source>
-        <translation>设置主节点IP和端口</translation>
-    </message>
-    <message>
-        <source>Enter port</source>
-        <translation>输入端口</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a SAPP Masternode you must dedicate 10.000 SAPP (the unit of SAPP) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;创建一个PIVX 主节点，你必须奉献给网络10.000 SAPP (PIVX的单位)(但是，这些币仍属于你，永远都是属于你的财产)。&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;你可以在任何时候关闭该节点并解锁币。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Make sure you have this amount of coins.</source>
         <translation>确保你有这么多币</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 PIV will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <source>Set Master Node’s Name</source>
+        <translation>设置主节点名称</translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 SAPP will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;将进行10,000 PIV的交易&lt;/p&gt;&lt;p&gt;到您的钱包空地址&lt;/p&gt;&lt;p&gt;地址被标记在主节点的名称之下&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <source>Set Master Node’s IP and port</source>
+        <translation>设置主节点IP和端口</translation>
     </message>
     <message>
         <source>Address of the node that must always be online running the actual master node.</source>
@@ -1433,12 +1693,16 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>输入IP 地址</translation>
     </message>
     <message>
+        <source>Enter Port</source>
+        <translation>输入端口</translation>
+    </message>
+    <message>
         <source>CANCEL</source>
         <translation>删除</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>好的</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <source>e.g user_masternode</source>
@@ -1461,34 +1725,12 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>IP 或端口不能为空</translation>
     </message>
     <message>
-        <source>Invalid IP address</source>
-        <translation> IP地址无效</translation>
+        <source>Invalid port number</source>
+        <translation>端口数字无效</translation>
     </message>
     <message>
-        <source>Prepare master node failed.
-
-%1
-</source>
-        <translation>准备主节点失败。
-
-%1
-</translation>
-    </message>
-    <message>
-        <source>Invalid collateral output index</source>
-        <translation>输出指标无效</translation>
-    </message>
-    <message>
-        <source>Master node created! Wait %1 confirmations before starting it.</source>
-        <translation>主节点创建完成!在启动它之前，请等待%1确认。</translation>
-    </message>
-    <message>
-        <source>Cannot send collateral transaction.
-
-%1</source>
-        <translation>不能发送抵押品交易。
-
-%1</translation>
+        <source>Prepare master node failed..</source>
+        <translation>准备主节点失败…</translation>
     </message>
     <message>
         <source>Invalid masternode.conf file</source>
@@ -1499,8 +1741,56 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>解析主节点配置文件出错</translation>
     </message>
     <message>
+        <source>Invalid collaterall output index</source>
+        <translation>担保品输出指标出错</translation>
+    </message>
+    <message>
+        <source>Master node created!</source>
+        <translation>主节点已创建</translation>
+    </message>
+    <message>
         <source>masternode.conf file doesn't exists</source>
         <translation>主节点配置文件不存在</translation>
+    </message>
+    <message>
+        <source>The recipient address is not valid, please recheck.</source>
+        <translation>收件人地址无效，请重新检查。</translation>
+    </message>
+    <message>
+        <source>The amount to pay must be larger than 0.</source>
+        <translation>支付金额必须大于0</translation>
+    </message>
+    <message>
+        <source>The amount exceeds your balance.</source>
+        <translation>金额超过您的余额。</translation>
+    </message>
+    <message>
+        <source>The total exceeds your balance when the %1 transaction fee is included.</source>
+        <translation>当包含%1交易费用时，总额超过您的余额。</translation>
+    </message>
+    <message>
+        <source>Duplicate address found, can only send to each address once per send operation.</source>
+        <translation>发现重复地址，每次发送操作只能发送到每个地址一次</translation>
+    </message>
+    <message>
+        <source>Transaction creation failed!</source>
+        <translation>交易创建失败</translation>
+    </message>
+    <message>
+        <source>The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation>交易被拒绝！ 可能在您的钱包中这些硬币已经花了，比如，您使用了wallet.dat的副本，硬币在副本中被使用，但并没有被标记就可能发生这种情况。</translation>
+    </message>
+    <message>
+        <source>Error: The wallet was unlocked only to anonymize coins.</source>
+        <translation>错误:钱包只对匿名硬币解锁。</translation>
+    </message>
+    <message>
+        <source>A fee %1 times higher than %2 per kB is considered an insanely high fee.</source>
+        <translation>每kB比%2高%1倍的费用被认为是高得离谱的费用</translation>
+    </message>
+    <message>
+        <source>Error: The wallet was unlocked only to anonymize coins. Unlock canceled.</source>
+        <translation>错误:钱包只对匿名硬币解锁。已取消解锁</translation>
     </message>
 </context>
 <context>
@@ -1514,16 +1804,12 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>文本标签</translation>
     </message>
     <message>
-        <source>N/A</source>
-        <translation>N/A</translation>
+        <source>No active Master Node yet</source>
+        <translation>暂无活跃主节点</translation>
     </message>
     <message>
-        <source>Start All</source>
-        <translation>启动所有项</translation>
-    </message>
-    <message>
-        <source>Start Inactive/s</source>
-        <translation>停止活跃／秒</translation>
+        <source>PushButton</source>
+        <translation>按钮</translation>
     </message>
     <message>
         <source>Masternodes</source>
@@ -1556,10 +1842,6 @@ and vote on the treasury system receiving a periodic reward.</source>
         <translation>消息</translation>
     </message>
     <message>
-        <source>Please wait until the node is fully synced</source>
-        <translation>请等到节点完全同步</translation>
-    </message>
-    <message>
         <source>Start Masternode</source>
         <translation>开始主节点</translation>
     </message>
@@ -1570,46 +1852,10 @@ and vote on the treasury system receiving a periodic reward.</source>
 </translation>
     </message>
     <message>
-        <source>Cannot edit masternode, wallet locked</source>
-        <translation>无法编辑主节点，钱包被锁了</translation>
-    </message>
-    <message>
-        <source>Cannot start masternode, the collateral transaction has not been confirmed by the network yet.
-Please wait few more minutes (masternode collaterals require %1 confirmations).</source>
-        <translation>无法启动主节点，抵押品交易还没有被网络确认。
-请再稍等几分钟(主节点担保品需要%1确认)。</translation>
-    </message>
-    <message>
-        <source>Background task is being executed, please wait</source>
-        <translation>后台任务正在执行，请稍候</translation>
-    </message>
-    <message>
-        <source>Start ALL masternodes failed</source>
-        <translation>启动所有主节点失败</translation>
-    </message>
-    <message>
-        <source>Wallet unlock cancelled</source>
-        <translation>解锁钱包已取消</translation>
-    </message>
-    <message>
-        <source>Cannot perform Masternodes start</source>
-        <translation>无法启动主节点</translation>
-    </message>
-    <message>
-        <source>%1 Masternodes failed to start, %2 started</source>
-        <translation>%1主节点启动失败，%2已经启动</translation>
-    </message>
-    <message>
-        <source>All Masternodes started!</source>
-        <translation>所有主节点已经启动！</translation>
-    </message>
-    <message>
-        <source>Cannot show Masternode information, wallet locked</source>
-        <translation>无法显示主节点信息，钱包被锁了</translation>
-    </message>
-    <message>
-        <source>Masternode data copied to the clipboard.</source>
-        <translation>复制到剪贴板的主节点数据。</translation>
+        <source>Cannot start masternode, the collateral transaction has not been accepted by the network.
+Please wait few more minutes.</source>
+        <translation>无法启动主节点，抵押品交易未被网络接受。
+请再等几分钟。</translation>
     </message>
     <message>
         <source>Remote Masternode Data</source>
@@ -1620,7 +1866,7 @@ Please wait few more minutes (masternode collaterals require %1 confirmations).<
 on a remote server to your clipboard.
 
 
-You will only have to paste the data in the pivx.conf file
+You will only have to paste the data in the sap.conf file
 of your remote server and start it, then start the Masternode using
 this controller wallet (select the Masternode in the list and press "start").
 </source>
@@ -1632,6 +1878,10 @@ this controller wallet (select the Masternode in the list and press "start").
 ，然后使用主节点启动它
 这个控制器钱包(在列表中选择主节点并按“开始”)。
 </translation>
+    </message>
+    <message>
+        <source>Masternode exported!, check your clipboard</source>
+        <translation>主节点输出!，检查你的剪贴板</translation>
     </message>
     <message>
         <source>Delete Masternode</source>
@@ -1660,12 +1910,8 @@ Are you sure?</source>
         <translation>主节点配置文件不存在</translation>
     </message>
     <message>
-        <source>Cannot create Masternode controller, wallet locked</source>
-        <translation>无法创建主节点控制器，钱包被锁了</translation>
-    </message>
-    <message>
-        <source>Not enough balance to create a masternode, 10,000 PIV required.</source>
-        <translation>没有足够的余额创建主节点，需要10,000 PIV。</translation>
+        <source>Not enough balance to create a masternode, 10,000 SAPP required.</source>
+        <translation>没有足够的余额创建主节点，需要10,000 SAPP。</translation>
     </message>
     <message>
         <source>Error creating masternode</source>
@@ -1679,8 +1925,8 @@ Are you sure?</source>
         <translation>来自</translation>
     </message>
     <message>
-        <source>Masternode Information</source>
-        <translation>主节点信息</translation>
+        <source>Master Node Information</source>
+        <translation>主节点消息</translation>
     </message>
     <message>
         <source>Public Key:</source>
@@ -1719,8 +1965,8 @@ Are you sure?</source>
         <translation>略过</translation>
     </message>
     <message>
-        <source>Export data to run the Masternode on a remote server</source>
-        <translation>导出数据去远程服务器上运行主节点</translation>
+        <source>Export data to run the Master Node on a remote server</source>
+        <translation>导出数据以在远程服务器上运行主节点</translation>
     </message>
 </context>
 <context>
@@ -1777,7 +2023,7 @@ Are you sure?</source>
     </message>
     <message>
         <source>OK</source>
-        <translation>好的</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Select payment request file</source>
@@ -1846,7 +2092,7 @@ Are you sure?</source>
         <translation>如果您要禁用未经确认发送，在至少有一个确认之前&lt;br/&gt;不能更改。&lt;br/&gt;这也将影响您的余额计算。</translation>
     </message>
     <message>
-        <source>Automatically open the PIVX client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the SAPP client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>自动打开路由器上的PIVX钱包使用的端口。 这只有当您的路由器支持UPnP并且该享生效时才有用。</translation>
     </message>
     <message>
@@ -1866,11 +2112,11 @@ Are you sure?</source>
         <translation>专家</translation>
     </message>
     <message>
-        <source>Automatically start PIVX after logging in to the system.</source>
+        <source>Automatically start SAPP after logging in to the system.</source>
         <translation>登录系统后自动启动PIVX。</translation>
     </message>
     <message>
-        <source>&amp;Start PIVX on system login</source>
+        <source>&amp;Start SAPP on system login</source>
         <translation>&amp;开机启动PIVX</translation>
     </message>
     <message>
@@ -1898,7 +2144,7 @@ Are you sure?</source>
         <translation>&amp;网络</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting PIVX.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting SAPP.</source>
         <translation>可以在这里设置用户界面语言。此设置将在重新启动PIVX后生效。</translation>
     </message>
     <message>
@@ -1912,15 +2158,15 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>端口使用&amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of PIV units to zPIV</source>
+        <source>Enable automatic minting of SAPP units to zRPD</source>
         <translation>启动自动铸造PIV到zPIV</translation>
     </message>
     <message>
-        <source>Enable zPIV Automint</source>
+        <source>Enable zRPD Automint</source>
         <translation>启动自动铸造zPIV</translation>
     </message>
     <message>
-        <source>Enable automatic zPIV minting from specific addresses</source>
+        <source>Enable automatic zRPD minting from specific addresses</source>
         <translation>启用从特定地址自动生成zPIV</translation>
     </message>
     <message>
@@ -1928,19 +2174,19 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>启动自动铸造地址</translation>
     </message>
     <message>
-        <source>Percentage of incoming PIV which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
+        <source>Percentage of incoming SAPP which get automatically converted to zRPD via Zerocoin Protocol (min: 10%)</source>
         <translation>通过零币协议自动转换为zPIV的传入PIV的百分比(最小:10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPIV</source>
+        <source>Percentage of autominted zRPD</source>
         <translation>自动铸造的zPIV百分比</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough PIV for this denomination is available</source>
+        <source>Wait with automatic conversion to Zerocoin until enough SAPP for this denomination is available</source>
         <translation>等待自动转换为零币，直到足够的PIV为这种面额可用</translation>
     </message>
     <message>
-        <source>Preferred Automint zPIV Denomination</source>
+        <source>Preferred Automint zRPD Denomination</source>
         <translation>首选自动铸造zPIV面额</translation>
     </message>
     <message>
@@ -1948,7 +2194,7 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>股权分割阈值:</translation>
     </message>
     <message>
-        <source>Connect to the PIVX network through a SOCKS5 proxy.</source>
+        <source>Connect to the SAPP network through a SOCKS5 proxy.</source>
         <translation>通过SOCKS5代理连接到PIVX网络。</translation>
     </message>
     <message>
@@ -2095,8 +2341,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
 <context>
     <name>PIVXGUI</name>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Sap</source>
+        <translation>Sap</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -2123,8 +2369,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>关闭应用</translation>
     </message>
     <message>
-        <source>PIVX Core client</source>
-        <translation>PIVX Core 客户端</translation>
+        <source>Sap client</source>
+        <translation>Sap 客户端</translation>
     </message>
     <message>
         <source>Error</source>
@@ -2167,8 +2413,15 @@ Address: %4
 </translation>
     </message>
     <message>
-        <source>A fatal error occurred. PIVX can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. SAPP can no longer continue safely and will quit.</source>
         <translation>发生了一个致命的错误。PIVX不能继续安全，将退出。</translation>
+    </message>
+</context>
+<context>
+    <name>PWidget</name>
+    <message>
+        <source>Wallet locked, you need to unlock it to perform this action</source>
+        <translation>钱包已锁定，您需要解锁它来执行此操作</translation>
     </message>
 </context>
 <context>
@@ -2194,11 +2447,11 @@ Address: %4
         <translation>无效支付地址%1</translation>
     </message>
     <message>
-        <source>Cannot start pivx: click-to-pay handler</source>
+        <source>Cannot start sap: click-to-pay handler</source>
         <translation>无法启动pivx:点击支付处理程序</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid PIVX address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid SAPP address or malformed URI parameters.</source>
         <translation>URI不能被解析!这可能是由无效的PIVX地址或格式错误的URI参数造成的。</translation>
     </message>
     <message>
@@ -2296,8 +2549,8 @@ Address: %4
         <translation>按钮</translation>
     </message>
     <message>
-        <source>N/A</source>
-        <translation>N/A</translation>
+        <source>No active Master Node yet</source>
+        <translation>暂无活跃主节点</translation>
     </message>
     <message>
         <source>Privacy</source>
@@ -2312,37 +2565,37 @@ Address: %4
         <translation>铸造</translation>
     </message>
     <message>
-        <source>Minting zPIV anonymizes your PIV by removing any
+        <source>Minting zRPD anonymizes your SAPP by removing any
 transaction history, making transactions untraceable </source>
         <translation>铸造zPIV会通过删除任何
 交易历史匿名化您的PIV，使交易无法被跟踪</translation>
     </message>
     <message>
-        <source>Mint new zPIV or convert back to PIV</source>
+        <source>Mint new zRPD or convert back to SAPP</source>
         <translation>铸造新的zPIV或转换回PIV</translation>
     </message>
     <message>
-        <source>Last zPIV Movements</source>
-        <translation>最后zPIV轨迹</translation>
+        <source>Last Zerocoin Movements</source>
+        <translation>最后零币移动</translation>
     </message>
     <message>
         <source>No transactions yet</source>
         <translation>暂无交易</translation>
     </message>
     <message>
-        <source>Mint zPIV</source>
+        <source>Mint zRPD</source>
         <translation>铸造zPIV</translation>
     </message>
     <message>
-        <source>Enter amount of PIV to mint into zPIV</source>
+        <source>Enter amount of SAPP to mint into zRPD</source>
         <translation>输入一定量的PIV铸造成zPIV</translation>
     </message>
     <message>
-        <source>Convert back to PIV</source>
+        <source>Convert back to SAPP</source>
         <translation>转换回PIV</translation>
     </message>
     <message>
-        <source>Enter amount of zPIV to convert back into PIV</source>
+        <source>Enter amount of zRPD to convert back into SAPP</source>
         <translation>输入一定量的zPIV转换回PIV</translation>
     </message>
     <message>
@@ -2350,12 +2603,12 @@ transaction history, making transactions untraceable </source>
         <translation>零币</translation>
     </message>
     <message>
-        <source>zPIV is currently undergoing maintenance</source>
+        <source>zRPD is currently undergoing maintenance</source>
         <translation>zPIV目前正在维护中</translation>
     </message>
     <message>
-        <source>You need to unlock the wallet to be able to %1 zPIV</source>
-        <translation>你需要解锁钱包才能%1 zPIV</translation>
+        <source>You need to unlock the wallet to be able to %1 zRPD</source>
+        <translation>你需要解锁钱包才能%1 zRPD</translation>
     </message>
     <message>
         <source>convert</source>
@@ -2370,15 +2623,15 @@ transaction history, making transactions untraceable </source>
         <translation>无效值</translation>
     </message>
     <message>
-        <source>zPIV minted successfully</source>
+        <source>zRPD minted successfully</source>
         <translation>zPIV铸造成功</translation>
     </message>
     <message>
-        <source>zPIV converted back to PIV</source>
-        <translation>zPIV 转换回PIV</translation>
+        <source>zRPD converted back to SAPP</source>
+        <translation>zRPD 转换回PIV</translation>
     </message>
     <message>
-        <source>You don't have any PIV to select.</source>
+        <source>You don't have any SAPP to select.</source>
         <translation>您没有任何PIV可选择。</translation>
     </message>
     <message>
@@ -2390,8 +2643,8 @@ transaction history, making transactions untraceable </source>
         <translation>你的零币铸造将从零区块链被扫描</translation>
     </message>
     <message>
-        <source>Reset Spent zPIV</source>
-        <translation>重置花费zPIV</translation>
+        <source>Reset Spent Zerocoins</source>
+        <translation>重置花费零币</translation>
     </message>
     <message>
         <source>Your zerocoin spends are going to be scanned from the blockchain from scratch</source>
@@ -2403,14 +2656,83 @@ transaction history, making transactions untraceable </source>
     </message>
 </context>
 <context>
+    <name>ProposalFrame</name>
+    <message>
+        <source>Open proposal page in browser</source>
+        <translation>在浏览器中打开建议页面</translation>
+    </message>
+    <message>
+        <source> remaining payment(s).</source>
+        <translation>剩余的付款</translation>
+    </message>
+    <message>
+        <source>Yes:</source>
+        <translation>是：</translation>
+    </message>
+    <message>
+        <source>Abstain:</source>
+        <translation>弃权:</translation>
+    </message>
+    <message>
+        <source>No:</source>
+        <translation>否：</translation>
+    </message>
+    <message>
+        <source>A proposal URL can be used for phishing, scams and computer viruses. Open this link only if you trust the following URL.
+</source>
+        <translation>提案URL可用于网络钓鱼、诈骗和计算机病毒。如果你信任以下URL，才打开这个链接
+</translation>
+    </message>
+    <message>
+        <source>Open link</source>
+        <translation>打开链接</translation>
+    </message>
+    <message>
+        <source>Copy link</source>
+        <translation>复制链接</translation>
+    </message>
+    <message>
+        <source>Wallet Locked</source>
+        <translation>钱包已锁住</translation>
+    </message>
+    <message>
+        <source>You must unlock your wallet to vote.</source>
+        <translation>你必须解锁钱包才能投票。</translation>
+    </message>
+    <message>
+        <source>Do you want to vote %1 on</source>
+        <translation>您是否要对%1进行投票</translation>
+    </message>
+    <message>
+        <source>using all your masternodes?</source>
+        <translation>用你所有主节点？</translation>
+    </message>
+    <message>
+        <source>Proposal Hash:</source>
+        <translation>提议哈希：</translation>
+    </message>
+    <message>
+        <source>Proposal URL:</source>
+        <translation>提议URL:</translation>
+    </message>
+    <message>
+        <source>Confirm Vote</source>
+        <translation>确认投票</translation>
+    </message>
+    <message>
+        <source>Vote Results</source>
+        <translation>投票结果</translation>
+    </message>
+</context>
+<context>
     <name>QObject</name>
     <message>
         <source>Amount</source>
         <translation>金额</translation>
     </message>
     <message>
-        <source>Enter PIVX address (e.g. %1)</source>
-        <translation>输入PIVX a地址(e.g. %1)</translation>
+        <source>Enter a SAPP address (e.g. %1)</source>
+        <translation>输入一个 SAPP 地址 (e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2437,6 +2759,10 @@ transaction history, making transactions untraceable </source>
         <translation>爆发</translation>
     </message>
     <message>
+        <source>ZK_BLOOM</source>
+        <translation>ZK_爆发</translation>
+    </message>
+    <message>
         <source>UNKNOWN</source>
         <translation>未知</translation>
     </message>
@@ -2453,8 +2779,8 @@ transaction history, making transactions untraceable </source>
         <translation>%1 毫秒</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Sap</source>
+        <translation>Sap</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" does not exist.</source>
@@ -2473,120 +2799,8 @@ transaction history, making transactions untraceable </source>
         <translation>读取主节点配置文件出错:%1</translation>
     </message>
     <message>
-        <source>PIVX Core didn't yet exit safely...</source>
+        <source>Sap didn't yet exit safely...</source>
         <translation>PIVX核心尚未安全退出……</translation>
-    </message>
-    <message>
-        <source>Contact</source>
-        <translation>联系人</translation>
-    </message>
-    <message>
-        <source>Receiving</source>
-        <translation>正在接收</translation>
-    </message>
-    <message>
-        <source>Delegator</source>
-        <translation>委托人</translation>
-    </message>
-    <message>
-        <source>Cold Staking</source>
-        <translation>冷堆</translation>
-    </message>
-    <message>
-        <source>Cold Staking Contact</source>
-        <translation>冷加注联系人</translation>
-    </message>
-    <message>
-        <source>Hidden</source>
-        <translation>隐藏</translation>
-    </message>
-    <message>
-        <source>Unknown</source>
-        <translation>未知</translation>
-    </message>
-    <message>
-        <source>All</source>
-        <translation>所有</translation>
-    </message>
-    <message>
-        <source>Contacts</source>
-        <translation>联系人</translation>
-    </message>
-    <message>
-        <source>Delegators</source>
-        <translation>委托人</translation>
-    </message>
-    <message>
-        <source>Staking Contacts</source>
-        <translation>加注联系人</translation>
-    </message>
-    <message>
-        <source>Date desc</source>
-        <translation>日期desc</translation>
-    </message>
-    <message>
-        <source>Date asc</source>
-        <translation>日期asc</translation>
-    </message>
-    <message>
-        <source>Amount desc</source>
-        <translation>金额desc</translation>
-    </message>
-    <message>
-        <source>Amount asc</source>
-        <translation>金额asc</translation>
-    </message>
-    <message>
-        <source>Received</source>
-        <translation>已接收</translation>
-    </message>
-    <message>
-        <source>Sent</source>
-        <translation>已发送</translation>
-    </message>
-    <message>
-        <source>Mined</source>
-        <translation>已挖矿</translation>
-    </message>
-    <message>
-        <source>Minted</source>
-        <translation>已铸币</translation>
-    </message>
-    <message>
-        <source>MN reward</source>
-        <translation>MN奖励</translation>
-    </message>
-    <message>
-        <source>To yourself</source>
-        <translation>给您自己</translation>
-    </message>
-    <message>
-        <source>Cold stakes</source>
-        <translation>感冒</translation>
-    </message>
-    <message>
-        <source>Hot stakes</source>
-        <translation>热提</translation>
-    </message>
-    <message>
-        <source>Delegated</source>
-        <translation>委托</translation>
-    </message>
-    <message>
-        <source>Delegations</source>
-        <translation>宪法</translation>
-    </message>
-    <message>
-        <source>by Label</source>
-        <translation>标签</translation>
-    </message>
-    <message>
-        <source>by Address</source>
-        <translation>地址</translation>
-    </message>
-    <message>
-        <source>by Date</source>
-        <translation>日期</translation>
     </message>
 </context>
 <context>
@@ -2660,7 +2874,7 @@ transaction history, making transactions untraceable </source>
         <translation>区块链</translation>
     </message>
     <message>
-        <source>Open the PIVX debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the SAPP debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>从当前数据目录打开PIVX调试日志文件。对于大型日志文件，这可能需要几秒钟。</translation>
     </message>
     <message>
@@ -2804,7 +3018,7 @@ transaction history, making transactions untraceable </source>
         <translation>自定义备份路径:</translation>
     </message>
     <message>
-        <source>Custom zPIV Backup Path:</source>
+        <source>Custom zRPD Backup Path:</source>
         <translation>自定义zPIV备份路径:</translation>
     </message>
     <message>
@@ -2884,7 +3098,7 @@ transaction history, making transactions untraceable </source>
         <translation>出：</translation>
     </message>
     <message>
-        <source>Welcome to the PIVX RPC console.</source>
+        <source>Welcome to the SAPP RPC console.</source>
         <translation>欢迎访问PIVX RPC控制台</translation>
     </message>
     <message>
@@ -3007,6 +3221,10 @@ transaction history, making transactions untraceable </source>
         <translation>交易明细</translation>
     </message>
     <message>
+        <source>PushButton</source>
+        <translation>按钮</translation>
+    </message>
+    <message>
         <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
         <translation>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </translation>
     </message>
@@ -3016,7 +3234,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <source>OK</source>
-        <translation>好的</translation>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
@@ -3050,7 +3268,7 @@ transaction history, making transactions untraceable </source>
         <translation>接收</translation>
     </message>
     <message>
-        <source>Scan the QR code or copy the address to receive PIV.</source>
+        <source>Scan the QR code or copy the address to receive SAPP.</source>
         <translation>扫描二维码或复制地址接收PIV</translation>
     </message>
     <message>
@@ -3066,8 +3284,8 @@ transaction history, making transactions untraceable </source>
         <translation>生成地址出错</translation>
     </message>
     <message>
-        <source>Edit Label</source>
-        <translation>编辑标签</translation>
+        <source>Change Label</source>
+        <translation>改变标签</translation>
     </message>
     <message>
         <source>Edit Address Label</source>
@@ -3082,20 +3300,12 @@ transaction history, making transactions untraceable </source>
         <translation>保存地址标签出错</translation>
     </message>
     <message>
-        <source>Cannot create new address, wallet locked</source>
-        <translation>无法创建新地址，钱包被锁了</translation>
-    </message>
-    <message>
         <source>New address created</source>
         <translation>已创建新地址</translation>
     </message>
     <message>
         <source>Address copied</source>
         <translation>地址已复制</translation>
-    </message>
-    <message>
-        <source>Cannot perform operation, wallet locked</source>
-        <translation>无法进行操作，钱包被锁了</translation>
     </message>
     <message>
         <source>URI copied to clipboard</source>
@@ -3160,8 +3370,8 @@ transaction history, making transactions untraceable </source>
         <translation>金额</translation>
     </message>
     <message>
-        <source>PIV</source>
-        <translation>PIV</translation>
+        <source>SAPP</source>
+        <translation>SAPP</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -3188,28 +3398,24 @@ transaction history, making transactions untraceable </source>
         <translation>请求</translation>
     </message>
     <message>
+        <source>Instead of only sharing a SAPP address, you can create a Payment Request message which bundles up more information than is contained in just a SAPP address.</source>
+        <translation>与共享PIVX地址不同，您可以创建一个支付请求消息，该消息包含的信息比仅包含PIVX地址所包含的信息更多。</translation>
+    </message>
+    <message>
         <source>Label</source>
         <translation>标签</translation>
+    </message>
+    <message>
+        <source>Enter a label to be saved within the address</source>
+        <translation>输入要保存在地址中的标签</translation>
     </message>
     <message>
         <source>Description (optional)</source>
         <translation>说明书(可选)</translation>
     </message>
     <message>
-        <source>New Payment Request</source>
-        <translation>新的支付请求</translation>
-    </message>
-    <message>
-        <source>Instead of sharing only a PIVX address, you can create a payment request, bundling up more information.</source>
-        <translation>与只共享PIVX地址不同，您可以创建一个支付请求，绑定更多信息。</translation>
-    </message>
-    <message>
-        <source>Enter a label for the address</source>
-        <translation>为地址输入一个便签</translation>
-    </message>
-    <message>
-        <source>Enter description</source>
-        <translation>输入说明</translation>
+        <source>Add description </source>
+        <translation>添加说明书</translation>
     </message>
     <message>
         <source>Error</source>
@@ -3227,10 +3433,6 @@ transaction history, making transactions untraceable </source>
         <source>New Cold Staking Address</source>
         <translation>新冷堆地址</translation>
     </message>
-    <message>
-        <source>Amount (optional)</source>
-        <translation>金额（可选项）</translation>
-    </message>
 </context>
 <context>
     <name>SendChangeAddressDialog</name>
@@ -3243,6 +3445,10 @@ transaction history, making transactions untraceable </source>
         <translation>交易明细</translation>
     </message>
     <message>
+        <source>PushButton</source>
+        <translation>按钮</translation>
+    </message>
+    <message>
         <source>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</source>
         <translation> 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</translation>
@@ -3253,27 +3459,15 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
     </message>
     <message>
         <source>OK</source>
-        <translation>好的</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Custom Change Address</source>
         <translation>自定义更改地址</translation>
     </message>
     <message>
-        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" PIVX address</source>
+        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" SAPP address</source>
         <translation>输入值减去输出值所得的值的其余部分归为“更改”PIVX地址</translation>
-    </message>
-    <message>
-        <source>SAVE</source>
-        <translation>保存</translation>
-    </message>
-    <message>
-        <source>RESET</source>
-        <translation>重置</translation>
-    </message>
-    <message>
-        <source>Invalid address</source>
-        <translation>地址无效</translation>
     </message>
 </context>
 <context>
@@ -3291,12 +3485,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
         <translation>根据您的喜好定制交易费用，取决于您的交易是否包含在区块链中。</translation>
     </message>
     <message>
-        <source>Recommended</source>
+        <source>Recomended</source>
         <translation>已推荐</translation>
-    </message>
-    <message>
-        <source>PIV/kilobyte</source>
-        <translation>PIV/k字节</translation>
     </message>
     <message>
         <source>0.00 KB</source>
@@ -3307,20 +3497,24 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
         <translation>自定义</translation>
     </message>
     <message>
+        <source>Per kilobyte</source>
+        <translation>每千字节</translation>
+    </message>
+    <message>
         <source>CANCEL</source>
         <translation>删除</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>好的</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Customize Fee</source>
-        <translation>定制费用</translation>
+        <translation>自定义费用</translation>
     </message>
     <message>
-        <source>Customize the transaction fee, depending on the fee value your transaction might be included faster in the blockchain.</source>
-        <translation>定制交易费用，根据费用高低，您的交易可能更快地被融入到区块链。</translation>
+        <source>Customize the transaction fee, depending on the fee value your transaction will be included or not in the blockchain.</source>
+        <translation>根据您的喜好定制交易费用，取决于您的交易是否包含在区块链中。</translation>
     </message>
     <message>
         <source>Normal</source>
@@ -3338,7 +3532,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
         <source>SAVE</source>
         <translation>保存</translation>
     </message>
-    </context>
+</context>
 <context>
     <name>SendMultiRow</name>
     <message>
@@ -3350,12 +3544,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
         <translation>文本标签</translation>
     </message>
     <message>
-        <source>Enter address</source>
-        <translation>输入地址</translation>
+        <source>Add address</source>
+        <translation>添加地址</translation>
     </message>
     <message>
-        <source>Enter label</source>
-        <translation>输入标签</translation>
+        <source>Add description</source>
+        <translation>添加说明书</translation>
     </message>
 </context>
 <context>
@@ -3365,12 +3559,16 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
         <translation>发送</translation>
     </message>
     <message>
-        <source>You can transfer public coins (PIV) or private coins (zPIV)</source>
-        <translation>您可以转换公共币(PIV)或私人币(zPIV)</translation>
+        <source>You can transfer public coins (SAPP) or private coins (zRPD)</source>
+        <translation>您可以转换公共币(SAPP)或私人币(zRPD)</translation>
     </message>
     <message>
         <source>Select coin type to spend</source>
         <translation>选择需要花费的币种类</translation>
+    </message>
+    <message>
+        <source>Enter a SAPP address or contact label</source>
+        <translation>输入PIVX地址或联系人标签</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -3397,11 +3595,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
         <translation>花费总金额</translation>
     </message>
     <message>
-        <source>Send PIV</source>
+        <source>Send SAPP</source>
         <translation>花费PIV</translation>
     </message>
     <message>
-        <source>Send zPIV</source>
+        <source>Send zRPD</source>
         <translation>花费zPIV</translation>
     </message>
     <message>
@@ -3413,18 +3611,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
         <translation>总剩余</translation>
     </message>
     <message>
-        <source>Warning!</source>
-        <translation>注意！</translation>
-    </message>
-    <message>
-        <source>The change address doesn't belong to this wallet.
-
-Do you want to continue?</source>
-        <translation>这个变更地址不属于这个钱包。
-
-你仍需继续吗?</translation>
-    </message>
-    <message>
         <source>Customize Fee</source>
         <translation>定制费用</translation>
     </message>
@@ -3433,16 +3619,8 @@ Do you want to continue?</source>
         <translation>达到最大输出金额</translation>
     </message>
     <message>
-        <source>PIVX address or contact label</source>
-        <translation>PIVX 地址或者联系人标签</translation>
-    </message>
-    <message>
         <source>Invalid entry, previous entries must be valid before add a new one</source>
         <translation>条目无效，在添加新条目之前，先前的条目必须有效</translation>
-    </message>
-    <message>
-        <source>Possibly spend coins delegated for cold-staking (currently available: %1</source>
-        <translation>可能花费委托用于冷加注到币（当前可用：%1</translation>
     </message>
     <message>
         <source>Invalid entry</source>
@@ -3477,7 +3655,7 @@ These coins will no longer be cold-staked.</source>
         <translation>花费零币</translation>
     </message>
     <message>
-        <source>zPIV is currently undergoing maintenance.</source>
+        <source>zRPD is currently undergoing maintenance.</source>
         <translation>zPIV目前正在维护中</translation>
     </message>
     <message>
@@ -3497,11 +3675,11 @@ These coins will no longer be cold-staked.</source>
 %2</translation>
     </message>
     <message>
-        <source>zPIV transaction sent!</source>
+        <source>zRPD transaction sent!</source>
         <translation>zPIV交易已发送！</translation>
     </message>
     <message>
-        <source>Version 1 zPIV require a security level of 100 to successfully spend.</source>
+        <source>Version 1 zRPD require a security level of 100 to successfully spend.</source>
         <translation>版本1 zPIV要求安全级别为100才能成功使用。</translation>
     </message>
     <message>
@@ -3525,6 +3703,10 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>地址标签更新失败的地址:%1</translation>
     </message>
     <message>
+        <source>Invalid change address</source>
+        <translation>更改地址无效</translation>
+    </message>
+    <message>
         <source>Invalid URI</source>
         <translation>URI无效</translation>
     </message>
@@ -3537,11 +3719,11 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>定制费用%1</translation>
     </message>
     <message>
-        <source>You don't have any PIV to select.</source>
-        <translation>您没有任何PIV可选择。</translation>
+        <source>You don't have any SAPP to select.</source>
+        <translation>您没有任何PIV可供选择。</translation>
     </message>
     <message>
-        <source>You don't have any zPIV in your balance to select.</source>
+        <source>You don't have any zRPD in your balance to select.</source>
         <translation>你的余额中没有zPIV可供选择。</translation>
     </message>
     <message>
@@ -3592,12 +3774,22 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>文本标签</translation>
     </message>
     <message>
+        <source>PushButton</source>
+        <translation>按钮</translation>
+    </message>
+    <message>
         <source>Backup Wallet </source>
         <translation>返回钱包</translation>
     </message>
     <message>
         <source>Change Wallet Passphrase</source>
         <translation>变更钱包密码</translation>
+    </message>
+    <message>
+        <source>Keep your wallet safe doing regular backups, store your backup file externally.
+This option creates a wallet.dat file that can be used to recover your whole balance (transactions and addresses) from another device.</source>
+        <translation>定期安全备份您的钱包，在外部设备储存你的备份文件。
+此选项创建一个wallet.dat文件，可用于从另一个设备恢复您的全部余额(交易和地址)。</translation>
     </message>
     <message>
         <source>This will decrypt the whole wallet data and encrypt it back with the new passphrase.
@@ -3610,14 +3802,12 @@ Remember to write it down and store it safely, otherwise you might lose access t
         <translation>哪里</translation>
     </message>
     <message>
-        <source>Keep your wallet safe by doing regular backups and storing your backup file externally.
-This option creates a wallet.dat file that can be used to recover your whole balance (transactions and addresses) on another device.</source>
-        <translation>通过定期备份和将备份文件存储在外部来保证钱包的安全。
-此选项创建一个wallet.dat文件，可用于在另一个设备上恢复您的全部余额(交易和地址)。</translation>
+        <source>Set a folder location</source>
+        <translation>设置文件夹位置</translation>
     </message>
     <message>
-        <source>Select folder...</source>
-        <translation>选择文件夹...</translation>
+        <source>Backup</source>
+        <translation>返回</translation>
     </message>
     <message>
         <source>Change Passphrase</source>
@@ -3668,7 +3858,7 @@ This option creates a wallet.dat file that can be used to recover your whole bal
     </message>
     <message>
         <source>Clear</source>
-        <translation>清除</translation>
+        <translation>明确</translation>
     </message>
     <message>
         <source>BIP38 Tool</source>
@@ -3711,16 +3901,16 @@ This option creates a wallet.dat file that can be used to recover your whole bal
         <translation>解密钥匙</translation>
     </message>
     <message>
-        <source>PIVX address</source>
-        <translation>PIVX地址</translation>
+        <source>Enter a SAPP address</source>
+        <translation>输入一个PIVX地址</translation>
     </message>
     <message>
-        <source>Enter address</source>
-        <translation>输入地址</translation>
+        <source>Add address</source>
+        <translation>添加地址</translation>
     </message>
     <message>
-        <source>Enter passphrase</source>
-        <translation>输入钱包密码</translation>
+        <source>Write a message</source>
+        <translation>写入信息</translation>
     </message>
     <message>
         <source>Encrypted Key</source>
@@ -3803,7 +3993,7 @@ This option creates a wallet.dat file that can be used to recover your whole bal
         <translation>添加钥匙到钱包出错</translation>
     </message>
     <message>
-        <source>Successfully added private key to the wallet</source>
+        <source>Successfully added pivate key to the wallet</source>
         <translation>成功添加私钥到钱包</translation>
     </message>
 </context>
@@ -3834,17 +4024,13 @@ This option creates a wallet.dat file that can be used to recover your whole bal
         <translation>打开调试文件</translation>
     </message>
     <message>
-        <source>Clear history</source>
-        <translation>清空历史记录</translation>
-    </message>
-    <message>
         <source>Cannot open debug file.
 Verify that you have installed a predetermined text editor.</source>
         <translation>无法打开调试文件。
 确认您已经安装了预定的文本编辑器</translation>
     </message>
     <message>
-        <source>Welcome to the PIVX RPC console.</source>
+        <source>Welcome to the SAPP RPC console.</source>
         <translation>欢迎访问PIVX RPC控制台</translation>
     </message>
     <message>
@@ -3871,8 +4057,8 @@ Verify that you have installed a predetermined text editor.</source>
         <translation>文本标签</translation>
     </message>
     <message>
-        <source>Hide stake charts in the dashboard</source>
-        <translation>把加注图表隐藏在仪表板中</translation>
+        <source>PushButton</source>
+        <translation>按钮</translation>
     </message>
     <message>
         <source>Reset to default</source>
@@ -3924,109 +4110,6 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
 </context>
 <context>
-    <name>SettingsExportCSV</name>
-    <message>
-        <source>Form</source>
-        <translation>来自</translation>
-    </message>
-    <message>
-        <source>Export Accounting</source>
-        <translation>导出账单</translation>
-    </message>
-    <message>
-        <source>Export your wallet's accounting data to a csv file.</source>
-        <translation>导出你的钱包账单到一个csv文件。</translation>
-    </message>
-    <message>
-        <source>Where</source>
-        <translation>哪里</translation>
-    </message>
-    <message>
-        <source>Select folder...</source>
-        <translation>选择文件夹...</translation>
-    </message>
-    <message>
-        <source>Export Address Book</source>
-        <translation>导出地址簿</translation>
-    </message>
-    <message>
-        <source>Export CSV</source>
-        <translation>导出CSV</translation>
-    </message>
-    <message>
-        <source>Export Address List</source>
-        <translation>导出地址列表</translation>
-    </message>
-    <message>
-        <source>PIVX_tx_csv_export(*.csv)</source>
-        <translation>PIVX_tx_csv_export(*.csv)</translation>
-    </message>
-    <message>
-        <source>PIVX_addresses_csv_export(*.csv)</source>
-        <translation>PIVX_addresses_csv_export(*.csv)</translation>
-    </message>
-    <message>
-        <source>Please select a folder to export the csv file first.</source>
-        <translation>请先选择一个导出csv文件到文件夹。</translation>
-    </message>
-    <message>
-        <source>Confirmed</source>
-        <translation>已确认</translation>
-    </message>
-    <message>
-        <source>Watch-only</source>
-        <translation>只读</translation>
-    </message>
-    <message>
-        <source>Date</source>
-        <translation>日期</translation>
-    </message>
-    <message>
-        <source>Type</source>
-        <translation>类别</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>标签</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>地址</translation>
-    </message>
-    <message>
-        <source>ID</source>
-        <translation>ID</translation>
-    </message>
-    <message>
-        <source>Exporting Successful
-The transaction history was successfully saved to %1.</source>
-        <translation>导出成功
-交易历史已经成功保存到%1。</translation>
-    </message>
-    <message>
-        <source>Exporting Failed
-There was an error trying to save the transaction history to %1.</source>
-        <translation>导出失败
-保存交易历史到%1过程出错了。</translation>
-    </message>
-    <message>
-        <source>No available addresses to export under the selected filter</source>
-        <translation>在所选的筛选器下没有可供导出的地址</translation>
-    </message>
-    <message>
-        <source>Exporting Successful
-The address book was successfully saved to %1.</source>
-        <translation>导出成功
-地址簿已经成功保存到%1。</translation>
-    </message>
-    <message>
-        <source>Exporting Failed
-There was an error trying to save the address list to %1. Please try again.</source>
-        <translation>导出失败
-保存地址列表到%1的过程出错。请重试。</translation>
-    </message>
-</context>
-<context>
     <name>SettingsFaqWidget</name>
     <message>
         <source>Form</source>
@@ -4041,45 +4124,45 @@ There was an error trying to save the address list to %1. Please try again.</sou
         <translation>按钮</translation>
     </message>
     <message>
-        <source>1) What is PIVX?</source>
+        <source>1) What is SAPP?</source>
         <translation>1）什么是PIVX?</translation>
     </message>
     <message>
-        <source>2) Why are my PIV unspendable?</source>
+        <source>2) Why are my SAPP unspendable?</source>
         <translation>2) 我的PIV为什么不能用？</translation>
     </message>
     <message>
-        <source>3) PIVX privacy? What is Zerocoin (zPIV)?</source>
-        <translation>3）PIVX 隐私？什么是零币(zPIV)？</translation>
+        <source>3) SAPP privacy? What is Zerocoin (zRPD)?</source>
+        <translation>3）SAPP 隐私？什么是零币(zRPD)？</translation>
     </message>
     <message>
-        <source>4) Why are my zPIV unspendable?</source>
+        <source>4) Why are my zRPD unspendable?</source>
         <translation>4) 我的zPIV为什么不能用？</translation>
     </message>
     <message>
         <source>5) Why did my wallet convert the balance
-    into zPIV automatically?</source>
+    into zRPD automatically?</source>
         <translation>5）为什么我的钱包把余额自动转换成
 zPIV了?</translation>
     </message>
     <message>
-        <source>6) How do I receive PIV/zPIV?</source>
-        <translation>6）如何接收PIV/zPIV?</translation>
+        <source>6) How do I receive SAPP/zRPD?</source>
+        <translation>6）如何接收PIV/zRPD?</translation>
     </message>
     <message>
-        <source>7) How do I stake PIV/zPIV?</source>
-        <translation>7）如何加注PIV/zPIV?</translation>
+        <source>7) How do I stake SAPP/zRPD?</source>
+        <translation>7）如何加注PIV/zRPD?</translation>
     </message>
     <message>
         <source>8) Where I should go if I need support?</source>
         <translation>8）该到哪里寻求帮助？</translation>
     </message>
     <message>
-        <source>9) What is a Masternode?</source>
+        <source>9) What is a Master Node?</source>
         <translation>9）什么是主节点？</translation>
     </message>
     <message>
-        <source>10) What is a Masternode Controller?</source>
+        <source>10) What is a Master Node Controller?</source>
         <translation>10）什么是主节点控制器？</translation>
     </message>
     <message>
@@ -4087,20 +4170,20 @@ zPIV了?</translation>
         <translation>1</translation>
     </message>
     <message>
-        <source>What is PIVX?</source>
+        <source>What is SAPP?</source>
         <translation>PIVX是什么?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           PIVX is a form of digital online money using blockchain technology
+                           SAPP is a form of digital online money using blockchain technology
                            that can be easily transferred globally, instantly, and with near
-                           zero fees.  PIVX incorporates market leading security &amp;
+                           zero fees.  SAPP incorporates market leading security &amp;
                            privacy and is also the first PoS (Proof of Stake) Cryptocurrency
-                           to implement ZeroCoin(zPIV) and Zerocoin staking.
+                           to implement ZeroCoin(zRPD) and Zerocoin staking.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           PIVX utilizes a Proof of Stake (PoS) consensus system algorithm,
-                           allowing all owners of PIVX to participate in earning block rewards
+                           SAPP utilizes a Proof of Stake (PoS) consensus system algorithm,
+                           allowing all owners of SAPP to participate in earning block rewards
                            while securing the network with full node wallets, as well as to
                            run Masternodes to create and vote on proposals.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -4111,7 +4194,7 @@ PIVX是一种使用区块链技术的数字在线货币
 全球范围内快捷交易，即时，基本为
 零的交易费用。PIVX是市场上领先的安全和
 隐私加密货币，也是第一个PoS(股权证明)加密货币
-实现零币(zPIV)和零币加注。
+实现零币(zRPD)和零币加注。
 &lt;/p&gt;&lt;p align="justify"&gt;
 PIVX使用了一个股权证明(PoS)一致系统算法，
 允许所有PIVX的所有者参与赚取区块奖励
@@ -4123,16 +4206,16 @@ PIVX使用了一个股权证明(PoS)一致系统算法，
         <translation>2</translation>
     </message>
     <message>
-        <source>Why are my PIV unspendable?</source>
+        <source>Why are my SAPP unspendable?</source>
         <translation>我的PIV为什么不能用？</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Newly received PIVX requires 6 confirmations on the network
+                           Newly received SAPP requires 6 confirmations on the network
                            to become eligible for spending which can take ~6 minutes.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           Your PIVX wallet also needs to be completely synchronized
+                           Your SAPP wallet also needs to be completely synchronized
                            to see and spend balances on the network.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
@@ -4151,28 +4234,28 @@ PIVX使用了一个股权证明(PoS)一致系统算法，
         <translation>3</translation>
     </message>
     <message>
-        <source>PIVX privacy? What is Zerocoin (zPIV)?</source>
-        <translation>PIVX 隐私？什么是零币(zPIV)？</translation>
+        <source>SAPP privacy? What is Zerocoin (zRPD)?</source>
+        <translation>SAPP 隐私？什么是零币(zRPD)？</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zPIV is an optional privacy-centric method of coin mixing on the
-                           PIVX blockchain. Basically all your transactions cannot be tracked
+                           zRPD is an optional privacy-centric method of coin mixing on the
+                           SAPP blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
-                           &lt;a style='color: #b088ff' href='https://PIVX.org/zpiv/'&gt;
-                           "PIVX Zerocoin (zPIV) Technical Paper"&lt;/a&gt;.
+                           &lt;a style='color: #b088ff' href='https://SAPP.org/zpiv/'&gt;
+                           "SAPP Zerocoin (zRPD) Technical Paper"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
 zPIV是一种可选的以隐私为中心的隐私币
 它是PIVX区块链的一员，基本上在任何块资源管理器
-所有的交易都不能被跟踪&lt;a style='color: #b088ff' href='https://PIVX.org/zpiv/'&gt;
+所有的交易都不能被跟踪&lt;a style='color: #b088ff' href='https://SAPP.org/zpiv/'&gt;
 
 你可以阅读更多关于技术方面的文章&lt;/a&gt;
 
-PIVX零币(zPIV)技术文件
+PIVX零币(zRPD)技术文件
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </translation>
     </message>
@@ -4181,13 +4264,13 @@ PIVX零币(zPIV)技术文件
         <translation>4</translation>
     </message>
     <message>
-        <source>Why are my zPIV unspendable?</source>
+        <source>Why are my zRPD unspendable?</source>
         <translation>我的PIV为什么不能用？</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           After minting, zPIV will require 20 confirmations as well as 1
+                           After minting, zRPD will require 20 confirmations as well as 1
                            additional mint of the same denomination on the network to
                            become eligible for spending.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -4204,7 +4287,7 @@ PIVX零币(zPIV)技术文件
         <translation>5</translation>
     </message>
     <message>
-        <source>Why did my wallet convert the balance into zPIV automatically?</source>
+        <source>Why did my wallet convert the balance into zRPD automatically?</source>
         <translation>为什么我的钱包会自动将余额转换成zPIV ?</translation>
     </message>
     <message>
@@ -4212,16 +4295,16 @@ PIVX零币(zPIV)技术文件
         <translation>6</translation>
     </message>
     <message>
-        <source>How do I receive PIV/zPIV?</source>
-        <translation>我怎么接收PIV/zPIV?</translation>
+        <source>How do I receive SAPP/zRPD?</source>
+        <translation>我怎么接收PIV/zRPD?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zPIV can be spent and sent to any PIVX address. The receiver will
-                           receive standard PIVX but the origin of the PIVX is anonymized by the zPIV Protocol.
+                           zRPD can be spent and sent to any SAPP address. The receiver will
+                           receive standard SAPP but the origin of the SAPP is anonymized by the zRPD Protocol.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           If you want more zPIV you will need to mint your balance in the “Privacy” tab.
+                           If you want more zRPD you will need to mint your balance in the “Privacy” tab.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
@@ -4237,32 +4320,32 @@ PIVX零币(zPIV)技术文件
         <translation>7</translation>
     </message>
     <message>
-        <source>How do I stake PIV/zPIV?</source>
-        <translation>我怎么加注PIV/zPIV?</translation>
+        <source>How do I stake SAPP/zRPD?</source>
+        <translation>我怎么加注PIV/zRPD?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           To Stake PIVX:
+                           To Stake SAPP:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ol&gt;&lt;li&gt;
                            Make sure your wallet is completely synchronized and you are using the latest release.
                            &lt;li&gt;
-                           You must have a balance of PIVX with a minimum of 600 confirmations.
+                           You must have a balance of SAPP with a minimum of 101 confirmations.
                            &lt;li&gt;
-                           Your wallet must stay online and be unlocked for staking purposes.
+                           Your wallet must stay online and be unlocked for anonymization and staking purposes.
                            &lt;li&gt;
                            Once all those steps are followed staking should be enabled.
                            &lt;li&gt;
                            You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state "Staking Enabled" to indicate it is staking.  Using the command line interface (pivx-cli); the command &lt;i&gt;getstakingstatus&lt;/i&gt; will confirm that staking is active.
                            &lt;/li&gt;&lt;/ol&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           To Stake zPIV:
+                           To Stake zRPD:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ol&gt;&lt;li&gt;
                            Make sure your wallet is completely synchronized and you are using the latest release.
                            &lt;li&gt;
-                           Your newly minted or existing zPIV balance must have a minimum of 200 confirmations.
+                           Your newly minted or existing zRPD balance must have a minimum of 200 confirmations.
                            &lt;li&gt;
                            Your wallet must stay online and be unlocked for anonymization and staking purposes.
                            Staking should now be enabled.
@@ -4270,85 +4353,72 @@ PIVX零币(zPIV)技术文件
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
- &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
 加注PIVX:
 &lt;/p&gt;&lt;p align="justify"&gt;
 &lt;ol&gt;&lt;li&gt;
-确保你的钱包保持完全同步且当前使用的是最新版本。
+确保你的钱包是完全同步的，且使用最新版本。
 &lt;li&gt;
-您必须有至少600的确认PIVX余额。
+您必须有至少101个确认的PIVX余额。
 &lt;li&gt;
-你必须保证钱包在线且用于加注目的未锁状态。
+你的钱包必须在线，并为匿名和加注的目的被解锁。
 &lt;li&gt;
-所有这些步骤都完成后应该就可以启用加注了。
+一旦所有这些步骤都遵循了，应该就可以启用加注
 &lt;li&gt;
-您可以将鼠标移到钱包界面左上角的行中的包图标上来查看在钱包加注的状态。加注状态的时候，包会被点亮且状态显示“加注启用”。使用命令行接口(pivx-cli);命令&lt;i&gt;getstakingstatus&lt;/i&gt;将确认加注是激活状态。
+您可以通过将鼠标移到钱包界面左上角的行中的package图标上来查看在钱包中进行标记的状态。被点亮，并将状态“Staking启用”，以表明它是加注状态。使用命令行接口(pivx-cli);命令getstakingstatus将确认加注是活跃状态。
 &lt;/li&gt;&lt;/ol&gt;
 &lt;/p&gt;&lt;p align="justify"&gt;
-加注zPIV:
-&lt;/p&gt;&lt;p align="justify"&gt;
+加注zPIV:&lt;/p&gt;&lt;p align="justify"&gt;
 &lt;ol&gt;&lt;li&gt;
-确保你的钱包保持完全同步且当前使用的是最新版本。
+确保你的钱包是完全同步的，且使用最新版本
 &lt;li&gt;
-你最新铸造或现有的zPIV余额必须至少有200个确认。
+您新创建的或现有的zPIV余额必须至少有200个确认。
 &lt;li&gt;
-你必须保证钱包在线且用于加注和匿名目的处于未锁状态。
-现在加注应该已经可以启用了
+我们的钱包必须在线，并为匿名和加注的目的被解锁。
+加注现在应该是启用状态了。
 &lt;/li&gt;&lt;/ol&gt;
-&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-                          </translation>
-    </message>
-    <message>
-        <source>Where should I go if I need support?</source>
-        <translation>如果我需要帮助，我该怎么办？</translation>
-    </message>
-    <message>
-        <source>What is a Masternode?</source>
-        <translation>主节点是什么？</translation>
-    </message>
-    <message>
-        <source>What is a Masternode Controller?</source>
-        <translation>什么是主节点控制器？</translation>
-    </message>
-    <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;A Masternode Controller wallet is where the 10,000 PIV collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet(s) and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;主节点控制器钱包是控制器-远程主节点建立期间10,000 PIV抵押可以驻留的地方。这是一个可以激活远程主节点钱包(s)的钱包，可以让你的抵押币离线但远程主节点保持在线。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>8</source>
         <translation>8</translation>
     </message>
     <message>
+        <source>Where I should go if I need support?</source>
+        <translation>该到哪里寻求帮助？</translation>
+    </message>
+    <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
                            We have support channels in most of our official chat groups, for example
-                           &lt;a style='color: #b088ff' href='https://discord.PIVX.org'&gt;
+                           &lt;a style='color: #b088ff' href='https://Discord.SAPP.com'&gt;
                            #support in our Discord&lt;/a&gt;.
                            If you prefer to submit a ticket, One can be
-                           &lt;a style='color: #b088ff' href='https://PIVX.freshdesk.com'&gt;
+                           &lt;a style='color: #b088ff' href='https://SAPP.FreshDesk.com'&gt;
                            our Freshdesk support site&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-我们在大多数官方聊天群都有支持频道，例如
-&lt;a style='color: #b088ff' href='https://discord.PIVX.org'&gt;
-＃Discord  里面的支持&lt;/a&gt;。
-如果你想要提交门票，请到这里
-&lt;a style='color: #b088ff' href='https://PIVX.freshdesk.com'&gt;
-我们的前台支持网站&lt;/a&gt;。
-&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-</translation>
+例如，我们在大多数官方聊天组中都有支持频道
+&lt;a style='color: #b088ff' href='https://Discord.SAPP.com'&gt;
+#在&lt;/a&gt;Discord支持我们
+如果您想订票&lt;a style='color: #b088ff' href='https://SAPP.FreshDesk.com'&gt;，我们可以为您提供前台支持&lt;/a&gt;
+&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>9</source>
         <translation>9</translation>
     </message>
     <message>
+        <source>What is a Master Node?</source>
+        <translation>什么是主节点？</translation>
+    </message>
+    <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           A masternode is a computer running a full node PIVX core wallet with a
-                           requirement of 10,000 PIV secured collateral to provide extra services
+                           A masternode is a computer running a full node SAPP core wallet with a
+                           requirement of 10,000 SAPP secured collateral to provide extra services
                            to the network and in return, receive a portion of the block reward
                            regularly.  These services include:
                            &lt;/p&gt;&lt;p align="justify"&gt;
@@ -4370,17 +4440,17 @@ PIVX零币(zPIV)技术文件
                            Masternode Perks:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;Participate in PIVX Governance&lt;/li&gt;
+                           &lt;li&gt;Participate in SAPP Governance&lt;/li&gt;
                            &lt;li&gt;Earn Masternode Rewards&lt;/li&gt;
                            &lt;li&gt;Commodity option for future sale&lt;/li&gt;
-                           &lt;li&gt;Help secure the PIVX network&lt;/li&gt;
+                           &lt;li&gt;Help secure the SAPP network&lt;/li&gt;
                            &lt;/ul&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
 
                            Requirements:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;10,000 PIV per single Masternode instance&lt;/li&gt;
+                           &lt;li&gt;10,000 SAPP per single Masternode instance&lt;/li&gt;
                            &lt;li&gt;Must be stored in a core wallet&lt;/li&gt;
                            &lt;li&gt;Need dedicated IP address&lt;/li&gt;
                            &lt;li&gt;Masternode wallet to remain online&lt;/li&gt;
@@ -4422,7 +4492,7 @@ PIVX零币(zPIV)技术文件
 要求：
 &lt;/p&gt;&lt;p align="justify"&gt;
 &lt;ul&gt;
-&lt;li&gt;每个主节点实例有10,000 PIV&lt;/li&gt;
+&lt;li&gt;每个主节点实例有10,000 SAPP&lt;/li&gt;
 &lt;li&gt;必须存储在核心钱包&lt;/li&gt;
 &lt;li&gt;需要专用IP地址&lt;/li&gt;
 主节点钱包保持在线&lt;li&gt;
@@ -4434,6 +4504,14 @@ PIVX零币(zPIV)技术文件
     <message>
         <source>10</source>
         <translation>10</translation>
+    </message>
+    <message>
+        <source>What is a Master Node Controller?</source>
+        <translation>什么是主节点控制器？</translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;A Masternode Controller wallet is where the 10,000 SAPP collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet/s and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;主节点控制器钱包是在控制器-远程主节点设置期间10,000 PIV附属品可以驻留的地方。这是一个可以激活远程主节点钱包的钱包/s，远程主节点保持在线的时候，可以让你的抵押品硬币离线。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Frequently Asked Questions</source>
@@ -4455,6 +4533,10 @@ PIVX零币(zPIV)技术文件
         <translation>来自</translation>
     </message>
     <message>
+        <source>TextLabel</source>
+        <translation>文本标签</translation>
+    </message>
+    <message>
         <source>Network Monitor</source>
         <translation>网络监视器</translation>
     </message>
@@ -4467,48 +4549,24 @@ PIVX零币(zPIV)技术文件
         <translation>总的</translation>
     </message>
     <message>
-        <source>Client Version:</source>
-        <translation>客户版本：</translation>
-    </message>
-    <message>
-        <source>BerkeleyDB version:</source>
-        <translation>BerkeleyDB版本：</translation>
-    </message>
-    <message>
-        <source>Datadir:</source>
-        <translation>数据dir:</translation>
-    </message>
-    <message>
-        <source>Startup time:</source>
-        <translation>启动时间：</translation>
-    </message>
-    <message>
-        <source>Connections:</source>
-        <translation>连接：</translation>
-    </message>
-    <message>
-        <source>Number of Masternodes:</source>
-        <translation>主节点数量：</translation>
-    </message>
-    <message>
-        <source>Current number of blocks:</source>
-        <translation>当前区块数量：</translation>
-    </message>
-    <message>
-        <source>Last block time:</source>
-        <translation>上一个区块时间：</translation>
-    </message>
-    <message>
-        <source>Last block hash:</source>
-        <translation>上一个区块哈希：</translation>
-    </message>
-    <message>
-        <source>Current number of transactions:</source>
-        <translation>当前交易数量：</translation>
+        <source>Client Version: </source>
+        <translation>客户端版本：</translation>
     </message>
     <message>
         <source>User Agent:</source>
         <translation>客户端代理：</translation>
+    </message>
+    <message>
+        <source>Using BerkeleyDB version:</source>
+        <translation>使用BerkeleyDB 版本</translation>
+    </message>
+    <message>
+        <source>Datadir: </source>
+        <translation>数据目录:</translation>
+    </message>
+    <message>
+        <source>Startup Time:  </source>
+        <translation>开始时间：</translation>
     </message>
     <message>
         <source>Network</source>
@@ -4519,12 +4577,28 @@ PIVX零币(zPIV)技术文件
         <translation>名称：</translation>
     </message>
     <message>
+        <source>Number Connections:</source>
+        <translation>连接数量：</translation>
+    </message>
+    <message>
         <source>Blockchain</source>
         <translation>区块链</translation>
     </message>
     <message>
+        <source>Current Number of Blocks:</source>
+        <translation>当前区块数量：</translation>
+    </message>
+    <message>
+        <source>Last Block Time:</source>
+        <translation>上一个区块时间：</translation>
+    </message>
+    <message>
         <source>Memory Pool</source>
         <translation>记忆工具</translation>
+    </message>
+    <message>
+        <source>Current Number of Transactions:</source>
+        <translation>当前交易数量：</translation>
     </message>
     <message>
         <source>Main</source>
@@ -4547,7 +4621,7 @@ PIVX零币(zPIV)技术文件
         <translation>无法打开备份文件夹</translation>
     </message>
     <message>
-        <source>Unable to open pivx.conf with default application</source>
+        <source>Unable to open sap.conf with default application</source>
         <translation>无法使用默认应用程序打开pivx.conf</translation>
     </message>
     <message>
@@ -4606,7 +4680,7 @@ PIVX零币(zPIV)技术文件
         <translation>脚本&amp;验证线程数</translation>
     </message>
     <message>
-        <source>Start PIVX on system login</source>
+        <source>Start SAPP on system login</source>
         <translation>开机启动PIVX</translation>
     </message>
     <message>
@@ -4663,12 +4737,12 @@ Are you sure?
         <translation>多重发送新接收人</translation>
     </message>
     <message>
-        <source>Address Label (optional)</source>
-        <translation>地址标签（可选项）</translation>
+        <source>Label (optional)</source>
+        <translation>标签（可选）</translation>
     </message>
     <message>
-        <source>Enter label to be saved with this address</source>
-        <translation>输入要用此地址保存的标签</translation>
+        <source>Enter a label to add this address in your address book</source>
+        <translation>输入此地址的标签，将其添加到您的地址列表中</translation>
     </message>
     <message>
         <source>Percentage</source>
@@ -4686,15 +4760,15 @@ Are you sure?
         <translation>文本标签</translation>
     </message>
     <message>
-        <source>N/A</source>
-        <translation>N/A</translation>
+        <source>No active Master Node yet</source>
+        <translation>暂无活跃主节点</translation>
     </message>
     <message>
         <source>CheckBox</source>
         <translation>查看列表</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other PIVX addresses after it matures.</source>
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other SAPP addresses after it matures.</source>
         <translation>成熟以后，多重花费允许您自动发送高达 100% 的股权或主节点奖励到其他PIVX地址列表</translation>
     </message>
     <message>
@@ -4726,20 +4800,12 @@ Are you sure?
         <translation>清除所有</translation>
     </message>
     <message>
-        <source>Cannot perform operation, wallet locked</source>
-        <translation>无法进行操作，钱包被锁了</translation>
-    </message>
-    <message>
         <source>Clear succeed</source>
         <translation>清除成功</translation>
     </message>
     <message>
         <source>Clear all failed, could not locate address in wallet file</source>
         <translation>清除所有失败，无法找到钱包文件中的地址</translation>
-    </message>
-    <message>
-        <source>Cannot add multisend recipient, wallet locked</source>
-        <translation>无法添加多重发送接收人，钱包被锁了</translation>
     </message>
     <message>
         <source>The entered address: %1 is invalid.
@@ -4779,7 +4845,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
     </message>
     <message>
         <source>MultiSend deactivated but writing settings to DB failed</source>
-        <translation>多重发送未激活，但设置写入DB失败</translation>
+        <translation>输出发送未激活，但设置写入DB失败</translation>
     </message>
     <message>
         <source>MultiSend deactivated</source>
@@ -4797,12 +4863,24 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
         <translation>文本标签</translation>
     </message>
     <message>
+        <source>PushButton</source>
+        <translation>按钮</translation>
+    </message>
+    <message>
         <source>Clear</source>
-        <translation>清除</translation>
+        <translation>明确</translation>
     </message>
     <message>
         <source>Sign/Verify Message</source>
         <translation>签署/验证消息</translation>
+    </message>
+    <message>
+        <source>Enter a SAPP address or contact label</source>
+        <translation>输入PIVX地址或联系人标签</translation>
+    </message>
+    <message>
+        <source>Add address</source>
+        <translation>添加地址</translation>
     </message>
     <message>
         <source>Sign</source>
@@ -4821,15 +4899,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
         <translation>消息 </translation>
     </message>
     <message>
-        <source>PIVX address or contact label</source>
-        <translation>PIVX 地址或者联系人标签</translation>
-    </message>
-    <message>
-        <source>Enter address</source>
-        <translation>输入地址</translation>
-    </message>
-    <message>
-        <source>Write message</source>
+        <source>Write a message</source>
         <translation>写入信息</translation>
     </message>
     <message>
@@ -4936,6 +5006,10 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
         <translation>放弃更改</translation>
     </message>
     <message>
+        <source>PushButton</source>
+        <translation>按钮</translation>
+    </message>
+    <message>
         <source>Wallet</source>
         <translation>钱包</translation>
     </message>
@@ -5001,6 +5075,10 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
     <message>
         <source>TextLabel</source>
         <translation>文本标签</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>按钮</translation>
     </message>
     <message>
         <source>Wallet Repair</source>
@@ -5094,6 +5172,10 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
         <translation>来自</translation>
     </message>
     <message>
+        <source>TextLabel</source>
+        <translation>文本标签</translation>
+    </message>
+    <message>
         <source>Wallet Data</source>
         <translation>钱包数据</translation>
     </message>
@@ -5106,16 +5188,12 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
         <translation>多重发送</translation>
     </message>
     <message>
-        <source>Export Accounting</source>
-        <translation>输出计数</translation>
-    </message>
-    <message>
         <source>Tools</source>
         <translation>工具</translation>
     </message>
     <message>
         <source>Sign/Verify Message</source>
-        <translation>签署/验证消息</translation>
+        <translation>&lt;div&gt;&lt;/div&gt;</translation>
     </message>
     <message>
         <source>BIP38 Tool</source>
@@ -5158,7 +5236,7 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
         <translation>常见问题</translation>
     </message>
     <message>
-        <source>About PIVX</source>
+        <source>About SAPP</source>
         <translation>关于PIVX </translation>
     </message>
     <message>
@@ -5225,8 +5303,8 @@ Are you sure?
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>PIVX Core is shutting down...</source>
-        <translation>PIVX 核心正在关闭...</translation>
+        <source>Sap is shutting down...</source>
+        <translation>SAPP 核心正在关闭...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -5255,15 +5333,15 @@ Are you sure?
         <translation>正在下载…</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Sap</source>
+        <translation>Sap</translation>
     </message>
 </context>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Sap</source>
+        <translation>Sap</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -5278,8 +5356,8 @@ Are you sure?
         <translation>达世币核心开发者</translation>
     </message>
     <message>
-        <source>The PIVX Core developers</source>
-        <translation>PIVX 核心开发者</translation>
+        <source>The Sap developers</source>
+        <translation>SAPP 核心开发者</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -5316,6 +5394,14 @@ Are you sure?
         <translation>来自</translation>
     </message>
     <message>
+        <source>480.0685 SAPP</source>
+        <translation>480.0685 SAPP</translation>
+    </message>
+    <message>
+        <source>1,000 zRPD</source>
+        <translation>1,000 zRPD</translation>
+    </message>
+    <message>
         <source>Available</source>
         <translation>可用</translation>
     </message>
@@ -5324,8 +5410,24 @@ Are you sure?
         <translation>进行当中：</translation>
     </message>
     <message>
+        <source>6.943 SAPP</source>
+        <translation>6.943 SAPP</translation>
+    </message>
+    <message>
         <source>Immature</source>
         <translation>不成熟</translation>
+    </message>
+    <message>
+        <source>10 SAPP</source>
+        <translation>10 SAPP</translation>
+    </message>
+    <message>
+        <source>60 zRPD</source>
+        <translation>60 SAPP</translation>
+    </message>
+    <message>
+        <source>10 zRPD</source>
+        <translation>10 SAPP</translation>
     </message>
     <message>
         <source>Wallet Unlocked for staking</source>
@@ -5340,6 +5442,14 @@ Are you sure?
         <translation>地址已复制</translation>
     </message>
     <message>
+        <source>Automint enabled</source>
+        <translation>自动挖矿可使用</translation>
+    </message>
+    <message>
+        <source>Automint disabled</source>
+        <translation>自动挖矿不可使用</translation>
+    </message>
+    <message>
         <source>Staking active</source>
         <translation>加注激活</translation>
     </message>
@@ -5349,11 +5459,11 @@ Are you sure?
     </message>
     <message numerus="yes">
         <source>%n active connection(s)</source>
-        <translation><numerusform>%n 激活连接 （秒）</numerusform></translation>
+        <translation><numerusform>%n激活连接</numerusform></translation>
     </message>
     <message>
-        <source>Synchronized - Block: %1</source>
-        <translation>已同步区块：%1</translation>
+        <source>Synchronized</source>
+        <translation>已同步</translation>
     </message>
     <message numerus="yes">
         <source>%n hour(s)</source>
@@ -5361,7 +5471,7 @@ Are you sure?
     </message>
     <message numerus="yes">
         <source>%n day(s)</source>
-        <translation><numerusform> %n天</numerusform></translation>
+        <translation><numerusform>%n天</numerusform></translation>
     </message>
     <message numerus="yes">
         <source>%n week(s)</source>
@@ -5375,90 +5485,6 @@ Are you sure?
         <source>%n year(s)</source>
         <translation><numerusform>%n年</numerusform></translation>
     </message>
-    <message>
-        <source>Wallet Upgrade</source>
-        <translation>钱包升级</translation>
-    </message>
-    <message>
-        <source>Upgrading to HD wallet will improve
-the wallet's reliability and security.
-
-
-NOTE: after the upgrade, a new
-backup will be created.
-</source>
-        <translation>升级到高清钱包将会得到改进
-钱包的可靠性和安全性。
-
-
-注意:升级后，会创建一份新的
-备份。
-</translation>
-    </message>
-    <message>
-        <source>Upgrade Wallet</source>
-        <translation>升级钱包</translation>
-    </message>
-    <message>
-        <source>Wallet unlock cancelled</source>
-        <translation>解锁钱包已取消</translation>
-    </message>
-    <message>
-        <source>Tor Active: %1</source>
-        <translation>Tor 激活: %1</translation>
-    </message>
-    <message>
-        <source>Tor Disabled</source>
-        <translation>Tor 关闭</translation>
-    </message>
-    <message>
-        <source>Available (Locked included)</source>
-        <translation>可用状态（包括被锁状态）</translation>
-    </message>
-    <message>
-        <source>The wallet has been successfully upgraded to HD.</source>
-        <translation>钱包已经成功升级到HD。</translation>
-    </message>
-    <message>
-        <source>It is advised to make a backup.</source>
-        <translation>建议备份。</translation>
-    </message>
-    <message>
-        <source>Do you wish to backup now?</source>
-        <translation>想要现在备份吗？</translation>
-    </message>
-    <message>
-        <source>Backup Wallet</source>
-        <translation>返回钱包</translation>
-    </message>
-    <message>
-        <source>Wallet Data (*.dat)</source>
-        <translation>钱包数据(*.dat)</translation>
-    </message>
-    <message>
-        <source>Backup created</source>
-        <translation>返回创建</translation>
-    </message>
-    <message>
-        <source>Backup creation failed</source>
-        <translation>备份创建失败</translation>
-    </message>
-    <message>
-        <source>no file selected</source>
-        <translation>没有选择文件</translation>
-    </message>
-    <message>
-        <source>Wallet upgraded successfully, but no backup created.</source>
-        <translation>钱包升级成功，但没有创建备份。</translation>
-    </message>
-    <message>
-        <source>WARNING: remember to make a copy of your wallet.dat file!</source>
-        <translation>注意：记得复制备份你的wallet.dat文件！</translation>
-    </message>
-    <message>
-        <source>Upgrade Wallet Error</source>
-        <translation>升级钱包出错</translation>
-    </message>
 </context>
 <context>
     <name>TrafficGraphWidget</name>
@@ -5471,7 +5497,7 @@ backup will be created.
     <name>TransactionDesc</name>
     <message numerus="yes">
         <source>Open for %n more block(s)</source>
-        <translation><numerusform>打开％n更多的区块</numerusform></translation>
+        <translation><numerusform>打开%n更多区块</numerusform></translation>
     </message>
     <message>
         <source>Open until %1</source>
@@ -5579,7 +5605,7 @@ backup will be created.
     </message>
     <message numerus="yes">
         <source>matures in %n more block(s)</source>
-        <translation><numerusform>在更多%n区块生成</numerusform></translation>
+        <translation><numerusform>在%n多个块中成熟</numerusform></translation>
     </message>
     <message>
         <source>not accepted</source>
@@ -5666,7 +5692,7 @@ backup will be created.
     </message>
     <message numerus="yes">
         <source>Open for %n more block(s)</source>
-        <translation><numerusform>打开％n更多的区块</numerusform></translation>
+        <translation><numerusform>打开%n更多区块</numerusform></translation>
     </message>
     <message>
         <source>Open until %1</source>
@@ -5713,39 +5739,63 @@ backup will be created.
         <translation>接收</translation>
     </message>
     <message>
-        <source>PIV Stake</source>
+        <source>Received via Obfuscation</source>
+        <translation>模糊接收</translation>
+    </message>
+    <message>
+        <source>SAPP Stake</source>
         <translation>PIV加注</translation>
     </message>
     <message>
-        <source>zPIV Stake</source>
-        <translation>zPIV 加注</translation>
+        <source>zRPD Stake</source>
+        <translation>zRPD 加注</translation>
     </message>
     <message>
-        <source>PIV Cold Stake</source>
+        <source>SAPP Cold Stake</source>
         <translation>PIV冷饮</translation>
+    </message>
+    <message>
+        <source>SAPP Stake in behalf of</source>
+        <translation>PIV权益代表</translation>
     </message>
     <message>
         <source>Stake delegation</source>
         <translation>股权委托</translation>
     </message>
     <message>
-        <source>Converted PIV to zPIV</source>
+        <source>Obfuscation Denominate</source>
+        <translation>模糊命名</translation>
+    </message>
+    <message>
+        <source>Obfuscation Collateral Payment</source>
+        <translation>模糊担保付款</translation>
+    </message>
+    <message>
+        <source>Obfuscation Make Collateral Inputs</source>
+        <translation>模糊担保输入</translation>
+    </message>
+    <message>
+        <source>Obfuscation Create Denominations</source>
+        <translation>模糊创建命名</translation>
+    </message>
+    <message>
+        <source>Converted SAPP to zRPD</source>
         <translation>转换PIV为zPIV</translation>
     </message>
     <message>
-        <source>Spent zPIV</source>
+        <source>Spent zRPD</source>
         <translation>已经花费zPIV</translation>
     </message>
     <message>
-        <source>Received PIV from zPIV</source>
+        <source>Received SAPP from zRPD</source>
         <translation>从zPIV接收PIV</translation>
     </message>
     <message>
-        <source>Minted Change as zPIV from zPIV Spend</source>
+        <source>Minted Change as zRPD from zRPD Spend</source>
         <translation>铸币的变化，从zPIV花费zPIV</translation>
     </message>
     <message>
-        <source>Converted zPIV to PIV</source>
+        <source>Converted zRPD to SAPP</source>
         <translation>转换PIV为zPIV</translation>
     </message>
     <message>
@@ -5761,16 +5811,12 @@ backup will be created.
         <translation>支付给您自己</translation>
     </message>
     <message>
-        <source>PIV Stake on behalf of</source>
-        <translation>代表PIV加注</translation>
-    </message>
-    <message>
-        <source>Stake delegation spent by</source>
-        <translation>加注花费委托</translation>
-    </message>
-    <message>
         <source>Mined</source>
         <translation>已挖矿</translation>
+    </message>
+    <message>
+        <source>Obfuscated</source>
+        <translation>已模糊</translation>
     </message>
     <message>
         <source>watch-only</source>
@@ -5824,8 +5870,36 @@ backup will be created.
         <translation>交易明细</translation>
     </message>
     <message>
+        <source>ID:</source>
+        <translation>ID:</translation>
+    </message>
+    <message>
+        <source>492526e7fa3c810b35016...40a5df85ee227ab00b1156994</source>
+        <translation>492526e7fa3c810b35016...40a5df85ee227ab00b1156994</translation>
+    </message>
+    <message>
+        <source>Sending to: </source>
+        <translation>正在发送到：</translation>
+    </message>
+    <message>
+        <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
+        <translation>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </translation>
+    </message>
+    <message>
         <source>Total amount</source>
         <translation>总金额</translation>
+    </message>
+    <message>
+        <source>2 SAPP</source>
+        <translation>2 SAPP</translation>
+    </message>
+    <message>
+        <source>Coin inputs:</source>
+        <translation>币输入：</translation>
+    </message>
+    <message>
+        <source>1 Inputs</source>
+        <translation>1 输入</translation>
     </message>
     <message>
         <source>Previous Transaction</source>
@@ -5836,52 +5910,52 @@ backup will be created.
         <translation>导出索引</translation>
     </message>
     <message>
+        <source>Fee:</source>
+        <translation>费用：</translation>
+    </message>
+    <message>
+        <source>0.0001 SAPP</source>
+        <translation>0.0001 SAPP</translation>
+    </message>
+    <message>
+        <source>Change address:</source>
+        <translation>更改地址：</translation>
+    </message>
+    <message>
         <source>D7VFR83SQbie…BhjcWJtcfip5krte2Z </source>
         <translation>D7VFR83SQbie…BhjcWJtcfip5krte2Z </translation>
+    </message>
+    <message>
+        <source>Confirmations:</source>
+        <translation>确认：</translation>
+    </message>
+    <message>
+        <source>12</source>
+        <translation>12</translation>
+    </message>
+    <message>
+        <source>Size:</source>
+        <translation>大小：</translation>
+    </message>
+    <message>
+        <source>2 kB</source>
+        <translation>2 kB</translation>
+    </message>
+    <message>
+        <source>Date:</source>
+        <translation>日期：</translation>
     </message>
     <message>
         <source>May 25, 2017</source>
         <translation>2017年5月25</translation>
     </message>
     <message>
-        <source>ID</source>
-        <translation>ID</translation>
-    </message>
-    <message>
-        <source>Sending to</source>
-        <translation>花费</translation>
-    </message>
-    <message>
-        <source>Coin inputs</source>
-        <translation>币输入</translation>
-    </message>
-    <message>
-        <source>Fee</source>
-        <translation>费用</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>大小</translation>
-    </message>
-    <message>
-        <source>Change address</source>
-        <translation>变更地址</translation>
+        <source>Status:</source>
+        <translation>状态：</translation>
     </message>
     <message>
         <source>Spendable</source>
         <translation>可用</translation>
-    </message>
-    <message>
-        <source>Confirmations</source>
-        <translation>确认</translation>
-    </message>
-    <message>
-        <source>Status</source>
-        <translation>状态</translation>
-    </message>
-    <message>
-        <source>Date</source>
-        <translation>日期</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -5893,7 +5967,7 @@ backup will be created.
     </message>
     <message>
         <source>OK</source>
-        <translation>好的</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Confirm Your Transaction</source>
@@ -5927,8 +6001,8 @@ backup will be created.
         <translation>18/05/18</translation>
     </message>
     <message>
-        <source>+0.000585 PIV</source>
-        <translation>+0.000585 PIV</translation>
+        <source>+0.000585 SAPP</source>
+        <translation>+0.000585 SAPP</translation>
     </message>
 </context>
 <context>
@@ -5938,12 +6012,43 @@ backup will be created.
         <translation>发送币</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 PIV.</source>
-        <translation>SwiftX目前还不支持发送这么高的值。当前的交易限制为%1 PIV。</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 SAPP.</source>
+        <translation>SwiftX目前还不支持发送这么高的值。当前的交易限制为%1 SAPP。</translation>
+    </message>
+</context>
+<context>
+    <name>WalletPasswordDialog</name>
+    <message>
+        <source>Dialog</source>
+        <translation>对话框</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>文本标签</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>按钮</translation>
+    </message>
+    <message>
+        <source>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</source>
+        <translation>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>删除</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
     <name>WelcomeContentWidget</name>
+    <message>
+        <source>Dialog</source>
+        <translation>对话框</translation>
+    </message>
     <message>
         <source>1</source>
         <translation>1</translation>
@@ -5982,25 +6087,25 @@ backup will be created.
     </message>
     <message>
         <source>Welcome to
-PIVX Core Wallet</source>
+Sap Wallet</source>
         <translation>欢迎
 PIVX核心钱包</translation>
     </message>
     <message>
-        <source>PIVX is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
+        <source>SAPP is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
         <translation>PIVX是世界上最先进的隐私保护技术，由经验丰富的开发人员和密码专家开发。</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - PIVX believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - SAPP believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;正如我们的宣言所说:隐私是一项不容协商的基本人权;它赋予用户随时随地与任何人共享数据的自由——PIVX相信自我主权&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <source>The masternode network is PIVX's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
+        <source>The masternode network is SAPP's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
         <translation>主节点网络是PIVX在区块链之上的第二层网络，它使我们的DAO能够提供去中心的治理。</translation>
     </message>
     <message>
-        <source>How PIVX respects your privacy?</source>
-        <translation>PIVX 到底是怎么尊重你的隐私的？</translation>
+        <source>How SAPP respects your privacy?</source>
+        <translation>SAPP 到底是怎么尊重你的隐私的？</translation>
     </message>
     <message>
         <source>What is a Masternode?</source>
@@ -6014,7 +6119,7 @@ PIVX核心钱包</translation>
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zPIV to Spend</source>
+        <source>Select zRPD to Spend</source>
         <translation>选择zPIV 花费</translation>
     </message>
     <message>
@@ -6050,7 +6155,7 @@ PIVX核心钱包</translation>
         <translation>选择／删除所有</translation>
     </message>
     <message>
-        <source>Select zPIV Denominations to Spend</source>
+        <source>Select zRPD Denominations to Spend</source>
         <translation>选择zPIV 面额花费</translation>
     </message>
 </context>
@@ -6077,7 +6182,11 @@ PIVX核心钱包</translation>
         <translation>绑定到给定地址监听JSON-RPC连接。使用[主机]: IPv6的端口符号。可以多次指定此选项(默认:绑定到所有接口)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. PIVX Core is probably already running.</source>
+        <source>Calculated accumulator checkpoint is not what is recorded by block index</source>
+        <translation>计算累加器检查点并不是块索引记录的内容</translation>
+    </message>
+    <message>
+        <source>Cannot obtain a lock on data directory %s. Sap is probably already running.</source>
         <translation>无法获取数据目录%s锁。PIVX核心可能已经在运行了。</translation>
     </message>
     <message>
@@ -6105,15 +6214,23 @@ PIVX核心钱包</translation>
         <translation>在MIT软件许可下发布，参见附带的文件复制或&lt;http://www.opensource.org/licenses/mit-license.php&gt;。</translation>
     </message>
     <message>
+        <source>Enable automatic Zerocoin minting from specific addresses (0-1, default: %u)</source>
+        <translation>启用从特定地址自动生成零币(0-1，默认:%u)</translation>
+    </message>
+    <message>
+        <source>Enable automatic wallet backups triggered after each zRPD minting (0-1, default: %u)</source>
+        <translation>启用每次zPIV生成后触发的自动钱包备份(0-1，默认值:%u)</translation>
+    </message>
+    <message>
         <source>Enable cold staking functionality (0-1, default: %u). Disabled if staking=0</source>
         <translation>启用冷堆叠（0-1，默认值：%u）。 如果累计= 0，则禁用</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for PIV inputs (0-1, default: %u)</source>
+        <source>Enable or disable staking functionality for SAPP inputs (0-1, default: %u)</source>
         <translation>启用或禁用PIV输入标记功能(0-1，默认值:%u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zPIV inputs (0-1, default: %u)</source>
+        <source>Enable or disable staking functionality for zRPD inputs (0-1, default: %u)</source>
         <translation>启用或禁用zPIV输入的标记功能(0-1，默认值:%u)</translation>
     </message>
     <message>
@@ -6137,10 +6254,6 @@ PIVX核心钱包</translation>
         <translation>错误:发现不支持的参数-socks。设置SOCKS版本已经不可能了，只支持SOCKS5代理。</translation>
     </message>
     <message>
-        <source>Exclude debugging information for a category. Can be used in conjunction with -debug=1 to output debug logs for all categories except one or more specified categories.</source>
-        <translation>排除调试信息类别。可以与-debug=1一起使用，输出一个或多个指定类别外的所有类别的调试日志。</translation>
-    </message>
-    <message>
         <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
         <translation>在收到相关警报时执行命令，或者看到一个很长的分叉（cmd中的%s被消息替换）</translation>
     </message>
@@ -6153,11 +6266,11 @@ PIVX核心钱包</translation>
         <translation>当最佳区块更改时执行命令(cmd中的%s被块散列替换)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <source>Fees (in SAPP/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
         <translation>小于此值的费用(以PIV/Kb为单位)视为零中继费用(默认值:%s)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <source>Fees (in SAPP/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
         <translation>小于此值的费用(以PIV/Kb为单位)被认为是交易创建的零费用(默认值:%s)</translation>
     </message>
     <message>
@@ -6213,6 +6326,10 @@ PIVX核心钱包</translation>
         <translation>防止行为不端的节点重新连接的秒数(默认值:%u)</translation>
     </message>
     <message>
+        <source>Obfuscation uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
+        <translation>模糊使用精确的金额来发送资金，你可能只需要匿名化更多的币即可。</translation>
+    </message>
+    <message>
         <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
         <translation>输出调试信息(默认:%u，&lt;category&gt;可选提供)</translation>
     </message>
@@ -6235,6 +6352,10 @@ PIVX核心钱包</translation>
     <message>
         <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
         <translation>设置高优先级/低费用交易的最大值字节大小(默认:%d)</translation>
+    </message>
+    <message>
+        <source>Set the number of included blocks to precompute per cycle. (minimum: %d) (maximum: %d) (default: %d)</source>
+        <translation>将包含的区块的数量设置为每个循环预计算。(最小值:%d)(最大值:%d)(默认值:%d)</translation>
     </message>
     <message>
         <source>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</source>
@@ -6265,8 +6386,20 @@ PIVX核心钱包</translation>
         <translation>网络版本字符串的总长度(%i)超过最大长度(%i)。减少任务的数量或大小。</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. PIVX Core is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Sap is probably already running.</source>
         <translation>无法绑定到此计算机上的%s。PIVX核心可能已经在运行了。</translation>
+    </message>
+    <message>
+        <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
+        <translation>无法为这笔交易找到足够的模糊基金。</translation>
+    </message>
+    <message>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 SAPP.</source>
+        <translation>无法找到不等于10000 PIV的模糊非计价基金来进行这笔交易。</translation>
+    </message>
+    <message>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 SAPP.</source>
+        <translation>无法为这次交易找到不等于10000 PIV的足够资金。</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -6281,8 +6414,12 @@ PIVX核心钱包</translation>
         <translation>警告:-支付tx费用设置的非常高!这是您发送交易时要支付的交易费。</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong PIVX Core will not work properly.</source>
-        <translation>注意：请检查您的电脑的日期和时间是否正确！ 如果您的时间设置不正确，PIVX Core将无法正常工作。</translation>
+        <source>Warning: Peers are being disconnected due time differences. Please check that your computer's date and time are correct! If your clock is wrong Sap will not work properly.</source>
+        <translation>警告：由于时差，对等连接已断开。 请检查计算机的日期和时间是否正确！ 如果您的时钟错误，SAPP Core将无法正常工作。</translation>
+    </message>
+    <message>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Sap will not work properly.</source>
+        <translation>注意：请检查您的电脑的日期和时间是否正确！ 如果您的时间设置不正确，SAPP Core将无法正常工作。</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -6345,6 +6482,10 @@ PIVX核心钱包</translation>
         <translation>添加要连接的节点并尝试保持连接打开</translation>
     </message>
     <message>
+        <source>Adding Wrapped Serials supply...</source>
+        <translation>添加包装的串行供应…</translation>
+    </message>
+    <message>
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
         <translation>允许DNS查找-addnode， -seednode和-connect</translation>
     </message>
@@ -6369,8 +6510,28 @@ PIVX核心钱包</translation>
         <translation>区块创建选项:</translation>
     </message>
     <message>
+        <source>Calculating missing accumulators...</source>
+        <translation>计算漏掉的计算器……</translation>
+    </message>
+    <message>
         <source>Cannot downgrade wallet</source>
         <translation>不能降级钱包</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -bind address: '%s'</source>
+        <translation>无法解析-绑定地址:'%s'</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -externalip address: '%s'</source>
+        <translation>无法解析-外部地址:'%s'</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -whitebind address: '%s'</source>
+        <translation>无法解析-空白地址:'%s</translation>
+    </message>
+    <message>
+        <source>CoinSpend: failed check</source>
+        <translation>币花费:检查失败</translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>
@@ -6397,7 +6558,7 @@ PIVX核心钱包</translation>
         <translation>版权所有(C) 2014-%i的达世核心开发者</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The PIVX Core Developers</source>
+        <source>Copyright (C) 2015-%i The Sap Developers</source>
         <translation>版权所有(C) 2015-%i PIVX核心开发者</translation>
     </message>
     <message>
@@ -6407,6 +6568,10 @@ PIVX核心钱包</translation>
     <message>
         <source>Could not parse masternode.conf</source>
         <translation>无法解析主节点配置</translation>
+    </message>
+    <message>
+        <source>Couldn't generate the accumulator witness</source>
+        <translation>无法生成累加器见证</translation>
     </message>
     <message>
         <source>Debugging/Testing options:</source>
@@ -6441,6 +6606,14 @@ PIVX核心钱包</translation>
         <translation>下载完成</translation>
     </message>
     <message>
+        <source>Enable automatic Zerocoin minting (0-1, default: %u)</source>
+        <translation>启用自动零币铸造(0-1，默认:%u)</translation>
+    </message>
+    <message>
+        <source>Enable precomputation of zRPD spends and stakes (0-1, default %u)</source>
+        <translation>启用预先计算zPIV的花费和加注(0-1，默认%u)</translation>
+    </message>
+    <message>
         <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
         <translation>启用&lt;address&gt;发布哈希交易(通过SwiftX锁定)</translation>
     </message>
@@ -6473,7 +6646,7 @@ PIVX核心钱包</translation>
         <translation>加载钱包出错。dat:钱包损坏</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of PIVX Core</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of Sap</source>
         <translation>加载的钱包出错。dat: 钱包需要更新版本的PIVX核心</translation>
     </message>
     <message>
@@ -6493,10 +6666,6 @@ PIVX核心钱包</translation>
         <translation>出错</translation>
     </message>
     <message>
-        <source>Error: </source>
-        <translation>出错：</translation>
-    </message>
-    <message>
         <source>Error: A fatal internal error occured, see debug.log for details</source>
         <translation>错误:出现一个致命的内部错误，详情请参阅debug.log</translation>
     </message>
@@ -6513,6 +6682,10 @@ PIVX核心钱包</translation>
         <translation>错误:钱包锁定，无法创建交易!</translation>
     </message>
     <message>
+        <source>Failed to calculate accumulator checkpoint</source>
+        <translation>计算累加器检查点失败</translation>
+    </message>
+    <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>监听任何端口失败。使用-listen=0即可。</translation>
     </message>
@@ -6525,7 +6698,7 @@ PIVX核心钱包</translation>
         <translation>读取区块失败</translation>
     </message>
     <message>
-        <source>Fee (in PIV/kB) to add to transactions you send (default: %s)</source>
+        <source>Fee (in SAPP/kB) to add to transactions you send (default: %s)</source>
         <translation>将费用(以PIV/kB为单位)添加到您发送的交易中(默认:%s)</translation>
     </message>
     <message>
@@ -6565,7 +6738,7 @@ PIVX核心钱包</translation>
         <translation>信息</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. PIVX Core is shutting down.</source>
+        <source>Initialization sanity check failed. Sap is shutting down.</source>
         <translation>初始化完整性检查失败。PIVX核心快要关闭了。</translation>
     </message>
     <message>
@@ -6581,8 +6754,28 @@ PIVX核心钱包</translation>
         <translation>无效的-洋葱地址或主机名:'%s'</translation>
     </message>
     <message>
+        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
+        <translation>-tx费用最大值fee的无效金额=:'%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</source>
+        <translation>-最小延时费用的无效金额=&lt;amount&gt;:'%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -mintxfee=&lt;amount&gt;: '%s'</source>
+        <translation>-最小tx费用的无效金额=:'%s'</translation>
+    </message>
+    <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
         <translation>支付tx费用金额无效=:'&lt;amount&gt;%s'(必须至少是%s)</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>
+        <translation>支付tx金额无效=:'&lt;amount&gt;'%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -reservebalance=&lt;amount&gt;</source>
+        <translation>储蓄金额无效＝&lt;amount&gt;</translation>
     </message>
     <message>
         <source>Invalid amount</source>
@@ -6601,11 +6794,23 @@ PIVX核心钱包</translation>
         <translation>在masternode.conf中检测到无效端口</translation>
     </message>
     <message>
-        <source>Recalculating PIV supply...</source>
+        <source>Percentage of automatically minted Zerocoin  (1-100, default: %u)</source>
+        <translation>自动铸造零币的百分比(1-100，默认:%u)</translation>
+    </message>
+    <message>
+        <source>Recalculating SAPP supply...</source>
         <translation>重新计算PIV供应量……</translation>
     </message>
     <message>
-        <source>Reindex the PIV and zPIV money supply statistics</source>
+        <source>Recalculating minted ZPIV...</source>
+        <translation>重新计算铸造ZPIV……</translation>
+    </message>
+    <message>
+        <source>Recalculating spent ZPIV...</source>
+        <translation>重新计算ZPIV……</translation>
+    </message>
+    <message>
+        <source>Reindex the SAPP and zRPD money supply statistics</source>
         <translation>重新索引PIV和zPIV货币供应统计数据</translation>
     </message>
     <message>
@@ -6619,6 +6824,10 @@ PIVX核心钱包</translation>
     <message>
         <source>Selected coins value is less than payment target</source>
         <translation>所选择币价值低于支付目标金额</translation>
+    </message>
+    <message>
+        <source>Support the zerocoin light node protocol (default: %u)</source>
+        <translation>支持零币轻节点协议(默认:%u)</translation>
     </message>
     <message>
         <source>SwiftX options:</source>
@@ -6645,7 +6854,7 @@ PIVX核心钱包</translation>
 </translation>
     </message>
     <message>
-        <source>Disable all PIVX specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <source>Disable all SAPP specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
         <translation>禁用所有PIVX特定功能(主节点, 零币, SwiftX, budget)(0-1，默认值:%u)</translation>
     </message>
     <message>
@@ -6655,6 +6864,10 @@ PIVX核心钱包</translation>
     <message>
         <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation>错误:交易被拒绝!如果你钱包里的硬币已经花掉了，比如你用了复制钱包，那么这种情况就会发生。</translation>
+    </message>
+    <message>
+        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
+        <translation>错误:此交易需要至少%s的交易费用，因为其数额，复杂性，或使用最近收到的资金!</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
@@ -6671,6 +6884,14 @@ PIVX核心钱包</translation>
     <message>
         <source>In rare cases, a spend with 7 coins exceeds our maximum allowable transaction size, please retry spend using 6 or less coins</source>
         <translation>在极少数情况下，7个硬币的花费超过了我们的最大允许交易大小，请重试使用6个或更少的硬币</translation>
+    </message>
+    <message>
+        <source>Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)</source>
+        <translation>自动铸造零币的首选面额(1/5/10/50/100/500/1000/5000)，0为无偏好。默认值: %u)</translation>
+    </message>
+    <message>
+        <source>Specify custom backup path to add a copy of any automatic zRPD backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>指定自定义备份路径，以添加任何自动zPIV备份的副本。如果将其设置为dir，则每个备份将生成一个时间戳文件。如果设置为文件，将重写到该文件的每次备份。如果还设置了备份文件，则会进行4次备份</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -6691,6 +6912,10 @@ PIVX核心钱包</translation>
     <message>
         <source>Cannot create public spend input</source>
         <translation>不能创造公共花费投入</translation>
+    </message>
+    <message>
+        <source>CoinSpend: Accumulator witness does not verify</source>
+        <translation>投币:累加器见证不验证</translation>
     </message>
     <message>
         <source>Display the stake modifier calculations in the debug.log file.</source>
@@ -6729,6 +6954,10 @@ PIVX核心钱包</translation>
         <translation>错误:没有有效的utxo!</translation>
     </message>
     <message>
+        <source>Failed to create mint</source>
+        <translation>创建铸造失败</translation>
+    </message>
+    <message>
         <source>Failed to find Zerocoins in wallet.dat</source>
         <translation>钱包里没找到零币</translation>
     </message>
@@ -6747,10 +6976,6 @@ PIVX核心钱包</translation>
     <message>
         <source>Failed to write coin serial number into wallet</source>
         <translation>硬币序列号写入钱包失败</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -%s=&lt;amount&gt;: '%s'</source>
-        <translation>金额无效-%s=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
@@ -6777,10 +7002,6 @@ PIVX核心钱包</translation>
         <translation>正在下载地址...</translation>
     </message>
     <message>
-        <source>Loading banlist...</source>
-        <translation>正在下载banlist...</translation>
-    </message>
-    <message>
         <source>Loading block index...</source>
         <translation>正在下载区块索引...</translation>
     </message>
@@ -6801,6 +7022,10 @@ PIVX核心钱包</translation>
         <translation>正在下载分叉...</translation>
     </message>
     <message>
+        <source>Loading wallet... (%3.2f %%)</source>
+        <translation>站在下载钱包……(%3.2f %%)</translation>
+    </message>
+    <message>
         <source>Loading wallet...</source>
         <translation>正在下载钱包……</translation>
     </message>
@@ -6815,10 +7040,6 @@ PIVX核心钱包</translation>
     <message>
         <source>Lookup(): Invalid -proxy address or hostname: '%s'</source>
         <translation>查找():无效-代理地址或主机名:'%s'</translation>
-    </message>
-    <message>
-        <source>MNs synchronization pending...</source>
-        <translation>MNs同步正在进行...</translation>
     </message>
     <message>
         <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>
@@ -6861,10 +7082,6 @@ PIVX核心钱包</translation>
         <translation>要保留的自定义位置备份的数量(默认值:%d)</translation>
     </message>
     <message>
-        <source>On first run, create a legacy wallet instead of a HD wallet</source>
-        <translation>第一次运行，创建一个遗留钱包而不是HD钱包</translation>
-    </message>
-    <message>
         <source>Only accept block chain matching built-in checkpoints (default: %u)</source>
         <translation>只接受与内置检查点匹配的区块链(默认:%u)</translation>
     </message>
@@ -6881,10 +7098,6 @@ PIVX核心钱包</translation>
         <translation>SON-RPC连接的密码</translation>
     </message>
     <message>
-        <source>Peers are being disconnected due time differences.</source>
-        <translation>由于时间差异，节点被断开连接。</translation>
-    </message>
-    <message>
         <source>Unable to find transaction containing mint %s</source>
         <translation>无法找到包含铸造 %s的交易</translation>
     </message>
@@ -6897,28 +7110,16 @@ PIVX核心钱包</translation>
         <translation>使用垃圾邮件过滤器块(默认:%u)</translation>
     </message>
     <message>
+        <source>could not get lock on cs_spendcache</source>
+        <translation>无法锁定cs_spendcache</translation>
+    </message>
+    <message>
         <source>isValid(): Invalid -proxy address or hostname: '%s'</source>
         <translation>isValid():无效-代理地址或主机名:'%s'</translation>
     </message>
     <message>
         <source>Preparing for resync...</source>
         <translation>准备重新同步……</translation>
-    </message>
-    <message>
-        <source>Please check that your computer's date and time are correct! If your clock is wrong PIVX Core will not work properly.</source>
-        <translation>请检查您的电脑的日期和时间是否正确!如果你的时间错误，PIVX Core将无法正常工作。</translation>
-    </message>
-    <message>
-        <source>Specify location of debug log file: this can be an absolute path or a path relative to the data directory (default: %s)</source>
-        <translation>指定调试日志文件的位置:可以是绝对路径，也可以是相对于数据目录的路径(默认值:%s)</translation>
-    </message>
-    <message>
-        <source>Cannot resolve -%s address: '%s'</source>
-        <translation>无法解析-%s地址:'%s'</translation>
-    </message>
-    <message>
-        <source>Cannot upgrade to HD wallet (already running HD support). Version: %d</source>
-        <translation>无法升级到HD钱包(已经运行HD支持)。版本: %d</translation>
     </message>
     <message>
         <source>Need destination or change address because change is not exact</source>
@@ -6951,6 +7152,14 @@ PIVX核心钱包</translation>
     <message>
         <source>Rebuild block chain index from current blk000??.dat files</source>
         <translation>从当前的blk000??.dat文件重建块链索引。</translation>
+    </message>
+    <message>
+        <source>Receive and display P2P network alerts (default: %u)</source>
+        <translation>接收和显示P2P网络警报(默认:%u)</translation>
+    </message>
+    <message>
+        <source>Reindex the accumulator database</source>
+        <translation>重新索引累加器数据库</translation>
     </message>
     <message>
         <source>Relay and mine data carrier transactions (default: %u)</source>
@@ -6987,6 +7196,10 @@ PIVX核心钱包</translation>
     <message>
         <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
         <translation>可以的话，以零费用方式发送交易(默认:%u)</translation>
+    </message>
+    <message>
+        <source>Session timed out.</source>
+        <translation>会话超时。</translation>
     </message>
     <message>
         <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
@@ -7031,6 +7244,10 @@ PIVX核心钱包</translation>
     <message>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
         <translation>客户端启动时收缩debug.log文件(没有-debug时默认为1)</translation>
+    </message>
+    <message>
+        <source>Signing timed out.</source>
+        <translation>签署超时。</translation>
     </message>
     <message>
         <source>Signing transaction failed</source>
@@ -7089,6 +7306,10 @@ PIVX核心钱包</translation>
         <translation>同步已完成</translation>
     </message>
     <message>
+        <source>Synchronization pending...</source>
+        <translation>同步等待……</translation>
+    </message>
+    <message>
         <source>Synchronizing budgets...</source>
         <translation>正在同步预算...</translation>
     </message>
@@ -7105,8 +7326,16 @@ PIVX核心钱包</translation>
         <translation>正在同步分叉...</translation>
     </message>
     <message>
-        <source>Syncing zPIV wallet...</source>
+        <source>Syncing zRPD wallet...</source>
         <translation>正在同步zPIV钱包……</translation>
+    </message>
+    <message>
+        <source>The coin spend has been used</source>
+        <translation>币花费已经用完了</translation>
+    </message>
+    <message>
+        <source>The transaction did not verify</source>
+        <translation>交易没有得到验证</translation>
     </message>
     <message>
         <source>This help message</source>
@@ -7173,10 +7402,6 @@ PIVX核心钱包</translation>
         <translation>无法生成初始密钥</translation>
     </message>
     <message>
-        <source>Unable to generate keys</source>
-        <translation>无法合成密钥</translation>
-    </message>
-    <message>
         <source>Unable to sign spork message, wrong key?</source>
         <translation>无法签署的分叉消息，错误的关键?</translation>
     </message>
@@ -7187,10 +7412,6 @@ PIVX核心钱包</translation>
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
         <translation>在-onlynet中指定的未知网络:'%s'</translation>
-    </message>
-    <message>
-        <source>Unsupported logging category %s=%s.</source>
-        <translation>不支持此日志记录类别%s=%s。</translation>
     </message>
     <message>
         <source>Upgrade wallet to latest format</source>
@@ -7221,7 +7442,7 @@ PIVX核心钱包</translation>
         <translation>JSON-RPC连接的用户名</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zPIV</source>
+        <source>Value is below the smallest available denomination (= 1) of zRPD</source>
         <translation>值小于zPIV的最小可用面额(= 1)</translation>
     </message>
     <message>
@@ -7237,7 +7458,7 @@ PIVX核心钱包</translation>
         <translation>钱包%s驻留在数据目录%s之外</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart PIVX Core to complete</source>
+        <source>Wallet needed to be rewritten: restart Sap to complete</source>
         <translation>钱包需要重写:重新启动PIVX核心完成</translation>
     </message>
     <message>
@@ -7281,10 +7502,6 @@ PIVX核心钱包</translation>
         <translation>ZeroMQ通知选项:</translation>
     </message>
     <message>
-        <source>Zerocoin minting available only on regtest</source>
-        <translation>零币铸造只能在regtest可用</translation>
-    </message>
-    <message>
         <source>Zerocoin options:</source>
         <translation>零币选项：</translation>
     </message>
@@ -7310,10 +7527,6 @@ PIVX核心钱包</translation>
     <message>
         <source>TextLabel</source>
         <translation>文本标签</translation>
-    </message>
-    <message>
-        <source>Include delegated</source>
-        <translation>包含委托</translation>
     </message>
     <message>
         <source>PushButton</source>

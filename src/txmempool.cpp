@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
-// Copyright (c) 2016-2020 The PIVX developers
+// Copyright (c) 2016-2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -322,7 +322,7 @@ public:
     void Write(CAutoFile& fileout) const
     {
         fileout << nBestSeenHeight;
-        fileout << (uint32_t)history.size();
+        fileout << history.size();
         for (const CBlockAverage& entry : history) {
             entry.Write(fileout);
         }
@@ -332,7 +332,7 @@ public:
     {
         int nFileBestSeenHeight;
         filein >> nFileBestSeenHeight;
-        uint32_t numEntries;
+        size_t numEntries;
         filein >> numEntries;
         if (numEntries <= 0 || numEntries > 10000)
             throw std::runtime_error("Corrupt estimates file. Must have between 1 and 10k entries.");

@@ -15,7 +15,7 @@
     </message>
     <message>
         <source>PushButton</source>
-        <translation>DrukKnop</translation>
+        <translation>Druk Knop</translation>
     </message>
     <message>
         <source>CANCEL</source>
@@ -54,7 +54,7 @@
     </message>
     <message>
         <source>Enter a name for the address (e.g Exchange)</source>
-        <translation>Voeg een naam toe bij het behorende adres (bv, Exchange)</translation>
+        <translation>Voeg een naam toe bij het behorende adres</translation>
     </message>
     <message>
         <source>SAVE</source>
@@ -130,12 +130,12 @@
         <translation>Ontvangstadressen</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dit zijn uw PIVX adressen om betalingen mee te verzenden. Controleer altijd zowel het bedrag als het ontvangstadres voor het verzenden van geld.</translation>
+        <source>These are your SAPP addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dit zijn uw SAPP adressen om betalingen mee te verzenden. Controleer altijd zowel het bedrag als het ontvangstadres voor het verzenden van geld.</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dit zijn uw PIVX adressen waarop betalingen kunnen worden ontvangen. Het wordt aangeraden om een nieuw ontvangstadres voor elke transactie te gebruiken.</translation>
+        <source>These are your SAPP addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Dit zijn uw SAPP adressen waarop betalingen kunnen worden ontvangen. Het wordt aangeraden om een nieuw ontvangstadres voor elke transactie te gebruiken.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -163,7 +163,7 @@
     </message>
     <message>
         <source>There was an error trying to save the address list to %1. Please try again.</source>
-        <translation>Er is een fout opgetreden tijdens het opslaan van de adreslijst naar %1. Probeer het opnieuw.</translation>
+        <translation>Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Probeer het nogmaals.</translation>
     </message>
 </context>
 <context>
@@ -196,10 +196,6 @@
         <translation>Datum</translation>
     </message>
     <message>
-        <source>Type</source>
-        <translation>Type</translation>
-    </message>
-    <message>
         <source>(no label)</source>
         <translation>(geen label)</translation>
     </message>
@@ -219,8 +215,8 @@
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>N/A</source>
-        <translation>NB</translation>
+        <source>No active Master Node yet</source>
+        <translation>Nog geen actieve Master Node</translation>
     </message>
     <message>
         <source>Contact name</source>
@@ -251,8 +247,8 @@
         <translation>bv. Jan Jansen</translation>
     </message>
     <message>
-        <source>Enter PIVX address</source>
-        <translation>Voer PIVX adres in</translation>
+        <source>Enter a SAPP address</source>
+        <translation>Voeg een SAPP adres toe</translation>
     </message>
     <message>
         <source>SAVE</source>
@@ -300,7 +296,7 @@ Are you sure?</source>
 
 %1
 
-Weet u het zeker?</translation>
+Weet U het zeker?</translation>
     </message>
     <message>
         <source>Contact Deleted</source>
@@ -372,18 +368,6 @@ voor bewijs van Inzet</translation>
         <translation>Bevestig versleuteling van de portemonnee</translation>
     </message>
     <message>
-        <source>WARNING</source>
-        <translation>WAARSCHUWING</translation>
-    </message>
-    <message>
-        <source>If you encrypt your wallet and lose your passphrase, you will</source>
-        <translation>Als u uw portemonnee versleutelt en uw wachtwoord vergeet, zal u</translation>
-    </message>
-    <message>
-        <source>LOSE ALL OF YOUR PIV</source>
-        <translation>AL UW PIV VERLIEZEN</translation>
-    </message>
-    <message>
         <source>ENCRYPT</source>
         <translation>Versleutelen</translation>
     </message>
@@ -392,16 +376,16 @@ voor bewijs van Inzet</translation>
         <translation>Annuleren</translation>
     </message>
     <message>
-        <source>WARNING: The Caps Lock key is on!</source>
-        <translation>Waarschuwing: De Caps Lock-toets staat aan!</translation>
-    </message>
-    <message>
-        <source>PIVX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
-        <translation>PIVX zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen tegen malware infecties op uw computer die uw PIV's kunnen stelen.</translation>
+        <source>SAPP will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your RPDs from being stolen by malware infecting your computer.</source>
+        <translation>SAPP zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen tegen malware infecties op uw computer die uw SAPP's kunnen stelen.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Weet u zeker dat u uw portemonnee wilt versleutelen?</translation>
+    </message>
+    <message>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SAPP&lt;/b&gt;!</source>
+        <translation>Waarschuwing: Als u uw portemonnee versleutelt en uw wachtwoord vergeet, zult u &lt;b&gt;AL UW SAPP VERLIEZEN&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -443,6 +427,10 @@ voor bewijs van Inzet</translation>
         <source>Wallet passphrase was successfully changed.</source>
         <translation>Portemonnee wachtwoordzin is met succes gewijzigd.</translation>
     </message>
+    <message>
+        <source>Warning: The Caps Lock key is on!</source>
+        <translation>Waarschuwing: De Caps-Lock-toets staat aan!</translation>
+    </message>
 </context>
 <context>
     <name>BanTableModel</name>
@@ -456,6 +444,37 @@ voor bewijs van Inzet</translation>
     </message>
 </context>
 <context>
+    <name>BlockExplorer</name>
+    <message>
+        <source>Blockchain Explorer</source>
+        <translation>Blockchain Verkenner</translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation>Terug</translation>
+    </message>
+    <message>
+        <source>Forward</source>
+        <translation>Volgende</translation>
+    </message>
+    <message>
+        <source>Address / Block / Transaction</source>
+        <translation>Adres / Block / Transactie</translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>Zoeken</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (sap.conf).</source>
+        <translation>Niet alle transacties zullen worden getoond. Om alle transacties te bekijken moet u txindex=1 instellen in het configuratie bestand (sap.conf).</translation>
+    </message>
+</context>
+<context>
     <name>CSRow</name>
     <message>
         <source>Form</source>
@@ -466,8 +485,8 @@ voor bewijs van Inzet</translation>
         <translation>Besparingen</translation>
     </message>
     <message>
-        <source>0,00 PIV</source>
-        <translation>0,00 PIV</translation>
+        <source>0,00 SAPP</source>
+        <translation>0,00 SAPP</translation>
     </message>
     <message>
         <source>address</source>
@@ -488,6 +507,10 @@ voor bewijs van Inzet</translation>
         <source>Total: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / Unknown: %5)</source>
         <translation>Totaal: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / Onbekend: %5)</translation>
     </message>
+    <message>
+        <source>Network Alert</source>
+        <translation>Netwerk waarschuwing</translation>
+    </message>
 </context>
 <context>
     <name>CoinControlDialog</name>
@@ -506,10 +529,6 @@ voor bewijs van Inzet</translation>
     <message>
         <source>Coin Selection</source>
         <translation>Munt Selectie</translation>
-    </message>
-    <message>
-        <source>Select PIV Outputs to Spend</source>
-        <translation>Selecteer PIV Outputs om te besteden</translation>
     </message>
     <message>
         <source>Dust:</source>
@@ -536,8 +555,16 @@ voor bewijs van Inzet</translation>
         <translation>Bedrag</translation>
     </message>
     <message>
-        <source>0.00 PIV</source>
-        <translation>0.00 PIV</translation>
+        <source>Transaction Details</source>
+        <translation>Transactie details</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Druk Knop</translation>
+    </message>
+    <message>
+        <source>0.00 SAPP</source>
+        <translation>0.00 SAPP</translation>
     </message>
     <message>
         <source>0</source>
@@ -604,40 +631,40 @@ voor bewijs van Inzet</translation>
         <translation>Unlock niet besteed</translation>
     </message>
     <message>
+        <source>Copy quantity</source>
+        <translation>Kopieer kwantiteit</translation>
+    </message>
+    <message>
+        <source>Copy fee</source>
+        <translation>Kopieer fee</translation>
+    </message>
+    <message>
+        <source>Copy after fee</source>
+        <translation>Kopieer na fee</translation>
+    </message>
+    <message>
+        <source>Copy bytes</source>
+        <translation>Kopieer bytes</translation>
+    </message>
+    <message>
+        <source>Copy priority</source>
+        <translation>Kopieer prioriteit</translation>
+    </message>
+    <message>
+        <source>Copy dust</source>
+        <translation>Kopieer dust</translation>
+    </message>
+    <message>
+        <source>Copy change</source>
+        <translation>Kopieer wisselgeld</translation>
+    </message>
+    <message>
         <source>Unselect all</source>
         <translation>Deselecteer alles</translation>
     </message>
     <message>
         <source>Please switch to "List mode" to use this function.</source>
         <translation>Schakel alsjeblieft over naar "Lijst modus" om deze functie te gebruiken.</translation>
-    </message>
-    <message>
-        <source>Quantity Copied</source>
-        <translation>Aantal gekopieerd</translation>
-    </message>
-    <message>
-        <source>Amount Copied</source>
-        <translation>Hoeveelheid gekopieerd</translation>
-    </message>
-    <message>
-        <source>Fee Copied</source>
-        <translation>Kost gekopieerd</translation>
-    </message>
-    <message>
-        <source>After Fee Copied</source>
-        <translation>Na Vergoeding Gekopieerd</translation>
-    </message>
-    <message>
-        <source>Bytes Copied</source>
-        <translation>Bytes gekopieerd</translation>
-    </message>
-    <message>
-        <source>Dust Copied</source>
-        <translation>Dust Gekopieerd</translation>
-    </message>
-    <message>
-        <source>Change Copied</source>
-        <translation>Wissel Gekopieerd</translation>
     </message>
     <message>
         <source>highest</source>
@@ -688,10 +715,6 @@ voor bewijs van Inzet</translation>
         <translation>ja</translation>
     </message>
     <message>
-        <source>delegated to %1 for cold staking</source>
-        <translation>gedelegeerd naar %1 voor cold staking</translation>
-    </message>
-    <message>
         <source>no</source>
         <translation>nee</translation>
     </message>
@@ -737,6 +760,89 @@ voor bewijs van Inzet</translation>
     </message>
 </context>
 <context>
+    <name>CoinControlPivWidget</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Dialoog</translation>
+    </message>
+    <message>
+        <source>Transaction Details</source>
+        <translation>Transactie details</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Druk Knop</translation>
+    </message>
+    <message>
+        <source>SAPP:</source>
+        <translation>SAPP:</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>Quantity:</source>
+        <translation>Kwantiteit:</translation>
+    </message>
+    <message>
+        <source>Fee:</source>
+        <translation>Fee:</translation>
+    </message>
+    <message>
+        <source>Amount</source>
+        <translation>Bedrag</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Label</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Adres</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>Type</translation>
+    </message>
+    <message>
+        <source>Date</source>
+        <translation>Datum</translation>
+    </message>
+    <message>
+        <source>Confirmations</source>
+        <translation>Bevestigingen</translation>
+    </message>
+    <message>
+        <source>CheckBox</source>
+        <translation>Selectievakje</translation>
+    </message>
+    <message>
+        <source>Bytes:</source>
+        <translation>Bytes:</translation>
+    </message>
+    <message>
+        <source>Dust:</source>
+        <translation>Dust:</translation>
+    </message>
+    <message>
+        <source>Change:</source>
+        <translation>Wisselgeld:</translation>
+    </message>
+    <message>
+        <source>After Fee: </source>
+        <translation>Na kosten</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>Annuleren</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>Akkoord</translation>
+    </message>
+</context>
+<context>
     <name>ColdStakingWidget</name>
     <message>
         <source>Form</source>
@@ -751,16 +857,24 @@ voor bewijs van Inzet</translation>
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Owner address (optional, if empty a new address will be created)</source>
-        <translation>Eigenaarsadres (optioneel, indien leeg wordt er een nieuw adres aangemaakt)</translation>
+        <source>PushButton</source>
+        <translation>Druk Knop</translation>
     </message>
     <message>
-        <source>Total Staking:</source>
-        <translation>Totaal Staking:</translation>
+        <source>Owner Address (optional, if empty a new address will be created)</source>
+        <translation>Eigenaarsadres (optioneel, indien leeg zal er een nieuw adres aangemaakt worden)</translation>
     </message>
     <message>
         <source>List of delegated balance by address</source>
         <translation>Lijst van gedelegeerde balans gesorteerd op adres</translation>
+    </message>
+    <message>
+        <source>Total</source>
+        <translation>Totaal</translation>
+    </message>
+    <message>
+        <source>Unconfirmed balance will not be shown</source>
+        <translation>Onbevestigde saldi zal niet getoond worden</translation>
     </message>
     <message>
         <source>No balance delegated</source>
@@ -779,12 +893,30 @@ voor bewijs van Inzet</translation>
         <translation>Delegatie</translation>
     </message>
     <message>
+        <source>You can delegate your RPDs and let a hot node (24/7 online node)
+stake in your behalf, keeping the keys in a secure place offline.</source>
+        <translation>Je kan jouw RPDs delegeren en een hot node (24/7 online node)
+laten staken in jouw naam, waardoor de sleutels in een veilige offline opslag bewaard worden.</translation>
+    </message>
+    <message>
+        <source>Add owner address</source>
+        <translation>Eigenaarsadres toevoegen</translation>
+    </message>
+    <message>
+        <source>Delegate or Accept SAPP delegation</source>
+        <translation>Delegeer of Accepteer SAPP delegatie</translation>
+    </message>
+    <message>
         <source>Delegate</source>
         <translation>Delegeer</translation>
     </message>
     <message>
         <source>Clear All</source>
         <translation>Alles wissen</translation>
+    </message>
+    <message>
+        <source>Add the staking address</source>
+        <translation>Staking-adres toevoegen</translation>
     </message>
     <message>
         <source>Delegated balance history</source>
@@ -803,34 +935,8 @@ voor bewijs van Inzet</translation>
         <translation>Fout bij laden delegaties: %1</translation>
     </message>
     <message>
-        <source>You can delegate your PIVs, letting a hot node (24/7 online node)
-stake on your behalf, while you keep the keys securely offline.</source>
-        <translation>Je kan jouw PIVs delegeren en een hot node (24/7 online node)
-voor je laten staken, terwijl je de sleutels veilig offline opslag bewaart.</translation>
-    </message>
-    <message>
-        <source>Enter owner address</source>
-        <translation>Voer eigenaarsadres in</translation>
-    </message>
-    <message>
-        <source>Accept PIV delegation / Delegate PIV</source>
-        <translation>Accepteer PIV delegatie / Delegeer PIV</translation>
-    </message>
-    <message>
-        <source>Cold Staking address</source>
-        <translation>Cold Staking adres</translation>
-    </message>
-    <message>
-        <source>No receive addresses available, you can go to the receive screen and create some there!</source>
-        <translation>Geen ontvangstadressen beschikbare, je kan naar het ontvangstscherm gaan en daar enkele toevoegen!</translation>
-    </message>
-    <message>
         <source>No contacts available, you can go to the contacts screen and add some there!</source>
         <translation>Geen beschikbare contacten, je kan naar het contactscherm gaan en daar enkele toevoegen!</translation>
-    </message>
-    <message>
-        <source>Cannot send delegation, wallet locked</source>
-        <translation>Kan delegatie niet versturen, portemonnee vergrendeld</translation>
     </message>
     <message>
         <source>Cold staking is networkely disabled</source>
@@ -841,8 +947,8 @@ voor je laten staken, terwijl je de sleutels veilig offline opslag bewaart.</tra
         <translation>Ongeldige invoer</translation>
     </message>
     <message>
-        <source>Invalid entry, minimum delegable amount is </source>
-        <translation>Ongeldige invoer, minimaal te delegeren bedrag is</translation>
+        <source>Invalid entry, minimum delegable amount is 10 SAPP</source>
+        <translation>Ongeldige invoer, de minimum gedelegeerde hoeveelheid is 10 SAPP</translation>
     </message>
     <message>
         <source>Owner address invalid</source>
@@ -881,12 +987,8 @@ Wil je verdergaan?</translation>
         <translation>Gedelegeerde Munten</translation>
     </message>
     <message>
-        <source>You don't have any PIV to select.</source>
-        <translation>Je hebt geen PIV om te selecteren</translation>
-    </message>
-    <message>
-        <source>Cannot perform operation, wallet locked</source>
-        <translation>Kan deze actie niet uitvoeren, portemonnee vergrendeld</translation>
+        <source>You don't have any SAPP to select.</source>
+        <translation>Je hebt geen SAPP om te selecteren</translation>
     </message>
     <message>
         <source>URI copied to clipboard</source>
@@ -1000,6 +1102,10 @@ address</source>
         <translation>Geen transacties</translation>
     </message>
     <message>
+        <source>PushButton</source>
+        <translation>Druk Knop</translation>
+    </message>
+    <message>
         <source>Staking Rewards</source>
         <translation>Staking Beloningen</translation>
     </message>
@@ -1012,12 +1118,12 @@ address</source>
         <translation>Staking statistieken</translation>
     </message>
     <message>
-        <source>PIV</source>
-        <translation>PIV</translation>
+        <source>SAPP</source>
+        <translation>SAPP</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>zRPD</source>
+        <translation>zRPD</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -1048,8 +1154,52 @@ address</source>
         <translation>U kunt de geschiedenis van uw account bekijken</translation>
     </message>
     <message>
-        <source>Amount of PIV and zPIV staked.</source>
-        <translation>Hoeveelheid aan gestaked PIV en zPIV.</translation>
+        <source>Amount of SAPP and zRPD staked.</source>
+        <translation>Hoeveelheid aan gestaked SAPP en zRPD.</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Alle</translation>
+    </message>
+    <message>
+        <source>Received</source>
+        <translation>Ontvangen</translation>
+    </message>
+    <message>
+        <source>Sent</source>
+        <translation>Verstuurd</translation>
+    </message>
+    <message>
+        <source>Mined</source>
+        <translation>Mined</translation>
+    </message>
+    <message>
+        <source>Minted</source>
+        <translation>Minted</translation>
+    </message>
+    <message>
+        <source>MN reward</source>
+        <translation>MN beloning</translation>
+    </message>
+    <message>
+        <source>To yourself</source>
+        <translation>Naar jezelf</translation>
+    </message>
+    <message>
+        <source>Cold stakes</source>
+        <translation>Cold stakes</translation>
+    </message>
+    <message>
+        <source>Hot stakes</source>
+        <translation>Hot stakes</translation>
+    </message>
+    <message>
+        <source>Delegated</source>
+        <translation>Gedelegeerd</translation>
+    </message>
+    <message>
+        <source>Delegations</source>
+        <translation>Delegaties</translation>
     </message>
     <message>
         <source>Please wait until the wallet is fully synced to see your correct balance</source>
@@ -1060,8 +1210,8 @@ address</source>
         <translation>Nog geen transacties</translation>
     </message>
     <message>
-        <source>How to get PIV or zPIV</source>
-        <translation>Hoe PIV of zPIV verkrijgen</translation>
+        <source>How to get SAPP or zRPD</source>
+        <translation>Hoe SAPP of zRPD verkrijgen</translation>
     </message>
     <message>
         <source>You can verify the staking activity in the status bar at the top right of the wallet.
@@ -1118,6 +1268,69 @@ Het zal automatisch starten zodra de portemonnee voldoende bevestigingen heeft o
     </message>
 </context>
 <context>
+    <name>DenomGenerationDialog</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulier</translation>
+    </message>
+    <message>
+        <source>Transaction Details</source>
+        <translation>Transactie details</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Druk Knop</translation>
+    </message>
+    <message>
+        <source>This will unlock your wallet fully, so that anyone with access to it can spend until the wallet is closed or locked again.</source>
+        <translation>Hiermee wordt uw portemonnee volledig ontgrendeld, zodat iedereen die er toegang toe heeft, deze kan uitgeven totdat de portemonnee weer wordt gesloten of vergrendeld.</translation>
+    </message>
+    <message>
+        <source>5000</source>
+        <translation>5000</translation>
+    </message>
+    <message>
+        <source>100</source>
+        <translation>100</translation>
+    </message>
+    <message>
+        <source>10</source>
+        <translation>10</translation>
+    </message>
+    <message>
+        <source>1000</source>
+        <translation>1000</translation>
+    </message>
+    <message>
+        <source>50</source>
+        <translation>50</translation>
+    </message>
+    <message>
+        <source>500</source>
+        <translation>500</translation>
+    </message>
+    <message>
+        <source>5</source>
+        <translation>5</translation>
+    </message>
+    <message>
+        <source>1</source>
+        <translation>1</translation>
+    </message>
+    <message>
+        <source>Select All</source>
+        <translation>Selecteer Alles</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>Annuleren</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>Opslaan</translation>
+    </message>
+</context>
+<context>
     <name>EditAddressDialog</name>
     <message>
         <source>Edit Address</source>
@@ -1156,8 +1369,8 @@ Het zal automatisch starten zodra de portemonnee voldoende bevestigingen heeft o
         <translation>Wijzig verzend adres</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid PIVX address.</source>
-        <translation>Het ingevoerde adres: "%1" is geen geldig PIVX adres.</translation>
+        <source>The entered address "%1" is not a valid SAPP address.</source>
+        <translation>Het ingevoerde adres: "%1" is geen geldig SAPP adres.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1203,22 +1416,65 @@ Het zal automatisch starten zodra de portemonnee voldoende bevestigingen heeft o
     </message>
 </context>
 <context>
+    <name>GovernancePage</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulier</translation>
+    </message>
+    <message>
+        <source>GOVERNANCE</source>
+        <translation>BESTUUR</translation>
+    </message>
+    <message>
+        <source>Update Proposals</source>
+        <translation>Voorstellen Bijwerken</translation>
+    </message>
+    <message>
+        <source>Next super block:</source>
+        <translation>Volgende superblok:</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <source>Blocks to next super block:</source>
+        <translation>Blokken tot de volgende superblok:</translation>
+    </message>
+    <message>
+        <source>Days to budget payout (estimate):</source>
+        <translation>Dagen tot budgetuitbetaling (schatting):</translation>
+    </message>
+    <message>
+        <source>Allotted budget:</source>
+        <translation>Toegewezen budget:</translation>
+    </message>
+    <message>
+        <source>Budget left:</source>
+        <translation>Resterend budget:</translation>
+    </message>
+    <message>
+        <source>Masternodes count:</source>
+        <translation>Masternodes aantal:</translation>
+    </message>
+</context>
+<context>
     <name>HelpMessageDialog</name>
     <message>
         <source>version</source>
         <translation>versie</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Sap</source>
+        <translation>Sap</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About PIVX Core</source>
-        <translation>Over PIVX Core</translation>
+        <source>About Sap</source>
+        <translation>Over Sap</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1245,10 +1501,6 @@ Het zal automatisch starten zodra de portemonnee voldoende bevestigingen heeft o
         <translation>Toon splash scherm bij opstarten (standaard: %u)</translation>
     </message>
     <message>
-        <source>Hide QT staking charts on startup (default: %u)</source>
-        <translation>Verberg QT stakinggrafieken bij opstarten (standaard: %u)</translation>
-    </message>
-    <message>
         <source>Set language, for example "de_DE" (default: system locale)</source>
         <translation>Stel taal in, bijvoorbeeld "de_DE" (standaard: systeem locale)</translation>
     </message>
@@ -1272,16 +1524,16 @@ Het zal automatisch starten zodra de portemonnee voldoende bevestigingen heeft o
         <translation>Welkom</translation>
     </message>
     <message>
-        <source>Welcome to PIVX Core.</source>
-        <translation>Welkom bij PIVX Core.</translation>
+        <source>Welcome to Sap.</source>
+        <translation>Welkom bij Sap.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where PIVX Core will store its data.</source>
-        <translation>Aangezien dit de eerste keer is dat het programma is gestart, kun je kiezen waar PIVX Core zijn data opslaat.</translation>
+        <source>As this is the first time the program is launched, you can choose where Sap will store its data.</source>
+        <translation>Aangezien dit de eerste keer is dat het programma is gestart, kun je kiezen waar Sap zijn data opslaat.</translation>
     </message>
     <message>
-        <source>PIVX Core will download and store a copy of the PIVX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>PIVX Core zal een kopie van de PIVX blockchain downloaden en opslaan. Tenminste %1GB aan data zal worden opgeslagen in deze map en het zal over de tijd groeien. De portemonnee zal ook in deze map worden opgeslagen.</translation>
+        <source>Sap will download and store a copy of the SAPP block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Sap zal een kopie van de SAPP blockchain downloaden en opslaan. Tenminste %1GB aan data zal worden opgeslagen in deze map en het zal over de tijd groeien. De portemonnee zal ook in deze map worden opgeslagen.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1300,8 +1552,8 @@ Het zal automatisch starten zodra de portemonnee voldoende bevestigingen heeft o
         <translation>Akkoord</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Sap</source>
+        <translation>Sap</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1364,6 +1616,18 @@ Het zal automatisch starten zodra de portemonnee voldoende bevestigingen heeft o
         <source>Form</source>
         <translation>Formulier</translation>
     </message>
+    <message>
+        <source>user_masternode</source>
+        <translation>user_masternode</translation>
+    </message>
+    <message>
+        <source>Address: 88.26.164.88:51474</source>
+        <translation>Adres: 88.26.164.88:51474</translation>
+    </message>
+    <message>
+        <source>Jan. 19, 2019</source>
+        <translation>Jan. 19, 2019</translation>
+    </message>
 </context>
 <context>
     <name>MasterNodeWizardDialog</name>
@@ -1396,32 +1660,28 @@ Het zal automatisch starten zodra de portemonnee voldoende bevestigingen heeft o
         <translation>Adres</translation>
     </message>
     <message>
-        <source>Create New Masternode Controller</source>
-        <translation>Creëer Nieuwe Masternode Controller</translation>
+        <source>Create New Master Node Controller</source>
+        <translation>Creëer een Nieuwe Masternode Controller</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a PIVX Masternode you must dedicate 10,000 PIV (the unit of PIVX) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Om een PIVX Masternode te creëren moet u 10.000 PIV (de eenheid van PIVX) aan het netwerk wijden (deze munten zijn echter nog steeds van u en zullen nooit uw bezit verlaten). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;U kunt de node op elk gewenst moment deactiveren en de munten ontgrendelen.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-        <source>Set Masternode Name</source>
-        <translation>Stel de naam voor de Masternode in</translation>
-    </message>
-    <message>
-        <source>Set Masternode IP and Port</source>
-        <translation>Stel het IP-adres en de Poort voor de Masternode in</translation>
-    </message>
-    <message>
-        <source>Enter port</source>
-        <translation>Voer poort in</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a SAPP Masternode you must dedicate 10.000 SAPP (the unit of SAPP) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Om een SAPP Masternode te maken moet u 10.000 SAPP (de eenheid van SAPP) aan het netwerk wijden (deze munten zijn echter nog steeds van u en zullen nooit uw bezit verlaten). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;U kunt de node op elk gewenst moment deactiveren en de munten ontgrendelen.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Make sure you have this amount of coins.</source>
         <translation>Zorg ervoor dat je deze hoeveelheid munten hebt.</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 PIV will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Een transactie van 10,000 PIV zal gemaakt worden&lt;/p&gt;&lt;p&gt;naar een nieuw leeg adres in uw portemonnee.&lt;/p&gt;&lt;p&gt;Het adres is gelabeld onder de masternode's naam.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>Set Master Node’s Name</source>
+        <translation>Masternode's Naam instellen</translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 SAPP will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Een transactie van 10,000 SAPP zal gemaakt worden&lt;/p&gt;&lt;p&gt;naar een nieuw leeg adres in uw portemonnee.&lt;/p&gt;&lt;p&gt;Het adres is gelabeld onder de masternode's naam.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <source>Set Master Node’s IP and port</source>
+        <translation>Masternode's IP en poort instellen</translation>
     </message>
     <message>
         <source>Address of the node that must always be online running the actual master node.</source>
@@ -1430,6 +1690,10 @@ Het zal automatisch starten zodra de portemonnee voldoende bevestigingen heeft o
     <message>
         <source>Enter IP address</source>
         <translation>Voer IP-adres in</translation>
+    </message>
+    <message>
+        <source>Enter Port</source>
+        <translation>Voer Poort In</translation>
     </message>
     <message>
         <source>CANCEL</source>
@@ -1460,34 +1724,12 @@ Het zal automatisch starten zodra de portemonnee voldoende bevestigingen heeft o
         <translation>IP of poort kan niet leeg zijn</translation>
     </message>
     <message>
-        <source>Invalid IP address</source>
-        <translation>Ongeldig IP-adres</translation>
+        <source>Invalid port number</source>
+        <translation>Ongeldige poortnummer</translation>
     </message>
     <message>
-        <source>Prepare master node failed.
-
-%1
-</source>
-        <translation>Voorbereiden masternode mislukt.
-
-%1
-</translation>
-    </message>
-    <message>
-        <source>Invalid collateral output index</source>
-        <translation>Ongeldige Collaterale Outputindex</translation>
-    </message>
-    <message>
-        <source>Master node created! Wait %1 confirmations before starting it.</source>
-        <translation>Masternode gecreëerd! Wacht op %1 bevestigingen vooraleer je het start. </translation>
-    </message>
-    <message>
-        <source>Cannot send collateral transaction.
-
-%1</source>
-        <translation>Kan geen collaterale transactie versturen.
-
-%1</translation>
+        <source>Prepare master node failed..</source>
+        <translation>Voorbereiden masternode mislukt..</translation>
     </message>
     <message>
         <source>Invalid masternode.conf file</source>
@@ -1498,8 +1740,56 @@ Het zal automatisch starten zodra de portemonnee voldoende bevestigingen heeft o
         <translation>Fout opgelopen bij het parsen van het masternode.conf bestand</translation>
     </message>
     <message>
+        <source>Invalid collaterall output index</source>
+        <translation>Ongeldige Collaterale Outputindex</translation>
+    </message>
+    <message>
+        <source>Master node created!</source>
+        <translation>Masternode aangemaakt!</translation>
+    </message>
+    <message>
         <source>masternode.conf file doesn't exists</source>
         <translation>masternode.conf bestand bestaat niet</translation>
+    </message>
+    <message>
+        <source>The recipient address is not valid, please recheck.</source>
+        <translation>Het ontvangstadres is niet geldig, controleer deze.</translation>
+    </message>
+    <message>
+        <source>The amount to pay must be larger than 0.</source>
+        <translation>Het te betalen bedrag moet groter zijn dan 0.</translation>
+    </message>
+    <message>
+        <source>The amount exceeds your balance.</source>
+        <translation>Het bedrag overschrijdt uw saldo.</translation>
+    </message>
+    <message>
+        <source>The total exceeds your balance when the %1 transaction fee is included.</source>
+        <translation>Het totaal overschrijdt uw saldo wanneer de transactievergoeding %1 is inbegrepen.</translation>
+    </message>
+    <message>
+        <source>Duplicate address found, can only send to each address once per send operation.</source>
+        <translation>Dubbel adres gevonden, kan alleen per keer per verzendoperatie naar elk adres versturen.</translation>
+    </message>
+    <message>
+        <source>Transaction creation failed!</source>
+        <translation>Transactie creatie mislukt!</translation>
+    </message>
+    <message>
+        <source>The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation>De transactie is afgewezen! Dit kan gebeuren als sommige munten in je portemonnee al waren uitgegeven, zoals als je een kopie van de wallet.dat en munten in de kopie waren besteed maar niet gemarkeerd zoals hier besteed.</translation>
+    </message>
+    <message>
+        <source>Error: The wallet was unlocked only to anonymize coins.</source>
+        <translation>Fout: De portemonnee was alleen geopend om munten te anonimiseren.</translation>
+    </message>
+    <message>
+        <source>A fee %1 times higher than %2 per kB is considered an insanely high fee.</source>
+        <translation>Een vergoeding %1 keer hoger dan %2 per kB wordt beschouwd als een zwaar hoge vergoeding.</translation>
+    </message>
+    <message>
+        <source>Error: The wallet was unlocked only to anonymize coins. Unlock canceled.</source>
+        <translation>Fout: De portemonnee was alleen geopend om munten te anonimiseren. Ontgrendelen geannuleerd.</translation>
     </message>
 </context>
 <context>
@@ -1513,16 +1803,12 @@ Het zal automatisch starten zodra de portemonnee voldoende bevestigingen heeft o
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>N/A</source>
-        <translation>NB</translation>
+        <source>No active Master Node yet</source>
+        <translation>Nog geen actieve Master Node</translation>
     </message>
     <message>
-        <source>Start All</source>
-        <translation>Alles starten</translation>
-    </message>
-    <message>
-        <source>Start Inactive/s</source>
-        <translation>Start Inactieve/s</translation>
+        <source>PushButton</source>
+        <translation>Druk Knop</translation>
     </message>
     <message>
         <source>Masternodes</source>
@@ -1555,10 +1841,6 @@ en stemmen over het treasury systeem met een periodieke beloning.</translation>
         <translation>Info</translation>
     </message>
     <message>
-        <source>Please wait until the node is fully synced</source>
-        <translation>Wacht tot de node volledig gesynchroniseerd is</translation>
-    </message>
-    <message>
         <source>Start Masternode</source>
         <translation>Start Masternode</translation>
     </message>
@@ -1569,46 +1851,10 @@ en stemmen over het treasury systeem met een periodieke beloning.</translation>
 </translation>
     </message>
     <message>
-        <source>Cannot edit masternode, wallet locked</source>
-        <translation>Kan de masternode niet bewerken, portemonnee vergrendeld</translation>
-    </message>
-    <message>
-        <source>Cannot start masternode, the collateral transaction has not been confirmed by the network yet.
-Please wait few more minutes (masternode collaterals require %1 confirmations).</source>
-        <translation>Kan de masternode niet starten, de collaterale transactie is nog niet bevestigd door het netwerk.
-Gelieve nog enkele minuten te wachten (het onderpand van een masternode vereist %1 bevestigingen).</translation>
-    </message>
-    <message>
-        <source>Background task is being executed, please wait</source>
-        <translation>Achtergrondopdracht wordt nu uitgevoerd, even geduld</translation>
-    </message>
-    <message>
-        <source>Start ALL masternodes failed</source>
-        <translation>Opstarten van ALLE masternodes mislukt</translation>
-    </message>
-    <message>
-        <source>Wallet unlock cancelled</source>
-        <translation>Portemonnee ontgrendeling geannuleerd </translation>
-    </message>
-    <message>
-        <source>Cannot perform Masternodes start</source>
-        <translation>Kan geen Masternode opstart uitvoeren</translation>
-    </message>
-    <message>
-        <source>%1 Masternodes failed to start, %2 started</source>
-        <translation>%1 Masternodes niet succesvol opgestart, %2 opgestart</translation>
-    </message>
-    <message>
-        <source>All Masternodes started!</source>
-        <translation>Alle Masternodes zijn opgestart!</translation>
-    </message>
-    <message>
-        <source>Cannot show Masternode information, wallet locked</source>
-        <translation>Kan geen Masternode-informatie tonen, portemonnee vergrendeld</translation>
-    </message>
-    <message>
-        <source>Masternode data copied to the clipboard.</source>
-        <translation>Masternodegegevens gekopieerd naar het klembord</translation>
+        <source>Cannot start masternode, the collateral transaction has not been accepted by the network.
+Please wait few more minutes.</source>
+        <translation>Kan de masternode niet starten, de collaterale transactie is niet geaccepteerd door het netwerk.
+Gelieve nog enkele minuten te wachten.</translation>
     </message>
     <message>
         <source>Remote Masternode Data</source>
@@ -1619,7 +1865,7 @@ Gelieve nog enkele minuten te wachten (het onderpand van een masternode vereist 
 on a remote server to your clipboard.
 
 
-You will only have to paste the data in the pivx.conf file
+You will only have to paste the data in the sap.conf file
 of your remote server and start it, then start the Masternode using
 this controller wallet (select the Masternode in the list and press "start").
 </source>
@@ -1627,10 +1873,13 @@ this controller wallet (select the Masternode in the list and press "start").
 op een externe server aan uw klembord.
 
 
-U hoeft alleen de gegevens in het pivx.conf bestand te plakken
+U hoeft alleen de gegevens in het sap.conf bestand te plakken
 van uw externe server en start deze vervolgens de Masternode met
-deze controller portemonnee (selecteer de Masternode in de lijst en druk op "start").
-</translation>
+deze controller portemonnee (selecteer de Masternode in de lijst en druk op "start").</translation>
+    </message>
+    <message>
+        <source>Masternode exported!, check your clipboard</source>
+        <translation>Masternode geëxporteerd, controleer uw klembord</translation>
     </message>
     <message>
         <source>Delete Masternode</source>
@@ -1659,12 +1908,8 @@ Weet je het zeker?</translation>
         <translation>masternode.conf bestand bestaat niet</translation>
     </message>
     <message>
-        <source>Cannot create Masternode controller, wallet locked</source>
-        <translation>Kan geen Masternode controller aanmaken, portemonnee vergrendeld</translation>
-    </message>
-    <message>
-        <source>Not enough balance to create a masternode, 10,000 PIV required.</source>
-        <translation>Niet genoeg balans om een masternode te creëren, 10,000 PIV vereist.</translation>
+        <source>Not enough balance to create a masternode, 10,000 SAPP required.</source>
+        <translation>Niet genoeg balans om een masternode te creëren, 10,000 SAPP vereist.</translation>
     </message>
     <message>
         <source>Error creating masternode</source>
@@ -1678,8 +1923,8 @@ Weet je het zeker?</translation>
         <translation>Formulier</translation>
     </message>
     <message>
-        <source>Masternode Information</source>
-        <translation>Masternode informatie</translation>
+        <source>Master Node Information</source>
+        <translation>Masternode Informatie</translation>
     </message>
     <message>
         <source>Public Key:</source>
@@ -1718,8 +1963,8 @@ Weet je het zeker?</translation>
         <translation>ONTBREKEND</translation>
     </message>
     <message>
-        <source>Export data to run the Masternode on a remote server</source>
-        <translation>Exporteer gegevens om de Masternode op een externe server uit te voeren</translation>
+        <source>Export data to run the Master Node on a remote server</source>
+        <translation>Exporteer data om de Masternode uit te voeren op een externe server</translation>
     </message>
 </context>
 <context>
@@ -1845,8 +2090,8 @@ Weet je het zeker?</translation>
         <translation>Als je de uitgaven van onbevestigde wijzigingen uitschakelt, de wijziging van een transactie&lt;br/&gt;kan niet worden gebruikt tot die transactie tenminste één bevestiging heeft.&lt;br/&gt;Dit beïnvloedt ook hoe uw saldo is berekend.</translation>
     </message>
     <message>
-        <source>Automatically open the PIVX client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Open de PIVX client poort automatisch op de router. Dit werkt alleen als je router UPnP ondersteunt en het is ingeschakeld.</translation>
+        <source>Automatically open the SAPP client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Open de SAPP client poort automatisch op de router. Dit werkt alleen als je router UPnP ondersteunt en het is ingeschakeld.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1865,12 +2110,12 @@ Weet je het zeker?</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start PIVX after logging in to the system.</source>
-        <translation>PIVX automatisch opstarten na inloggen op het systeem.</translation>
+        <source>Automatically start SAPP after logging in to the system.</source>
+        <translation>SAPP automatisch opstarten na inloggen op het systeem.</translation>
     </message>
     <message>
-        <source>&amp;Start PIVX on system login</source>
-        <translation>&amp;PIVX starten bij systeemlogin</translation>
+        <source>&amp;Start SAPP on system login</source>
+        <translation>&amp;SAPP starten bij systeemlogin</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1897,8 +2142,8 @@ Weet je het zeker?</translation>
         <translation>&amp;Netwerk</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting PIVX.</source>
-        <translation>De gebruikersinterface taal kan hier ingesteld worden. Deze instelling zal uitgevoerd na herstart van PIVX.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting SAPP.</source>
+        <translation>De gebruikersinterface taal kan hier ingesteld worden. Deze instelling zal uitgevoerd na herstart van SAPP.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1911,44 +2156,44 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Map poort gebruikt &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of PIV units to zPIV</source>
-        <translation>Schakel automatisch slaan van PIV-eenheden in op zPIV</translation>
+        <source>Enable automatic minting of SAPP units to zRPD</source>
+        <translation>Schakel automatisch slaan van SAPP-eenheden in op zRPD</translation>
     </message>
     <message>
-        <source>Enable zPIV Automint</source>
-        <translation>Schakel zPIV Automint in</translation>
+        <source>Enable zRPD Automint</source>
+        <translation>Schakel zRPD Automint in</translation>
     </message>
     <message>
-        <source>Enable automatic zPIV minting from specific addresses</source>
-        <translation>Automatische zPIV munting inschakelen vanuit specifiek adres</translation>
+        <source>Enable automatic zRPD minting from specific addresses</source>
+        <translation>Automatische zRPD munting inschakelen vanuit specifiek adres</translation>
     </message>
     <message>
         <source>Enable Automint Addresses</source>
         <translation>Automint Adressen Inschakelen</translation>
     </message>
     <message>
-        <source>Percentage of incoming PIV which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
-        <translation>Percentage inkomende PIV die automatisch wordt omgezet naar zPIV via Zerocoin Protocol (min: 10%)</translation>
+        <source>Percentage of incoming SAPP which get automatically converted to zRPD via Zerocoin Protocol (min: 10%)</source>
+        <translation>Percentage inkomende SAPP die automatisch wordt omgezet naar zRPD via Zerocoin Protocol (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPIV</source>
-        <translation>Percentage autominted zPIV</translation>
+        <source>Percentage of autominted zRPD</source>
+        <translation>Percentage autominted zRPD</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough PIV for this denomination is available</source>
-        <translation>Wacht met automatische omzetting naar Zerocoin totdat er genoeg PIV voor deze denominatie beschikbaar is</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough SAPP for this denomination is available</source>
+        <translation>Wacht met automatische omzetting naar Zerocoin totdat er genoeg SAPP voor deze denominatie beschikbaar is</translation>
     </message>
     <message>
-        <source>Preferred Automint zPIV Denomination</source>
-        <translation>Gewenste Automint zPIV denominatie</translation>
+        <source>Preferred Automint zRPD Denomination</source>
+        <translation>Gewenste Automint zRPD denominatie</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
-        <translation>Stake splitsdrempel:</translation>
+        <translation>Inzet splitdrempel:</translation>
     </message>
     <message>
-        <source>Connect to the PIVX network through a SOCKS5 proxy.</source>
-        <translation>Maak verbinding met het PIVX netwerk via een SOCKS5 proxy.</translation>
+        <source>Connect to the SAPP network through a SOCKS5 proxy.</source>
+        <translation>Maak verbinding met het SAPP netwerk via een SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -2094,8 +2339,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
 <context>
     <name>PIVXGUI</name>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Sap</source>
+        <translation>Sap</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -2122,8 +2367,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Programma afsluiten</translation>
     </message>
     <message>
-        <source>PIVX Core client</source>
-        <translation>PIVX Core client</translation>
+        <source>Sap client</source>
+        <translation>Sap client</translation>
     </message>
     <message>
         <source>Error</source>
@@ -2166,8 +2411,15 @@ Adres: %4
 </translation>
     </message>
     <message>
-        <source>A fatal error occurred. PIVX can no longer continue safely and will quit.</source>
-        <translation>Een kritieke fout is opgelopen. PIVX kan niet langer veilig uitgevoerd worden en zal afsluiten.</translation>
+        <source>A fatal error occurred. SAPP can no longer continue safely and will quit.</source>
+        <translation>Een kritieke fout is opgelopen. SAPP kan niet langer veilig uitgevoerd worden en zal afsluiten.</translation>
+    </message>
+</context>
+<context>
+    <name>PWidget</name>
+    <message>
+        <source>Wallet locked, you need to unlock it to perform this action</source>
+        <translation>Portemonnee vergrendeld, je moet deze ontgrendelen om deze actie te kunnen uitvoeren</translation>
     </message>
 </context>
 <context>
@@ -2193,12 +2445,12 @@ Adres: %4
         <translation>Ongeldig betalingsadres %1</translation>
     </message>
     <message>
-        <source>Cannot start pivx: click-to-pay handler</source>
+        <source>Cannot start sap: click-to-pay handler</source>
         <translation>Kan pivx niet starten: click-to-pay handler</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid PIVX address or malformed URI parameters.</source>
-        <translation>URL kan niet ontleed worden! Dit kan worden veroorzaakt door een ongeldig PIVX adres of misvormde URL parameters.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid SAPP address or malformed URI parameters.</source>
+        <translation>URL kan niet ontleed worden! Dit kan worden veroorzaakt door een ongeldig SAPP adres of misvormde URL parameters.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2295,8 +2547,8 @@ Adres: %4
         <translation>Druk Knop</translation>
     </message>
     <message>
-        <source>N/A</source>
-        <translation>NB</translation>
+        <source>No active Master Node yet</source>
+        <translation>Nog geen actieve Master Node</translation>
     </message>
     <message>
         <source>Privacy</source>
@@ -2311,50 +2563,50 @@ Adres: %4
         <translation>Munt</translation>
     </message>
     <message>
-        <source>Minting zPIV anonymizes your PIV by removing any
+        <source>Minting zRPD anonymizes your SAPP by removing any
 transaction history, making transactions untraceable </source>
-        <translation>Munten van zPIV anonimiseert uw PIV door het verwijderen van eender welke
+        <translation>Munten van zRPD anonimiseert uw SAPP door het verwijderen van eender welke
 transactiegeschiedenis, waardoor transacties niet meer te traceren zijn</translation>
     </message>
     <message>
-        <source>Mint new zPIV or convert back to PIV</source>
-        <translation>Munt nieuwe zPIV of converteer deze terug in PIV</translation>
+        <source>Mint new zRPD or convert back to SAPP</source>
+        <translation>Munt nieuwe zRPD of converteer deze terug in SAPP</translation>
     </message>
     <message>
-        <source>Last zPIV Movements</source>
-        <translation>Laatste zPIV Bewegingen</translation>
+        <source>Last Zerocoin Movements</source>
+        <translation>Laatste Zerocoin Bewegingen</translation>
     </message>
     <message>
         <source>No transactions yet</source>
         <translation>Nog geen transacties</translation>
     </message>
     <message>
-        <source>Mint zPIV</source>
-        <translation>Munt zPIV</translation>
+        <source>Mint zRPD</source>
+        <translation>Munt zRPD</translation>
     </message>
     <message>
-        <source>Enter amount of PIV to mint into zPIV</source>
-        <translation>Vul de hoeveelheid PIV in die u omslaan in zPIV</translation>
+        <source>Enter amount of SAPP to mint into zRPD</source>
+        <translation>Vul de hoeveelheid SAPP in die u omslaan in zRPD</translation>
     </message>
     <message>
-        <source>Convert back to PIV</source>
-        <translation>Converteer terug naar PIV</translation>
+        <source>Convert back to SAPP</source>
+        <translation>Converteer terug naar SAPP</translation>
     </message>
     <message>
-        <source>Enter amount of zPIV to convert back into PIV</source>
-        <translation>Voer de hoeveelheed zPIV in om terug te converteren naar PIV</translation>
+        <source>Enter amount of zRPD to convert back into SAPP</source>
+        <translation>Voer de hoeveelheed zRPD in om terug te converteren naar SAPP</translation>
     </message>
     <message>
         <source>Zerocoin</source>
         <translation>Zerocoin</translation>
     </message>
     <message>
-        <source>zPIV is currently undergoing maintenance</source>
-        <translation>zPIV ondergaat momenteel onderhoud</translation>
+        <source>zRPD is currently undergoing maintenance</source>
+        <translation>zRPD ondergaat momenteel onderhoud</translation>
     </message>
     <message>
-        <source>You need to unlock the wallet to be able to %1 zPIV</source>
-        <translation>Je moet de portemonnee ontgrendelen om in staat zijn om %1 zPIV</translation>
+        <source>You need to unlock the wallet to be able to %1 zRPD</source>
+        <translation>Je moet de portemonnee ontgrendelen om in staat zijn om %1 zRPD</translation>
     </message>
     <message>
         <source>convert</source>
@@ -2369,16 +2621,16 @@ transactiegeschiedenis, waardoor transacties niet meer te traceren zijn</transla
         <translation>Ongeldige waarde</translation>
     </message>
     <message>
-        <source>zPIV minted successfully</source>
-        <translation>zPIV munting succesvol</translation>
+        <source>zRPD minted successfully</source>
+        <translation>zRPD munting succesvol</translation>
     </message>
     <message>
-        <source>zPIV converted back to PIV</source>
-        <translation>zPIV terug geconverteerd naar PIV</translation>
+        <source>zRPD converted back to SAPP</source>
+        <translation>zRPD terug geconverteerd naar SAPP</translation>
     </message>
     <message>
-        <source>You don't have any PIV to select.</source>
-        <translation>Je hebt geen PIV om te selecteren</translation>
+        <source>You don't have any SAPP to select.</source>
+        <translation>Je hebt geen SAPP om te selecteren</translation>
     </message>
     <message>
         <source>Rescan Mints</source>
@@ -2389,8 +2641,8 @@ transactiegeschiedenis, waardoor transacties niet meer te traceren zijn</transla
         <translation>Uw zerocoin muntingen zullen van de blockchain vanaf nul worden gescanned</translation>
     </message>
     <message>
-        <source>Reset Spent zPIV</source>
-        <translation>Reset Besteedde zPIV</translation>
+        <source>Reset Spent Zerocoins</source>
+        <translation>Bestede Zerocoins Resetten</translation>
     </message>
     <message>
         <source>Your zerocoin spends are going to be scanned from the blockchain from scratch</source>
@@ -2402,14 +2654,83 @@ transactiegeschiedenis, waardoor transacties niet meer te traceren zijn</transla
     </message>
 </context>
 <context>
+    <name>ProposalFrame</name>
+    <message>
+        <source>Open proposal page in browser</source>
+        <translation>Voorstelpagina in browser openen</translation>
+    </message>
+    <message>
+        <source> remaining payment(s).</source>
+        <translation>resterende betaling(en).</translation>
+    </message>
+    <message>
+        <source>Yes:</source>
+        <translation>Voor:</translation>
+    </message>
+    <message>
+        <source>Abstain:</source>
+        <translation>Onthouden:</translation>
+    </message>
+    <message>
+        <source>No:</source>
+        <translation>Tegen:</translation>
+    </message>
+    <message>
+        <source>A proposal URL can be used for phishing, scams and computer viruses. Open this link only if you trust the following URL.
+</source>
+        <translation>Een voorstel-URL kan worden gebruikt voor phishing, oplichting en computervirussen. Open deze link alleen als u de volgende URL vertrouwt.
+</translation>
+    </message>
+    <message>
+        <source>Open link</source>
+        <translation>Link openen</translation>
+    </message>
+    <message>
+        <source>Copy link</source>
+        <translation>Link kopiëren</translation>
+    </message>
+    <message>
+        <source>Wallet Locked</source>
+        <translation>Portemonnee Vergrendeld</translation>
+    </message>
+    <message>
+        <source>You must unlock your wallet to vote.</source>
+        <translation>Je moet uw portemonnee ontgrendelen om te stemmen.</translation>
+    </message>
+    <message>
+        <source>Do you want to vote %1 on</source>
+        <translation>Wil je stemmen op %1</translation>
+    </message>
+    <message>
+        <source>using all your masternodes?</source>
+        <translation>al je masternodes gebruiken?</translation>
+    </message>
+    <message>
+        <source>Proposal Hash:</source>
+        <translation>Voorstel Hash:</translation>
+    </message>
+    <message>
+        <source>Proposal URL:</source>
+        <translation>Voorstel URL:</translation>
+    </message>
+    <message>
+        <source>Confirm Vote</source>
+        <translation>Stem bevestigen</translation>
+    </message>
+    <message>
+        <source>Vote Results</source>
+        <translation>Stemresultaten</translation>
+    </message>
+</context>
+<context>
     <name>QObject</name>
     <message>
         <source>Amount</source>
         <translation>Bedrag</translation>
     </message>
     <message>
-        <source>Enter PIVX address (e.g. %1)</source>
-        <translation>Voer een PIVX adres in (b.v. %1)</translation>
+        <source>Enter a SAPP address (e.g. %1)</source>
+        <translation>Voer een SAPP adres in (b.v. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2436,6 +2757,10 @@ transactiegeschiedenis, waardoor transacties niet meer te traceren zijn</transla
         <translation>BLOOM</translation>
     </message>
     <message>
+        <source>ZK_BLOOM</source>
+        <translation>ZK_BLOOM</translation>
+    </message>
+    <message>
         <source>UNKNOWN</source>
         <translation>ONBEKEND</translation>
     </message>
@@ -2452,8 +2777,8 @@ transactiegeschiedenis, waardoor transacties niet meer te traceren zijn</transla
         <translation>%1 ms</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Sap</source>
+        <translation>Sap</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" does not exist.</source>
@@ -2472,120 +2797,8 @@ transactiegeschiedenis, waardoor transacties niet meer te traceren zijn</transla
         <translation>Fout bij het lezen van het masternode configuratiebestand: %1</translation>
     </message>
     <message>
-        <source>PIVX Core didn't yet exit safely...</source>
-        <translation>PIVX Core is nog niet veilig afgesloten...</translation>
-    </message>
-    <message>
-        <source>Contact</source>
-        <translation>Contacteer</translation>
-    </message>
-    <message>
-        <source>Receiving</source>
-        <translation>Ontvangen</translation>
-    </message>
-    <message>
-        <source>Delegator</source>
-        <translation>Delegator</translation>
-    </message>
-    <message>
-        <source>Cold Staking</source>
-        <translation>Cold Staking</translation>
-    </message>
-    <message>
-        <source>Cold Staking Contact</source>
-        <translation>Cold Staking Contact</translation>
-    </message>
-    <message>
-        <source>Hidden</source>
-        <translation>Verborgen</translation>
-    </message>
-    <message>
-        <source>Unknown</source>
-        <translation>Ongekend</translation>
-    </message>
-    <message>
-        <source>All</source>
-        <translation>Alle</translation>
-    </message>
-    <message>
-        <source>Contacts</source>
-        <translation>Contacten</translation>
-    </message>
-    <message>
-        <source>Delegators</source>
-        <translation>Delegators</translation>
-    </message>
-    <message>
-        <source>Staking Contacts</source>
-        <translation>Staking Contacten</translation>
-    </message>
-    <message>
-        <source>Date desc</source>
-        <translation>Datum aflopend</translation>
-    </message>
-    <message>
-        <source>Date asc</source>
-        <translation>Datum oplopend</translation>
-    </message>
-    <message>
-        <source>Amount desc</source>
-        <translation>Aantal aflopend</translation>
-    </message>
-    <message>
-        <source>Amount asc</source>
-        <translation>Aantal oplopend</translation>
-    </message>
-    <message>
-        <source>Received</source>
-        <translation>Ontvangen</translation>
-    </message>
-    <message>
-        <source>Sent</source>
-        <translation>Verstuurd</translation>
-    </message>
-    <message>
-        <source>Mined</source>
-        <translation>Mined</translation>
-    </message>
-    <message>
-        <source>Minted</source>
-        <translation>Minted</translation>
-    </message>
-    <message>
-        <source>MN reward</source>
-        <translation>MN beloning</translation>
-    </message>
-    <message>
-        <source>To yourself</source>
-        <translation>Naar jezelf</translation>
-    </message>
-    <message>
-        <source>Cold stakes</source>
-        <translation>Cold stakes</translation>
-    </message>
-    <message>
-        <source>Hot stakes</source>
-        <translation>Hot stakes</translation>
-    </message>
-    <message>
-        <source>Delegated</source>
-        <translation>Gedelegeerd</translation>
-    </message>
-    <message>
-        <source>Delegations</source>
-        <translation>Delegaties</translation>
-    </message>
-    <message>
-        <source>by Label</source>
-        <translation>per Label</translation>
-    </message>
-    <message>
-        <source>by Address</source>
-        <translation>per Adres</translation>
-    </message>
-    <message>
-        <source>by Date</source>
-        <translation>per Datum</translation>
+        <source>Sap didn't yet exit safely...</source>
+        <translation>Sap is nog niet veilig afgesloten...</translation>
     </message>
 </context>
 <context>
@@ -2659,8 +2872,8 @@ transactiegeschiedenis, waardoor transacties niet meer te traceren zijn</transla
         <translation>Blockchain</translation>
     </message>
     <message>
-        <source>Open the PIVX debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Open het PIVX debug log bestand uit de huidige data directory. Dit kan enkele seconden duren voor grote logbestanden.</translation>
+        <source>Open the SAPP debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Open het SAPP debug log bestand uit de huidige data directory. Dit kan enkele seconden duren voor grote logbestanden.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2803,8 +3016,8 @@ transactiegeschiedenis, waardoor transacties niet meer te traceren zijn</transla
         <translation>Aangepast back-up pad:</translation>
     </message>
     <message>
-        <source>Custom zPIV Backup Path:</source>
-        <translation>Aangepast zPIV back-up pad:</translation>
+        <source>Custom zRPD Backup Path:</source>
+        <translation>Aangepast zRPD back-up pad:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -2883,8 +3096,8 @@ transactiegeschiedenis, waardoor transacties niet meer te traceren zijn</transla
         <translation>Uit:</translation>
     </message>
     <message>
-        <source>Welcome to the PIVX RPC console.</source>
-        <translation>Welkom bij de PIVX RPC console.</translation>
+        <source>Welcome to the SAPP RPC console.</source>
+        <translation>Welkom bij de SAPP RPC console.</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -3006,6 +3219,10 @@ transactiegeschiedenis, waardoor transacties niet meer te traceren zijn</transla
         <translation>Transactie details</translation>
     </message>
     <message>
+        <source>PushButton</source>
+        <translation>Druk Knop</translation>
+    </message>
+    <message>
         <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
         <translation>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z</translation>
     </message>
@@ -3049,8 +3266,8 @@ transactiegeschiedenis, waardoor transacties niet meer te traceren zijn</transla
         <translation>Ontvangen</translation>
     </message>
     <message>
-        <source>Scan the QR code or copy the address to receive PIV.</source>
-        <translation>Scan de QR code of kopieer het adres om PIV te ontvangen.</translation>
+        <source>Scan the QR code or copy the address to receive SAPP.</source>
+        <translation>Scan de QR code of kopieer het adres om SAPP te ontvangen.</translation>
     </message>
     <message>
         <source>No address </source>
@@ -3065,8 +3282,8 @@ transactiegeschiedenis, waardoor transacties niet meer te traceren zijn</transla
         <translation>Genereren van adres misgelopen</translation>
     </message>
     <message>
-        <source>Edit Label</source>
-        <translation>Label wijzigen</translation>
+        <source>Change Label</source>
+        <translation>Wijzig Label</translation>
     </message>
     <message>
         <source>Edit Address Label</source>
@@ -3081,20 +3298,12 @@ transactiegeschiedenis, waardoor transacties niet meer te traceren zijn</transla
         <translation>Fout bij bewaren adreslabel</translation>
     </message>
     <message>
-        <source>Cannot create new address, wallet locked</source>
-        <translation>Kan geen nieuw adres aanmaken, portemonnee vergrendeld</translation>
-    </message>
-    <message>
         <source>New address created</source>
         <translation>Nieuw adres gecreëerd</translation>
     </message>
     <message>
         <source>Address copied</source>
         <translation>Adres gekopieerd</translation>
-    </message>
-    <message>
-        <source>Cannot perform operation, wallet locked</source>
-        <translation>Kan deze actie niet uitvoeren, portemonnee vergrendeld</translation>
     </message>
     <message>
         <source>URI copied to clipboard</source>
@@ -3159,8 +3368,8 @@ transactiegeschiedenis, waardoor transacties niet meer te traceren zijn</transla
         <translation>Bedrag</translation>
     </message>
     <message>
-        <source>PIV</source>
-        <translation>PIV</translation>
+        <source>SAPP</source>
+        <translation>SAPP</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -3187,28 +3396,24 @@ transactiegeschiedenis, waardoor transacties niet meer te traceren zijn</transla
         <translation>VERZOEK</translation>
     </message>
     <message>
+        <source>Instead of only sharing a SAPP address, you can create a Payment Request message which bundles up more information than is contained in just a SAPP address.</source>
+        <translation>In plaats van een SAPP-adres te delen, kunt u een bericht voor een betalingsverzoek maken dat meer informatie bundelt dan alleen in een SAPP-adres.</translation>
+    </message>
+    <message>
         <source>Label</source>
         <translation>Label</translation>
+    </message>
+    <message>
+        <source>Enter a label to be saved within the address</source>
+        <translation>Voer een label in dat bij het adres moet worden opgeslagen</translation>
     </message>
     <message>
         <source>Description (optional)</source>
         <translation>Omschrijving (optioneel)</translation>
     </message>
     <message>
-        <source>New Payment Request</source>
-        <translation>Nieuw Betalingsverzoek</translation>
-    </message>
-    <message>
-        <source>Instead of sharing only a PIVX address, you can create a payment request, bundling up more information.</source>
-        <translation>In plaats van een PIVX-adres te delen, kunt u een betalingsverzoek creëren dat meer informatie bundelt.</translation>
-    </message>
-    <message>
-        <source>Enter a label for the address</source>
-        <translation>Voer een label in voor het adres</translation>
-    </message>
-    <message>
-        <source>Enter description</source>
-        <translation>Beschrijving toevoegen</translation>
+        <source>Add description </source>
+        <translation>Voeg beschrijving toe</translation>
     </message>
     <message>
         <source>Error</source>
@@ -3226,10 +3431,6 @@ transactiegeschiedenis, waardoor transacties niet meer te traceren zijn</transla
         <source>New Cold Staking Address</source>
         <translation>Nieuw Cold Staking Adres</translation>
     </message>
-    <message>
-        <source>Amount (optional)</source>
-        <translation>Bedrag (optioneel)</translation>
-    </message>
 </context>
 <context>
     <name>SendChangeAddressDialog</name>
@@ -3240,6 +3441,10 @@ transactiegeschiedenis, waardoor transacties niet meer te traceren zijn</transla
     <message>
         <source>Transaction Details</source>
         <translation>Transactie details</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Druk Knop</translation>
     </message>
     <message>
         <source>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</source>
@@ -3258,20 +3463,8 @@ transactiegeschiedenis, waardoor transacties niet meer te traceren zijn</transla
         <translation>Aangepast wijzigingsadres</translation>
     </message>
     <message>
-        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" PIVX address</source>
-        <translation>De rest van de waarde die resulteert uit de ingangen minus de waarde van de uitgangen gaat naar het "wijzig" PIVX-adres</translation>
-    </message>
-    <message>
-        <source>SAVE</source>
-        <translation>Opslaan</translation>
-    </message>
-    <message>
-        <source>RESET</source>
-        <translation>RESETTEN</translation>
-    </message>
-    <message>
-        <source>Invalid address</source>
-        <translation>Ongeldig adres</translation>
+        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" SAPP address</source>
+        <translation>De rest van de waarde die resulteert uit de ingangen minus de waarde van de uitgangen gaat naar het "wijzig" SAPP-adres</translation>
     </message>
 </context>
 <context>
@@ -3289,12 +3482,8 @@ transactiegeschiedenis, waardoor transacties niet meer te traceren zijn</transla
         <translation>Pas de transactiekosten naar wens aan, afhankelijk van de kostenwaarde die uw transactie wel of niet in de blockchain zal opnemen.</translation>
     </message>
     <message>
-        <source>Recommended</source>
+        <source>Recomended</source>
         <translation>Aanbevolen</translation>
-    </message>
-    <message>
-        <source>PIV/kilobyte</source>
-        <translation>PIV/kilobyte</translation>
     </message>
     <message>
         <source>0.00 KB</source>
@@ -3303,6 +3492,10 @@ transactiegeschiedenis, waardoor transacties niet meer te traceren zijn</transla
     <message>
         <source>Custom</source>
         <translation>Aangepast</translation>
+    </message>
+    <message>
+        <source>Per kilobyte</source>
+        <translation>Per kilobyte</translation>
     </message>
     <message>
         <source>CANCEL</source>
@@ -3317,8 +3510,8 @@ transactiegeschiedenis, waardoor transacties niet meer te traceren zijn</transla
         <translation>Kost Aanpassen</translation>
     </message>
     <message>
-        <source>Customize the transaction fee, depending on the fee value your transaction might be included faster in the blockchain.</source>
-        <translation>Pas de transactie aan, afhankelijk van de kostenwaarde zal uw transactie mogelijks sneller opgenomen worden in de blockchain.</translation>
+        <source>Customize the transaction fee, depending on the fee value your transaction will be included or not in the blockchain.</source>
+        <translation>Pas de transactiekosten aan, afhankelijk van de kostenwaarde die uw transactie wel of niet in de blockchain zal opnemen.</translation>
     </message>
     <message>
         <source>Normal</source>
@@ -3336,7 +3529,7 @@ transactiegeschiedenis, waardoor transacties niet meer te traceren zijn</transla
         <source>SAVE</source>
         <translation>Opslaan</translation>
     </message>
-    </context>
+</context>
 <context>
     <name>SendMultiRow</name>
     <message>
@@ -3348,12 +3541,12 @@ transactiegeschiedenis, waardoor transacties niet meer te traceren zijn</transla
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Enter address</source>
-        <translation>Voeg adres toe</translation>
+        <source>Add address</source>
+        <translation>Adres toevoegen</translation>
     </message>
     <message>
-        <source>Enter label</source>
-        <translation>Label toevoegen</translation>
+        <source>Add description</source>
+        <translation>Beschrijving toevoegen</translation>
     </message>
 </context>
 <context>
@@ -3363,12 +3556,16 @@ transactiegeschiedenis, waardoor transacties niet meer te traceren zijn</transla
         <translation>Zenden</translation>
     </message>
     <message>
-        <source>You can transfer public coins (PIV) or private coins (zPIV)</source>
-        <translation>Je kan publieke munten (PIV) of private munten (zPIV) overdragen</translation>
+        <source>You can transfer public coins (SAPP) or private coins (zRPD)</source>
+        <translation>Je kan publieke munten (SAPP) of private munten (zRPD) overdragen</translation>
     </message>
     <message>
         <source>Select coin type to spend</source>
         <translation>Selecteer munttype om te spenderen</translation>
+    </message>
+    <message>
+        <source>Enter a SAPP address or contact label</source>
+        <translation>Voer een SAPP-adres of contactlabel in</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -3395,12 +3592,12 @@ transactiegeschiedenis, waardoor transacties niet meer te traceren zijn</transla
         <translation>Totaal te versturen</translation>
     </message>
     <message>
-        <source>Send PIV</source>
-        <translation>PIV Versturen</translation>
+        <source>Send SAPP</source>
+        <translation>SAPP Versturen</translation>
     </message>
     <message>
-        <source>Send zPIV</source>
-        <translation>zPIV Versturen</translation>
+        <source>Send zRPD</source>
+        <translation>zRPD Versturen</translation>
     </message>
     <message>
         <source>Total remaining from the selected UTXO</source>
@@ -3411,18 +3608,6 @@ transactiegeschiedenis, waardoor transacties niet meer te traceren zijn</transla
         <translation>Totaal resterende</translation>
     </message>
     <message>
-        <source>Warning!</source>
-        <translation>Waarschuwing!</translation>
-    </message>
-    <message>
-        <source>The change address doesn't belong to this wallet.
-
-Do you want to continue?</source>
-        <translation>Het wisseladres behoort niet toe tot deze portemonnee.
-
-Wilt u verdergaan?</translation>
-    </message>
-    <message>
         <source>Customize Fee</source>
         <translation>Kost Aanpassen</translation>
     </message>
@@ -3431,16 +3616,8 @@ Wilt u verdergaan?</translation>
         <translation>Maximum aantal uitvoeren bereikt</translation>
     </message>
     <message>
-        <source>PIVX address or contact label</source>
-        <translation>PIVX adres of contactlabel</translation>
-    </message>
-    <message>
         <source>Invalid entry, previous entries must be valid before add a new one</source>
         <translation>Ongeldige invoer, vorige invoeren moeten geldig zijn voordat je een nieuwe kan toevoegen</translation>
-    </message>
-    <message>
-        <source>Possibly spend coins delegated for cold-staking (currently available: %1</source>
-        <translation>Mogelijks besteedde munten gedelegeerd voor cold-staking (momenteel beschikbaar: %1</translation>
     </message>
     <message>
         <source>Invalid entry</source>
@@ -3475,8 +3652,8 @@ Deze munten zullen niet langer cold-staked zijn.</translation>
         <translation>Besteed Zerocoin</translation>
     </message>
     <message>
-        <source>zPIV is currently undergoing maintenance.</source>
-        <translation>zPIV wordt momenteel onderhouden.</translation>
+        <source>zRPD is currently undergoing maintenance.</source>
+        <translation>zRPD wordt momenteel onderhouden.</translation>
     </message>
     <message>
         <source>Coin control mint not found</source>
@@ -3495,12 +3672,12 @@ Deze munten zullen niet langer cold-staked zijn.</translation>
 %2</translation>
     </message>
     <message>
-        <source>zPIV transaction sent!</source>
-        <translation>zPIV transactie verzonden!</translation>
+        <source>zRPD transaction sent!</source>
+        <translation>zRPD transactie verzonden!</translation>
     </message>
     <message>
-        <source>Version 1 zPIV require a security level of 100 to successfully spend.</source>
-        <translation>Versie 1 zPIV vereist een beveiligingsniveau van 100 om succesvol te besteden.</translation>
+        <source>Version 1 zRPD require a security level of 100 to successfully spend.</source>
+        <translation>Versie 1 zRPD vereist een beveiligingsniveau van 100 om succesvol te besteden.</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -3523,6 +3700,10 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Adreslabel bijwerken mislukt voor adres: %1</translation>
     </message>
     <message>
+        <source>Invalid change address</source>
+        <translation>Ongeldig wisseladres</translation>
+    </message>
+    <message>
         <source>Invalid URI</source>
         <translation>Ongeldige URI</translation>
     </message>
@@ -3535,12 +3716,12 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Aangepaste Kost %1</translation>
     </message>
     <message>
-        <source>You don't have any PIV to select.</source>
-        <translation>Je hebt geen PIV om te selecteren</translation>
+        <source>You don't have any SAPP to select.</source>
+        <translation>Je hebt geen SAPP om te selecteren</translation>
     </message>
     <message>
-        <source>You don't have any zPIV in your balance to select.</source>
-        <translation>Je hebt geen zPIV in je balans om te selecteren.</translation>
+        <source>You don't have any zRPD in your balance to select.</source>
+        <translation>Je hebt geen zRPD in je balans om te selecteren.</translation>
     </message>
     <message>
         <source>No contacts available, you can go to the contacts screen and add some there!</source>
@@ -3590,12 +3771,22 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>TextLabel</translation>
     </message>
     <message>
+        <source>PushButton</source>
+        <translation>Druk Knop</translation>
+    </message>
+    <message>
         <source>Backup Wallet </source>
         <translation>Wallet Back-uppen</translation>
     </message>
     <message>
         <source>Change Wallet Passphrase</source>
         <translation>Wijzig Portemonnee Wachtwoord</translation>
+    </message>
+    <message>
+        <source>Keep your wallet safe doing regular backups, store your backup file externally.
+This option creates a wallet.dat file that can be used to recover your whole balance (transactions and addresses) from another device.</source>
+        <translation>Bewaar uw portemonnee veilig door middel van regelmatige back-ups, bewaar uw back-upbestand extern.
+Deze optie maakt een portemonnee.datbbestand aan dat kan worden gebruikt om uw volledige saldo (transacties en adressen) van een ander apparaat terug te krijgen.</translation>
     </message>
     <message>
         <source>This will decrypt the whole wallet data and encrypt it back with the new passphrase.
@@ -3608,14 +3799,12 @@ Vergeet deze niet op te schrijven en veilig te bewaren, anders verlies je mogeli
         <translation>Waar</translation>
     </message>
     <message>
-        <source>Keep your wallet safe by doing regular backups and storing your backup file externally.
-This option creates a wallet.dat file that can be used to recover your whole balance (transactions and addresses) on another device.</source>
-        <translation>Bewaar uw portemonnee veilig door middel van regelmatige back-ups, bewaar uw back-upbestand extern.
-Deze optie maakt een wallet.dat bestand aan dat gebruikt kan worden om uw volledige saldo (transacties en adressen) van een ander apparaat terug te krijgen.</translation>
+        <source>Set a folder location</source>
+        <translation>Maplocatie instellen</translation>
     </message>
     <message>
-        <source>Select folder...</source>
-        <translation>Map Selecteren...</translation>
+        <source>Backup</source>
+        <translation>Back-up</translation>
     </message>
     <message>
         <source>Change Passphrase</source>
@@ -3709,16 +3898,16 @@ Deze optie maakt een wallet.dat bestand aan dat gebruikt kan worden om uw volled
         <translation>DECRYPTEER SLEUTEL</translation>
     </message>
     <message>
-        <source>PIVX address</source>
-        <translation>PIVX adres</translation>
+        <source>Enter a SAPP address</source>
+        <translation>Voeg een SAPP adres toe</translation>
     </message>
     <message>
-        <source>Enter address</source>
-        <translation>Voeg adres toe</translation>
+        <source>Add address</source>
+        <translation>Adres toevoegen</translation>
     </message>
     <message>
-        <source>Enter passphrase</source>
-        <translation>Voer wachtwoordzin in</translation>
+        <source>Write a message</source>
+        <translation>Schrijf een bericht</translation>
     </message>
     <message>
         <source>Encrypted Key</source>
@@ -3801,8 +3990,8 @@ Deze optie maakt een wallet.dat bestand aan dat gebruikt kan worden om uw volled
         <translation>Fout bij toevoegen van sleutel aan de portemonnee</translation>
     </message>
     <message>
-        <source>Successfully added private key to the wallet</source>
-        <translation>Privésleutel succesvol toegevoegd aan de portemonnee</translation>
+        <source>Successfully added pivate key to the wallet</source>
+        <translation>Geheime sleutel succesvol toegevoegd aan de portemonnee</translation>
     </message>
 </context>
 <context>
@@ -3832,18 +4021,14 @@ Deze optie maakt een wallet.dat bestand aan dat gebruikt kan worden om uw volled
         <translation>Open debugbestand</translation>
     </message>
     <message>
-        <source>Clear history</source>
-        <translation>Geschiedenis verwijderen</translation>
-    </message>
-    <message>
         <source>Cannot open debug file.
 Verify that you have installed a predetermined text editor.</source>
         <translation>Kan het debugbestand niet openen.
 Controleer of u een vooraf bepaalde teksteditor hebt geïnstalleerd.</translation>
     </message>
     <message>
-        <source>Welcome to the PIVX RPC console.</source>
-        <translation>Welkom bij de PIVX RPC console.</translation>
+        <source>Welcome to the SAPP RPC console.</source>
+        <translation>Welkom bij de SAPP RPC console.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
@@ -3869,8 +4054,8 @@ Controleer of u een vooraf bepaalde teksteditor hebt geïnstalleerd.</translatio
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Hide stake charts in the dashboard</source>
-        <translation>Verberg stakegrafieken in het dashboard</translation>
+        <source>PushButton</source>
+        <translation>Druk Knop</translation>
     </message>
     <message>
         <source>Reset to default</source>
@@ -3922,109 +4107,6 @@ Controleer of u een vooraf bepaalde teksteditor hebt geïnstalleerd.</translatio
     </message>
 </context>
 <context>
-    <name>SettingsExportCSV</name>
-    <message>
-        <source>Form</source>
-        <translation>Formulier</translation>
-    </message>
-    <message>
-        <source>Export Accounting</source>
-        <translation>Exporteer Accounting</translation>
-    </message>
-    <message>
-        <source>Export your wallet's accounting data to a csv file.</source>
-        <translation>Exporteer je portemonnee's accountinggegevens naar een csv bestand.</translation>
-    </message>
-    <message>
-        <source>Where</source>
-        <translation>Waar</translation>
-    </message>
-    <message>
-        <source>Select folder...</source>
-        <translation>Map Selecteren...</translation>
-    </message>
-    <message>
-        <source>Export Address Book</source>
-        <translation>Adreslijst Exporteren</translation>
-    </message>
-    <message>
-        <source>Export CSV</source>
-        <translation>CSV Exporteren</translation>
-    </message>
-    <message>
-        <source>Export Address List</source>
-        <translation>Exporteer Adreslijst</translation>
-    </message>
-    <message>
-        <source>PIVX_tx_csv_export(*.csv)</source>
-        <translation>PIVX_tx_csv_export(*.csv)</translation>
-    </message>
-    <message>
-        <source>PIVX_addresses_csv_export(*.csv)</source>
-        <translation>PIVX_addresses_csv_export(*.csv)</translation>
-    </message>
-    <message>
-        <source>Please select a folder to export the csv file first.</source>
-        <translation>Selecteer eerst een map om het csv te exporteren te exporteren.</translation>
-    </message>
-    <message>
-        <source>Confirmed</source>
-        <translation>Bevestigd</translation>
-    </message>
-    <message>
-        <source>Watch-only</source>
-        <translation>Watch-only</translation>
-    </message>
-    <message>
-        <source>Date</source>
-        <translation>Datum</translation>
-    </message>
-    <message>
-        <source>Type</source>
-        <translation>Type</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Label</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Adres</translation>
-    </message>
-    <message>
-        <source>ID</source>
-        <translation>ID</translation>
-    </message>
-    <message>
-        <source>Exporting Successful
-The transaction history was successfully saved to %1.</source>
-        <translation>Export Succesvol
-De transactiegeschiedenis is succesvol bewaard in %1.</translation>
-    </message>
-    <message>
-        <source>Exporting Failed
-There was an error trying to save the transaction history to %1.</source>
-        <translation>Export Mislukt
-Er is een fout opgetreden om de transactiegeschiedenis te bewaren naar %1.</translation>
-    </message>
-    <message>
-        <source>No available addresses to export under the selected filter</source>
-        <translation>Geen beschikbare adressen om te exporteren onder de geselecteerde filter</translation>
-    </message>
-    <message>
-        <source>Exporting Successful
-The address book was successfully saved to %1.</source>
-        <translation>Export Succesvol
-Het adresboek is succesvol bewaard in %1.</translation>
-    </message>
-    <message>
-        <source>Exporting Failed
-There was an error trying to save the address list to %1. Please try again.</source>
-        <translation>Export Mislukt
-Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Probeer het nogmaals.</translation>
-    </message>
-</context>
-<context>
     <name>SettingsFaqWidget</name>
     <message>
         <source>Form</source>
@@ -4039,80 +4121,80 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
         <translation>Druk Knop</translation>
     </message>
     <message>
-        <source>1) What is PIVX?</source>
-        <translation>1) Wat is PIVX?</translation>
+        <source>1) What is SAPP?</source>
+        <translation>1) Wat is SAPP?</translation>
     </message>
     <message>
-        <source>2) Why are my PIV unspendable?</source>
-        <translation>2) Waarom is mijn PIV niet besteedbaar?</translation>
+        <source>2) Why are my SAPP unspendable?</source>
+        <translation>2) Waarom is mijn SAPP niet besteedbaar?</translation>
     </message>
     <message>
-        <source>3) PIVX privacy? What is Zerocoin (zPIV)?</source>
-        <translation>3) PIVX privacy? Wat is Zerocoin (zPIV)?</translation>
+        <source>3) SAPP privacy? What is Zerocoin (zRPD)?</source>
+        <translation>3) SAPP privacy? Wat is Zerocoin (zRPD)?</translation>
     </message>
     <message>
-        <source>4) Why are my zPIV unspendable?</source>
-        <translation>4) Waarom is mijn zPIV niet besteedbaar?</translation>
+        <source>4) Why are my zRPD unspendable?</source>
+        <translation>4) Waarom is mijn zRPD niet besteedbaar?</translation>
     </message>
     <message>
         <source>5) Why did my wallet convert the balance
-    into zPIV automatically?</source>
+    into zRPD automatically?</source>
         <translation>5) Waarom heeft mijn portemonnee mijn balans
-    automatisch naar zPIV geconverteerd?</translation>
+    automatisch naar zRPD geconverteerd?</translation>
     </message>
     <message>
-        <source>6) How do I receive PIV/zPIV?</source>
-        <translation>6) Hoe ontvang ik PIV/zPIV?</translation>
+        <source>6) How do I receive SAPP/zRPD?</source>
+        <translation>6) Hoe ontvang ik SAPP/zRPD?</translation>
     </message>
     <message>
-        <source>7) How do I stake PIV/zPIV?</source>
-        <translation>7) Hoe stake ik PIV/zPIV?</translation>
+        <source>7) How do I stake SAPP/zRPD?</source>
+        <translation>7) Hoe stake ik SAPP/zRPD?</translation>
     </message>
     <message>
         <source>8) Where I should go if I need support?</source>
         <translation>8) Waar moet ik heen gaan als ik ondersteuning nodig heb?</translation>
     </message>
     <message>
-        <source>9) What is a Masternode?</source>
+        <source>9) What is a Master Node?</source>
         <translation>9) Wat is een Masternode?</translation>
     </message>
     <message>
-        <source>10) What is a Masternode Controller?</source>
-        <translation>10) Wat is een Masternode Controller?</translation>
+        <source>10) What is a Master Node Controller?</source>
+        <translation>10) Wat is een Master Node Controller?</translation>
     </message>
     <message>
         <source>1</source>
         <translation>1</translation>
     </message>
     <message>
-        <source>What is PIVX?</source>
-        <translation>Wat is PIVX?</translation>
+        <source>What is SAPP?</source>
+        <translation>Wat is SAPP?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           PIVX is a form of digital online money using blockchain technology
+                           SAPP is a form of digital online money using blockchain technology
                            that can be easily transferred globally, instantly, and with near
-                           zero fees.  PIVX incorporates market leading security &amp;
+                           zero fees.  SAPP incorporates market leading security &amp;
                            privacy and is also the first PoS (Proof of Stake) Cryptocurrency
-                           to implement ZeroCoin(zPIV) and Zerocoin staking.
+                           to implement ZeroCoin(zRPD) and Zerocoin staking.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           PIVX utilizes a Proof of Stake (PoS) consensus system algorithm,
-                           allowing all owners of PIVX to participate in earning block rewards
+                           SAPP utilizes a Proof of Stake (PoS) consensus system algorithm,
+                           allowing all owners of SAPP to participate in earning block rewards
                            while securing the network with full node wallets, as well as to
                            run Masternodes to create and vote on proposals.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           PIVX is een vorm van digitaal online geld dat gebruik maakt van blockchain technologie.
+                           SAPP is een vorm van digitaal online geld dat gebruik maakt van blockchain technologie.
                            die gemakkelijk wereldwijd kan worden overgebracht, onmiddellijk en met bijna
-                           geen kosten.  PIVX omvat marktleidende beveiliging &amp;
+                           geen kosten.  SAPP omvat marktleidende beveiliging &amp;
                            privacy en is ook de eerste PoS (Proof of Stake) Cryptovaluta
-                           om ZeroCoin (zPIV) en Zerocoin staking te implementeren.
+                           om ZeroCoin (zRPD) en Zerocoin staking te implementeren.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           PIVX gebruikt een Proof of Stake (PoS) consensussysteemalgoritme,
-                           waardoor alle eigenaren van PIVX kunnen deelnemen aan het verdienen van blokbeloningen
+                           SAPP gebruikt een Proof of Stake (PoS) consensussysteemalgoritme,
+                           waardoor alle eigenaren van SAPP kunnen deelnemen aan het verdienen van blokbeloningen
                            en tegelijkertijd het netwerk te beveiligen met volledige node portemonnees, en ook om
                            Masternodes uit te voeren en om voorstellen op te stellen en daarover te stemmen.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -4123,25 +4205,25 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
         <translation>2</translation>
     </message>
     <message>
-        <source>Why are my PIV unspendable?</source>
-        <translation>Waarom is mijn PIV niet besteedbaar?</translation>
+        <source>Why are my SAPP unspendable?</source>
+        <translation>Waarom is mijn SAPP niet besteedbaar?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Newly received PIVX requires 6 confirmations on the network
+                           Newly received SAPP requires 6 confirmations on the network
                            to become eligible for spending which can take ~6 minutes.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           Your PIVX wallet also needs to be completely synchronized
+                           Your SAPP wallet also needs to be completely synchronized
                            to see and spend balances on the network.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Nieuw ontvangen PIVX vereist 6 bevestigingen op het netwerk
+                           Nieuw ontvangen SAPP vereist 6 bevestigingen op het netwerk
                            om in aanmerking te komen voor uitgaven die ongeveer 6 minuten in beslag kunnen nemen.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           Uw PIVX portemonnee moet ook volledig gesynchroniseerd zijn
+                           Uw SAPP portemonnee moet ook volledig gesynchroniseerd zijn
                            om de balans te zien en uit te geven op het netwerk.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
@@ -4151,26 +4233,26 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
         <translation>3</translation>
     </message>
     <message>
-        <source>PIVX privacy? What is Zerocoin (zPIV)?</source>
-        <translation>PIVX privacy? Wat is Zerocoin (zPIV)?</translation>
+        <source>SAPP privacy? What is Zerocoin (zRPD)?</source>
+        <translation>SAPP privacy? Wat is Zerocoin (zRPD)?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zPIV is an optional privacy-centric method of coin mixing on the
-                           PIVX blockchain. Basically all your transactions cannot be tracked
+                           zRPD is an optional privacy-centric method of coin mixing on the
+                           SAPP blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
-                           &lt;a style='color: #b088ff' href='https://PIVX.org/zpiv/'&gt;
-                           "PIVX Zerocoin (zPIV) Technical Paper"&lt;/a&gt;.
+                           &lt;a style='color: #b088ff' href='https://SAPP.org/zpiv/'&gt;
+                           "SAPP Zerocoin (zRPD) Technical Paper"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zPIV is een optionele privacy-gerichte methode om munten te mengen op de
-                           PIVX blockchain. In principe kunnen al uw transacties niet worden gevolgd
+                           zRPD is een optionele privacy-gerichte methode om munten te mengen op de
+                           SAPP blockchain. In principe kunnen al uw transacties niet worden gevolgd
                            op enige block explorer. U kunt meer lezen over de technische gegevens in de
-                           &lt;a style='color: #b088ff' href='https://PIVX.org/zpiv/'&gt;
-                           "PIVX Zerocoin (zPIV) Technische Paper"&lt;/a&gt;.
+                           &lt;a style='color: #b088ff' href='https://SAPP.org/zpiv/'&gt;
+                           "SAPP Zerocoin (zRPD) Technische Paper"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
     </message>
@@ -4179,20 +4261,20 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
         <translation>4</translation>
     </message>
     <message>
-        <source>Why are my zPIV unspendable?</source>
-        <translation>Waarom is mijn zPIV niet besteedbaar?</translation>
+        <source>Why are my zRPD unspendable?</source>
+        <translation>Waarom is mijn zRPD niet besteedbaar?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           After minting, zPIV will require 20 confirmations as well as 1
+                           After minting, zRPD will require 20 confirmations as well as 1
                            additional mint of the same denomination on the network to
                            become eligible for spending.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Na het muntenheeft zPIV 20 bevestigingen nodig, evenals 1
+                           Na het muntenheeft zRPD 20 bevestigingen nodig, evenals 1
                           extra munt van dezelfde denominatie op het netwerk om
                            in aanmerking komen voor uitgaven.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -4203,41 +4285,41 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
         <translation>5</translation>
     </message>
     <message>
-        <source>Why did my wallet convert the balance into zPIV automatically?</source>
-        <translation>Waarom heeft mijn portemonnee mijn balans automatisch naar zPIV geconverteerd?</translation>
+        <source>Why did my wallet convert the balance into zRPD automatically?</source>
+        <translation>Waarom heeft mijn portemonnee mijn balans automatisch naar zRPD geconverteerd?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           By default the PIVX wallet will convert 10% of your entire PIV
-                           balance to zPIV to assist the network. If you do not wish to
-                           stake zPIV or take advantage of the privacy benefit it brings,
-                           you can disable the automatic minting in your PIVX wallet by
-                           going to Settings-&gt;Options and deselecting “Enable zPIV Automint”.
-                           If you are not making use of the PIVX-QT or GUI you can simply open
-                           your pivx.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
+                           By default the SAPP wallet will convert 10% of your entire SAPP
+                           balance to zRPD to assist the network. If you do not wish to
+                           stake zRPD or take advantage of the privacy benefit it brings,
+                           you can disable the automatic minting in your SAPP wallet by
+                           going to Settings-&gt;Options and deselecting “Enable zRPD Automint”.
+                           If you are not making use of the SAPP-QT or GUI you can simply open
+                           your sap.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           You can read more about zPIV in the
-                           &lt;a style='color: #b088ff' href='https://PIVX.org/zpiv/'&gt; "PIVX Zerocoin (zPIV) Technical Paper"&lt;/a&gt;.
-                           If you would like to keep and stake your zPIV, please read the "How do I stake"
+                           You can read more about zRPD in the
+                           &lt;a style='color: #b088ff' href='https://SAPP.org/zpiv/'&gt; "SAPP Zerocoin (zRPD) Technical Paper"&lt;/a&gt;.
+                           If you would like to keep and stake your zRPD, please read the "How do I stake"
                            section of the FAQ below.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Standaard zal de PIVX portemonnee 10% van uw gehele PIV-balans omzetten
-                          naar zPIV om het netwerk te helpen. Als u niet wenst om
-                           zPIV te staken of voordeel te halen uit het privacyvoordeel dat dit oplevert,
-                           kan je deze automatische omzetting uitschakelen in je PIVX portemonnee door
-                           naar Instellingen &gt; Opties te gaan en dan “Schakel zPIV Automuntering in” te deselecteren.
-                           Als je geen gebruik maakt van de PIVX-QT of GUI kan je simpelweg
-                           je pivx.conf bestand openen en er &lt;i&gt;"enablezeromint=0" aan toevoegen&lt;/i&gt; Zonder de aanhaling
+                           Standaard zal de SAPP portemonnee 10% van uw gehele SAPP-balans omzetten
+                          naar zRPD om het netwerk te helpen. Als u niet wenst om
+                           zRPD te staken of voordeel te halen uit het privacyvoordeel dat dit oplevert,
+                           kan je deze automatische omzetting uitschakelen in je SAPP portemonnee door
+                           naar Instellingen &gt; Opties te gaan en dan “Schakel zRPD Automuntering in” te deselecteren.
+                           Als je geen gebruik maakt van de SAPP-QT of GUI kan je simpelweg
+                           je sap.conf bestand openen en er &lt;i&gt;"enablezeromint=0" aan toevoegen&lt;/i&gt; Zonder de aanhaling
                            en je portemonnee herstarten om automuntering uit te schakelen.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           Je kan meer lezen over zPIV in de
-                           &lt;a style='color: #b088ff' href='https://PIVX.org/zpiv/'&gt; "PIVX Zerocoin (zPIV) Technische Paper"&lt;/a&gt;.
-                           Als u uw zPIV wilt behouden en staken, lees dan de "Hoe stake ik"
+                           Je kan meer lezen over zRPD in de
+                           &lt;a style='color: #b088ff' href='https://SAPP.org/zpiv/'&gt; "SAPP Zerocoin (zRPD) Technische Paper"&lt;/a&gt;.
+                           Als u uw zRPD wilt behouden en staken, lees dan de "Hoe stake ik"
                            sectie in onderstaande FAQ.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
@@ -4247,24 +4329,24 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
         <translation>6</translation>
     </message>
     <message>
-        <source>How do I receive PIV/zPIV?</source>
-        <translation>Hoe ontvang ik PIV/zPIV?</translation>
+        <source>How do I receive SAPP/zRPD?</source>
+        <translation>Hoe ontvang ik SAPP/zRPD?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zPIV can be spent and sent to any PIVX address. The receiver will
-                           receive standard PIVX but the origin of the PIVX is anonymized by the zPIV Protocol.
+                           zRPD can be spent and sent to any SAPP address. The receiver will
+                           receive standard SAPP but the origin of the SAPP is anonymized by the zRPD Protocol.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           If you want more zPIV you will need to mint your balance in the “Privacy” tab.
+                           If you want more zRPD you will need to mint your balance in the “Privacy” tab.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zPIV kan worden uitgegeven en verzonden naar elk PIVX-adres. De ontvanger zal
-                           gewone PIVX ontvangen, maar de oorsprong van de PIVX is geanonimiseerd door het zPIV-protocol
+                           zRPD kan worden uitgegeven en verzonden naar elk SAPP-adres. De ontvanger zal
+                           gewone SAPP ontvangen, maar de oorsprong van de SAPP is geanonimiseerd door het zRPD-protocol
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           Als u meer zPIV wilt, moet u uw balans op mint zetten in de "Privacy" tab.
+                           Als u meer zRPD wilt, moet u uw balans op mint zetten in de "Privacy" tab.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
     </message>
@@ -4273,32 +4355,32 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
         <translation>7</translation>
     </message>
     <message>
-        <source>How do I stake PIV/zPIV?</source>
-        <translation>Hoe stake ik PIV/zPIV?</translation>
+        <source>How do I stake SAPP/zRPD?</source>
+        <translation>Hoe stakz ik SAPP/zRPD?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           To Stake PIVX:
+                           To Stake SAPP:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ol&gt;&lt;li&gt;
                            Make sure your wallet is completely synchronized and you are using the latest release.
                            &lt;li&gt;
-                           You must have a balance of PIVX with a minimum of 600 confirmations.
+                           You must have a balance of SAPP with a minimum of 101 confirmations.
                            &lt;li&gt;
-                           Your wallet must stay online and be unlocked for staking purposes.
+                           Your wallet must stay online and be unlocked for anonymization and staking purposes.
                            &lt;li&gt;
                            Once all those steps are followed staking should be enabled.
                            &lt;li&gt;
                            You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state "Staking Enabled" to indicate it is staking.  Using the command line interface (pivx-cli); the command &lt;i&gt;getstakingstatus&lt;/i&gt; will confirm that staking is active.
                            &lt;/li&gt;&lt;/ol&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           To Stake zPIV:
+                           To Stake zRPD:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ol&gt;&lt;li&gt;
                            Make sure your wallet is completely synchronized and you are using the latest release.
                            &lt;li&gt;
-                           Your newly minted or existing zPIV balance must have a minimum of 200 confirmations.
+                           Your newly minted or existing zRPD balance must have a minimum of 200 confirmations.
                            &lt;li&gt;
                            Your wallet must stay online and be unlocked for anonymization and staking purposes.
                            Staking should now be enabled.
@@ -4307,26 +4389,26 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Om PIVX te Staken:
+                           Om SAPP te Staken:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ol&gt;&lt;li&gt;
                            Zorg ervoor dat uw portemonnee volledig gesynchroniseerd is en dat u de laatste versie gebruikt.
                            &lt;li&gt;
-                           U moet een saldo van PIVX hebben met een minimum van 600 bevestigingen.
+                           U moet een saldo van SAPP hebben met een minimum van 101 bevestigingen.
                            &lt;li&gt;
-                           Uw portemonnee moet online blijven en ontgrendeld zijn voor staking-doeleinden.
+                           Uw portemonnee moet online blijven en worden ontgrendeld voor anonimisering en staking-doeleinden.
                            &lt;li&gt;
-                           Zodra al deze stappen gevolgd zijn, zal het staken worden ingeschakeld.
+                           Zodra al deze stappen zijn gevolgd, zal het staken worden ingeschakeld.
                            &lt;li&gt;
                            U kunt de status van de staking in de portemonnee zien door op het pictogram in de rij linksboven in de portemonnee-interface te bewegen. Het pakket zal oplichten en zal "Staking Ingeschakeld" aangeven om aan te geven dat het pakket in de portemonnee is geplaatst. Met behulp van de opdrachtregel-interface (pivx-cli); het commando &lt;i&gt;getstakingstatus&lt;/i&gt; zal bevestigen dat de staking actief is.
                            &lt;/li&gt;&lt;/ol&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           Om zPIV te Staken:
+                           Om zRPD te Staken:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ol&gt;&lt;li&gt;
                             Zorg ervoor dat uw portemonnee volledig gesynchroniseerd is en dat u de laatste versie gebruikt.
                            &lt;li&gt;
-                           Uw nieuw gemunte of bestaande zPIV balans moet minimaal 200 bevestigingen hebben.
+                           Uw nieuw gemunte of bestaande zRPD balans moet minimaal 200 bevestigingen hebben.
                            &lt;li&gt;
                            Uw portemonnee moet online blijven en worden ontgrendeld voor anonimisering en staking-doeleinden.
                            Het Staken zou nu ingeschakeld moeten zijn
@@ -4335,44 +4417,32 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
                          </translation>
     </message>
     <message>
-        <source>Where should I go if I need support?</source>
-        <translation>Waar moet ik heen gaan als ik ondersteuning nodig heb?</translation>
-    </message>
-    <message>
-        <source>What is a Masternode?</source>
-        <translation>Wat is een Masternode?</translation>
-    </message>
-    <message>
-        <source>What is a Masternode Controller?</source>
-        <translation>Wat is een Masternode Controller</translation>
-    </message>
-    <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;A Masternode Controller wallet is where the 10,000 PIV collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet(s) and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;Een Masternode Controller portemonnee is waar de 10.000 PIV onderpand zich kan bevinden tijdens een Controller-Remote masternode setup. Het is een portemonnee die de remote masternode portemonnee(s) kan activeren en waarmee u uw ondergepande munten offline kunt houden terwijl de remote masternode online blijft. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
         <source>8</source>
         <translation>8</translation>
+    </message>
+    <message>
+        <source>Where I should go if I need support?</source>
+        <translation>Waar moet ik heen gaan als ik ondersteuning nodig heb?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
                            We have support channels in most of our official chat groups, for example
-                           &lt;a style='color: #b088ff' href='https://discord.PIVX.org'&gt;
+                           &lt;a style='color: #b088ff' href='https://Discord.SAPP.com'&gt;
                            #support in our Discord&lt;/a&gt;.
                            If you prefer to submit a ticket, One can be
-                           &lt;a style='color: #b088ff' href='https://PIVX.freshdesk.com'&gt;
+                           &lt;a style='color: #b088ff' href='https://SAPP.FreshDesk.com'&gt;
                            our Freshdesk support site&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
                            We hebben ondersteuningskanalen in de meeste van onze officiële chatgroepen, bijvoorbeeld
-                           &lt;a style='color: #b088ff' href='https://discord.PIVX.org'&gt;
+                           &lt;a style='color: #b088ff' href='https://Discord.SAPP.com'&gt;
                            #support in onze Discord&lt;/a&gt;.
                            Als u liever een ticket indient, kan men dat
-                           &lt;a style='color: #b088ff' href='https://PIVX.freshdesk.com'&gt;
-                           op onze Freshdesk supportsite&lt;/a&gt;.
+                           &lt;a style='color: #b088ff' href='https://SAPP.FreshDesk.com'&gt;
+                           op onze Freshdesk support site&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
     </message>
@@ -4381,10 +4451,14 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
         <translation>9</translation>
     </message>
     <message>
+        <source>What is a Master Node?</source>
+        <translation>Wat is een Masternode</translation>
+    </message>
+    <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           A masternode is a computer running a full node PIVX core wallet with a
-                           requirement of 10,000 PIV secured collateral to provide extra services
+                           A masternode is a computer running a full node SAPP core wallet with a
+                           requirement of 10,000 SAPP secured collateral to provide extra services
                            to the network and in return, receive a portion of the block reward
                            regularly.  These services include:
                            &lt;/p&gt;&lt;p align="justify"&gt;
@@ -4406,17 +4480,17 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
                            Masternode Perks:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;Participate in PIVX Governance&lt;/li&gt;
+                           &lt;li&gt;Participate in SAPP Governance&lt;/li&gt;
                            &lt;li&gt;Earn Masternode Rewards&lt;/li&gt;
                            &lt;li&gt;Commodity option for future sale&lt;/li&gt;
-                           &lt;li&gt;Help secure the PIVX network&lt;/li&gt;
+                           &lt;li&gt;Help secure the SAPP network&lt;/li&gt;
                            &lt;/ul&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
 
                            Requirements:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;10,000 PIV per single Masternode instance&lt;/li&gt;
+                           &lt;li&gt;10,000 SAPP per single Masternode instance&lt;/li&gt;
                            &lt;li&gt;Must be stored in a core wallet&lt;/li&gt;
                            &lt;li&gt;Need dedicated IP address&lt;/li&gt;
                            &lt;li&gt;Masternode wallet to remain online&lt;/li&gt;
@@ -4425,8 +4499,8 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Een masternode is een computer met een volledige node PIVX core portemonnee met een
-                           vereiste van 10.000 PIV onderpand om extra diensten te kunnen verlenen
+                           Een masternode is een computer met een volledige node SAPP core portemonnee met een
+                           vereiste van 10.000 SAPP onderpand om extra diensten te kunnen verlenen
                            aan het netwerk en in ruil daarvoor ontvangt u regelmatig een deel van de blokbeloning.
                            Deze diensten omvatten::
                            &lt;/p&gt;&lt;p align="justify"&gt;
@@ -4448,17 +4522,17 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
                            Masternode Voordelen:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;Deelnemen in het PIVX Bestuur&lt;/li&gt;
+                           &lt;li&gt;Deelnemen in het SAPP Bestuur&lt;/li&gt;
                            &lt;li&gt;Verdien Masternode Beloningen&lt;/li&gt;
                            &lt;li&gt;Commodity-optie voor toekomstige verkoop&lt;/li&gt;
-                           &lt;li&gt;Helpt bij het beveiligen van het PIVX netwerk&lt;/li&gt;
+                           &lt;li&gt;Helpt bij het beveiligen van het SAPP netwerk&lt;/li&gt;
                            &lt;/ul&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
 
                            Vereisten:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;10,000 PIV per Masternode instance&lt;/li&gt;
+                           &lt;li&gt;10,000 SAPP per Masternode instance&lt;/li&gt;
                            &lt;li&gt;Moet in een kernportemonnee worden opgeborgen&lt;/li&gt;
                            &lt;li&gt;Vereist een vast IP-adres
                            &lt;li&gt;Masternode portemonnee moet online blijven&lt;/li&gt;
@@ -4469,6 +4543,14 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
     <message>
         <source>10</source>
         <translation>10</translation>
+    </message>
+    <message>
+        <source>What is a Master Node Controller?</source>
+        <translation>Wat is een Masternode Controller?</translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;A Masternode Controller wallet is where the 10,000 SAPP collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet/s and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;Een Masternode Controller portemonnee is waar de 10.000 SAPP onderpand zich kan bevinden tijdens een Controller-Remote masternode setup. Het is een portemonnee die de remote masternode portemonnee(s) kan activeren en waarmee u uw ondergepande munten offline kunt houden terwijl de remote masternode online blijft. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Frequently Asked Questions</source>
@@ -4490,6 +4572,10 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
         <translation>Formulier</translation>
     </message>
     <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
         <source>Network Monitor</source>
         <translation>Netwerkmonitor</translation>
     </message>
@@ -4502,48 +4588,24 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
         <translation>Algemeen</translation>
     </message>
     <message>
-        <source>Client Version:</source>
+        <source>Client Version: </source>
         <translation>Client Versie:</translation>
-    </message>
-    <message>
-        <source>BerkeleyDB version:</source>
-        <translation>BerkeleyDB versie:</translation>
-    </message>
-    <message>
-        <source>Datadir:</source>
-        <translation>Datadir:</translation>
-    </message>
-    <message>
-        <source>Startup time:</source>
-        <translation>Opstarttijd:</translation>
-    </message>
-    <message>
-        <source>Connections:</source>
-        <translation>Verbindingen:</translation>
-    </message>
-    <message>
-        <source>Number of Masternodes:</source>
-        <translation>Aantal Masternodes:</translation>
-    </message>
-    <message>
-        <source>Current number of blocks:</source>
-        <translation>Huidige aantal blocks:</translation>
-    </message>
-    <message>
-        <source>Last block time:</source>
-        <translation>Laatste blocktijd:</translation>
-    </message>
-    <message>
-        <source>Last block hash:</source>
-        <translation>Laatste blockhash:</translation>
-    </message>
-    <message>
-        <source>Current number of transactions:</source>
-        <translation>Huidig aantal transacties:</translation>
     </message>
     <message>
         <source>User Agent:</source>
         <translation>User Agent:</translation>
+    </message>
+    <message>
+        <source>Using BerkeleyDB version:</source>
+        <translation>Gebruikt BerkeleyDB versie:</translation>
+    </message>
+    <message>
+        <source>Datadir: </source>
+        <translation>Datadir: </translation>
+    </message>
+    <message>
+        <source>Startup Time:  </source>
+        <translation>Starttijd:</translation>
     </message>
     <message>
         <source>Network</source>
@@ -4554,12 +4616,28 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
         <translation>Naam:</translation>
     </message>
     <message>
+        <source>Number Connections:</source>
+        <translation>Nummer Verbindingen:</translation>
+    </message>
+    <message>
         <source>Blockchain</source>
         <translation>Blockchain</translation>
     </message>
     <message>
+        <source>Current Number of Blocks:</source>
+        <translation>Huidige nummer van blokken:</translation>
+    </message>
+    <message>
+        <source>Last Block Time:</source>
+        <translation>Laatste Bloktijd:</translation>
+    </message>
+    <message>
         <source>Memory Pool</source>
         <translation>Geheugenpool</translation>
+    </message>
+    <message>
+        <source>Current Number of Transactions:</source>
+        <translation>Huidige nummer van transacties:</translation>
     </message>
     <message>
         <source>Main</source>
@@ -4582,8 +4660,8 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
         <translation>Kan de back-upmap niet openen</translation>
     </message>
     <message>
-        <source>Unable to open pivx.conf with default application</source>
-        <translation>Kan pivx.conf niet openen met de standaard applicatie</translation>
+        <source>Unable to open sap.conf with default application</source>
+        <translation>Kan sap.conf niet openen met de standaard applicatie</translation>
     </message>
     <message>
         <source>In:</source>
@@ -4641,8 +4719,8 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
         <translation>Aantal van script verificatiethreads</translation>
     </message>
     <message>
-        <source>Start PIVX on system login</source>
-        <translation>Start PIVX bij systeemlogin</translation>
+        <source>Start SAPP on system login</source>
+        <translation>Start SAPP bij systeemlogin</translation>
     </message>
     <message>
         <source>Minimize to the tray instead of the taskbar</source>
@@ -4698,12 +4776,12 @@ Weet u het zeker?
         <translation>Nieuwe ontvanger voor multisend</translation>
     </message>
     <message>
-        <source>Address Label (optional)</source>
-        <translation>Adreslabel (optioneel)</translation>
+        <source>Label (optional)</source>
+        <translation>Label (optioneel)</translation>
     </message>
     <message>
-        <source>Enter label to be saved with this address</source>
-        <translation>Voer een label in dat bij het adres opgeslagen moet worden </translation>
+        <source>Enter a label to add this address in your address book</source>
+        <translation>Voer een label in om dit adres toe te voegen aan uw adresboek.</translation>
     </message>
     <message>
         <source>Percentage</source>
@@ -4721,16 +4799,16 @@ Weet u het zeker?
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>N/A</source>
-        <translation>NB</translation>
+        <source>No active Master Node yet</source>
+        <translation>Nog geen actieve Master Node</translation>
     </message>
     <message>
         <source>CheckBox</source>
         <translation>Selectievakje</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other PIVX addresses after it matures.</source>
-        <translation>Met MultiSend kunt u automatisch tot 100% van uw inzet of masternode beloning naar een lijst met andere PIVX-adressen sturen nadat deze volwaardig zijn geworden.</translation>
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other SAPP addresses after it matures.</source>
+        <translation>Met MultiSend kunt u automatisch tot 100% van uw inzet of masternode beloning naar een lijst met andere SAPP-adressen sturen nadat deze volwaardig zijn geworden.</translation>
     </message>
     <message>
         <source>Active</source>
@@ -4761,20 +4839,12 @@ Weet u het zeker?
         <translation>WIS ALLES</translation>
     </message>
     <message>
-        <source>Cannot perform operation, wallet locked</source>
-        <translation>Kan deze actie niet uitvoeren, portemonnee vergrendeld</translation>
-    </message>
-    <message>
         <source>Clear succeed</source>
         <translation>Wissen geslaagd</translation>
     </message>
     <message>
         <source>Clear all failed, could not locate address in wallet file</source>
         <translation>Alles wissen mislukt, kon geen adres terugvinden in het portemonnee bestand</translation>
-    </message>
-    <message>
-        <source>Cannot add multisend recipient, wallet locked</source>
-        <translation>Kan geen multisendontvanger toevoegen, portemonnee vergrendeld</translation>
     </message>
     <message>
         <source>The entered address: %1 is invalid.
@@ -4836,12 +4906,24 @@ Vink één of beide selectievakjes aan om beloningen op de inzet en/of masternod
         <translation>TextLabel</translation>
     </message>
     <message>
+        <source>PushButton</source>
+        <translation>Druk Knop</translation>
+    </message>
+    <message>
         <source>Clear</source>
         <translation>Leegmaken</translation>
     </message>
     <message>
         <source>Sign/Verify Message</source>
         <translation>Onderteken/Verifiëer Bericht</translation>
+    </message>
+    <message>
+        <source>Enter a SAPP address or contact label</source>
+        <translation>Voer een SAPP-adres of contactlabel in</translation>
+    </message>
+    <message>
+        <source>Add address</source>
+        <translation>Adres toevoegen</translation>
     </message>
     <message>
         <source>Sign</source>
@@ -4860,15 +4942,7 @@ Vink één of beide selectievakjes aan om beloningen op de inzet en/of masternod
         <translation>Bericht</translation>
     </message>
     <message>
-        <source>PIVX address or contact label</source>
-        <translation>PIVX adres of contactlabel</translation>
-    </message>
-    <message>
-        <source>Enter address</source>
-        <translation>Voeg adres toe</translation>
-    </message>
-    <message>
-        <source>Write message</source>
+        <source>Write a message</source>
         <translation>Schrijf een bericht</translation>
     </message>
     <message>
@@ -4975,6 +5049,10 @@ Vink één of beide selectievakjes aan om beloningen op de inzet en/of masternod
         <translation>Wijzigingen ongedaan maken</translation>
     </message>
     <message>
+        <source>PushButton</source>
+        <translation>Druk Knop</translation>
+    </message>
+    <message>
         <source>Wallet</source>
         <translation>Portemonnee</translation>
     </message>
@@ -4984,7 +5062,7 @@ Vink één of beide selectievakjes aan om beloningen op de inzet en/of masternod
     </message>
     <message>
         <source>Stake split threshold:</source>
-        <translation>Stake splitsdrempel:</translation>
+        <translation>Inzet splitdrempel:</translation>
     </message>
     <message>
         <source>Spend unconfirmed change</source>
@@ -5040,6 +5118,10 @@ Vink één of beide selectievakjes aan om beloningen op de inzet en/of masternod
     <message>
         <source>TextLabel</source>
         <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Druk Knop</translation>
     </message>
     <message>
         <source>Wallet Repair</source>
@@ -5133,6 +5215,10 @@ Vink één of beide selectievakjes aan om beloningen op de inzet en/of masternod
         <translation>Formulier</translation>
     </message>
     <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
         <source>Wallet Data</source>
         <translation>Portemonnee Data</translation>
     </message>
@@ -5143,10 +5229,6 @@ Vink één of beide selectievakjes aan om beloningen op de inzet en/of masternod
     <message>
         <source>Multisend</source>
         <translation>Multisend</translation>
-    </message>
-    <message>
-        <source>Export Accounting</source>
-        <translation>Exporteer Accounting</translation>
     </message>
     <message>
         <source>Tools</source>
@@ -5186,7 +5268,7 @@ Vink één of beide selectievakjes aan om beloningen op de inzet en/of masternod
     </message>
     <message>
         <source>Wallet Repair</source>
-        <translation>Portemonnee Herstel</translation>
+        <translation>Portemonnee Herstellen</translation>
     </message>
     <message>
         <source>Help</source>
@@ -5197,8 +5279,8 @@ Vink één of beide selectievakjes aan om beloningen op de inzet en/of masternod
         <translation>Veelgestelde vragen</translation>
     </message>
     <message>
-        <source>About PIVX</source>
-        <translation>Over PIVX</translation>
+        <source>About SAPP</source>
+        <translation>Over SAPP</translation>
     </message>
     <message>
         <source>Settings</source>
@@ -5264,8 +5346,8 @@ Weet je zeker dat?
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>PIVX Core is shutting down...</source>
-        <translation>PIVX Core is aan het afsluiten...</translation>
+        <source>Sap is shutting down...</source>
+        <translation>Sap is aan het afsluiten...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -5294,15 +5376,15 @@ Weet je zeker dat?
         <translation>Laden...</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Sap</source>
+        <translation>Sap</translation>
     </message>
 </context>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Sap</source>
+        <translation>Sap</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -5317,8 +5399,8 @@ Weet je zeker dat?
         <translation>De Dash Kernontwikkelaars</translation>
     </message>
     <message>
-        <source>The PIVX Core developers</source>
-        <translation>De PIVX Kernontwikkelaars</translation>
+        <source>The Sap developers</source>
+        <translation>De SAPP Kernontwikkelaars</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -5355,6 +5437,14 @@ Weet je zeker dat?
         <translation>Formulier</translation>
     </message>
     <message>
+        <source>480.0685 SAPP</source>
+        <translation>480.0685 SAPP</translation>
+    </message>
+    <message>
+        <source>1,000 zRPD</source>
+        <translation>1,000 zRPD</translation>
+    </message>
+    <message>
         <source>Available</source>
         <translation>Beschikbaar</translation>
     </message>
@@ -5363,8 +5453,24 @@ Weet je zeker dat?
         <translation>In afwachting</translation>
     </message>
     <message>
+        <source>6.943 SAPP</source>
+        <translation>6.943 SAPP</translation>
+    </message>
+    <message>
         <source>Immature</source>
         <translation>Onverwerkt</translation>
+    </message>
+    <message>
+        <source>10 SAPP</source>
+        <translation>10 SAPP</translation>
+    </message>
+    <message>
+        <source>60 zRPD</source>
+        <translation>60 zRPD</translation>
+    </message>
+    <message>
+        <source>10 zRPD</source>
+        <translation>10 zRPD</translation>
     </message>
     <message>
         <source>Wallet Unlocked for staking</source>
@@ -5379,6 +5485,14 @@ Weet je zeker dat?
         <translation>Adres Gekopieerd</translation>
     </message>
     <message>
+        <source>Automint enabled</source>
+        <translation>Automunt ingeschakeld</translation>
+    </message>
+    <message>
+        <source>Automint disabled</source>
+        <translation>Automunt uitgeschakeld</translation>
+    </message>
+    <message>
         <source>Staking active</source>
         <translation>Staking actief</translation>
     </message>
@@ -5391,8 +5505,8 @@ Weet je zeker dat?
         <translation><numerusform>%n actieve verbinding</numerusform><numerusform>%n actieve verbindingen</numerusform></translation>
     </message>
     <message>
-        <source>Synchronized - Block: %1</source>
-        <translation>Gesynchroniseerd - Block: %1</translation>
+        <source>Synchronized</source>
+        <translation>Gesynchroniseerd</translation>
     </message>
     <message numerus="yes">
         <source>%n hour(s)</source>
@@ -5414,90 +5528,6 @@ Weet je zeker dat?
         <source>%n year(s)</source>
         <translation><numerusform>%n jaar</numerusform><numerusform>%n jaren</numerusform></translation>
     </message>
-    <message>
-        <source>Wallet Upgrade</source>
-        <translation>Portemonneeupgrade</translation>
-    </message>
-    <message>
-        <source>Upgrading to HD wallet will improve
-the wallet's reliability and security.
-
-
-NOTE: after the upgrade, a new
-backup will be created.
-</source>
-        <translation>Upgrade naar HD portemonnee zal
-de portemonnee's betrouwbaarheid en veiligheid verbeteren.
-
-
-OPMERKING: na de upgrade, zal een
-nieuwe back-up aangemaakt worden.
-</translation>
-    </message>
-    <message>
-        <source>Upgrade Wallet</source>
-        <translation>Portemonnee upgraden</translation>
-    </message>
-    <message>
-        <source>Wallet unlock cancelled</source>
-        <translation>Portemonnee ontgrendeling geannuleerd </translation>
-    </message>
-    <message>
-        <source>Tor Active: %1</source>
-        <translation>Tor Actief: %1</translation>
-    </message>
-    <message>
-        <source>Tor Disabled</source>
-        <translation>Tor Uitgeschakeld</translation>
-    </message>
-    <message>
-        <source>Available (Locked included)</source>
-        <translation>Beschikbaar (inclusief vergrendelde)</translation>
-    </message>
-    <message>
-        <source>The wallet has been successfully upgraded to HD.</source>
-        <translation>De portemonnee is succesvol geüpgraded naar HD.</translation>
-    </message>
-    <message>
-        <source>It is advised to make a backup.</source>
-        <translation>Het is geadviseerd om een back-up te maken.</translation>
-    </message>
-    <message>
-        <source>Do you wish to backup now?</source>
-        <translation>Wilt u nu een back-up maken?</translation>
-    </message>
-    <message>
-        <source>Backup Wallet</source>
-        <translation>Backup portemonnee</translation>
-    </message>
-    <message>
-        <source>Wallet Data (*.dat)</source>
-        <translation>Portemonneegegevens (*.dat)</translation>
-    </message>
-    <message>
-        <source>Backup created</source>
-        <translation>Back-up aangemaakt</translation>
-    </message>
-    <message>
-        <source>Backup creation failed</source>
-        <translation>Aanmaak back-up mislukt</translation>
-    </message>
-    <message>
-        <source>no file selected</source>
-        <translation>geen bestand geselecteerd</translation>
-    </message>
-    <message>
-        <source>Wallet upgraded successfully, but no backup created.</source>
-        <translation>Portemonnee succesvol geüpgraded, maar geen back-up aangemaakt.</translation>
-    </message>
-    <message>
-        <source>WARNING: remember to make a copy of your wallet.dat file!</source>
-        <translation>WAARSCHUWING: vergeet niet op je wallet.dat bestand te kopiëren!</translation>
-    </message>
-    <message>
-        <source>Upgrade Wallet Error</source>
-        <translation>Upgrade Portemonnee Error</translation>
-    </message>
 </context>
 <context>
     <name>TrafficGraphWidget</name>
@@ -5510,7 +5540,7 @@ nieuwe back-up aangemaakt worden.
     <name>TransactionDesc</name>
     <message numerus="yes">
         <source>Open for %n more block(s)</source>
-        <translation><numerusform>Open voor nog %n blokken</numerusform><numerusform>Open voor nog %n blok</numerusform></translation>
+        <translation><numerusform>Open voor nog %n blok</numerusform><numerusform>Open voor nog %n blokken</numerusform></translation>
     </message>
     <message>
         <source>Open until %1</source>
@@ -5574,7 +5604,7 @@ nieuwe back-up aangemaakt worden.
     </message>
     <message numerus="yes">
         <source>, broadcast through %n node(s)</source>
-        <translation><numerusform>, broadcast via %n nodes</numerusform><numerusform>, broadcast via %n node</numerusform></translation>
+        <translation><numerusform>, broadcast via %n node</numerusform><numerusform>, broadcast via %n nodes</numerusform></translation>
     </message>
     <message>
         <source>Date</source>
@@ -5618,7 +5648,7 @@ nieuwe back-up aangemaakt worden.
     </message>
     <message numerus="yes">
         <source>matures in %n more block(s)</source>
-        <translation><numerusform>volgroeid in %n blokken</numerusform><numerusform>volgroeid in %n blok</numerusform></translation>
+        <translation><numerusform>Volgroeid in %n blok</numerusform><numerusform>volgroeid in %n blokken</numerusform></translation>
     </message>
     <message>
         <source>not accepted</source>
@@ -5705,7 +5735,7 @@ nieuwe back-up aangemaakt worden.
     </message>
     <message numerus="yes">
         <source>Open for %n more block(s)</source>
-        <translation><numerusform>Open voor nog %n blokken</numerusform><numerusform>Open voor nog %n blok</numerusform></translation>
+        <translation><numerusform>Open voor nog %n blok</numerusform><numerusform>Open voor nog %n blokken</numerusform></translation>
     </message>
     <message>
         <source>Open until %1</source>
@@ -5752,40 +5782,64 @@ nieuwe back-up aangemaakt worden.
         <translation>Ontvangen van</translation>
     </message>
     <message>
-        <source>PIV Stake</source>
-        <translation>PIV Stake</translation>
+        <source>Received via Obfuscation</source>
+        <translation>Verkregen via verduistering</translation>
     </message>
     <message>
-        <source>zPIV Stake</source>
-        <translation>zPIV Stake</translation>
+        <source>SAPP Stake</source>
+        <translation>SAPP Stake</translation>
     </message>
     <message>
-        <source>PIV Cold Stake</source>
-        <translation>PIV Cold Stake</translation>
+        <source>zRPD Stake</source>
+        <translation>zRPD Stake</translation>
+    </message>
+    <message>
+        <source>SAPP Cold Stake</source>
+        <translation>SAPP Cold Stake</translation>
+    </message>
+    <message>
+        <source>SAPP Stake in behalf of</source>
+        <translation>SAPP Stake in naam van</translation>
     </message>
     <message>
         <source>Stake delegation</source>
         <translation>Stake delegatie</translation>
     </message>
     <message>
-        <source>Converted PIV to zPIV</source>
-        <translation>Geconverteerde PIV naar zPIV</translation>
+        <source>Obfuscation Denominate</source>
+        <translation>Verduistering denominatie</translation>
     </message>
     <message>
-        <source>Spent zPIV</source>
-        <translation>Bestede zPIV</translation>
+        <source>Obfuscation Collateral Payment</source>
+        <translation>Verduistering zijdelingse betaling</translation>
     </message>
     <message>
-        <source>Received PIV from zPIV</source>
-        <translation>Ontvangen PIV van zPIV</translation>
+        <source>Obfuscation Make Collateral Inputs</source>
+        <translation>Verduistering maakt zijdelingse inputs</translation>
     </message>
     <message>
-        <source>Minted Change as zPIV from zPIV Spend</source>
-        <translation>Gemint wisselgeld als zPIV van bestede zPIV</translation>
+        <source>Obfuscation Create Denominations</source>
+        <translation>Verduistering creëert denominaties</translation>
     </message>
     <message>
-        <source>Converted zPIV to PIV</source>
-        <translation>Geconverteerde zPIV naar PIV</translation>
+        <source>Converted SAPP to zRPD</source>
+        <translation>Geconverteerde SAPP naar zRPD</translation>
+    </message>
+    <message>
+        <source>Spent zRPD</source>
+        <translation>Bestede zRPD</translation>
+    </message>
+    <message>
+        <source>Received SAPP from zRPD</source>
+        <translation>Ontvangen SAPP van zRPD</translation>
+    </message>
+    <message>
+        <source>Minted Change as zRPD from zRPD Spend</source>
+        <translation>Gemint wisselgeld als zRPD van bestede zRPD</translation>
+    </message>
+    <message>
+        <source>Converted zRPD to SAPP</source>
+        <translation>Geconverteerde zRPD naar SAPP</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -5800,16 +5854,12 @@ nieuwe back-up aangemaakt worden.
         <translation>Betaling naar jezelf</translation>
     </message>
     <message>
-        <source>PIV Stake on behalf of</source>
-        <translation>PIV Stake in naam van</translation>
-    </message>
-    <message>
-        <source>Stake delegation spent by</source>
-        <translation>Stake delegatie gespendeerd door</translation>
-    </message>
-    <message>
         <source>Mined</source>
         <translation>Mined</translation>
+    </message>
+    <message>
+        <source>Obfuscated</source>
+        <translation>Verduisterd</translation>
     </message>
     <message>
         <source>watch-only</source>
@@ -5863,8 +5913,36 @@ nieuwe back-up aangemaakt worden.
         <translation>Transactie details</translation>
     </message>
     <message>
+        <source>ID:</source>
+        <translation>ID:</translation>
+    </message>
+    <message>
+        <source>492526e7fa3c810b35016...40a5df85ee227ab00b1156994</source>
+        <translation>492526e7fa3c810b35016...40a5df85ee227ab00b1156994</translation>
+    </message>
+    <message>
+        <source>Sending to: </source>
+        <translation>Versturen naar:</translation>
+    </message>
+    <message>
+        <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
+        <translation>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z</translation>
+    </message>
+    <message>
         <source>Total amount</source>
         <translation>Totale hoeveelheid</translation>
+    </message>
+    <message>
+        <source>2 SAPP</source>
+        <translation>2 SAPP</translation>
+    </message>
+    <message>
+        <source>Coin inputs:</source>
+        <translation>Munt invoeren:</translation>
+    </message>
+    <message>
+        <source>1 Inputs</source>
+        <translation>1 Invoer</translation>
     </message>
     <message>
         <source>Previous Transaction</source>
@@ -5875,52 +5953,52 @@ nieuwe back-up aangemaakt worden.
         <translation>Outputindex</translation>
     </message>
     <message>
+        <source>Fee:</source>
+        <translation>Fee:</translation>
+    </message>
+    <message>
+        <source>0.0001 SAPP</source>
+        <translation>0.0001 SAPP</translation>
+    </message>
+    <message>
+        <source>Change address:</source>
+        <translation>Wijzig adres:</translation>
+    </message>
+    <message>
         <source>D7VFR83SQbie…BhjcWJtcfip5krte2Z </source>
         <translation>D7VFR83SQbie…BhjcWJtcfip5krte2Z </translation>
+    </message>
+    <message>
+        <source>Confirmations:</source>
+        <translation>Bevestigingen:</translation>
+    </message>
+    <message>
+        <source>12</source>
+        <translation>12</translation>
+    </message>
+    <message>
+        <source>Size:</source>
+        <translation>Grootte:</translation>
+    </message>
+    <message>
+        <source>2 kB</source>
+        <translation>2 kB</translation>
+    </message>
+    <message>
+        <source>Date:</source>
+        <translation>Datum:</translation>
     </message>
     <message>
         <source>May 25, 2017</source>
         <translation>25 Mei, 2017</translation>
     </message>
     <message>
-        <source>ID</source>
-        <translation>ID</translation>
-    </message>
-    <message>
-        <source>Sending to</source>
-        <translation>Versturen naar:</translation>
-    </message>
-    <message>
-        <source>Coin inputs</source>
-        <translation>Munt invoeringen</translation>
-    </message>
-    <message>
-        <source>Fee</source>
-        <translation>Onkost</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>Grootte</translation>
-    </message>
-    <message>
-        <source>Change address</source>
-        <translation>Wijzig adres</translation>
+        <source>Status:</source>
+        <translation>Status:</translation>
     </message>
     <message>
         <source>Spendable</source>
         <translation>Uitgeefbaar</translation>
-    </message>
-    <message>
-        <source>Confirmations</source>
-        <translation>Bevestigingen</translation>
-    </message>
-    <message>
-        <source>Status</source>
-        <translation>Status</translation>
-    </message>
-    <message>
-        <source>Date</source>
-        <translation>Datum</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -5966,8 +6044,8 @@ nieuwe back-up aangemaakt worden.
         <translation>18/05/18</translation>
     </message>
     <message>
-        <source>+0.000585 PIV</source>
-        <translation>+0.000585 PIV</translation>
+        <source>+0.000585 SAPP</source>
+        <translation>+0.000585 SAPP</translation>
     </message>
 </context>
 <context>
@@ -5977,12 +6055,43 @@ nieuwe back-up aangemaakt worden.
         <translation>Verzend Munten</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 PIV.</source>
-        <translation>SwiftTX ondersteunt geen verzendwaarden die zo hoog zijn. Transacties zijn momenteel beperkt tot %1 PIV.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 SAPP.</source>
+        <translation>SwiftTX ondersteunt geen verzendwaarden die zo hoog zijn. Transacties zijn momenteel beperkt tot %1 SAPP.</translation>
+    </message>
+</context>
+<context>
+    <name>WalletPasswordDialog</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Dialoog</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Druk Knop</translation>
+    </message>
+    <message>
+        <source>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</source>
+        <translation>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>Annuleren</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>Akkoord</translation>
     </message>
 </context>
 <context>
     <name>WelcomeContentWidget</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Dialoog</translation>
+    </message>
     <message>
         <source>1</source>
         <translation>1</translation>
@@ -6021,25 +6130,25 @@ nieuwe back-up aangemaakt worden.
     </message>
     <message>
         <source>Welcome to
-PIVX Core Wallet</source>
+Sap Wallet</source>
         <translation>Welkom bij
-PIVX Core Portemonnee</translation>
+Sap Portemonnee</translation>
     </message>
     <message>
-        <source>PIVX is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
-        <translation>PIVX is 's werelds meest innovatieve Proof of Stake blockchain gebaseerde technologie. Ontwikkeld door een team van zeer ervaren ontwikkelaars en cryptografen.</translation>
+        <source>SAPP is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
+        <translation>SAPP is 's werelds meest innovatieve Proof of Stake blockchain gebaseerde technologie. Ontwikkeld door een team van zeer ervaren ontwikkelaars en cryptografen.</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - PIVX believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Zoals ons manifest zegt: Privacy is een niet-onderhandelbaar fundamenteel mensenrecht; het geeft gebruikers de vrijheid om hun gegevens te delen wanneer en met wie ze maar willen - PIVX gelooft in soevereiniteit.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - SAPP believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Zoals ons manifest zegt: Privacy is een niet-onderhandelbaar fundamenteel mensenrecht; het geeft gebruikers de vrijheid om hun gegevens te delen wanneer en met wie ze maar willen - SAPP gelooft in soevereiniteit.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <source>The masternode network is PIVX's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
-        <translation>Het masternode netwerk is PIVX's tweedelaagse netwerk bovenop de blockchain die onze DAO in staat stelt om gedecentraliseerd bestuur, treasury te leveren</translation>
+        <source>The masternode network is SAPP's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
+        <translation>Het masternode netwerk is SAPP's tweedelaagse netwerk bovenop de blockchain die onze DAO in staat stelt om gedecentraliseerd bestuur, treasury te leveren</translation>
     </message>
     <message>
-        <source>How PIVX respects your privacy?</source>
-        <translation>Hoe respecteert PIVX uw privacy?</translation>
+        <source>How SAPP respects your privacy?</source>
+        <translation>Hoe respecteert SAPP uw privacy?</translation>
     </message>
     <message>
         <source>What is a Masternode?</source>
@@ -6053,8 +6162,8 @@ PIVX Core Portemonnee</translation>
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zPIV to Spend</source>
-        <translation>Selecteer zPIV om te besteden</translation>
+        <source>Select zRPD to Spend</source>
+        <translation>Selecteer zRPD om te besteden</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -6089,8 +6198,8 @@ PIVX Core Portemonnee</translation>
         <translation>Selecteer/Deselecteer Alles</translation>
     </message>
     <message>
-        <source>Select zPIV Denominations to Spend</source>
-        <translation>Selecteer zPIV Denominaties om te Besteden</translation>
+        <source>Select zRPD Denominations to Spend</source>
+        <translation>Selecteer zRPD Denominaties om te Besteden</translation>
     </message>
 </context>
 <context>
@@ -6116,8 +6225,12 @@ PIVX Core Portemonnee</translation>
         <translation>Bind naar het opgegeven adres om te luisteren naar JSON-RPC verbindingen. Gebruik [host]:poort notatie voor IPv6. Deze optie kan meerdere keren worden opgegeven (standaard: bind aan alle interfaces)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. PIVX Core is probably already running.</source>
-        <translation>Kan geen vergrendeling op data directory %s verkrijgen. PIVX Core loopt waarschijnlijk al.</translation>
+        <source>Calculated accumulator checkpoint is not what is recorded by block index</source>
+        <translation>Het berekende accumulatie controlepunt is niet wat wordt geregistreerd door de blokindex</translation>
+    </message>
+    <message>
+        <source>Cannot obtain a lock on data directory %s. Sap is probably already running.</source>
+        <translation>Kan geen vergrendeling op data directory %s verkrijgen. Sap loopt waarschijnlijk al.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -6144,16 +6257,24 @@ PIVX Core Portemonnee</translation>
         <translation>Gedistribueerd onder de MIT software licentie, zie het bijgevoegde bestand COPYING of &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
+        <source>Enable automatic Zerocoin minting from specific addresses (0-1, default: %u)</source>
+        <translation>Schakel automatische Zerocoin munting vanuit specifieke adressen in (0-1, standaard %u) </translation>
+    </message>
+    <message>
+        <source>Enable automatic wallet backups triggered after each zRPD minting (0-1, default: %u)</source>
+        <translation>Schakel automatische portemonnee back-ups in geactiveerd na elke geminte zRPD (0-1, standaard: %u)</translation>
+    </message>
+    <message>
         <source>Enable cold staking functionality (0-1, default: %u). Disabled if staking=0</source>
         <translation>Activeer cold staking functionaliteit (0-1, standaard: %u). Uitgeschakeld als staking=0</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for PIV inputs (0-1, default: %u)</source>
-        <translation>In- of uitschakelen staking functionaliteit voor PIV inputs (0-1, standaard: %u)</translation>
+        <source>Enable or disable staking functionality for SAPP inputs (0-1, default: %u)</source>
+        <translation>In- of uitschakelen staking functionaliteit voor SAPP inputs (0-1, standaard: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zPIV inputs (0-1, default: %u)</source>
-        <translation>In- of uitschakelen staking functionaliteit voor zPIV inputs (0-1, standaard: %u)</translation>
+        <source>Enable or disable staking functionality for zRPD inputs (0-1, default: %u)</source>
+        <translation>In- of uitschakelen staking functionaliteit voor zRPD inputs (0-1, standaard: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -6176,10 +6297,6 @@ PIVX Core Portemonnee</translation>
         <translation>Fout: Niet ondersteund argument -socks gevonden. Het instellen van SOCKS versie is niet meer mogelijk, alleen SOCKS5 proxy's worden ondersteund.</translation>
     </message>
     <message>
-        <source>Exclude debugging information for a category. Can be used in conjunction with -debug=1 to output debug logs for all categories except one or more specified categories.</source>
-        <translation>Sluit informatie voor een categorie uit. Kan worden gebruikt in combinatie met -debug=1 om foutopsporingslogboeken uit te voeren voor alle categorieën behalve een of meer gespecificeerde categorieën.</translation>
-    </message>
-    <message>
         <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
         <translation>Uitvoeren commando wanneer een relevante waarschuwing is ontvangen of we zien een echt lange fork (%s in cmd wordt vervangen door bericht)</translation>
     </message>
@@ -6192,12 +6309,12 @@ PIVX Core Portemonnee</translation>
         <translation>Uitvoeren commando wanneer het beste blok verandert (%s in cmd is vervangen door block hash)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Kosten (in PIV/Kb) kleiner dan dit worden beschouwd als zero fee voor heruitzending (standaard: %s)</translation>
+        <source>Fees (in SAPP/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Kosten (in SAPP/Kb) kleiner dan dit worden beschouwd als zero fee voor heruitzending (standaard: %s)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Kosten (in PIV/Kb) kleiner dan dit worden beschouwd als zero fee voor transactie verrichting (standaard: %s)</translation>
+        <source>Fees (in SAPP/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Kosten (in SAPP/Kb) kleiner dan dit worden beschouwd als zero fee voor transactie verrichting (standaard: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -6252,6 +6369,10 @@ PIVX Core Portemonnee</translation>
         <translation>Aantal seconden om te voorkomen dat misdragende peers opnieuw connectoren (standaard: %u)</translation>
     </message>
     <message>
+        <source>Obfuscation uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
+        <translation>Verduistering maakt gebruik van exacte gedenomineerde bedragen om fondsen te verzenden, je zou misschien nog wat munten moeten anonimiseren.</translation>
+    </message>
+    <message>
         <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
         <translation>Output debugging informatie (default: %u, verschaffen &lt;category&gt; is optioneel)</translation>
     </message>
@@ -6274,6 +6395,10 @@ PIVX Core Portemonnee</translation>
     <message>
         <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
         <translation>Stel maximale grootte van transacties met hoge prioriteit/low-fee in bytes in (standaard: %d)</translation>
+    </message>
+    <message>
+        <source>Set the number of included blocks to precompute per cycle. (minimum: %d) (maximum: %d) (default: %d)</source>
+        <translation>Stel het aantal ingesloten blokken in om vooraf te berekenen per cyclus. (minimum: %d) (maximum: %d) (standaard: %d)</translation>
     </message>
     <message>
         <source>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</source>
@@ -6304,8 +6429,20 @@ PIVX Core Portemonnee</translation>
         <translation>De totale lengte van de netwerkversie (%i) overschrijdt de maximale lengte (%i). Verminder het aantal of de grootte van uacommentaren.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. PIVX Core is probably already running.</source>
-        <translation>Niet mogelijk te binden aan %s op deze computer. PIVX Core loopt waarschijnlijk al.</translation>
+        <source>Unable to bind to %s on this computer. Sap is probably already running.</source>
+        <translation>Niet mogelijk te binden aan %s op deze computer. Sap loopt waarschijnlijk al.</translation>
+    </message>
+    <message>
+        <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
+        <translation>Kan niet genoeg verduistering gedenomineerde fondsen voor deze transactie vinden.</translation>
+    </message>
+    <message>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 SAPP.</source>
+        <translation>Kan niet genoeg verduistering niet gedenomineerde fondsen voor deze transactie vinden die niet gelijk zijn aan 10000 SAPP.</translation>
+    </message>
+    <message>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 SAPP.</source>
+        <translation>Kan niet genoeg fondsen voor deze transactie vinden die niet gelijk zijn aan 10000 SAPP.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -6320,8 +6457,12 @@ PIVX Core Portemonnee</translation>
         <translation>Waarschuwing: -paytxfee is zeer hoog ingesteld! Dit zijn de transactie kosten die je betaalt als je een transactie verstuurt.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong PIVX Core will not work properly.</source>
-        <translation>Waarschuwing: Controleer of de datum en tijd van je computer juist zijn! Als je klok verkeerd staat, werkt PIVX Core niet goed.</translation>
+        <source>Warning: Peers are being disconnected due time differences. Please check that your computer's date and time are correct! If your clock is wrong Sap will not work properly.</source>
+        <translation>Waarschuwing: Peers zijn afgesloten als gevolg van tijdsverschillen. Controleer of de datum en tijd van je computer juist zijn! Als je klok verkeerd staat, werkt Sap niet goed.</translation>
+    </message>
+    <message>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Sap will not work properly.</source>
+        <translation>Waarschuwing: Controleer of de datum en tijd van je computer juist zijn! Als je klok verkeerd staat, werkt Sap niet goed.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -6384,6 +6525,10 @@ PIVX Core Portemonnee</translation>
         <translation>Voeg een node toe om verbinding mee te maken en probeer de verbinding open te houden</translation>
     </message>
     <message>
+        <source>Adding Wrapped Serials supply...</source>
+        <translation>Toevoegen van Wrapped Serialvoorraad...</translation>
+    </message>
+    <message>
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
         <translation>DNS lookups toestaan voor -addnode, -seednode en -connect</translation>
     </message>
@@ -6408,8 +6553,28 @@ PIVX Core Portemonnee</translation>
         <translation>Block creatie opties:</translation>
     </message>
     <message>
+        <source>Calculating missing accumulators...</source>
+        <translation>Calculeren van ontbrekende accumulators...</translation>
+    </message>
+    <message>
         <source>Cannot downgrade wallet</source>
         <translation>Kan de portemonnee niet downgraden</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -bind address: '%s'</source>
+        <translation>Kan -bind adres niet oplossen: '%s'</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -externalip address: '%s'</source>
+        <translation>Kan -externalip adres niet oplossen: '%s'</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -whitebind address: '%s'</source>
+        <translation>Kan -whitebind adres niet oplossen: '%s'</translation>
+    </message>
+    <message>
+        <source>CoinSpend: failed check</source>
+        <translation>CoinSpend: controle mislukt</translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>
@@ -6436,8 +6601,8 @@ PIVX Core Portemonnee</translation>
         <translation>Copyright (C) 2014-%i The Dash Kernontwikkelaars</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The PIVX Core Developers</source>
-        <translation>Copyright (C) 2015-%i The PIVX Kernontwikkelaars</translation>
+        <source>Copyright (C) 2015-%i The Sap Developers</source>
+        <translation>Copyright (C) 2015-%i The SAPP Kernontwikkelaars</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -6446,6 +6611,10 @@ PIVX Core Portemonnee</translation>
     <message>
         <source>Could not parse masternode.conf</source>
         <translation>Kan masternode.conf niet parsen</translation>
+    </message>
+    <message>
+        <source>Couldn't generate the accumulator witness</source>
+        <translation>Kon de accumulator witness niet genereren</translation>
     </message>
     <message>
         <source>Debugging/Testing options:</source>
@@ -6480,6 +6649,14 @@ PIVX Core Portemonnee</translation>
         <translation>Klaar met laden</translation>
     </message>
     <message>
+        <source>Enable automatic Zerocoin minting (0-1, default: %u)</source>
+        <translation>Zet automatische Zerocoin minting aan (0-1, standaard: %u)</translation>
+    </message>
+    <message>
+        <source>Enable precomputation of zRPD spends and stakes (0-1, default %u)</source>
+        <translation>Schakel de precomputatie van zRPD-uitgaven en stakes in (0-1, standaard %u) </translation>
+    </message>
+    <message>
         <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
         <translation>Activeer publicatie hash transactie (vergrendeld via SwiftTX) in &lt;address&gt;</translation>
     </message>
@@ -6512,8 +6689,8 @@ PIVX Core Portemonnee</translation>
         <translation>Error tijdens het laden van wallet.dat: Portemonnee corrupt</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of PIVX Core</source>
-        <translation>Fout bij het laden van wallet.dat: Portemonnee vereist een nieuwere versie van PIVX Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Sap</source>
+        <translation>Fout bij het laden van wallet.dat: Portemonnee vereist een nieuwere versie van Sap</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -6532,10 +6709,6 @@ PIVX Core Portemonnee</translation>
         <translation>Error</translation>
     </message>
     <message>
-        <source>Error: </source>
-        <translation>Error: </translation>
-    </message>
-    <message>
         <source>Error: A fatal internal error occured, see debug.log for details</source>
         <translation>Fout: Er is een fatale interne fout opgetreden, zie debug.log voor details</translation>
     </message>
@@ -6552,6 +6725,10 @@ PIVX Core Portemonnee</translation>
         <translation>Fout: Portemonnee vergrendeld, niet in staat om transactie te creëren!</translation>
     </message>
     <message>
+        <source>Failed to calculate accumulator checkpoint</source>
+        <translation>Kon het controlepunt van de accumulator niet berekenen</translation>
+    </message>
+    <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>Niet gelukt om te luisteren op een poort. Gebruik -listen=0 als je dit wilt.</translation>
     </message>
@@ -6564,8 +6741,8 @@ PIVX Core Portemonnee</translation>
         <translation>Mislukt om block te lezen</translation>
     </message>
     <message>
-        <source>Fee (in PIV/kB) to add to transactions you send (default: %s)</source>
-        <translation>Fee (in PIV/kB) om toe te voegen aan transacties die je verzendt (standaard: %s)</translation>
+        <source>Fee (in SAPP/kB) to add to transactions you send (default: %s)</source>
+        <translation>Fee (in SAPP/kB) om toe te voegen aan transacties die je verzendt (standaard: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -6604,8 +6781,8 @@ PIVX Core Portemonnee</translation>
         <translation>Informatie</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. PIVX Core is shutting down.</source>
-        <translation>Initialisatie saniteitscontrole mislukt. PIVX Core wordt afgesloten.</translation>
+        <source>Initialization sanity check failed. Sap is shutting down.</source>
+        <translation>Initialisatie saniteitscontrole mislukt. Sap wordt afgesloten.</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -6620,8 +6797,28 @@ PIVX Core Portemonnee</translation>
         <translation>Ongeldig -onion adres of hostnaam: '%s'</translation>
     </message>
     <message>
+        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Ongeldige hoeveelheid voor -maxtxfee=&lt;amount&gt;: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Ongeldige hoeveelheid voor -minrelaytxfee=&lt;amount&gt;: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -mintxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Ongeldige hoeveelheid voor -mintxfee=&lt;amount&gt;: '%s'</translation>
+    </message>
+    <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
         <translation>Ongeldige hoeveelheid voor -paytxfee=&lt;amount&gt;: '%s' (moet tenminste %s zijn)</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Ongeldige hoeveelheid voor -paytxfee=&lt;amount&gt;: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -reservebalance=&lt;amount&gt;</source>
+        <translation>Ongeldige hoeveelheid voor -reservebalance=&lt;amount&gt;</translation>
     </message>
     <message>
         <source>Invalid amount</source>
@@ -6640,12 +6837,24 @@ PIVX Core Portemonnee</translation>
         <translation>Ongeldige poort gedetecteerd in masternode.conf</translation>
     </message>
     <message>
-        <source>Recalculating PIV supply...</source>
-        <translation>Hercalculatie van PIV aanbod...</translation>
+        <source>Percentage of automatically minted Zerocoin  (1-100, default: %u)</source>
+        <translation>Percentage automatisch geminte Zerocoin (10-100, standaard: %u)</translation>
     </message>
     <message>
-        <source>Reindex the PIV and zPIV money supply statistics</source>
-        <translation>Indexeer de PIV- en zPIV-geldvoorraadstatistieken opnieuw</translation>
+        <source>Recalculating SAPP supply...</source>
+        <translation>Hercalculatie van SAPP aanbod...</translation>
+    </message>
+    <message>
+        <source>Recalculating minted ZPIV...</source>
+        <translation>Herberekenen van gemunte ZPIV....</translation>
+    </message>
+    <message>
+        <source>Recalculating spent ZPIV...</source>
+        <translation>Herberekenen van bestede ZPIV....</translation>
+    </message>
+    <message>
+        <source>Reindex the SAPP and zRPD money supply statistics</source>
+        <translation>Indexeer de SAPP- en zRPD-geldvoorraadstatistieken opnieuw</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -6658,6 +6867,10 @@ PIVX Core Portemonnee</translation>
     <message>
         <source>Selected coins value is less than payment target</source>
         <translation>Geselecteerde munt waarde is minder dan het betalingsdoel</translation>
+    </message>
+    <message>
+        <source>Support the zerocoin light node protocol (default: %u)</source>
+        <translation>Ondersteuning van het zerocoin light node protocol (standaard: %u)</translation>
     </message>
     <message>
         <source>SwiftX options:</source>
@@ -6684,8 +6897,8 @@ PIVX Core Portemonnee</translation>
 </translation>
     </message>
     <message>
-        <source>Disable all PIVX specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>Schakel alle specifieke PIVX functionaliteit uit (Masternodes, Zerocoin, SwiftTX, Budgeting) (0-1, standaard: %u)</translation>
+        <source>Disable all SAPP specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Schakel alle specifieke SAPP functionaliteit uit (Masternodes, Zerocoin, SwiftTX, Budgeting) (0-1, standaard: %u)</translation>
     </message>
     <message>
         <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
@@ -6694,6 +6907,10 @@ PIVX Core Portemonnee</translation>
     <message>
         <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation>Fout: De transactie is afgewezen! Dit kan gebeuren als sommige munten in je portemonnee al waren uitgegeven, bijvoorbeeld als je een kopie van wallet.dat gebruikt en munten in de kopie waren besteed maar hier niet als zodanig gemarkeerd.</translation>
+    </message>
+    <message>
+        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
+        <translation>Fout: Deze transactie vereist transactiekosten van ten minste %s vanwege de hoeveelheid, de complexiteit of het gebruik van recent ontvangen fondsen!</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
@@ -6710,6 +6927,14 @@ PIVX Core Portemonnee</translation>
     <message>
         <source>In rare cases, a spend with 7 coins exceeds our maximum allowable transaction size, please retry spend using 6 or less coins</source>
         <translation>In zeldzame gevallen overschrijdt een besteding met 7 munten uw maximaal toegestane transactiegrootte. Probeer het opnieuw met 6 of minder munten</translation>
+    </message>
+    <message>
+        <source>Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)</source>
+        <translation>Voorkeur denominatie voor automatisch minted Zerocoin (1/5/10/50/100/500/1000/5000), 0 voor geen voorkeur. standaard: %u)</translation>
+    </message>
+    <message>
+        <source>Specify custom backup path to add a copy of any automatic zRPD backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Specificeer aangepast back-up pad om een kopie van elke automatische zRPD back-up toe te voegen. Indien ingesteld als dir zal elke back-up een bestand genereren met een tijdstempel. Indien ingesteld als file zal elke back-up herschreven worden naar dat bestand. Indien backuppath ook is ingesteld zullen 4 back-ups gedaan worden.</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -6730,6 +6955,10 @@ PIVX Core Portemonnee</translation>
     <message>
         <source>Cannot create public spend input</source>
         <translation>Kon geen publiek besteedadres aanmaken</translation>
+    </message>
+    <message>
+        <source>CoinSpend: Accumulator witness does not verify</source>
+        <translation>CoinSpend: Accumulator witness controleert niet</translation>
     </message>
     <message>
         <source>Display the stake modifier calculations in the debug.log file.</source>
@@ -6768,6 +6997,10 @@ PIVX Core Portemonnee</translation>
         <translation>Fout: geen geldige utxo!</translation>
     </message>
     <message>
+        <source>Failed to create mint</source>
+        <translation>Het is niet gelukt om mint te maken</translation>
+    </message>
+    <message>
         <source>Failed to find Zerocoins in wallet.dat</source>
         <translation>Niet gelukt om Zerocoins in wallet.dat te vinden.</translation>
     </message>
@@ -6786,10 +7019,6 @@ PIVX Core Portemonnee</translation>
     <message>
         <source>Failed to write coin serial number into wallet</source>
         <translation>Het serienummer van het muntstuk kan niet in de portemonnee worden geschreven</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -%s=&lt;amount&gt;: '%s'</source>
-        <translation>Ongeldige hoeveelheid voor -%s=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
@@ -6816,10 +7045,6 @@ PIVX Core Portemonnee</translation>
         <translation>Adressen laden...</translation>
     </message>
     <message>
-        <source>Loading banlist...</source>
-        <translation>Banlijst aan het laden...</translation>
-    </message>
-    <message>
         <source>Loading block index...</source>
         <translation>Blockindex laden...</translation>
     </message>
@@ -6840,6 +7065,10 @@ PIVX Core Portemonnee</translation>
         <translation>Sporks laden...</translation>
     </message>
     <message>
+        <source>Loading wallet... (%3.2f %%)</source>
+        <translation>Portemonnee laden... (%3.2f %%)</translation>
+    </message>
+    <message>
         <source>Loading wallet...</source>
         <translation>Portemonnee aan het laden...</translation>
     </message>
@@ -6854,10 +7083,6 @@ PIVX Core Portemonnee</translation>
     <message>
         <source>Lookup(): Invalid -proxy address or hostname: '%s'</source>
         <translation>Lookup (): ongeldig -proxy-adres of hostnaam: '%s'</translation>
-    </message>
-    <message>
-        <source>MNs synchronization pending...</source>
-        <translation>Synchronisatie van MN's in afwachting...</translation>
     </message>
     <message>
         <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>
@@ -6900,10 +7125,6 @@ PIVX Core Portemonnee</translation>
         <translation>Aantal aangepaste locatie back-ups om te behouden (standaard: %d)</translation>
     </message>
     <message>
-        <source>On first run, create a legacy wallet instead of a HD wallet</source>
-        <translation>Bij de initiële uitvoering, maak een legacy portemonnee aan in plaats van een HD portemonnee</translation>
-    </message>
-    <message>
         <source>Only accept block chain matching built-in checkpoints (default: %u)</source>
         <translation>Accepteer alleen blockchain matching met ingebouwde controlepunten (standaard: %u)</translation>
     </message>
@@ -6920,10 +7141,6 @@ PIVX Core Portemonnee</translation>
         <translation>Wachtwoord voor JSON-RPC connecties</translation>
     </message>
     <message>
-        <source>Peers are being disconnected due time differences.</source>
-        <translation>Peers worden verbroken vanwege tijdsverschillen.</translation>
-    </message>
-    <message>
         <source>Unable to find transaction containing mint %s</source>
         <translation>Kan geen transactie terugvinden die munting %s bevat</translation>
     </message>
@@ -6936,28 +7153,16 @@ PIVX Core Portemonnee</translation>
         <translation>Gebruik block-spamfilter (standaard: %u)</translation>
     </message>
     <message>
+        <source>could not get lock on cs_spendcache</source>
+        <translation>kon niet op cs_spendcache terecht komen</translation>
+    </message>
+    <message>
         <source>isValid(): Invalid -proxy address or hostname: '%s'</source>
         <translation>isValid (): ongeldig -proxy-adres of hostnaam: '%s'</translation>
     </message>
     <message>
         <source>Preparing for resync...</source>
         <translation>Voorbereiden van hersynchronisatie...</translation>
-    </message>
-    <message>
-        <source>Please check that your computer's date and time are correct! If your clock is wrong PIVX Core will not work properly.</source>
-        <translation>Controleer of de datum en tijd van je computer juist zijn! Als je klok verkeerd ingesteld staat, werkt PIVX Core niet goed.</translation>
-    </message>
-    <message>
-        <source>Specify location of debug log file: this can be an absolute path or a path relative to the data directory (default: %s)</source>
-        <translation>Geef de locatie van het foutopsporingslogboek op: dit kan een absoluut pad zijn of een pad ten opzichte van de gegevensmap (standaard: %s)</translation>
-    </message>
-    <message>
-        <source>Cannot resolve -%s address: '%s'</source>
-        <translation>Kan oplossing -%s niet voltooien voor adres: '%s'</translation>
-    </message>
-    <message>
-        <source>Cannot upgrade to HD wallet (already running HD support). Version: %d</source>
-        <translation>Kan niet upgraden naar een HD portemonnee (Voert alreeds HD ondersteuning uit). Versie: %d</translation>
     </message>
     <message>
         <source>Need destination or change address because change is not exact</source>
@@ -6990,6 +7195,14 @@ PIVX Core Portemonnee</translation>
     <message>
         <source>Rebuild block chain index from current blk000??.dat files</source>
         <translation>Herstel blockchain index van huidige blk000??.dat bestanden</translation>
+    </message>
+    <message>
+        <source>Receive and display P2P network alerts (default: %u)</source>
+        <translation>Ontvang en laat P2P netwerkmeldingen zien (standaard: %u)</translation>
+    </message>
+    <message>
+        <source>Reindex the accumulator database</source>
+        <translation>Herindexeer de verzameldatabase</translation>
     </message>
     <message>
         <source>Relay and mine data carrier transactions (default: %u)</source>
@@ -7026,6 +7239,10 @@ PIVX Core Portemonnee</translation>
     <message>
         <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
         <translation>Zend transacties als zero fee transacties indien mogelijk (standaard: %u)</translation>
+    </message>
+    <message>
+        <source>Session timed out.</source>
+        <translation>Sessie verlopen.</translation>
     </message>
     <message>
         <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
@@ -7070,6 +7287,10 @@ PIVX Core Portemonnee</translation>
     <message>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
         <translation>Krimp debug.log bestand bij client startup (standaard: 1 wanneer geen -debug)</translation>
+    </message>
+    <message>
+        <source>Signing timed out.</source>
+        <translation>Ondertekening time out.</translation>
     </message>
     <message>
         <source>Signing transaction failed</source>
@@ -7128,6 +7349,10 @@ PIVX Core Portemonnee</translation>
         <translation>Synchronisatie voltooid</translation>
     </message>
     <message>
+        <source>Synchronization pending...</source>
+        <translation>Synchronisatie in afwachting...</translation>
+    </message>
+    <message>
         <source>Synchronizing budgets...</source>
         <translation>Budgeten synchroniseren...</translation>
     </message>
@@ -7144,8 +7369,16 @@ PIVX Core Portemonnee</translation>
         <translation>Synchroniseren sporks...</translation>
     </message>
     <message>
-        <source>Syncing zPIV wallet...</source>
-        <translation>Synchroniseren zPIV portemonnee...</translation>
+        <source>Syncing zRPD wallet...</source>
+        <translation>Synchroniseren zRPD portemonnee...</translation>
+    </message>
+    <message>
+        <source>The coin spend has been used</source>
+        <translation>De muntuitgaven zijn gebruikt</translation>
+    </message>
+    <message>
+        <source>The transaction did not verify</source>
+        <translation>De transactie heeft niet geverifieerd</translation>
     </message>
     <message>
         <source>This help message</source>
@@ -7212,10 +7445,6 @@ PIVX Core Portemonnee</translation>
         <translation>Niet mogelijke om de initiële sleutel te genereren.</translation>
     </message>
     <message>
-        <source>Unable to generate keys</source>
-        <translation>Niet mogelijke om sleutels te genereren.</translation>
-    </message>
-    <message>
         <source>Unable to sign spork message, wrong key?</source>
         <translation>Kan sporkbericht niet tekenen, verkeerde sleutel?</translation>
     </message>
@@ -7226,10 +7455,6 @@ PIVX Core Portemonnee</translation>
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
         <translation>Onbekend netwerk gespecificeerd in -onlynet: '%s'</translation>
-    </message>
-    <message>
-        <source>Unsupported logging category %s=%s.</source>
-        <translation>Niet-ondersteunde logboekcategorie %s=%s.</translation>
     </message>
     <message>
         <source>Upgrade wallet to latest format</source>
@@ -7260,8 +7485,8 @@ PIVX Core Portemonnee</translation>
         <translation>Gebruikersnaam voor JSON-RPC verbindingen</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zPIV</source>
-        <translation>Waarde is minder dan de kleinst beschikbare denominatie (=1) van zPIV</translation>
+        <source>Value is below the smallest available denomination (= 1) of zRPD</source>
+        <translation>Waarde is minder dan de kleinst beschikbare denominatie (=1) van zRPD</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -7276,8 +7501,8 @@ PIVX Core Portemonnee</translation>
         <translation>Portemonnee %s verblijft buiten de data directory %s</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart PIVX Core to complete</source>
-        <translation>Wallet moest worden herschreven: start PIVX Core opnieuw om te voltooien</translation>
+        <source>Wallet needed to be rewritten: restart Sap to complete</source>
+        <translation>Wallet moest worden herschreven: start Sap opnieuw om te voltooien</translation>
     </message>
     <message>
         <source>Wallet options:</source>
@@ -7320,10 +7545,6 @@ PIVX Core Portemonnee</translation>
         <translation>ZeroMQ notificatie opties:</translation>
     </message>
     <message>
-        <source>Zerocoin minting available only on regtest</source>
-        <translation>Zerocoin munting alleen beschikbaar via regtest</translation>
-    </message>
-    <message>
         <source>Zerocoin options:</source>
         <translation>Zerocoin opties:</translation>
     </message>
@@ -7349,10 +7570,6 @@ PIVX Core Portemonnee</translation>
     <message>
         <source>TextLabel</source>
         <translation>TextLabel</translation>
-    </message>
-    <message>
-        <source>Include delegated</source>
-        <translation>Reken delegatie mee</translation>
     </message>
     <message>
         <source>PushButton</source>

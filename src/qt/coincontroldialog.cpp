@@ -92,7 +92,10 @@ CoinControlDialog::CoinControlDialog(QWidget* parent, bool fMultisigEnabled) : Q
 
     // Buttons
     setCssProperty({ui->pushButtonSelectAll, ui->pushButtonToggleLock}, "btn-check");
+    ui->btnEsc->setProperty("cssClass", "ic-close");
     ui->pushButtonOk->setProperty("cssClass", "btn-primary");
+
+    connect(ui->btnEsc, &QPushButton::clicked, this, &CoinControlDialog::close);
 
     this->fMultisigEnabled = fMultisigEnabled;
 
@@ -225,21 +228,24 @@ void CoinControlDialog::setModel(WalletModel* model)
 // (un)select all
 void CoinControlDialog::buttonSelectAllClicked()
 {
-    // "Select all": if some entry is unchecked, then check it
-    // "Unselect all": if some entry is checked, then uncheck it
-    Qt::CheckState wantedState = fSelectAllToggled ? Qt::Checked : Qt::Unchecked;
+    Qt::CheckState state = Qt::Checked;
+    for (int i = 0; i < ui->treeWidget->topLevelItemCount(); i++) {
+        if (ui->treeWidget->topLevelItem(i)->checkState(COLUMN_CHECKBOX) != Qt::Unchecked) {
+            state = Qt::Unchecked;
+            break;
+        }
+    }
     ui->treeWidget->setEnabled(false);
     for (int i = 0; i < ui->treeWidget->topLevelItemCount(); i++)
-        if (ui->treeWidget->topLevelItem(i)->checkState(COLUMN_CHECKBOX) != wantedState)
-            ui->treeWidget->topLevelItem(i)->setCheckState(COLUMN_CHECKBOX, wantedState);
+        if (ui->treeWidget->topLevelItem(i)->checkState(COLUMN_CHECKBOX) != state)
+            ui->treeWidget->topLevelItem(i)->setCheckState(COLUMN_CHECKBOX, state);
     ui->treeWidget->setEnabled(true);
-    if (!fSelectAllToggled) {
+    if (state == Qt::Unchecked) {
         coinControl->UnSelectAll(); // just to be sure
         ui->pushButtonSelectAll->setText(tr("Select all"));
-    } else {
+    }else{
         ui->pushButtonSelectAll->setText(tr("Unselect all"));
     }
-    fSelectAllToggled = !fSelectAllToggled;
     CoinControlDialog::updateLabels(model, this);
     updateDialogLabels();
 }
@@ -854,9 +860,9 @@ void CoinControlDialog::updateView()
                 haveDest = ExtractDestination(out.tx->vout[out.i].scriptPubKey, outputAddress);
             }
             if (haveDest) {
-                sAddress = QString::fromStdString(EncodeDestination(outputAddress));
+                sAddress = QString::fromStdString(CBitcoinAddress(outputAddress).ToString());
 
-                // if listMode or change => show PIVX address. In tree mode, address is not shown again for direct wallet address outputs
+                // if listMode or change => show SAPP address. In tree mode, address is not shown again for direct wallet address outputs
                 if (!treeMode || (!(sAddress == sWalletAddress)))
                     itemOutput->setText(COLUMN_ADDRESS, sAddress);
                 else
@@ -906,9 +912,18 @@ void CoinControlDialog::updateView()
             // vout index
             itemOutput->setText(COLUMN_VOUT_INDEX, QString::number(out.i));
 
+            // outputs delegated (for cold staking)
+            if (fDelegated) {
+                itemOutput->setData(COLUMN_CHECKBOX, Qt::UserRole, QString("Delegated"));
+                itemOutput->setIcon(COLUMN_CHECKBOX, QIcon("://ic-check-cold-staking-off"));
+                if (haveDest) {
+                    sAddress = QString::fromStdString(CBitcoinAddress(outputAddressStaker, CChainParams::STAKING_ADDRESS).ToString());
+                    itemOutput->setToolTip(COLUMN_CHECKBOX, tr("delegated to %1 for cold staking").arg(sAddress));
+                }
+            }
+
             // disable locked coins
-            const bool isLockedCoin = model->isLockedCoin(txhash, out.i);
-            if (isLockedCoin) {
+            if (model->isLockedCoin(txhash, out.i)) {
                 COutPoint outpt(txhash, out.i);
                 coinControl->UnSelect(outpt); // just to be sure
                 itemOutput->setDisabled(true);
@@ -918,17 +933,6 @@ void CoinControlDialog::updateView()
             // set checkbox
             if (coinControl->IsSelected(txhash, out.i))
                 itemOutput->setCheckState(COLUMN_CHECKBOX, Qt::Checked);
-
-            // outputs delegated (for cold staking)
-            if (fDelegated) {
-                itemOutput->setData(COLUMN_CHECKBOX, Qt::UserRole, QString("Delegated"));
-                if (!isLockedCoin)
-                    itemOutput->setIcon(COLUMN_CHECKBOX, QIcon("://ic-check-cold-staking-off"));
-                if (haveDest) {
-                    sAddress = QString::fromStdString(EncodeDestination(outputAddressStaker, CChainParams::STAKING_ADDRESS));
-                    itemOutput->setToolTip(COLUMN_CHECKBOX, tr("delegated to %1 for cold staking").arg(sAddress));
-                }
-            }
         }
 
         // amount

@@ -84,28 +84,24 @@ MasterNodesWidget::MasterNodesWidget(PIVXGUI *parent) :
     /* Containers */
     setCssProperty(ui->left, "container");
     ui->left->setContentsMargins(0,20,0,20);
-    setCssProperty(ui->right, "container-right");
-    ui->right->setContentsMargins(20,20,20,20);
 
     /* Light Font */
     QFont fontLight;
     fontLight.setWeight(QFont::Light);
 
     /* Title */
+    ui->labelTitle->setText(tr("Masternodes"));
     setCssTitleScreen(ui->labelTitle);
     ui->labelTitle->setFont(fontLight);
+
+    ui->labelSubtitle1->setText(tr("Full nodes that incentivize node operators to perform the core consensus functions\nand vote on the treasury system receiving a periodic reward."));
     setCssSubtitleScreen(ui->labelSubtitle1);
 
     /* Buttons */
+    ui->pushButtonSave->setText(tr("Create Masternode Controller"));
     setCssBtnPrimary(ui->pushButtonSave);
     setCssBtnPrimary(ui->pushButtonStartAll);
     setCssBtnPrimary(ui->pushButtonStartMissing);
-
-    /* Options */
-    ui->btnAbout->setTitleClassAndText("btn-title-grey", tr("What is a Masternode?"));
-    ui->btnAbout->setSubTitleClassAndText("text-subtitle", tr("FAQ explaining what Masternodes are"));
-    ui->btnAboutController->setTitleClassAndText("btn-title-grey", tr("What is a Controller?"));
-    ui->btnAboutController->setSubTitleClassAndText("text-subtitle", tr("FAQ explaining what is a Masternode Controller"));
 
     setCssProperty(ui->listMn, "container");
     ui->listMn->setItemDelegate(delegate);
@@ -116,6 +112,7 @@ MasterNodesWidget::MasterNodesWidget(PIVXGUI *parent) :
 
     ui->emptyContainer->setVisible(false);
     setCssProperty(ui->pushImgEmpty, "img-empty-master");
+    ui->labelEmpty->setText(tr("No active Masternode yet"));
     setCssProperty(ui->labelEmpty, "text-empty");
 
     connect(ui->pushButtonSave, &QPushButton::clicked, this, &MasterNodesWidget::onCreateMNClicked);
@@ -126,8 +123,6 @@ MasterNodesWidget::MasterNodesWidget(PIVXGUI *parent) :
         onStartAllClicked(REQUEST_START_MISSING);
     });
     connect(ui->listMn, &QListView::clicked, this, &MasterNodesWidget::onMNClicked);
-    connect(ui->btnAbout, &OptionButton::clicked, [this](){window->openFAQ(9);});
-    connect(ui->btnAboutController, &OptionButton::clicked, [this](){window->openFAQ(10);});
 }
 
 void MasterNodesWidget::showEvent(QShowEvent *event)
@@ -288,7 +283,7 @@ bool MasterNodesWidget::startAll(QString& failText, bool onlyMissing)
             continue;
         }
 
-        if (!mnModel->isMNCollateralMature(mnAlias)) {
+        if(!mnModel->isMNCollateralMature(mnAlias)) {
             amountOfMnFailed++;
             continue;
         }
@@ -350,7 +345,7 @@ void MasterNodesWidget::onInfoMNClicked()
     if (dialog->exportMN) {
         if (ask(tr("Remote Masternode Data"),
                 tr("You are just about to export the required data to run a Masternode\non a remote server to your clipboard.\n\n\n"
-                   "You will only have to paste the data in the pivx.conf file\nof your remote server and start it, "
+                   "You will only have to paste the data in the sap.conf file\nof your remote server and start it, "
                    "then start the Masternode using\nthis controller wallet (select the Masternode in the list and press \"start\").\n"
                 ))) {
             // export data
@@ -427,7 +422,7 @@ void MasterNodesWidget::onDeleteMNClicked()
         if (lineCopy.size() == 0) {
             lineCopy = "# Masternode config file\n"
                                     "# Format: alias IP:port masternodeprivkey collateral_output_txid collateral_output_index\n"
-                                    "# Example: mn1 127.0.0.2:51472 93HaYBVUCYjEMeeH1Y4sBGLALQZE1Yc1K64xiqgX37tGBDQL8Xg 2bcd3c84c84f87eaa86e4e56834c92927a07f9e18718810b92e0d0324456a67c 0\n";
+                                    "# Example: mn1 127.0.0.2:45328 93HaYBVUCYjEMeeH1Y4sBGLALQZE1Yc1K64xiqgX37tGBDQL8Xg 2bcd3c84c84f87eaa86e4e56834c92927a07f9e18718810b92e0d0324456a67c 0\n";
         }
 
         streamConfig.close();
@@ -453,7 +448,7 @@ void MasterNodesWidget::onDeleteMNClicked()
             // Unlock collateral
             bool convertOK = false;
             unsigned int indexOut = outIndex.toUInt(&convertOK);
-            if (convertOK) {
+            if(convertOK) {
                 COutPoint collateralOut(uint256(txId.toStdString()), indexOut);
                 walletModel->unlockCoin(collateralOut);
             }
@@ -464,7 +459,7 @@ void MasterNodesWidget::onDeleteMNClicked()
             mnModel->removeMn(index);
             updateListState();
         }
-    } else {
+    } else{
         inform(tr("masternode.conf file doesn't exists"));
     }
 }
@@ -479,7 +474,7 @@ void MasterNodesWidget::onCreateMNClicked()
     }
 
     if (walletModel->getBalance() <= (COIN * 10000)) {
-        inform(tr("Not enough balance to create a masternode, 10,000 %1 required.").arg(CURRENCY_UNIT.c_str()));
+        inform(tr("Not enough balance to create a masternode, 10,000,000 SAPP required."));
         return;
     }
     showHideOp(true);

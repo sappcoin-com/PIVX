@@ -1,6 +1,6 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2020 The PIVX developers
+// Copyright (c) 2015-2019 The PIVX developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -76,14 +76,13 @@ extern double NSAppKitVersionNumber;
 #endif
 #endif
 
-#define URI_SCHEME "pivx"
+#define URI_SCHEME "sap"
 
 #if defined(Q_OS_MAC)
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wdeprecated-declarations"
 
 #include <CoreServices/CoreServices.h>
-#include <QProcess>
 
 void ForceActivation();
 #endif
@@ -142,7 +141,7 @@ void setupAddressWidget(QValidatedLineEdit* widget, QWidget* parent)
     widget->setFont(bitcoinAddressFont());
     // We don't want translators to use own addresses in translations
     // and this is the only place, where this address is supplied.
-    widget->setPlaceholderText(QObject::tr("Enter PIVX address (e.g. %1)").arg("D7VFR83SQbiezrW72hjcWJtcfip5krte2Z"));
+    widget->setPlaceholderText(QObject::tr("Enter SAPP address (e.g. %1)").arg("7mphVWRT43hdZ9zncvPRgA94tuL2dvFXCL"));
     widget->setValidator(new BitcoinAddressEntryValidator(parent));
     widget->setCheckValidator(new BitcoinAddressCheckValidator(parent));
 }
@@ -164,7 +163,7 @@ void updateWidgetTextAndCursorPosition(QLineEdit* widget, const QString& str)
 
 bool parseBitcoinURI(const QUrl& uri, SendCoinsRecipient* out)
 {
-    // return if URI is not valid or is no PIVX: URI
+    // return if URI is not valid or is no SAPP: URI
     if (!uri.isValid() || uri.scheme() != QString(URI_SCHEME))
         return false;
 
@@ -213,7 +212,7 @@ bool parseBitcoinURI(const QUrl& uri, SendCoinsRecipient* out)
 
 bool parseBitcoinURI(QString uri, SendCoinsRecipient* out)
 {
-    // Convert pivx:// to pivx:
+    // Convert pivx:// to sap:
     //
     //    Cannot handle this later, because pivx:// will cause Qt to see the part after // as host,
     //    which will lower-case it (and thus invalidate the address).
@@ -251,7 +250,7 @@ QString formatBitcoinURI(const SendCoinsRecipient& info)
 
 bool isDust(const QString& address, const CAmount& amount)
 {
-    CTxDestination dest = DecodeDestination(address.toStdString());
+    CTxDestination dest = CBitcoinAddress(address.toStdString()).Get();
     CScript script = GetScriptForDestination(dest);
     CTxOut txOut(amount, script);
     return txOut.IsDust(::minRelayTxFee);
@@ -403,40 +402,44 @@ void bringToFront(QWidget* w)
     }
 }
 
-/* Open file with the associated application */
-bool openFile(boost::filesystem::path path, bool isTextFile)
-{
-    bool ret = false;
-    if (boost::filesystem::exists(path)) {
-        ret = QDesktopServices::openUrl(QUrl::fromLocalFile(boostPathToQString(path)));
-#ifdef Q_OS_MAC
-        // Workaround for macOS-specific behavior; see btc@15409.
-        if (isTextFile && !ret) {
-            ret = QProcess::startDetached("/usr/bin/open", QStringList{"-t", boostPathToQString(path)});
-        }
-#endif
-    }
-    return ret;
-}
-
 bool openDebugLogfile()
 {
-    return openFile(GetDataDir() / "debug.log", true);
+    boost::filesystem::path pathDebug = GetDataDir() / "debug.log";
+
+    /* Open debug.log with the associated application */
+    if (boost::filesystem::exists(pathDebug))
+        return QDesktopServices::openUrl(QUrl::fromLocalFile(boostPathToQString(pathDebug)));
+    return false;
 }
 
 bool openConfigfile()
 {
-    return openFile(GetConfigFile(), true);
+    boost::filesystem::path pathConfig = GetConfigFile();
+
+    /* Open sap.conf with the associated application */
+    if (boost::filesystem::exists(pathConfig))
+        return QDesktopServices::openUrl(QUrl::fromLocalFile(boostPathToQString(pathConfig)));
+    return false;
 }
 
 bool openMNConfigfile()
 {
-    return openFile(GetMasternodeConfigFile(), true);
+    boost::filesystem::path pathConfig = GetMasternodeConfigFile();
+
+    /* Open masternode.conf with the associated application */
+    if (boost::filesystem::exists(pathConfig))
+        return QDesktopServices::openUrl(QUrl::fromLocalFile(boostPathToQString(pathConfig)));
+    return false;
 }
 
 bool showBackups()
 {
-    return openFile(GetDataDir() / "backups", false);
+    boost::filesystem::path pathBackups = GetDataDir() / "backups";
+
+    /* Open folder with default browser */
+    if (boost::filesystem::exists(pathBackups))
+        return QDesktopServices::openUrl(QUrl::fromLocalFile(boostPathToQString(pathBackups)));
+    return false;
 }
 
 void SubstituteFonts(const QString& language)
@@ -634,12 +637,12 @@ bool DHMSTableWidgetItem::operator<(QTableWidgetItem const& item) const
 #ifdef WIN32
 boost::filesystem::path static StartupShortcutPath()
 {
-    return GetSpecialFolderPath(CSIDL_STARTUP) / "PIVX.lnk";
+    return GetSpecialFolderPath(CSIDL_STARTUP) / "Sap.lnk";
 }
 
 bool GetStartOnSystemStartup()
 {
-    // check for PIVX.lnk
+    // check for SAPP.lnk
     return boost::filesystem::exists(StartupShortcutPath());
 }
 
@@ -713,7 +716,7 @@ boost::filesystem::path static GetAutostartDir()
 
 boost::filesystem::path static GetAutostartFilePath()
 {
-    return GetAutostartDir() / "pivx.desktop";
+    return GetAutostartDir() / "sap.desktop";
 }
 
 bool GetStartOnSystemStartup()
@@ -752,7 +755,7 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         // Write a pivx.desktop file to the autostart directory:
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
-        optionFile << "Name=PIVX\n";
+        optionFile << "Name=Sap\n";
         optionFile << "Exec=" << pszExePath << " -min\n";
         optionFile << "Terminal=false\n";
         optionFile << "Hidden=false\n";

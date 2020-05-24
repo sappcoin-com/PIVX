@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="2,1">
+  <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="2">
    <property name="spacing">
     <number>0</number>
    </property>
@@ -65,15 +65,14 @@
             <item>
              <widget class="QLabel" name="labelTitle">
               <property name="text">
-               <string>Masternodes</string>
+               <string>TextLabel</string>
               </property>
              </widget>
             </item>
             <item alignment="Qt::AlignTop">
              <widget class="QLabel" name="labelSubtitle1">
               <property name="text">
-               <string>Full nodes that incentivize node operators to perform the core consensus functions
-and vote on the treasury system receiving a periodic reward.</string>
+               <string>TextLabel</string>
               </property>
              </widget>
             </item>
@@ -227,7 +226,7 @@ and vote on the treasury system receiving a periodic reward.</string>
                  <string notr="true"/>
                 </property>
                 <property name="text">
-                 <string>No active Masternode yet</string>
+                 <string>N/A</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignCenter</set>
@@ -279,7 +278,7 @@ and vote on the treasury system receiving a periodic reward.</string>
              <enum>Qt::NoFocus</enum>
             </property>
             <property name="text">
-             <string>Create Masternode Controller</string>
+             <string/>
             </property>
            </widget>
           </item>
@@ -316,74 +315,8 @@ and vote on the treasury system receiving a periodic reward.</string>
      </layout>
     </widget>
    </item>
-   <item>
-    <widget class="QWidget" name="right" native="true">
-     <layout class="QVBoxLayout" name="verticalLayout_5">
-      <property name="leftMargin">
-       <number>0</number>
-      </property>
-      <property name="topMargin">
-       <number>0</number>
-      </property>
-      <property name="rightMargin">
-       <number>0</number>
-      </property>
-      <property name="bottomMargin">
-       <number>0</number>
-      </property>
-      <item>
-       <layout class="QVBoxLayout" name="verticalLayout_4">
-        <property name="spacing">
-         <number>6</number>
-        </property>
-        <item>
-         <widget class="OptionButton" name="btnAbout" native="true">
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>50</height>
-           </size>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="OptionButton" name="btnAboutController" native="true">
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>50</height>
-           </size>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <spacer name="verticalSpacer_5">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>20</width>
-            <height>40</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-       </layout>
-      </item>
-     </layout>
-    </widget>
-   </item>
   </layout>
  </widget>
- <customwidgets>
-  <customwidget>
-   <class>OptionButton</class>
-   <extends>QWidget</extends>
-   <header>qt/pivx/optionbutton.h</header>
-   <container>1</container>
-  </customwidget>
- </customwidgets>
  <resources/>
  <connections/>
 </ui>

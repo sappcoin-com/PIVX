@@ -7,7 +7,7 @@
 #define BITCOIN_NETBASE_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/pivx-config.h"
+#include "config/sap-config.h"
 #endif
 
 #include "compat.h"
@@ -181,7 +181,7 @@ public:
     {
         READWRITE(FLATDATA(ip));
         unsigned short portN = htons(port);
-        READWRITE(FLATDATA(portN));
+        READWRITE(portN);
         if (ser_action.ForRead())
             port = ntohs(portN);
     }

@@ -1,4 +1,4 @@
-// Copyright (c) 2019-2020 The PIVX developers
+// Copyright (c) 2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -40,6 +40,7 @@ LoadingDialog::LoadingDialog(QWidget *parent) :
     ui->labelMovie->setMovie(movie);
     movie->start();
 
+    ui->labelMessage->setText(tr("Loading"));
     ui->labelMessage->setProperty("cssClass", "text-loading");
     ui->labelDots->setProperty("cssClass", "text-loading");
 }

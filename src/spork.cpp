@@ -1,5 +1,5 @@
 // Copyright (c) 2014-2016 The Dash developers
-// Copyright (c) 2016-2020 The PIVX developers
+// Copyright (c) 2016-2019 The PIVX developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -16,13 +16,13 @@
 std::vector<CSporkDef> sporkDefs = {
     MAKE_SPORK_DEF(SPORK_2_SWIFTTX,                         0),             // ON
     MAKE_SPORK_DEF(SPORK_3_SWIFTTX_BLOCK_FILTERING,         0),             // ON
-    MAKE_SPORK_DEF(SPORK_5_MAX_VALUE,                       1000),          // 1000 PIV
+    MAKE_SPORK_DEF(SPORK_5_MAX_VALUE,                       1000),          // 1000 SAPP
     MAKE_SPORK_DEF(SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT,  4070908800ULL), // OFF
     MAKE_SPORK_DEF(SPORK_9_MASTERNODE_BUDGET_ENFORCEMENT,   4070908800ULL), // OFF
     MAKE_SPORK_DEF(SPORK_13_ENABLE_SUPERBLOCKS,             4070908800ULL), // OFF
     MAKE_SPORK_DEF(SPORK_14_NEW_PROTOCOL_ENFORCEMENT,       4070908800ULL), // OFF
     MAKE_SPORK_DEF(SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2,     4070908800ULL), // OFF
-    MAKE_SPORK_DEF(SPORK_16_ZEROCOIN_MAINTENANCE_MODE,      4070908800ULL), // OFF
+    MAKE_SPORK_DEF(SPORK_16_ZEROCOIN_MAINTENANCE_MODE,      0),
     MAKE_SPORK_DEF(SPORK_17_COLDSTAKING_ENFORCEMENT,        4070908800ULL), // OFF
     MAKE_SPORK_DEF(SPORK_18_ZEROCOIN_PUBLICSPEND_V4,        4070908800ULL), // OFF
 };
@@ -84,7 +84,8 @@ void CSporkManager::ProcessSpork(CNode* pfrom, std::string& strCommand, CDataStr
         nChainHeight = chainActive.Height();
     }
 
-    if (strCommand == NetMsgType::SPORK) {
+    if (strCommand == "spork") {
+
         CSporkMessage spork;
         vRecv >> spork;
 
@@ -133,20 +134,12 @@ void CSporkManager::ProcessSpork(CNode* pfrom, std::string& strCommand, CDataStr
             }
         }
 
-        const bool fRequireNew = spork.nTimeSigned >= Params().GetConsensus().nTime_EnforceNewSporkKey;
         bool fValidSig = spork.CheckSignature();
-        if (!fValidSig && !fRequireNew) {
-            // See if window is open that allows for old spork key to sign messages
-            if (GetAdjustedTime() < Params().GetConsensus().nTime_RejectOldSporkKey) {
-                CPubKey pubkeyold = spork.GetPublicKeyOld();
-                fValidSig = spork.CheckSignature(pubkeyold);
-            }
-        }
 
+        //! dont ban on old sigs,
+        //! be the bigger man and ignore them
         if (!fValidSig) {
             LOCK(cs_main);
-            LogPrintf("%s : Invalid Signature\n", __func__);
-            Misbehaving(pfrom->GetId(), 100);
             return;
         }
 
@@ -160,12 +153,12 @@ void CSporkManager::ProcessSpork(CNode* pfrom, std::string& strCommand, CDataStr
         // PIVX: add to spork database.
         pSporkDB->WriteSpork(spork.nSporkID, spork);
     }
-    if (strCommand == NetMsgType::GETSPORKS) {
+    if (strCommand == "getsporks") {
         LOCK(cs);
         std::map<SporkId, CSporkMessage>::iterator it = mapSporksActive.begin();
 
         while (it != mapSporksActive.end()) {
-            pfrom->PushMessage(NetMsgType::SPORK, it->second);
+            pfrom->PushMessage("spork", it->second);
             it++;
         }
     }
@@ -176,7 +169,7 @@ bool CSporkManager::UpdateSpork(SporkId nSporkID, int64_t nValue)
     bool fNewSigs = false;
     {
         LOCK(cs_main);
-        fNewSigs = chainActive.NewSigsActive();
+        fNewSigs = false;
     }
 
 
@@ -245,15 +238,8 @@ bool CSporkManager::SetPrivKey(std::string strPrivKey)
 
     spork.Sign(strPrivKey, true);
 
-    const bool fRequireNew = GetTime() >= Params().GetConsensus().nTime_EnforceNewSporkKey;
     bool fValidSig = spork.CheckSignature();
-    if (!fValidSig && !fRequireNew) {
-        // See if window is open that allows for old spork key to sign messages
-        if (GetAdjustedTime() < Params().GetConsensus().nTime_RejectOldSporkKey) {
-            CPubKey pubkeyold = spork.GetPublicKeyOld();
-            fValidSig = spork.CheckSignature(pubkeyold);
-        }
-    }
+
     if (fValidSig) {
         LOCK(cs);
         // Test signing successful, proceed
@@ -291,11 +277,6 @@ std::string CSporkMessage::GetStrMessage() const
 const CPubKey CSporkMessage::GetPublicKey(std::string& strErrorRet) const
 {
     return CPubKey(ParseHex(Params().GetConsensus().strSporkPubKey));
-}
-
-const CPubKey CSporkMessage::GetPublicKeyOld() const
-{
-    return CPubKey(ParseHex(Params().GetConsensus().strSporkPubKeyOld));
 }
 
 void CSporkMessage::Relay()

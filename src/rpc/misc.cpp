@@ -12,6 +12,7 @@
 #include "init.h"
 #include "main.h"
 #include "masternode-sync.h"
+#include "miner.h"
 #include "net.h"
 #include "netbase.h"
 #include "rpc/server.h"
@@ -57,7 +58,7 @@ UniValue getinfo(const UniValue& params, bool fHelp)
             "  \"version\": xxxxx,             (numeric) the server version\n"
             "  \"protocolversion\": xxxxx,     (numeric) the protocol version\n"
             "  \"walletversion\": xxxxx,       (numeric) the wallet version\n"
-            "  \"balance\": xxxxxxx,           (numeric) the total pivx balance of the wallet (excluding zerocoins)\n"
+            "  \"balance\": xxxxxxx,           (numeric) the total sap balance of the wallet (excluding zerocoins)\n"
             "  \"zerocoinbalance\": xxxxxxx,   (numeric) the total zerocoin balance of the wallet\n"
             "  \"staking status\": true|false, (boolean) if the wallet is staking or not\n"
             "  \"blocks\": xxxxxx,             (numeric) the current number of blocks processed in the server\n"
@@ -67,23 +68,23 @@ UniValue getinfo(const UniValue& params, bool fHelp)
             "  \"difficulty\": xxxxxx,         (numeric) the current difficulty\n"
             "  \"testnet\": true|false,        (boolean) if the server is using testnet or not\n"
             "  \"moneysupply\" : \"supply\"    (numeric) The money supply when this block was added to the blockchain\n"
-            "  \"zPIVsupply\" :\n"
+            "  \"zRPDsupply\" :\n"
             "  {\n"
-            "     \"1\" : n,            (numeric) supply of 1 zPIV denomination\n"
-            "     \"5\" : n,            (numeric) supply of 5 zPIV denomination\n"
-            "     \"10\" : n,           (numeric) supply of 10 zPIV denomination\n"
-            "     \"50\" : n,           (numeric) supply of 50 zPIV denomination\n"
-            "     \"100\" : n,          (numeric) supply of 100 zPIV denomination\n"
-            "     \"500\" : n,          (numeric) supply of 500 zPIV denomination\n"
-            "     \"1000\" : n,         (numeric) supply of 1000 zPIV denomination\n"
-            "     \"5000\" : n,         (numeric) supply of 5000 zPIV denomination\n"
-            "     \"total\" : n,        (numeric) The total supply of all zPIV denominations\n"
+            "     \"1\" : n,            (numeric) supply of 1 zRPD denomination\n"
+            "     \"5\" : n,            (numeric) supply of 5 zRPD denomination\n"
+            "     \"10\" : n,           (numeric) supply of 10 zRPD denomination\n"
+            "     \"50\" : n,           (numeric) supply of 50 zRPD denomination\n"
+            "     \"100\" : n,          (numeric) supply of 100 zRPD denomination\n"
+            "     \"500\" : n,          (numeric) supply of 500 zRPD denomination\n"
+            "     \"1000\" : n,         (numeric) supply of 1000 zRPD denomination\n"
+            "     \"5000\" : n,         (numeric) supply of 5000 zRPD denomination\n"
+            "     \"total\" : n,        (numeric) The total supply of all zRPD denominations\n"
             "  }\n"
             "  \"keypoololdest\": xxxxxx,      (numeric) the timestamp (seconds since GMT epoch) of the oldest pre-generated key in the key pool\n"
             "  \"keypoolsize\": xxxx,          (numeric) how many new keys are pre-generated\n"
             "  \"unlocked_until\": ttt,        (numeric) the timestamp in seconds since epoch (midnight Jan 1 1970 GMT) that the wallet is unlocked for transfers, or 0 if the wallet is locked\n"
-            "  \"paytxfee\": x.xxxx,           (numeric) the transaction fee set in pivx/kb\n"
-            "  \"relayfee\": x.xxxx,           (numeric) minimum relay fee for non-free transactions in pivx/kb\n"
+            "  \"paytxfee\": x.xxxx,           (numeric) the transaction fee set in sap/kb\n"
+            "  \"relayfee\": x.xxxx,           (numeric) minimum relay fee for non-free transactions in sap/kb\n"
             "  \"errors\": \"...\"             (string) any error messages\n"
             "}\n"
 
@@ -153,7 +154,7 @@ UniValue getinfo(const UniValue& params, bool fHelp)
             zpivObj.push_back(Pair(std::to_string(denom), ValueFromAmount(mapZerocoinSupply.at(denom) * (denom*COIN))));
     }
     zpivObj.push_back(Pair("total", ValueFromAmount(GetZerocoinSupply())));
-    obj.push_back(Pair("zPIVsupply", zpivObj));
+    obj.push_back(Pair("zRPDsupply", zpivObj));
 
 #ifdef ENABLE_WALLET
     if (pwalletMain) {
@@ -277,7 +278,7 @@ public:
         obj.push_back(Pair("hex", HexStr(subscript.begin(), subscript.end())));
         UniValue a(UniValue::VARR);
         for (const CTxDestination& addr : addresses)
-            a.push_back(EncodeDestination(addr));
+            a.push_back(CBitcoinAddress(addr).ToString());
         obj.push_back(Pair("addresses", a));
         if (whichType == TX_MULTISIG)
             obj.push_back(Pair("sigsrequired", nRequired));
@@ -353,16 +354,16 @@ UniValue validateaddress(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 1)
         throw std::runtime_error(
-            "validateaddress \"pivxaddress\"\n"
-            "\nReturn information about the given pivx address.\n"
+            "validateaddress \"sapaddress\"\n"
+            "\nReturn information about the given sap address.\n"
 
             "\nArguments:\n"
-            "1. \"pivxaddress\"     (string, required) The pivx address to validate\n"
+            "1. \"sapaddress\"     (string, required) The sap address to validate\n"
 
             "\nResult:\n"
             "{\n"
             "  \"isvalid\" : true|false,         (boolean) If the address is valid or not. If not, this is the only property returned.\n"
-            "  \"address\" : \"pivxaddress\",    (string) The pivx address validated\n"
+            "  \"address\" : \"sapaddress\",    (string) The sap address validated\n"
             "  \"scriptPubKey\" : \"hex\",       (string) The hex encoded scriptPubKey generated by the address\n"
             "  \"ismine\" : true|false,          (boolean) If the address is yours or not\n"
             "  \"isstaking\" : true|false,       (boolean) If the address is a staking address for PIVX cold staking\n"
@@ -383,14 +384,14 @@ UniValue validateaddress(const UniValue& params, bool fHelp)
     LOCK(cs_main);
 #endif
 
-    std::string currentAddress = params[0].get_str();
-    bool isStakingAddress = false;
-    CTxDestination dest = DecodeDestination(currentAddress, isStakingAddress);
-    bool isValid = IsValidDestination(dest);
+    CBitcoinAddress address(params[0].get_str());
+    bool isValid = address.IsValid();
 
     UniValue ret(UniValue::VOBJ);
     ret.push_back(Pair("isvalid", isValid));
     if (isValid) {
+        CTxDestination dest = address.Get();
+        std::string currentAddress = address.ToString();
         ret.push_back(Pair("address", currentAddress));
         CScript scriptPubKey = GetScriptForDestination(dest);
         ret.push_back(Pair("scriptPubKey", HexStr(scriptPubKey.begin(), scriptPubKey.end())));
@@ -398,7 +399,7 @@ UniValue validateaddress(const UniValue& params, bool fHelp)
 #ifdef ENABLE_WALLET
         isminetype mine = pwalletMain ? IsMine(*pwalletMain, dest) : ISMINE_NO;
         ret.push_back(Pair("ismine", bool(mine & (ISMINE_SPENDABLE_ALL | ISMINE_COLD))));
-        ret.push_back(Pair("isstaking", isStakingAddress));
+        ret.push_back(Pair("isstaking", address.IsStakingAddress()));
         ret.push_back(Pair("iswatchonly", bool(mine & ISMINE_WATCH_ONLY)));
         UniValue detail = boost::apply_visitor(DescribeAddressVisitor(mine), dest);
         ret.pushKVs(detail);
@@ -432,16 +433,15 @@ CScript _createmultisig_redeemScript(const UniValue& params)
     for (unsigned int i = 0; i < keys.size(); i++) {
         const std::string& ks = keys[i].get_str();
 #ifdef ENABLE_WALLET
-        // Case 1: PIVX address and we have full public key:
-        CTxDestination dest = DecodeDestination(ks);
-        if (pwalletMain && IsValidDestination(dest)) {
-            const CKeyID* keyID = boost::get<CKeyID>(&dest);
-            if (!keyID) {
+        // Case 1: Sap address and we have full public key:
+        CBitcoinAddress address(ks);
+        if (pwalletMain && address.IsValid()) {
+            CKeyID keyID;
+            if (!address.GetKeyID(keyID))
                 throw std::runtime_error(
-                        strprintf("%s does not refer to a key", ks));
-            }
+                    strprintf("%s does not refer to a key", ks));
             CPubKey vchPubKey;
-            if (!pwalletMain->GetPubKey(*keyID, vchPubKey))
+            if (!pwalletMain->GetPubKey(keyID, vchPubKey))
                 throw std::runtime_error(
                     strprintf("no full public key for address %s", ks));
             if (!vchPubKey.IsFullyValid())
@@ -480,9 +480,9 @@ UniValue createmultisig(const UniValue& params, bool fHelp)
 
             "\nArguments:\n"
             "1. nrequired      (numeric, required) The number of required signatures out of the n keys or addresses.\n"
-            "2. \"keys\"       (string, required) A json array of keys which are pivx addresses or hex-encoded public keys\n"
+            "2. \"keys\"       (string, required) A json array of keys which are sap addresses or hex-encoded public keys\n"
             "     [\n"
-            "       \"key\"    (string) pivx address or hex-encoded public key\n"
+            "       \"key\"    (string) sap address or hex-encoded public key\n"
             "       ,...\n"
             "     ]\n"
 
@@ -501,9 +501,10 @@ UniValue createmultisig(const UniValue& params, bool fHelp)
     // Construct using pay-to-script-hash:
     CScript inner = _createmultisig_redeemScript(params);
     CScriptID innerID(inner);
+    CBitcoinAddress address(innerID);
 
     UniValue result(UniValue::VOBJ);
-    result.push_back(Pair("address", EncodeDestination(innerID)));
+    result.push_back(Pair("address", address.ToString()));
     result.push_back(Pair("redeemScript", HexStr(inner.begin(), inner.end())));
 
     return result;
@@ -513,11 +514,11 @@ UniValue verifymessage(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 3)
         throw std::runtime_error(
-            "verifymessage \"pivxaddress\" \"signature\" \"message\"\n"
+            "verifymessage \"sapaddress\" \"signature\" \"message\"\n"
             "\nVerify a signed message\n"
 
             "\nArguments:\n"
-            "1. \"pivxaddress\"  (string, required) The pivx address to use for the signature.\n"
+            "1. \"sapaddress\"  (string, required) The sap address to use for the signature.\n"
             "2. \"signature\"       (string, required) The signature provided by the signer in base 64 encoding (see signmessage).\n"
             "3. \"message\"         (string, required) The message that was signed.\n"
 
@@ -540,14 +541,13 @@ UniValue verifymessage(const UniValue& params, bool fHelp)
     std::string strSign = params[1].get_str();
     std::string strMessage = params[2].get_str();
 
-    CTxDestination destination = DecodeDestination(strAddress);
-    if (!IsValidDestination(destination))
+    CBitcoinAddress addr(strAddress);
+    if (!addr.IsValid())
         throw JSONRPCError(RPC_TYPE_ERROR, "Invalid address");
 
-    const CKeyID* keyID = boost::get<CKeyID>(&destination);
-    if (!keyID) {
+    CKeyID keyID;
+    if (!addr.GetKeyID(keyID))
         throw JSONRPCError(RPC_TYPE_ERROR, "Address does not refer to key");
-    }
 
     bool fInvalid = false;
     std::vector<unsigned char> vchSig = DecodeBase64(strSign.c_str(), &fInvalid);
@@ -563,7 +563,7 @@ UniValue verifymessage(const UniValue& params, bool fHelp)
     if (!pubkey.RecoverCompact(ss.GetHash(), vchSig))
         return false;
 
-    return (pubkey.GetID() == *keyID);
+    return (pubkey.GetID() == keyID);
 }
 
 UniValue setmocktime(const UniValue& params, bool fHelp)
@@ -670,13 +670,13 @@ UniValue getstakingstatus(const UniValue& params, bool fHelp)
             "\nResult:\n"
             "{\n"
             "  \"staking_status\": true|false,      (boolean) whether the wallet is staking or not\n"
-            "  \"staking_enabled\": true|false,     (boolean) whether staking is enabled/disabled in pivx.conf\n"
-            "  \"coldstaking_enabled\": true|false, (boolean) whether cold-staking is enabled/disabled in pivx.conf\n"
+            "  \"staking_enabled\": true|false,     (boolean) whether staking is enabled/disabled in sap.conf\n"
+            "  \"coldstaking_enabled\": true|false, (boolean) whether cold-staking is enabled/disabled in sap.conf\n"
             "  \"haveconnections\": true|false,     (boolean) whether network connections are present\n"
             "  \"mnsync\": true|false,              (boolean) whether the required masternode/spork data is synced\n"
             "  \"walletunlocked\": true|false,      (boolean) whether the wallet is unlocked\n"
             "  \"stakeablecoins\": n                (numeric) number of stakeable UTXOs\n"
-            "  \"stakingbalance\": d                (numeric) PIV value of the stakeable coins (minus reserve balance, if any)\n"
+            "  \"stakingbalance\": d                (numeric) SAPP value of the stakeable coins (minus reserve balance, if any)\n"
             "  \"stakesplitthreshold\": d           (numeric) value of the current threshold for stake split\n"
             "  \"lastattempt_age\": n               (numeric) seconds since last stake attempt\n"
             "  \"lastattempt_depth\": n             (numeric) depth of the block on top of which the last stake attempt was made\n"
@@ -693,8 +693,12 @@ UniValue getstakingstatus(const UniValue& params, bool fHelp)
         throw JSONRPCError(RPC_IN_WARMUP, "Try again after active chain is loaded");
     {
         LOCK2(cs_main, &pwalletMain->cs_wallet);
+
+        //! have we attempted to stake in the past 60s?
+        bool fRecentlyStaked = (GetAdjustedTime() - nLastCoinStakeSearchTime < 60);
+
         UniValue obj(UniValue::VOBJ);
-        obj.push_back(Pair("staking_status", pwalletMain->pStakerStatus->IsActive()));
+        obj.push_back(Pair("staking_status", fRecentlyStaked ? "true" : "false"));
         obj.push_back(Pair("staking_enabled", GetBoolArg("-staking", true)));
         bool fColdStaking = GetBoolArg("-coldstaking", true);
         obj.push_back(Pair("coldstaking_enabled", fColdStaking));

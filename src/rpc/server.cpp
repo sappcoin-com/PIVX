@@ -269,11 +269,11 @@ UniValue stop(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw std::runtime_error(
             "stop\n"
-            "\nStop PIVX server.");
+            "\nStop Sap server.");
     // Event loop will exit after current HTTP requests have been handled, so
     // this reply will get back to the client.
     StartShutdown();
-    return "PIVX server stopping";
+    return "Sap server stopping";
 }
 
 
@@ -363,33 +363,33 @@ static const CRPCCommand vRPCCommands[] =
         { "hidden",             "waitforblockheight",     &waitforblockheight,     true,  true,  false  },
 
         /* PIVX features */
-        {"pivx", "listmasternodes", &listmasternodes, true, true, false},
-        {"pivx", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"pivx", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"pivx", "createmasternodebroadcast", &createmasternodebroadcast, true, true, false},
-        {"pivx", "decodemasternodebroadcast", &decodemasternodebroadcast, true, true, false},
-        {"pivx", "relaymasternodebroadcast", &relaymasternodebroadcast, true, true, false},
-        {"pivx", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"pivx", "masternodedebug", &masternodedebug, true, true, false},
-        {"pivx", "startmasternode", &startmasternode, true, true, false},
-        {"pivx", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"pivx", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"pivx", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"pivx", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"pivx", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"pivx", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"pivx", "preparebudget", &preparebudget, true, true, false},
-        {"pivx", "submitbudget", &submitbudget, true, true, false},
-        {"pivx", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"pivx", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"pivx", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"pivx", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"pivx", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"pivx", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"pivx", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"pivx", "checkbudgets", &checkbudgets, true, true, false},
-        {"pivx", "mnsync", &mnsync, true, true, false},
-        {"pivx", "spork", &spork, true, true, false},
+        {"sap", "listmasternodes", &listmasternodes, true, true, false},
+        {"sap", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"sap", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"sap", "createmasternodebroadcast", &createmasternodebroadcast, true, true, false},
+        {"sap", "decodemasternodebroadcast", &decodemasternodebroadcast, true, true, false},
+        {"sap", "relaymasternodebroadcast", &relaymasternodebroadcast, true, true, false},
+        {"sap", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"sap", "masternodedebug", &masternodedebug, true, true, false},
+        {"sap", "startmasternode", &startmasternode, true, true, false},
+        {"sap", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"sap", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"sap", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"sap", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"sap", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"sap", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"sap", "preparebudget", &preparebudget, true, true, false},
+        {"sap", "submitbudget", &submitbudget, true, true, false},
+        {"sap", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"sap", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"sap", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"sap", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"sap", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"sap", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"sap", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"sap", "checkbudgets", &checkbudgets, true, true, false},
+        {"sap", "mnsync", &mnsync, true, true, false},
+        {"sap", "spork", &spork, true, true, false},
 
 #ifdef ENABLE_WALLET
         /* Wallet */
@@ -639,14 +639,14 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(std::string methodname, std::string args)
 {
-    return "> pivx-cli " + methodname + " " + args + "\n";
+    return "> sap-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(std::string methodname, std::string args)
 {
     return "> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", "
            "\"method\": \"" +
-           methodname + "\", \"params\": [" + args + "] }' -H 'content-type: text/plain;' http://127.0.0.1:51473/\n";
+           methodname + "\", \"params\": [" + args + "] }' -H 'content-type: text/plain;' http://127.0.0.1:45329/\n";
 }
 
 void RPCSetTimerInterfaceIfUnset(RPCTimerInterface *iface)

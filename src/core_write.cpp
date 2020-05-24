@@ -1,5 +1,5 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
-// Copyright (c) 2017-2020 The PIVX developers
+// Copyright (c) 2017-2019 The PIVX developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -82,11 +82,11 @@ void ScriptPubKeyToUniv(const CScript& scriptPubKey,
 
     UniValue a(UniValue::VARR);
     if (type == TX_COLDSTAKE && addresses.size() == 2) {
-        a.push_back(EncodeDestination(addresses[0], CChainParams::STAKING_ADDRESS));
-        a.push_back(EncodeDestination(addresses[1], CChainParams::PUBKEY_ADDRESS));
+        a.push_back(CBitcoinAddress(addresses[0], CChainParams::STAKING_ADDRESS).ToString());
+        a.push_back(CBitcoinAddress(addresses[1], CChainParams::PUBKEY_ADDRESS).ToString());
     } else {
         for (const CTxDestination& addr : addresses)
-            a.push_back(EncodeDestination(addr));
+            a.push_back(CBitcoinAddress(addr).ToString());
     }
     out.pushKV("addresses", a);
 }

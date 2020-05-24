@@ -102,7 +102,7 @@ public:
                 // txs are stored in order in the db, which is what should be happening)
                 sort(walletTxes.begin(), walletTxes.end(),
                         [](const CWalletTx & a, const CWalletTx & b) -> bool {
-                         return a.GetTxTime() > b.GetTxTime();
+                         return a.GetComputedTxTime() > b.GetComputedTxTime();
                      });
 
                 // Only latest ones.
@@ -453,13 +453,13 @@ QString TransactionTableModel::formatTxType(const TransactionRecord* wtx) const
     case TransactionRecord::SendToSelf:
         return tr("Payment to yourself");
     case TransactionRecord::StakeMint:
-        return tr("%1 Stake").arg(CURRENCY_UNIT.c_str());
+        return tr("SAPP Stake");
     case TransactionRecord::StakeZPIV:
-        return tr("z%1 Stake").arg(CURRENCY_UNIT.c_str());
+        return tr("zRPD Stake");
     case TransactionRecord::StakeDelegated:
-        return tr("%1 Cold Stake").arg(CURRENCY_UNIT.c_str());
+        return tr("SAPP Cold Stake");
     case TransactionRecord::StakeHot:
-        return tr("%1 Stake on behalf of").arg(CURRENCY_UNIT.c_str());
+        return tr("SAPP Stake on behalf of");
     case TransactionRecord::P2CSDelegationSent:
     case TransactionRecord::P2CSDelegationSentOwner:
     case TransactionRecord::P2CSDelegation:
@@ -470,15 +470,15 @@ QString TransactionTableModel::formatTxType(const TransactionRecord* wtx) const
     case TransactionRecord::Generated:
         return tr("Mined");
     case TransactionRecord::ZerocoinMint:
-        return tr("Converted %1 to z%1").arg(CURRENCY_UNIT.c_str());
+        return tr("Converted SAPP to zRPD");
     case TransactionRecord::ZerocoinSpend:
-        return tr("Spent z%1").arg(CURRENCY_UNIT.c_str());
+        return tr("Spent zRPD");
     case TransactionRecord::RecvFromZerocoinSpend:
-        return tr("Received %1 from z%1").arg(CURRENCY_UNIT.c_str());
+        return tr("Received SAPP from zRPD");
     case TransactionRecord::ZerocoinSpend_Change_zPiv:
-        return tr("Minted Change as z%1 from z%1 Spend").arg(CURRENCY_UNIT.c_str());
+        return tr("Minted Change as zRPD from zRPD Spend");
     case TransactionRecord::ZerocoinSpend_FromMe:
-        return tr("Converted z%1 to %1").arg(CURRENCY_UNIT.c_str());
+        return tr("Converted zRPD to SAPP");
     default:
         return QString();
     }
