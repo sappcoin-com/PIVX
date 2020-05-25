@@ -475,6 +475,18 @@ CMasternode* CMasternodeMan::Find(const CPubKey& pubKeyMasternode)
     return NULL;
 }
 
+CMasternode* CMasternodeMan::Find(const CService& service)
+{
+    LOCK(cs);
+
+    for(auto& mn : vMasternodes) {
+        if (mn.addr == service)
+            return &mn;
+    }
+
+    return nullptr;
+}
+
 //
 // Deterministically select the oldest/best masternode to pay on the network
 //
@@ -717,21 +729,20 @@ void CMasternodeMan::ProcessMessage(CNode* pfrom, std::string& strCommand, CData
 
     LOCK(cs_process_message);
 
-    if (strCommand == "mnb") { //Masternode Broadcast
+    if (strCommand == "mnb") { 
         CMasternodeBroadcast mnb;
         vRecv >> mnb;
 		
-		if (IsSporkActive(SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2)) {
-		auto pmn = mnodeman.Find(mnb.addr);
-            if (pmn && pmn->vin != mnb.vin) {
+			auto pmn = mnodeman.Find(mnb.addr);
+        if (pmn && pmn->vin != mnb.vin) {
             pmn->Check(true);
             if (pmn->IsEnabled()) {
                 LogPrintf("Multiple vin on ip address, new mnb.addr=%s, existing pmn->addr=%s\n",
                           mnb.addr.ToString(), pmn->addr.ToString());
                 Misbehaving(pfrom->GetId(), 100);
                 return;
-             }	
-		}
+            }
+        }
 
         if (mapSeenMasternodeBroadcast.count(mnb.GetHash())) { //seen
             masternodeSync.AddedMasternodeList(mnb.GetHash());
