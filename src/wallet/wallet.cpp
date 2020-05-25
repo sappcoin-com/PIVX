@@ -2768,7 +2768,8 @@ bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int
     // Calculate reward
     CAmount nReward;
     const CBlockIndex* pIndex0 = chainActive.Tip();
-    nReward = GetBlockValue(pIndex0->nHeight);
+    //nReward = GetBlockValue(pIndex0->nHeight);
+    nReward = GetBlockValue(chainActive.Height() + 1);
     nCredit += nReward;
 
     CAmount nMinFee = 0;
