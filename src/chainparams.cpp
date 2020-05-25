@@ -153,10 +153,10 @@ public:
         consensus.nPoolMaxTransactions = 3;
         consensus.nProposalEstablishmentTime = 60 * 60 * 24;    // must be at least a day old to make it into a budget
         consensus.nStakeMinAge = 60 * 60;
-        consensus.nStakeMinDepth = 10;
+        consensus.nStakeMinDepth = 60;
         consensus.nTargetTimespan = 1 * 60;
         consensus.nTargetTimespanV2 = consensus.nTargetTimespan;
-        consensus.nTargetSpacing = 2 * 60;
+        consensus.nTargetSpacing = 1 * 60;
         consensus.nTimeSlotLength = 15;
 
         // spork key
