@@ -720,6 +720,18 @@ void CMasternodeMan::ProcessMessage(CNode* pfrom, std::string& strCommand, CData
     if (strCommand == "mnb") { //Masternode Broadcast
         CMasternodeBroadcast mnb;
         vRecv >> mnb;
+		
+		if (IsSporkActive(SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2)) {
+		auto pmn = mnodeman.Find(mnb.addr);
+            if (pmn && pmn->vin != mnb.vin) {
+            pmn->Check(true);
+            if (pmn->IsEnabled()) {
+                LogPrintf("Multiple vin on ip address, new mnb.addr=%s, existing pmn->addr=%s\n",
+                          mnb.addr.ToString(), pmn->addr.ToString());
+                Misbehaving(pfrom->GetId(), 100);
+                return;
+             }	
+		}
 
         if (mapSeenMasternodeBroadcast.count(mnb.GetHash())) { //seen
             masternodeSync.AddedMasternodeList(mnb.GetHash());
