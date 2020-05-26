@@ -1121,8 +1121,8 @@ address</source>
         <translation>SAPP</translation>
     </message>
     <message>
-        <source>zRPD</source>
-        <translation>zRPD</translation>
+        <source>zSAPP</source>
+        <translation>zSAPP</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -1153,8 +1153,8 @@ address</source>
         <translation>Вы можете просмотреть историю вашего аккаунта</translation>
     </message>
     <message>
-        <source>Amount of SAPP and zRPD staked.</source>
-        <translation>Сумма добытых SAPP и zRPD</translation>
+        <source>Amount of SAPP and zSAPP staked.</source>
+        <translation>Сумма добытых SAPP и zSAPP</translation>
     </message>
     <message>
         <source>All</source>
@@ -1209,8 +1209,8 @@ address</source>
         <translation>Пока что нет транзакций</translation>
     </message>
     <message>
-        <source>How to get SAPP or zRPD</source>
-        <translation>Как получить SAPP или zRPD</translation>
+        <source>How to get SAPP or zSAPP</source>
+        <translation>Как получить SAPP или zSAPP</translation>
     </message>
     <message>
         <source>You can verify the staking activity in the status bar at the top right of the wallet.
@@ -2156,36 +2156,36 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Карта порта, использующего &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of SAPP units to zRPD</source>
-        <translation>Невозможно автоматически отчеканить единицы SAPP для zRPD</translation>
+        <source>Enable automatic minting of SAPP units to zSAPP</source>
+        <translation>Невозможно автоматически отчеканить единицы SAPP для zSAPP</translation>
     </message>
     <message>
-        <source>Enable zRPD Automint</source>
-        <translation>Невозможно авточеканка  zRPD</translation>
+        <source>Enable zSAPP Automint</source>
+        <translation>Невозможно авточеканка  zSAPP</translation>
     </message>
     <message>
-        <source>Enable automatic zRPD minting from specific addresses</source>
-        <translation>Включить автоматическое чеканку zRPD с определенных адресов</translation>
+        <source>Enable automatic zSAPP minting from specific addresses</source>
+        <translation>Включить автоматическое чеканку zSAPP с определенных адресов</translation>
     </message>
     <message>
         <source>Enable Automint Addresses</source>
         <translation>Включить адреса с автоматической чеканкой</translation>
     </message>
     <message>
-        <source>Percentage of incoming SAPP which get automatically converted to zRPD via Zerocoin Protocol (min: 10%)</source>
-        <translation>Процент приходящих SAPP, которые автоматически конвертируются в zRPD благодаря Zerocoin протоколу (min: 10%)</translation>
+        <source>Percentage of incoming SAPP which get automatically converted to zSAPP via Zerocoin Protocol (min: 10%)</source>
+        <translation>Процент приходящих SAPP, которые автоматически конвертируются в zSAPP благодаря Zerocoin протоколу (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zRPD</source>
-        <translation>Процент  авточеканненых zRPD</translation>
+        <source>Percentage of autominted zSAPP</source>
+        <translation>Процент  авточеканненых zSAPP</translation>
     </message>
     <message>
         <source>Wait with automatic conversion to Zerocoin until enough SAPP for this denomination is available</source>
         <translation>Подождите с автоматическим преобразованием в Zerocoin, пока не будет достаточно SAPP для этой номинации.</translation>
     </message>
     <message>
-        <source>Preferred Automint zRPD Denomination</source>
-        <translation>Предпочитаемый номинал авточеканной  монеты  zRPD</translation>
+        <source>Preferred Automint zSAPP Denomination</source>
+        <translation>Предпочитаемый номинал авточеканной  монеты  zSAPP</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2563,13 +2563,13 @@ Address: %4
         <translation>Чеканить</translation>
     </message>
     <message>
-        <source>Minting zRPD anonymizes your SAPP by removing any
+        <source>Minting zSAPP anonymizes your SAPP by removing any
 transaction history, making transactions untraceable </source>
-        <translation>Чеканка zRPD анонимизирует ваш SAPP, удаляя любую историю транзакций и делая транзакции недоступными для отслеживания.</translation>
+        <translation>Чеканка zSAPP анонимизирует ваш SAPP, удаляя любую историю транзакций и делая транзакции недоступными для отслеживания.</translation>
     </message>
     <message>
-        <source>Mint new zRPD or convert back to SAPP</source>
-        <translation>Чеканить новые zRPD или конвертировать обратно в SAPP</translation>
+        <source>Mint new zSAPP or convert back to SAPP</source>
+        <translation>Чеканить новые zSAPP или конвертировать обратно в SAPP</translation>
     </message>
     <message>
         <source>Last Zerocoin Movements</source>
@@ -2580,32 +2580,32 @@ transaction history, making transactions untraceable </source>
         <translation>Пока что нет транзакций</translation>
     </message>
     <message>
-        <source>Mint zRPD</source>
-        <translation>Чеканить zRPD</translation>
+        <source>Mint zSAPP</source>
+        <translation>Чеканить zSAPP</translation>
     </message>
     <message>
-        <source>Enter amount of SAPP to mint into zRPD</source>
-        <translation>Введите количество SAPP для чеканки в zRPD</translation>
+        <source>Enter amount of SAPP to mint into zSAPP</source>
+        <translation>Введите количество SAPP для чеканки в zSAPP</translation>
     </message>
     <message>
         <source>Convert back to SAPP</source>
         <translation>Конвертировать обратно в SAPP</translation>
     </message>
     <message>
-        <source>Enter amount of zRPD to convert back into SAPP</source>
-        <translation>Введите количество zRPD для чеканки в SAPP </translation>
+        <source>Enter amount of zSAPP to convert back into SAPP</source>
+        <translation>Введите количество zSAPP для чеканки в SAPP </translation>
     </message>
     <message>
         <source>Zerocoin</source>
         <translation>Zerocoin </translation>
     </message>
     <message>
-        <source>zRPD is currently undergoing maintenance</source>
-        <translation>zRPD в настоящее время проходит техническое обслуживание</translation>
+        <source>zSAPP is currently undergoing maintenance</source>
+        <translation>zSAPP в настоящее время проходит техническое обслуживание</translation>
     </message>
     <message>
-        <source>You need to unlock the wallet to be able to %1 zRPD</source>
-        <translation>Вам нужно разблокировать кошелек, чтобы иметь возможность %1 zRPD</translation>
+        <source>You need to unlock the wallet to be able to %1 zSAPP</source>
+        <translation>Вам нужно разблокировать кошелек, чтобы иметь возможность %1 zSAPP</translation>
     </message>
     <message>
         <source>convert</source>
@@ -2620,11 +2620,11 @@ transaction history, making transactions untraceable </source>
         <translation>Неверное значение</translation>
     </message>
     <message>
-        <source>zRPD minted successfully</source>
-        <translation>zRPD отчеканились успешно</translation>
+        <source>zSAPP minted successfully</source>
+        <translation>zSAPP отчеканились успешно</translation>
     </message>
     <message>
-        <source>zRPD converted back to SAPP</source>
+        <source>zSAPP converted back to SAPP</source>
         <translation>ZPIV конвертированы обратно в SAPP</translation>
     </message>
     <message>
@@ -3015,8 +3015,8 @@ transaction history, making transactions untraceable </source>
         <translation>Пользовательский путь резервного копирования:</translation>
     </message>
     <message>
-        <source>Custom zRPD Backup Path:</source>
-        <translation>Пользовательский путь резервного копирования zRPD:</translation>
+        <source>Custom zSAPP Backup Path:</source>
+        <translation>Пользовательский путь резервного копирования zSAPP:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3556,8 +3556,8 @@ transaction history, making transactions untraceable </source>
         <translation>Отправить</translation>
     </message>
     <message>
-        <source>You can transfer public coins (SAPP) or private coins (zRPD)</source>
-        <translation>Вы можете отправить публичные монеты (SAPP) или конфиденциальные монеты (zRPD)</translation>
+        <source>You can transfer public coins (SAPP) or private coins (zSAPP)</source>
+        <translation>Вы можете отправить публичные монеты (SAPP) или конфиденциальные монеты (zSAPP)</translation>
     </message>
     <message>
         <source>Select coin type to spend</source>
@@ -3596,8 +3596,8 @@ transaction history, making transactions untraceable </source>
         <translation>Отправить SAPP</translation>
     </message>
     <message>
-        <source>Send zRPD</source>
-        <translation>Отправить zRPD</translation>
+        <source>Send zSAPP</source>
+        <translation>Отправить zSAPP</translation>
     </message>
     <message>
         <source>Total remaining from the selected UTXO</source>
@@ -3652,8 +3652,8 @@ These coins will no longer be cold-staked.</source>
         <translation>Потратить Zerocoin</translation>
     </message>
     <message>
-        <source>zRPD is currently undergoing maintenance.</source>
-        <translation>В настоящее время zRPD проходит техническое обслуживание.</translation>
+        <source>zSAPP is currently undergoing maintenance.</source>
+        <translation>В настоящее время zSAPP проходит техническое обслуживание.</translation>
     </message>
     <message>
         <source>Coin control mint not found</source>
@@ -3672,12 +3672,12 @@ These coins will no longer be cold-staked.</source>
 %2</translation>
     </message>
     <message>
-        <source>zRPD transaction sent!</source>
-        <translation>Транзакция zRPD отправлена!</translation>
+        <source>zSAPP transaction sent!</source>
+        <translation>Транзакция zSAPP отправлена!</translation>
     </message>
     <message>
-        <source>Version 1 zRPD require a security level of 100 to successfully spend.</source>
-        <translation>Для версии 1 zRPD требуется уровень безопасности 100, который можно успешно тратить.</translation>
+        <source>Version 1 zSAPP require a security level of 100 to successfully spend.</source>
+        <translation>Для версии 1 zSAPP требуется уровень безопасности 100, который можно успешно тратить.</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -3720,8 +3720,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>У вас нет SAPP.</translation>
     </message>
     <message>
-        <source>You don't have any zRPD in your balance to select.</source>
-        <translation>На вашем балансе нет zRPD для выбора.</translation>
+        <source>You don't have any zSAPP in your balance to select.</source>
+        <translation>На вашем балансе нет zSAPP для выбора.</translation>
     </message>
     <message>
         <source>No contacts available, you can go to the contacts screen and add some there!</source>
@@ -4128,26 +4128,26 @@ Verify that you have installed a predetermined text editor.</source>
         <translation>2) Почему мои SAPP невозможно потратить?</translation>
     </message>
     <message>
-        <source>3) SAPP privacy? What is Zerocoin (zRPD)?</source>
-        <translation>3) Конфиденциальность SAPP? Что такое Zerocoin (zRPD)?</translation>
+        <source>3) SAPP privacy? What is Zerocoin (zSAPP)?</source>
+        <translation>3) Конфиденциальность SAPP? Что такое Zerocoin (zSAPP)?</translation>
     </message>
     <message>
-        <source>4) Why are my zRPD unspendable?</source>
-        <translation>4) Почему мои zRPD невозможно потратить?</translation>
+        <source>4) Why are my zSAPP unspendable?</source>
+        <translation>4) Почему мои zSAPP невозможно потратить?</translation>
     </message>
     <message>
         <source>5) Why did my wallet convert the balance
-    into zRPD automatically?</source>
+    into zSAPP automatically?</source>
         <translation>5) Почему мой кошелек автоматически конвертировал баланс
-в zRPD?</translation>
+в zSAPP?</translation>
     </message>
     <message>
-        <source>6) How do I receive SAPP/zRPD?</source>
-        <translation>6) Как я могу получить SAPP/zRPD?</translation>
+        <source>6) How do I receive SAPP/zSAPP?</source>
+        <translation>6) Как я могу получить SAPP/zSAPP?</translation>
     </message>
     <message>
-        <source>7) How do I stake SAPP/zRPD?</source>
-        <translation>7) Как запустить стекинг SAPP/zRPD?</translation>
+        <source>7) How do I stake SAPP/zSAPP?</source>
+        <translation>7) Как запустить стекинг SAPP/zSAPP?</translation>
     </message>
     <message>
         <source>8) Where I should go if I need support?</source>
@@ -4176,7 +4176,7 @@ Verify that you have installed a predetermined text editor.</source>
                            that can be easily transferred globally, instantly, and with near
                            zero fees.  SAPP incorporates market leading security &amp;
                            privacy and is also the first PoS (Proof of Stake) Cryptocurrency
-                           to implement ZeroCoin(zRPD) and Zerocoin staking.
+                           to implement ZeroCoin(zSAPP) and Zerocoin staking.
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            SAPP utilizes a Proof of Stake (PoS) consensus system algorithm,
                            allowing all owners of SAPP to participate in earning block rewards
@@ -4190,7 +4190,7 @@ SAPP - это форма цифровых онлайн-денег, исполь�
 которая может быть легко переведена по всему миру, мгновенно и с практически
 нулевой комиссией. SAPP включает в себя лидирующую на рынке защиту и
 «конфиденциальность», а также является первой PoS криптовалютой (Proof of Stake),
-в которой реализована система стекинга ZeroCoin (zRPD) и Zerocoin.
+в которой реализована система стекинга ZeroCoin (zSAPP) и Zerocoin.
 &lt;/p&gt;&lt;p align="justify"&gt;
 SAPP использует консенсус PoS (Proof of Stake), позволяя всем владельцам SAPP участвовать в заработке вознаграждений
 при этом обеспечивая безопасность сети с помощью кошельков с полными узлами, а также позволяет
@@ -4229,26 +4229,26 @@ SAPP использует консенсус PoS (Proof of Stake), позвол�
         <translation>3</translation>
     </message>
     <message>
-        <source>SAPP privacy? What is Zerocoin (zRPD)?</source>
-        <translation>Конфиденциальность SAPP? Что такое Zerocoin (zRPD)?</translation>
+        <source>SAPP privacy? What is Zerocoin (zSAPP)?</source>
+        <translation>Конфиденциальность SAPP? Что такое Zerocoin (zSAPP)?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zRPD is an optional privacy-centric method of coin mixing on the
+                           zSAPP is an optional privacy-centric method of coin mixing on the
                            SAPP blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
                            &lt;a style='color: #b088ff' href='https://SAPP.org/zpiv/'&gt;
-                           "SAPP Zerocoin (zRPD) Technical Paper"&lt;/a&gt;.
+                           "SAPP Zerocoin (zSAPP) Technical Paper"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-zRPD - это необязательная конфиденциальность, которая возможна при микшировании монет
+zSAPP - это необязательная конфиденциальность, которая возможна при микшировании монет
 в блокчейне SAPP. По сути,ни одна транзакция не может быть отслежена
 ни в одном из обозревателей блоков. Вы можете прочитать больше о технических характеристиках в
 &lt;a style='color: #b088ff' href='https://SAPP.org/zpiv/'&gt;
-"Техническом документе SAPP Zerocoin (zRPD)"&lt;/a&gt;.
+"Техническом документе SAPP Zerocoin (zSAPP)"&lt;/a&gt;.
  &lt;/p&gt;&lt;/body&gt;&lt;/html&gt; </translation>
     </message>
     <message>
@@ -4256,20 +4256,20 @@ zRPD - это необязательная конфиденциальность,
         <translation>4</translation>
     </message>
     <message>
-        <source>Why are my zRPD unspendable?</source>
-        <translation>Почему мои zRPD невозможно потратить?</translation>
+        <source>Why are my zSAPP unspendable?</source>
+        <translation>Почему мои zSAPP невозможно потратить?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           After minting, zRPD will require 20 confirmations as well as 1
+                           After minting, zSAPP will require 20 confirmations as well as 1
                            additional mint of the same denomination on the network to
                            become eligible for spending.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-После чеканки zRPD потребуется 20 подтверждений, а также 1
+После чеканки zSAPP потребуется 20 подтверждений, а также 1
 дополнительная чеканка того же номинала в сети,
 чтобы получить право быть расходуемым.
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt; </translation>
@@ -4279,40 +4279,40 @@ zRPD - это необязательная конфиденциальность,
         <translation>5</translation>
     </message>
     <message>
-        <source>Why did my wallet convert the balance into zRPD automatically?</source>
-        <translation>Почему мой кошелек автоматически конвертировал баланс в zRPD?</translation>
+        <source>Why did my wallet convert the balance into zSAPP automatically?</source>
+        <translation>Почему мой кошелек автоматически конвертировал баланс в zSAPP?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
                            By default the SAPP wallet will convert 10% of your entire SAPP
-                           balance to zRPD to assist the network. If you do not wish to
-                           stake zRPD or take advantage of the privacy benefit it brings,
+                           balance to zSAPP to assist the network. If you do not wish to
+                           stake zSAPP or take advantage of the privacy benefit it brings,
                            you can disable the automatic minting in your SAPP wallet by
-                           going to Settings-&gt;Options and deselecting “Enable zRPD Automint”.
+                           going to Settings-&gt;Options and deselecting “Enable zSAPP Automint”.
                            If you are not making use of the SAPP-QT or GUI you can simply open
                            your sap.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           You can read more about zRPD in the
-                           &lt;a style='color: #b088ff' href='https://SAPP.org/zpiv/'&gt; "SAPP Zerocoin (zRPD) Technical Paper"&lt;/a&gt;.
-                           If you would like to keep and stake your zRPD, please read the "How do I stake"
+                           You can read more about zSAPP in the
+                           &lt;a style='color: #b088ff' href='https://SAPP.org/zpiv/'&gt; "SAPP Zerocoin (zSAPP) Technical Paper"&lt;/a&gt;.
+                           If you would like to keep and stake your zSAPP, please read the "How do I stake"
                            section of the FAQ below.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
 По умолчанию кошелек SAPP преобразует 10% всего вашего баланса SAPP
-в zRPD для помощи сети. Если вы не хотите
-запускать стекинг zRPD или пользоваться преимуществами конфиденциальности, которые она приносит,
+в zSAPP для помощи сети. Если вы не хотите
+запускать стекинг zSAPP или пользоваться преимуществами конфиденциальности, которые она приносит,
 вы можете отключить автоматическую чеканку в своем SAPP-кошельке,
-перейдя в «Настройки-&gt; Параметры» и отменив выбор «Включить авточекунку zRPD».
+перейдя в «Настройки-&gt; Параметры» и отменив выбор «Включить авточекунку zSAPP».
 Если вы не используете SAPP-QT или GUI, вы можете просто открыть
 свой файл sap.conf и добавить &lt;i&gt;enablezeromint=0&lt;/i&gt; без кавычек и
-перезапустите свой кошелек для отключения  автоматической чеканки. &lt;/p&gt; &lt;/p&gt;&lt;p align="justify"&gt; Вы можете прочитать больше о zRPD в
+перезапустите свой кошелек для отключения  автоматической чеканки. &lt;/p&gt; &lt;/p&gt;&lt;p align="justify"&gt; Вы можете прочитать больше о zSAPP в
 &lt;a style='color: #b088ff' href='https://SAPP.org/zpiv/'&gt;
- "Технический документ SAPP Zerocoin (zRPD)"&lt;/a&gt;.
-Если вы хотите продолжать стекинг zRPD, ознакомьтесь с разделом" Как осуществить стекинг"
+ "Технический документ SAPP Zerocoin (zSAPP)"&lt;/a&gt;.
+Если вы хотите продолжать стекинг zSAPP, ознакомьтесь с разделом" Как осуществить стекинг"
 в разделе часто задаваемых вопросов ниже.
  &lt;/p&gt;&lt;/body&gt;&lt;/html&gt; </translation>
     </message>
@@ -4321,24 +4321,24 @@ zRPD - это необязательная конфиденциальность,
         <translation>6</translation>
     </message>
     <message>
-        <source>How do I receive SAPP/zRPD?</source>
-        <translation>Как мне получить SAPP/zRPD?</translation>
+        <source>How do I receive SAPP/zSAPP?</source>
+        <translation>Как мне получить SAPP/zSAPP?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zRPD can be spent and sent to any SAPP address. The receiver will
-                           receive standard SAPP but the origin of the SAPP is anonymized by the zRPD Protocol.
+                           zSAPP can be spent and sent to any SAPP address. The receiver will
+                           receive standard SAPP but the origin of the SAPP is anonymized by the zSAPP Protocol.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           If you want more zRPD you will need to mint your balance in the “Privacy” tab.
+                           If you want more zSAPP you will need to mint your balance in the “Privacy” tab.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-zRPD можно потратить и отправить на любой адрес SAPP. Получатель получит
-стандартный SAPP, но оригинальное происхождение SAPP анонимизируется протоколом zRPD.
+zSAPP можно потратить и отправить на любой адрес SAPP. Получатель получит
+стандартный SAPP, но оригинальное происхождение SAPP анонимизируется протоколом zSAPP.
 &lt;/p&gt;&lt;p align="justify"&gt;
-Если вы хотите больше zRPD, вам нужно будет чеканить свой баланс на вкладке «Конфиденциальность».
+Если вы хотите больше zSAPP, вам нужно будет чеканить свой баланс на вкладке «Конфиденциальность».
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt; </translation>
     </message>
     <message>
@@ -4346,8 +4346,8 @@ zRPD можно потратить и отправить на любой адр�
         <translation>7</translation>
     </message>
     <message>
-        <source>How do I stake SAPP/zRPD?</source>
-        <translation>Как мне запустить стекинг SAPP/zRPD?</translation>
+        <source>How do I stake SAPP/zSAPP?</source>
+        <translation>Как мне запустить стекинг SAPP/zSAPP?</translation>
     </message>
     <message>
         <source>
@@ -4366,12 +4366,12 @@ zRPD можно потратить и отправить на любой адр�
                            You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state "Staking Enabled" to indicate it is staking.  Using the command line interface (pivx-cli); the command &lt;i&gt;getstakingstatus&lt;/i&gt; will confirm that staking is active.
                            &lt;/li&gt;&lt;/ol&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           To Stake zRPD:
+                           To Stake zSAPP:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ol&gt;&lt;li&gt;
                            Make sure your wallet is completely synchronized and you are using the latest release.
                            &lt;li&gt;
-                           Your newly minted or existing zRPD balance must have a minimum of 200 confirmations.
+                           Your newly minted or existing zSAPP balance must have a minimum of 200 confirmations.
                            &lt;li&gt;
                            Your wallet must stay online and be unlocked for anonymization and staking purposes.
                            Staking should now be enabled.
@@ -4389,7 +4389,7 @@ zRPD можно потратить и отправить на любой адр�
 &lt;li&gt;
 После того, как все эти шаги будут выполнены, следует включить стекинг.
 &lt;li&gt;
-Вы можете увидеть статус стекинга в кошельке, наведя курсор на соответствующий значок в строке в левом верхнем углу интерфейса кошелька. Там будет подсвечен значек, в котором будет указано «Стекинг включен», а это значит, что делает стекинг запущен. Использование интерфейса командной строки (pivx-cli); команда getstakingstatus подтвердит, что стекинг активен. Чтобы запустить стекинг zRPD: убедитесь, что ваш кошелек полностью синхронизирован и вы используете последнюю версию. Ваш недавно отчеканенный или существующий баланс zRPD должен иметь, как минимум, 200 подтверждений. Ваш кошелек должен оставаться в сети и быть разблокированным для анонимизации и стекинга. Стекинг будет включен.</translation>
+Вы можете увидеть статус стекинга в кошельке, наведя курсор на соответствующий значок в строке в левом верхнем углу интерфейса кошелька. Там будет подсвечен значек, в котором будет указано «Стекинг включен», а это значит, что делает стекинг запущен. Использование интерфейса командной строки (pivx-cli); команда getstakingstatus подтвердит, что стекинг активен. Чтобы запустить стекинг zSAPP: убедитесь, что ваш кошелек полностью синхронизирован и вы используете последнюю версию. Ваш недавно отчеканенный или существующий баланс zSAPP должен иметь, как минимум, 200 подтверждений. Ваш кошелек должен оставаться в сети и быть разблокированным для анонимизации и стекинга. Стекинг будет включен.</translation>
     </message>
     <message>
         <source>8</source>
@@ -5397,8 +5397,8 @@ Are you sure?
         <translation>480.0685 SAPP</translation>
     </message>
     <message>
-        <source>1,000 zRPD</source>
-        <translation>1 000 zRPD</translation>
+        <source>1,000 zSAPP</source>
+        <translation>1 000 zSAPP</translation>
     </message>
     <message>
         <source>Available</source>
@@ -5421,12 +5421,12 @@ Are you sure?
         <translation>10 SAPP</translation>
     </message>
     <message>
-        <source>60 zRPD</source>
-        <translation>60 zRPD</translation>
+        <source>60 zSAPP</source>
+        <translation>60 zSAPP</translation>
     </message>
     <message>
-        <source>10 zRPD</source>
-        <translation>10 zRPD</translation>
+        <source>10 zSAPP</source>
+        <translation>10 zSAPP</translation>
     </message>
     <message>
         <source>Wallet Unlocked for staking</source>
@@ -5714,8 +5714,8 @@ Are you sure?
         <translation>Доля SAPP</translation>
     </message>
     <message>
-        <source>zRPD Stake</source>
-        <translation>Доля zRPD</translation>
+        <source>zSAPP Stake</source>
+        <translation>Доля zSAPP</translation>
     </message>
     <message>
         <source>SAPP Cold Stake</source>
@@ -5746,24 +5746,24 @@ Are you sure?
         <translation>Обфускация Создание конфессий</translation>
     </message>
     <message>
-        <source>Converted SAPP to zRPD</source>
-        <translation>Преобразованный SAPP в zRPD</translation>
+        <source>Converted SAPP to zSAPP</source>
+        <translation>Преобразованный SAPP в zSAPP</translation>
     </message>
     <message>
-        <source>Spent zRPD</source>
-        <translation>потраченный zRPD</translation>
+        <source>Spent zSAPP</source>
+        <translation>потраченный zSAPP</translation>
     </message>
     <message>
-        <source>Received SAPP from zRPD</source>
-        <translation>Полученный SAPP от zRPD</translation>
+        <source>Received SAPP from zSAPP</source>
+        <translation>Полученный SAPP от zSAPP</translation>
     </message>
     <message>
-        <source>Minted Change as zRPD from zRPD Spend</source>
-        <translation>созданная  замена  zRPD из потраенного zRPD </translation>
+        <source>Minted Change as zSAPP from zSAPP Spend</source>
+        <translation>созданная  замена  zSAPP из потраенного zSAPP </translation>
     </message>
     <message>
-        <source>Converted zRPD to SAPP</source>
-        <translation>Преобразованный zRPD to SAPP</translation>
+        <source>Converted zSAPP to SAPP</source>
+        <translation>Преобразованный zSAPP to SAPP</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -6086,8 +6086,8 @@ Sap Wallet</source>
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zRPD to Spend</source>
-        <translation>Выберите zRPD чтобы потратить</translation>
+        <source>Select zSAPP to Spend</source>
+        <translation>Выберите zSAPP чтобы потратить</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -6122,8 +6122,8 @@ Sap Wallet</source>
         <translation>Выбрать / Отменить выбор</translation>
     </message>
     <message>
-        <source>Select zRPD Denominations to Spend</source>
-        <translation>Выберите деноминации zRPD для расходов</translation>
+        <source>Select zSAPP Denominations to Spend</source>
+        <translation>Выберите деноминации zSAPP для расходов</translation>
     </message>
 </context>
 <context>
@@ -6185,8 +6185,8 @@ Sap Wallet</source>
         <translation>Включить автоматическую чеканку Zerocoin с определенных адресов (0-1, по умолчанию:%u)</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zRPD minting (0-1, default: %u)</source>
-        <translation>Включить автоматическое резервное копирование кошелька, запускаемое после каждого чеканки zRPD (0-1, по умолчанию: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zSAPP minting (0-1, default: %u)</source>
+        <translation>Включить автоматическое резервное копирование кошелька, запускаемое после каждого чеканки zSAPP (0-1, по умолчанию: %u)</translation>
     </message>
     <message>
         <source>Enable cold staking functionality (0-1, default: %u). Disabled if staking=0</source>
@@ -6197,8 +6197,8 @@ Sap Wallet</source>
         <translation>Включение или отключение функций разбивки для входов SAPP (0-1, по умолчанию: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zRPD inputs (0-1, default: %u)</source>
-        <translation>Включение или отключение функций разбивки для входов zRPD (0-1, по умолчанию: %u)</translation>
+        <source>Enable or disable staking functionality for zSAPP inputs (0-1, default: %u)</source>
+        <translation>Включение или отключение функций разбивки для входов zSAPP (0-1, по умолчанию: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -6577,8 +6577,8 @@ Sap Wallet</source>
         <translation>Включить автоматическую чистку Zerocoin (0-1, по умолчанию: %u)</translation>
     </message>
     <message>
-        <source>Enable precomputation of zRPD spends and stakes (0-1, default %u)</source>
-        <translation>Включить предварительное вычисление расходов и стекинга zRPD (0-1, по умолчанию %u)</translation>
+        <source>Enable precomputation of zSAPP spends and stakes (0-1, default %u)</source>
+        <translation>Включить предварительное вычисление расходов и стекинга zSAPP (0-1, по умолчанию %u)</translation>
     </message>
     <message>
         <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
@@ -6777,8 +6777,8 @@ Sap Wallet</source>
         <translation>Перерасчет потраченных ZPIV...</translation>
     </message>
     <message>
-        <source>Reindex the SAPP and zRPD money supply statistics</source>
-        <translation>Reindex статистика денежной массы SAPP и zRPD</translation>
+        <source>Reindex the SAPP and zSAPP money supply statistics</source>
+        <translation>Reindex статистика денежной массы SAPP и zSAPP</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -6857,8 +6857,8 @@ Sap Wallet</source>
         <translation>Предпочтительный номинал для автоматически чеканившегося Zerocoin (1/5/10/50/100/500/1000/5000), 0 без предпочтений. default: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zRPD backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Укажите собственный путь резервного копирования, чтобы добавить копию любой автоматической резервной копии zRPD. Если задано как dir, каждая резервная копия генерирует файл с отметкой времени. Если он установлен как файл, он будет переписывать в этот файл каждую резервную копию. Если также установлен резервный путь, произойдет 4 резервных копии</translation>
+        <source>Specify custom backup path to add a copy of any automatic zSAPP backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Укажите собственный путь резервного копирования, чтобы добавить копию любой автоматической резервной копии zSAPP. Если задано как dir, каждая резервная копия генерирует файл с отметкой времени. Если он установлен как файл, он будет переписывать в этот файл каждую резервную копию. Если также установлен резервный путь, произойдет 4 резервных копии</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -7293,8 +7293,8 @@ Sap Wallet</source>
         <translation>Синхронизация спорков ...</translation>
     </message>
     <message>
-        <source>Syncing zRPD wallet...</source>
-        <translation>Синхронизация zRPD кошелька ...</translation>
+        <source>Syncing zSAPP wallet...</source>
+        <translation>Синхронизация zSAPP кошелька ...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -7409,7 +7409,7 @@ Sap Wallet</source>
         <translation>Имя пользователя для соединений JSON-RPC</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zRPD</source>
+        <source>Value is below the smallest available denomination (= 1) of zSAPP</source>
         <translation>Значение ниже наименьшего доступного номинала (= 1) zPiv</translation>
     </message>
     <message>

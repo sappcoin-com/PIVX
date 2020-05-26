@@ -781,8 +781,8 @@
         <translation>SAPP</translation>
     </message>
     <message>
-        <source>zRPD</source>
-        <translation>zRPD</translation>
+        <source>zSAPP</source>
+        <translation>zSAPP</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -829,8 +829,8 @@
         <translation>Još nema transakcija</translation>
     </message>
     <message>
-        <source>How to get SAPP or zRPD</source>
-        <translation>Kako dobiti SAPP ili zRPD</translation>
+        <source>How to get SAPP or zSAPP</source>
+        <translation>Kako dobiti SAPP ili zSAPP</translation>
     </message>
     <message>
         <source>Loading chart..</source>
@@ -2371,8 +2371,8 @@
         <translation>480.0685 SAPP</translation>
     </message>
     <message>
-        <source>1,000 zRPD</source>
-        <translation>1,000 zRPD</translation>
+        <source>1,000 zSAPP</source>
+        <translation>1,000 zSAPP</translation>
     </message>
     <message>
         <source>Available</source>
@@ -2387,12 +2387,12 @@
         <translation>10 SAPP</translation>
     </message>
     <message>
-        <source>60 zRPD</source>
-        <translation>60 zRPD</translation>
+        <source>60 zSAPP</source>
+        <translation>60 zSAPP</translation>
     </message>
     <message>
-        <source>10 zRPD</source>
-        <translation>10 zRPD</translation>
+        <source>10 zSAPP</source>
+        <translation>10 zSAPP</translation>
     </message>
     <message>
         <source>Error generating address</source>

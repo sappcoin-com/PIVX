@@ -491,7 +491,7 @@ void DashboardWidget::updateStakeFilter()
     }
 }
 
-// pair SAPP, zRPD
+// pair SAPP, zSAPP
 const QMap<int, std::pair<qint64, qint64>> DashboardWidget::getAmountBy()
 {
     updateStakeFilter();
@@ -547,7 +547,7 @@ bool DashboardWidget::loadChartData(bool withMonthNames)
     }
 
     chartData = new ChartData();
-    chartData->amountsByCache = getAmountBy(); // pair SAPP, zRPD
+    chartData->amountsByCache = getAmountBy(); // pair SAPP, zSAPP
 
     std::pair<int,int> range = getChartRange(chartData->amountsByCache);
     if (range.first == 0 && range.second == 0) {

@@ -326,7 +326,7 @@ void SendWidget::setFocusOnLastEntry()
 void SendWidget::showHideCheckBoxDelegations()
 {
     // Show checkbox only when there is any available owned delegation,
-    // coincontrol is not selected, and we are trying to spend SAPP (not zRPD)
+    // coincontrol is not selected, and we are trying to spend SAPP (not zSAPP)
     const bool isZpiv = false;
     const bool isCControl = CoinControlDialog::coinControl->HasSelected();
     const bool hasDel = cachedDelegatedBalance > 0;

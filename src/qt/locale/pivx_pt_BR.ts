@@ -894,8 +894,8 @@ para 'Staking'</translation>
         <translation>SAPP</translation>
     </message>
     <message>
-        <source>zRPD</source>
-        <translation>zRPD</translation>
+        <source>zSAPP</source>
+        <translation>zSAPP</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -926,8 +926,8 @@ para 'Staking'</translation>
         <translation>Você pode ver o histórico da sua conta</translation>
     </message>
     <message>
-        <source>Amount of SAPP and zRPD staked.</source>
-        <translation>Quantidade de SAPP e zRPD em Staking.</translation>
+        <source>Amount of SAPP and zSAPP staked.</source>
+        <translation>Quantidade de SAPP e zSAPP em Staking.</translation>
     </message>
     <message>
         <source>All</source>
@@ -966,8 +966,8 @@ para 'Staking'</translation>
         <translation>Nenhuma transação ainda</translation>
     </message>
     <message>
-        <source>How to get SAPP or zRPD</source>
-        <translation>Como obter o SAPP ou zRPD</translation>
+        <source>How to get SAPP or zSAPP</source>
+        <translation>Como obter o SAPP ou zSAPP</translation>
     </message>
     <message>
         <source>You can verify the staking activity in the status bar at the top right of the wallet.
@@ -3555,7 +3555,7 @@ Endereço: %4
     </message>
     <message>
         <source>zPiv</source>
-        <translation>zRPD</translation>
+        <translation>zSAPP</translation>
     </message>
     <message>
         <source>Quantity:</source>
@@ -4095,8 +4095,8 @@ Endereço: %4
         <translation>Nome de usuário para conexões JSON-RPC</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zRPD</source>
-        <translation>O valor está abaixo da menor denominação disponível (= 1) do zRPD</translation>
+        <source>Value is below the smallest available denomination (= 1) of zSAPP</source>
+        <translation>O valor está abaixo da menor denominação disponível (= 1) do zSAPP</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>

@@ -599,8 +599,8 @@
         <translation>Teksto etiketė</translation>
     </message>
     <message>
-        <source>zRPD</source>
-        <translation>zRPD</translation>
+        <source>zSAPP</source>
+        <translation>zSAPP</translation>
     </message>
     <message>
         <source>All</source>
@@ -1022,24 +1022,24 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Įrašyti prievadą naudojant &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of SAPP units to zRPD</source>
-        <translation>Įgalinti automatinį konvertavimą iš SAPP į zRPD</translation>
+        <source>Enable automatic minting of SAPP units to zSAPP</source>
+        <translation>Įgalinti automatinį konvertavimą iš SAPP į zSAPP</translation>
     </message>
     <message>
-        <source>Enable zRPD Automint</source>
-        <translation>Įgalinti zRPD Automatinį nukaldinima</translation>
+        <source>Enable zSAPP Automint</source>
+        <translation>Įgalinti zSAPP Automatinį nukaldinima</translation>
     </message>
     <message>
-        <source>Percentage of incoming SAPP which get automatically converted to zRPD via Zerocoin Protocol (min: 10%)</source>
-        <translation>Procentas gauto SAPP, kuris automatiškai bus konvertuotas į zRPD naudojant Zerocoin Protokolą (min: 10%)</translation>
+        <source>Percentage of incoming SAPP which get automatically converted to zSAPP via Zerocoin Protocol (min: 10%)</source>
+        <translation>Procentas gauto SAPP, kuris automatiškai bus konvertuotas į zSAPP naudojant Zerocoin Protokolą (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zRPD</source>
-        <translation>Automatiškai sukurtų zRPD procentas</translation>
+        <source>Percentage of autominted zSAPP</source>
+        <translation>Automatiškai sukurtų zSAPP procentas</translation>
     </message>
     <message>
-        <source>Preferred Automint zRPD Denomination</source>
-        <translation>Pageidautinas zRPD Automatinio Nukaldinimo Nominalas</translation>
+        <source>Preferred Automint zSAPP Denomination</source>
+        <translation>Pageidautinas zSAPP Automatinio Nukaldinimo Nominalas</translation>
     </message>
     <message>
         <source>Connect to the SAPP network through a SOCKS5 proxy.</source>

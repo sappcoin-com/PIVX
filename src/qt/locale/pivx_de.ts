@@ -922,8 +922,8 @@ for staking</source>
         <translation>SAPP</translation>
     </message>
     <message>
-        <source>zRPD</source>
-        <translation>zRPD</translation>
+        <source>zSAPP</source>
+        <translation>zSAPP</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -950,7 +950,7 @@ for staking</source>
         <translation>Der Link zum Verlauf des Accounts</translation>
     </message>
     <message>
-        <source>Amount of SAPP and zRPD staked.</source>
+        <source>Amount of SAPP and zSAPP staked.</source>
         <translation>Wieviele SAPP und z SAPP am staken sind.</translation>
     </message>
     <message>
@@ -990,8 +990,8 @@ for staking</source>
         <translation>Keine Transaktionen</translation>
     </message>
     <message>
-        <source>How to get SAPP or zRPD</source>
-        <translation>Wie bekommt man SAPP oder zRPD</translation>
+        <source>How to get SAPP or zSAPP</source>
+        <translation>Wie bekommt man SAPP oder zSAPP</translation>
     </message>
     <message>
         <source>You can verify the staking activity in the status bar at the top right of the wallet.
@@ -1860,36 +1860,36 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Port mit &amp;UPnP mappen</translation>
     </message>
     <message>
-        <source>Enable automatic minting of SAPP units to zRPD</source>
-        <translation>Aktivieren Sie die automatische Prägung von SAPP-Einheiten zu zRPD</translation>
+        <source>Enable automatic minting of SAPP units to zSAPP</source>
+        <translation>Aktivieren Sie die automatische Prägung von SAPP-Einheiten zu zSAPP</translation>
     </message>
     <message>
-        <source>Enable zRPD Automint</source>
-        <translation>Aktivieren Sie zRPD Automint</translation>
+        <source>Enable zSAPP Automint</source>
+        <translation>Aktivieren Sie zSAPP Automint</translation>
     </message>
     <message>
-        <source>Enable automatic zRPD minting from specific addresses</source>
-        <translation>Automatisches zRPD Minting von spezifischen Adressen erlauben</translation>
+        <source>Enable automatic zSAPP minting from specific addresses</source>
+        <translation>Automatisches zSAPP Minting von spezifischen Adressen erlauben</translation>
     </message>
     <message>
         <source>Enable Automint Addresses</source>
         <translation>Automint Adressen aktivieren</translation>
     </message>
     <message>
-        <source>Percentage of incoming SAPP which get automatically converted to zRPD via Zerocoin Protocol (min: 10%)</source>
-        <translation>Anteil des eingehenden SAPP, welcher automatisch zu zRPD via Zerocoin Protokoll konvertiert wird (min: 10%)</translation>
+        <source>Percentage of incoming SAPP which get automatically converted to zSAPP via Zerocoin Protocol (min: 10%)</source>
+        <translation>Anteil des eingehenden SAPP, welcher automatisch zu zSAPP via Zerocoin Protokoll konvertiert wird (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zRPD</source>
-        <translation>Prozentsatz der automatisierten zRPD</translation>
+        <source>Percentage of autominted zSAPP</source>
+        <translation>Prozentsatz der automatisierten zSAPP</translation>
     </message>
     <message>
         <source>Wait with automatic conversion to Zerocoin until enough SAPP for this denomination is available</source>
         <translation>Warte mit automatischer Konvertierung zu Zerocoin, bis genügend SAPP für diese Stückelung verfügbar ist</translation>
     </message>
     <message>
-        <source>Preferred Automint zRPD Denomination</source>
-        <translation>Bevorzugte automatisierte zRPD Stückelung </translation>
+        <source>Preferred Automint zSAPP Denomination</source>
+        <translation>Bevorzugte automatisierte zSAPP Stückelung </translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2250,24 +2250,24 @@ Adresse: %4</translation>
         <translation>Keine Transaktionen</translation>
     </message>
     <message>
-        <source>Mint zRPD</source>
-        <translation>zRPD prägen</translation>
+        <source>Mint zSAPP</source>
+        <translation>zSAPP prägen</translation>
     </message>
     <message>
-        <source>Enter amount of SAPP to mint into zRPD</source>
-        <translation>Gebe eine Anzahl SAPP ein, um sie in zRPD zu wechseln</translation>
+        <source>Enter amount of SAPP to mint into zSAPP</source>
+        <translation>Gebe eine Anzahl SAPP ein, um sie in zSAPP zu wechseln</translation>
     </message>
     <message>
         <source>Convert back to SAPP</source>
-        <translation>Konvertiere zRPD zurück zu SAPP</translation>
+        <translation>Konvertiere zSAPP zurück zu SAPP</translation>
     </message>
     <message>
         <source>Zerocoin</source>
         <translation>Zerocoin</translation>
     </message>
     <message>
-        <source>zRPD is currently undergoing maintenance</source>
-        <translation>zRPD wird momentan überarbeitet</translation>
+        <source>zSAPP is currently undergoing maintenance</source>
+        <translation>zSAPP wird momentan überarbeitet</translation>
     </message>
     <message>
         <source>convert</source>
@@ -2583,8 +2583,8 @@ Adresse: %4</translation>
         <translation>Benutzerdefinierter Sicherungspfad:</translation>
     </message>
     <message>
-        <source>Custom zRPD Backup Path:</source>
-        <translation>Benutzerdefinierter zRPD Sicherungspfad:</translation>
+        <source>Custom zSAPP Backup Path:</source>
+        <translation>Benutzerdefinierter zSAPP Sicherungspfad:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3079,8 +3079,8 @@ Adresse: %4</translation>
         <translation>Schicken</translation>
     </message>
     <message>
-        <source>You can transfer public coins (SAPP) or private coins (zRPD)</source>
-        <translation>Sie können öffentliche Coins (SAPP) oder private Coins (zRPD) transferieren</translation>
+        <source>You can transfer public coins (SAPP) or private coins (zSAPP)</source>
+        <translation>Sie können öffentliche Coins (SAPP) oder private Coins (zSAPP) transferieren</translation>
     </message>
     <message>
         <source>Select coin type to spend</source>
@@ -3119,8 +3119,8 @@ Adresse: %4</translation>
         <translation>Sende SAPP</translation>
     </message>
     <message>
-        <source>Send zRPD</source>
-        <translation>Sende zRPD</translation>
+        <source>Send zSAPP</source>
+        <translation>Sende zSAPP</translation>
     </message>
     <message>
         <source>Customize Fee</source>
@@ -3159,12 +3159,12 @@ Adresse: %4</translation>
         <translation>Überweise Zerocoin</translation>
     </message>
     <message>
-        <source>zRPD is currently undergoing maintenance.</source>
-        <translation>zRPD unterliegt momentan Wartungsarbeiten.</translation>
+        <source>zSAPP is currently undergoing maintenance.</source>
+        <translation>zSAPP unterliegt momentan Wartungsarbeiten.</translation>
     </message>
     <message>
-        <source>Version 1 zRPD require a security level of 100 to successfully spend.</source>
-        <translation>Version 1 zRPD benötigen eine Sicherheitsstufe von 100 um erfolgreich ausgegeben werden zu können.</translation>
+        <source>Version 1 zSAPP require a security level of 100 to successfully spend.</source>
+        <translation>Version 1 zSAPP benötigen eine Sicherheitsstufe von 100 um erfolgreich ausgegeben werden zu können.</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -3478,25 +3478,25 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>2) Wieso kann ich meine SAPP nicht ausgeben?</translation>
     </message>
     <message>
-        <source>3) SAPP privacy? What is Zerocoin (zRPD)?</source>
-        <translation>3) SAPP Privatsphäre? Was ist ein Zercoin (zRPD)?</translation>
+        <source>3) SAPP privacy? What is Zerocoin (zSAPP)?</source>
+        <translation>3) SAPP Privatsphäre? Was ist ein Zercoin (zSAPP)?</translation>
     </message>
     <message>
-        <source>4) Why are my zRPD unspendable?</source>
-        <translation>4) Wieso kann ich meine zRPD nicht ausgeben?</translation>
+        <source>4) Why are my zSAPP unspendable?</source>
+        <translation>4) Wieso kann ich meine zSAPP nicht ausgeben?</translation>
     </message>
     <message>
         <source>5) Why did my wallet convert the balance
-    into zRPD automatically?</source>
-        <translation>5) Wieso hat meine Wallet automatisch das Guthaben in zRPD gewechselt?</translation>
+    into zSAPP automatically?</source>
+        <translation>5) Wieso hat meine Wallet automatisch das Guthaben in zSAPP gewechselt?</translation>
     </message>
     <message>
-        <source>6) How do I receive SAPP/zRPD?</source>
-        <translation>6) Wie empfange ich SAPP/zRPD?</translation>
+        <source>6) How do I receive SAPP/zSAPP?</source>
+        <translation>6) Wie empfange ich SAPP/zSAPP?</translation>
     </message>
     <message>
-        <source>7) How do I stake SAPP/zRPD?</source>
-        <translation>7) Wie stake ich SAPP/zRPD?</translation>
+        <source>7) How do I stake SAPP/zSAPP?</source>
+        <translation>7) Wie stake ich SAPP/zSAPP?</translation>
     </message>
     <message>
         <source>8) Where I should go if I need support?</source>
@@ -3531,32 +3531,32 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>3</translation>
     </message>
     <message>
-        <source>SAPP privacy? What is Zerocoin (zRPD)?</source>
-        <translation>SAPP Privatsphäre? Was ist ein Zercoin (zRPD)?</translation>
+        <source>SAPP privacy? What is Zerocoin (zSAPP)?</source>
+        <translation>SAPP Privatsphäre? Was ist ein Zercoin (zSAPP)?</translation>
     </message>
     <message>
         <source>4</source>
         <translation>4</translation>
     </message>
     <message>
-        <source>Why are my zRPD unspendable?</source>
-        <translation>Wieso kann ich meine zRPD nicht ausgeben?</translation>
+        <source>Why are my zSAPP unspendable?</source>
+        <translation>Wieso kann ich meine zSAPP nicht ausgeben?</translation>
     </message>
     <message>
         <source>5</source>
         <translation>5</translation>
     </message>
     <message>
-        <source>Why did my wallet convert the balance into zRPD automatically?</source>
-        <translation>Wieso hat meine Wallet automatisch das Guthaben in zRPD gewechselt?</translation>
+        <source>Why did my wallet convert the balance into zSAPP automatically?</source>
+        <translation>Wieso hat meine Wallet automatisch das Guthaben in zSAPP gewechselt?</translation>
     </message>
     <message>
-        <source>How do I receive SAPP/zRPD?</source>
-        <translation>Wie empfange ich SAPP/zRPD?</translation>
+        <source>How do I receive SAPP/zSAPP?</source>
+        <translation>Wie empfange ich SAPP/zSAPP?</translation>
     </message>
     <message>
-        <source>How do I stake SAPP/zRPD?</source>
-        <translation>Wie stake ich SAPP/zRPD?</translation>
+        <source>How do I stake SAPP/zSAPP?</source>
+        <translation>Wie stake ich SAPP/zSAPP?</translation>
     </message>
     <message>
         <source>Where I should go if I need support?</source>
@@ -4310,8 +4310,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>SAPP Stake</translation>
     </message>
     <message>
-        <source>zRPD Stake</source>
-        <translation>zRPD Stake</translation>
+        <source>zSAPP Stake</source>
+        <translation>zSAPP Stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -4330,24 +4330,24 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Verschleierung Erzeugung der Stückelung</translation>
     </message>
     <message>
-        <source>Converted SAPP to zRPD</source>
-        <translation>Umgewandeltes SAPP zu zRPD</translation>
+        <source>Converted SAPP to zSAPP</source>
+        <translation>Umgewandeltes SAPP zu zSAPP</translation>
     </message>
     <message>
-        <source>Spent zRPD</source>
-        <translation>Ausgegebene zRPD</translation>
+        <source>Spent zSAPP</source>
+        <translation>Ausgegebene zSAPP</translation>
     </message>
     <message>
-        <source>Received SAPP from zRPD</source>
-        <translation>Empfangene SAPP von zRPD</translation>
+        <source>Received SAPP from zSAPP</source>
+        <translation>Empfangene SAPP von zSAPP</translation>
     </message>
     <message>
-        <source>Minted Change as zRPD from zRPD Spend</source>
-        <translation>Geprägtes zRPD Wechselgeld aus zRPD Überweisung</translation>
+        <source>Minted Change as zSAPP from zSAPP Spend</source>
+        <translation>Geprägtes zSAPP Wechselgeld aus zSAPP Überweisung</translation>
     </message>
     <message>
-        <source>Converted zRPD to SAPP</source>
-        <translation>Umgewandeltes zRPD zu SAPP</translation>
+        <source>Converted zSAPP to SAPP</source>
+        <translation>Umgewandeltes zSAPP zu SAPP</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -4536,8 +4536,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zRPD to Spend</source>
-        <translation>Wählen Sie die zRPD aus, die Sie ausgeben möchten</translation>
+        <source>Select zSAPP to Spend</source>
+        <translation>Wählen Sie die zSAPP aus, die Sie ausgeben möchten</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -4549,7 +4549,7 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
     </message>
     <message>
         <source>zPiv</source>
-        <translation>zRPD</translation>
+        <translation>zSAPP</translation>
     </message>
     <message>
         <source>Quantity:</source>
@@ -4623,16 +4623,16 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Veröffentlicht unter der MIT-Software-Lizenz, siehe die beigelegte Datei COPYING oder &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zRPD minting (0-1, default: %u)</source>
-        <translation>Aktiviere nach jeder zRPD-Prägung ausgelöste automatische Wallet-Backups (0-1, Standard: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zSAPP minting (0-1, default: %u)</source>
+        <translation>Aktiviere nach jeder zSAPP-Prägung ausgelöste automatische Wallet-Backups (0-1, Standard: %u)</translation>
     </message>
     <message>
         <source>Enable or disable staking functionality for SAPP inputs (0-1, default: %u)</source>
         <translation>Aktiviere oder deaktiviere Staking-Funktionalität für SAPP Eingänge (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zRPD inputs (0-1, default: %u)</source>
-        <translation>Aktiviere oder deaktiviere Staking-Funktionalität für zRPD Eingänge (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for zSAPP inputs (0-1, default: %u)</source>
+        <translation>Aktiviere oder deaktiviere Staking-Funktionalität für zSAPP Eingänge (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -5155,8 +5155,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Prozent automatisch geprägter Zerocoins (1-100, Standard: %u)</translation>
     </message>
     <message>
-        <source>Reindex the SAPP and zRPD money supply statistics</source>
-        <translation>Die Geldmengenstatistik SAPP und zRPD neu indizieren</translation>
+        <source>Reindex the SAPP and zSAPP money supply statistics</source>
+        <translation>Die Geldmengenstatistik SAPP und zSAPP neu indizieren</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -5231,8 +5231,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Bervorzugte Stückelung für automatisch geprägte Zerocoins (1/5/10/50/100/500/1000/5000), 0 falls keine bestimmte Stückelung präferiert wird. Standard: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zRPD backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Benutzerdefinierten Sicherungspfad festlegen, in den Kopien von allen automatischen zRPD-Sicherungen abgelegt werden. Wenn ein Verzeichnis ausgewählt ist, wird jede Sicherung als Datei mit Zeitstempel erstellt. Wenn eine Datei ausgewählt ist, wird diese Datei bei jeder Sicherung überschrieben. Wenn der Sicherungspfad auch festgelegt ist, werden 4 Sicherungen erstellt.</translation>
+        <source>Specify custom backup path to add a copy of any automatic zSAPP backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Benutzerdefinierten Sicherungspfad festlegen, in den Kopien von allen automatischen zSAPP-Sicherungen abgelegt werden. Wenn ein Verzeichnis ausgewählt ist, wird jede Sicherung als Datei mit Zeitstempel erstellt. Wenn eine Datei ausgewählt ist, wird diese Datei bei jeder Sicherung überschrieben. Wenn der Sicherungspfad auch festgelegt ist, werden 4 Sicherungen erstellt.</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -5635,8 +5635,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Synchronisiere Sporks....</translation>
     </message>
     <message>
-        <source>Syncing zRPD wallet...</source>
-        <translation>Synchronisiere zRPD Wallet... </translation>
+        <source>Syncing zSAPP wallet...</source>
+        <translation>Synchronisiere zSAPP Wallet... </translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -5743,8 +5743,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Benutzername für JSON-RPC-Verbindungen</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zRPD</source>
-        <translation>Der Betrag ist unterhalb des kleinsten Wertes (=1) an zRPD</translation>
+        <source>Value is below the smallest available denomination (= 1) of zSAPP</source>
+        <translation>Der Betrag ist unterhalb des kleinsten Wertes (=1) an zSAPP</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>

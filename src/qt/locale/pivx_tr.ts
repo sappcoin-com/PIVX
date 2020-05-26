@@ -1124,8 +1124,8 @@ kopyala</translation>
         <translation>SAPP</translation>
     </message>
     <message>
-        <source>zRPD</source>
-        <translation>zRPD</translation>
+        <source>zSAPP</source>
+        <translation>zSAPP</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -1156,8 +1156,8 @@ kopyala</translation>
         <translation>Hesap geçmişinizde görebilirsiniz</translation>
     </message>
     <message>
-        <source>Amount of SAPP and zRPD staked.</source>
-        <translation>Stake edilmiş SAPP ve zRPD miktarı</translation>
+        <source>Amount of SAPP and zSAPP staked.</source>
+        <translation>Stake edilmiş SAPP ve zSAPP miktarı</translation>
     </message>
     <message>
         <source>All</source>
@@ -1212,8 +1212,8 @@ kopyala</translation>
         <translation>İşlem bulunmuyor</translation>
     </message>
     <message>
-        <source>How to get SAPP or zRPD</source>
-        <translation>SAPP veya zRPD nasıl alınır</translation>
+        <source>How to get SAPP or zSAPP</source>
+        <translation>SAPP veya zSAPP nasıl alınır</translation>
     </message>
     <message>
         <source>You can verify the staking activity in the status bar at the top right of the wallet.
@@ -2158,36 +2158,36 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Map port using &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of SAPP units to zRPD</source>
-        <translation>SAPP birimlerinin zRPD'e otomatik basımını ektinleştir</translation>
+        <source>Enable automatic minting of SAPP units to zSAPP</source>
+        <translation>SAPP birimlerinin zSAPP'e otomatik basımını ektinleştir</translation>
     </message>
     <message>
-        <source>Enable zRPD Automint</source>
-        <translation>zRPD Otomatik basımı etkinleştir</translation>
+        <source>Enable zSAPP Automint</source>
+        <translation>zSAPP Otomatik basımı etkinleştir</translation>
     </message>
     <message>
-        <source>Enable automatic zRPD minting from specific addresses</source>
-        <translation>Belirli bir adresten otomatik zRPD minting yapılmasını etkinleştir</translation>
+        <source>Enable automatic zSAPP minting from specific addresses</source>
+        <translation>Belirli bir adresten otomatik zSAPP minting yapılmasını etkinleştir</translation>
     </message>
     <message>
         <source>Enable Automint Addresses</source>
         <translation>Automint adreslerini etkinleştir</translation>
     </message>
     <message>
-        <source>Percentage of incoming SAPP which get automatically converted to zRPD via Zerocoin Protocol (min: 10%)</source>
-        <translation>Zerocoin Protokolü üzerinden otomatik olarak zRPD'ye dönüştürülen gelen SAPP yüzdesi (dakika: 10%)</translation>
+        <source>Percentage of incoming SAPP which get automatically converted to zSAPP via Zerocoin Protocol (min: 10%)</source>
+        <translation>Zerocoin Protokolü üzerinden otomatik olarak zSAPP'ye dönüştürülen gelen SAPP yüzdesi (dakika: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zRPD</source>
-        <translation>Otomatikleştirilmiş zRPD yüzdesi</translation>
+        <source>Percentage of autominted zSAPP</source>
+        <translation>Otomatikleştirilmiş zSAPP yüzdesi</translation>
     </message>
     <message>
         <source>Wait with automatic conversion to Zerocoin until enough SAPP for this denomination is available</source>
         <translation>Bu bölen için yeterli SAPP bulunana kadar Zerocoin'e otomatik dönüştürmede kalın</translation>
     </message>
     <message>
-        <source>Preferred Automint zRPD Denomination</source>
-        <translation>Tercih edilen Automint zRPD Nominal değeri</translation>
+        <source>Preferred Automint zSAPP Denomination</source>
+        <translation>Tercih edilen Automint zSAPP Nominal değeri</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2565,13 +2565,13 @@ Adres: %4
         <translation>Mint</translation>
     </message>
     <message>
-        <source>Minting zRPD anonymizes your SAPP by removing any
+        <source>Minting zSAPP anonymizes your SAPP by removing any
 transaction history, making transactions untraceable </source>
-        <translation>zRPD mintleme işlemi SAPP'lerinizin işlem geçmişini siler, işlemleri takip edilemez yapar</translation>
+        <translation>zSAPP mintleme işlemi SAPP'lerinizin işlem geçmişini siler, işlemleri takip edilemez yapar</translation>
     </message>
     <message>
-        <source>Mint new zRPD or convert back to SAPP</source>
-        <translation>Yeni zRPD mintle veya SAPP'e geri dönüştür</translation>
+        <source>Mint new zSAPP or convert back to SAPP</source>
+        <translation>Yeni zSAPP mintle veya SAPP'e geri dönüştür</translation>
     </message>
     <message>
         <source>Last Zerocoin Movements</source>
@@ -2582,32 +2582,32 @@ transaction history, making transactions untraceable </source>
         <translation>İşlem bulunmuyor</translation>
     </message>
     <message>
-        <source>Mint zRPD</source>
+        <source>Mint zSAPP</source>
         <translation>Mint ZPIV</translation>
     </message>
     <message>
-        <source>Enter amount of SAPP to mint into zRPD</source>
-        <translation>zRPD'e mintlenmek için dönüştürülecek SAPP miktarını gir</translation>
+        <source>Enter amount of SAPP to mint into zSAPP</source>
+        <translation>zSAPP'e mintlenmek için dönüştürülecek SAPP miktarını gir</translation>
     </message>
     <message>
         <source>Convert back to SAPP</source>
         <translation>SAPP'e geri dönüştür</translation>
     </message>
     <message>
-        <source>Enter amount of zRPD to convert back into SAPP</source>
-        <translation>SAPP'e geri dönüştürülecek zRPD miktarını gir</translation>
+        <source>Enter amount of zSAPP to convert back into SAPP</source>
+        <translation>SAPP'e geri dönüştürülecek zSAPP miktarını gir</translation>
     </message>
     <message>
         <source>Zerocoin</source>
         <translation>Zerocoin</translation>
     </message>
     <message>
-        <source>zRPD is currently undergoing maintenance</source>
-        <translation>zRPD şu anda bakımdadır</translation>
+        <source>zSAPP is currently undergoing maintenance</source>
+        <translation>zSAPP şu anda bakımdadır</translation>
     </message>
     <message>
-        <source>You need to unlock the wallet to be able to %1 zRPD</source>
-        <translation>%1 zRPD yapabilmek için cüzdanınızın kilidini kaldırmalısınız</translation>
+        <source>You need to unlock the wallet to be able to %1 zSAPP</source>
+        <translation>%1 zSAPP yapabilmek için cüzdanınızın kilidini kaldırmalısınız</translation>
     </message>
     <message>
         <source>convert</source>
@@ -2622,12 +2622,12 @@ transaction history, making transactions untraceable </source>
         <translation>Geçersiz değer</translation>
     </message>
     <message>
-        <source>zRPD minted successfully</source>
-        <translation>zRPD minting başarılı</translation>
+        <source>zSAPP minted successfully</source>
+        <translation>zSAPP minting başarılı</translation>
     </message>
     <message>
-        <source>zRPD converted back to SAPP</source>
-        <translation>zRPD SAPP'e dönüştürüldü</translation>
+        <source>zSAPP converted back to SAPP</source>
+        <translation>zSAPP SAPP'e dönüştürüldü</translation>
     </message>
     <message>
         <source>You don't have any SAPP to select.</source>
@@ -3016,8 +3016,8 @@ transaction history, making transactions untraceable </source>
         <translation>Özel Yedekleme Yolu:</translation>
     </message>
     <message>
-        <source>Custom zRPD Backup Path:</source>
-        <translation>Özel zRPD Yedekleme Yolu:</translation>
+        <source>Custom zSAPP Backup Path:</source>
+        <translation>Özel zSAPP Yedekleme Yolu:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3556,8 +3556,8 @@ transaction history, making transactions untraceable </source>
         <translation>Gönder</translation>
     </message>
     <message>
-        <source>You can transfer public coins (SAPP) or private coins (zRPD)</source>
-        <translation>Açık koin SAPP veya gizli koin zRPD transfer edebilirsiniz</translation>
+        <source>You can transfer public coins (SAPP) or private coins (zSAPP)</source>
+        <translation>Açık koin SAPP veya gizli koin zSAPP transfer edebilirsiniz</translation>
     </message>
     <message>
         <source>Select coin type to spend</source>
@@ -3596,8 +3596,8 @@ transaction history, making transactions untraceable </source>
         <translation>SAPP Gönder</translation>
     </message>
     <message>
-        <source>Send zRPD</source>
-        <translation>zRPD gönder</translation>
+        <source>Send zSAPP</source>
+        <translation>zSAPP gönder</translation>
     </message>
     <message>
         <source>Total remaining from the selected UTXO</source>
@@ -3652,8 +3652,8 @@ Bu koinler artık soğuk stakelenmeyecektir.</translation>
         <translation>Harca Zerocoin</translation>
     </message>
     <message>
-        <source>zRPD is currently undergoing maintenance.</source>
-        <translation>zRPD halen bakım alıyor.</translation>
+        <source>zSAPP is currently undergoing maintenance.</source>
+        <translation>zSAPP halen bakım alıyor.</translation>
     </message>
     <message>
         <source>Coin control mint not found</source>
@@ -3672,12 +3672,12 @@ Bu koinler artık soğuk stakelenmeyecektir.</translation>
 %2 adreslerine gönderiliyor</translation>
     </message>
     <message>
-        <source>zRPD transaction sent!</source>
-        <translation>zRPD ödemesi gönderildi</translation>
+        <source>zSAPP transaction sent!</source>
+        <translation>zSAPP ödemesi gönderildi</translation>
     </message>
     <message>
-        <source>Version 1 zRPD require a security level of 100 to successfully spend.</source>
-        <translation>Versiyon 1 olan zRPD'lerin başarıyla harcanabilmesi için güvenlik seviyesinin 100 olması gerekiyor.</translation>
+        <source>Version 1 zSAPP require a security level of 100 to successfully spend.</source>
+        <translation>Versiyon 1 olan zSAPP'lerin başarıyla harcanabilmesi için güvenlik seviyesinin 100 olması gerekiyor.</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -3720,8 +3720,8 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>Seçebileceğiniz SAPP'iniz bulunmuyor</translation>
     </message>
     <message>
-        <source>You don't have any zRPD in your balance to select.</source>
-        <translation>Bakiyenizde seçebileceğiniz zRPD'iniz bulunmuyor</translation>
+        <source>You don't have any zSAPP in your balance to select.</source>
+        <translation>Bakiyenizde seçebileceğiniz zSAPP'iniz bulunmuyor</translation>
     </message>
     <message>
         <source>No contacts available, you can go to the contacts screen and add some there!</source>
@@ -4129,26 +4129,26 @@ Verify that you have installed a predetermined text editor.</source>
         <translation>2) SAPP'lerim neden harcanabilir değil?</translation>
     </message>
     <message>
-        <source>3) SAPP privacy? What is Zerocoin (zRPD)?</source>
-        <translation>3)SAPP gizliliği? Zerocoin (zRPD) nedir?</translation>
+        <source>3) SAPP privacy? What is Zerocoin (zSAPP)?</source>
+        <translation>3)SAPP gizliliği? Zerocoin (zSAPP) nedir?</translation>
     </message>
     <message>
-        <source>4) Why are my zRPD unspendable?</source>
-        <translation>4)  zRPD'lerim neden harcanabilir değil?</translation>
+        <source>4) Why are my zSAPP unspendable?</source>
+        <translation>4)  zSAPP'lerim neden harcanabilir değil?</translation>
     </message>
     <message>
         <source>5) Why did my wallet convert the balance
-    into zRPD automatically?</source>
+    into zSAPP automatically?</source>
         <translation>5)Neden cüzdanım bakiyemi otomatik olarak
-zRPD'e dönüştürdü?</translation>
+zSAPP'e dönüştürdü?</translation>
     </message>
     <message>
-        <source>6) How do I receive SAPP/zRPD?</source>
-        <translation>6) Nasıl SAPP/zRPD alabilirim?</translation>
+        <source>6) How do I receive SAPP/zSAPP?</source>
+        <translation>6) Nasıl SAPP/zSAPP alabilirim?</translation>
     </message>
     <message>
-        <source>7) How do I stake SAPP/zRPD?</source>
-        <translation>7) Nasıl SAPP/zRPD staking yapabilirim?</translation>
+        <source>7) How do I stake SAPP/zSAPP?</source>
+        <translation>7) Nasıl SAPP/zSAPP staking yapabilirim?</translation>
     </message>
     <message>
         <source>8) Where I should go if I need support?</source>
@@ -4177,7 +4177,7 @@ zRPD'e dönüştürdü?</translation>
                            that can be easily transferred globally, instantly, and with near
                            zero fees.  SAPP incorporates market leading security &amp;
                            privacy and is also the first PoS (Proof of Stake) Cryptocurrency
-                           to implement ZeroCoin(zRPD) and Zerocoin staking.
+                           to implement ZeroCoin(zSAPP) and Zerocoin staking.
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            SAPP utilizes a Proof of Stake (PoS) consensus system algorithm,
                            allowing all owners of SAPP to participate in earning block rewards
@@ -4190,7 +4190,7 @@ zRPD'e dönüştürdü?</translation>
                            SAPP blockchain teknolojisini kullanan bir dijital online para birimidir
                            global olarak anında ve sıfıra yakın ücretlerle transfer edilebilir
                            SAPP sektördeki en ileri güvenlik ve gizliliğe sahip olmakla birlikte
-                          Zerocoin (zRPD) ve Zerocoin staking özelliklerini
+                          Zerocoin (zSAPP) ve Zerocoin staking özelliklerini
                           uygulayan ilk PoS (Proof of Stake) Kriptoparadır.
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            SAPP bir  Proof of Stake (PoS) konsensüs algoritma sistemi kullanmaktadır,
@@ -4233,27 +4233,27 @@ bu sayede SAPP sahipleri blok ödülü kazanımına katılabilmektedir
         <translation>3</translation>
     </message>
     <message>
-        <source>SAPP privacy? What is Zerocoin (zRPD)?</source>
-        <translation>SAPP gizliliği? Zerocoin (zRPD) nedir?</translation>
+        <source>SAPP privacy? What is Zerocoin (zSAPP)?</source>
+        <translation>SAPP gizliliği? Zerocoin (zSAPP) nedir?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zRPD is an optional privacy-centric method of coin mixing on the
+                           zSAPP is an optional privacy-centric method of coin mixing on the
                            SAPP blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
                            &lt;a style='color: #b088ff' href='https://SAPP.org/zpiv/'&gt;
-                           "SAPP Zerocoin (zRPD) Technical Paper"&lt;/a&gt;.
+                           "SAPP Zerocoin (zSAPP) Technical Paper"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zRPD SAPP blockchaini üzerinde koinleri karıştırmak için kullanılan
+                           zSAPP SAPP blockchaini üzerinde koinleri karıştırmak için kullanılan
 gizlilik-odaklı opsiyonel bir metoddur. Temel olarak işlemleriniz
  hiçbir tarayıcı tarafından takip edilemez. Teknik detayları
  hakkında daha çok bilgi almak için
                            &lt;a style='color: #b088ff' href='https://SAPP.org/zpiv/'&gt;
-                           "SAPP Zerocoin (zRPD) Teknik Makalesi"&lt;/a&gt;.
+                           "SAPP Zerocoin (zSAPP) Teknik Makalesi"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
     </message>
@@ -4262,20 +4262,20 @@ gizlilik-odaklı opsiyonel bir metoddur. Temel olarak işlemleriniz
         <translation>4</translation>
     </message>
     <message>
-        <source>Why are my zRPD unspendable?</source>
-        <translation>zRPD'lerim neden harcanabilir değil?</translation>
+        <source>Why are my zSAPP unspendable?</source>
+        <translation>zSAPP'lerim neden harcanabilir değil?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           After minting, zRPD will require 20 confirmations as well as 1
+                           After minting, zSAPP will require 20 confirmations as well as 1
                            additional mint of the same denomination on the network to
                            become eligible for spending.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Mint işlemi sonrasında, zRPD'lerin harcanabilir duruma gelmesi
+                           Mint işlemi sonrasında, zSAPP'lerin harcanabilir duruma gelmesi
  için 20 onay alması ve kendisiyle aynı
  bölüme sahip fazladan 1 mint'e ihtiyaç vardır.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -4286,34 +4286,34 @@ gizlilik-odaklı opsiyonel bir metoddur. Temel olarak işlemleriniz
         <translation>5</translation>
     </message>
     <message>
-        <source>Why did my wallet convert the balance into zRPD automatically?</source>
-        <translation>Neden cüzdanım bakiyemi otomatik olarak zRPD'e dönüştürdü?</translation>
+        <source>Why did my wallet convert the balance into zSAPP automatically?</source>
+        <translation>Neden cüzdanım bakiyemi otomatik olarak zSAPP'e dönüştürdü?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
                            By default the SAPP wallet will convert 10% of your entire SAPP
-                           balance to zRPD to assist the network. If you do not wish to
-                           stake zRPD or take advantage of the privacy benefit it brings,
+                           balance to zSAPP to assist the network. If you do not wish to
+                           stake zSAPP or take advantage of the privacy benefit it brings,
                            you can disable the automatic minting in your SAPP wallet by
-                           going to Settings-&gt;Options and deselecting “Enable zRPD Automint”.
+                           going to Settings-&gt;Options and deselecting “Enable zSAPP Automint”.
                            If you are not making use of the SAPP-QT or GUI you can simply open
                            your sap.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           You can read more about zRPD in the
-                           &lt;a style='color: #b088ff' href='https://SAPP.org/zpiv/'&gt; "SAPP Zerocoin (zRPD) Technical Paper"&lt;/a&gt;.
-                           If you would like to keep and stake your zRPD, please read the "How do I stake"
+                           You can read more about zSAPP in the
+                           &lt;a style='color: #b088ff' href='https://SAPP.org/zpiv/'&gt; "SAPP Zerocoin (zSAPP) Technical Paper"&lt;/a&gt;.
+                           If you would like to keep and stake your zSAPP, please read the "How do I stake"
                            section of the FAQ below.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           SAPP cüzdanınız ağa destek olmak için varsayılan olarak tüm SAPP bakiyenizin 10% 'unu zRPD'e dönüştürecektir. Getirdiği gizlilik avantajını istemiyor veya zRPD stakelemek istemiyorsanız cüzdanınızın otomint özelliğini Ayarlar-&gt;Seçenekler içindeki “zRPD Otomint etkin” seçeneğini değiştirerek devredışı bırakabilirsiniz. PIVXQT veya GUI kullanmıyorsanız, sap.conf dosyası içine  &lt;i&gt;enablezeromint=0&lt;/i&gt; ifadesini tırnak işareti olmadan girerek devredışı bırakabilirsiniz. &lt;/p&gt;
+                           SAPP cüzdanınız ağa destek olmak için varsayılan olarak tüm SAPP bakiyenizin 10% 'unu zSAPP'e dönüştürecektir. Getirdiği gizlilik avantajını istemiyor veya zSAPP stakelemek istemiyorsanız cüzdanınızın otomint özelliğini Ayarlar-&gt;Seçenekler içindeki “zSAPP Otomint etkin” seçeneğini değiştirerek devredışı bırakabilirsiniz. PIVXQT veya GUI kullanmıyorsanız, sap.conf dosyası içine  &lt;i&gt;enablezeromint=0&lt;/i&gt; ifadesini tırnak işareti olmadan girerek devredışı bırakabilirsiniz. &lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            Teknik detayları hakkında daha çok bilgi almak için
-                           &lt;a style='color: #b088ff' href='https://SAPP.org/zpiv/'&gt; "SAPP Zerocoin (zRPD) Teknik Makalesi"&lt;/a&gt;.
-                           zRPD'lerinizi tutmak ve stakelemek istiyorsanız, lütfen SSS kısmındaki "Nasıl Stake yaparım"
+                           &lt;a style='color: #b088ff' href='https://SAPP.org/zpiv/'&gt; "SAPP Zerocoin (zSAPP) Teknik Makalesi"&lt;/a&gt;.
+                           zSAPP'lerinizi tutmak ve stakelemek istiyorsanız, lütfen SSS kısmındaki "Nasıl Stake yaparım"
 kısmını okuyunuz.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
@@ -4323,25 +4323,25 @@ kısmını okuyunuz.
         <translation>6</translation>
     </message>
     <message>
-        <source>How do I receive SAPP/zRPD?</source>
-        <translation>Nasıl SAPP/zRPD alabilirim?</translation>
+        <source>How do I receive SAPP/zSAPP?</source>
+        <translation>Nasıl SAPP/zSAPP alabilirim?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zRPD can be spent and sent to any SAPP address. The receiver will
-                           receive standard SAPP but the origin of the SAPP is anonymized by the zRPD Protocol.
+                           zSAPP can be spent and sent to any SAPP address. The receiver will
+                           receive standard SAPP but the origin of the SAPP is anonymized by the zSAPP Protocol.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           If you want more zRPD you will need to mint your balance in the “Privacy” tab.
+                           If you want more zSAPP you will need to mint your balance in the “Privacy” tab.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zRPD herhangi bir SAPP adresine gönderilerek harcanabilir.
+                           zSAPP herhangi bir SAPP adresine gönderilerek harcanabilir.
                            Alıcı standart SAPP alacaktır fakat SAPP kaynağı
-zRPD Protokolü ile anonimleştirilmiş olacaktır.
+zSAPP Protokolü ile anonimleştirilmiş olacaktır.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           Daha fazla zRPD istiyorsanız, "Gizlilik" tabından bakiyenizi mintlemeniz gerekecektir.
+                           Daha fazla zSAPP istiyorsanız, "Gizlilik" tabından bakiyenizi mintlemeniz gerekecektir.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
     </message>
@@ -4350,8 +4350,8 @@ zRPD Protokolü ile anonimleştirilmiş olacaktır.
         <translation>7</translation>
     </message>
     <message>
-        <source>How do I stake SAPP/zRPD?</source>
-        <translation>Nasıl SAPP/zRPD staking yapabilirim?</translation>
+        <source>How do I stake SAPP/zSAPP?</source>
+        <translation>Nasıl SAPP/zSAPP staking yapabilirim?</translation>
     </message>
     <message>
         <source>
@@ -4370,12 +4370,12 @@ zRPD Protokolü ile anonimleştirilmiş olacaktır.
                            You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state "Staking Enabled" to indicate it is staking.  Using the command line interface (pivx-cli); the command &lt;i&gt;getstakingstatus&lt;/i&gt; will confirm that staking is active.
                            &lt;/li&gt;&lt;/ol&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           To Stake zRPD:
+                           To Stake zSAPP:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ol&gt;&lt;li&gt;
                            Make sure your wallet is completely synchronized and you are using the latest release.
                            &lt;li&gt;
-                           Your newly minted or existing zRPD balance must have a minimum of 200 confirmations.
+                           Your newly minted or existing zSAPP balance must have a minimum of 200 confirmations.
                            &lt;li&gt;
                            Your wallet must stay online and be unlocked for anonymization and staking purposes.
                            Staking should now be enabled.
@@ -4398,7 +4398,7 @@ zRPD Protokolü ile anonimleştirilmiş olacaktır.
                            Staking durumunu kontrol etmek için fare imlecini cüzdanın sol üst kısmındaki paket ikonu üzerinde tuttuğunuzda görebilirsiniz. Yaptığını göstermek için paket ikonunun ışığı yanacak ve "Staking aktif" yazacaktır. Komut satırı arayüzünden (pivx-cli);  &lt;i&gt;getstakingstatus&lt;/i&gt; komutunu çalıştırarak staking'in etkin olduğunu onaylayabilirsiniz.
                            &lt;/li&gt;&lt;/ol&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           zRPD Staking yapabilmek için:
+                           zSAPP Staking yapabilmek için:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ol&gt;&lt;li&gt;
                            Cüzdanınızı tamamen senkronize olduğundan ve son versiyonu kullandığınızdan emin olun.
@@ -5436,8 +5436,8 @@ Emin misiniz?
         <translation>480.0685 SAPP</translation>
     </message>
     <message>
-        <source>1,000 zRPD</source>
-        <translation>1,000 zRPD</translation>
+        <source>1,000 zSAPP</source>
+        <translation>1,000 zSAPP</translation>
     </message>
     <message>
         <source>Available</source>
@@ -5460,12 +5460,12 @@ Emin misiniz?
         <translation>10 SAPP</translation>
     </message>
     <message>
-        <source>60 zRPD</source>
-        <translation>60 zRPD</translation>
+        <source>60 zSAPP</source>
+        <translation>60 zSAPP</translation>
     </message>
     <message>
-        <source>10 zRPD</source>
-        <translation>10 zRPD</translation>
+        <source>10 zSAPP</source>
+        <translation>10 zSAPP</translation>
     </message>
     <message>
         <source>Wallet Unlocked for staking</source>
@@ -5785,8 +5785,8 @@ Emin misiniz?
         <translation>SAPP Stake</translation>
     </message>
     <message>
-        <source>zRPD Stake</source>
-        <translation>zRPD Stake</translation>
+        <source>zSAPP Stake</source>
+        <translation>zSAPP Stake</translation>
     </message>
     <message>
         <source>SAPP Cold Stake</source>
@@ -5817,24 +5817,24 @@ Emin misiniz?
         <translation>Obfuscation Oluşturma Adları</translation>
     </message>
     <message>
-        <source>Converted SAPP to zRPD</source>
-        <translation>SAPP'den zRPD'e dönüştürülen</translation>
+        <source>Converted SAPP to zSAPP</source>
+        <translation>SAPP'den zSAPP'e dönüştürülen</translation>
     </message>
     <message>
-        <source>Spent zRPD</source>
-        <translation>zRPD Harca</translation>
+        <source>Spent zSAPP</source>
+        <translation>zSAPP Harca</translation>
     </message>
     <message>
-        <source>Received SAPP from zRPD</source>
-        <translation>zRPD'den SAPP olarak alınan</translation>
+        <source>Received SAPP from zSAPP</source>
+        <translation>zSAPP'den SAPP olarak alınan</translation>
     </message>
     <message>
-        <source>Minted Change as zRPD from zRPD Spend</source>
-        <translation>zRPD harcamasından kaynaklanan zRPD mint farkı</translation>
+        <source>Minted Change as zSAPP from zSAPP Spend</source>
+        <translation>zSAPP harcamasından kaynaklanan zSAPP mint farkı</translation>
     </message>
     <message>
-        <source>Converted zRPD to SAPP</source>
-        <translation>zRPD'den SAPP' dönüştürülen</translation>
+        <source>Converted zSAPP to SAPP</source>
+        <translation>zSAPP'den SAPP' dönüştürülen</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -6157,8 +6157,8 @@ Hoşgeldiniz</translation>
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zRPD to Spend</source>
-        <translation>Harcanacak zRPD'leri seçin</translation>
+        <source>Select zSAPP to Spend</source>
+        <translation>Harcanacak zSAPP'leri seçin</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -6193,8 +6193,8 @@ Hoşgeldiniz</translation>
         <translation>Seç/Çıkar Hepsini</translation>
     </message>
     <message>
-        <source>Select zRPD Denominations to Spend</source>
-        <translation>Harcanacak zRPD Bölümlerini Seçin</translation>
+        <source>Select zSAPP Denominations to Spend</source>
+        <translation>Harcanacak zSAPP Bölümlerini Seçin</translation>
     </message>
 </context>
 <context>
@@ -6253,11 +6253,11 @@ Hoşgeldiniz</translation>
     </message>
     <message>
         <source>Enable automatic Zerocoin minting from specific addresses (0-1, default: %u)</source>
-        <translation>Belirli bir adresten otomatik zRPD minting yapılmasını etkinleştir (0-1, varsayılan: %u)</translation>
+        <translation>Belirli bir adresten otomatik zSAPP minting yapılmasını etkinleştir (0-1, varsayılan: %u)</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zRPD minting (0-1, default: %u)</source>
-        <translation>Her zRPD mintleme sonrası otomatik cüzdan yedeklemesini aktifleştir (0-1, varsayılan:%u)</translation>
+        <source>Enable automatic wallet backups triggered after each zSAPP minting (0-1, default: %u)</source>
+        <translation>Her zSAPP mintleme sonrası otomatik cüzdan yedeklemesini aktifleştir (0-1, varsayılan:%u)</translation>
     </message>
     <message>
         <source>Enable cold staking functionality (0-1, default: %u). Disabled if staking=0</source>
@@ -6268,8 +6268,8 @@ Hoşgeldiniz</translation>
         <translation>SAPP girişleri için stake fonksiyonunu aç veya kapat (0-1, varsayılan: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zRPD inputs (0-1, default: %u)</source>
-        <translation>zRPD girişleri için stake fonksiyonunu aç veya kapat (0-1, varsayılan: %u)</translation>
+        <source>Enable or disable staking functionality for zSAPP inputs (0-1, default: %u)</source>
+        <translation>zSAPP girişleri için stake fonksiyonunu aç veya kapat (0-1, varsayılan: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -6645,11 +6645,11 @@ Hoşgeldiniz</translation>
     </message>
     <message>
         <source>Enable automatic Zerocoin minting (0-1, default: %u)</source>
-        <translation>zRPD minting yapılmasını etkinleştir (0-1, varsayılan: %u)</translation>
+        <translation>zSAPP minting yapılmasını etkinleştir (0-1, varsayılan: %u)</translation>
     </message>
     <message>
-        <source>Enable precomputation of zRPD spends and stakes (0-1, default %u)</source>
-        <translation>zRPD harcamalarının ve stakelerinin önhesaplamasını etkinleştir (0-1, varsayılan %u)</translation>
+        <source>Enable precomputation of zSAPP spends and stakes (0-1, default %u)</source>
+        <translation>zSAPP harcamalarının ve stakelerinin önhesaplamasını etkinleştir (0-1, varsayılan %u)</translation>
     </message>
     <message>
         <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
@@ -6841,15 +6841,15 @@ Hoşgeldiniz</translation>
     </message>
     <message>
         <source>Recalculating minted ZPIV...</source>
-        <translation>Mint edilmiş zRPD'ler tekrar hesaplanıyor...</translation>
+        <translation>Mint edilmiş zSAPP'ler tekrar hesaplanıyor...</translation>
     </message>
     <message>
         <source>Recalculating spent ZPIV...</source>
-        <translation>Harcanmış zRPD'ler tekrar hesaplanıyor...</translation>
+        <translation>Harcanmış zSAPP'ler tekrar hesaplanıyor...</translation>
     </message>
     <message>
-        <source>Reindex the SAPP and zRPD money supply statistics</source>
-        <translation>SAPP ve zRPD para tedarik istatistiklerini tekrar endeksle</translation>
+        <source>Reindex the SAPP and zSAPP money supply statistics</source>
+        <translation>SAPP ve zSAPP para tedarik istatistiklerini tekrar endeksle</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -6928,8 +6928,8 @@ Hoşgeldiniz</translation>
         <translation>Otomatik mint edilmiş Zerocoin için tercih edilen bölümler (1/5/10/50/100/500/1000/5000), tercih yoksa 0. varsayılan: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zRPD backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Otomatik bir zRPD yedek kopyası eklemek için bir yedekleme özel yolu belirleyin. Eğer dizin olarak belirlerseniz her yedek zaman damgası adı ile dosyalanır. Dosya olarak belirlerseniz, her yedeklemede üstüne yazar. Eğer yedek yolu da belirlenmişse, 4 yedek oluşur.</translation>
+        <source>Specify custom backup path to add a copy of any automatic zSAPP backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Otomatik bir zSAPP yedek kopyası eklemek için bir yedekleme özel yolu belirleyin. Eğer dizin olarak belirlerseniz her yedek zaman damgası adı ile dosyalanır. Dosya olarak belirlerseniz, her yedeklemede üstüne yazar. Eğer yedek yolu da belirlenmişse, 4 yedek oluşur.</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -7364,8 +7364,8 @@ Hoşgeldiniz</translation>
         <translation>Sporklar eşzamanlanıyor..</translation>
     </message>
     <message>
-        <source>Syncing zRPD wallet...</source>
-        <translation>zRPD cüzdanı eşzamanlanıyor..</translation>
+        <source>Syncing zSAPP wallet...</source>
+        <translation>zSAPP cüzdanı eşzamanlanıyor..</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -7480,8 +7480,8 @@ Hoşgeldiniz</translation>
         <translation>JSON-RPC bağlantısı için kullanıcı adı</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zRPD</source>
-        <translation>Aşağıdaki değer zRPD'in mümkün olan en küçük bölüm değeridir (=1)</translation>
+        <source>Value is below the smallest available denomination (= 1) of zSAPP</source>
+        <translation>Aşağıdaki değer zSAPP'in mümkün olan en küçük bölüm değeridir (=1)</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>

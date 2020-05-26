@@ -611,8 +611,8 @@
         <translation>ТекстовЕтикет</translation>
     </message>
     <message>
-        <source>zRPD</source>
-        <translation>zRPD</translation>
+        <source>zSAPP</source>
+        <translation>zSAPP</translation>
     </message>
     <message>
         <source>All</source>
@@ -1098,28 +1098,28 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Картографирай портовете използвайки &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of SAPP units to zRPD</source>
-        <translation>Включи автоматичното емитиране на SAPP единици в zRPD</translation>
+        <source>Enable automatic minting of SAPP units to zSAPP</source>
+        <translation>Включи автоматичното емитиране на SAPP единици в zSAPP</translation>
     </message>
     <message>
-        <source>Enable zRPD Automint</source>
-        <translation>Включи Автоматично емитиране на zRPD</translation>
+        <source>Enable zSAPP Automint</source>
+        <translation>Включи Автоматично емитиране на zSAPP</translation>
     </message>
     <message>
-        <source>Percentage of incoming SAPP which get automatically converted to zRPD via Zerocoin Protocol (min: 10%)</source>
-        <translation>Процент от входящите SAPP, който автоматично да се конвертира в zRPD посредтвом Zerocoin Протокола (мин: 10%)</translation>
+        <source>Percentage of incoming SAPP which get automatically converted to zSAPP via Zerocoin Protocol (min: 10%)</source>
+        <translation>Процент от входящите SAPP, който автоматично да се конвертира в zSAPP посредтвом Zerocoin Протокола (мин: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zRPD</source>
-        <translation>Процент автоматично сечени zRPD</translation>
+        <source>Percentage of autominted zSAPP</source>
+        <translation>Процент автоматично сечени zSAPP</translation>
     </message>
     <message>
         <source>Wait with automatic conversion to Zerocoin until enough SAPP for this denomination is available</source>
-        <translation>Не бързай с автоматичното конвертиране в zRPD докато не се съберат достатъчно SAPP за тази деноминация</translation>
+        <translation>Не бързай с автоматичното конвертиране в zSAPP докато не се съберат достатъчно SAPP за тази деноминация</translation>
     </message>
     <message>
-        <source>Preferred Automint zRPD Denomination</source>
-        <translation>Предпочитани деноминации, в които да се сече автоматичен zRPD</translation>
+        <source>Preferred Automint zSAPP Denomination</source>
+        <translation>Предпочитани деноминации, в които да се сече автоматичен zSAPP</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -1714,8 +1714,8 @@ Address: %4
         <translation>Персонален резервен път:</translation>
     </message>
     <message>
-        <source>Custom zRPD Backup Path:</source>
-        <translation>Персонализиран zRPD резервен път:</translation>
+        <source>Custom zSAPP Backup Path:</source>
+        <translation>Персонализиран zSAPP резервен път:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -1998,12 +1998,12 @@ Address: %4
         <translation>Похарчи Zerocoin</translation>
     </message>
     <message>
-        <source>zRPD is currently undergoing maintenance.</source>
-        <translation>В момента zRPD е в ремонт.</translation>
+        <source>zSAPP is currently undergoing maintenance.</source>
+        <translation>В момента zSAPP е в ремонт.</translation>
     </message>
     <message>
-        <source>Version 1 zRPD require a security level of 100 to successfully spend.</source>
-        <translation>Версия 1 zRPD изисква ниво на сигурност от 100 за успешно изразходване.</translation>
+        <source>Version 1 zSAPP require a security level of 100 to successfully spend.</source>
+        <translation>Версия 1 zSAPP изисква ниво на сигурност от 100 за успешно изразходване.</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -2756,8 +2756,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>SAPP Stake</translation>
     </message>
     <message>
-        <source>zRPD Stake</source>
-        <translation>zRPD Stake</translation>
+        <source>zSAPP Stake</source>
+        <translation>zSAPP Stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -2776,24 +2776,24 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Обфускация и направа на Деноминации</translation>
     </message>
     <message>
-        <source>Converted SAPP to zRPD</source>
-        <translation>Конвертиран SAPP във zRPD</translation>
+        <source>Converted SAPP to zSAPP</source>
+        <translation>Конвертиран SAPP във zSAPP</translation>
     </message>
     <message>
-        <source>Spent zRPD</source>
-        <translation>Похарчени zRPD</translation>
+        <source>Spent zSAPP</source>
+        <translation>Похарчени zSAPP</translation>
     </message>
     <message>
-        <source>Received SAPP from zRPD</source>
-        <translation>Получен SAPP от zRPD</translation>
+        <source>Received SAPP from zSAPP</source>
+        <translation>Получен SAPP от zSAPP</translation>
     </message>
     <message>
-        <source>Minted Change as zRPD from zRPD Spend</source>
-        <translation>Исечено ресто като zRPD от похарчените zRPD</translation>
+        <source>Minted Change as zSAPP from zSAPP Spend</source>
+        <translation>Исечено ресто като zSAPP от похарчените zSAPP</translation>
     </message>
     <message>
-        <source>Converted zRPD to SAPP</source>
-        <translation>Конвертиран zRPD във SAPP</translation>
+        <source>Converted zSAPP to SAPP</source>
+        <translation>Конвертиран zSAPP във SAPP</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -2914,8 +2914,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zRPD to Spend</source>
-        <translation>Изберете zRPD за Изпращане</translation>
+        <source>Select zSAPP to Spend</source>
+        <translation>Изберете zSAPP за Изпращане</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -2923,7 +2923,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>zPiv</source>
-        <translation>zRPD</translation>
+        <translation>zSAPP</translation>
     </message>
     <message>
         <source>Quantity:</source>
@@ -2997,16 +2997,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Разпространява се пот MIT софтуерен лиценз, виж съпровождащия файл от &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zRPD minting (0-1, default: %u)</source>
-        <translation>Включи автоматичните бекъпи на портфейла след всяко zRPD емитиране (0-1, по подразбиране: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zSAPP minting (0-1, default: %u)</source>
+        <translation>Включи автоматичните бекъпи на портфейла след всяко zSAPP емитиране (0-1, по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Enable or disable staking functionality for SAPP inputs (0-1, default: %u)</source>
         <translation>Активиране или деактивиране на функцията за зареждане за SAPP входове (0-1, по подразбиране: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zRPD inputs (0-1, default: %u)</source>
-        <translation>Активиране или деактивиране на функцията за зареждане за zRPD входове (0-1, по подразбиране: %u)</translation>
+        <source>Enable or disable staking functionality for zSAPP inputs (0-1, default: %u)</source>
+        <translation>Активиране или деактивиране на функцията за зареждане за zSAPP входове (0-1, по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -3521,8 +3521,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Процент автоматично емитирани Zerocoin (1-100, по подразбиране: %u)</translation>
     </message>
     <message>
-        <source>Reindex the SAPP and zRPD money supply statistics</source>
-        <translation>Индексирай наново SAPP и zRPD данните по наличности</translation>
+        <source>Reindex the SAPP and zSAPP money supply statistics</source>
+        <translation>Индексирай наново SAPP и zSAPP данните по наличности</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -3597,8 +3597,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Предпочитани деноминации за автоматично изсечените Zerocoin (1/5/10/50/100/500/1000/5000), 0 за каквито и да е. (По подразбиране: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zRPD backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Посочете персонализиран път за архивиране, за да добавите копие на всяко автоматично архивиране zRPD. Ако е зададено като реж., Всеки архив генерира файл с времева маркировка. Ако е зададен като файл, ще пренапише към този файл всеки архив. Ако е зададено и резервно копие, ще се случат 4 архиви</translation>
+        <source>Specify custom backup path to add a copy of any automatic zSAPP backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Посочете персонализиран път за архивиране, за да добавите копие на всяко автоматично архивиране zSAPP. Ако е зададено като реж., Всеки архив генерира файл с времева маркировка. Ако е зададен като файл, ще пренапише към този файл всеки архив. Ако е зададено и резервно копие, ще се случат 4 архиви</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -4001,8 +4001,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Синхронизиране на вилицо-лъжиците...</translation>
     </message>
     <message>
-        <source>Syncing zRPD wallet...</source>
-        <translation>Синхронизиране на zRPD портфейла ...</translation>
+        <source>Syncing zSAPP wallet...</source>
+        <translation>Синхронизиране на zSAPP портфейла ...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -4109,8 +4109,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Потребителско име за JSON-RPC свръзките</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zRPD</source>
-        <translation>Стойността е под най-малката налична деноминация (= 1) в zRPD</translation>
+        <source>Value is below the smallest available denomination (= 1) of zSAPP</source>
+        <translation>Стойността е под най-малката налична деноминация (= 1) в zSAPP</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>

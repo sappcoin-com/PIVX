@@ -607,8 +607,8 @@
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>zRPD</source>
-        <translation>zRPD</translation>
+        <source>zSAPP</source>
+        <translation>zSAPP</translation>
     </message>
     <message>
         <source>All</source>
@@ -1095,28 +1095,28 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
 </translation>
     </message>
     <message>
-        <source>Enable automatic minting of SAPP units to zRPD</source>
-        <translation>Omogućite automint SAPP jedinica na zRPD</translation>
+        <source>Enable automatic minting of SAPP units to zSAPP</source>
+        <translation>Omogućite automint SAPP jedinica na zSAPP</translation>
     </message>
     <message>
-        <source>Enable zRPD Automint</source>
-        <translation>Omogući zRPD Automint</translation>
+        <source>Enable zSAPP Automint</source>
+        <translation>Omogući zSAPP Automint</translation>
     </message>
     <message>
-        <source>Percentage of incoming SAPP which get automatically converted to zRPD via Zerocoin Protocol (min: 10%)</source>
-        <translation>Postotak dolaznih SAPP koji se automatski pretvara u zRPD putem protokola Zerocoin (min: 10%)</translation>
+        <source>Percentage of incoming SAPP which get automatically converted to zSAPP via Zerocoin Protocol (min: 10%)</source>
+        <translation>Postotak dolaznih SAPP koji se automatski pretvara u zSAPP putem protokola Zerocoin (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zRPD</source>
-        <translation>Postotak automatiziranog zRPD</translation>
+        <source>Percentage of autominted zSAPP</source>
+        <translation>Postotak automatiziranog zSAPP</translation>
     </message>
     <message>
         <source>Wait with automatic conversion to Zerocoin until enough SAPP for this denomination is available</source>
         <translation>Pričekajte s automatskom pretvorbom u Zerocoin dok ne bude dostupno dovoljno SAPP za apoen</translation>
     </message>
     <message>
-        <source>Preferred Automint zRPD Denomination</source>
-        <translation>Preferirana Automint zRPD denominacijad</translation>
+        <source>Preferred Automint zSAPP Denomination</source>
+        <translation>Preferirana Automint zSAPP denominacijad</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -1712,8 +1712,8 @@ Adresa: %4
         <translation>Put prilagođenog sigurnosnog kopiranja:</translation>
     </message>
     <message>
-        <source>Custom zRPD Backup Path:</source>
-        <translation>Prilagođeni put zRPD sigurnosne kopije:</translation>
+        <source>Custom zSAPP Backup Path:</source>
+        <translation>Prilagođeni put zSAPP sigurnosne kopije:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -1996,12 +1996,12 @@ Adresa: %4
         <translation>Potroši Zerocoin</translation>
     </message>
     <message>
-        <source>zRPD is currently undergoing maintenance.</source>
-        <translation>Radovi u tijeku na zRPD.</translation>
+        <source>zSAPP is currently undergoing maintenance.</source>
+        <translation>Radovi u tijeku na zSAPP.</translation>
     </message>
     <message>
-        <source>Version 1 zRPD require a security level of 100 to successfully spend.</source>
-        <translation>Verzija 1 zRPD zahtjeva sigurnosnu razinu 100 da se uspješno utroši.</translation>
+        <source>Version 1 zSAPP require a security level of 100 to successfully spend.</source>
+        <translation>Verzija 1 zSAPP zahtjeva sigurnosnu razinu 100 da se uspješno utroši.</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -2753,8 +2753,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>SAPP Stake</translation>
     </message>
     <message>
-        <source>zRPD Stake</source>
-        <translation>zRPD Stake</translation>
+        <source>zSAPP Stake</source>
+        <translation>zSAPP Stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -2773,24 +2773,24 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Prikrivanje Stvara Denominacije</translation>
     </message>
     <message>
-        <source>Converted SAPP to zRPD</source>
-        <translation>Pretvoreni SAPP u zRPD</translation>
+        <source>Converted SAPP to zSAPP</source>
+        <translation>Pretvoreni SAPP u zSAPP</translation>
     </message>
     <message>
-        <source>Spent zRPD</source>
-        <translation>Utrošeni zRPD</translation>
+        <source>Spent zSAPP</source>
+        <translation>Utrošeni zSAPP</translation>
     </message>
     <message>
-        <source>Received SAPP from zRPD</source>
-        <translation>Primljeni SAPP od zRPD</translation>
+        <source>Received SAPP from zSAPP</source>
+        <translation>Primljeni SAPP od zSAPP</translation>
     </message>
     <message>
-        <source>Minted Change as zRPD from zRPD Spend</source>
-        <translation>Mintana razlika zRPD od zRPD Utroška</translation>
+        <source>Minted Change as zSAPP from zSAPP Spend</source>
+        <translation>Mintana razlika zSAPP od zSAPP Utroška</translation>
     </message>
     <message>
-        <source>Converted zRPD to SAPP</source>
-        <translation>Pretvoreni zRPD u SAPP</translation>
+        <source>Converted zSAPP to SAPP</source>
+        <translation>Pretvoreni zSAPP u SAPP</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -2911,8 +2911,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zRPD to Spend</source>
-        <translation>Odabrani zRPD za utrošiti</translation>
+        <source>Select zSAPP to Spend</source>
+        <translation>Odabrani zSAPP za utrošiti</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -2994,16 +2994,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Distribuirano pod MIT softverskom licencom, pogledajte priloženu datoteku COPYING ili &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zRPD minting (0-1, default: %u)</source>
-        <translation>Omogući automatsko sigurnosno kopiranje novčanika nakon svakog zRPD mintanja (0-1, default: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zSAPP minting (0-1, default: %u)</source>
+        <translation>Omogući automatsko sigurnosno kopiranje novčanika nakon svakog zSAPP mintanja (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable or disable staking functionality for SAPP inputs (0-1, default: %u)</source>
         <translation>Omogući ili onemogući staking funkcionalnosti za SAPP unose (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zRPD inputs (0-1, default: %u)</source>
-        <translation>Omogući ili onemogući staking funkcionalnosti za zRPD unose (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for zSAPP inputs (0-1, default: %u)</source>
+        <translation>Omogući ili onemogući staking funkcionalnosti za zSAPP unose (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -3523,8 +3523,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Postotak automatskog kovanog Zerocoina (1-100, zadano: %u)</translation>
     </message>
     <message>
-        <source>Reindex the SAPP and zRPD money supply statistics</source>
-        <translation>Ponovno indeksirati statistiku SAPP i zRPD ponude novca</translation>
+        <source>Reindex the SAPP and zSAPP money supply statistics</source>
+        <translation>Ponovno indeksirati statistiku SAPP i zSAPP ponude novca</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -3598,8 +3598,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Preferirana denominacija za automatski ovjereni Zerocoin (1/5/10/50/100/500/1000/5000), 0 bez preferencije. zadana vrijednost: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zRPD backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Navedite put prilagođenog sigurnosnog kopiranja da biste dodali kopiju bilo koje automatske zRPD sigurnosne kopije. Ako je postavljeno kao dir, svaka sigurnosna kopija generira vremensku datoteku. Ako je postavljen kao datoteka, prepisat će na tu datoteku svaku kopiju. Ako je postavljen backuppath, dogodit će se 4 sigurnosne kopije</translation>
+        <source>Specify custom backup path to add a copy of any automatic zSAPP backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Navedite put prilagođenog sigurnosnog kopiranja da biste dodali kopiju bilo koje automatske zSAPP sigurnosne kopije. Ako je postavljeno kao dir, svaka sigurnosna kopija generira vremensku datoteku. Ako je postavljen kao datoteka, prepisat će na tu datoteku svaku kopiju. Ako je postavljen backuppath, dogodit će se 4 sigurnosne kopije</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -4002,8 +4002,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Sinkronizacija sporka...</translation>
     </message>
     <message>
-        <source>Syncing zRPD wallet...</source>
-        <translation>Sinkronizacija zRPD novčanika...</translation>
+        <source>Syncing zSAPP wallet...</source>
+        <translation>Sinkronizacija zSAPP novčanika...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -4110,8 +4110,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Korisničko ime za JSON-RPC veze</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zRPD</source>
-        <translation>Vrijednost je niža od najmanje dostupne denominacije (= 1) zRPD-a</translation>
+        <source>Value is below the smallest available denomination (= 1) of zSAPP</source>
+        <translation>Vrijednost je niža od najmanje dostupne denominacije (= 1) zSAPP-a</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>

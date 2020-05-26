@@ -1123,8 +1123,8 @@ address</source>
         <translation>SAPP</translation>
     </message>
     <message>
-        <source>zRPD</source>
-        <translation>zRPD</translation>
+        <source>zSAPP</source>
+        <translation>zSAPP</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -1155,8 +1155,8 @@ address</source>
         <translation>您可以查看您的帐户的历史</translation>
     </message>
     <message>
-        <source>Amount of SAPP and zRPD staked.</source>
-        <translation>已加注的PIV 和 zRPD 金额</translation>
+        <source>Amount of SAPP and zSAPP staked.</source>
+        <translation>已加注的PIV 和 zSAPP 金额</translation>
     </message>
     <message>
         <source>All</source>
@@ -1211,8 +1211,8 @@ address</source>
         <translation>暂无交易</translation>
     </message>
     <message>
-        <source>How to get SAPP or zRPD</source>
-        <translation>如何获取PIV 或 zRPD</translation>
+        <source>How to get SAPP or zSAPP</source>
+        <translation>如何获取PIV 或 zSAPP</translation>
     </message>
     <message>
         <source>You can verify the staking activity in the status bar at the top right of the wallet.
@@ -2158,15 +2158,15 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>端口使用&amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of SAPP units to zRPD</source>
+        <source>Enable automatic minting of SAPP units to zSAPP</source>
         <translation>启动自动铸造PIV到zPIV</translation>
     </message>
     <message>
-        <source>Enable zRPD Automint</source>
+        <source>Enable zSAPP Automint</source>
         <translation>启动自动铸造zPIV</translation>
     </message>
     <message>
-        <source>Enable automatic zRPD minting from specific addresses</source>
+        <source>Enable automatic zSAPP minting from specific addresses</source>
         <translation>启用从特定地址自动生成zPIV</translation>
     </message>
     <message>
@@ -2174,11 +2174,11 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>启动自动铸造地址</translation>
     </message>
     <message>
-        <source>Percentage of incoming SAPP which get automatically converted to zRPD via Zerocoin Protocol (min: 10%)</source>
+        <source>Percentage of incoming SAPP which get automatically converted to zSAPP via Zerocoin Protocol (min: 10%)</source>
         <translation>通过零币协议自动转换为zPIV的传入PIV的百分比(最小:10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zRPD</source>
+        <source>Percentage of autominted zSAPP</source>
         <translation>自动铸造的zPIV百分比</translation>
     </message>
     <message>
@@ -2186,7 +2186,7 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>等待自动转换为零币，直到足够的PIV为这种面额可用</translation>
     </message>
     <message>
-        <source>Preferred Automint zRPD Denomination</source>
+        <source>Preferred Automint zSAPP Denomination</source>
         <translation>首选自动铸造zPIV面额</translation>
     </message>
     <message>
@@ -2565,13 +2565,13 @@ Address: %4
         <translation>铸造</translation>
     </message>
     <message>
-        <source>Minting zRPD anonymizes your SAPP by removing any
+        <source>Minting zSAPP anonymizes your SAPP by removing any
 transaction history, making transactions untraceable </source>
         <translation>铸造zPIV会通过删除任何
 交易历史匿名化您的PIV，使交易无法被跟踪</translation>
     </message>
     <message>
-        <source>Mint new zRPD or convert back to SAPP</source>
+        <source>Mint new zSAPP or convert back to SAPP</source>
         <translation>铸造新的zPIV或转换回PIV</translation>
     </message>
     <message>
@@ -2583,11 +2583,11 @@ transaction history, making transactions untraceable </source>
         <translation>暂无交易</translation>
     </message>
     <message>
-        <source>Mint zRPD</source>
+        <source>Mint zSAPP</source>
         <translation>铸造zPIV</translation>
     </message>
     <message>
-        <source>Enter amount of SAPP to mint into zRPD</source>
+        <source>Enter amount of SAPP to mint into zSAPP</source>
         <translation>输入一定量的PIV铸造成zPIV</translation>
     </message>
     <message>
@@ -2595,7 +2595,7 @@ transaction history, making transactions untraceable </source>
         <translation>转换回PIV</translation>
     </message>
     <message>
-        <source>Enter amount of zRPD to convert back into SAPP</source>
+        <source>Enter amount of zSAPP to convert back into SAPP</source>
         <translation>输入一定量的zPIV转换回PIV</translation>
     </message>
     <message>
@@ -2603,12 +2603,12 @@ transaction history, making transactions untraceable </source>
         <translation>零币</translation>
     </message>
     <message>
-        <source>zRPD is currently undergoing maintenance</source>
+        <source>zSAPP is currently undergoing maintenance</source>
         <translation>zPIV目前正在维护中</translation>
     </message>
     <message>
-        <source>You need to unlock the wallet to be able to %1 zRPD</source>
-        <translation>你需要解锁钱包才能%1 zRPD</translation>
+        <source>You need to unlock the wallet to be able to %1 zSAPP</source>
+        <translation>你需要解锁钱包才能%1 zSAPP</translation>
     </message>
     <message>
         <source>convert</source>
@@ -2623,12 +2623,12 @@ transaction history, making transactions untraceable </source>
         <translation>无效值</translation>
     </message>
     <message>
-        <source>zRPD minted successfully</source>
+        <source>zSAPP minted successfully</source>
         <translation>zPIV铸造成功</translation>
     </message>
     <message>
-        <source>zRPD converted back to SAPP</source>
-        <translation>zRPD 转换回PIV</translation>
+        <source>zSAPP converted back to SAPP</source>
+        <translation>zSAPP 转换回PIV</translation>
     </message>
     <message>
         <source>You don't have any SAPP to select.</source>
@@ -3018,7 +3018,7 @@ transaction history, making transactions untraceable </source>
         <translation>自定义备份路径:</translation>
     </message>
     <message>
-        <source>Custom zRPD Backup Path:</source>
+        <source>Custom zSAPP Backup Path:</source>
         <translation>自定义zPIV备份路径:</translation>
     </message>
     <message>
@@ -3559,8 +3559,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
         <translation>发送</translation>
     </message>
     <message>
-        <source>You can transfer public coins (SAPP) or private coins (zRPD)</source>
-        <translation>您可以转换公共币(SAPP)或私人币(zRPD)</translation>
+        <source>You can transfer public coins (SAPP) or private coins (zSAPP)</source>
+        <translation>您可以转换公共币(SAPP)或私人币(zSAPP)</translation>
     </message>
     <message>
         <source>Select coin type to spend</source>
@@ -3599,7 +3599,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
         <translation>花费PIV</translation>
     </message>
     <message>
-        <source>Send zRPD</source>
+        <source>Send zSAPP</source>
         <translation>花费zPIV</translation>
     </message>
     <message>
@@ -3655,7 +3655,7 @@ These coins will no longer be cold-staked.</source>
         <translation>花费零币</translation>
     </message>
     <message>
-        <source>zRPD is currently undergoing maintenance.</source>
+        <source>zSAPP is currently undergoing maintenance.</source>
         <translation>zPIV目前正在维护中</translation>
     </message>
     <message>
@@ -3675,11 +3675,11 @@ These coins will no longer be cold-staked.</source>
 %2</translation>
     </message>
     <message>
-        <source>zRPD transaction sent!</source>
+        <source>zSAPP transaction sent!</source>
         <translation>zPIV交易已发送！</translation>
     </message>
     <message>
-        <source>Version 1 zRPD require a security level of 100 to successfully spend.</source>
+        <source>Version 1 zSAPP require a security level of 100 to successfully spend.</source>
         <translation>版本1 zPIV要求安全级别为100才能成功使用。</translation>
     </message>
     <message>
@@ -3723,7 +3723,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>您没有任何PIV可供选择。</translation>
     </message>
     <message>
-        <source>You don't have any zRPD in your balance to select.</source>
+        <source>You don't have any zSAPP in your balance to select.</source>
         <translation>你的余额中没有zPIV可供选择。</translation>
     </message>
     <message>
@@ -4132,26 +4132,26 @@ Verify that you have installed a predetermined text editor.</source>
         <translation>2) 我的PIV为什么不能用？</translation>
     </message>
     <message>
-        <source>3) SAPP privacy? What is Zerocoin (zRPD)?</source>
-        <translation>3）SAPP 隐私？什么是零币(zRPD)？</translation>
+        <source>3) SAPP privacy? What is Zerocoin (zSAPP)?</source>
+        <translation>3）SAPP 隐私？什么是零币(zSAPP)？</translation>
     </message>
     <message>
-        <source>4) Why are my zRPD unspendable?</source>
+        <source>4) Why are my zSAPP unspendable?</source>
         <translation>4) 我的zPIV为什么不能用？</translation>
     </message>
     <message>
         <source>5) Why did my wallet convert the balance
-    into zRPD automatically?</source>
+    into zSAPP automatically?</source>
         <translation>5）为什么我的钱包把余额自动转换成
 zPIV了?</translation>
     </message>
     <message>
-        <source>6) How do I receive SAPP/zRPD?</source>
-        <translation>6）如何接收PIV/zRPD?</translation>
+        <source>6) How do I receive SAPP/zSAPP?</source>
+        <translation>6）如何接收PIV/zSAPP?</translation>
     </message>
     <message>
-        <source>7) How do I stake SAPP/zRPD?</source>
-        <translation>7）如何加注PIV/zRPD?</translation>
+        <source>7) How do I stake SAPP/zSAPP?</source>
+        <translation>7）如何加注PIV/zSAPP?</translation>
     </message>
     <message>
         <source>8) Where I should go if I need support?</source>
@@ -4180,7 +4180,7 @@ zPIV了?</translation>
                            that can be easily transferred globally, instantly, and with near
                            zero fees.  SAPP incorporates market leading security &amp;
                            privacy and is also the first PoS (Proof of Stake) Cryptocurrency
-                           to implement ZeroCoin(zRPD) and Zerocoin staking.
+                           to implement ZeroCoin(zSAPP) and Zerocoin staking.
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            SAPP utilizes a Proof of Stake (PoS) consensus system algorithm,
                            allowing all owners of SAPP to participate in earning block rewards
@@ -4194,7 +4194,7 @@ PIVX是一种使用区块链技术的数字在线货币
 全球范围内快捷交易，即时，基本为
 零的交易费用。PIVX是市场上领先的安全和
 隐私加密货币，也是第一个PoS(股权证明)加密货币
-实现零币(zRPD)和零币加注。
+实现零币(zSAPP)和零币加注。
 &lt;/p&gt;&lt;p align="justify"&gt;
 PIVX使用了一个股权证明(PoS)一致系统算法，
 允许所有PIVX的所有者参与赚取区块奖励
@@ -4234,17 +4234,17 @@ PIVX使用了一个股权证明(PoS)一致系统算法，
         <translation>3</translation>
     </message>
     <message>
-        <source>SAPP privacy? What is Zerocoin (zRPD)?</source>
-        <translation>SAPP 隐私？什么是零币(zRPD)？</translation>
+        <source>SAPP privacy? What is Zerocoin (zSAPP)?</source>
+        <translation>SAPP 隐私？什么是零币(zSAPP)？</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zRPD is an optional privacy-centric method of coin mixing on the
+                           zSAPP is an optional privacy-centric method of coin mixing on the
                            SAPP blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
                            &lt;a style='color: #b088ff' href='https://SAPP.org/zpiv/'&gt;
-                           "SAPP Zerocoin (zRPD) Technical Paper"&lt;/a&gt;.
+                           "SAPP Zerocoin (zSAPP) Technical Paper"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
@@ -4255,7 +4255,7 @@ zPIV是一种可选的以隐私为中心的隐私币
 
 你可以阅读更多关于技术方面的文章&lt;/a&gt;
 
-PIVX零币(zRPD)技术文件
+PIVX零币(zSAPP)技术文件
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </translation>
     </message>
@@ -4264,13 +4264,13 @@ PIVX零币(zRPD)技术文件
         <translation>4</translation>
     </message>
     <message>
-        <source>Why are my zRPD unspendable?</source>
+        <source>Why are my zSAPP unspendable?</source>
         <translation>我的PIV为什么不能用？</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           After minting, zRPD will require 20 confirmations as well as 1
+                           After minting, zSAPP will require 20 confirmations as well as 1
                            additional mint of the same denomination on the network to
                            become eligible for spending.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -4287,7 +4287,7 @@ PIVX零币(zRPD)技术文件
         <translation>5</translation>
     </message>
     <message>
-        <source>Why did my wallet convert the balance into zRPD automatically?</source>
+        <source>Why did my wallet convert the balance into zSAPP automatically?</source>
         <translation>为什么我的钱包会自动将余额转换成zPIV ?</translation>
     </message>
     <message>
@@ -4295,16 +4295,16 @@ PIVX零币(zRPD)技术文件
         <translation>6</translation>
     </message>
     <message>
-        <source>How do I receive SAPP/zRPD?</source>
-        <translation>我怎么接收PIV/zRPD?</translation>
+        <source>How do I receive SAPP/zSAPP?</source>
+        <translation>我怎么接收PIV/zSAPP?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zRPD can be spent and sent to any SAPP address. The receiver will
-                           receive standard SAPP but the origin of the SAPP is anonymized by the zRPD Protocol.
+                           zSAPP can be spent and sent to any SAPP address. The receiver will
+                           receive standard SAPP but the origin of the SAPP is anonymized by the zSAPP Protocol.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           If you want more zRPD you will need to mint your balance in the “Privacy” tab.
+                           If you want more zSAPP you will need to mint your balance in the “Privacy” tab.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
@@ -4320,8 +4320,8 @@ PIVX零币(zRPD)技术文件
         <translation>7</translation>
     </message>
     <message>
-        <source>How do I stake SAPP/zRPD?</source>
-        <translation>我怎么加注PIV/zRPD?</translation>
+        <source>How do I stake SAPP/zSAPP?</source>
+        <translation>我怎么加注PIV/zSAPP?</translation>
     </message>
     <message>
         <source>
@@ -4340,12 +4340,12 @@ PIVX零币(zRPD)技术文件
                            You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state "Staking Enabled" to indicate it is staking.  Using the command line interface (pivx-cli); the command &lt;i&gt;getstakingstatus&lt;/i&gt; will confirm that staking is active.
                            &lt;/li&gt;&lt;/ol&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           To Stake zRPD:
+                           To Stake zSAPP:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ol&gt;&lt;li&gt;
                            Make sure your wallet is completely synchronized and you are using the latest release.
                            &lt;li&gt;
-                           Your newly minted or existing zRPD balance must have a minimum of 200 confirmations.
+                           Your newly minted or existing zSAPP balance must have a minimum of 200 confirmations.
                            &lt;li&gt;
                            Your wallet must stay online and be unlocked for anonymization and staking purposes.
                            Staking should now be enabled.
@@ -5398,8 +5398,8 @@ Are you sure?
         <translation>480.0685 SAPP</translation>
     </message>
     <message>
-        <source>1,000 zRPD</source>
-        <translation>1,000 zRPD</translation>
+        <source>1,000 zSAPP</source>
+        <translation>1,000 zSAPP</translation>
     </message>
     <message>
         <source>Available</source>
@@ -5422,11 +5422,11 @@ Are you sure?
         <translation>10 SAPP</translation>
     </message>
     <message>
-        <source>60 zRPD</source>
+        <source>60 zSAPP</source>
         <translation>60 SAPP</translation>
     </message>
     <message>
-        <source>10 zRPD</source>
+        <source>10 zSAPP</source>
         <translation>10 SAPP</translation>
     </message>
     <message>
@@ -5747,8 +5747,8 @@ Are you sure?
         <translation>PIV加注</translation>
     </message>
     <message>
-        <source>zRPD Stake</source>
-        <translation>zRPD 加注</translation>
+        <source>zSAPP Stake</source>
+        <translation>zSAPP 加注</translation>
     </message>
     <message>
         <source>SAPP Cold Stake</source>
@@ -5779,23 +5779,23 @@ Are you sure?
         <translation>模糊创建命名</translation>
     </message>
     <message>
-        <source>Converted SAPP to zRPD</source>
+        <source>Converted SAPP to zSAPP</source>
         <translation>转换PIV为zPIV</translation>
     </message>
     <message>
-        <source>Spent zRPD</source>
+        <source>Spent zSAPP</source>
         <translation>已经花费zPIV</translation>
     </message>
     <message>
-        <source>Received SAPP from zRPD</source>
+        <source>Received SAPP from zSAPP</source>
         <translation>从zPIV接收PIV</translation>
     </message>
     <message>
-        <source>Minted Change as zRPD from zRPD Spend</source>
+        <source>Minted Change as zSAPP from zSAPP Spend</source>
         <translation>铸币的变化，从zPIV花费zPIV</translation>
     </message>
     <message>
-        <source>Converted zRPD to SAPP</source>
+        <source>Converted zSAPP to SAPP</source>
         <translation>转换PIV为zPIV</translation>
     </message>
     <message>
@@ -6119,7 +6119,7 @@ PIVX核心钱包</translation>
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zRPD to Spend</source>
+        <source>Select zSAPP to Spend</source>
         <translation>选择zPIV 花费</translation>
     </message>
     <message>
@@ -6155,7 +6155,7 @@ PIVX核心钱包</translation>
         <translation>选择／删除所有</translation>
     </message>
     <message>
-        <source>Select zRPD Denominations to Spend</source>
+        <source>Select zSAPP Denominations to Spend</source>
         <translation>选择zPIV 面额花费</translation>
     </message>
 </context>
@@ -6218,7 +6218,7 @@ PIVX核心钱包</translation>
         <translation>启用从特定地址自动生成零币(0-1，默认:%u)</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zRPD minting (0-1, default: %u)</source>
+        <source>Enable automatic wallet backups triggered after each zSAPP minting (0-1, default: %u)</source>
         <translation>启用每次zPIV生成后触发的自动钱包备份(0-1，默认值:%u)</translation>
     </message>
     <message>
@@ -6230,7 +6230,7 @@ PIVX核心钱包</translation>
         <translation>启用或禁用PIV输入标记功能(0-1，默认值:%u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zRPD inputs (0-1, default: %u)</source>
+        <source>Enable or disable staking functionality for zSAPP inputs (0-1, default: %u)</source>
         <translation>启用或禁用zPIV输入的标记功能(0-1，默认值:%u)</translation>
     </message>
     <message>
@@ -6610,7 +6610,7 @@ PIVX核心钱包</translation>
         <translation>启用自动零币铸造(0-1，默认:%u)</translation>
     </message>
     <message>
-        <source>Enable precomputation of zRPD spends and stakes (0-1, default %u)</source>
+        <source>Enable precomputation of zSAPP spends and stakes (0-1, default %u)</source>
         <translation>启用预先计算zPIV的花费和加注(0-1，默认%u)</translation>
     </message>
     <message>
@@ -6810,7 +6810,7 @@ PIVX核心钱包</translation>
         <translation>重新计算ZPIV……</translation>
     </message>
     <message>
-        <source>Reindex the SAPP and zRPD money supply statistics</source>
+        <source>Reindex the SAPP and zSAPP money supply statistics</source>
         <translation>重新索引PIV和zPIV货币供应统计数据</translation>
     </message>
     <message>
@@ -6890,7 +6890,7 @@ PIVX核心钱包</translation>
         <translation>自动铸造零币的首选面额(1/5/10/50/100/500/1000/5000)，0为无偏好。默认值: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zRPD backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <source>Specify custom backup path to add a copy of any automatic zSAPP backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
         <translation>指定自定义备份路径，以添加任何自动zPIV备份的副本。如果将其设置为dir，则每个备份将生成一个时间戳文件。如果设置为文件，将重写到该文件的每次备份。如果还设置了备份文件，则会进行4次备份</translation>
     </message>
     <message>
@@ -7326,7 +7326,7 @@ PIVX核心钱包</translation>
         <translation>正在同步分叉...</translation>
     </message>
     <message>
-        <source>Syncing zRPD wallet...</source>
+        <source>Syncing zSAPP wallet...</source>
         <translation>正在同步zPIV钱包……</translation>
     </message>
     <message>
@@ -7442,7 +7442,7 @@ PIVX核心钱包</translation>
         <translation>JSON-RPC连接的用户名</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zRPD</source>
+        <source>Value is below the smallest available denomination (= 1) of zSAPP</source>
         <translation>值小于zPIV的最小可用面额(= 1)</translation>
     </message>
     <message>

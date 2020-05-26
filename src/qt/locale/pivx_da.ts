@@ -870,8 +870,8 @@ For Staking</translation>
         <translation>SAPP</translation>
     </message>
     <message>
-        <source>zRPD</source>
-        <translation>zRPD</translation>
+        <source>zSAPP</source>
+        <translation>zSAPP</translation>
     </message>
     <message>
         <source>Days</source>
@@ -890,8 +890,8 @@ For Staking</translation>
         <translation>Du kan se din konto historik</translation>
     </message>
     <message>
-        <source>Amount of SAPP and zRPD staked.</source>
-        <translation>Mængden af SAPP og zRPD opbevaret</translation>
+        <source>Amount of SAPP and zSAPP staked.</source>
+        <translation>Mængden af SAPP og zSAPP opbevaret</translation>
     </message>
     <message>
         <source>All</source>
@@ -930,8 +930,8 @@ For Staking</translation>
         <translation>Ingen transaktioner endnu</translation>
     </message>
     <message>
-        <source>How to get SAPP or zRPD</source>
-        <translation>Hvordan man får SAPP eller zRPD</translation>
+        <source>How to get SAPP or zSAPP</source>
+        <translation>Hvordan man får SAPP eller zSAPP</translation>
     </message>
     <message>
         <source>You can verify the staking activity in the status bar at the top right of the wallet.
@@ -1503,28 +1503,28 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>MAP port ved hjælp af UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of SAPP units to zRPD</source>
-        <translation>Aktivér automatisk mintning af SAPP-enheder til zRPD</translation>
+        <source>Enable automatic minting of SAPP units to zSAPP</source>
+        <translation>Aktivér automatisk mintning af SAPP-enheder til zSAPP</translation>
     </message>
     <message>
-        <source>Enable zRPD Automint</source>
-        <translation>Aktivér zRPD Automint</translation>
+        <source>Enable zSAPP Automint</source>
+        <translation>Aktivér zSAPP Automint</translation>
     </message>
     <message>
-        <source>Percentage of incoming SAPP which get automatically converted to zRPD via Zerocoin Protocol (min: 10%)</source>
-        <translation>Procentdelen af indkommende SAPP, som automatisk konverteres til zRPD via Zerocoin Protocol (min: 10%)</translation>
+        <source>Percentage of incoming SAPP which get automatically converted to zSAPP via Zerocoin Protocol (min: 10%)</source>
+        <translation>Procentdelen af indkommende SAPP, som automatisk konverteres til zSAPP via Zerocoin Protocol (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zRPD</source>
-        <translation>Procentdel af automatiseret zRPD</translation>
+        <source>Percentage of autominted zSAPP</source>
+        <translation>Procentdel af automatiseret zSAPP</translation>
     </message>
     <message>
         <source>Wait with automatic conversion to Zerocoin until enough SAPP for this denomination is available</source>
         <translation>Vent med automatisk konvertering til Zerocoin, indtil nok SAPP til denne betegnelse er tilgængelig</translation>
     </message>
     <message>
-        <source>Preferred Automint zRPD Denomination</source>
-        <translation>Foretrukket Automint zRPD Denomination</translation>
+        <source>Preferred Automint zSAPP Denomination</source>
+        <translation>Foretrukket Automint zSAPP Denomination</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2131,8 +2131,8 @@ Adresse: %4
         <translation>Brugerdefineret Backup-sti:</translation>
     </message>
     <message>
-        <source>Custom zRPD Backup Path:</source>
-        <translation>Brugerdefineret zRPD Backup-sti:</translation>
+        <source>Custom zSAPP Backup Path:</source>
+        <translation>Brugerdefineret zSAPP Backup-sti:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -2491,12 +2491,12 @@ Adresse: %4
         <translation>Tilbring Zerocoin</translation>
     </message>
     <message>
-        <source>zRPD is currently undergoing maintenance.</source>
-        <translation>zRPD er i øjeblikket under opretholdelse.</translation>
+        <source>zSAPP is currently undergoing maintenance.</source>
+        <translation>zSAPP er i øjeblikket under opretholdelse.</translation>
     </message>
     <message>
-        <source>Version 1 zRPD require a security level of 100 to successfully spend.</source>
-        <translation>Version 1 zRPD kræver et sikkerhedsniveau på 100 til succes.</translation>
+        <source>Version 1 zSAPP require a security level of 100 to successfully spend.</source>
+        <translation>Version 1 zSAPP kræver et sikkerhedsniveau på 100 til succes.</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -3338,8 +3338,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>SAPP Stake</translation>
     </message>
     <message>
-        <source>zRPD Stake</source>
-        <translation>zRPD Stake</translation>
+        <source>zSAPP Stake</source>
+        <translation>zSAPP Stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -3358,24 +3358,24 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Opret tilsløret designering</translation>
     </message>
     <message>
-        <source>Converted SAPP to zRPD</source>
-        <translation>Konverteret SAPP til zRPD</translation>
+        <source>Converted SAPP to zSAPP</source>
+        <translation>Konverteret SAPP til zSAPP</translation>
     </message>
     <message>
-        <source>Spent zRPD</source>
+        <source>Spent zSAPP</source>
         <translation>Brugt zPiv</translation>
     </message>
     <message>
-        <source>Received SAPP from zRPD</source>
+        <source>Received SAPP from zSAPP</source>
         <translation>Modtaget Piv fra zPiv</translation>
     </message>
     <message>
-        <source>Minted Change as zRPD from zRPD Spend</source>
-        <translation>Minted Change som zRPD fra zRPD Spend</translation>
+        <source>Minted Change as zSAPP from zSAPP Spend</source>
+        <translation>Minted Change som zSAPP fra zSAPP Spend</translation>
     </message>
     <message>
-        <source>Converted zRPD to SAPP</source>
-        <translation>Konverteret SAPP til zRPD</translation>
+        <source>Converted zSAPP to SAPP</source>
+        <translation>Konverteret SAPP til zSAPP</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -3532,8 +3532,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zRPD to Spend</source>
-        <translation>Vælg zRPD for at bruge</translation>
+        <source>Select zSAPP to Spend</source>
+        <translation>Vælg zSAPP for at bruge</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -3620,7 +3620,7 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
 &lt;http://www.opensource.org/licenses/mit-license.php&gt;. </translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zRPD minting (0-1, default: %u)</source>
+        <source>Enable automatic wallet backups triggered after each zSAPP minting (0-1, default: %u)</source>
         <translation>Aktivér automatiske wallet-sikkerhedskopier udløst efter hver zPiv-mintning (0-1, standard: %u)</translation>
     </message>
     <message>
@@ -3628,8 +3628,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Aktiver eller deaktiver staking-funktionalitet for SAPP-indgange (0-1, standard: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zRPD inputs (0-1, default: %u)</source>
-        <translation>Aktiver eller deaktiver staking-funktionalitet for zRPD-indgange (0-1, standard: %u)</translation>
+        <source>Enable or disable staking functionality for zSAPP inputs (0-1, default: %u)</source>
+        <translation>Aktiver eller deaktiver staking-funktionalitet for zSAPP-indgange (0-1, standard: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -4152,8 +4152,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Procentdel af automatisk mintede Zerocoin (10-100, standard: %u)</translation>
     </message>
     <message>
-        <source>Reindex the SAPP and zRPD money supply statistics</source>
-        <translation>Reindex SAPP og zRPD pengemængde statistikker</translation>
+        <source>Reindex the SAPP and zSAPP money supply statistics</source>
+        <translation>Reindex SAPP og zSAPP pengemængde statistikker</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -4228,8 +4228,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Foretrukken Betegnelse for automatisk mintede Zerocoin (1/5/10/50/100/500/1000/5000), 0 uden præference. standard: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zRPD backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Angiv brugerdefineret backup-vej for at tilføje en kopi af enhver zRPD-backup. Hvis det er angivet som dig, genererer hver backup en tidsstempelet fil. Hvis den er angivet som fil, ønsker man at omskrive til den pågældende fil hver backup. Hvis backupath er indstillet, vil der ske 4 sikkerhedskopier</translation>
+        <source>Specify custom backup path to add a copy of any automatic zSAPP backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Angiv brugerdefineret backup-vej for at tilføje en kopi af enhver zSAPP-backup. Hvis det er angivet som dig, genererer hver backup en tidsstempelet fil. Hvis den er angivet som fil, ønsker man at omskrive til den pågældende fil hver backup. Hvis backupath er indstillet, vil der ske 4 sikkerhedskopier</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -4632,8 +4632,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Synkroniserer sporks...</translation>
     </message>
     <message>
-        <source>Syncing zRPD wallet...</source>
-        <translation>Syncing zRPD wallet ..</translation>
+        <source>Syncing zSAPP wallet...</source>
+        <translation>Syncing zSAPP wallet ..</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -4740,8 +4740,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Brugernavn til JSON-RPC forbindelser</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zRPD</source>
-        <translation>Værdien er under den mindste tilgængelige værdi (= 1) for zRPD</translation>
+        <source>Value is below the smallest available denomination (= 1) of zSAPP</source>
+        <translation>Værdien er under den mindste tilgængelige værdi (= 1) for zSAPP</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>

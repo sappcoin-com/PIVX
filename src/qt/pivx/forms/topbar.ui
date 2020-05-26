@@ -188,7 +188,7 @@ border:none;</string>
                </size>
               </property>
               <property name="text">
-               <string notr="true">1,000 zRPD</string>
+               <string notr="true">1,000 zSAPP</string>
               </property>
              </widget>
             </item>
@@ -503,7 +503,7 @@ border:none;</string>
                 <item>
                  <widget class="QLabel" name="labelAvailablezPiv">
                   <property name="text">
-                   <string notr="true">1,000 zRPD</string>
+                   <string notr="true">1,000 zSAPP</string>
                   </property>
                  </widget>
                 </item>
@@ -526,7 +526,7 @@ border:none;</string>
                   <item>
                    <widget class="QLabel" name="labelPendingzPiv">
                     <property name="text">
-                     <string notr="true">60 zRPD</string>
+                     <string notr="true">60 zSAPP</string>
                     </property>
                    </widget>
                   </item>
@@ -560,7 +560,7 @@ border:none;</string>
                   <item>
                    <widget class="QLabel" name="labelImmaturezPiv">
                     <property name="text">
-                     <string notr="true">10 zRPD</string>
+                     <string notr="true">10 zSAPP</string>
                     </property>
                    </widget>
                   </item>

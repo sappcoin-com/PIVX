@@ -455,7 +455,7 @@ QString TransactionTableModel::formatTxType(const TransactionRecord* wtx) const
     case TransactionRecord::StakeMint:
         return tr("SAPP Stake");
     case TransactionRecord::StakeZPIV:
-        return tr("zRPD Stake");
+        return tr("zSAPP Stake");
     case TransactionRecord::StakeDelegated:
         return tr("SAPP Cold Stake");
     case TransactionRecord::StakeHot:
@@ -470,15 +470,15 @@ QString TransactionTableModel::formatTxType(const TransactionRecord* wtx) const
     case TransactionRecord::Generated:
         return tr("Mined");
     case TransactionRecord::ZerocoinMint:
-        return tr("Converted SAPP to zRPD");
+        return tr("Converted SAPP to zSAPP");
     case TransactionRecord::ZerocoinSpend:
-        return tr("Spent zRPD");
+        return tr("Spent zSAPP");
     case TransactionRecord::RecvFromZerocoinSpend:
-        return tr("Received SAPP from zRPD");
+        return tr("Received SAPP from zSAPP");
     case TransactionRecord::ZerocoinSpend_Change_zPiv:
-        return tr("Minted Change as zRPD from zRPD Spend");
+        return tr("Minted Change as zSAPP from zSAPP Spend");
     case TransactionRecord::ZerocoinSpend_FromMe:
-        return tr("Converted zRPD to SAPP");
+        return tr("Converted zSAPP to SAPP");
     default:
         return QString();
     }

@@ -607,8 +607,8 @@
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>zRPD</source>
-        <translation>zRPD</translation>
+        <source>zSAPP</source>
+        <translation>zSAPP</translation>
     </message>
     <message>
         <source>All</source>
@@ -1094,28 +1094,28 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Map port using &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of SAPP units to zRPD</source>
-        <translation>Enable automatic minting of SAPP units to zRPD</translation>
+        <source>Enable automatic minting of SAPP units to zSAPP</source>
+        <translation>Enable automatic minting of SAPP units to zSAPP</translation>
     </message>
     <message>
-        <source>Enable zRPD Automint</source>
-        <translation>Enable zRPD Automint</translation>
+        <source>Enable zSAPP Automint</source>
+        <translation>Enable zSAPP Automint</translation>
     </message>
     <message>
-        <source>Percentage of incoming SAPP which get automatically converted to zRPD via Zerocoin Protocol (min: 10%)</source>
-        <translation>Percentage of incoming SAPP which get automatically converted to zRPD via Zerocoin Protocol (min: 10%)</translation>
+        <source>Percentage of incoming SAPP which get automatically converted to zSAPP via Zerocoin Protocol (min: 10%)</source>
+        <translation>Percentage of incoming SAPP which get automatically converted to zSAPP via Zerocoin Protocol (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zRPD</source>
-        <translation>Percentage of autominted zRPD</translation>
+        <source>Percentage of autominted zSAPP</source>
+        <translation>Percentage of autominted zSAPP</translation>
     </message>
     <message>
         <source>Wait with automatic conversion to Zerocoin until enough SAPP for this denomination is available</source>
         <translation>Wait with automatic conversion to Zerocoin until enough SAPP for this denomination is available</translation>
     </message>
     <message>
-        <source>Preferred Automint zRPD Denomination</source>
-        <translation>Preferred Automint zRPD Denomination</translation>
+        <source>Preferred Automint zSAPP Denomination</source>
+        <translation>Preferred Automint zSAPP Denomination</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -1718,8 +1718,8 @@ Address: %4
         <translation>Custom Backup Path:</translation>
     </message>
     <message>
-        <source>Custom zRPD Backup Path:</source>
-        <translation>Custom zRPD Backup Path:</translation>
+        <source>Custom zSAPP Backup Path:</source>
+        <translation>Custom zSAPP Backup Path:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -2010,12 +2010,12 @@ Address: %4
         <translation>Spend Zerocoin</translation>
     </message>
     <message>
-        <source>zRPD is currently undergoing maintenance.</source>
-        <translation>zRPD is currently undergoing maintenance.</translation>
+        <source>zSAPP is currently undergoing maintenance.</source>
+        <translation>zSAPP is currently undergoing maintenance.</translation>
     </message>
     <message>
-        <source>Version 1 zRPD require a security level of 100 to successfully spend.</source>
-        <translation>Version 1 zRPD require a security level of 100 to successfully spend.</translation>
+        <source>Version 1 zSAPP require a security level of 100 to successfully spend.</source>
+        <translation>Version 1 zSAPP require a security level of 100 to successfully spend.</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -2802,8 +2802,8 @@ Please check the address and try again.</translation>
         <translation>SAPP Stake</translation>
     </message>
     <message>
-        <source>zRPD Stake</source>
-        <translation>zRPD Stake</translation>
+        <source>zSAPP Stake</source>
+        <translation>zSAPP Stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -2822,24 +2822,24 @@ Please check the address and try again.</translation>
         <translation>Obfuscation Create Denominations</translation>
     </message>
     <message>
-        <source>Converted SAPP to zRPD</source>
-        <translation>Converted SAPP to zRPD</translation>
+        <source>Converted SAPP to zSAPP</source>
+        <translation>Converted SAPP to zSAPP</translation>
     </message>
     <message>
-        <source>Spent zRPD</source>
-        <translation>Spent zRPD</translation>
+        <source>Spent zSAPP</source>
+        <translation>Spent zSAPP</translation>
     </message>
     <message>
-        <source>Received SAPP from zRPD</source>
-        <translation>Received SAPP from zRPD</translation>
+        <source>Received SAPP from zSAPP</source>
+        <translation>Received SAPP from zSAPP</translation>
     </message>
     <message>
-        <source>Minted Change as zRPD from zRPD Spend</source>
-        <translation>Minted Change as zRPD from zRPD Spend</translation>
+        <source>Minted Change as zSAPP from zSAPP Spend</source>
+        <translation>Minted Change as zSAPP from zSAPP Spend</translation>
     </message>
     <message>
-        <source>Converted zRPD to SAPP</source>
-        <translation>Converted zRPD to SAPP</translation>
+        <source>Converted zSAPP to SAPP</source>
+        <translation>Converted zSAPP to SAPP</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -2960,8 +2960,8 @@ Please check the address and try again.</translation>
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zRPD to Spend</source>
-        <translation>Select zRPD to Spend</translation>
+        <source>Select zSAPP to Spend</source>
+        <translation>Select zSAPP to Spend</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -3039,16 +3039,16 @@ Please check the address and try again.</translation>
         <translation>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zRPD minting (0-1, default: %u)</source>
-        <translation>Enable automatic wallet backups triggered after each zRPD minting (0-1, default: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zSAPP minting (0-1, default: %u)</source>
+        <translation>Enable automatic wallet backups triggered after each zSAPP minting (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable or disable staking functionality for SAPP inputs (0-1, default: %u)</source>
         <translation>Enable or disable staking functionality for SAPP inputs (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zRPD inputs (0-1, default: %u)</source>
-        <translation>Enable or disable staking functionality for zRPD inputs (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for zSAPP inputs (0-1, default: %u)</source>
+        <translation>Enable or disable staking functionality for zSAPP inputs (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -3579,8 +3579,8 @@ Please check the address and try again.</translation>
         <translation>Percentage of automatically minted Zerocoin  (1-100, default: %u)</translation>
     </message>
     <message>
-        <source>Reindex the SAPP and zRPD money supply statistics</source>
-        <translation>Reindex the SAPP and zRPD money supply statistics</translation>
+        <source>Reindex the SAPP and zSAPP money supply statistics</source>
+        <translation>Reindex the SAPP and zSAPP money supply statistics</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -3655,8 +3655,8 @@ Please check the address and try again.</translation>
         <translation>Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zRPD backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Specify custom backup path to add a copy of any automatic zRPD backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</translation>
+        <source>Specify custom backup path to add a copy of any automatic zSAPP backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Specify custom backup path to add a copy of any automatic zSAPP backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -4059,8 +4059,8 @@ Please check the address and try again.</translation>
         <translation>Synchronising sporks...</translation>
     </message>
     <message>
-        <source>Syncing zRPD wallet...</source>
-        <translation>Syncing zRPD wallet...</translation>
+        <source>Syncing zSAPP wallet...</source>
+        <translation>Syncing zSAPP wallet...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -4171,8 +4171,8 @@ Please check the address and try again.</translation>
         <translation>Username for JSON-RPC connections</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zRPD</source>
-        <translation>Value is below the smallest available denomination (= 1) of zRPD</translation>
+        <source>Value is below the smallest available denomination (= 1) of zSAPP</source>
+        <translation>Value is below the smallest available denomination (= 1) of zSAPP</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>

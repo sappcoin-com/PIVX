@@ -905,8 +905,8 @@ for staking</source>
         <translation>SAPP</translation>
     </message>
     <message>
-        <source>zRPD</source>
-        <translation>zRPD</translation>
+        <source>zSAPP</source>
+        <translation>zSAPP</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -937,8 +937,8 @@ for staking</source>
         <translation>Du kan se ditt kontos historik</translation>
     </message>
     <message>
-        <source>Amount of SAPP and zRPD staked.</source>
-        <translation>Mängden SAPP och zRPD som präglats.</translation>
+        <source>Amount of SAPP and zSAPP staked.</source>
+        <translation>Mängden SAPP och zSAPP som präglats.</translation>
     </message>
     <message>
         <source>All</source>
@@ -977,8 +977,8 @@ for staking</source>
         <translation>Inga transaktioner ännu.</translation>
     </message>
     <message>
-        <source>How to get SAPP or zRPD</source>
-        <translation>Hur man får SAPP eller zRPD.</translation>
+        <source>How to get SAPP or zSAPP</source>
+        <translation>Hur man får SAPP eller zSAPP.</translation>
     </message>
     <message>
         <source>You can verify the staking activity in the status bar at the top right of the wallet.
@@ -1929,36 +1929,36 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Kartlägg port med &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of SAPP units to zRPD</source>
-        <translation>Tillåt automatisk prägling med SAPP enheter till zRPD</translation>
+        <source>Enable automatic minting of SAPP units to zSAPP</source>
+        <translation>Tillåt automatisk prägling med SAPP enheter till zSAPP</translation>
     </message>
     <message>
-        <source>Enable zRPD Automint</source>
-        <translation>Tillåt zRPD Autoprägling</translation>
+        <source>Enable zSAPP Automint</source>
+        <translation>Tillåt zSAPP Autoprägling</translation>
     </message>
     <message>
-        <source>Enable automatic zRPD minting from specific addresses</source>
-        <translation>Aktivera automatisk zRPD prägling från specifika adresser</translation>
+        <source>Enable automatic zSAPP minting from specific addresses</source>
+        <translation>Aktivera automatisk zSAPP prägling från specifika adresser</translation>
     </message>
     <message>
         <source>Enable Automint Addresses</source>
         <translation>Aktivera autopräglingsadresser</translation>
     </message>
     <message>
-        <source>Percentage of incoming SAPP which get automatically converted to zRPD via Zerocoin Protocol (min: 10%)</source>
-        <translation>Procent av inkommande SAPP som automatiskt konverteras till zRPD via Zerocoin Protokollet (min: 10%)</translation>
+        <source>Percentage of incoming SAPP which get automatically converted to zSAPP via Zerocoin Protocol (min: 10%)</source>
+        <translation>Procent av inkommande SAPP som automatiskt konverteras till zSAPP via Zerocoin Protokollet (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zRPD</source>
-        <translation>Procent av autopräglade zRPD</translation>
+        <source>Percentage of autominted zSAPP</source>
+        <translation>Procent av autopräglade zSAPP</translation>
     </message>
     <message>
         <source>Wait with automatic conversion to Zerocoin until enough SAPP for this denomination is available</source>
         <translation>Vänta med automatisk omvandling till Zerocoin tills tillräckligt många SAPP för denna valör är tillgängliga</translation>
     </message>
     <message>
-        <source>Preferred Automint zRPD Denomination</source>
-        <translation>Preferens på zRPD valör i autoprägling</translation>
+        <source>Preferred Automint zSAPP Denomination</source>
+        <translation>Preferens på zSAPP valör i autoprägling</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2336,14 +2336,14 @@ Adress: %4
         <translation>Prägla</translation>
     </message>
     <message>
-        <source>Minting zRPD anonymizes your SAPP by removing any
+        <source>Minting zSAPP anonymizes your SAPP by removing any
 transaction history, making transactions untraceable </source>
-        <translation>Prägling av zRPD anonymiserar dina SAPP genom att ta bort
+        <translation>Prägling av zSAPP anonymiserar dina SAPP genom att ta bort
 transaktionshistorik, vilket gör transaktioner ospårbara</translation>
     </message>
     <message>
-        <source>Mint new zRPD or convert back to SAPP</source>
-        <translation>Prägla nya zRPD eller konvertera tillbaka till SAPP</translation>
+        <source>Mint new zSAPP or convert back to SAPP</source>
+        <translation>Prägla nya zSAPP eller konvertera tillbaka till SAPP</translation>
     </message>
     <message>
         <source>Last Zerocoin Movements</source>
@@ -2354,28 +2354,28 @@ transaktionshistorik, vilket gör transaktioner ospårbara</translation>
         <translation>Inga transaktioner ännu.</translation>
     </message>
     <message>
-        <source>Mint zRPD</source>
-        <translation>Prägla zRPD</translation>
+        <source>Mint zSAPP</source>
+        <translation>Prägla zSAPP</translation>
     </message>
     <message>
-        <source>Enter amount of SAPP to mint into zRPD</source>
-        <translation>Ange SAPP beloppet att prägla till zRPD</translation>
+        <source>Enter amount of SAPP to mint into zSAPP</source>
+        <translation>Ange SAPP beloppet att prägla till zSAPP</translation>
     </message>
     <message>
         <source>Convert back to SAPP</source>
         <translation>Konvertera tillbaka till SAPP</translation>
     </message>
     <message>
-        <source>Enter amount of zRPD to convert back into SAPP</source>
-        <translation>Ange mängden zRPD som ska konverteras tillbaka till SAPP</translation>
+        <source>Enter amount of zSAPP to convert back into SAPP</source>
+        <translation>Ange mängden zSAPP som ska konverteras tillbaka till SAPP</translation>
     </message>
     <message>
         <source>Zerocoin</source>
         <translation>Zerocoin</translation>
     </message>
     <message>
-        <source>zRPD is currently undergoing maintenance</source>
-        <translation>zRPD genomgår underhåll</translation>
+        <source>zSAPP is currently undergoing maintenance</source>
+        <translation>zSAPP genomgår underhåll</translation>
     </message>
     <message>
         <source>convert</source>
@@ -2727,8 +2727,8 @@ transaktionshistorik, vilket gör transaktioner ospårbara</translation>
         <translation>Vanlig Backup Sökväg:</translation>
     </message>
     <message>
-        <source>Custom zRPD Backup Path:</source>
-        <translation>Vanlig zRPD Backup Sökväg:</translation>
+        <source>Custom zSAPP Backup Path:</source>
+        <translation>Vanlig zSAPP Backup Sökväg:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3103,12 +3103,12 @@ transaktionshistorik, vilket gör transaktioner ospårbara</translation>
         <translation>Spendera Zerocoin</translation>
     </message>
     <message>
-        <source>zRPD is currently undergoing maintenance.</source>
-        <translation>zRPD genomgår för tillfället underhåll.</translation>
+        <source>zSAPP is currently undergoing maintenance.</source>
+        <translation>zSAPP genomgår för tillfället underhåll.</translation>
     </message>
     <message>
-        <source>Version 1 zRPD require a security level of 100 to successfully spend.</source>
-        <translation>Version 1 zRPD kräver en säkerhetsnivå på 100 för att kunna spenderas med framgång.</translation>
+        <source>Version 1 zSAPP require a security level of 100 to successfully spend.</source>
+        <translation>Version 1 zSAPP kräver en säkerhetsnivå på 100 för att kunna spenderas med framgång.</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -4003,8 +4003,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>SAPP staking</translation>
     </message>
     <message>
-        <source>zRPD Stake</source>
-        <translation>zRPD Staking</translation>
+        <source>zSAPP Stake</source>
+        <translation>zSAPP Staking</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -4023,24 +4023,24 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Obfuscation Skapa tecken</translation>
     </message>
     <message>
-        <source>Converted SAPP to zRPD</source>
-        <translation>Konvertera SAPP till zRPD</translation>
+        <source>Converted SAPP to zSAPP</source>
+        <translation>Konvertera SAPP till zSAPP</translation>
     </message>
     <message>
-        <source>Spent zRPD</source>
-        <translation>Spendera zRPD</translation>
+        <source>Spent zSAPP</source>
+        <translation>Spendera zSAPP</translation>
     </message>
     <message>
-        <source>Received SAPP from zRPD</source>
-        <translation>Mottog SAPP från zRPD</translation>
+        <source>Received SAPP from zSAPP</source>
+        <translation>Mottog SAPP från zSAPP</translation>
     </message>
     <message>
-        <source>Minted Change as zRPD from zRPD Spend</source>
-        <translation>Myntad Växel som zRPD från zRPD Spendering</translation>
+        <source>Minted Change as zSAPP from zSAPP Spend</source>
+        <translation>Myntad Växel som zSAPP från zSAPP Spendering</translation>
     </message>
     <message>
-        <source>Converted zRPD to SAPP</source>
-        <translation>Konverterad zRPD till SAPP</translation>
+        <source>Converted zSAPP to SAPP</source>
+        <translation>Konverterad zSAPP till SAPP</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -4221,8 +4221,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zRPD to Spend</source>
-        <translation>Välj zRPD att Spendera</translation>
+        <source>Select zSAPP to Spend</source>
+        <translation>Välj zSAPP att Spendera</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -4304,16 +4304,16 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Distribuerad under MIT mjukvarulicensen, se medföljande fil COPYING eller &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zRPD minting (0-1, default: %u)</source>
-        <translation>Aktivera automatisk plånboksbackup efter varje zRPD minting (0-1, standard: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zSAPP minting (0-1, default: %u)</source>
+        <translation>Aktivera automatisk plånboksbackup efter varje zSAPP minting (0-1, standard: %u)</translation>
     </message>
     <message>
         <source>Enable or disable staking functionality for SAPP inputs (0-1, default: %u)</source>
         <translation>Aktivera eller avaktivera staking funktionalitet för SAPP inmatningar (0-1, standard: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zRPD inputs (0-1, default: %u)</source>
-        <translation>Aktivera eller avaktivera staking funktionalitet för zRPD inmatningar (0-1, standard: %u)</translation>
+        <source>Enable or disable staking functionality for zSAPP inputs (0-1, default: %u)</source>
+        <translation>Aktivera eller avaktivera staking funktionalitet för zSAPP inmatningar (0-1, standard: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -4844,8 +4844,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Procent automatiskt mintad Zerocoin (1-100, default: %u)</translation>
     </message>
     <message>
-        <source>Reindex the SAPP and zRPD money supply statistics</source>
-        <translation>Indexera SAPP och zRPD pengarna tillgång statistik på nytt</translation>
+        <source>Reindex the SAPP and zSAPP money supply statistics</source>
+        <translation>Indexera SAPP och zSAPP pengarna tillgång statistik på nytt</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -4924,8 +4924,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Valör aatt föredra för automatiskt mintad Zerocoin (1/5/10/50/100/500/1000/5000), 0 för ingen preface. standard: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zRPD backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Specifiera skräddarsydd backup väg att lägga till en kopia av alla automatisk zRPD backup. Om satt som dir, varje backup genererar en tidsstämplad fil. Om satt som fil, skriver över den filen vid varje backup. Om backupvägen också är satt, 4 backups kommer hända</translation>
+        <source>Specify custom backup path to add a copy of any automatic zSAPP backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Specifiera skräddarsydd backup väg att lägga till en kopia av alla automatisk zSAPP backup. Om satt som dir, varje backup genererar en tidsstämplad fil. Om satt som fil, skriver över den filen vid varje backup. Om backupvägen också är satt, 4 backups kommer hända</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -5332,8 +5332,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Synkroniserar sporks...</translation>
     </message>
     <message>
-        <source>Syncing zRPD wallet...</source>
-        <translation>Synkroniserar zRPD plånbok...</translation>
+        <source>Syncing zSAPP wallet...</source>
+        <translation>Synkroniserar zSAPP plånbok...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -5444,8 +5444,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Användarnamn för JSON-RPC anslutningar</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zRPD</source>
-        <translation>Värde är under den minsta tillgängliga valören (=1) av zRPD</translation>
+        <source>Value is below the smallest available denomination (= 1) of zSAPP</source>
+        <translation>Värde är under den minsta tillgängliga valören (=1) av zSAPP</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
