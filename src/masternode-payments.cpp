@@ -448,22 +448,22 @@ void CMasternodePayments::ProcessMessageMasternodePayments(CNode* pfrom, std::st
             return;
         }
 
-/*
-        // reject old signatures 6000 blocks after hard-fork
-        if (winner.nMessVersion != MessageVersion::MESS_VER_HASH && Params().GetConsensus().IsMessSigV2(winner.nBlockHeight - 6000)) {
-            LogPrintf("%s : nMessVersion=%d not accepted anymore at block %d\n", __func__, winner.nMessVersion, nHeight);
+
+        // reject old signatures 50 blocks after hard-fork
+        if (winner.nMessVersion != MessageVersion::MESS_VER_HASH && Params().GetConsensus().IsMessSigV2(winner.nBlockHeight - 50)) {
+           //LogPrintf("%s : nMessVersion=%d not accepted anymore at block %d\n", __func__, winner.nMessVersion, nHeight);
             return;
         }
-*/
+
 
         std::string strError = "";
         if (!winner.IsValid(pfrom, strError)) {
-            // if(strError != "") LogPrint(BCLog::MASTERNODE,"mnw - invalid message - %s\n", strError);
+             if(strError != "") LogPrint(BCLog::MASTERNODE,"mnw - invalid message - %s\n", strError);
             return;
         }
 
         if (!masternodePayments.CanVote(winner.vinMasternode.prevout, winner.nBlockHeight)) {
-            //  LogPrint(BCLog::MASTERNODE,"mnw - masternode already voted - %s\n", winner.vinMasternode.prevout.ToStringShort());
+             LogPrint(BCLog::MASTERNODE,"mnw - masternode already voted - %s\n", winner.vinMasternode.prevout.ToStringShort());
             return;
         }
 

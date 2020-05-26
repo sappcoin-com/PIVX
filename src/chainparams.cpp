@@ -168,7 +168,7 @@ public:
         consensus.height_last_ZC_WrappedSerials = disabled;
         consensus.height_start_BIP65 = disabled;
         consensus.height_start_InvalidUTXOsCheck = disabled;
-        consensus.height_start_MessSignaturesV2 = disabled;
+        consensus.height_start_MessSignaturesV2 = 600001;
         consensus.height_start_StakeModifierNewSelection = 999999999;
         consensus.height_start_StakeModifierV2 = disabled;
         consensus.height_start_TimeProtoV2 = disabled;

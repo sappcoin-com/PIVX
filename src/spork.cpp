@@ -103,14 +103,14 @@ void CSporkManager::ProcessSpork(CNode* pfrom, std::string& strCommand, CDataStr
             return;
         }
 
-        // reject old signatures 600 blocks after hard-fork
-/*        if (spork.nMessVersion != MessageVersion::MESS_VER_HASH) {
-            if (Params().GetConsensus().IsMessSigV2(nChainHeight - 600)) {
-                LogPrintf("%s : nMessVersion=%d not accepted anymore at block %d\n", __func__, spork.nMessVersion, nChainHeight);
+        // reject old signatures 50 blocks after hard-fork
+        if (spork.nMessVersion != MessageVersion::MESS_VER_HASH) {
+            if (Params().GetConsensus().IsMessSigV2(nChainHeight - 50)) {
+                //LogPrintf("%s : nMessVersion=%d not accepted anymore at block %d\n", __func__, spork.nMessVersion, nChainHeight);
                 return;
             }
         }
-*/
+
 
         uint256 hash = spork.GetHash();
         std::string sporkName = sporkManager.GetSporkNameByID(spork.nSporkID);
