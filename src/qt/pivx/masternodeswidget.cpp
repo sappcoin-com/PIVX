@@ -473,8 +473,8 @@ void MasterNodesWidget::onCreateMNClicked()
         return;
     }
 
-    if (walletModel->getBalance() <= (COIN * 10000)) {
-        inform(tr("Not enough balance to create a masternode, 10,000,000 SAPP required."));
+    if (walletModel->getBalance() <= (GetMstrNodCollateral(chainActive.Height()) * COIN)) {
+        inform(tr("Not enough balance to create a masternode."));
         return;
     }
     showHideOp(true);
