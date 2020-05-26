@@ -1656,8 +1656,8 @@ Sind sie sicher?</translation>
         <translation>masternode.conf File existiert nicht</translation>
     </message>
     <message>
-        <source>Not enough balance to create a masternode, 10,000 SAPP required.</source>
-        <translation>Nicht genügend Guthaben um einen Masternode zu erstellen, 10'000 SAPP werden benötigt.</translation>
+        <source>Not enough balance to create a masternode!</source>
+        <translation>Nicht genügend Guthaben um einen Masternode zu erstellen!</translation>
     </message>
     <message>
         <source>Error creating masternode</source>

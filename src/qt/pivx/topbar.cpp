@@ -111,7 +111,7 @@ TopBar::TopBar(PIVXGUI* _mainWindow, QWidget *parent) :
     connect(ui->pushButtonLock, &ExpandableButton::Mouse_Pressed, this, &TopBar::onBtnLockClicked);
 
     //! only connect the signal if the spork is active (baz)
-    if (sporkManager.IsSporkActive(SPORK_17_COLDSTAKING_ENFORCEMENT))
+    if (sporkManager.IsSporkActive(SPORK_21_COLDSTAKING_ENFORCEMENT))
         connect(ui->pushButtonColdStaking, &ExpandableButton::Mouse_Pressed, this, &TopBar::onColdStakingClicked);
 
     connect(ui->pushButtonSync, &ExpandableButton::Mouse_HoverLeave, this, &TopBar::refreshProgressBarSize);

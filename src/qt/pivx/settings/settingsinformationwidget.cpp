@@ -33,7 +33,7 @@ SettingsInformationWidget::SettingsInformationWidget(PIVXGUI* _window,QWidget *p
     ui->labelTitleClient->setText(tr("Client Version: "));
     ui->labelTitleAgent->setText(tr("User Agent:"));
     ui->labelTitleBerkeley->setText(tr("BerkeleyDB version:"));
-    ui->labelTitleDataDir->setText(tr("Datadir: "));
+    ui->labelTitleDataDir->setText(tr("Wallet file path: "));
     ui->labelTitleTime->setText(tr("Startup time:  "));
     ui->labelTitleNetwork->setText(tr("Network"));
     ui->labelTitleName->setText(tr("Name:"));

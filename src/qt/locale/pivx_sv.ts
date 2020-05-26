@@ -1701,7 +1701,7 @@ Are you sure?</source>
         <translation>Masternode conf file existerar inte</translation>
     </message>
     <message>
-        <source>Not enough balance to create a masternode, 10,000 SAPP required.</source>
+        <source>Not enough balance to create a masternode!</source>
         <translation>Inte nog på saldot för att skapa en Masternode, 10000 SAPP behövs.</translation>
     </message>
     <message>

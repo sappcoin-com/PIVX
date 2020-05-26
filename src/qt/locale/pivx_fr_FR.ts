@@ -1788,8 +1788,8 @@ Confirmez-vous?</translation>
         <translation>Le fichier masternode.conf est absent</translation>
     </message>
     <message>
-        <source>Not enough balance to create a masternode, 10,000 SAPP required.</source>
-        <translation>Fonds insuffisant pour créer un masternode, 10 000 SAPP sont requis.</translation>
+        <source>Not enough balance to create a masternode!</source>
+        <translation>Fonds insuffisant pour créer un masternode!</translation>
     </message>
     <message>
         <source>Error creating masternode</source>

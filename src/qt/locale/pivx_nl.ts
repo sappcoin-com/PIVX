@@ -1908,7 +1908,7 @@ Weet je het zeker?</translation>
         <translation>masternode.conf bestand bestaat niet</translation>
     </message>
     <message>
-        <source>Not enough balance to create a masternode, 10,000 SAPP required.</source>
+        <source>Not enough balance to create a masternode!</source>
         <translation>Niet genoeg balans om een masternode te creëren, 10,000 SAPP vereist.</translation>
     </message>
     <message>

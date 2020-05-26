@@ -23,9 +23,11 @@ std::vector<CSporkDef> sporkDefs = {
     MAKE_SPORK_DEF(SPORK_14_NEW_PROTOCOL_ENFORCEMENT,       4070908800ULL), // OFF
     MAKE_SPORK_DEF(SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2,     4070908800ULL), // OFF
     MAKE_SPORK_DEF(SPORK_16_ZEROCOIN_MAINTENANCE_MODE,      0),
-    MAKE_SPORK_DEF(SPORK_17_COLDSTAKING_ENFORCEMENT,        4070908800ULL), // OFF
     MAKE_SPORK_DEF(SPORK_18_ZEROCOIN_PUBLICSPEND_V4,        4070908800ULL), // OFF
-};
+	MAKE_SPORK_DEF(SPORK_19_BAN_DUPLICATE_MN_PER_IP,        4070908800ULL), // OFF
+	MAKE_SPORK_DEF(SPORK_20_UPGRADE_CYCLE_FACTOR,        4070908800ULL), // OFF
+	MAKE_SPORK_DEF(SPORK_21_COLDSTAKING_ENFORCEMENT,        4070908800ULL), // OFF
+	};
 
 CSporkManager sporkManager;
 std::map<uint256, CSporkMessage> mapSporks;
@@ -102,13 +104,13 @@ void CSporkManager::ProcessSpork(CNode* pfrom, std::string& strCommand, CDataStr
         }
 
         // reject old signatures 600 blocks after hard-fork
-        if (spork.nMessVersion != MessageVersion::MESS_VER_HASH) {
+/*        if (spork.nMessVersion != MessageVersion::MESS_VER_HASH) {
             if (Params().GetConsensus().IsMessSigV2(nChainHeight - 600)) {
                 LogPrintf("%s : nMessVersion=%d not accepted anymore at block %d\n", __func__, spork.nMessVersion, nChainHeight);
                 return;
             }
         }
-
+*/
 
         uint256 hash = spork.GetHash();
         std::string sporkName = sporkManager.GetSporkNameByID(spork.nSporkID);

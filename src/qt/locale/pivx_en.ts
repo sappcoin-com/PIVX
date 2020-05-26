@@ -2357,7 +2357,7 @@ Are you sure?</source>
     </message>
     <message>
         <location line="+7"/>
-        <source>Not enough balance to create a masternode, 10,000 SAPP required.</source>
+        <source>Not enough balance to create a masternode!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

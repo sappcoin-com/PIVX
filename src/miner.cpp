@@ -222,7 +222,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
             double dPriority = 0;
             CAmount nTotalIn = 0;
             bool fMissingInputs = false;
-            bool hasZerocoinSpends = tx.HasZerocoinSpendInputs();
+            bool hasZerocoinSpends = false;
             if (hasZerocoinSpends)
                 nTotalIn = tx.GetZerocoinSpent();
 

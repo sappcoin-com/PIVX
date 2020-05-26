@@ -1910,7 +1910,7 @@ Emin misiniz?</translation>
         <translation> masternode.conf dosyası bulunamadı</translation>
     </message>
     <message>
-        <source>Not enough balance to create a masternode, 10,000 SAPP required.</source>
+        <source>Not enough balance to create a masternode!</source>
         <translation>Masternode yaratmak için yetersiz bakiye, 10,000 SAPP gerekmektedir.</translation>
     </message>
     <message>

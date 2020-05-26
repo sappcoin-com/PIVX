@@ -1904,8 +1904,8 @@ Are you sure?</source>
         <translation>El archivo masternode.conf no existe</translation>
     </message>
     <message>
-        <source>Not enough balance to create a masternode, 10,000 SAPP required.</source>
-        <translation>No hay suficiente saldo para crear un masternode, se necesitan 10.000 SAPP.</translation>
+        <source>Not enough balance to create a masternode!</source>
+        <translation>No hay suficiente saldo para crear un masternode!</translation>
     </message>
     <message>
         <source>Error creating masternode</source>

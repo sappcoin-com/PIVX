@@ -1021,8 +1021,7 @@ primitives/libbitcoin_common_a-block.o: primitives/block.cpp \
  /home/remapper/Desktop/Sapp2/depends/x86_64-pc-linux-gnu/share/../include/boost/signals2/detail/variadic_slot_invoker.hpp \
  /home/remapper/Desktop/Sapp2/depends/x86_64-pc-linux-gnu/share/../include/boost/type_traits/function_traits.hpp \
  /home/remapper/Desktop/Sapp2/depends/x86_64-pc-linux-gnu/share/../include/boost/signals2/detail/signal_template.hpp \
- hash.h crypto/xevan.h script/standard.h script/interpreter.h \
- script/script_error.h \
+ hash.h script/standard.h script/interpreter.h script/script_error.h \
  /home/remapper/Desktop/Sapp2/depends/x86_64-pc-linux-gnu/share/../include/boost/variant.hpp \
  /home/remapper/Desktop/Sapp2/depends/x86_64-pc-linux-gnu/share/../include/boost/variant/recursive_variant.hpp \
  /home/remapper/Desktop/Sapp2/depends/x86_64-pc-linux-gnu/share/../include/boost/variant/detail/enable_recursive.hpp \
@@ -3318,8 +3317,6 @@ util/macros.h:
 /home/remapper/Desktop/Sapp2/depends/x86_64-pc-linux-gnu/share/../include/boost/signals2/detail/signal_template.hpp:
 
 hash.h:
-
-crypto/xevan.h:
 
 script/standard.h:
 

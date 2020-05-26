@@ -171,7 +171,7 @@ bool MNModel::isMNInactive(QString mnAlias)
 bool MNModel::isMNActive(QString mnAlias)
 {
     int activeState = getMNState(mnAlias);
-    return activeState == CMasternode::MASTERNODE_PRE_ENABLED || activeState == CMasternode::MASTERNODE_ENABLED;
+    return activeState == CMasternode::MASTERNODE_ACTIVE || activeState == CMasternode::MASTERNODE_ACTIVE;
 }
 
 bool MNModel::isMNCollateralMature(QString mnAlias)

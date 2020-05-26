@@ -1910,7 +1910,7 @@ Are you sure?</source>
         <translation>主节点配置文件不存在</translation>
     </message>
     <message>
-        <source>Not enough balance to create a masternode, 10,000 SAPP required.</source>
+        <source>Not enough balance to create a masternode!</source>
         <translation>没有足够的余额创建主节点，需要10,000 SAPP。</translation>
     </message>
     <message>

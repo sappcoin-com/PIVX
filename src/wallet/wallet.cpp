@@ -2171,7 +2171,7 @@ static void ApproximateBestSubset(std::vector<std::pair<CAmount, std::pair<const
 
 bool CWallet::StakeableCoins(std::vector<COutput>* pCoins)
 {
-    const bool fIncludeCold = (sporkManager.IsSporkActive(SPORK_17_COLDSTAKING_ENFORCEMENT) &&
+    const bool fIncludeCold = (sporkManager.IsSporkActive(SPORK_21_COLDSTAKING_ENFORCEMENT) &&
                                GetBoolArg("-coldstaking", true));
 
     return AvailableCoins(pCoins,
@@ -2757,7 +2757,7 @@ bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int
     }
 
     if (!fKernelFound) {
-        LogPrintf("Failed to find coinstake kernel\n");
+        //LogPrintf("Failed to find coinstake kernel\n");// No need to reprint this over and over when stake was not found by us
         MilliSleep(5000);
         return false;
     }
@@ -2768,7 +2768,6 @@ bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int
     // Calculate reward
     CAmount nReward;
     const CBlockIndex* pIndex0 = chainActive.Tip();
-    //nReward = GetBlockValue(pIndex0->nHeight);
     nReward = GetBlockValue(chainActive.Height() + 1);
     nCredit += nReward;
 

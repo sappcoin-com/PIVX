@@ -160,7 +160,7 @@ public:
         consensus.nTimeSlotLength = 15;
 
         // spork key
-        consensus.strSporkPubKey = "04C1FBF00CBCD62421E67577E8DC64E2F5311BA6FEE0184D723D3264A128D487D8C7E2B18A0F607532C5F8E142DAFDD435DDC512A7B82570CD34087135C0E10AA4";
+        consensus.strSporkPubKey = "04d45416e4a64b1b051e2a2ebd80ced5efe148cf5fbcb70e56860957675a2da1a21fd522c42c1ed18a1ec42641589a09cf3f58678d213825dc21798183a005a984";
 
         // height-based activations
         consensus.height_last_PoW = 500;
@@ -180,7 +180,7 @@ public:
         consensus.height_ZC_RecalcAccumulators = disabled;
 
         // fork away from old chain at this height
-        consensus.height_new_client = 793850;
+        consensus.height_new_client = 600001; 
 
         // validation by-pass
         consensus.nPivxBadBlockTime = disabled;
@@ -227,7 +227,7 @@ public:
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 63); //address start letter 'S'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 18);
-        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 125);
+        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 25);
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x02)(0x2D)(0x25)(0x63).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x02)(0x21)(0x31)(0x2B).convert_to_container<std::vector<unsigned char> >();
         // 	BIP44 coin type is from https://github.com/satoshilabs/slips/blob/master/slip-0044.md

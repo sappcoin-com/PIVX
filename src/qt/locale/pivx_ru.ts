@@ -1908,7 +1908,7 @@ Are you sure?</source>
         <translation>Файла masternode.cong не существует</translation>
     </message>
     <message>
-        <source>Not enough balance to create a masternode, 10,000 SAPP required.</source>
+       <source>Not enough balance to create a masternode!</source>
         <translation>Недостаточно баланса для создания мастерноды. Требуется 10 000 SAPP.</translation>
     </message>
     <message>
