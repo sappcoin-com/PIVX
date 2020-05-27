@@ -2203,6 +2203,7 @@ bool DisconnectBlock(CBlock& block, CValidationState& state, CBlockIndex* pindex
     // track money
     nMoneySupply -= (nValueOut - nValueIn);
 
+
     // move best block pointer to prevout block
     view.SetBestBlock(pindex->pprev->GetBlockHash());
 
@@ -2532,7 +2533,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     // Add fraudulent funds to the supply and remove any recovered funds.
     if (Params().NetworkID() == CBaseChainParams::MAIN && pindex->nHeight == consensus.height_ZC_RecalcAccumulators) {
         LogPrintf("%s : Adding fraudulent funds at height_ZC_RecalcAccumulators\n", __func__);
-        const CAmount nInvalidAmountFiltered = 268200*COIN;    //Amount of invalid coins filtered through exchanges, that should be considered valid
+        const CAmount nInvalidAmountFiltered = 0*COIN;    //Amount of invalid coins filtered through exchanges, that should be considered valid
         nMoneySupply += nInvalidAmountFiltered;
         CAmount nLocked = GetInvalidUTXOValue();
         nMoneySupply -= nLocked;
