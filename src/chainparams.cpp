@@ -164,23 +164,23 @@ public:
 
         // height-based activations
         consensus.height_last_PoW = 500;
-        consensus.height_last_ZC_AccumCheckpoint = disabled;
+        consensus.height_last_ZC_AccumCheckpoint = 574300; // (consensus.height_start_ZC start + 100)
         consensus.height_last_ZC_WrappedSerials = disabled;
-        consensus.height_start_BIP65 = disabled;
+        consensus.height_start_BIP65 = 574400; //--------------------------------------------------------//-3rd pass - nVersion 5 Block Header
         consensus.height_start_InvalidUTXOsCheck = disabled;
-        consensus.height_start_MessSignaturesV2 = 600001;
-        consensus.height_start_StakeModifierNewSelection = 999999999;
-        consensus.height_start_StakeModifierV2 = disabled;
-        consensus.height_start_TimeProtoV2 = disabled;
-        consensus.height_start_ZC = disabled;
+        consensus.height_start_MessSignaturesV2 = 574600;//---------------------------------------//-5th pass - nVersion 7 Blocks   --- start new signitures at v7 blocks (TimeProtoV2) -- Transition Finished --
+        consensus.height_start_StakeModifierNewSelection = 574100;//---------------------------//-1st pass - Start new stake modifier
+        consensus.height_start_StakeModifierV2 = 574500;//------------------------------------------//-4th pass - nVersion 6 Blocks
+        consensus.height_start_TimeProtoV2 = 574600;//-----------------------------------------------//-5th pass - nVersion 7 Blocks   ---------------------------------------------------------------------- Transition Finished---
+        consensus.height_start_ZC = 574200;//-------------------------------------------------------------//-2nd pass  - nVersion 4 Blocks
         consensus.height_start_ZC_InvalidSerials = disabled;
         consensus.height_start_ZC_PublicSpends = disabled;
         consensus.height_start_ZC_SerialRangeCheck = disabled;
         consensus.height_start_ZC_SerialsV2 = disabled;
-        consensus.height_ZC_RecalcAccumulators = disabled;
+        consensus.height_ZC_RecalcAccumulators = 999999999;
 
         // fork away from old chain at this height
-        consensus.height_new_client = 600001; 
+        consensus.height_new_client = 574000; //------- Starting Point ----------//
 
         // validation by-pass
         consensus.nPivxBadBlockTime = disabled;
@@ -198,7 +198,7 @@ public:
         consensus.ZC_MinMintConfirmations = 20;
         consensus.ZC_MinMintFee = 1 * CENT;
         consensus.ZC_MinStakeDepth = 200;
-        consensus.ZC_TimeStart = 1048576000;        // October 17, 2017 4:30:00 AM
+        consensus.ZC_TimeStart = 1556165178;        // Genesis time - Not activated untill  # consensus.height_start_ZC
         consensus.ZC_WrappedSerialsSupply = 0;      // zerocoin supply at height_last_ZC_WrappedSerials
 
         /**
