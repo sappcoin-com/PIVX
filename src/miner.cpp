@@ -127,15 +127,14 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
 
     // Make sure to create the correct block version
     const Consensus::Params& consensus = Params().GetConsensus();
-    
-    if (nHeight > consensus.height_start_TimeProtoV2)
-        pblock->nVersion = 7;       //!> Removes accumulator checkpoints
+        pblock->nVersion = 7;//Start v7 blocks and stake modifier v2
+    if (nHeight > consensus.height_start_ZC)
+        pblock->nVersion = 5;//Start ZC & BIP65 
     else
-        pblock->nVersion = 4;
+        pblock->nVersion = 3;//Current block version
     // -regtest only: allow overriding block.nVersion with
     // -blockversion=N to test forking scenarios
     if (Params().IsRegTestNet()) {
-        if (nHeight < consensus.height_start_ZC) pblock->nVersion = 3;
         pblock->nVersion = GetArg("-blockversion", pblock->nVersion);
     }
 
