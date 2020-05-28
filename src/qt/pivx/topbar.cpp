@@ -82,8 +82,8 @@ TopBar::TopBar(PIVXGUI* _mainWindow, QWidget *parent) :
     ui->pushButtonStack->setButtonClassStyle("cssClass", "btn-check-stack-inactive");
     ui->pushButtonStack->setButtonText("Staking Disabled");
 
-    ui->pushButtonColdStaking->setButtonClassStyle("cssClass", "btn-check-cold-staking-inactive");
-    ui->pushButtonColdStaking->setButtonText("Cold Staking Disabled");
+   //ui->pushButtonColdStaking->setButtonClassStyle("cssClass", "btn-check-cold-staking-inactive");
+    //ui->pushButtonColdStaking->setButtonText("Cold Staking Disabled");
 
     ui->pushButtonSync->setButtonClassStyle("cssClass", "btn-check-sync");
     ui->pushButtonSync->setButtonText(" %54 Synchronizing..");
@@ -111,8 +111,8 @@ TopBar::TopBar(PIVXGUI* _mainWindow, QWidget *parent) :
     connect(ui->pushButtonLock, &ExpandableButton::Mouse_Pressed, this, &TopBar::onBtnLockClicked);
 
     //! only connect the signal if the spork is active (baz)
-    if (sporkManager.IsSporkActive(SPORK_21_COLDSTAKING_ENFORCEMENT))
-        connect(ui->pushButtonColdStaking, &ExpandableButton::Mouse_Pressed, this, &TopBar::onColdStakingClicked);
+    //if (sporkManager.IsSporkActive(SPORK_21_COLDSTAKING_ENFORCEMENT))
+        //connect(ui->pushButtonColdStaking, &ExpandableButton::Mouse_Pressed, this, &TopBar::onColdStakingClicked);
 
     connect(ui->pushButtonSync, &ExpandableButton::Mouse_HoverLeave, this, &TopBar::refreshProgressBarSize);
     connect(ui->pushButtonSync, &ExpandableButton::Mouse_Hover, this, &TopBar::refreshProgressBarSize);
@@ -303,7 +303,7 @@ void TopBar::showBottom()
 void TopBar::onColdStakingClicked()
 {
     bool isColdStakingEnabled = walletModel->isColdStaking();
-    ui->pushButtonColdStaking->setChecked(isColdStakingEnabled);
+    //ui->pushButtonColdStaking->setChecked(isColdStakingEnabled);
 
     bool show = (isInitializing) ? walletModel->getOptionsModel()->isColdStakingScreenEnabled() :
             walletModel->getOptionsModel()->invertColdStakingScreenStatus();
@@ -321,9 +321,9 @@ void TopBar::onColdStakingClicked()
         text = "Cold Staking Disabled";
     }
 
-    ui->pushButtonColdStaking->setButtonClassStyle("cssClass", className, true);
-    ui->pushButtonColdStaking->setButtonText(text);
-    updateStyle(ui->pushButtonColdStaking);
+    //ui->pushButtonColdStaking->setButtonClassStyle("cssClass", className, true);
+    //ui->pushButtonColdStaking->setButtonText(text);
+    //updateStyle(ui->pushButtonColdStaking);
 
     Q_EMIT onShowHideColdStakingChanged(show);
 }
