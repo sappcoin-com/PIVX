@@ -3300,3 +3300,9 @@ QRadioButton[cssClass="radio-welcome"]::indicator:unchecked {
     background-repeat:no-repeat;
     background-position:center;
 }
+
+
+/* Fix for default fonts */
+* {
+    font-family: Ubuntu, Noto Sans, Segoe UI, Arial, Helvetica, sans-serif;
+}
