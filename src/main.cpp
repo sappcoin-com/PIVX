@@ -1593,6 +1593,12 @@ int64_t GetBlockValue(int nHeight)
     }
 
     int64_t nSubsidy = 0;
+	
+	//Create a fork to ensure all old wallets update
+	 if (nHeight == 574010) {
+        return 801 * COIN;
+    }	
+	
     if (nHeight == 0) {
         nSubsidy = 300000 * COIN;
     } else if (nHeight <=500) {
@@ -3674,7 +3680,7 @@ bool ContextualCheckBlockHeader(const CBlockHeader& block, CValidationState& sta
     if (pcheckpoint && nHeight < pcheckpoint->nHeight)
         return state.DoS(0, error("%s : forked chain older than last checkpoint (height %d)", __func__, nHeight));
 
-#if 0
+
     // Reject outdated version blocks
     if((block.nVersion < 3 && nHeight >= 1) ||
         (block.nVersion < 4 && nHeight >= consensus.height_start_ZC) ||
@@ -3685,7 +3691,6 @@ bool ContextualCheckBlockHeader(const CBlockHeader& block, CValidationState& sta
         std::string stringErr = strprintf("rejected block version %d at height %d", block.nVersion, nHeight);
         return state.Invalid(error("%s : %s", __func__, stringErr), REJECT_OBSOLETE, stringErr);
     }
-#endif
 
     return true;
 }
