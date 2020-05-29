@@ -13,7 +13,7 @@ Sapphire Core integration/staging repository
 • Prefix: SAPP adresses start with the capital letter "S"  
 • Ports: 45328 (p2p) / 45329 (rpc)
 
-• Explorer http://explorer.sappcoin.com
+• Explorer http://sappexplorer.com
 
 • Website [sappcoin.com](http://www.sappcoin.com)
 
