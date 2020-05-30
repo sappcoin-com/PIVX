@@ -44,7 +44,7 @@ TopBar::TopBar(PIVXGUI* _mainWindow, QWidget *parent) :
     ui->containerTop->setProperty("cssClass", "container-top");
 #endif
 
-    std::initializer_list<QWidget*> lblTitles = {ui->labelTitle1, ui->labelTitleAvailablezPiv, ui->labelTitle3, ui->labelTitle4, ui->labelTitlePendingzPiv, ui->labelTitleImmaturezPiv};
+    std::initializer_list<QWidget*> lblTitles = {ui->labelTitle1, ui->labelTitle5, ui->labelTitle6, ui->labelTitleAvailablezPiv, ui->labelTitle3, ui->labelTitle4, ui->labelTitlePendingzPiv, ui->labelTitleImmaturezPiv};
     setCssProperty(lblTitles, "text-title-topbar");
     QFont font;
     font.setWeight(QFont::Light);
@@ -53,8 +53,8 @@ TopBar::TopBar(PIVXGUI* _mainWindow, QWidget *parent) :
     // Amount information top
     ui->widgetTopAmount->setVisible(false);
     setCssProperty({ui->labelAmountTopPiv, ui->labelAmountTopzPiv}, "amount-small-topbar");
-    setCssProperty({ui->labelAmountPiv, ui->labelAvailablezPiv}, "amount-topbar");
-    setCssProperty({ui->labelPendingPiv, ui->labelPendingzPiv, ui->labelImmaturePiv, ui->labelImmaturezPiv}, "amount-small-topbar");
+    setCssProperty({ui->labelAvailablezPiv, ui->labelTotalPiv}, "amount-topbar");
+    setCssProperty({ui->labelAmountPiv, ui->labelPendingPiv, ui->labelPendingzPiv, ui->labelImmaturePiv, ui->labelImmaturezPiv, ui->labelLockedPiv}, "amount-small-topbar");
 
     // Progress Sync
     progressBar = new QProgressBar(ui->layoutSync);
@@ -602,24 +602,24 @@ void TopBar::updateBalances(const CAmount& balance, const CAmount& unconfirmedBa
     if (walletModel) {
         nLockedBalance = walletModel->getLockedBalance();
     }
-    ui->labelTitle1->setText(nLockedBalance > 0 ? tr("Available (Locked included)") : tr("Available"));
-
+    
     // SAPP Total
-    CAmount pivAvailableBalance = balance;
+    CAmount pivAvailableBalance = balance - nLockedBalance;
     // zSAPP Balance
     CAmount matureZerocoinBalance = zerocoinBalance - unconfirmedZerocoinBalance - immatureZerocoinBalance;
 
     // Set
-    QString totalPiv = GUIUtil::formatBalance(pivAvailableBalance, nDisplayUnit);
     QString totalzPiv = GUIUtil::formatBalance(matureZerocoinBalance, nDisplayUnit, true);
 
     // SAPP
     // Top
-    ui->labelAmountTopPiv->setText(totalPiv);
+    ui->labelAmountTopPiv->setText(GUIUtil::formatBalance(pivAvailableBalance, nDisplayUnit));
     // Expanded
-    ui->labelAmountPiv->setText(totalPiv);
+    ui->labelAmountPiv->setText(GUIUtil::formatBalance(pivAvailableBalance, nDisplayUnit));
+    ui->labelTotalPiv->setText(GUIUtil::formatBalance(balance, nDisplayUnit));
     ui->labelPendingPiv->setText(GUIUtil::formatBalance(unconfirmedBalance, nDisplayUnit));
     ui->labelImmaturePiv->setText(GUIUtil::formatBalance(immatureBalance, nDisplayUnit));
+    ui->labelLockedPiv->setText(GUIUtil::formatBalance(nLockedBalance, nDisplayUnit));
 
     // Update display state and/or values for zSAPP balances as necessary
     bool fHaveZerocoins = zerocoinBalance > 0;
