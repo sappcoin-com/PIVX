@@ -905,7 +905,7 @@ void InitLogging()
 #else
     version_string += " (release build)";
 #endif
-    LogPrintf("Sap version %s (%s)\n", version_string, CLIENT_DATE);
+    LogPrintf("SAPP version %s (%s)\n", version_string, CLIENT_DATE);
 }
 
 /** Initialize pivx.

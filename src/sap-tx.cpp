@@ -45,7 +45,7 @@ static bool AppInitRawTx(int argc, char* argv[])
 
     if (argc < 2 || mapArgs.count("-?") || mapArgs.count("-help")) {
         // First part of help message is specific to this utility
-        std::string strUsage = _("Sap Core sap-tx utility version") + " " + FormatFullVersion() + "\n\n" +
+        std::string strUsage = _("SAPP Core sap-tx utility version") + " " + FormatFullVersion() + "\n\n" +
                                _("Usage:") + "\n" +
                                "  sap-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded sap transaction") + "\n" +
                                "  sap-tx [options] -create [commands]   " + _("Create hex-encoded sap transaction") + "\n" +

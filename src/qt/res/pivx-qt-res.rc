@@ -19,14 +19,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Sap"
-            VALUE "FileDescription",    "Sap Core (OSS GUI client for Sap)"
+            VALUE "CompanyName",        "SapPhire"
+            VALUE "FileDescription",    "SAPP Core (OSS GUI client for Sapphire)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "sap-qt"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
             VALUE "OriginalFilename",   "sap-qt.exe"
-            VALUE "ProductName",        "Sap Core"
+            VALUE "ProductName",        "SAPP Core"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

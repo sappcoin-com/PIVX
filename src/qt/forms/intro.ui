@@ -101,7 +101,7 @@
                <string notr="true">QLabel { font-style:italic; }</string>
               </property>
               <property name="text">
-               <string>Welcome to Sap.</string>
+               <string>Welcome to SAPP.</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignCenter</set>
