@@ -326,7 +326,7 @@
         <property name="frameShadow">
          <enum>QFrame::Raised</enum>
         </property>
-        <layout class="QVBoxLayout" name="verticalLayout_7" stretch="1,8,0">
+        <layout class="QVBoxLayout" name="verticalLayout_7" stretch="1,8,0,0">
          <property name="spacing">
           <number>0</number>
          </property>
@@ -487,7 +487,7 @@
             <property name="spacing">
              <number>5</number>
             </property>
-            <item alignment="Qt::AlignHCenter">
+            <item>
              <widget class="QLabel" name="labelTitle2">
               <property name="minimumSize">
                <size>
@@ -500,7 +500,7 @@
               </property>
              </widget>
             </item>
-            <item alignment="Qt::AlignHCenter">
+            <item>
              <widget class="QLabel" name="labelMessage">
               <property name="text">
                <string>TextLabel</string>
@@ -508,6 +508,22 @@
              </widget>
             </item>
            </layout>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::MinimumExpanding</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
           </item>
          </layout>
         </item>
@@ -528,12 +544,22 @@
          </spacer>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="0">
+         <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="0,0">
           <property name="spacing">
            <number>0</number>
           </property>
           <item>
            <widget class="QLabel" name="labelAmountPiv">
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="labelAmountMNRewards">
             <property name="text">
              <string>TextLabel</string>
             </property>
@@ -613,7 +639,7 @@
                 <item>
                  <widget class="QLabel" name="labelChart">
                   <property name="text">
-                   <string>Staking statistics</string>
+                   <string>Staking and MN statistics</string>
                   </property>
                  </widget>
                 </item>
@@ -657,7 +683,23 @@
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="labelSquarezPiv">
+                 <spacer name="horizontalSpacer_5">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Fixed</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>10</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLabel" name="labelSquareMNRewards">
                   <property name="minimumSize">
                    <size>
                     <width>14</width>
@@ -672,6 +714,13 @@
                   </property>
                   <property name="text">
                    <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="labelMNRewards">
+                  <property name="text">
+                   <string>SAPP MN</string>
                   </property>
                  </widget>
                 </item>
@@ -1131,10 +1180,7 @@ margin:0px;</string>
            <enum>QFrame::StyledPanel</enum>
           </property>
           <property name="frameShadow">
-           <enum>QFrame::Plain</enum>
-          </property>
-          <property name="lineWidth">
-           <number>0</number>
+           <enum>QFrame::Raised</enum>
           </property>
           <layout class="QVBoxLayout" name="verticalLayout_71" stretch="1,8,0,0">
            <property name="spacing">
@@ -1177,10 +1223,7 @@ margin:0px;</string>
               <enum>QFrame::StyledPanel</enum>
              </property>
              <property name="frameShadow">
-              <enum>QFrame::Plain</enum>
-             </property>
-             <property name="lineWidth">
-              <number>0</number>
+              <enum>QFrame::Raised</enum>
              </property>
              <layout class="QVBoxLayout" name="verticalLayout">
               <property name="spacing">
@@ -1230,9 +1273,6 @@ margin:0px;</string>
                <widget class="QLabel" name="labelEmptyChart">
                 <property name="styleSheet">
                  <string notr="true"/>
-                </property>
-                <property name="lineWidth">
-                 <number>0</number>
                 </property>
                 <property name="text">
                  <string>LabelText</string>
