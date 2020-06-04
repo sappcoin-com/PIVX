@@ -225,10 +225,10 @@ void DashboardWidget::loadWalletModel()
     updateDisplayUnit();
 }
 
-void DashboardWidget::onTxArrived(const QString& hash, const bool& isCoinStake, const bool& isCSAnyType) { //, const bool& isMasternodeReward) {
+void DashboardWidget::onTxArrived(const QString& hash, const bool& isCoinStake, const bool& isCSAnyType, const bool& isMasternodeReward) {
     showList();
 #ifdef USE_QTCHARTS
-    if (isCoinStake) {
+    if (isCoinStake || isMasternodeReward) {
         // Update value if this is our first stake
         if (!hasStakes)
             hasStakes = stakesFilter->rowCount() > 0;
