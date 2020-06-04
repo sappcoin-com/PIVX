@@ -170,6 +170,10 @@ public:
     /** Return true if the tx is a any cold staking type tx.
      */
     bool isAnyColdStakingType() const;
+	
+	 /** Return true if the tx is a masternode reward
+     */
+    bool isMasternodeReward() const;
 
     /** Return true if the tx hash is null and/or if the size is 0
      */
