@@ -731,21 +731,7 @@ am__qt_libbitcoinqt_a_SOURCES_DIST = qt/bantablemodel.cpp \
 	qt/pivx/settings/forms/settingswalletrepairwidget.ui \
 	qt/pivx/settings/forms/settingswidget.ui \
 	qt/pivx/forms/welcomecontentwidget.ui qt/pivx/forms/splash.ui \
-	qt/pivx.qrc qt/pivx_locale.qrc qt/locale/pivx_bg.ts \
-	qt/locale/pivx_ca.ts qt/locale/pivx_cs.ts qt/locale/pivx_da.ts \
-	qt/locale/pivx_de.ts qt/locale/pivx_en.ts \
-	qt/locale/pivx_en_GB.ts qt/locale/pivx_en_US.ts \
-	qt/locale/pivx_eo.ts qt/locale/pivx_es.ts \
-	qt/locale/pivx_es_ES.ts qt/locale/pivx_fi.ts \
-	qt/locale/pivx_fr_FR.ts qt/locale/pivx_hi_IN.ts \
-	qt/locale/pivx_hr.ts qt/locale/pivx_hr_HR.ts \
-	qt/locale/pivx_it.ts qt/locale/pivx_ja.ts \
-	qt/locale/pivx_ko_KR.ts qt/locale/pivx_lt_LT.ts \
-	qt/locale/pivx_nl.ts qt/locale/pivx_pl.ts qt/locale/pivx_pt.ts \
-	qt/locale/pivx_pt_BR.ts qt/locale/pivx_ro_RO.ts \
-	qt/locale/pivx_ru.ts qt/locale/pivx_sk.ts qt/locale/pivx_sv.ts \
-	qt/locale/pivx_tr.ts qt/locale/pivx_uk.ts qt/locale/pivx_vi.ts \
-	qt/locale/pivx_zh_CN.ts qt/locale/pivx_zh_TW.ts \
+	qt/pivx.qrc qt/pivx_locale.qrc qt/locale/pivx_en.ts \
 	qt/paymentrequest.proto qt/res/icons/add.png \
 	qt/res/icons/address-book.png qt/res/icons/bitcoin.ico \
 	qt/res/icons/bitcoin.png qt/res/icons/bitcoin_testnet.ico \
@@ -2751,40 +2737,7 @@ EXTRA_DIST =
 @ENABLE_TESTS_TRUE@nodist_test_test_pivx_SOURCES = $(GENERATED_TEST_FILES)
 @ENABLE_TESTS_TRUE@CLEAN_BITCOIN_TEST = test/*.gcda test/*.gcno $(GENERATED_TEST_FILES)
 @ENABLE_QT_TRUE@QT_TS = \
-@ENABLE_QT_TRUE@  qt/locale/pivx_bg.ts \
-@ENABLE_QT_TRUE@  qt/locale/pivx_ca.ts \
-@ENABLE_QT_TRUE@  qt/locale/pivx_cs.ts \
-@ENABLE_QT_TRUE@  qt/locale/pivx_da.ts \
-@ENABLE_QT_TRUE@  qt/locale/pivx_de.ts \
-@ENABLE_QT_TRUE@  qt/locale/pivx_en.ts \
-@ENABLE_QT_TRUE@  qt/locale/pivx_en_GB.ts \
-@ENABLE_QT_TRUE@  qt/locale/pivx_en_US.ts \
-@ENABLE_QT_TRUE@  qt/locale/pivx_eo.ts \
-@ENABLE_QT_TRUE@  qt/locale/pivx_es.ts \
-@ENABLE_QT_TRUE@  qt/locale/pivx_es_ES.ts \
-@ENABLE_QT_TRUE@  qt/locale/pivx_fi.ts \
-@ENABLE_QT_TRUE@  qt/locale/pivx_fr_FR.ts \
-@ENABLE_QT_TRUE@  qt/locale/pivx_hi_IN.ts \
-@ENABLE_QT_TRUE@  qt/locale/pivx_hr.ts \
-@ENABLE_QT_TRUE@  qt/locale/pivx_hr_HR.ts \
-@ENABLE_QT_TRUE@  qt/locale/pivx_it.ts \
-@ENABLE_QT_TRUE@  qt/locale/pivx_ja.ts \
-@ENABLE_QT_TRUE@  qt/locale/pivx_ko_KR.ts \
-@ENABLE_QT_TRUE@  qt/locale/pivx_lt_LT.ts \
-@ENABLE_QT_TRUE@  qt/locale/pivx_nl.ts \
-@ENABLE_QT_TRUE@  qt/locale/pivx_pl.ts \
-@ENABLE_QT_TRUE@  qt/locale/pivx_pt.ts \
-@ENABLE_QT_TRUE@  qt/locale/pivx_pt_BR.ts \
-@ENABLE_QT_TRUE@  qt/locale/pivx_ro_RO.ts \
-@ENABLE_QT_TRUE@  qt/locale/pivx_ru.ts \
-@ENABLE_QT_TRUE@  qt/locale/pivx_sk.ts \
-@ENABLE_QT_TRUE@  qt/locale/pivx_sv.ts \
-@ENABLE_QT_TRUE@  qt/locale/pivx_tr.ts \
-@ENABLE_QT_TRUE@  qt/locale/pivx_uk.ts \
-@ENABLE_QT_TRUE@  qt/locale/pivx_vi.ts \
-@ENABLE_QT_TRUE@  qt/locale/pivx_zh_CN.ts \
-@ENABLE_QT_TRUE@  qt/locale/pivx_zh_TW.ts
-
+@ENABLE_QT_TRUE@  qt/locale/pivx_en.ts
 
 # pivx qt core #
 @ENABLE_QT_TRUE@QT_FORMS_UI = \
