@@ -731,7 +731,7 @@ am__qt_libbitcoinqt_a_SOURCES_DIST = qt/bantablemodel.cpp \
 	qt/pivx/settings/forms/settingswalletrepairwidget.ui \
 	qt/pivx/settings/forms/settingswidget.ui \
 	qt/pivx/forms/welcomecontentwidget.ui qt/pivx/forms/splash.ui \
-	qt/locale/pivx_de.ts qt/locale/pivx_en.ts \
+	qt/pivx.qrc qt/pivx_locale.qrc qt/locale/pivx_en.ts \
 	qt/paymentrequest.proto qt/res/icons/add.png \
 	qt/res/icons/address-book.png qt/res/icons/bitcoin.ico \
 	qt/res/icons/bitcoin.png qt/res/icons/bitcoin_testnet.ico \
@@ -2738,7 +2738,6 @@ nodist_test_test_pivx_SOURCES = $(GENERATED_TEST_FILES)
 CLEAN_BITCOIN_TEST = test/*.gcda test/*.gcno $(GENERATED_TEST_FILES)
 QT_TS = \
   qt/locale/pivx_en.ts
-
 
 # pivx qt core #
 QT_FORMS_UI = \
