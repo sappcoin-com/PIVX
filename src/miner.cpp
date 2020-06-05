@@ -127,9 +127,13 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
 
     // Make sure to create the correct block version
     const Consensus::Params& consensus = Params().GetConsensus();
-	 if (nHeight > consensus.height_start_TimeProtoV2)
+	if (nHeight >= consensus.height_start_TimeProtoV2)
 		 pblock->nVersion = 7;
-    else if (nHeight > consensus.height_start_ZC)
+    else if (nHeight >= consensus.height_start_StakeModifierV2)
+         pblock->nVersion = 6;
+    else if (nHeight >= consensus.height_start_BIP65)
+         pblock->nVersion = 5;
+    else if (nHeight >= consensus.height_start_ZC)
          pblock->nVersion = 4;
 	else
 		 pblock->nVersion = 3;
@@ -154,6 +158,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
     nLastCoinStakeSearchTime = GetAdjustedTime(); // only initialized at startup
 
     if (fProofOfStake) {
+
         boost::this_thread::interruption_point();
         pblock->nTime = GetAdjustedTime();
         //CBlockIndex* pindexPrev = chainActive.Tip();
@@ -162,6 +167,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
         int64_t nSearchTime = pblock->nTime; // search to current time
         bool fStakeFound = false;
         if (nSearchTime >= nLastCoinStakeSearchTime) {
+
             unsigned int nTxNewTime = 0;
             if (pwallet->CreateCoinStake(*pwallet, pblock->nBits, nSearchTime - nLastCoinStakeSearchTime, txCoinStake, nTxNewTime)) {
                 pblock->nTime = nTxNewTime;
