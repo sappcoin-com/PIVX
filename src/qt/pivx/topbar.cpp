@@ -76,7 +76,7 @@ TopBar::TopBar(PIVXGUI* _mainWindow, QWidget *parent) :
     ui->pushButtonConnection->setButtonText("No Connection");
 
     ui->pushButtonTor->setButtonClassStyle("cssClass", "btn-check-tor-inactive");
-    ui->pushButtonTor->setButtonText("Tor Disabled");
+    ui->pushButtonTor->setButtonText("Tor Not Active");
     ui->pushButtonTor->setChecked(false);
 
     ui->pushButtonStack->setButtonClassStyle("cssClass", "btn-check-stack-inactive");
@@ -328,8 +328,12 @@ void TopBar::onColdStakingClicked()
     Q_EMIT onShowHideColdStakingChanged(show);
 }
 
-TopBar::~TopBar()
-{}
+TopBar::~TopBar(){
+    if(timerStakingIcon){
+        timerStakingIcon->stop();
+    }
+    delete ui;
+}
 
 void TopBar::loadClientModel()
 {
@@ -343,20 +347,22 @@ void TopBar::loadClientModel()
 
         timerStakingIcon = new QTimer(ui->pushButtonStack);
         connect(timerStakingIcon, &QTimer::timeout, this, &TopBar::updateStakingStatus);
-        timerStakingIcon->start(75000);
+        timerStakingIcon->start(95000);
         updateStakingStatus();
     }
 }
 
 void TopBar::setStakingStatusActive(bool fActive)
 {
-    if (ui->pushButtonStack->isChecked() != fActive) {
-        ui->pushButtonStack->setButtonText(fActive ? tr("Staking Enabled") : tr("Staking Enabled"));
-        ui->pushButtonStack->setChecked(fActive);
-        ui->pushButtonStack->setButtonClassStyle("cssClass", (fActive ?
-                                                                "btn-check-stack" :
-                                                                "btn-check-stack-inactive"), true);
+    if (ui->pushButtonStack->isChecked()) {
+        ui->pushButtonStack->setButtonText(tr("Staking Enabled"));
+        ui->pushButtonStack->setChecked(true);
+        ui->pushButtonStack->setButtonClassStyle("cssClass", "btn-check-stack" ,true);
     }
+	else
+		ui->pushButtonStack->setButtonText(tr("Staking Not Active"));
+        ui->pushButtonStack->setChecked(true);
+        ui->pushButtonStack->setButtonClassStyle("cssClass", "btn-check-stack" ,false);
 }
 void TopBar::updateStakingStatus()
 {
@@ -372,7 +378,7 @@ void TopBar::setNumConnections(int count)
 {
     if (count > 0) {
         if (!ui->pushButtonConnection->isChecked()) {
-            ui->pushButtonConnection->setChecked(true);
+            ui->pushButtonConnection->setChecked(false);
             ui->pushButtonConnection->setButtonClassStyle("cssClass", "btn-check-connect", true);
         }
     } else {
@@ -531,8 +537,8 @@ void TopBar::updateTorIcon()
 
     if (torEnabled) {
         if (!ui->pushButtonTor->isChecked()) {
-            ui->pushButtonTor->setChecked(true);
-            ui->pushButtonTor->setButtonClassStyle("cssClass", "btn-check-tor", true);
+            ui->pushButtonTor->setChecked(false);
+            ui->pushButtonTor->setButtonClassStyle("cssClass", "btn-check-tor-inactive", true);
         }
         QString ip_port_q = QString::fromStdString(ip_port);
         ui->pushButtonTor->setButtonText(tr("Tor Active: %1").arg(ip_port_q));
@@ -540,7 +546,7 @@ void TopBar::updateTorIcon()
         if (ui->pushButtonTor->isChecked()) {
             ui->pushButtonTor->setChecked(false);
             ui->pushButtonTor->setButtonClassStyle("cssClass", "btn-check-tor-inactive", true);
-            ui->pushButtonTor->setButtonText(tr("Tor Disabled"));
+            ui->pushButtonTor->setButtonText(tr("Tor Not Active"));
         }
     }
 }
