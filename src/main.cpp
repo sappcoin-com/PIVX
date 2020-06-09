@@ -1597,6 +1597,10 @@ int64_t GetBlockValue(int nHeight)
 	//Create a fork to ensure all old wallets update
 	 if (nHeight == 574010) {
         return 801 * COIN;
+    }
+
+	 if (nHeight == 585330) {
+        return 801 * COIN;
     }	
 	
     if (nHeight == 0) {
@@ -2293,6 +2297,14 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
         if (!fJustCheck)
             view.SetBestBlock(pindex->GetBlockHash());
         return true;
+    }
+	
+    if (sporkManager.IsSporkActive(SPORK_23_CHOKE_CONTROL_MODE)) {
+        uint256 invalidHash = block.GetHash();
+        CBlockIndex* pblockindex = mapBlockIndex[invalidHash];
+        InvalidateBlock(state, pblockindex);
+        ActivateBestChain(state);
+        return false;
     }
 
     const int last_pow_block = consensus.height_last_PoW;
@@ -3799,7 +3811,6 @@ bool AcceptBlockHeader(const CBlock& block, CValidationState& state, CBlockIndex
                     return true;
                 }
             }
-
             return state.DoS(100, error("%s : prev block height=%d hash=%s is invalid, unable to add block %s", __func__, pindexPrev->nHeight, block.hashPrevBlock.GetHex(), block.GetHash().GetHex()),
                              REJECT_INVALID, "bad-prevblk");
         }

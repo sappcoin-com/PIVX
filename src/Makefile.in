@@ -2739,6 +2739,7 @@ EXTRA_DIST =
 @ENABLE_QT_TRUE@QT_TS = \
 @ENABLE_QT_TRUE@  qt/locale/pivx_en.ts
 
+
 # pivx qt core #
 @ENABLE_QT_TRUE@QT_FORMS_UI = \
 @ENABLE_QT_TRUE@  qt/forms/addressbookpage.ui \
