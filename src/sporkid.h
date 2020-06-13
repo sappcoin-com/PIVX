@@ -25,7 +25,7 @@ enum SporkId : int32_t {
     SPORK_20_UPGRADE_CYCLE_FACTOR               = 10019,
     SPORK_21_COLDSTAKING_ENFORCEMENT            = 10020,
     SPORK_22_BAN_DUPLICATE_MN_PER_IP            = 10021,
-	SPORK_23_CHOKE_CONTROL_MODE                   =10022,
+	SPORK_24_ENFORCE_NEW_MN_CHECKS            = 10023,
     SPORK_INVALID                               = -1
 };
 

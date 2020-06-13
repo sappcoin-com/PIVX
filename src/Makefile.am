@@ -81,6 +81,7 @@ BITCOIN_CORE_H = \
   addrman.h \
   allocators.h \
   amount.h \
+  banned.h \
   base58.h \
   bip38.h \
   bloom.h \
@@ -99,6 +100,7 @@ BITCOIN_CORE_H = \
   compat/endian.h \
   compat/sanity.h \
   compressor.h \
+  context.h \
   consensus/consensus.h \
   consensus/merkle.h \
   consensus/validation.h \
@@ -217,6 +219,7 @@ libbitcoin_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CP
 libbitcoin_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_server_a_SOURCES = \
   addrman.cpp \
+  banned.cpp \
   bloom.cpp \
   blocksignature.cpp \
   chain.cpp \
@@ -441,6 +444,7 @@ libbitcoin_util_a_SOURCES = \
   allocators.cpp \
   chainparamsbase.cpp \
   clientversion.cpp \
+  context.cpp \
   compat/glibc_sanity.cpp \
   compat/glibcxx_sanity.cpp \
   compat/strnlen.cpp \

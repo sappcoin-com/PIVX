@@ -134,18 +134,18 @@ am__append_17 = leveldb/util/env_win.cc \
 #am__append_18 = leveldb/port/port_posix.cc
 am__append_19 = -DLEVELDB_PLATFORM_POSIX_SSE
 am__append_20 = $(SSE42_CXXFLAGS)
-am__append_21 = test/test_pivx
-am__append_22 = \
-  wallet/test/wallet_test_fixture.cpp \
-  wallet/test/wallet_test_fixture.h
+#am__append_21 = test/test_pivx
+#am__append_22 = \
+#  wallet/test/wallet_test_fixture.cpp \
+#  wallet/test/wallet_test_fixture.h
 
-am__append_23 = \
-  test/accounting_tests.cpp \
-  wallet/test/wallet_tests.cpp
+#am__append_23 = \
+#  test/accounting_tests.cpp \
+#  wallet/test/wallet_tests.cpp
 
-am__append_24 = $(LIBBITCOIN_WALLET)
-am__append_25 = $(ZMQ_LIBS)
-am__append_26 = $(CLEAN_BITCOIN_TEST)
+#am__append_24 = $(LIBBITCOIN_WALLET)
+##am__append_25 = $(ZMQ_LIBS)
+#am__append_26 = $(CLEAN_BITCOIN_TEST)
 am__append_27 = qt/sap-qt
 am__append_28 = qt/libbitcoinqt.a
 am__append_29 = $(BITCOIN_QT_WINDOWS_CPP)
@@ -153,21 +153,21 @@ am__append_30 = $(BITCOIN_QT_WALLET_CPP)
 #am__append_31 = $(BITCOIN_MM)
 am__append_32 = $(BITCOIN_RC)
 am__append_33 = $(LIBBITCOIN_UTIL) $(LIBBITCOIN_WALLET)
-am__append_34 = $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+#am__append_34 = $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 am__append_35 = $(CLEAN_QT)
 
 # Copyright (c) 2013-2016 The Bitcoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
-am__append_36 = qt/test/test_pivx-qt
-am__append_37 = qt/test/test_pivx-qt
-am__append_38 = qt/test/moc_paymentservertests.cpp
-am__append_39 = \
-  qt/test/paymentservertests.cpp
+#am__append_36 = qt/test/test_pivx-qt
+#am__append_37 = qt/test/test_pivx-qt
+#am__append_38 = qt/test/moc_paymentservertests.cpp
+#am__append_39 = \
+#  qt/test/paymentservertests.cpp
 
-am__append_40 = $(LIBBITCOIN_UTIL) $(LIBBITCOIN_WALLET)
-am__append_41 = $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
-am__append_42 = $(CLEAN_BITCOIN_QT_TEST)
+#am__append_40 = $(LIBBITCOIN_UTIL) $(LIBBITCOIN_WALLET)
+##am__append_41 = $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+#am__append_42 = $(CLEAN_BITCOIN_QT_TEST)
 subdir = src
 SUBDIRS =
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
@@ -408,6 +408,7 @@ libbitcoin_server_a_AR = $(AR) $(ARFLAGS)
 libbitcoin_server_a_LIBADD =
 am_libbitcoin_server_a_OBJECTS =  \
 	libbitcoin_server_a-addrman.$(OBJEXT) \
+	libbitcoin_server_a-banned.$(OBJEXT) \
 	libbitcoin_server_a-bloom.$(OBJEXT) \
 	libbitcoin_server_a-blocksignature.$(OBJEXT) \
 	libbitcoin_server_a-chain.$(OBJEXT) \
@@ -445,37 +446,38 @@ libbitcoin_server_a_OBJECTS = $(am_libbitcoin_server_a_OBJECTS)
 libbitcoin_util_a_AR = $(AR) $(ARFLAGS)
 libbitcoin_util_a_LIBADD =
 am__libbitcoin_util_a_SOURCES_DIST = allocators.cpp \
-	chainparamsbase.cpp clientversion.cpp compat/glibc_sanity.cpp \
-	compat/glibcxx_sanity.cpp compat/strnlen.cpp logging.cpp \
-	random.cpp rpc/protocol.cpp support/cleanse.cpp sync.cpp \
-	uint256.cpp util.cpp utilmoneystr.cpp util/threadnames.cpp \
-	utilstrencodings.cpp utiltime.cpp activemasternode.h addrman.h \
-	allocators.h amount.h base58.h bip38.h bloom.h \
-	blocksignature.h chain.h chainparams.h chainparamsbase.h \
-	chainparamsseeds.h checkpoints.h checkqueue.h clientversion.h \
-	coincontrol.h coins.h compat.h compat/byteswap.h \
-	compat/endian.h compat/sanity.h compressor.h \
-	consensus/consensus.h consensus/merkle.h \
-	consensus/validation.h consensus/tx_verify.h \
-	consensus/zerocoin_verify.h consensus/params.h \
-	primitives/block.h primitives/transaction.h core_io.h \
-	crypter.h pairresult.h addressbook.h denomination_functions.h \
-	obfuscation.h obfuscation-relay.h wallet/db.h hash.h httprpc.h \
-	httpserver.h init.h invalid.h invalid_outpoints.json.h \
-	invalid_serials.json.h kernel.h swifttx.h key.h key_io.h \
-	keystore.h leveldbwrapper.h limitedmap.h logging.h main.h \
-	masternode.h masternode-payments.h masternode-budget.h \
-	masternode-sync.h masternodeman.h masternodeconfig.h \
-	merkleblock.h messagesigner.h miner.h mruset.h netbase.h net.h \
-	noui.h pow.h protocol.h pubkey.h random.h reverselock.h \
-	reverse_iterate.h rpc/client.h rpc/protocol.h rpc/server.h \
-	scheduler.h script/interpreter.h script/keyorigin.h \
-	script/script.h script/sigcache.h script/sign.h \
-	script/standard.h script/script_error.h serialize.h spork.h \
-	sporkdb.h sporkid.h stakeinput.h streams.h support/cleanse.h \
-	sync.h threadsafety.h timedata.h tinyformat.h torcontrol.h \
-	txdb.h txmempool.h guiinterface.h guiinterfaceutil.h uint256.h \
-	undo.h util/memory.h util.h util/macros.h util/threadnames.h \
+	chainparamsbase.cpp clientversion.cpp context.cpp \
+	compat/glibc_sanity.cpp compat/glibcxx_sanity.cpp \
+	compat/strnlen.cpp logging.cpp random.cpp rpc/protocol.cpp \
+	support/cleanse.cpp sync.cpp uint256.cpp util.cpp \
+	utilmoneystr.cpp util/threadnames.cpp utilstrencodings.cpp \
+	utiltime.cpp activemasternode.h addrman.h allocators.h \
+	amount.h banned.h base58.h bip38.h bloom.h blocksignature.h \
+	chain.h chainparams.h chainparamsbase.h chainparamsseeds.h \
+	checkpoints.h checkqueue.h clientversion.h coincontrol.h \
+	coins.h compat.h compat/byteswap.h compat/endian.h \
+	compat/sanity.h compressor.h context.h consensus/consensus.h \
+	consensus/merkle.h consensus/validation.h \
+	consensus/tx_verify.h consensus/zerocoin_verify.h \
+	consensus/params.h primitives/block.h primitives/transaction.h \
+	core_io.h crypter.h pairresult.h addressbook.h \
+	denomination_functions.h obfuscation.h obfuscation-relay.h \
+	wallet/db.h hash.h httprpc.h httpserver.h init.h invalid.h \
+	invalid_outpoints.json.h invalid_serials.json.h kernel.h \
+	swifttx.h key.h key_io.h keystore.h leveldbwrapper.h \
+	limitedmap.h logging.h main.h masternode.h \
+	masternode-payments.h masternode-budget.h masternode-sync.h \
+	masternodeman.h masternodeconfig.h merkleblock.h \
+	messagesigner.h miner.h mruset.h netbase.h net.h noui.h pow.h \
+	protocol.h pubkey.h random.h reverselock.h reverse_iterate.h \
+	rpc/client.h rpc/protocol.h rpc/server.h scheduler.h \
+	script/interpreter.h script/keyorigin.h script/script.h \
+	script/sigcache.h script/sign.h script/standard.h \
+	script/script_error.h serialize.h spork.h sporkdb.h sporkid.h \
+	stakeinput.h streams.h support/cleanse.h sync.h threadsafety.h \
+	timedata.h tinyformat.h torcontrol.h txdb.h txmempool.h \
+	guiinterface.h guiinterfaceutil.h uint256.h undo.h \
+	util/memory.h util.h util/macros.h util/threadnames.h \
 	utilstrencodings.h utilmoneystr.h utiltime.h \
 	validationinterface.h version.h wallet/hdchain.h \
 	wallet/scriptpubkeyman.h wallet/wallet.h \
@@ -489,6 +491,7 @@ am__libbitcoin_util_a_SOURCES_DIST = allocators.cpp \
 am_libbitcoin_util_a_OBJECTS = libbitcoin_util_a-allocators.$(OBJEXT) \
 	libbitcoin_util_a-chainparamsbase.$(OBJEXT) \
 	libbitcoin_util_a-clientversion.$(OBJEXT) \
+	libbitcoin_util_a-context.$(OBJEXT) \
 	compat/libbitcoin_util_a-glibc_sanity.$(OBJEXT) \
 	compat/libbitcoin_util_a-glibcxx_sanity.$(OBJEXT) \
 	compat/libbitcoin_util_a-strnlen.$(OBJEXT) \
@@ -549,9 +552,9 @@ libbitcoin_zmq_a_AR = $(AR) $(ARFLAGS)
 libbitcoin_zmq_a_LIBADD =
 am__libbitcoin_zmq_a_SOURCES_DIST = zmq/zmqabstractnotifier.cpp \
 	zmq/zmqnotificationinterface.cpp zmq/zmqpublishnotifier.cpp
-am_libbitcoin_zmq_a_OBJECTS = zmq/libbitcoin_zmq_a-zmqabstractnotifier.$(OBJEXT) \
-	zmq/libbitcoin_zmq_a-zmqnotificationinterface.$(OBJEXT) \
-	zmq/libbitcoin_zmq_a-zmqpublishnotifier.$(OBJEXT)
+#am_libbitcoin_zmq_a_OBJECTS = zmq/libbitcoin_zmq_a-zmqabstractnotifier.$(OBJEXT) \
+#	zmq/libbitcoin_zmq_a-zmqnotificationinterface.$(OBJEXT) \
+#	zmq/libbitcoin_zmq_a-zmqpublishnotifier.$(OBJEXT)
 libbitcoin_zmq_a_OBJECTS = $(am_libbitcoin_zmq_a_OBJECTS)
 libzerocoin_libbitcoin_zerocoin_a_AR = $(AR) $(ARFLAGS)
 libzerocoin_libbitcoin_zerocoin_a_LIBADD =
@@ -1253,9 +1256,9 @@ libbitcoinconsensus_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 am__EXEEXT_1 = sapd$(EXEEXT)
 am__EXEEXT_2 = sap-cli$(EXEEXT) \
 	sap-tx$(EXEEXT)
-am__EXEEXT_3 = test/test_pivx$(EXEEXT)
+#am__EXEEXT_3 = test/test_pivx$(EXEEXT)
 am__EXEEXT_4 = qt/sap-qt$(EXEEXT)
-am__EXEEXT_5 = qt/test/test_pivx-qt$(EXEEXT)
+#am__EXEEXT_5 = qt/test/test_pivx-qt$(EXEEXT)
 PROGRAMS = $(bin_PROGRAMS) $(noinst_PROGRAMS)
 am__qt_sap_qt_SOURCES_DIST = qt/pivx.cpp qt/macdockiconhandler.mm \
 	qt/macnotificationhandler.mm qt/res/pivx-qt-res.rc
@@ -1271,9 +1274,9 @@ am_qt_sap_qt_OBJECTS = qt/qt_sap_qt-pivx.$(OBJEXT) \
 	$(am__objects_20) $(am__objects_22)
 qt_sap_qt_OBJECTS = $(am_qt_sap_qt_OBJECTS)
 am__DEPENDENCIES_1 =
-am__DEPENDENCIES_2 =  \
-	$(LIBBITCOIN_ZMQ) \
-	$(am__DEPENDENCIES_1)
+#am__DEPENDENCIES_2 =  \
+#	$(LIBBITCOIN_ZMQ) \
+#	$(am__DEPENDENCIES_1)
 #am__DEPENDENCIES_3 = $(am__DEPENDENCIES_1)
 am__DEPENDENCIES_3 = univalue/libunivalue.la
 am__DEPENDENCIES_4 = $(am__append_12)
@@ -1299,42 +1302,42 @@ am__qt_test_test_pivx_qt_SOURCES_DIST = qt/test/test_main.cpp \
 	qt/test/uritests.cpp qt/test/uritests.h \
 	qt/test/paymentrequestdata.h qt/test/paymentservertests.h \
 	qt/test/paymentservertests.cpp
-am__objects_23 = qt/test/qt_test_test_pivx_qt-paymentservertests.$(OBJEXT)
-am_qt_test_test_pivx_qt_OBJECTS = qt/test/qt_test_test_pivx_qt-test_main.$(OBJEXT) \
-	qt/test/qt_test_test_pivx_qt-uritests.$(OBJEXT) \
-	$(am__objects_3) $(am__objects_23)
-am__objects_24 = qt/test/qt_test_test_pivx_qt-moc_paymentservertests.$(OBJEXT)
-am__objects_25 = qt/test/qt_test_test_pivx_qt-moc_uritests.$(OBJEXT) \
-	$(am__objects_24)
-nodist_qt_test_test_pivx_qt_OBJECTS =  \
-	$(am__objects_25)
+#am__objects_23 = qt/test/qt_test_test_pivx_qt-paymentservertests.$(OBJEXT)
+#am_qt_test_test_pivx_qt_OBJECTS = qt/test/qt_test_test_pivx_qt-test_main.$(OBJEXT) \
+#	qt/test/qt_test_test_pivx_qt-uritests.$(OBJEXT) \
+#	$(am__objects_3) $(am__objects_23)
+#am__objects_24 = qt/test/qt_test_test_pivx_qt-moc_paymentservertests.$(OBJEXT)
+#am__objects_25 = qt/test/qt_test_test_pivx_qt-moc_uritests.$(OBJEXT) \
+#	$(am__objects_24)
+#nodist_qt_test_test_pivx_qt_OBJECTS =  \
+#	$(am__objects_25)
 qt_test_test_pivx_qt_OBJECTS = $(am_qt_test_test_pivx_qt_OBJECTS) \
 	$(nodist_qt_test_test_pivx_qt_OBJECTS)
-am__DEPENDENCIES_6 =  \
-	$(LIBBITCOIN_ZMQ) \
-	$(am__DEPENDENCIES_1)
-qt_test_test_pivx_qt_DEPENDENCIES =  \
-	$(LIBBITCOINQT) $(LIBBITCOIN_SERVER) \
-	$(am__append_40) $(am__DEPENDENCIES_6) \
-	$(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) \
-	$(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) \
-	$(am__DEPENDENCIES_3) \
-	$(LIBBITCOIN_ZEROCOIN) \
-	$(am__DEPENDENCIES_4) \
-	$(LIBLEVELDB_SSE42) \
-	$(am__DEPENDENCIES_5) \
-	$(am__DEPENDENCIES_1) \
-	$(am__DEPENDENCIES_1) \
-	$(am__DEPENDENCIES_1) \
-	$(am__DEPENDENCIES_1) \
-	$(am__DEPENDENCIES_1) \
-	$(am__DEPENDENCIES_1) \
-	$(am__DEPENDENCIES_1) \
-	$(am__DEPENDENCIES_1) \
-	$(am__DEPENDENCIES_1) \
-	$(am__DEPENDENCIES_1) $(LIBSECP256K1) \
-	$(am__DEPENDENCIES_1) \
-	$(am__DEPENDENCIES_1)
+##am__DEPENDENCIES_6 =  \
+##	$(LIBBITCOIN_ZMQ) \
+##	$(am__DEPENDENCIES_1)
+#qt_test_test_pivx_qt_DEPENDENCIES =  \
+#	$(LIBBITCOINQT) $(LIBBITCOIN_SERVER) \
+#	$(am__append_40) $(am__DEPENDENCIES_6) \
+#	$(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) \
+#	$(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) \
+#	$(am__DEPENDENCIES_3) \
+#	$(LIBBITCOIN_ZEROCOIN) \
+#	$(am__DEPENDENCIES_4) \
+#	$(LIBLEVELDB_SSE42) \
+#	$(am__DEPENDENCIES_5) \
+#	$(am__DEPENDENCIES_1) \
+#	$(am__DEPENDENCIES_1) \
+#	$(am__DEPENDENCIES_1) \
+#	$(am__DEPENDENCIES_1) \
+#	$(am__DEPENDENCIES_1) \
+#	$(am__DEPENDENCIES_1) \
+#	$(am__DEPENDENCIES_1) \
+#	$(am__DEPENDENCIES_1) \
+#	$(am__DEPENDENCIES_1) \
+#	$(am__DEPENDENCIES_1) $(LIBSECP256K1) \
+#	$(am__DEPENDENCIES_1) \
+#	$(am__DEPENDENCIES_1)
 qt_test_test_pivx_qt_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CXXLD) \
 	$(qt_test_test_pivx_qt_CXXFLAGS) $(CXXFLAGS) \
@@ -1409,79 +1412,79 @@ am__test_test_pivx_SOURCES_DIST = test/test_pivx.h test/test_pivx.cpp \
 	test/data/base58_keys_invalid.json \
 	test/data/script_invalid.json test/data/tx_invalid.json \
 	test/data/tx_valid.json test/data/sighash.json
-am__objects_29 = wallet/test/test_test_pivx-wallet_test_fixture.$(OBJEXT)
-am__objects_30 =  \
-	test/test_test_pivx-test_pivx.$(OBJEXT) \
-	$(am__objects_29)
-am__objects_31 = test/test_test_pivx-accounting_tests.$(OBJEXT) \
-	wallet/test/test_test_pivx-wallet_tests.$(OBJEXT)
-am__objects_32 = test/test_test_pivx-zerocoin_denomination_tests.$(OBJEXT) \
-	test/test_test_pivx-zerocoin_transactions_tests.$(OBJEXT) \
-	test/test_test_pivx-zerocoin_bignum_tests.$(OBJEXT) \
-	test/test_test_pivx-addrman_tests.$(OBJEXT) \
-	test/test_test_pivx-allocator_tests.$(OBJEXT) \
-	test/test_test_pivx-base32_tests.$(OBJEXT) \
-	test/test_test_pivx-base58_tests.$(OBJEXT) \
-	test/test_test_pivx-base64_tests.$(OBJEXT) \
-	test/test_test_pivx-budget_tests.$(OBJEXT) \
-	test/test_test_pivx-checkblock_tests.$(OBJEXT) \
-	test/test_test_pivx-Checkpoints_tests.$(OBJEXT) \
-	test/test_test_pivx-coins_tests.$(OBJEXT) \
-	test/test_test_pivx-compress_tests.$(OBJEXT) \
-	test/test_test_pivx-crypto_tests.$(OBJEXT) \
-	test/test_test_pivx-DoS_tests.$(OBJEXT) \
-	test/test_test_pivx-getarg_tests.$(OBJEXT) \
-	test/test_test_pivx-hash_tests.$(OBJEXT) \
-	test/test_test_pivx-key_tests.$(OBJEXT) \
-	test/test_test_pivx-main_tests.$(OBJEXT) \
-	test/test_test_pivx-mempool_tests.$(OBJEXT) \
-	test/test_test_pivx-merkle_tests.$(OBJEXT) \
-	test/test_test_pivx-mruset_tests.$(OBJEXT) \
-	test/test_test_pivx-multisig_tests.$(OBJEXT) \
-	test/test_test_pivx-net_tests.$(OBJEXT) \
-	test/test_test_pivx-netbase_tests.$(OBJEXT) \
-	test/test_test_pivx-pmt_tests.$(OBJEXT) \
-	test/test_test_pivx-random_tests.$(OBJEXT) \
-	test/test_test_pivx-reverselock_tests.$(OBJEXT) \
-	test/test_test_pivx-rpc_tests.$(OBJEXT) \
-	test/test_test_pivx-sanity_tests.$(OBJEXT) \
-	test/test_test_pivx-scheduler_tests.$(OBJEXT) \
-	test/test_test_pivx-script_P2SH_tests.$(OBJEXT) \
-	test/test_test_pivx-script_tests.$(OBJEXT) \
-	test/test_test_pivx-scriptnum_tests.$(OBJEXT) \
-	test/test_test_pivx-serialize_tests.$(OBJEXT) \
-	test/test_test_pivx-sighash_tests.$(OBJEXT) \
-	test/test_test_pivx-sigopcount_tests.$(OBJEXT) \
-	test/test_test_pivx-skiplist_tests.$(OBJEXT) \
-	test/test_test_pivx-sync_tests.$(OBJEXT) \
-	test/test_test_pivx-timedata_tests.$(OBJEXT) \
-	test/test_test_pivx-torcontrol_tests.$(OBJEXT) \
-	test/test_test_pivx-transaction_tests.$(OBJEXT) \
-	test/test_test_pivx-uint256_tests.$(OBJEXT) \
-	test/test_test_pivx-univalue_tests.$(OBJEXT) \
-	test/test_test_pivx-util_tests.$(OBJEXT) \
-	$(am__objects_31)
-am_test_test_pivx_OBJECTS = $(am__objects_30) \
-	$(am__objects_32) $(am__objects_3) \
-	$(am__objects_3)
-am__objects_33 = $(am__objects_3) $(am__objects_3)
-nodist_test_test_pivx_OBJECTS = $(am__objects_33)
+#am__objects_29 = wallet/test/test_test_pivx-wallet_test_fixture.$(OBJEXT)
+#am__objects_30 =  \
+#	test/test_test_pivx-test_pivx.$(OBJEXT) \
+#	$(am__objects_29)
+#am__objects_31 = test/test_test_pivx-accounting_tests.$(OBJEXT) \
+#	wallet/test/test_test_pivx-wallet_tests.$(OBJEXT)
+#am__objects_32 = test/test_test_pivx-zerocoin_denomination_tests.$(OBJEXT) \
+#	test/test_test_pivx-zerocoin_transactions_tests.$(OBJEXT) \
+#	test/test_test_pivx-zerocoin_bignum_tests.$(OBJEXT) \
+#	test/test_test_pivx-addrman_tests.$(OBJEXT) \
+#	test/test_test_pivx-allocator_tests.$(OBJEXT) \
+#	test/test_test_pivx-base32_tests.$(OBJEXT) \
+#	test/test_test_pivx-base58_tests.$(OBJEXT) \
+#	test/test_test_pivx-base64_tests.$(OBJEXT) \
+#	test/test_test_pivx-budget_tests.$(OBJEXT) \
+#	test/test_test_pivx-checkblock_tests.$(OBJEXT) \
+#	test/test_test_pivx-Checkpoints_tests.$(OBJEXT) \
+#	test/test_test_pivx-coins_tests.$(OBJEXT) \
+#	test/test_test_pivx-compress_tests.$(OBJEXT) \
+#	test/test_test_pivx-crypto_tests.$(OBJEXT) \
+#	test/test_test_pivx-DoS_tests.$(OBJEXT) \
+#	test/test_test_pivx-getarg_tests.$(OBJEXT) \
+#	test/test_test_pivx-hash_tests.$(OBJEXT) \
+#	test/test_test_pivx-key_tests.$(OBJEXT) \
+#	test/test_test_pivx-main_tests.$(OBJEXT) \
+#	test/test_test_pivx-mempool_tests.$(OBJEXT) \
+#	test/test_test_pivx-merkle_tests.$(OBJEXT) \
+#	test/test_test_pivx-mruset_tests.$(OBJEXT) \
+#	test/test_test_pivx-multisig_tests.$(OBJEXT) \
+#	test/test_test_pivx-net_tests.$(OBJEXT) \
+#	test/test_test_pivx-netbase_tests.$(OBJEXT) \
+#	test/test_test_pivx-pmt_tests.$(OBJEXT) \
+#	test/test_test_pivx-random_tests.$(OBJEXT) \
+#	test/test_test_pivx-reverselock_tests.$(OBJEXT) \
+#	test/test_test_pivx-rpc_tests.$(OBJEXT) \
+#	test/test_test_pivx-sanity_tests.$(OBJEXT) \
+#	test/test_test_pivx-scheduler_tests.$(OBJEXT) \
+#	test/test_test_pivx-script_P2SH_tests.$(OBJEXT) \
+#	test/test_test_pivx-script_tests.$(OBJEXT) \
+#	test/test_test_pivx-scriptnum_tests.$(OBJEXT) \
+#	test/test_test_pivx-serialize_tests.$(OBJEXT) \
+#	test/test_test_pivx-sighash_tests.$(OBJEXT) \
+#	test/test_test_pivx-sigopcount_tests.$(OBJEXT) \
+#	test/test_test_pivx-skiplist_tests.$(OBJEXT) \
+#	test/test_test_pivx-sync_tests.$(OBJEXT) \
+#	test/test_test_pivx-timedata_tests.$(OBJEXT) \
+#	test/test_test_pivx-torcontrol_tests.$(OBJEXT) \
+#	test/test_test_pivx-transaction_tests.$(OBJEXT) \
+#	test/test_test_pivx-uint256_tests.$(OBJEXT) \
+#	test/test_test_pivx-univalue_tests.$(OBJEXT) \
+#	test/test_test_pivx-util_tests.$(OBJEXT) \
+#	$(am__objects_31)
+#am_test_test_pivx_OBJECTS = $(am__objects_30) \
+#	$(am__objects_32) $(am__objects_3) \
+#	$(am__objects_3)
+#am__objects_33 = $(am__objects_3) $(am__objects_3)
+#nodist_test_test_pivx_OBJECTS = $(am__objects_33)
 test_test_pivx_OBJECTS = $(am_test_test_pivx_OBJECTS) \
 	$(nodist_test_test_pivx_OBJECTS)
-am__DEPENDENCIES_7 =  \
-	$(am__DEPENDENCIES_1)
-test_test_pivx_DEPENDENCIES = $(LIBBITCOIN_SERVER) \
-	$(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) \
-	$(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) \
-	$(am__DEPENDENCIES_3) \
-	$(LIBBITCOIN_ZEROCOIN) \
-	$(am__DEPENDENCIES_4) $(LIBLEVELDB_SSE42) \
-	$(am__DEPENDENCIES_5) $(am__DEPENDENCIES_1) \
-	$(am__DEPENDENCIES_1) $(LIBSECP256K1) \
-	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
-	$(am__append_24) $(am__DEPENDENCIES_1) \
-	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
-	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_7)
+##am__DEPENDENCIES_7 =  \
+##	$(am__DEPENDENCIES_1)
+#test_test_pivx_DEPENDENCIES = $(LIBBITCOIN_SERVER) \
+#	$(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) \
+#	$(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) \
+#	$(am__DEPENDENCIES_3) \
+#	$(LIBBITCOIN_ZEROCOIN) \
+#	$(am__DEPENDENCIES_4) $(LIBLEVELDB_SSE42) \
+#	$(am__DEPENDENCIES_5) $(am__DEPENDENCIES_1) \
+#	$(am__DEPENDENCIES_1) $(LIBSECP256K1) \
+#	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
+#	$(am__append_24) $(am__DEPENDENCIES_1) \
+#	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
+#	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_7)
 test_test_pivx_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CXXLD) \
 	$(test_test_pivx_CXXFLAGS) $(CXXFLAGS) \
@@ -1840,16 +1843,16 @@ am__relativize = \
     dir1=`echo "$$dir1" | sed -e "$$sed_rest"`; \
   done; \
   reldir="$$dir2"
-ACLOCAL = ${SHELL} /home/ubuntu/SAPP/build-aux/missing aclocal-1.15
+ACLOCAL = ${SHELL} /home/remapper/SAPP/build-aux/missing aclocal-1.15
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 0
 AR = /usr/bin/x86_64-w64-mingw32-ar
 ARFLAGS = cr
-AUTOCONF = ${SHELL} /home/ubuntu/SAPP/build-aux/missing autoconf
-AUTOHEADER = ${SHELL} /home/ubuntu/SAPP/build-aux/missing autoheader
-AUTOMAKE = ${SHELL} /home/ubuntu/SAPP/build-aux/missing automake-1.15
+AUTOCONF = ${SHELL} /home/remapper/SAPP/build-aux/missing autoconf
+AUTOHEADER = ${SHELL} /home/remapper/SAPP/build-aux/missing autoheader
+AUTOMAKE = ${SHELL} /home/remapper/SAPP/build-aux/missing automake-1.15
 AVX2_CXXFLAGS = -mavx -mavx2
-AWK = gawk
+AWK = mawk
 BDB_CFLAGS = 
 BDB_CPPFLAGS = 
 BDB_LIBS = -ldb_cxx-4.8
@@ -1858,14 +1861,14 @@ BITCOIN_DAEMON_NAME = sapd
 BITCOIN_GUI_NAME = sap-qt
 BITCOIN_TX_NAME = sap-tx
 BOOST_CHRONO_LIB = -lboost_chrono-mt-s
-BOOST_CPPFLAGS = -DBOOST_SP_USE_STD_ATOMIC -DBOOST_AC_USE_STD_ATOMIC -mthreads -I/home/ubuntu/SAPP/depends/x86_64-w64-mingw32/share/../include
+BOOST_CPPFLAGS = -DBOOST_SP_USE_STD_ATOMIC -DBOOST_AC_USE_STD_ATOMIC -mthreads -I/home/remapper/SAPP/depends/x86_64-w64-mingw32/share/../include
 BOOST_FILESYSTEM_LIB = -lboost_filesystem-mt-s
-BOOST_LDFLAGS = -L/home/ubuntu/SAPP/depends/x86_64-w64-mingw32/share/../lib
-BOOST_LIBS = -L/home/ubuntu/SAPP/depends/x86_64-w64-mingw32/share/../lib -lboost_system-mt-s -lboost_filesystem-mt-s -lboost_program_options-mt-s -lboost_thread_win32-mt-s -lboost_chrono-mt-s
+BOOST_LDFLAGS = -L/home/remapper/SAPP/depends/x86_64-w64-mingw32/share/../lib
+BOOST_LIBS = -L/home/remapper/SAPP/depends/x86_64-w64-mingw32/share/../lib -lboost_system-mt-s -lboost_filesystem-mt-s -lboost_program_options-mt-s -lboost_thread_win32-mt-s -lboost_chrono-mt-s
 BOOST_PROGRAM_OPTIONS_LIB = -lboost_program_options-mt-s
 BOOST_SYSTEM_LIB = -lboost_system-mt-s
 BOOST_THREAD_LIB = -lboost_thread_win32-mt-s
-BOOST_UNIT_TEST_FRAMEWORK_LIB = -lboost_unit_test_framework-mt-s
+BOOST_UNIT_TEST_FRAMEWORK_LIB = 
 BREW = 
 CC = x86_64-w64-mingw32-gcc
 CCACHE = 
@@ -1873,16 +1876,16 @@ CCDEPMODE = depmode=gcc3
 CFLAGS = -pipe -O2 
 CHARTS_CFLAGS = 
 CHARTS_LIBS = -lQt5Charts
-CLIENT_VERSION_BUILD = 1
+CLIENT_VERSION_BUILD = 0
 CLIENT_VERSION_IS_RELEASE = true
 CLIENT_VERSION_MAJOR = 1
 CLIENT_VERSION_MINOR = 3
-CLIENT_VERSION_REVISION = 0
+CLIENT_VERSION_REVISION = 2
 COMPAT_LDFLAGS = 
 COPYRIGHT_YEAR = 2020
 CPP = x86_64-w64-mingw32-gcc -E
 CPPFILT = /usr/bin/x86_64-w64-mingw32-c++filt
-CPPFLAGS = -I/home/ubuntu/SAPP/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64
+CPPFLAGS = -I/home/remapper/SAPP/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -DCURL_STATICLIB -D_FILE_OFFSET_BITS=64
 CRYPTO_CFLAGS = 
 CRYPTO_LIBS = -lcrypto
 CXX = x86_64-w64-mingw32-g++ -std=c++11
@@ -1932,7 +1935,7 @@ INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 LCOV = 
 LCOV_OPTS = 
 LD = /usr/bin/x86_64-w64-mingw32-ld
-LDFLAGS = -L/home/ubuntu/SAPP/depends/x86_64-w64-mingw32/share/../lib 
+LDFLAGS = -L/home/remapper/SAPP/depends/x86_64-w64-mingw32/share/../lib 
 LEVELDB_CPPFLAGS =  $(am__append_14)
 LEVELDB_TARGET_FLAGS = -DOS_WINDOWS
 LIBLEVELDB =  $(am__append_12)
@@ -1943,18 +1946,18 @@ LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LIBTOOL_APP_LDFLAGS =  -all-static
 LIPO = 
 LN_S = ln -s
-LRELEASE = /home/ubuntu/SAPP/depends/x86_64-w64-mingw32/share/../native/bin/lrelease
+LRELEASE = /home/remapper/SAPP/depends/x86_64-w64-mingw32/share/../native/bin/lrelease
 LTLIBOBJS = 
 LT_SYS_LIBRARY_PATH = 
-LUPDATE = /home/ubuntu/SAPP/depends/x86_64-w64-mingw32/share/../native/bin/lupdate
+LUPDATE = /home/remapper/SAPP/depends/x86_64-w64-mingw32/share/../native/bin/lupdate
 MAINT = 
-MAKEINFO = ${SHELL} /home/ubuntu/SAPP/build-aux/missing makeinfo
+MAKEINFO = ${SHELL} /home/remapper/SAPP/build-aux/missing makeinfo
 MAKENSIS = /usr/bin/makensis
 MANIFEST_TOOL = :
 MINIUPNPC_CPPFLAGS = -DSTATICLIB -DMINIUPNP_STATICLIB
 MINIUPNPC_LIBS = -lminiupnpc
 MKDIR_P = /bin/mkdir -p
-MOC = /home/ubuntu/SAPP/depends/x86_64-w64-mingw32/share/../native/bin/moc
+MOC = /home/remapper/SAPP/depends/x86_64-w64-mingw32/share/../native/bin/moc
 MOC_DEFS = -DHAVE_CONFIG_H -I$(srcdir)
 NM = x86_64-w64-mingw32-nm
 NMEDIT = 
@@ -1970,25 +1973,25 @@ OTOOL64 =
 PACKAGE = sap
 PACKAGE_BUGREPORT = https://github.com/SapOfficial/Sap/issues
 PACKAGE_NAME = Sap
-PACKAGE_STRING = Sap 1.3.0.1
+PACKAGE_STRING = Sap 1.3.2
 PACKAGE_TARNAME = sap
 PACKAGE_URL = https://www.sapnetwork.io/
-PACKAGE_VERSION = 1.3.0.1
+PACKAGE_VERSION = 1.3.2
 PATH_SEPARATOR = :
 PIC_FLAGS = 
 PIE_FLAGS = -fPIE
 PKG_CONFIG = /usr/bin/pkg-config --static
 PKG_CONFIG_LIBDIR = 
-PKG_CONFIG_PATH = /home/ubuntu/SAPP/depends/x86_64-w64-mingw32/share/../share/pkgconfig:/home/ubuntu/SAPP/depends/x86_64-w64-mingw32/share/../lib/pkgconfig
+PKG_CONFIG_PATH = /home/remapper/SAPP/depends/x86_64-w64-mingw32/share/../share/pkgconfig:/home/remapper/SAPP/depends/x86_64-w64-mingw32/share/../lib/pkgconfig
 PORT = 
 PROTOBUF_CFLAGS = 
 PROTOBUF_LIBS = -lprotobuf
-PROTOC = /home/ubuntu/SAPP/depends/x86_64-w64-mingw32/share/../native/bin/protoc
+PROTOC = /home/remapper/SAPP/depends/x86_64-w64-mingw32/share/../native/bin/protoc
 PTHREAD_CC = x86_64-w64-mingw32-gcc
 PTHREAD_CFLAGS = -pthread
 PTHREAD_LIBS = 
 PYTHON = /usr/bin/python3.6
-PYTHONPATH = /home/ubuntu/SAPP/depends/x86_64-w64-mingw32/share/../native/lib/python3/dist-packages:
+PYTHONPATH = /home/remapper/SAPP/depends/x86_64-w64-mingw32/share/../native/lib/python3/dist-packages:
 QR_CFLAGS = 
 QR_LIBS = -lqrencode
 QT5_CFLAGS = 
@@ -2019,21 +2022,21 @@ QT_CONCURRENT_CFLAGS =
 QT_CONCURRENT_LIBS = 
 QT_DBUS_CFLAGS = 
 QT_DBUS_INCLUDES = 
-QT_DBUS_LIBS = -lQt5DBus -L/home/ubuntu/SAPP/depends/x86_64-w64-mingw32/share/../lib
-QT_INCLUDES = -I/home/ubuntu/SAPP/depends/x86_64-w64-mingw32/share/../include -I/home/ubuntu/SAPP/depends/x86_64-w64-mingw32/share/../include/QtCore -I/home/ubuntu/SAPP/depends/x86_64-w64-mingw32/share/../include/QtGui -I/home/ubuntu/SAPP/depends/x86_64-w64-mingw32/share/../include/QtWidgets -I/home/ubuntu/SAPP/depends/x86_64-w64-mingw32/share/../include/QtNetwork -I/home/ubuntu/SAPP/depends/x86_64-w64-mingw32/share/../include/QtTest -I/home/ubuntu/SAPP/depends/x86_64-w64-mingw32/share/../include/QtDBus -I/home/ubuntu/SAPP/depends/x86_64-w64-mingw32/share/../include/QtConcurrent -I/home/ubuntu/SAPP/depends/x86_64-w64-mingw32/share/../include/QtSvg -I/home/ubuntu/SAPP/depends/x86_64-w64-mingw32/share/../include/QtCharts
+QT_DBUS_LIBS = -lQt5DBus -L/home/remapper/SAPP/depends/x86_64-w64-mingw32/share/../lib
+QT_INCLUDES = -I/home/remapper/SAPP/depends/x86_64-w64-mingw32/share/../include -I/home/remapper/SAPP/depends/x86_64-w64-mingw32/share/../include/QtCore -I/home/remapper/SAPP/depends/x86_64-w64-mingw32/share/../include/QtGui -I/home/remapper/SAPP/depends/x86_64-w64-mingw32/share/../include/QtWidgets -I/home/remapper/SAPP/depends/x86_64-w64-mingw32/share/../include/QtNetwork -I/home/remapper/SAPP/depends/x86_64-w64-mingw32/share/../include/QtTest -I/home/remapper/SAPP/depends/x86_64-w64-mingw32/share/../include/QtDBus -I/home/remapper/SAPP/depends/x86_64-w64-mingw32/share/../include/QtConcurrent -I/home/remapper/SAPP/depends/x86_64-w64-mingw32/share/../include/QtSvg -I/home/remapper/SAPP/depends/x86_64-w64-mingw32/share/../include/QtCharts
 QT_LDFLAGS =  -mwindows
-QT_LIBS = -lqwindows -lqsvgicon -lqgif -lqsvg -lqminimal -lQt5Concurrent -lQt5Widgets -lQt5Network -lQt5Gui     -lQt5Core    -lqtharfbuzz -lqtpcre2 -lqtlibpng -lz  -limm32  -L/home/ubuntu/SAPP/depends/x86_64-w64-mingw32/share/../lib -lQt5Svg -L/home/ubuntu/SAPP/depends/x86_64-w64-mingw32/share/../lib -L/home/ubuntu/SAPP/depends/x86_64-w64-mingw32/share/../plugins/platforms -L/home/ubuntu/SAPP/depends/x86_64-w64-mingw32/share/../plugins/imageformats -L/home/ubuntu/SAPP/depends/x86_64-w64-mingw32/share/../plugins/iconengines -lversion -ldwmapi -luxtheme
+QT_LIBS = -lqwindows -lqsvgicon -lqgif -lqsvg -lqminimal -lQt5Concurrent -lQt5Widgets -lQt5Network -lQt5Gui     -lQt5Core    -lqtharfbuzz -lqtpcre2 -lqtlibpng -lz  -limm32  -L/home/remapper/SAPP/depends/x86_64-w64-mingw32/share/../lib -lQt5Svg -L/home/remapper/SAPP/depends/x86_64-w64-mingw32/share/../lib -L/home/remapper/SAPP/depends/x86_64-w64-mingw32/share/../plugins/platforms -L/home/remapper/SAPP/depends/x86_64-w64-mingw32/share/../plugins/imageformats -L/home/remapper/SAPP/depends/x86_64-w64-mingw32/share/../plugins/iconengines -lversion -ldwmapi -luxtheme
 QT_PIE_FLAGS = -fPIE
 QT_SELECT = qt5
 QT_SVG_CFLAGS = 
 QT_SVG_INCLUDES = 
-QT_SVG_LIBS = -lQt5Svg -L/home/ubuntu/SAPP/depends/x86_64-w64-mingw32/share/../lib
+QT_SVG_LIBS = -lQt5Svg -L/home/remapper/SAPP/depends/x86_64-w64-mingw32/share/../lib
 QT_TEST_CFLAGS = 
 QT_TEST_INCLUDES = 
-QT_TEST_LIBS = -lQt5Test -L/home/ubuntu/SAPP/depends/x86_64-w64-mingw32/share/../lib
-QT_TRANSLATION_DIR = /home/ubuntu/SAPP/depends/x86_64-w64-mingw32/share/../translations
+QT_TEST_LIBS = -lQt5Test -L/home/remapper/SAPP/depends/x86_64-w64-mingw32/share/../lib
+QT_TRANSLATION_DIR = /home/remapper/SAPP/depends/x86_64-w64-mingw32/share/../translations
 RANLIB = /usr/bin/x86_64-w64-mingw32-ranlib
-RCC = /home/ubuntu/SAPP/depends/x86_64-w64-mingw32/share/../native/bin/rcc
+RCC = /home/remapper/SAPP/depends/x86_64-w64-mingw32/share/../native/bin/rcc
 READELF = /usr/bin/x86_64-w64-mingw32-readelf
 RELDFLAGS = 
 RSVG_CONVERT = 
@@ -2050,26 +2053,26 @@ SSL_LIBS = -lssl
 STRIP = /usr/bin/x86_64-w64-mingw32-strip
 TESTDEFS = 
 TIFFCP = 
-UIC = /home/ubuntu/SAPP/depends/x86_64-w64-mingw32/share/../native/bin/uic
+UIC = /home/remapper/SAPP/depends/x86_64-w64-mingw32/share/../native/bin/uic
 UNIVALUE_CFLAGS = -I$(srcdir)/univalue/include
 UNIVALUE_LIBS = univalue/libunivalue.la
 USE_NUM_GMP = 
 USE_NUM_OPENSSL = 
 USE_QTCHARTS = 
 USE_UPNP = 
-VERSION = 1.3.0.1
+VERSION = 1.3.2
 WARN_CXXFLAGS = 
 WINDOWS_BITS = 64
 WINDRES = /usr/bin/x86_64-w64-mingw32-windres
 X11XCB_CFLAGS = 
 X11XCB_LIBS = 
-XGETTEXT = 
-ZMQ_CFLAGS =  -DZMQ_STATIC
-ZMQ_LIBS = -lzmq
-abs_builddir = /home/ubuntu/SAPP/src
-abs_srcdir = /home/ubuntu/SAPP/src
-abs_top_builddir = /home/ubuntu/SAPP
-abs_top_srcdir = /home/ubuntu/SAPP
+XGETTEXT = /usr/bin/xgettext
+ZMQ_CFLAGS = 
+ZMQ_LIBS = 
+abs_builddir = /home/remapper/SAPP/src
+abs_srcdir = /home/remapper/SAPP/src
+abs_top_builddir = /home/remapper/SAPP
+abs_top_srcdir = /home/remapper/SAPP
 ac_ct_AR = 
 ac_ct_CC = 
 ac_ct_CXX = 
@@ -2101,7 +2104,7 @@ host_vendor = w64
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/ubuntu/SAPP/build-aux/install-sh
+install_sh = ${SHELL} /home/remapper/SAPP/build-aux/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -2150,7 +2153,7 @@ LIBBITCOIN_CRYPTO = crypto/libbitcoin_crypto.a
 LIBBITCOIN_ZEROCOIN = libzerocoin/libbitcoin_zerocoin.a
 LIBBITCOINQT = qt/libbitcoinqt.a
 LIBSECP256K1 = secp256k1/libsecp256k1.la
-LIBBITCOIN_ZMQ = libbitcoin_zmq.a
+#LIBBITCOIN_ZMQ = libbitcoin_zmq.a
 #LIBBITCOINCONSENSUS = libbitcoinconsensus.la
 LIBBITCOIN_WALLET = libbitcoin_wallet.a
 lib_LTLIBRARIES = $(LIBBITCOINCONSENSUS)
@@ -2161,6 +2164,7 @@ BITCOIN_CORE_H = \
   addrman.h \
   allocators.h \
   amount.h \
+  banned.h \
   base58.h \
   bip38.h \
   bloom.h \
@@ -2179,6 +2183,7 @@ BITCOIN_CORE_H = \
   compat/endian.h \
   compat/sanity.h \
   compressor.h \
+  context.h \
   consensus/consensus.h \
   consensus/merkle.h \
   consensus/validation.h \
@@ -2292,6 +2297,7 @@ libbitcoin_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CP
 libbitcoin_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_server_a_SOURCES = \
   addrman.cpp \
+  banned.cpp \
   bloom.cpp \
   blocksignature.cpp \
   chain.cpp \
@@ -2327,12 +2333,12 @@ libbitcoin_server_a_SOURCES = \
   zpivchain.cpp \
   $(BITCOIN_CORE_H)
 
-libbitcoin_zmq_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(ZMQ_CFLAGS)
-libbitcoin_zmq_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libbitcoin_zmq_a_SOURCES = \
-  zmq/zmqabstractnotifier.cpp \
-  zmq/zmqnotificationinterface.cpp \
-  zmq/zmqpublishnotifier.cpp
+#libbitcoin_zmq_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(ZMQ_CFLAGS)
+#libbitcoin_zmq_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+#libbitcoin_zmq_a_SOURCES = \
+#  zmq/zmqabstractnotifier.cpp \
+#  zmq/zmqnotificationinterface.cpp \
+#  zmq/zmqpublishnotifier.cpp
 
 
 # wallet: shared between sapd and sap-qt, but only linked
@@ -2464,7 +2470,7 @@ libbitcoin_common_a_SOURCES = \
 libbitcoin_util_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_util_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_util_a_SOURCES = allocators.cpp chainparamsbase.cpp \
-	clientversion.cpp compat/glibc_sanity.cpp \
+	clientversion.cpp context.cpp compat/glibc_sanity.cpp \
 	compat/glibcxx_sanity.cpp compat/strnlen.cpp logging.cpp \
 	random.cpp rpc/protocol.cpp support/cleanse.cpp sync.cpp \
 	uint256.cpp util.cpp utilmoneystr.cpp util/threadnames.cpp \
@@ -2661,83 +2667,84 @@ leveldb_libleveldb_sse42_a_CXXFLAGS =  \
 	$(leveldb_libleveldb_a_CXXFLAGS) \
 	$(am__append_20)
 leveldb_libleveldb_sse42_a_SOURCES = leveldb/port/port_posix_sse.cc
-TEST_SRCDIR = test
-TEST_BINARY = test/test_pivx$(EXEEXT)
-JSON_TEST_FILES = \
-  test/data/script_valid.json \
-  test/data/base58_keys_valid.json \
-  test/data/sig_canonical.json \
-  test/data/sig_noncanonical.json \
-  test/data/base58_encode_decode.json \
-  test/data/base58_keys_invalid.json \
-  test/data/script_invalid.json \
-  test/data/tx_invalid.json \
-  test/data/tx_valid.json \
-  test/data/sighash.json
+#TEST_SRCDIR = test
+#TEST_BINARY = test/test_pivx$(EXEEXT)
+#JSON_TEST_FILES = \
+#  test/data/script_valid.json \
+#  test/data/base58_keys_valid.json \
+#  test/data/sig_canonical.json \
+#  test/data/sig_noncanonical.json \
+#  test/data/base58_encode_decode.json \
+#  test/data/base58_keys_invalid.json \
+#  test/data/script_invalid.json \
+#  test/data/tx_invalid.json \
+#  test/data/tx_valid.json \
+#  test/data/sighash.json
 
-RAW_TEST_FILES = 
-GENERATED_TEST_FILES = $(JSON_TEST_FILES:.json=.json.h) $(RAW_TEST_FILES:.raw=.raw.h)
-BITCOIN_TEST_SUITE = test/test_pivx.h \
-	test/test_pivx.cpp $(am__append_22)
+#RAW_TEST_FILES = 
+#GENERATED_TEST_FILES = $(JSON_TEST_FILES:.json=.json.h) $(RAW_TEST_FILES:.raw=.raw.h)
+#BITCOIN_TEST_SUITE = test/test_pivx.h \
+#	test/test_pivx.cpp $(am__append_22)
 
 # test_pivx binary #
-BITCOIN_TESTS =  \
-	test/zerocoin_denomination_tests.cpp \
-	test/zerocoin_transactions_tests.cpp \
-	test/zerocoin_bignum_tests.cpp \
-	test/addrman_tests.cpp \
-	test/allocator_tests.cpp \
-	test/base32_tests.cpp test/base58_tests.cpp \
-	test/base64_tests.cpp test/budget_tests.cpp \
-	test/checkblock_tests.cpp \
-	test/Checkpoints_tests.cpp \
-	test/coins_tests.cpp \
-	test/compress_tests.cpp \
-	test/crypto_tests.cpp test/DoS_tests.cpp \
-	test/getarg_tests.cpp test/hash_tests.cpp \
-	test/key_tests.cpp test/main_tests.cpp \
-	test/mempool_tests.cpp \
-	test/merkle_tests.cpp test/mruset_tests.cpp \
-	test/multisig_tests.cpp test/net_tests.cpp \
-	test/netbase_tests.cpp test/pmt_tests.cpp \
-	test/random_tests.cpp \
-	test/reverselock_tests.cpp \
-	test/rpc_tests.cpp test/sanity_tests.cpp \
-	test/scheduler_tests.cpp \
-	test/script_P2SH_tests.cpp \
-	test/script_tests.cpp \
-	test/scriptnum_tests.cpp \
-	test/serialize_tests.cpp \
-	test/sighash_tests.cpp \
-	test/sigopcount_tests.cpp \
-	test/skiplist_tests.cpp test/sync_tests.cpp \
-	test/timedata_tests.cpp \
-	test/torcontrol_tests.cpp \
-	test/transaction_tests.cpp \
-	test/uint256_tests.cpp \
-	test/univalue_tests.cpp test/util_tests.cpp \
-	$(am__append_23)
-test_test_pivx_SOURCES = $(BITCOIN_TEST_SUITE) $(BITCOIN_TESTS) $(JSON_TEST_FILES) $(RAW_TEST_FILES)
-test_test_pivx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) -I$(builddir)/test/ $(TESTDEFS) $(EVENT_FLAGS)
-test_test_pivx_LDADD = $(LIBBITCOIN_SERVER) \
-	$(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) \
-	$(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) \
-	$(LIBUNIVALUE) $(LIBBITCOIN_ZEROCOIN) \
-	$(LIBLEVELDB) $(LIBLEVELDB_SSE42) \
-	$(LIBMEMENV) $(BOOST_LIBS) \
-	$(BOOST_UNIT_TEST_FRAMEWORK_LIB) \
-	$(LIBSECP256K1) $(EVENT_LIBS) \
-	$(EVENT_PTHREADS_LIBS) $(am__append_24) \
-	$(LIBBITCOIN_CONSENSUS) $(BDB_LIBS) \
-	$(SSL_LIBS) $(CRYPTO_LIBS) \
-	$(MINIUPNPC_LIBS) $(am__append_25)
-test_test_pivx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-test_test_pivx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) -static
+#BITCOIN_TESTS =  \
+#	test/zerocoin_denomination_tests.cpp \
+#	test/zerocoin_transactions_tests.cpp \
+#	test/zerocoin_bignum_tests.cpp \
+#	test/addrman_tests.cpp \
+#	test/allocator_tests.cpp \
+#	test/base32_tests.cpp test/base58_tests.cpp \
+#	test/base64_tests.cpp test/budget_tests.cpp \
+#	test/checkblock_tests.cpp \
+#	test/Checkpoints_tests.cpp \
+#	test/coins_tests.cpp \
+#	test/compress_tests.cpp \
+#	test/crypto_tests.cpp test/DoS_tests.cpp \
+#	test/getarg_tests.cpp test/hash_tests.cpp \
+#	test/key_tests.cpp test/main_tests.cpp \
+#	test/mempool_tests.cpp \
+#	test/merkle_tests.cpp test/mruset_tests.cpp \
+#	test/multisig_tests.cpp test/net_tests.cpp \
+#	test/netbase_tests.cpp test/pmt_tests.cpp \
+#	test/random_tests.cpp \
+#	test/reverselock_tests.cpp \
+#	test/rpc_tests.cpp test/sanity_tests.cpp \
+#	test/scheduler_tests.cpp \
+#	test/script_P2SH_tests.cpp \
+#	test/script_tests.cpp \
+#	test/scriptnum_tests.cpp \
+#	test/serialize_tests.cpp \
+#	test/sighash_tests.cpp \
+#	test/sigopcount_tests.cpp \
+#	test/skiplist_tests.cpp test/sync_tests.cpp \
+#	test/timedata_tests.cpp \
+#	test/torcontrol_tests.cpp \
+#	test/transaction_tests.cpp \
+#	test/uint256_tests.cpp \
+#	test/univalue_tests.cpp test/util_tests.cpp \
+#	$(am__append_23)
+#test_test_pivx_SOURCES = $(BITCOIN_TEST_SUITE) $(BITCOIN_TESTS) $(JSON_TEST_FILES) $(RAW_TEST_FILES)
+#test_test_pivx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) -I$(builddir)/test/ $(TESTDEFS) $(EVENT_FLAGS)
+#test_test_pivx_LDADD = $(LIBBITCOIN_SERVER) \
+#	$(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) \
+#	$(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) \
+#	$(LIBUNIVALUE) $(LIBBITCOIN_ZEROCOIN) \
+#	$(LIBLEVELDB) $(LIBLEVELDB_SSE42) \
+#	$(LIBMEMENV) $(BOOST_LIBS) \
+#	$(BOOST_UNIT_TEST_FRAMEWORK_LIB) \
+#	$(LIBSECP256K1) $(EVENT_LIBS) \
+#	$(EVENT_PTHREADS_LIBS) $(am__append_24) \
+#	$(LIBBITCOIN_CONSENSUS) $(BDB_LIBS) \
+#	$(SSL_LIBS) $(CRYPTO_LIBS) \
+#	$(MINIUPNPC_LIBS) $(am__append_25)
+#test_test_pivx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+#test_test_pivx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) -static
 #
-nodist_test_test_pivx_SOURCES = $(GENERATED_TEST_FILES)
-CLEAN_BITCOIN_TEST = test/*.gcda test/*.gcno $(GENERATED_TEST_FILES)
+#nodist_test_test_pivx_SOURCES = $(GENERATED_TEST_FILES)
+#CLEAN_BITCOIN_TEST = test/*.gcda test/*.gcno $(GENERATED_TEST_FILES)
 QT_TS = \
   qt/locale/pivx_en.ts
+
 
 # pivx qt core #
 QT_FORMS_UI = \
@@ -3450,37 +3457,37 @@ qt_sap_qt_LIBTOOLFLAGS = $(AM_LIBTOOLFLAGS) --tag CXX
 #locale/foo.ts -> locale/foo.qm
 QT_QM = $(QT_TS:.ts=.qm)
 CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno qt/temp_pivx_locale.qrc
-TEST_QT_MOC_CPP = qt/test/moc_uritests.cpp \
-	$(am__append_38)
-TEST_QT_H = \
-  qt/test/uritests.h \
-  qt/test/paymentrequestdata.h \
-  qt/test/paymentservertests.h
+#TEST_QT_MOC_CPP = qt/test/moc_uritests.cpp \
+#	$(am__append_38)
+#TEST_QT_H = \
+#  qt/test/uritests.h \
+#  qt/test/paymentrequestdata.h \
+#  qt/test/paymentservertests.h
 
-qt_test_test_pivx_qt_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
-  $(QT_INCLUDES) $(QT_TEST_INCLUDES) $(PROTOBUF_CFLAGS)
+#qt_test_test_pivx_qt_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+#  $(QT_INCLUDES) $(QT_TEST_INCLUDES) $(PROTOBUF_CFLAGS)
 
-qt_test_test_pivx_qt_SOURCES =  \
-	qt/test/test_main.cpp \
-	qt/test/uritests.cpp $(TEST_QT_H) \
-	$(am__append_39)
-nodist_qt_test_test_pivx_qt_SOURCES = $(TEST_QT_MOC_CPP)
-qt_test_test_pivx_qt_LDADD = $(LIBBITCOINQT) \
-	$(LIBBITCOIN_SERVER) $(am__append_40) \
-	$(am__append_41) $(LIBBITCOIN_CLI) \
-	$(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) \
-	$(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) \
-	$(LIBBITCOIN_ZEROCOIN) $(LIBLEVELDB) \
-	$(LIBLEVELDB_SSE42) $(LIBMEMENV) \
-	$(BOOST_LIBS) $(QT_DBUS_LIBS) \
-	$(QT_TEST_LIBS) $(QT_LIBS) $(QR_LIBS) \
-	$(PROTOBUF_LIBS) $(BDB_LIBS) $(SSL_LIBS) \
-	$(CRYPTO_LIBS) $(MINIUPNPC_LIBS) \
-	$(LIBSECP256K1) $(EVENT_PTHREADS_LIBS) \
-	$(EVENT_LIBS)
-qt_test_test_pivx_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
-qt_test_test_pivx_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
-CLEAN_BITCOIN_QT_TEST = $(TEST_QT_MOC_CPP) qt/test/*.gcda qt/test/*.gcno
+#qt_test_test_pivx_qt_SOURCES =  \
+#	qt/test/test_main.cpp \
+#	qt/test/uritests.cpp $(TEST_QT_H) \
+#	$(am__append_39)
+#nodist_qt_test_test_pivx_qt_SOURCES = $(TEST_QT_MOC_CPP)
+#qt_test_test_pivx_qt_LDADD = $(LIBBITCOINQT) \
+#	$(LIBBITCOIN_SERVER) $(am__append_40) \
+#	$(am__append_41) $(LIBBITCOIN_CLI) \
+#	$(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) \
+#	$(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) \
+#	$(LIBBITCOIN_ZEROCOIN) $(LIBLEVELDB) \
+#	$(LIBLEVELDB_SSE42) $(LIBMEMENV) \
+#	$(BOOST_LIBS) $(QT_DBUS_LIBS) \
+#	$(QT_TEST_LIBS) $(QT_LIBS) $(QR_LIBS) \
+#	$(PROTOBUF_LIBS) $(BDB_LIBS) $(SSL_LIBS) \
+#	$(CRYPTO_LIBS) $(MINIUPNPC_LIBS) \
+#	$(LIBSECP256K1) $(EVENT_PTHREADS_LIBS) \
+#	$(EVENT_LIBS)
+#qt_test_test_pivx_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+#qt_test_test_pivx_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
+#CLEAN_BITCOIN_QT_TEST = $(TEST_QT_MOC_CPP) qt/test/*.gcda qt/test/*.gcno
 all: all-recursive
 
 .SUFFIXES:
@@ -4805,6 +4812,7 @@ include ./$(DEPDIR)/libbitcoin_common_a-scheduler.Po
 include ./$(DEPDIR)/libbitcoin_common_a-spork.Po
 include ./$(DEPDIR)/libbitcoin_common_a-sporkdb.Po
 include ./$(DEPDIR)/libbitcoin_server_a-addrman.Po
+include ./$(DEPDIR)/libbitcoin_server_a-banned.Po
 include ./$(DEPDIR)/libbitcoin_server_a-blocksignature.Po
 include ./$(DEPDIR)/libbitcoin_server_a-bloom.Po
 include ./$(DEPDIR)/libbitcoin_server_a-chain.Po
@@ -4830,6 +4838,7 @@ include ./$(DEPDIR)/libbitcoin_server_a-zpivchain.Po
 include ./$(DEPDIR)/libbitcoin_util_a-allocators.Po
 include ./$(DEPDIR)/libbitcoin_util_a-chainparamsbase.Po
 include ./$(DEPDIR)/libbitcoin_util_a-clientversion.Po
+include ./$(DEPDIR)/libbitcoin_util_a-context.Po
 include ./$(DEPDIR)/libbitcoin_util_a-logging.Po
 include ./$(DEPDIR)/libbitcoin_util_a-random.Po
 include ./$(DEPDIR)/libbitcoin_util_a-sync.Po
@@ -6904,6 +6913,20 @@ libbitcoin_server_a-addrman.obj: addrman.cpp
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libbitcoin_server_a_CPPFLAGS) $(CPPFLAGS) $(libbitcoin_server_a_CXXFLAGS) $(CXXFLAGS) -c -o libbitcoin_server_a-addrman.obj `if test -f 'addrman.cpp'; then $(CYGPATH_W) 'addrman.cpp'; else $(CYGPATH_W) '$(srcdir)/addrman.cpp'; fi`
 
+libbitcoin_server_a-banned.o: banned.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libbitcoin_server_a_CPPFLAGS) $(CPPFLAGS) $(libbitcoin_server_a_CXXFLAGS) $(CXXFLAGS) -MT libbitcoin_server_a-banned.o -MD -MP -MF $(DEPDIR)/libbitcoin_server_a-banned.Tpo -c -o libbitcoin_server_a-banned.o `test -f 'banned.cpp' || echo '$(srcdir)/'`banned.cpp
+	$(AM_V_at)$(am__mv) $(DEPDIR)/libbitcoin_server_a-banned.Tpo $(DEPDIR)/libbitcoin_server_a-banned.Po
+#	$(AM_V_CXX)source='banned.cpp' object='libbitcoin_server_a-banned.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libbitcoin_server_a_CPPFLAGS) $(CPPFLAGS) $(libbitcoin_server_a_CXXFLAGS) $(CXXFLAGS) -c -o libbitcoin_server_a-banned.o `test -f 'banned.cpp' || echo '$(srcdir)/'`banned.cpp
+
+libbitcoin_server_a-banned.obj: banned.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libbitcoin_server_a_CPPFLAGS) $(CPPFLAGS) $(libbitcoin_server_a_CXXFLAGS) $(CXXFLAGS) -MT libbitcoin_server_a-banned.obj -MD -MP -MF $(DEPDIR)/libbitcoin_server_a-banned.Tpo -c -o libbitcoin_server_a-banned.obj `if test -f 'banned.cpp'; then $(CYGPATH_W) 'banned.cpp'; else $(CYGPATH_W) '$(srcdir)/banned.cpp'; fi`
+	$(AM_V_at)$(am__mv) $(DEPDIR)/libbitcoin_server_a-banned.Tpo $(DEPDIR)/libbitcoin_server_a-banned.Po
+#	$(AM_V_CXX)source='banned.cpp' object='libbitcoin_server_a-banned.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libbitcoin_server_a_CPPFLAGS) $(CPPFLAGS) $(libbitcoin_server_a_CXXFLAGS) $(CXXFLAGS) -c -o libbitcoin_server_a-banned.obj `if test -f 'banned.cpp'; then $(CYGPATH_W) 'banned.cpp'; else $(CYGPATH_W) '$(srcdir)/banned.cpp'; fi`
+
 libbitcoin_server_a-bloom.o: bloom.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libbitcoin_server_a_CPPFLAGS) $(CPPFLAGS) $(libbitcoin_server_a_CXXFLAGS) $(CXXFLAGS) -MT libbitcoin_server_a-bloom.o -MD -MP -MF $(DEPDIR)/libbitcoin_server_a-bloom.Tpo -c -o libbitcoin_server_a-bloom.o `test -f 'bloom.cpp' || echo '$(srcdir)/'`bloom.cpp
 	$(AM_V_at)$(am__mv) $(DEPDIR)/libbitcoin_server_a-bloom.Tpo $(DEPDIR)/libbitcoin_server_a-bloom.Po
@@ -7407,6 +7430,20 @@ libbitcoin_util_a-clientversion.obj: clientversion.cpp
 #	$(AM_V_CXX)source='clientversion.cpp' object='libbitcoin_util_a-clientversion.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libbitcoin_util_a_CPPFLAGS) $(CPPFLAGS) $(libbitcoin_util_a_CXXFLAGS) $(CXXFLAGS) -c -o libbitcoin_util_a-clientversion.obj `if test -f 'clientversion.cpp'; then $(CYGPATH_W) 'clientversion.cpp'; else $(CYGPATH_W) '$(srcdir)/clientversion.cpp'; fi`
+
+libbitcoin_util_a-context.o: context.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libbitcoin_util_a_CPPFLAGS) $(CPPFLAGS) $(libbitcoin_util_a_CXXFLAGS) $(CXXFLAGS) -MT libbitcoin_util_a-context.o -MD -MP -MF $(DEPDIR)/libbitcoin_util_a-context.Tpo -c -o libbitcoin_util_a-context.o `test -f 'context.cpp' || echo '$(srcdir)/'`context.cpp
+	$(AM_V_at)$(am__mv) $(DEPDIR)/libbitcoin_util_a-context.Tpo $(DEPDIR)/libbitcoin_util_a-context.Po
+#	$(AM_V_CXX)source='context.cpp' object='libbitcoin_util_a-context.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libbitcoin_util_a_CPPFLAGS) $(CPPFLAGS) $(libbitcoin_util_a_CXXFLAGS) $(CXXFLAGS) -c -o libbitcoin_util_a-context.o `test -f 'context.cpp' || echo '$(srcdir)/'`context.cpp
+
+libbitcoin_util_a-context.obj: context.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libbitcoin_util_a_CPPFLAGS) $(CPPFLAGS) $(libbitcoin_util_a_CXXFLAGS) $(CXXFLAGS) -MT libbitcoin_util_a-context.obj -MD -MP -MF $(DEPDIR)/libbitcoin_util_a-context.Tpo -c -o libbitcoin_util_a-context.obj `if test -f 'context.cpp'; then $(CYGPATH_W) 'context.cpp'; else $(CYGPATH_W) '$(srcdir)/context.cpp'; fi`
+	$(AM_V_at)$(am__mv) $(DEPDIR)/libbitcoin_util_a-context.Tpo $(DEPDIR)/libbitcoin_util_a-context.Po
+#	$(AM_V_CXX)source='context.cpp' object='libbitcoin_util_a-context.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libbitcoin_util_a_CPPFLAGS) $(CPPFLAGS) $(libbitcoin_util_a_CXXFLAGS) $(CXXFLAGS) -c -o libbitcoin_util_a-context.obj `if test -f 'context.cpp'; then $(CYGPATH_W) 'context.cpp'; else $(CYGPATH_W) '$(srcdir)/context.cpp'; fi`
 
 compat/libbitcoin_util_a-glibc_sanity.o: compat/glibc_sanity.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libbitcoin_util_a_CPPFLAGS) $(CPPFLAGS) $(libbitcoin_util_a_CXXFLAGS) $(CXXFLAGS) -MT compat/libbitcoin_util_a-glibc_sanity.o -MD -MP -MF compat/$(DEPDIR)/libbitcoin_util_a-glibc_sanity.Tpo -c -o compat/libbitcoin_util_a-glibc_sanity.o `test -f 'compat/glibc_sanity.cpp' || echo '$(srcdir)/'`compat/glibc_sanity.cpp
@@ -12231,7 +12268,7 @@ distdir: $(DISTFILES)
 	      || exit 1; \
 	  fi; \
 	done
-#check-local:
+check-local:
 check-am: all-am
 	$(MAKE) $(AM_MAKEFLAGS) check-TESTS check-local
 check: check-recursive
@@ -12468,45 +12505,45 @@ check-security: $(bin_PROGRAMS)
 	@test -f $(PROTOC)
 	$(AM_V_GEN) $(PROTOC) --cpp_out=$(@D) --proto_path=$(<D) $<
 
-$(BITCOIN_TESTS): $(GENERATED_TEST_FILES)
+#$(BITCOIN_TESTS): $(GENERATED_TEST_FILES)
 
-pivx_test: $(TEST_BINARY)
+#pivx_test: $(TEST_BINARY)
 
-pivx_test_check: $(TEST_BINARY) FORCE
-	$(MAKE) check-TESTS TESTS=$^
+#pivx_test_check: $(TEST_BINARY) FORCE
+#	$(MAKE) check-TESTS TESTS=$^
 
-pivx_test_clean : FORCE
-	rm -f $(CLEAN_BITCOIN_TEST) $(test_test_pivx_OBJECTS) $(TEST_BINARY)
+#pivx_test_clean : FORCE
+#	rm -f $(CLEAN_BITCOIN_TEST) $(test_test_pivx_OBJECTS) $(TEST_BINARY)
 
-check-local: $(BITCOIN_TESTS:.cpp=.cpp.test)
-	@echo "Running test/util/bitcoin-util-test.py..."
-	$(PYTHON) $(top_builddir)/test/util/bitcoin-util-test.py
-	@echo "Running test/util/rpcauth-test.py..."
-	$(PYTHON) $(top_builddir)/test/util/rpcauth-test.py
-	$(AM_V_at)$(MAKE) $(AM_MAKEFLAGS) -C secp256k1 check
-	$(AM_V_at)$(MAKE) $(AM_MAKEFLAGS) -C univalue check
+#check-local: $(BITCOIN_TESTS:.cpp=.cpp.test)
+#	@echo "Running test/util/bitcoin-util-test.py..."
+#	$(PYTHON) $(top_builddir)/test/util/bitcoin-util-test.py
+#	@echo "Running test/util/rpcauth-test.py..."
+#	$(PYTHON) $(top_builddir)/test/util/rpcauth-test.py
+#	$(AM_V_at)$(MAKE) $(AM_MAKEFLAGS) -C secp256k1 check
+#	$(AM_V_at)$(MAKE) $(AM_MAKEFLAGS) -C univalue check
 
-%.cpp.test: %.cpp
-	@echo Running tests: `cat $< | grep -E "(BOOST_FIXTURE_TEST_SUITE\\(|BOOST_AUTO_TEST_SUITE\\()" | cut -d '(' -f 2 | cut -d ',' -f 1 | cut -d ')' -f 1` from $<
-	$(AM_V_at)$(TEST_BINARY) -l test_suite -t "`cat $< | grep -E "(BOOST_FIXTURE_TEST_SUITE\\(|BOOST_AUTO_TEST_SUITE\\()" | cut -d '(' -f 2 | cut -d ',' -f 1 | cut -d ')' -f 1`" > $<.log 2>&1 || (cat $<.log && false)
+#%.cpp.test: %.cpp
+#	@echo Running tests: `cat $< | grep -E "(BOOST_FIXTURE_TEST_SUITE\\(|BOOST_AUTO_TEST_SUITE\\()" | cut -d '(' -f 2 | cut -d ',' -f 1 | cut -d ')' -f 1` from $<
+#	$(AM_V_at)$(TEST_BINARY) -l test_suite -t "`cat $< | grep -E "(BOOST_FIXTURE_TEST_SUITE\\(|BOOST_AUTO_TEST_SUITE\\()" | cut -d '(' -f 2 | cut -d ',' -f 1 | cut -d ')' -f 1`" > $<.log 2>&1 || (cat $<.log && false)
 
-%.json.h: %.json
-	@$(MKDIR_P) $(@D)
-	@{ \
-	 echo "namespace json_tests{" && \
-	 echo "static unsigned const char $(*F)[] = {" && \
-	 $(HEXDUMP) -v -e '8/1 "0x%02x, "' -e '"\n"' $< | $(SED) -e 's/0x  ,//g' && \
-	 echo "};};"; \
-	} > "$@.new" && mv -f "$@.new" "$@"
-	@echo "Generated $@"
+#%.json.h: %.json
+#	@$(MKDIR_P) $(@D)
+#	@{ \
+#	 echo "namespace json_tests{" && \
+#	 echo "static unsigned const char $(*F)[] = {" && \
+#	 $(HEXDUMP) -v -e '8/1 "0x%02x, "' -e '"\n"' $< | $(SED) -e 's/0x  ,//g' && \
+#	 echo "};};"; \
+#	} > "$@.new" && mv -f "$@.new" "$@"
+#	@echo "Generated $@"
 
-%.raw.h: %.raw
-	@$(MKDIR_P) $(@D)
-	@echo "namespace alert_tests{" > $@
-	@echo "static unsigned const char $(*F)[] = {" >> $@
-	@$(HEXDUMP) -v -e '8/1 "0x%02x, "' -e '"\n"' $< | $(SED) -e 's/0x  ,//g' >> $@
-	@echo "};};" >> $@
-	@echo "Generated $@"
+#%.raw.h: %.raw
+#	@$(MKDIR_P) $(@D)
+#	@echo "namespace alert_tests{" > $@
+#	@echo "static unsigned const char $(*F)[] = {" >> $@
+#	@$(HEXDUMP) -v -e '8/1 "0x%02x, "' -e '"\n"' $< | $(SED) -e 's/0x  ,//g' >> $@
+#	@echo "};};" >> $@
+#	@echo "Generated $@"
 
 # Most files will depend on the forms and moc files as includes. Generate them
 # before anything else.
@@ -12563,13 +12600,13 @@ moc_%.cpp: %.h
 	@$(MKDIR_P) $(@D)
 	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LRELEASE) -silent $< -qm $@
 
-test_pivx_qt : qt/test/test_pivx-qt$(EXEEXT)
+#test_pivx_qt : qt/test/test_pivx-qt$(EXEEXT)
 
-test_pivx_qt_check : qt/test/test_pivx-qt$(EXEEXT) FORCE
-	$(MAKE) check-TESTS TESTS=$^
+#test_pivx_qt_check : qt/test/test_pivx-qt$(EXEEXT) FORCE
+#	$(MAKE) check-TESTS TESTS=$^
 
-test_pivx_qt_clean: FORCE
-	rm -f $(CLEAN_BITCOIN_QT_TEST) $(qt_test_test_pivx_qt_OBJECTS)
+#test_pivx_qt_clean: FORCE
+#	rm -f $(CLEAN_BITCOIN_QT_TEST) $(qt_test_test_pivx_qt_OBJECTS)
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

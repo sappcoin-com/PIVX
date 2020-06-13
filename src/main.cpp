@@ -10,6 +10,7 @@
 
 #include "main.h"
 
+#include "context.h"
 #include "addrman.h"
 #include "amount.h"
 #include "blocksignature.h"
@@ -1016,6 +1017,22 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
             }
         }
     }
+	
+	    // ----------- banned transaction scanning -----------
+    if (GetContext().MempoolBanActive()) {
+        for (unsigned int i = 0; i < tx.vin.size(); ++i) {
+            uint256 hashBlock;
+            CTransaction txPrev;
+            if (GetTransaction(tx.vin[i].prevout.hash, txPrev, hashBlock, true)) {  // get the vin's previous transaction
+                CTxDestination source;
+                if (ExtractDestination(txPrev.vout[tx.vin[i].prevout.n].scriptPubKey, source)) {  // extract the destination of the previous transaction's vout[n]
+                    CBitcoinAddress addressSource(source);
+                    if (GetContext().MempoolBanActive(addressSource.ToString()))
+                        return error("%s : Banned address %s tried to send a transaction %s (rejecting it).", __func__, addressSource.ToString().c_str(), txPrev.GetHash().ToString().c_str());
+                }
+            }
+        }
+    }
 
     bool hasZcSpendInputs = tx.HasZerocoinSpendInputs();
 
@@ -1599,7 +1616,12 @@ int64_t GetBlockValue(int nHeight)
         return 801 * COIN;
     }
 
-	 if (nHeight == 585330) {
+
+    if (nHeight == 585330) {
+        return 801 * COIN;
+    }
+
+    if (nHeight == 586594) { // to be set at phase 2 compile
         return 801 * COIN;
     }	
 	
@@ -2297,14 +2319,6 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
         if (!fJustCheck)
             view.SetBestBlock(pindex->GetBlockHash());
         return true;
-    }
-	
-    if (sporkManager.IsSporkActive(SPORK_23_CHOKE_CONTROL_MODE)) {
-        uint256 invalidHash = block.GetHash();
-        CBlockIndex* pblockindex = mapBlockIndex[invalidHash];
-        InvalidateBlock(state, pblockindex);
-        ActivateBestChain(state);
-        return false;
     }
 
     const int last_pow_block = consensus.height_last_PoW;
@@ -3607,6 +3621,16 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
             LogPrintf("%s: Masternode/Budget payment checks skipped on sync\n", __func__);
         }
     }
+	
+	    // Check masternode payments
+	if (sporkManager.IsSporkActive(SPORK_24_ENFORCE_NEW_MN_CHECKS)) {
+        const CTransaction& tx = block.vtx[1];
+        const unsigned int outs = tx.vout.size();
+        if (outs < 3)
+            return state.DoS(100, error("CheckBlock() : no payment for masternode found"));
+        if (!masternodePayments.ValidateMasternodeWinner(tx.vout[outs-1].scriptPubKey, nHeight))
+            return state.DoS(100, error("CheckBlock() : wrong masternode address"));
+    }
 
     // Check transactions
     std::vector<CBigNum> vBlockSerials;
@@ -3753,6 +3777,29 @@ bool ContextualCheckBlock(const CBlock& block, CValidationState& state, CBlockIn
         if (!IsFinalTx(tx, nHeight, block.GetBlockTime())) {
             return state.DoS(10, error("%s : contains a non-final transaction", __func__), REJECT_INVALID, "bad-txns-nonfinal");
         }
+		
+		
+		    // Check that all transactions are not banned
+    if (GetContext().ConsensusBanActive()) {
+        for (const CTransaction& tx : block.vtx) {
+            if (tx.IsCoinBase())
+                continue;
+            else for (unsigned int i = 0; i < tx.vin.size(); ++i) {
+                uint256 hashBlock;
+                CTransaction txPrev;
+                if (GetTransaction(tx.vin[i].prevout.hash, txPrev, hashBlock, true)) {  // get the vin's previous transaction
+                    CTxDestination source;
+                    if (ExtractDestination(txPrev.vout[tx.vin[i].prevout.n].scriptPubKey, source)) {  // extract the destination of the previous transaction's vout[n]
+                        CBitcoinAddress addressSource(source);
+                        if (GetContext().ConsensusBanActive(addressSource.ToString()))
+                            return state.DoS(100, error("%s : Banned address %s tried to send a transaction %s (rejecting it).", __func__, addressSource.ToString().c_str(), txPrev.GetHash().ToString().c_str()), REJECT_INVALID, "bad-txns-banned");
+                    }
+                }
+            }
+        }
+    }
+
+
 
 #if 0
     // Enforce block.nVersion=2 rule that the coinbase starts with serialized block height
@@ -3811,6 +3858,7 @@ bool AcceptBlockHeader(const CBlock& block, CValidationState& state, CBlockIndex
                     return true;
                 }
             }
+
             return state.DoS(100, error("%s : prev block height=%d hash=%s is invalid, unable to add block %s", __func__, pindexPrev->nHeight, block.hashPrevBlock.GetHex(), block.GetHash().GetHex()),
                              REJECT_INVALID, "bad-prevblk");
         }

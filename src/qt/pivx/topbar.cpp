@@ -80,7 +80,7 @@ TopBar::TopBar(PIVXGUI* _mainWindow, QWidget *parent) :
     ui->pushButtonTor->setChecked(false);
 
     ui->pushButtonStack->setButtonClassStyle("cssClass", "btn-check-stack-inactive");
-    ui->pushButtonStack->setButtonText("Staking Disabled");
+    ui->pushButtonStack->setButtonText("Staking not active");
 
    //ui->pushButtonColdStaking->setButtonClassStyle("cssClass", "btn-check-cold-staking-inactive");
     //ui->pushButtonColdStaking->setButtonText("Cold Staking Disabled");
@@ -353,7 +353,8 @@ void TopBar::loadClientModel()
 }
 
 void TopBar::setStakingStatusActive(bool fActive)
-{
+{	
+	if (GetBoolArg("-staking", true) && (masternodeSync.IsSynced())) {
     if (ui->pushButtonStack->isChecked()) {
         ui->pushButtonStack->setButtonText(tr("Staking Enabled"));
         ui->pushButtonStack->setChecked(true);
@@ -363,6 +364,7 @@ void TopBar::setStakingStatusActive(bool fActive)
 		ui->pushButtonStack->setButtonText(tr("Staking Not Active"));
         ui->pushButtonStack->setChecked(true);
         ui->pushButtonStack->setButtonClassStyle("cssClass", "btn-check-stack" ,false);
+	}
 }
 void TopBar::updateStakingStatus()
 {

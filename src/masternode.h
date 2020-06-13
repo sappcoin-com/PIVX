@@ -20,10 +20,12 @@
 #define MASTERNODE_MIN_MNB_SECONDS (5 * 60)
 #define MASTERNODE_PING_SECONDS (5 * 60)
 #define MASTERNODE_EXPIRATION_SECONDS (120 * 60)
-#define MASTERNODE_REMOVAL_SECONDS (45 * 60)
+#define MASTERNODE_REMOVAL_SECONDS (330 * 60)
 #define MASTERNODE_CHECK_SECONDS 5
+extern bool ENFORCE_OPENCONNECTION;
+extern bool ENFORCE_ACTIVECONNECTION;
 
-#define MN_WINNER_MINIMUM_AGE 3600
+#define MN_WINNER_MINIMUM_AGE 20000
 
 
 class CMasternode;
@@ -123,7 +125,9 @@ public:
         MASTERNODE_WATCHDOG_EXPIRED,
         MASTERNODE_POSE_BAN,
         MASTERNODE_VIN_SPENT,
-        MASTERNODE_POS_ERROR
+        MASTERNODE_POS_ERROR,
+        MASTERNODE_UNREACHABLE,
+        MASTERNODE_PEER_ERROR
     };
 
     CTxIn vin;
@@ -148,6 +152,8 @@ public:
 
     int64_t nLastDsee;  // temporary, do not save. Remove after migration to v12
     int64_t nLastDseep; // temporary, do not save. Remove after migration to v12
+	
+	bool isPortOpen; // Accepting incoming connections
 
     CMasternode();
     CMasternode(const CMasternode& other);
@@ -177,6 +183,7 @@ public:
         swap(first.nLastDsq, second.nLastDsq);
         swap(first.nScanningErrorCount, second.nScanningErrorCount);
         swap(first.nLastScanningErrorBlockHeight, second.nLastScanningErrorBlockHeight);
+		swap(first.isPortOpen, second.isPortOpen);
     }
 
     CMasternode& operator=(CMasternode from)
@@ -218,6 +225,7 @@ public:
         READWRITE(nLastDsq);
         READWRITE(nScanningErrorCount);
         READWRITE(nLastScanningErrorBlockHeight);
+		READWRITE(isPortOpen);
     }
 
     int64_t SecondsSincePayment();
@@ -236,6 +244,11 @@ public:
     bool IsBroadcastedWithin(int seconds)
     {
         return (GetAdjustedTime() - sigTime) < seconds;
+    }
+	
+	void ChangePortStatus(bool status)
+    {
+        isPortOpen = status;
     }
 
     bool IsPingedWithin(int seconds, int64_t now = -1)

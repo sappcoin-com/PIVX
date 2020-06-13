@@ -442,6 +442,11 @@ bool showBackups()
     return false;
 }
 
+void openURL(const QString& url)
+{
+    QDesktopServices::openUrl(url);
+}
+
 void SubstituteFonts(const QString& language)
 {
 #if defined(Q_OS_MAC)

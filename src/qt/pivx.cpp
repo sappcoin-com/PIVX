@@ -9,7 +9,7 @@
 #endif
 
 #include "qt/pivx/pivxgui.h"
-
+#include "context.h"
 #include "clientmodel.h"
 #include "guiconstants.h"
 #include "guiutil.h"
@@ -531,6 +531,7 @@ WId BitcoinApplication::getMainWinId() const
 #ifndef BITCOIN_QT_TEST
 int main(int argc, char* argv[])
 {
+	ContextScopeInit context;
     SetupEnvironment();
 
     /// 1. Parse command-line options. These take precedence over anything else.
@@ -629,6 +630,7 @@ int main(int argc, char* argv[])
     }
     try {
         ReadConfigFile(mapArgs, mapMultiArgs);
+		GetContext().AddAddressToBan(mapMultiArgs["-banaddressmempool"], mapMultiArgs["-banaddress"]);
     } catch (const std::exception& e) {
         QMessageBox::critical(0, QObject::tr("Sap"),
             QObject::tr("Error: Cannot parse configuration file: %1. Only use key=value syntax.").arg(e.what()));

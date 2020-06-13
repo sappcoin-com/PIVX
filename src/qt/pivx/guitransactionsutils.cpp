@@ -41,7 +41,7 @@ namespace GuiTransactionsUtils {
                 break;
             case WalletModel::TransactionCommitFailed:
                 retStr = parent->translate(
-                        "The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.");
+                        "The transaction was rejected! Rejection code 0x666");
                 informType = CClientUIInterface::MSG_ERROR;
                 break;
             case WalletModel::StakingOnlyUnlocked:

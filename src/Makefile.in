@@ -408,6 +408,7 @@ libbitcoin_server_a_AR = $(AR) $(ARFLAGS)
 libbitcoin_server_a_LIBADD =
 am_libbitcoin_server_a_OBJECTS =  \
 	libbitcoin_server_a-addrman.$(OBJEXT) \
+	libbitcoin_server_a-banned.$(OBJEXT) \
 	libbitcoin_server_a-bloom.$(OBJEXT) \
 	libbitcoin_server_a-blocksignature.$(OBJEXT) \
 	libbitcoin_server_a-chain.$(OBJEXT) \
@@ -445,37 +446,38 @@ libbitcoin_server_a_OBJECTS = $(am_libbitcoin_server_a_OBJECTS)
 libbitcoin_util_a_AR = $(AR) $(ARFLAGS)
 libbitcoin_util_a_LIBADD =
 am__libbitcoin_util_a_SOURCES_DIST = allocators.cpp \
-	chainparamsbase.cpp clientversion.cpp compat/glibc_sanity.cpp \
-	compat/glibcxx_sanity.cpp compat/strnlen.cpp logging.cpp \
-	random.cpp rpc/protocol.cpp support/cleanse.cpp sync.cpp \
-	uint256.cpp util.cpp utilmoneystr.cpp util/threadnames.cpp \
-	utilstrencodings.cpp utiltime.cpp activemasternode.h addrman.h \
-	allocators.h amount.h base58.h bip38.h bloom.h \
-	blocksignature.h chain.h chainparams.h chainparamsbase.h \
-	chainparamsseeds.h checkpoints.h checkqueue.h clientversion.h \
-	coincontrol.h coins.h compat.h compat/byteswap.h \
-	compat/endian.h compat/sanity.h compressor.h \
-	consensus/consensus.h consensus/merkle.h \
-	consensus/validation.h consensus/tx_verify.h \
-	consensus/zerocoin_verify.h consensus/params.h \
-	primitives/block.h primitives/transaction.h core_io.h \
-	crypter.h pairresult.h addressbook.h denomination_functions.h \
-	obfuscation.h obfuscation-relay.h wallet/db.h hash.h httprpc.h \
-	httpserver.h init.h invalid.h invalid_outpoints.json.h \
-	invalid_serials.json.h kernel.h swifttx.h key.h key_io.h \
-	keystore.h leveldbwrapper.h limitedmap.h logging.h main.h \
-	masternode.h masternode-payments.h masternode-budget.h \
-	masternode-sync.h masternodeman.h masternodeconfig.h \
-	merkleblock.h messagesigner.h miner.h mruset.h netbase.h net.h \
-	noui.h pow.h protocol.h pubkey.h random.h reverselock.h \
-	reverse_iterate.h rpc/client.h rpc/protocol.h rpc/server.h \
-	scheduler.h script/interpreter.h script/keyorigin.h \
-	script/script.h script/sigcache.h script/sign.h \
-	script/standard.h script/script_error.h serialize.h spork.h \
-	sporkdb.h sporkid.h stakeinput.h streams.h support/cleanse.h \
-	sync.h threadsafety.h timedata.h tinyformat.h torcontrol.h \
-	txdb.h txmempool.h guiinterface.h guiinterfaceutil.h uint256.h \
-	undo.h util/memory.h util.h util/macros.h util/threadnames.h \
+	chainparamsbase.cpp clientversion.cpp context.cpp \
+	compat/glibc_sanity.cpp compat/glibcxx_sanity.cpp \
+	compat/strnlen.cpp logging.cpp random.cpp rpc/protocol.cpp \
+	support/cleanse.cpp sync.cpp uint256.cpp util.cpp \
+	utilmoneystr.cpp util/threadnames.cpp utilstrencodings.cpp \
+	utiltime.cpp activemasternode.h addrman.h allocators.h \
+	amount.h banned.h base58.h bip38.h bloom.h blocksignature.h \
+	chain.h chainparams.h chainparamsbase.h chainparamsseeds.h \
+	checkpoints.h checkqueue.h clientversion.h coincontrol.h \
+	coins.h compat.h compat/byteswap.h compat/endian.h \
+	compat/sanity.h compressor.h context.h consensus/consensus.h \
+	consensus/merkle.h consensus/validation.h \
+	consensus/tx_verify.h consensus/zerocoin_verify.h \
+	consensus/params.h primitives/block.h primitives/transaction.h \
+	core_io.h crypter.h pairresult.h addressbook.h \
+	denomination_functions.h obfuscation.h obfuscation-relay.h \
+	wallet/db.h hash.h httprpc.h httpserver.h init.h invalid.h \
+	invalid_outpoints.json.h invalid_serials.json.h kernel.h \
+	swifttx.h key.h key_io.h keystore.h leveldbwrapper.h \
+	limitedmap.h logging.h main.h masternode.h \
+	masternode-payments.h masternode-budget.h masternode-sync.h \
+	masternodeman.h masternodeconfig.h merkleblock.h \
+	messagesigner.h miner.h mruset.h netbase.h net.h noui.h pow.h \
+	protocol.h pubkey.h random.h reverselock.h reverse_iterate.h \
+	rpc/client.h rpc/protocol.h rpc/server.h scheduler.h \
+	script/interpreter.h script/keyorigin.h script/script.h \
+	script/sigcache.h script/sign.h script/standard.h \
+	script/script_error.h serialize.h spork.h sporkdb.h sporkid.h \
+	stakeinput.h streams.h support/cleanse.h sync.h threadsafety.h \
+	timedata.h tinyformat.h torcontrol.h txdb.h txmempool.h \
+	guiinterface.h guiinterfaceutil.h uint256.h undo.h \
+	util/memory.h util.h util/macros.h util/threadnames.h \
 	utilstrencodings.h utilmoneystr.h utiltime.h \
 	validationinterface.h version.h wallet/hdchain.h \
 	wallet/scriptpubkeyman.h wallet/wallet.h \
@@ -489,6 +491,7 @@ am__libbitcoin_util_a_SOURCES_DIST = allocators.cpp \
 am_libbitcoin_util_a_OBJECTS = libbitcoin_util_a-allocators.$(OBJEXT) \
 	libbitcoin_util_a-chainparamsbase.$(OBJEXT) \
 	libbitcoin_util_a-clientversion.$(OBJEXT) \
+	libbitcoin_util_a-context.$(OBJEXT) \
 	compat/libbitcoin_util_a-glibc_sanity.$(OBJEXT) \
 	compat/libbitcoin_util_a-glibcxx_sanity.$(OBJEXT) \
 	compat/libbitcoin_util_a-strnlen.$(OBJEXT) \
@@ -2161,6 +2164,7 @@ BITCOIN_CORE_H = \
   addrman.h \
   allocators.h \
   amount.h \
+  banned.h \
   base58.h \
   bip38.h \
   bloom.h \
@@ -2179,6 +2183,7 @@ BITCOIN_CORE_H = \
   compat/endian.h \
   compat/sanity.h \
   compressor.h \
+  context.h \
   consensus/consensus.h \
   consensus/merkle.h \
   consensus/validation.h \
@@ -2292,6 +2297,7 @@ libbitcoin_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CP
 libbitcoin_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_server_a_SOURCES = \
   addrman.cpp \
+  banned.cpp \
   bloom.cpp \
   blocksignature.cpp \
   chain.cpp \
@@ -2464,7 +2470,7 @@ libbitcoin_common_a_SOURCES = \
 libbitcoin_util_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_util_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_util_a_SOURCES = allocators.cpp chainparamsbase.cpp \
-	clientversion.cpp compat/glibc_sanity.cpp \
+	clientversion.cpp context.cpp compat/glibc_sanity.cpp \
 	compat/glibcxx_sanity.cpp compat/strnlen.cpp logging.cpp \
 	random.cpp rpc/protocol.cpp support/cleanse.cpp sync.cpp \
 	uint256.cpp util.cpp utilmoneystr.cpp util/threadnames.cpp \
@@ -4806,6 +4812,7 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libbitcoin_common_a-spork.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libbitcoin_common_a-sporkdb.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libbitcoin_server_a-addrman.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libbitcoin_server_a-banned.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libbitcoin_server_a-blocksignature.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libbitcoin_server_a-bloom.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libbitcoin_server_a-chain.Po@am__quote@
@@ -4831,6 +4838,7 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libbitcoin_util_a-allocators.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libbitcoin_util_a-chainparamsbase.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libbitcoin_util_a-clientversion.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libbitcoin_util_a-context.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libbitcoin_util_a-logging.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libbitcoin_util_a-random.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libbitcoin_util_a-sync.Po@am__quote@
@@ -6905,6 +6913,20 @@ libbitcoin_server_a-addrman.obj: addrman.cpp
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
 @am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libbitcoin_server_a_CPPFLAGS) $(CPPFLAGS) $(libbitcoin_server_a_CXXFLAGS) $(CXXFLAGS) -c -o libbitcoin_server_a-addrman.obj `if test -f 'addrman.cpp'; then $(CYGPATH_W) 'addrman.cpp'; else $(CYGPATH_W) '$(srcdir)/addrman.cpp'; fi`
 
+libbitcoin_server_a-banned.o: banned.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libbitcoin_server_a_CPPFLAGS) $(CPPFLAGS) $(libbitcoin_server_a_CXXFLAGS) $(CXXFLAGS) -MT libbitcoin_server_a-banned.o -MD -MP -MF $(DEPDIR)/libbitcoin_server_a-banned.Tpo -c -o libbitcoin_server_a-banned.o `test -f 'banned.cpp' || echo '$(srcdir)/'`banned.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/libbitcoin_server_a-banned.Tpo $(DEPDIR)/libbitcoin_server_a-banned.Po
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='banned.cpp' object='libbitcoin_server_a-banned.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libbitcoin_server_a_CPPFLAGS) $(CPPFLAGS) $(libbitcoin_server_a_CXXFLAGS) $(CXXFLAGS) -c -o libbitcoin_server_a-banned.o `test -f 'banned.cpp' || echo '$(srcdir)/'`banned.cpp
+
+libbitcoin_server_a-banned.obj: banned.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libbitcoin_server_a_CPPFLAGS) $(CPPFLAGS) $(libbitcoin_server_a_CXXFLAGS) $(CXXFLAGS) -MT libbitcoin_server_a-banned.obj -MD -MP -MF $(DEPDIR)/libbitcoin_server_a-banned.Tpo -c -o libbitcoin_server_a-banned.obj `if test -f 'banned.cpp'; then $(CYGPATH_W) 'banned.cpp'; else $(CYGPATH_W) '$(srcdir)/banned.cpp'; fi`
+@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/libbitcoin_server_a-banned.Tpo $(DEPDIR)/libbitcoin_server_a-banned.Po
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='banned.cpp' object='libbitcoin_server_a-banned.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libbitcoin_server_a_CPPFLAGS) $(CPPFLAGS) $(libbitcoin_server_a_CXXFLAGS) $(CXXFLAGS) -c -o libbitcoin_server_a-banned.obj `if test -f 'banned.cpp'; then $(CYGPATH_W) 'banned.cpp'; else $(CYGPATH_W) '$(srcdir)/banned.cpp'; fi`
+
 libbitcoin_server_a-bloom.o: bloom.cpp
 @am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libbitcoin_server_a_CPPFLAGS) $(CPPFLAGS) $(libbitcoin_server_a_CXXFLAGS) $(CXXFLAGS) -MT libbitcoin_server_a-bloom.o -MD -MP -MF $(DEPDIR)/libbitcoin_server_a-bloom.Tpo -c -o libbitcoin_server_a-bloom.o `test -f 'bloom.cpp' || echo '$(srcdir)/'`bloom.cpp
 @am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/libbitcoin_server_a-bloom.Tpo $(DEPDIR)/libbitcoin_server_a-bloom.Po
@@ -7408,6 +7430,20 @@ libbitcoin_util_a-clientversion.obj: clientversion.cpp
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='clientversion.cpp' object='libbitcoin_util_a-clientversion.obj' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
 @am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libbitcoin_util_a_CPPFLAGS) $(CPPFLAGS) $(libbitcoin_util_a_CXXFLAGS) $(CXXFLAGS) -c -o libbitcoin_util_a-clientversion.obj `if test -f 'clientversion.cpp'; then $(CYGPATH_W) 'clientversion.cpp'; else $(CYGPATH_W) '$(srcdir)/clientversion.cpp'; fi`
+
+libbitcoin_util_a-context.o: context.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libbitcoin_util_a_CPPFLAGS) $(CPPFLAGS) $(libbitcoin_util_a_CXXFLAGS) $(CXXFLAGS) -MT libbitcoin_util_a-context.o -MD -MP -MF $(DEPDIR)/libbitcoin_util_a-context.Tpo -c -o libbitcoin_util_a-context.o `test -f 'context.cpp' || echo '$(srcdir)/'`context.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/libbitcoin_util_a-context.Tpo $(DEPDIR)/libbitcoin_util_a-context.Po
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='context.cpp' object='libbitcoin_util_a-context.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libbitcoin_util_a_CPPFLAGS) $(CPPFLAGS) $(libbitcoin_util_a_CXXFLAGS) $(CXXFLAGS) -c -o libbitcoin_util_a-context.o `test -f 'context.cpp' || echo '$(srcdir)/'`context.cpp
+
+libbitcoin_util_a-context.obj: context.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libbitcoin_util_a_CPPFLAGS) $(CPPFLAGS) $(libbitcoin_util_a_CXXFLAGS) $(CXXFLAGS) -MT libbitcoin_util_a-context.obj -MD -MP -MF $(DEPDIR)/libbitcoin_util_a-context.Tpo -c -o libbitcoin_util_a-context.obj `if test -f 'context.cpp'; then $(CYGPATH_W) 'context.cpp'; else $(CYGPATH_W) '$(srcdir)/context.cpp'; fi`
+@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/libbitcoin_util_a-context.Tpo $(DEPDIR)/libbitcoin_util_a-context.Po
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='context.cpp' object='libbitcoin_util_a-context.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libbitcoin_util_a_CPPFLAGS) $(CPPFLAGS) $(libbitcoin_util_a_CXXFLAGS) $(CXXFLAGS) -c -o libbitcoin_util_a-context.obj `if test -f 'context.cpp'; then $(CYGPATH_W) 'context.cpp'; else $(CYGPATH_W) '$(srcdir)/context.cpp'; fi`
 
 compat/libbitcoin_util_a-glibc_sanity.o: compat/glibc_sanity.cpp
 @am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libbitcoin_util_a_CPPFLAGS) $(CPPFLAGS) $(libbitcoin_util_a_CXXFLAGS) $(CXXFLAGS) -MT compat/libbitcoin_util_a-glibc_sanity.o -MD -MP -MF compat/$(DEPDIR)/libbitcoin_util_a-glibc_sanity.Tpo -c -o compat/libbitcoin_util_a-glibc_sanity.o `test -f 'compat/glibc_sanity.cpp' || echo '$(srcdir)/'`compat/glibc_sanity.cpp

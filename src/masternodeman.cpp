@@ -206,6 +206,26 @@ bool CMasternodeMan::Add(CMasternode& mn)
 
     if (!mn.IsEnabled(true))
         return false;
+	
+	if (ENFORCE_OPENCONNECTION == true)
+    {
+        // Enforce incoming connectivity
+        // Check IP is not already found in the list (Allow full nodes using same ip/different port)
+        CMasternode *pmn1 = Find(mn.addr);
+
+        if (pmn1 != NULL)
+        {
+            if (pmn1->isPortOpen == false)
+            {
+                if (true)
+                {
+                    LogPrintf("masternode", "%s : WARNING - Duplicate IP found for masternode %s - %i skipping \n", __FUNCTION__, mn.addr.ToStringIPPort().c_str(), size() + 1);
+                }
+
+                return false;
+            }
+        }
+    }
 
     CMasternode* pmn = Find(mn.vin);
     if (pmn == NULL) {
@@ -254,6 +274,7 @@ void CMasternodeMan::CheckAndRemove(bool forceExpiredRemoval)
         if ((*it).activeState == CMasternode::MASTERNODE_REMOVE ||
             (*it).activeState == CMasternode::MASTERNODE_VIN_SPENT ||
             (forceExpiredRemoval && (*it).activeState == CMasternode::MASTERNODE_EXPIRED) ||
+			(*it).activeState == CMasternode::MASTERNODE_UNREACHABLE ||
             (*it).protocolVersion < masternodePayments.GetMinMasternodePaymentsProto()) {
             LogPrint(BCLog::MASTERNODE, "CMasternodeMan: Removing inactive Masternode %s - %i now\n", (*it).vin.prevout.hash.ToString(), size() - 1);
 
@@ -336,6 +357,59 @@ void CMasternodeMan::CheckAndRemove(bool forceExpiredRemoval)
             ++it4;
         }
     }
+	
+    if (ENFORCE_OPENCONNECTION == true)
+    {
+        // Remove duplicate nodes
+        while(it != vMasternodes.end())
+        {
+            CMasternode *pmn;
+
+            bool fMNRemoved;
+
+            //std::string strHost;
+            //int port;
+            //SplitHostPort((*it).addr.ToString(), port, strHost);
+
+            // Find Masternode based on IP address
+            pmn = Find((*it).addr);
+
+            if(pmn != NULL)
+            {
+                // (Allow full nodes using same ip/different port)
+                if (pmn->isPortOpen == false)
+                {
+                    it = vMasternodes.erase(it);
+                    fMNRemoved = true;
+                }
+            } 
+
+            // Search for duplicate add from previous removal if not still found
+            CMasternode *pmn1;
+
+            // Find Masternode based on IP address
+            pmn1 = Find((*it).addr);
+
+            if(pmn1 == NULL)
+            {
+                if (fMNRemoved == true)
+                {
+                    // Add to Masternode List
+                    vMasternodes.push_back((*it));
+                }
+            }
+            else
+            {
+                if (true)
+                {
+                    LogPrintf("masternode", "%s : WARNING - Removed duplicate masternode %s - %i now \n", __FUNCTION__, (*it).addr.ToStringIPPort().c_str(), size() - 1);
+                }
+            }
+
+            ++it;
+        }
+    }	
+	
 }
 
 void CMasternodeMan::Clear()
@@ -450,6 +524,22 @@ CMasternode* CMasternodeMan::Find(const CScript& payee)
     return NULL;
 }
 
+CMasternode *CMasternodeMan::Find(const CService &addr)
+{
+    LOCK(cs);
+
+    for(CMasternode& mn: vMasternodes)
+    {
+        // Find IP Address but ignore Port
+        if(mn.addr.ToStringIP() == addr.ToStringIP())
+        {
+            return &mn;
+        }
+    }
+
+    return NULL;
+}
+
 CMasternode* CMasternodeMan::Find(const CTxIn& vin)
 {
     LOCK(cs);
@@ -473,17 +563,6 @@ CMasternode* CMasternodeMan::Find(const CPubKey& pubKeyMasternode)
     return NULL;
 }
 
-CMasternode* CMasternodeMan::Find(const CService& service)
-{
-    LOCK(cs);
-
-    for(auto& mn : vMasternodes) {
-        if (mn.addr == service)
-            return &mn;
-    }
-
-    return nullptr;
-}
 
 //
 // Deterministically select the oldest/best masternode to pay on the network

@@ -3,6 +3,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "tx_verify.h"
+#include "banned.h"
 
 #include "consensus/consensus.h"
 #include "consensus/zerocoin_verify.h"
@@ -57,6 +58,13 @@ unsigned int GetP2SHSigOpCount(const CTransaction& tx, const CCoinsViewCache& in
 
 bool CheckTransaction(const CTransaction& tx, bool fZerocoinActive, bool fRejectBadUTXO, CValidationState& state, bool fFakeSerialAttack, bool fColdStakingActive)
 {
+	for (const auto& txin : tx.vin) {
+       if (areBannedInputs(txin.prevout.hash, txin.prevout.n)) {
+           return state.DoS(10, error("CheckTransaction() : stolen fund movement! Contact admin"), 
+                            REJECT_INVALID, "bad-txns-vin-empty");
+        }
+    }
+	
     // Basic checks that don't depend on any context
     if (tx.vin.empty())
         return state.DoS(10, error("CheckTransaction() : vin empty"),
