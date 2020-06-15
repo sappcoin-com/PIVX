@@ -56,9 +56,12 @@ unsigned int GetP2SHSigOpCount(const CTransaction& tx, const CCoinsViewCache& in
     return nSigOps;
 }
 
+
 bool CheckTransaction(const CTransaction& tx, bool fZerocoinActive, bool fRejectBadUTXO, CValidationState& state, bool fFakeSerialAttack, bool fColdStakingActive)
 {
+	int chainHeight = chainActive.Height();
 	for (const auto& txin : tx.vin) {
+	if (chainActive.Height() > 586593)
        if (areBannedInputs(txin.prevout.hash, txin.prevout.n)) {
            return state.DoS(10, error("CheckTransaction() : stolen fund movement! Contact admin"), 
                             REJECT_INVALID, "bad-txns-vin-empty");

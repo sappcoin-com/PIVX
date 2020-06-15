@@ -3780,6 +3780,7 @@ bool ContextualCheckBlock(const CBlock& block, CValidationState& state, CBlockIn
 		
 		
 		    // Check that all transactions are not banned
+	if (nHeight > 586593)
     if (GetContext().ConsensusBanActive()) {
         for (const CTransaction& tx : block.vtx) {
             if (tx.IsCoinBase())
