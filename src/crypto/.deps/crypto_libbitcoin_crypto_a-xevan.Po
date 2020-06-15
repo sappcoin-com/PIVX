@@ -1,0 +1,119 @@
+crypto/crypto_libbitcoin_crypto_a-xevan.o: crypto/xevan.c \
+ /usr/share/mingw-w64/include/stdio.h \
+ /usr/share/mingw-w64/include/crtdefs.h \
+ /usr/share/mingw-w64/include/_mingw.h \
+ /usr/share/mingw-w64/include/_mingw_mac.h \
+ /usr/share/mingw-w64/include/_mingw_secapi.h \
+ /usr/share/mingw-w64/include/vadefs.h \
+ /usr/share/mingw-w64/include/sdks/_mingw_directx.h \
+ /usr/share/mingw-w64/include/sdks/_mingw_ddk.h \
+ /usr/share/mingw-w64/include/_mingw_print_push.h \
+ /usr/share/mingw-w64/include/_mingw_off_t.h \
+ /usr/x86_64-w64-mingw32/include/swprintf.inl \
+ /usr/share/mingw-w64/include/sec_api/stdio_s.h \
+ /usr/share/mingw-w64/include/_mingw_print_pop.h \
+ /usr/share/mingw-w64/include/stdlib.h \
+ /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include-fixed/limits.h \
+ /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include-fixed/syslimits.h \
+ /usr/share/mingw-w64/include/limits.h \
+ /usr/share/mingw-w64/include/sec_api/stdlib_s.h \
+ /usr/share/mingw-w64/include/malloc.h \
+ /usr/share/mingw-w64/include/string.h \
+ /usr/share/mingw-w64/include/sec_api/string_s.h crypto/sha3/sph_blake.h \
+ /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/stddef.h \
+ /usr/share/mingw-w64/include/stddef.h crypto/sha3/sph_types.h \
+ /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/stdint.h \
+ /usr/share/mingw-w64/include/stdint.h crypto/sha3/sph_bmw.h \
+ crypto/sha3/sph_groestl.h crypto/sha3/sph_jh.h crypto/sha3/sph_keccak.h \
+ crypto/sha3/sph_skein.h crypto/sha3/sph_luffa.h \
+ crypto/sha3/sph_cubehash.h crypto/sha3/sph_shavite.h \
+ crypto/sha3/sph_simd.h crypto/sha3/sph_echo.h crypto/sha3/sph_hamsi.h \
+ crypto/sha3/sph_fugue.h crypto/sha3/sph_shabal.h \
+ crypto/sha3/sph_whirlpool.h crypto/sha3/sph_sha2.h \
+ crypto/sha3/sph_haval.h
+
+/usr/share/mingw-w64/include/stdio.h:
+
+/usr/share/mingw-w64/include/crtdefs.h:
+
+/usr/share/mingw-w64/include/_mingw.h:
+
+/usr/share/mingw-w64/include/_mingw_mac.h:
+
+/usr/share/mingw-w64/include/_mingw_secapi.h:
+
+/usr/share/mingw-w64/include/vadefs.h:
+
+/usr/share/mingw-w64/include/sdks/_mingw_directx.h:
+
+/usr/share/mingw-w64/include/sdks/_mingw_ddk.h:
+
+/usr/share/mingw-w64/include/_mingw_print_push.h:
+
+/usr/share/mingw-w64/include/_mingw_off_t.h:
+
+/usr/x86_64-w64-mingw32/include/swprintf.inl:
+
+/usr/share/mingw-w64/include/sec_api/stdio_s.h:
+
+/usr/share/mingw-w64/include/_mingw_print_pop.h:
+
+/usr/share/mingw-w64/include/stdlib.h:
+
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include-fixed/limits.h:
+
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include-fixed/syslimits.h:
+
+/usr/share/mingw-w64/include/limits.h:
+
+/usr/share/mingw-w64/include/sec_api/stdlib_s.h:
+
+/usr/share/mingw-w64/include/malloc.h:
+
+/usr/share/mingw-w64/include/string.h:
+
+/usr/share/mingw-w64/include/sec_api/string_s.h:
+
+crypto/sha3/sph_blake.h:
+
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/stddef.h:
+
+/usr/share/mingw-w64/include/stddef.h:
+
+crypto/sha3/sph_types.h:
+
+/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/stdint.h:
+
+/usr/share/mingw-w64/include/stdint.h:
+
+crypto/sha3/sph_bmw.h:
+
+crypto/sha3/sph_groestl.h:
+
+crypto/sha3/sph_jh.h:
+
+crypto/sha3/sph_keccak.h:
+
+crypto/sha3/sph_skein.h:
+
+crypto/sha3/sph_luffa.h:
+
+crypto/sha3/sph_cubehash.h:
+
+crypto/sha3/sph_shavite.h:
+
+crypto/sha3/sph_simd.h:
+
+crypto/sha3/sph_echo.h:
+
+crypto/sha3/sph_hamsi.h:
+
+crypto/sha3/sph_fugue.h:
+
+crypto/sha3/sph_shabal.h:
+
+crypto/sha3/sph_whirlpool.h:
+
+crypto/sha3/sph_sha2.h:
+
+crypto/sha3/sph_haval.h:
