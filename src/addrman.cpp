@@ -160,12 +160,7 @@ void CAddrMan::MakeTried(CAddrInfo& info, int nId)
     }
     nNew--;
 
-        if(info.nRefCount != 0)
-    {
-        LogPrintf("AddrMan nRefCount != 0 on ID: %d", nId);
-
-        return;
-    }
+    assert(info.nRefCount == 0);
 
     // which tried bucket to move the entry to
     int nKBucket = info.GetTriedBucket(nKey);

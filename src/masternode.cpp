@@ -282,7 +282,7 @@ void CMasternode::Check(bool forceCheck)
 
     }
 
-    addrman.Add(CAddress(addr), addr, 2*60*60);
+    //addrman.Add(CAddress(addr), addr, 2*60*60);
 
     // OK
     isPortOpen = true;
