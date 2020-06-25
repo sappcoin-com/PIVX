@@ -661,12 +661,12 @@ void DashboardWidget::onChartRefreshed()
 		} else {
 		setCssProperty(ui->labelAmountPiv, "text-stake-piv-disable");
 		setCssProperty(ui->labelAmountMNRewards, "text-stake-mnrewards-disable");
-		
+
     }
     forceUpdateStyle({ui->labelAmountPiv});
 	forceUpdateStyle({ui->labelAmountPiv, ui->labelAmountMNRewards});
     ui->labelAmountPiv->setText(GUIUtil::formatBalance(chartData->totalPiv, nDisplayUnit));
-	ui->labelAmountMNRewards->setText(QString::number(chartData->totalMNRewards / COIN) +" SAPP MN");
+	ui->labelAmountMNRewards->setText(GUIUtil::formatBalance(chartData->totalMNRewards, nDisplayUnit) +" MN");
 
     series->append(set0);
 	if(hasMNRewards)
