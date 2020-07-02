@@ -160,7 +160,7 @@ void CAddrMan::MakeTried(CAddrInfo& info, int nId)
     }
     nNew--;
 
-    assert(info.nRefCount == 0);
+    //assert(info.nRefCount == 0);
 
     // which tried bucket to move the entry to
     int nKBucket = info.GetTriedBucket(nKey);
