@@ -12,7 +12,7 @@
    viewBox="0 0 24 40"
    version="1.1"
    id="svg14"
-   sodipodi:docname="ic-nav-dashboard-active.svg"
+   sodipodi:docname="ic-nav-dashboard-hover.svg"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
   <metadata
      id="metadata20">
@@ -59,7 +59,7 @@
        inkscape:connector-curvature="0"
        style="fill:none" />
     <path
-       style="fill:#66ffff;fill-opacity:0"
+       style="fill:#6666ff;fill-opacity:1"
        id="path4"
        d="m 10,20 v -6 h 4 v 6 h 5 v -8 h 3 L 12,3 2,12 h 3 v 8 z"
        inkscape:connector-curvature="0" />

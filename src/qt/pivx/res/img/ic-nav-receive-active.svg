@@ -12,7 +12,7 @@
    width="24"
    version="1.1"
    id="svg6"
-   sodipodi:docname="ic-nav-receive-active.svg"
+   sodipodi:docname="ic-nav-receive-hover.svg"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
   <metadata
      id="metadata12">
@@ -52,5 +52,5 @@
   <path
      d="M19 12v7H5v-7H3v7c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zm-6 .67l2.59-2.58L17 11.5l-5 5-5-5 1.41-1.41L11 12.67V3h2z"
      id="path4"
-     style="fill:#ffffff" />
+     style="fill:#6666ff;fill-opacity:1" />
 </svg>

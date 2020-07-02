@@ -12,7 +12,7 @@
    viewBox="0 0 24 40"
    version="1.1"
    id="svg13"
-   sodipodi:docname="ic-nav-send-active.svg"
+   sodipodi:docname="ic-nav-send-hover.svg"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
   <metadata
      id="metadata19">
@@ -43,8 +43,8 @@
      showgrid="false"
      inkscape:zoom="12.4471"
      inkscape:cx="20.391373"
-     inkscape:cy="15.03015"
-     inkscape:current-layer="svg13" />
+     inkscape:cy="5.3893501"
+     inkscape:current-layer="g1006" />
   <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
   <title
      id="title2">Send Off Copy</title>
@@ -65,7 +65,7 @@
        inkscape:connector-curvature="0"
        style="fill:none" />
     <path
-       style="fill:#ffffff"
+       style="fill:#6666ff;fill-opacity:1"
        id="path4"
        d="M 2.01,21 23,12 2.01,3 2,10 17,12 2,14 Z"
        inkscape:connector-curvature="0" />

@@ -48,8 +48,8 @@
       					name="frame">
 					<property name="minimumSize">
 						<size>
-							<width>750</width>
-							<height>520</height>
+							<width>768</width>
+							<height>431</height>
 						</size>
 					</property>
 					<property name="styleSheet">
