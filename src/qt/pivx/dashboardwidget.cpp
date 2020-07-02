@@ -357,8 +357,10 @@ void DashboardWidget::setChartShow(ChartShowType type)
     this->chartShow = type;
     if (chartShow == MONTH) {
         ui->containerChartArrow->setVisible(true);
+        ui->containerChartArrow2->setVisible(true);
     } else {
         ui->containerChartArrow->setVisible(false);
+        ui->containerChartArrow2->setVisible(false);
     }
     if (isChartInitialized) refreshChart();
 }
