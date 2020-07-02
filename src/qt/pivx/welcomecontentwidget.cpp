@@ -93,13 +93,13 @@ WelcomeContentWidget::WelcomeContentWidget(QWidget *parent) :
     ui->pushName4->setProperty("cssClass", "btn-welcome-name-check");
     ui->pushName4->setEnabled(false);
 
-    ui->stackedWidget->setCurrentIndex(0);
+    ui->stackedWidget->setCurrentIndex(1);
 
     // Frame 1
     ui->page_1->setProperty("cssClass", "container-welcome-step1");
     ui->labelTitle1->setProperty("cssClass", "text-title-welcome");
-    ui->comboBoxLanguage->setProperty("cssClass", "btn-combo-welcome");
-    ui->comboBoxLanguage->setView(new QListView());
+    //ui->comboBoxLanguage->setProperty("cssClass", "btn-combo-welcome");
+    //ui->comboBoxLanguage->setView(new QListView());
 
     // Frame 2
     ui->page_2->setProperty("cssClass", "container-welcome-step2");
@@ -175,18 +175,18 @@ WelcomeContentWidget::WelcomeContentWidget(QWidget *parent) :
 void WelcomeContentWidget::initLanguages(){
     /* Language selector */
     QDir translations(":translations");
-    ui->comboBoxLanguage->addItem(QString("(") + tr("default") + QString(")"), QVariant(""));
+    //ui->comboBoxLanguage->addItem(QString("(") + tr("default") + QString(")"), QVariant(""));
     Q_FOREACH (const QString& langStr, translations.entryList()) {
         QLocale locale(langStr);
 
         /** check if the locale name consists of 2 parts (language_country) */
         if(langStr.contains("_")){
             /** display language strings as "native language - native country (locale name)", e.g. "Deutsch - Deutschland (de)" */
-            ui->comboBoxLanguage->addItem(locale.nativeLanguageName() + QString(" - ") + locale.nativeCountryName() + QString(" (") + langStr + QString(")"), QVariant(langStr));
+            //ui->comboBoxLanguage->addItem(locale.nativeLanguageName() + QString(" - ") + locale.nativeCountryName() + QString(" (") + langStr + QString(")"), QVariant(langStr));
         }
         else{
             /** display language strings as "native language (locale name)", e.g. "Deutsch (de)" */
-            ui->comboBoxLanguage->addItem(locale.nativeLanguageName() + QString(" (") + langStr + QString(")"), QVariant(langStr));
+            //ui->comboBoxLanguage->addItem(locale.nativeLanguageName() + QString(" (") + langStr + QString(")"), QVariant(langStr));
         }
     }
 }
@@ -195,20 +195,20 @@ void WelcomeContentWidget::setModel(OptionsModel *model){
     this->model = model;
 }
 
-void WelcomeContentWidget::checkLanguage(){
+/*void WelcomeContentWidget::checkLanguage(){
     QString sel = ui->comboBoxLanguage->currentData().toString();
     QSettings settings;
     if (settings.value("language") != sel){
         settings.setValue("language", sel);
         Q_EMIT onLanguageSelected();
     }
-}
+}*/
 
 void WelcomeContentWidget::onNextClicked(){
 
     switch(pos){
         case 0:{
-            ui->stackedWidget->setCurrentIndex(1);
+            ui->stackedWidget->setCurrentIndex(2);
             break;
         }
         case 1:{
@@ -285,6 +285,7 @@ void WelcomeContentWidget::onBackClicked(){
             ui->pushName2->setChecked(true);
             ui->pushName1->setChecked(true);
             icConfirm2->setVisible(false);
+            backButton->setVisible(false);
             break;
         }
         case 3:{
