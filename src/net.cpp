@@ -1741,12 +1741,6 @@ void static Discover(boost::thread_group& threadGroup)
 #endif
 }
 
-static void ThreadCheckForUpdates(CContext& context)
-{
-    boost::this_thread::interruption_point();
-    context.SetUpdateAvailable(IsUpdateAvailable());
-}
-
 
 void StartNode(boost::thread_group& threadGroup, CScheduler& scheduler)
 {
