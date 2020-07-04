@@ -657,7 +657,10 @@ bool CMasternodeBroadcast::CheckInputsAndAdd(int& nDoS)
         }
     }
 
-    LogPrintf("mnb - Accepted Masternode entry\n");
+	if (GetBoolArg("-debug", false))
+	{
+	    LogPrintf("mnb - Accepted Masternode entry\n");
+	}
 
     if (GetInputAge(vin) < MASTERNODE_MIN_CONFIRMATIONS) {
         LogPrint(BCLog::MASTERNODE, "mnb - Input must have at least %d confirmations\n", MASTERNODE_MIN_CONFIRMATIONS);
@@ -683,7 +686,11 @@ bool CMasternodeBroadcast::CheckInputsAndAdd(int& nDoS)
         }
     }
 
-    LogPrint(BCLog::MASTERNODE, "mnb - Got NEW Masternode entry - %s - %lli \n", vin.prevout.hash.ToString(), sigTime);
+	if (GetBoolArg("-debug", false))
+	{
+	    LogPrint(BCLog::MASTERNODE, "mnb - Got NEW Masternode entry - %s - %lli \n", vin.prevout.hash.ToString(), sigTime);
+	}
+
     CMasternode mn(*this);
     mnodeman.Add(mn);
 	
