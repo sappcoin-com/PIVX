@@ -657,7 +657,10 @@ bool CMasternodeBroadcast::CheckInputsAndAdd(int& nDoS)
         }
     }
 
-    LogPrintf("mnb - Accepted Masternode entry\n");
+	if (GetBoolArg("-debug", false))
+	{
+	    LogPrintf("mnb - Accepted Masternode entry\n");
+	}
 
     if (GetInputAge(vin) < MASTERNODE_MIN_CONFIRMATIONS) {
         LogPrint(BCLog::MASTERNODE, "mnb - Input must have at least %d confirmations\n", MASTERNODE_MIN_CONFIRMATIONS);
@@ -683,7 +686,11 @@ bool CMasternodeBroadcast::CheckInputsAndAdd(int& nDoS)
         }
     }
 
-    LogPrint(BCLog::MASTERNODE, "mnb - Got NEW Masternode entry - %s - %lli \n", vin.prevout.hash.ToString(), sigTime);
+	if (GetBoolArg("-debug", false))
+	{
+	    LogPrint(BCLog::MASTERNODE, "mnb - Got NEW Masternode entry - %s - %lli \n", vin.prevout.hash.ToString(), sigTime);
+	}
+
     CMasternode mn(*this);
     mnodeman.Add(mn);
 	
@@ -812,13 +819,15 @@ bool CMasternodePing::VerifySignature(CPubKey& pubKeyMasternode, int &nDos)
 
 bool CMasternodePing::CheckAndUpdate(int& nDos, bool fRequireEnabled, bool fCheckSigTimeOnly, bool fSkipCheckPingTimeAndRelay)
 {
-    if (sigTime > GetAdjustedTime() + 60 * 60) {
+    if (sigTime > GetAdjustedTime() + 60 * 60)
+	{
         LogPrint(BCLog::MASTERNODE, "CMasternodePing::CheckAndUpdate - Signature rejected, too far into the future %s\n", vin.prevout.hash.ToString());
         nDos = 1;
         return false;
     }
 
-    if (sigTime <= GetAdjustedTime() - 60 * 60) {
+    if (sigTime <= GetAdjustedTime() - 60 * 60)
+	{
         LogPrint(BCLog::MASTERNODE, "CMasternodePing::CheckAndUpdate - Signature rejected, too far into the past %s - %d %d \n", vin.prevout.hash.ToString(), sigTime, GetAdjustedTime());
         nDos = 1;
         return false;
@@ -834,7 +843,10 @@ bool CMasternodePing::CheckAndUpdate(int& nDos, bool fRequireEnabled, bool fChec
     	return true;
     }
 
-    LogPrintf("CMasternodePing::CheckAndUpdate - New Ping - %s - %s - %lli\n", GetHash().ToString(), blockHash.ToString(), sigTime);
+	if (GetBoolArg("-debug", false))
+	{
+		LogPrintf("CMasternodePing::CheckAndUpdate - New Ping - %s - %s - %lli\n", GetHash().ToString(), blockHash.ToString(), sigTime);
+	}
 
 
     // see if we have this Masternode
@@ -855,12 +867,13 @@ bool CMasternodePing::CheckAndUpdate(int& nDos, bool fRequireEnabled, bool fChec
 		{
         	if (!VerifySignature(pmn->pubKeyMasternode, nDos))
 				{
-                LogPrintf("masternode","CMasternodePing::CheckAndUpdate - Masternode Signature invalid: %s\n", pmn->addr.ToString());
-                return false;
+					LogPrintf("masternode","CMasternodePing::CheckAndUpdate - Masternode Signature invalid: %s\n", pmn->addr.ToString());
+					return false;
 				}
 
             BlockMap::iterator mi = mapBlockIndex.find(blockHash);
-            if (mi == mapBlockIndex.end() || !(*mi).second) {
+            if (mi == mapBlockIndex.end() || !(*mi).second)
+			{
                 LogPrint(BCLog::MASTERNODE,"CMasternodePing::CheckAndUpdate - ping block not in disk. Masternode %s block hash %s\n", vin.prevout.hash.ToString(), blockHash.ToString());
                 return false;
             }
@@ -868,7 +881,8 @@ bool CMasternodePing::CheckAndUpdate(int& nDos, bool fRequireEnabled, bool fChec
             // Verify ping block hash in main chain and in the [ tip > x > tip - 24 ] range.
             {
                 LOCK(cs_main);
-                if (!chainActive.Contains((*mi).second) || (chainActive.Height() - (*mi).second->nHeight > 24)) {
+                if (!chainActive.Contains((*mi).second) || (chainActive.Height() - (*mi).second->nHeight > 24))
+				{
                     LogPrint(BCLog::MASTERNODE,"CMasternodePing::CheckAndUpdate - Masternode %s block hash %s is too old or has an invalid block hash\n", vin.prevout.hash.ToString(), blockHash.ToString());
                     // Do nothing here (no Masternode update, no mnping relay)
                     // Let this node to be visible but fail to accept mnping
@@ -894,7 +908,10 @@ bool CMasternodePing::CheckAndUpdate(int& nDos, bool fRequireEnabled, bool fChec
                 return false;
             }
 
-            LogPrintf("CMasternodePing::CheckAndUpdate - Masternode ping accepted, vin: %s\n", vin.prevout.hash.ToString());
+			if (GetBoolArg("-debug", false))
+			{
+	            LogPrintf("CMasternodePing::CheckAndUpdate - Masternode ping accepted, vin: %s\n", vin.prevout.hash.ToString());
+			}
 
             // do not relay extended hash check request
             if (!fSkipCheckPingTimeAndRelay)
