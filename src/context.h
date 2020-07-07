@@ -59,18 +59,6 @@ public:
     ~CContext();
 
     /**
-     * Return availability of the update on the server.
-     * @return true - available, false - not available
-     */
-    bool IsUpdateAvailable() const;
-
-    /**
-     * Set availability of the update on the server.
-     * @param available true - available, false - not available
-     */
-    void SetUpdateAvailable(bool available);
-	
-	    /**
      * Add ColossusXT address to the ban list.
      * @param mempool list of ColossusXT address for mempool ban
      * @param consensus list of ColossusXT address for consensus ban
@@ -106,7 +94,6 @@ private:
     CContext& operator=(const CContext&);
 
 private:
-    bool bUpdateAvailable_ = false;
 	std::set<std::string> banAddrMempool_;
     std::set<std::string> banAddrConsensus_;
 };

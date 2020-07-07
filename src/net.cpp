@@ -19,7 +19,6 @@
 #include "miner.h"
 #include "primitives/transaction.h"
 #include "scheduler.h"
-#include "curl.h"
 #include "context.h"
 
 #ifdef WIN32
@@ -1740,28 +1739,6 @@ void static Discover(boost::thread_group& threadGroup)
         freeifaddrs(myaddrs);
     }
 #endif
-}
-
-// return true if new update is available
-// return false if error or update is not available
-static bool IsUpdateAvailable()
-{
-/*    LogPrintf("%s: starting", __func__);
-
-    CUrl redirect;
-    std::__cxx11::string error;
-
-    std::__cxx11::string ver = strprintf("v%s", FormatVersion(CLIENT_VERSION));
-    LogPrintf("%s: redirect is %s, version is %s", __func__, redirect, ver);
-*/
-    // assume version mismatch means new update is available (downgrage possible)
-    //return; //redirect.find(ver) != string::npos;
-}
-
-static void ThreadCheckForUpdates(CContext& context)
-{
-    boost::this_thread::interruption_point();
-    context.SetUpdateAvailable(IsUpdateAvailable());
 }
 
 
