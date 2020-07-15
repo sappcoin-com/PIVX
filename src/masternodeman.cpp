@@ -814,19 +814,6 @@ void CMasternodeMan::ProcessMessage(CNode* pfrom, std::string& strCommand, CData
         CMasternodeBroadcast mnb;
         vRecv >> mnb;
 		
-/*		if (sporkManager.IsSporkActive(SPORK_22_BAN_DUPLICATE_MN_PER_IP)) {
-		auto pmn = mnodeman.Find(mnb.addr);
-        if (pmn && pmn->vin != mnb.vin) {
-            pmn->Check(true);
-            if (pmn->IsEnabled()) {
-                LogPrintf("Multiple vin on ip address, new mnb.addr=%s, existing pmn->addr=%s\n",
-                          mnb.addr.ToString(), pmn->addr.ToString());
-                Misbehaving(pfrom->GetId(), 100);
-                return;
-			    }
-            }
-        }
-*/
         if (mapSeenMasternodeBroadcast.count(mnb.GetHash())) { //seen
             masternodeSync.AddedMasternodeList(mnb.GetHash());
             return;
