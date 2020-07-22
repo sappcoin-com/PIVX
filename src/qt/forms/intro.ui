@@ -248,7 +248,7 @@
                   <property name="rightMargin">
                    <number>0</number>
                   </property>
-                  <item alignment="Qt::AlignTop">
+                  <item alignment="Qt::AlignTop"> 
                    <widget class="QLineEdit" name="dataDirectory">
                     <property name="sizePolicy">
                      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">

@@ -3212,16 +3212,16 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
  */
 
 *[cssClass="text-intro-white"] {
-    color:#FFFFFF;
+    color:#222222;
     font-size:16px;
 }
 
 QPushButton[cssClass="btn-dots-welcome"] {
-    border:  1px solid #175201;
-    background-color:#175201;
+    border:  1px solid #222222;
+    background-color:#AAAAAA;
     font-size:18px;
     padding:8px;
-    color: #FFFFFF;
+    color: #222222;
     border-radius: 2px;
 }
 
@@ -3245,52 +3245,52 @@ QPushButton[cssClass="btn-dots-welcome"]:pressed {
 }
 
 *[cssClass="edit-primary-welcome"] {
-    border:1px solid #175201;
+    border:1px solid #222222;
     border-right: 0px;
-    background-color:#123C00;
+    background-color:#FFFFFF;
     font-size:18px;
     border-radius: 2px;
     padding:8px;
-    color: #FFFFFF;
+    color: #222222;
 }
 
 *[cssClass="edit-primary-welcome"]:focus {
-    border: 1px solid #175201;
+    border: 1px solid #222222;
     border-right: 0px;
 }
 
 *[cssClass="edit-primary-welcome"]:focus:hover {
-    border: 1px solid #175201;
+    border: 1px solid #222222;
     border-right: 0px;
 }
 
 *[cssClass="edit-primary-welcome"]:hover {
-    border: 1px solid #175201;
+    border: 1px solid #222222;
     border-right: 0px;
 }
 
 *[cssClass="edit-primary-welcome-disabled"] {
-    border:1px solid #33ffffff;
+    border:1px solid #222222;
     border-right: 0px;
-    background-color:#123C00;
+    background-color:#AAAAAA;
     font-size:18px;
     border-radius: 2px;
     padding:8px;
-    color: #66FFFFFF;
+    color: #444444;
 }
 
 QRadioButton[cssClass="radio-welcome"]:checked {
-    color: #175201;
+    color: #000000;
     font-size:20px;
 }
 
 QRadioButton[cssClass="radio-welcome"]:unchecked {
-    color: #bababa;
+    color: #222222;
     font-size:20px;
 }
 
 QRadioButton[cssClass="radio-welcome"] {
-    color: #bababa;
+    color: #222222;
     font-size:20px;
     spacing:20px;
 }
