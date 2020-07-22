@@ -24,10 +24,10 @@ std::vector<CSporkDef> sporkDefs = {
     MAKE_SPORK_DEF(SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2,     4070908800ULL), // OFF
     MAKE_SPORK_DEF(SPORK_16_ZEROCOIN_MAINTENANCE_MODE,      0),
     MAKE_SPORK_DEF(SPORK_18_ZEROCOIN_PUBLICSPEND_V4,        4070908800ULL), // OFF
-	MAKE_SPORK_DEF(SPORK_20_UPGRADE_CYCLE_FACTOR,        4070908800ULL), // OFF
+	MAKE_SPORK_DEF(SPORK_20_UPGRADE_CYCLE_FACTOR,           4070908800ULL), // OFF
 	MAKE_SPORK_DEF(SPORK_21_COLDSTAKING_ENFORCEMENT,        4070908800ULL), // OFF
 	MAKE_SPORK_DEF(SPORK_22_BAN_DUPLICATE_MN_PER_IP,        4070908800ULL), // OFF
-	MAKE_SPORK_DEF(SPORK_24_ENFORCE_NEW_MN_CHECKS,        4070908800ULL), // OFF
+	MAKE_SPORK_DEF(SPORK_24_ENFORCE_NEW_MN_CHECKS,          4070908800ULL), // OFF
 	};
 
 CSporkManager sporkManager;
@@ -119,11 +119,14 @@ void CSporkManager::ProcessSpork(CNode* pfrom, std::string& strCommand, CDataStr
             LOCK(cs);
             if (mapSporksActive.count(spork.nSporkID)) {
                 // spork is active
-                if (mapSporksActive[spork.nSporkID].nTimeSigned >= spork.nTimeSigned) {
+                if (mapSporksActive[spork.nSporkID].nTimeSigned > spork.nTimeSigned) {
                     // spork in memory has been signed more recently
-                    LogPrintf("%s : spork %d (%s) in memory is more recent: %d >= %d\n", __func__,
+                    LogPrintf("%s : spork %d (%s) in memory is more recent: %d > %d\n", __func__,
                             spork.nSporkID, sporkName,
                             mapSporksActive[spork.nSporkID].nTimeSigned, spork.nTimeSigned);
+                    return;
+                } else if (mapSporksActive[spork.nSporkID].nTimeSigned == spork.nTimeSigned) { 
+                    // It is the same nothing to do
                     return;
                 } else {
                     // update active spork
@@ -139,10 +142,10 @@ void CSporkManager::ProcessSpork(CNode* pfrom, std::string& strCommand, CDataStr
 
         bool fValidSig = spork.CheckSignature();
 
-        //! dont ban on old sigs,
-        //! be the bigger man and ignore them
         if (!fValidSig) {
             LOCK(cs_main);
+            LogPrintf("%s : Invalid Signature\n", __func__);
+            Misbehaving(pfrom->GetId(), 100);
             return;
         }
 
@@ -169,16 +172,9 @@ void CSporkManager::ProcessSpork(CNode* pfrom, std::string& strCommand, CDataStr
 
 bool CSporkManager::UpdateSpork(SporkId nSporkID, int64_t nValue)
 {
-    bool fNewSigs = false;
-    {
-        LOCK(cs_main);
-        fNewSigs = false;
-    }
-
-
     CSporkMessage spork = CSporkMessage(nSporkID, nValue, GetTime());
 
-    if(spork.Sign(strMasterPrivKey, fNewSigs)){
+    if(spork.Sign(strMasterPrivKey, true)){
         spork.Relay();
         LOCK(cs);
         mapSporks[spork.GetHash()] = spork;
