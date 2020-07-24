@@ -79,6 +79,8 @@ QVariant MNModel::data(const QModelIndex &index, int role) const
                 return nodes.uniqueKeys().value(row);
             case ADDRESS:
                 return nodes.values().value(row).first;
+            case PROTO_VERSION:
+                return QString::number(rec->protocolVersion);
             case PUB_KEY:
                 return (isAvailable) ? QString::fromStdString(nodes.values().value(row).second->pubKeyMasternode.GetHash().GetHex()) : "Not available";
             case COLLATERAL_ID:
