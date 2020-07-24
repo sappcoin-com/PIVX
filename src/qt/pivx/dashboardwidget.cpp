@@ -377,6 +377,7 @@ void DashboardWidget::loadChart()
             QDate currentDate = QDate::currentDate();
             monthFilter = currentDate.month();
             yearFilter = currentDate.year();
+            dayStart = std::max(currentDate.day() - 8, 1);
             for (int i = 1; i < 13; ++i) ui->comboBoxMonths->addItem(QString(monthsNames[i-1]), QVariant(i));
             ui->comboBoxMonths->setCurrentIndex(monthFilter - 1);
             connect(ui->comboBoxMonths, static_cast<void (QComboBox::*)(const QString&)>(&QComboBox::currentIndexChanged),
