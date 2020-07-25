@@ -1616,7 +1616,6 @@ int64_t GetBlockValue(int nHeight)
         return 801 * COIN;
     }
 
-
     if (nHeight == 585330) {
         return 801 * COIN;
     }
@@ -5190,12 +5189,14 @@ bool static ProcessMessage(CNode* pfrom, std::string strCommand, CDataStream& vR
         if (pfrom->fInbound)
             pfrom->PushVersion();
 
+        /* 
         if (pfrom->nServices == 0) {
             pfrom->PushMessage("reject", strCommand, REJECT_INVALID, std::string("No services on version message"));
             LOCK(cs_main);
             Misbehaving(pfrom->GetId(), 100);
             return error("No services on version message");
         }
+        */
 
         pfrom->fClient = !(pfrom->nServices & NODE_NETWORK);
 
