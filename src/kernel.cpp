@@ -268,8 +268,11 @@ bool GetKernelStakeModifier(uint256 hashBlockFrom, uint256 hashBlock, uint64_t &
 
     if (pindex->nHeight > 650000)
     {
-        do {
+        if(hashBlock != chainActive.Tip()->GetBlockHash()) {
             pindex = chainActive[pindex->nHeight - 1];
+        }
+
+        while (pindex->GetBlockHash() != hashBlockFrom) {
 
             if (!pindex)
             {
@@ -284,7 +287,9 @@ bool GetKernelStakeModifier(uint256 hashBlockFrom, uint256 hashBlock, uint64_t &
 
                 break;
             }
-        } while (pindex->GetBlockHash() != hashBlockFrom);
+
+            pindex = chainActive[pindex->nHeight - 1];
+        }
     }
     else // Old method
     {
