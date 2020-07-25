@@ -2875,15 +2875,10 @@ bool CWallet::CreateCoinStakeKernel(CScript &kernelScript, const CScript &stakeS
     if (blockFrom.GetBlockTime() + Params().GetConsensus().nStakeMinAge + nHashDrift > nTimeTx)
         return false;
 
-    // Read block header
-    CBlock tip;
-    if (!ReadBlockFromDisk(tip, chainActive.Tip()))
-        return error("CreateCoinStakeKernel(): INFO: failed to find block");
-
     for (unsigned int i = 0; i < nHashDrift; ++i)
     {
         nTryTime = nTimeTx - i;
-        if (CheckStakeKernelHash(tip, blockFrom, txPrev, prevout, nTryTime, nHashDrift, true, hashProofOfStake))
+        if (CheckStakeKernelHash(nBits, blockFrom, txPrev, prevout, nTryTime, nHashDrift, true, hashProofOfStake))
         {
             //Double check that this will pass time requirements
             if (nTryTime <= chainActive.Tip()->GetMedianTimePast())
