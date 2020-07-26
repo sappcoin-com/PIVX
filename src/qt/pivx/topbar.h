@@ -42,6 +42,8 @@ public:
     void onError(QString error, int type) override;
     void unlockWallet();
 
+    void openNetworkMonitor();
+
 public Q_SLOTS:
     void updateBalances(const CAmount& balance, const CAmount& unconfirmedBalance, const CAmount& immatureBalance,
                         const CAmount& zerocoinBalance, const CAmount& unconfirmedZerocoinBalance, const CAmount& immatureZerocoinBalance,
@@ -65,6 +67,11 @@ protected:
 private Q_SLOTS:
     void onBtnReceiveClicked();
     void onBtnLockClicked();
+    void onBtnConnectionClicked();
+    void onBtnInfoClicked();
+    void onBtnConfClicked();
+    void onBtnMasternodesClicked();
+    void onBtnConsoleClicked();
     void lockDropdownMouseLeave();
     void lockDropdownClicked(const StateClicked&);
     void refreshStatus();

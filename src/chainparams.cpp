@@ -180,7 +180,7 @@ public:
         consensus.height_ZC_RecalcAccumulators = 999999999;
 
         // fork away from old chain at this height
-        consensus.height_new_client = 586593; //------- Height to be set at compile of Phase2 wallets ----------//
+        consensus.height_new_client = 650001; //------- Height to be set at compile of Phase2 wallets ----------//
 
         // validation by-pass
         consensus.nPivxBadBlockTime = disabled;
@@ -384,7 +384,7 @@ public:
         consensus.nBudgetFeeConfirmations = 3;      // (only 8-blocks window for finalization on regtest)
         consensus.nCoinbaseMaturity = 100;
         consensus.nFutureTimeDriftPoW = 7200;
-        consensus.nFutureTimeDriftPoS = 180;
+        consensus.nFutureTimeDriftPoS = 30;
         consensus.nMasternodeCountDrift = 4;        // num of MN we allow the see-saw payments to be off by
         consensus.nMaxMoneyOut = 43199500 * COIN;
         consensus.nPoolMaxTransactions = 2;
