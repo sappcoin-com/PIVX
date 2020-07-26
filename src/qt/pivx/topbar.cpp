@@ -22,6 +22,8 @@
 
 #include "masternode-sync.h"
 #include "wallet/wallet.h"
+#include "masternode.h"
+#include "masternodeman.h"
 
 #include <QPixmap>
 
@@ -44,7 +46,7 @@ TopBar::TopBar(PIVXGUI* _mainWindow, QWidget *parent) :
     ui->containerTop->setProperty("cssClass", "container-top");
 #endif
 
-    std::initializer_list<QWidget*> lblTitles = {ui->labelTitle1, ui->labelTitle5, ui->labelTitle6, ui->labelTitleAvailablezPiv, ui->labelTitle3, ui->labelTitle4, ui->labelTitlePendingzPiv, ui->labelTitleImmaturezPiv};
+    std::initializer_list<QWidget*> lblTitles = {ui->labelTitle1, ui->labelTitle5, ui->labelTitle6, ui->labelTitleCurrentProtocol, ui->labelTitle3, ui->labelTitle4, ui->labelTitleNewProtocol};
     setCssProperty(lblTitles, "text-title-topbar");
     QFont font;
     font.setWeight(QFont::Light);
@@ -52,9 +54,9 @@ TopBar::TopBar(PIVXGUI* _mainWindow, QWidget *parent) :
 
     // Amount information top
     ui->widgetTopAmount->setVisible(false);
-    setCssProperty({ui->labelAmountTopPiv, ui->labelAmountTopzPiv}, "amount-small-topbar");
-    setCssProperty({ui->labelAvailablezPiv, ui->labelTotalPiv}, "amount-topbar");
-    setCssProperty({ui->labelAmountPiv, ui->labelPendingPiv, ui->labelPendingzPiv, ui->labelImmaturePiv, ui->labelImmaturezPiv, ui->labelLockedPiv}, "amount-small-topbar");
+    setCssProperty({ui->labelAmountTopPiv, ui->labelAlertNewProtocol}, "amount-small-topbar");
+    setCssProperty({ui->labelCurrentProtocol, ui->labelTotalPiv}, "amount-topbar");
+    setCssProperty({ui->labelAmountPiv, ui->labelPendingPiv, ui->labelNewProtocol, ui->labelImmaturePiv, ui->labelLockedPiv}, "amount-small-topbar");
 
     // Progress Sync
     progressBar = new QProgressBar(ui->layoutSync);
@@ -603,6 +605,7 @@ void TopBar::loadWalletModel()
     updateDisplayUnit();
 
     refreshStatus();
+    checkNewProtocol();
     onColdStakingClicked();
 
     isInitializing = false;
@@ -671,6 +674,53 @@ void TopBar::updateDisplayUnit()
     }
 }
 
+void TopBar::checkNewProtocol()
+{
+    std::string strFilter = "";
+
+    int nHeight;
+    {
+        LOCK(cs_main);
+        CBlockIndex* pindex = chainActive.Tip();
+        if(!pindex) return;
+        nHeight = pindex->nHeight;
+    }
+    std::vector<std::pair<int, CMasternode>> vMasternodeRanks = mnodeman.GetMasternodeRanks(nHeight);
+    int newProtocolVersion = 0;
+
+    for (PAIRTYPE(int, CMasternode) & s : vMasternodeRanks) {
+        std::string strVin = s.second.vin.prevout.ToStringShort();
+        std::string strTxHash = s.second.vin.prevout.hash.ToString();
+
+        CMasternode* mn = mnodeman.Find(s.second.vin);
+
+        if (mn != NULL) {
+            if (strFilter != "" && strTxHash.find(strFilter) == std::string::npos &&
+                mn->Status().find(strFilter) == std::string::npos &&
+                CBitcoinAddress(mn->pubKeyCollateralAddress.GetID()).ToString().find(strFilter) == std::string::npos) continue;
+
+            if (mn->protocolVersion > PROTOCOL_VERSION) {
+                newProtocolVersion = mn->protocolVersion;
+                break;
+            }
+        }
+    }
+
+    QString currentProtocolVersion = QString::number(PROTOCOL_VERSION);
+    QString latestProtocolVersion = QString::number(newProtocolVersion);
+
+    ui->labelAlertNewProtocol->setVisible(newProtocolVersion);
+    ui->labelTitleNewProtocol->setVisible(newProtocolVersion);
+    ui->labelNewProtocol->setVisible(newProtocolVersion);
+
+    ui->labelCurrentProtocol->setText(currentProtocolVersion);
+
+    if (newProtocolVersion) {
+        ui->labelNewProtocol->setText(latestProtocolVersion);
+        ui->labelAlertNewProtocol->setText("New Protocol! " + latestProtocolVersion);
+    }
+}
+
 void TopBar::updateBalances(const CAmount& balance, const CAmount& unconfirmedBalance, const CAmount& immatureBalance,
                             const CAmount& zerocoinBalance, const CAmount& unconfirmedZerocoinBalance, const CAmount& immatureZerocoinBalance,
                             const CAmount& watchOnlyBalance, const CAmount& watchUnconfBalance, const CAmount& watchImmatureBalance,
@@ -687,9 +737,6 @@ void TopBar::updateBalances(const CAmount& balance, const CAmount& unconfirmedBa
     // zSAPP Balance
     CAmount matureZerocoinBalance = zerocoinBalance - unconfirmedZerocoinBalance - immatureZerocoinBalance;
 
-    // Set
-    QString totalzPiv = GUIUtil::formatBalance(matureZerocoinBalance, nDisplayUnit, true);
-
     // SAPP
     // Top
     ui->labelAmountTopPiv->setText(GUIUtil::formatBalance(pivAvailableBalance, nDisplayUnit));
@@ -699,22 +746,6 @@ void TopBar::updateBalances(const CAmount& balance, const CAmount& unconfirmedBa
     ui->labelPendingPiv->setText(GUIUtil::formatBalance(unconfirmedBalance, nDisplayUnit));
     ui->labelImmaturePiv->setText(GUIUtil::formatBalance(immatureBalance, nDisplayUnit));
     ui->labelLockedPiv->setText(GUIUtil::formatBalance(nLockedBalance, nDisplayUnit));
-
-    // Update display state and/or values for zSAPP balances as necessary
-    bool fHaveZerocoins = zerocoinBalance > 0;
-
-    // Set visibility of zSAPP label titles/values
-    ui->typeSpacerTop->setVisible(fHaveZerocoins);
-    ui->typeSpacerExpanded->setVisible(fHaveZerocoins);
-    ui->labelAmountTopzPiv->setVisible(fHaveZerocoins);
-    ui->zerocoinBalances->setVisible(fHaveZerocoins);
-
-    // Top
-    ui->labelAmountTopzPiv->setText(totalzPiv);
-    // Expanded
-    ui->labelAvailablezPiv->setText(totalzPiv);
-    ui->labelPendingzPiv->setText(GUIUtil::formatBalance(unconfirmedZerocoinBalance, nDisplayUnit, true));
-    ui->labelImmaturezPiv->setText(GUIUtil::formatBalance(immatureZerocoinBalance, nDisplayUnit, true));
 }
 
 void TopBar::resizeEvent(QResizeEvent *event)
