@@ -223,6 +223,12 @@ void CMasternode::Check(bool forceCheck)
         return;
     }
 
+    if(lastPing.sigTime - sigTime < MASTERNODE_MIN_MNP_SECONDS)
+	{
+        activeState = MASTERNODE_ACTIVE;
+        return;
+    }
+
     if (!IsPingedWithin(MASTERNODE_REMOVAL_SECONDS))
     {
         activeState = MASTERNODE_REMOVE;
@@ -297,11 +303,6 @@ void CMasternode::Check(bool forceCheck)
 
             return;
         }
-    }
-
-    if(lastPing.sigTime - sigTime < MASTERNODE_MIN_MNP_SECONDS){
-        activeState = MASTERNODE_ACTIVE;
-        return;
     }
 
     // OK
