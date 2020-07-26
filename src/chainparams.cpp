@@ -180,7 +180,7 @@ public:
         consensus.height_ZC_RecalcAccumulators = 999999999;
 
         // fork away from old chain at this height
-        consensus.height_new_client = 586593; //------- Height to be set at compile of Phase2 wallets ----------//
+        consensus.height_new_client = 650001; //------- Height to be set at compile of Phase2 wallets ----------//
 
         // validation by-pass
         consensus.nPivxBadBlockTime = disabled;
