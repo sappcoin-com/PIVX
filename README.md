@@ -1,4 +1,4 @@
-Sapphire Core integration/staging repository "development branch"
+Sapphire Core integration/staging repository
 =================================================================
 
 
