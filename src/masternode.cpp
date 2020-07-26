@@ -214,8 +214,17 @@ void CMasternode::Check(bool forceCheck)
     if (activeState == MASTERNODE_VIN_SPENT)
         return;
 
-    if (IsBroadcastedWithin(MN_WINNER_MINIMUM_AGE))
+
+    if ((chainActive.Height() <= 650000 ||
+        chainActive.Height() > 655000) &&
+        IsBroadcastedWithin(MN_WINNER_MINIMUM_AGE))
     {
+        activeState = MASTERNODE_ACTIVE;
+        return;
+    }
+
+    if(lastPing.sigTime - sigTime < MASTERNODE_MIN_MNP_SECONDS)
+	{
         activeState = MASTERNODE_ACTIVE;
         return;
     }
@@ -295,8 +304,6 @@ void CMasternode::Check(bool forceCheck)
             return;
         }
     }
-
-    //addrman.Add(CAddress(addr), addr, 2*60*60);
 
     // OK
     isPortOpen = true;
