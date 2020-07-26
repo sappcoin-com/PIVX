@@ -385,6 +385,9 @@ RES_ICONS = \
   qt/pivx/res/img/bg-welcome.svg \
   qt/pivx/res/img/bg-welcome.png \
   qt/pivx/res/img/ic-check-staking.svg \
+  qt/pivx/res/img/ic-check-info.svg \
+  qt/pivx/res/img/ic-check-console.svg \
+  qt/pivx/res/img/ic-check-settings.svg \
   qt/pivx/res/img/ic-nav-master.svg \
   qt/pivx/res/img/img-dashboard-banner.jpg \
   qt/pivx/res/img/btn-radio-active.svg \

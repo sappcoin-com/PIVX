@@ -666,6 +666,42 @@ QPushButton[cssClass="btn-check-status-unlock"] {
     border-radius:2px;
 }
 
+QPushButton[cssClass="btn-check-info"] {
+    qproperty-icon: url("://ic-check-info") ;
+    qproperty-iconSize: 24px 24px;
+    color:#ffffff;
+    background-color:#50000000;
+    border-bottom:2px solid #000000;
+    border-radius:2px;
+}
+
+QPushButton[cssClass="btn-check-conf"] {
+    qproperty-icon: url("://ic-check-settings") ;
+    qproperty-iconSize: 24px 24px;
+    color:#ffffff;
+    background-color:#50000000;
+    border-bottom:2px solid #000000;
+    border-radius:2px;
+}
+
+QPushButton[cssClass="btn-check-masternodes"] {
+    qproperty-icon: url("://ic-check-settings") ;
+    qproperty-iconSize: 24px 24px;
+    color:#ffffff;
+    background-color:#50000000;
+    border-bottom:2px solid #000000;
+    border-radius:2px;
+}
+
+QPushButton[cssClass="btn-check-console"] {
+    qproperty-icon: url("://ic-check-console") ;
+    qproperty-iconSize: 24px 24px;
+    color:#ffffff;
+    background-color:#50000000;
+    border-bottom:2px solid #000000;
+    border-radius:2px;
+}
+
 QPushButton[cssClass="btn-check-status-staking"] {
     background-color:#50222222;
     border-bottom:2px solid #222222;

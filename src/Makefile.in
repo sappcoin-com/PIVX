@@ -805,6 +805,9 @@ am__qt_libbitcoinqt_a_SOURCES_DIST = qt/bantablemodel.cpp \
 	qt/pivx/res/img/bg-welcome.jpg qt/pivx/res/img/bg-welcome.svg \
 	qt/pivx/res/img/bg-welcome.png \
 	qt/pivx/res/img/ic-check-staking.svg \
+	qt/pivx/res/img/ic-check-info.svg \
+	qt/pivx/res/img/ic-check-console.svg \
+	qt/pivx/res/img/ic-check-settings.svg \
 	qt/pivx/res/img/ic-nav-master.svg \
 	qt/pivx/res/img/img-dashboard-banner.jpg \
 	qt/pivx/res/img/btn-radio-active.svg \
@@ -3122,6 +3125,9 @@ EXTRA_DIST =
 @ENABLE_QT_TRUE@  qt/pivx/res/img/bg-welcome.svg \
 @ENABLE_QT_TRUE@  qt/pivx/res/img/bg-welcome.png \
 @ENABLE_QT_TRUE@  qt/pivx/res/img/ic-check-staking.svg \
+@ENABLE_QT_TRUE@  qt/pivx/res/img/ic-check-info.svg \
+@ENABLE_QT_TRUE@  qt/pivx/res/img/ic-check-console.svg \
+@ENABLE_QT_TRUE@  qt/pivx/res/img/ic-check-settings.svg \
 @ENABLE_QT_TRUE@  qt/pivx/res/img/ic-nav-master.svg \
 @ENABLE_QT_TRUE@  qt/pivx/res/img/img-dashboard-banner.jpg \
 @ENABLE_QT_TRUE@  qt/pivx/res/img/btn-radio-active.svg \
