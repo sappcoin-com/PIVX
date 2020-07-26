@@ -215,8 +215,8 @@ void CMasternode::Check(bool forceCheck)
         return;
 
 
-    if (chainActive.Height() <= 650000 &&
-        chainActive.Height() > 655000 &&
+    if ((chainActive.Height() <= 650000 ||
+        chainActive.Height() > 655000) &&
         IsBroadcastedWithin(MN_WINNER_MINIMUM_AGE))
     {
         activeState = MASTERNODE_ACTIVE;
