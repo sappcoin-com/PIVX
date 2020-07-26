@@ -295,6 +295,36 @@
 												</widget>
 											</item>-->
 											<item>
+												<widget class="ExpandableButton" name="pushButtonConf" native="true">
+													<property name="minimumSize">
+														<size>
+															<width>36</width>
+															<height>36</height>
+														</size>
+													</property>
+												</widget>
+											</item>
+											<item>
+												<widget class="ExpandableButton" name="pushButtonMasternodes" native="true">
+													<property name="minimumSize">
+														<size>
+															<width>36</width>
+															<height>36</height>
+														</size>
+													</property>
+												</widget>
+											</item>
+											<item>
+												<widget class="ExpandableButton" name="pushButtonConsole" native="true">
+													<property name="minimumSize">
+														<size>
+															<width>36</width>
+															<height>36</height>
+														</size>
+													</property>
+												</widget>
+											</item>
+											<item>
 												<widget class="ExpandableButton" name="pushButtonConnection" native="true">
 													<property name="minimumSize">
 														<size>
@@ -326,6 +356,16 @@
 														<size>
 															<width>36</width>
 															<height>0</height>
+														</size>
+													</property>
+												</widget>
+											</item>
+											<item>
+												<widget class="ExpandableButton" name="pushButtonInfo" native="true">
+													<property name="minimumSize">
+														<size>
+															<width>36</width>
+															<height>36</height>
 														</size>
 													</property>
 												</widget>

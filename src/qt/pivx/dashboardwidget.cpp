@@ -133,6 +133,7 @@ DashboardWidget::DashboardWidget(PIVXGUI* parent) :
     ui->labelEmpty->setText(tr("No transactions yet"));
     setCssProperty(ui->labelEmpty, "text-empty");
     setCssProperty(ui->chartContainer, "container-chart");
+    setCssProperty(ui->chartContainer2, "container-chart");
     setCssProperty(ui->pushImgEmptyChart, "img-empty-staking-on");
 
     setCssProperty(ui->labelEmptyChart, "text-empty");
@@ -376,6 +377,7 @@ void DashboardWidget::loadChart()
             QDate currentDate = QDate::currentDate();
             monthFilter = currentDate.month();
             yearFilter = currentDate.year();
+            dayStart = std::max(currentDate.day() - 8, 1);
             for (int i = 1; i < 13; ++i) ui->comboBoxMonths->addItem(QString(monthsNames[i-1]), QVariant(i));
             ui->comboBoxMonths->setCurrentIndex(monthFilter - 1);
             connect(ui->comboBoxMonths, static_cast<void (QComboBox::*)(const QString&)>(&QComboBox::currentIndexChanged),
@@ -434,6 +436,9 @@ void DashboardWidget::initChart()
     ui->chartContainer->setLayout(baseScreensContainer);
     ui->chartContainer->setContentsMargins(0,0,0,0);
     setCssProperty(ui->chartContainer, "container-chart");
+    ui->chartContainer2->setLayout(baseScreensContainer);
+    ui->chartContainer2->setContentsMargins(0,0,0,0);
+    setCssProperty(ui->chartContainer2, "container-chart");
 }
 
 void DashboardWidget::changeChartColors(){

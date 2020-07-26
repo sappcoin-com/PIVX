@@ -54,16 +54,6 @@ CContext::CContext()
 
 CContext::~CContext() {}
 
-bool CContext::IsUpdateAvailable() const
-{
-    return bUpdateAvailable_;
-}
-
-void CContext::SetUpdateAvailable(bool available)
-{
-    bUpdateAvailable_ = available;
-}
-
 void CContext::AddAddressToBan(
         const std::vector<std::string>& mempool,
         const std::vector<std::string>& consensus)

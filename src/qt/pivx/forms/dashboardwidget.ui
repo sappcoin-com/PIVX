@@ -806,7 +806,7 @@
 																					</spacer>
 																				</item>
 																				<item alignment="Qt::AlignVCenter">
-																					<widget class="QWidget" name="containerArrows" native="true">
+																					<widget class="QWidget" native="true">
 																						<layout class="QVBoxLayout" name="horizontalLayout_6" stretch="0,0">
 																							<property name="spacing">
 																								<number>0</number>
@@ -926,8 +926,8 @@
 																						</property>
 																					</spacer>
 																				</item>
-																				<item alignment="Qt::AlignVCenter">
-																					<widget class="QWidget" name="containerArrows" native="true">
+																				<item alignment="Qt::AlignVCenter"> 
+																					<widget class="QWidget" native="true">
 																						<layout class="QVBoxLayout" name="horizontalLayout_6" stretch="0,0">
 																							<property name="spacing">
 																								<number>0</number>

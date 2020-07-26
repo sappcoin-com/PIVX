@@ -214,6 +214,9 @@
         <file alias="ic-check-peers">pivx/res/img/ic-check-peers.svg</file>
         <file alias="ic-check-staking-off">pivx/res/img/ic-check-staking-off.svg</file>
         <file alias="ic-check-staking">pivx/res/img/ic-check-staking.svg</file>
+        <file alias="ic-check-info">pivx/res/img/ic-check-info.svg</file>
+        <file alias="ic-check-console">pivx/res/img/ic-check-console.svg</file>
+        <file alias="ic-check-settings">pivx/res/img/ic-check-settings.svg</file>
         <file alias="ic-check-sync-off">pivx/res/img/ic-check-sync-off.svg</file>
         <file alias="ic-check-sync">pivx/res/img/ic-check-sync.svg</file>
         <file alias="ic-check-faq">pivx/res/img/ic-check-faq.svg</file>

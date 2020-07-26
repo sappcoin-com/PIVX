@@ -49,9 +49,11 @@ public:
         MNRow* row = static_cast<MNRow*>(holder);
         QString label = index.data(Qt::DisplayRole).toString();
         QString address = index.sibling(index.row(), MNModel::ADDRESS).data(Qt::DisplayRole).toString();
+        QString protocol = index.sibling(index.row(), MNModel::PROTO_VERSION).data(Qt::DisplayRole).toString();
         QString status = index.sibling(index.row(), MNModel::STATUS).data(Qt::DisplayRole).toString();
         bool wasCollateralAccepted = index.sibling(index.row(), MNModel::WAS_COLLATERAL_ACCEPTED).data(Qt::DisplayRole).toBool();
-        row->updateView("Address: " + address, label, status, wasCollateralAccepted);
+        
+        row->updateView("Address: " + address + " Protocol: " + protocol, label, status, wasCollateralAccepted);
     }
 
     QColor rectColor(bool isHovered, bool isSelected) override

@@ -72,8 +72,9 @@ TopBar::TopBar(PIVXGUI* _mainWindow, QWidget *parent) :
     ui->pushButtonHDUpgrade->setButtonText("Upgrade to HD Wallet");
     ui->pushButtonHDUpgrade->setNoIconText("HD");
 
-    ui->pushButtonConnection->setButtonClassStyle("cssClass", "btn-check-connect-inactive");
+    ui->pushButtonConnection->setButtonClassStyle("cssClass", "btn-check-connect");
     ui->pushButtonConnection->setButtonText("No Connection");
+    ui->pushButtonConnection->setChecked(false);
 
     ui->pushButtonTor->setButtonClassStyle("cssClass", "btn-check-tor-inactive");
     ui->pushButtonTor->setButtonText("Tor Not Active");
@@ -89,6 +90,22 @@ TopBar::TopBar(PIVXGUI* _mainWindow, QWidget *parent) :
     ui->pushButtonSync->setButtonText(" %54 Synchronizing..");
 
     ui->pushButtonLock->setButtonClassStyle("cssClass", "btn-check-lock");
+
+    ui->pushButtonInfo->setButtonClassStyle("cssClass", "btn-check-info");
+    ui->pushButtonInfo->setButtonText("Information");
+    ui->pushButtonInfo->setChecked(false);
+
+    ui->pushButtonConf->setButtonClassStyle("cssClass", "btn-check-conf");
+    ui->pushButtonConf->setButtonText("sap.conf");
+    ui->pushButtonConf->setChecked(false);
+
+    ui->pushButtonMasternodes->setButtonClassStyle("cssClass", "btn-check-masternodes");
+    ui->pushButtonMasternodes->setButtonText("masternode.conf");
+    ui->pushButtonMasternodes->setChecked(false);
+
+    ui->pushButtonConsole->setButtonClassStyle("cssClass", "btn-check-console");
+    ui->pushButtonConsole->setButtonText("Console");
+    ui->pushButtonConsole->setChecked(false);
 
     setCssProperty(ui->qrContainer, "container-qr");
     setCssProperty(ui->pushButtonQR, "btn-qr");
@@ -109,6 +126,11 @@ TopBar::TopBar(PIVXGUI* _mainWindow, QWidget *parent) :
     connect(ui->pushButtonQR, &QPushButton::clicked, this, &TopBar::onBtnReceiveClicked);
     connect(ui->btnQr, &QPushButton::clicked, this, &TopBar::onBtnReceiveClicked);
     connect(ui->pushButtonLock, &ExpandableButton::Mouse_Pressed, this, &TopBar::onBtnLockClicked);
+    connect(ui->pushButtonConnection, &ExpandableButton::Mouse_Pressed, this, &TopBar::onBtnConnectionClicked);
+    connect(ui->pushButtonInfo, &ExpandableButton::Mouse_Pressed, this, &TopBar::onBtnInfoClicked);
+    connect(ui->pushButtonConf, &ExpandableButton::Mouse_Pressed, this, &TopBar::onBtnConfClicked);
+    connect(ui->pushButtonMasternodes, &ExpandableButton::Mouse_Pressed, this, &TopBar::onBtnMasternodesClicked);
+    connect(ui->pushButtonConsole, &ExpandableButton::Mouse_Pressed, this, &TopBar::onBtnConsoleClicked);
 
     //! only connect the signal if the spork is active (baz)
     //if (sporkManager.IsSporkActive(SPORK_21_COLDSTAKING_ENFORCEMENT))
@@ -116,6 +138,60 @@ TopBar::TopBar(PIVXGUI* _mainWindow, QWidget *parent) :
 
     connect(ui->pushButtonSync, &ExpandableButton::Mouse_HoverLeave, this, &TopBar::refreshProgressBarSize);
     connect(ui->pushButtonSync, &ExpandableButton::Mouse_Hover, this, &TopBar::refreshProgressBarSize);
+}
+
+RPCConsole *rpcConsole = nullptr;
+
+void TopBar::onBtnInfoClicked()
+{
+    ui->pushButtonInfo->setChecked(false);
+    if(!rpcConsole){
+        rpcConsole = new RPCConsole(0);
+        rpcConsole->setClientModel(clientModel);
+    } else {
+        rpcConsole->activateWindow();
+    }
+    rpcConsole->showInfo();
+}
+
+void TopBar::onBtnConfClicked()
+{
+    ui->pushButtonConf->setChecked(false);
+    
+    if (!GUIUtil::openConfigfile())
+        inform(tr("Unable to open sap.conf with default application"));
+}
+
+void TopBar::onBtnMasternodesClicked()
+{
+    ui->pushButtonMasternodes->setChecked(false);
+    
+    if (!GUIUtil::openMNConfigfile())
+        inform(tr("Unable to open masternode.conf with default application"));
+}
+
+void TopBar::onBtnConsoleClicked()
+{
+    ui->pushButtonConsole->setChecked(false);
+    if(!rpcConsole){
+        rpcConsole = new RPCConsole(0);
+        rpcConsole->setClientModel(clientModel);
+    } else {
+        rpcConsole->activateWindow();
+    }
+    rpcConsole->showConsole();
+}
+
+void TopBar::onBtnConnectionClicked()
+{
+    ui->pushButtonConnection->setChecked(false);
+    if(!rpcConsole){
+        rpcConsole = new RPCConsole(0);
+        rpcConsole->setClientModel(clientModel);
+    } else {
+        rpcConsole->activateWindow();
+    }
+    rpcConsole->showPeers();
 }
 
 void TopBar::onBtnLockClicked()
