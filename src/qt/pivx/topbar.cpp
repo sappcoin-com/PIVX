@@ -597,6 +597,7 @@ void TopBar::loadWalletModel()
     }
 
     connect(walletModel, &WalletModel::balanceChanged, this, &TopBar::updateBalances);
+    connect(walletModel, &WalletModel::balanceChanged, this, &TopBar::checkNewProtocol);
     connect(walletModel->getOptionsModel(), &OptionsModel::displayUnitChanged, this, &TopBar::updateDisplayUnit);
     connect(walletModel, &WalletModel::encryptionStatusChanged, this, &TopBar::refreshStatus);
     // Ask for passphrase if needed
