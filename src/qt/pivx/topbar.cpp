@@ -55,8 +55,8 @@ TopBar::TopBar(PIVXGUI* _mainWindow, QWidget *parent) :
     // Amount information top
     ui->widgetTopAmount->setVisible(false);
     setCssProperty({ui->labelAmountTopPiv, ui->labelAlertNewProtocol}, "amount-small-topbar");
-    setCssProperty({ui->labelCurrentProtocol, ui->labelTotalPiv}, "amount-topbar");
-    setCssProperty({ui->labelAmountPiv, ui->labelPendingPiv, ui->labelNewProtocol, ui->labelImmaturePiv, ui->labelLockedPiv}, "amount-small-topbar");
+    setCssProperty({ui->labelNewProtocol, ui->labelTotalPiv}, "amount-topbar");
+    setCssProperty({ui->labelAmountPiv, ui->labelPendingPiv, ui->labelCurrentProtocol, ui->labelImmaturePiv, ui->labelLockedPiv}, "amount-small-topbar");
 
     // Progress Sync
     progressBar = new QProgressBar(ui->layoutSync);
@@ -710,15 +710,16 @@ void TopBar::checkNewProtocol()
     QString currentProtocolVersion = QString::number(PROTOCOL_VERSION);
     QString latestProtocolVersion = QString::number(newProtocolVersion);
 
-    ui->labelAlertNewProtocol->setVisible(newProtocolVersion);
-    ui->labelTitleNewProtocol->setVisible(newProtocolVersion);
-    ui->labelNewProtocol->setVisible(newProtocolVersion);
-
     ui->labelCurrentProtocol->setText(currentProtocolVersion);
 
     if (newProtocolVersion) {
+        ui->labelTitleNewProtocol->setText("New Protocol!");
         ui->labelNewProtocol->setText(latestProtocolVersion);
         ui->labelAlertNewProtocol->setText("New Protocol! " + latestProtocolVersion);
+    } else {
+        ui->labelTitleNewProtocol->setText("");
+        ui->labelNewProtocol->setText("");
+        ui->labelAlertNewProtocol->setText("");
     }
 }
 
