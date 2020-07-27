@@ -79,6 +79,7 @@ private Q_SLOTS:
     void onColdStakingClicked();
     void refreshProgressBarSize();
     void expandSync();
+    void checkNewProtocol();
 private:
     Ui::TopBar *ui;
     LockUnlock *lockUnlockWidget = nullptr;
