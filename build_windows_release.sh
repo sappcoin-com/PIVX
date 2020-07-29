@@ -1,3 +1,5 @@
+#!/bin/bash
+
 make clean
 cd depends
 # make clean
