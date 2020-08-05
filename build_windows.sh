@@ -33,5 +33,5 @@ fi
 
 # Create zip file of binaries
 	cp SAPP/src/sapd.exe SAPP/src/sap-cli.exe SAPP/src/sap-tx.exe SAPP/src/qt/sap-qt.exe .
-	zip SAPP-Linux.zip sapd.exe sap-cli.exe sap-tx.exe sap-qt.exe
+	zip SAPP-Windows.zip sapd.exe sap-cli.exe sap-tx.exe sap-qt.exe
 	rm -f sapd.exe sap-cli.exe sap-tx.exe sap-qt.exe
