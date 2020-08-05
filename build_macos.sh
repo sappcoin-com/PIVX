@@ -21,7 +21,7 @@ fi
 	./autogen.sh
 	./configure --prefix=$(pwd)/depends/x86_64-apple-darwin17 --enable-cxx --enable-static --disable-shared --disable-debug --disable-tests --disable-bench
 	make -j$(echo $CPU_CORES) HOST=x86_64-apple-darwin17
-	make deploy HOST=x86_64-apple-darwin17
+	make deploy
 	cd ..
 
 # Create zip file of binaries
