@@ -22,7 +22,7 @@ Unpack the files into a directory, and then run pivx-qt.exe.
 
 ### macOS
 
-Drag PIVX-Qt to your applications folder, and then run PIVX-Qt.
+Drag SAPP to your applications folder, and then run SAPP.
 
 ### Need Help?
 
