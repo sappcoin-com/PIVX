@@ -150,7 +150,7 @@ void DebugMessageHandler(QtMsgType type, const QMessageLogContext& context, cons
     }
 }
 
-/** Class encapsulating Sap startup and shutdown.
+/** Class encapsulating SAPP startup and shutdown.
  * Allows running startup and shutdown in a different thread from the UI thread.
  */
 class BitcoinCore : public QObject
@@ -624,7 +624,7 @@ int main(int argc, char* argv[])
     /// 6. Determine availability of data directory and parse sap.conf
     /// - Do not call GetDataDir(true) before this step finishes
     if (!boost::filesystem::is_directory(GetDataDir(false))) {
-        QMessageBox::critical(0, QObject::tr("Sap"),
+        QMessageBox::critical(0, QObject::tr("SAPP"),
             QObject::tr("Error: Specified data directory \"%1\" does not exist.").arg(QString::fromStdString(mapArgs["-datadir"])));
         return 1;
     }
@@ -632,7 +632,7 @@ int main(int argc, char* argv[])
         ReadConfigFile(mapArgs, mapMultiArgs);
 		GetContext().AddAddressToBan(mapMultiArgs["-banaddressmempool"], mapMultiArgs["-banaddress"]);
     } catch (const std::exception& e) {
-        QMessageBox::critical(0, QObject::tr("Sap"),
+        QMessageBox::critical(0, QObject::tr("SAPP"),
             QObject::tr("Error: Cannot parse configuration file: %1. Only use key=value syntax.").arg(e.what()));
         return 0;
     }
@@ -645,7 +645,7 @@ int main(int argc, char* argv[])
 
     // Check for -testnet or -regtest parameter (Params() calls are only valid after this clause)
     if (!SelectParamsFromCommandLine()) {
-        QMessageBox::critical(0, QObject::tr("Sap"), QObject::tr("Error: Invalid combination of -regtest and -testnet."));
+        QMessageBox::critical(0, QObject::tr("SAPP"), QObject::tr("Error: Invalid combination of -regtest and -testnet."));
         return 1;
     }
 #ifdef ENABLE_WALLET
@@ -664,7 +664,7 @@ int main(int argc, char* argv[])
     /// 7a. parse masternode.conf
     std::string strErr;
     if (!masternodeConfig.read(strErr)) {
-        QMessageBox::critical(0, QObject::tr("Sap"),
+        QMessageBox::critical(0, QObject::tr("SAPP"),
             QObject::tr("Error reading masternode configuration file: %1").arg(strErr.c_str()));
         return 0;
     }

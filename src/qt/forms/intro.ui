@@ -136,7 +136,7 @@
                </size>
               </property>
               <property name="text">
-               <string>As this is the first time the program is launched, you can choose where Sap will store its data.</string>
+               <string>As this is the first time the program is launched, you can choose where SAPP will store its data.</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignCenter</set>
@@ -152,7 +152,7 @@
                <string notr="true">#sizeWarningLabel { padding:0 80px; }</string>
               </property>
               <property name="text">
-               <string>Sap will download and store a copy of the SAPP block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</string>
+               <string>SAPP will download and store a copy of the SAPP block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignCenter</set>

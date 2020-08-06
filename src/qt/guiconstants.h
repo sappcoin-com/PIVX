@@ -53,9 +53,9 @@ static const int MAX_URI_LENGTH = 255;
 /* Number of frames in spinner animation */
 #define SPINNER_FRAMES 35
 
-#define QAPP_ORG_NAME "Sap"
-#define QAPP_ORG_DOMAIN "sapnetwork.io"
-#define QAPP_APP_NAME_DEFAULT "Sap-Qt"
-#define QAPP_APP_NAME_TESTNET "Sap-Qt-testnet"
+#define QAPP_ORG_NAME "SAPP"
+#define QAPP_ORG_DOMAIN "sappcoin.com"
+#define QAPP_APP_NAME_DEFAULT "SAPP-Qt"
+#define QAPP_APP_NAME_TESTNET "SAPP-Qt-testnet"
 
 #endif // BITCOIN_QT_GUICONSTANTS_H

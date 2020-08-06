@@ -74,7 +74,7 @@ static bool AppInitRPC(int argc, char* argv[])
         std::string strUsage = _("SAPP RPC client version") + " " + FormatFullVersion() + "\n";
         if (!mapArgs.count("-version")) {
             strUsage += "\n" + _("Usage:") + "\n" +
-                        "  sap-cli [options] <command> [params]  " + _("Send command to Sap") + "\n" +
+                        "  sap-cli [options] <command> [params]  " + _("Send command to SAPP") + "\n" +
                         "  sap-cli [options] help                " + _("List commands") + "\n" +
                         "  sap-cli [options] help <command>      " + _("Get help for a command") + "\n";
 
