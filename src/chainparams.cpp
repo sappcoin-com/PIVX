@@ -140,7 +140,7 @@ public:
         assert(consensus.hashGenesisBlock == uint256("0x00000eef0583695d6da23a78bab1c39939bbb54cf9bd5f0d4881c8eef364cd26"));
 
         consensus.fPowAllowMinDifficultyBlocks = false;
-        consensus.powLimit   = ~UINT256_ZERO >> 1;
+        consensus.powLimit   = ~UINT256_ZERO >> 20;
         consensus.posLimitV1 = ~UINT256_ZERO >> 24;
         consensus.posLimitV2 = ~UINT256_ZERO >> 20;
         consensus.nBudgetCycleBlocks = 43200;       // approx. 1 every 30 days
@@ -217,12 +217,12 @@ public:
         vSeeds.push_back(CDNSSeedData("seed2.sappcoin.com", "seed2.sappcoin.com"));
         vSeeds.push_back(CDNSSeedData("seed3.sappcoin.com", "seed3.sappcoin.com"));
         vSeeds.push_back(CDNSSeedData("seed4.sappcoin.com", "seed4.sappcoin.com"));
-	vSeeds.push_back(CDNSSeedData("seed5.sappcoin.com", "seed5.sappcoin.com"));
-	vSeeds.push_back(CDNSSeedData("seed6.sappcoin.com", "seed6.sappcoin.com"));
-	vSeeds.push_back(CDNSSeedData("seed7.sappcoin.com", "seed7.sappcoin.com"));
-	vSeeds.push_back(CDNSSeedData("seed8.sappcoin.com", "seed8.sappcoin.com"));
-	vSeeds.push_back(CDNSSeedData("seed9.sappcoin.com", "seed9.sappcoin.com"));
-	vSeeds.push_back(CDNSSeedData("seed10.sappcoin.com", "seed10.sappcoin.com"));
+        vSeeds.push_back(CDNSSeedData("seed5.sappcoin.com", "seed5.sappcoin.com"));
+        vSeeds.push_back(CDNSSeedData("seed6.sappcoin.com", "seed6.sappcoin.com"));
+        vSeeds.push_back(CDNSSeedData("seed7.sappcoin.com", "seed7.sappcoin.com"));
+        vSeeds.push_back(CDNSSeedData("seed8.sappcoin.com", "seed8.sappcoin.com"));
+        vSeeds.push_back(CDNSSeedData("seed9.sappcoin.com", "seed9.sappcoin.com"));
+        vSeeds.push_back(CDNSSeedData("seed10.sappcoin.com", "seed10.sappcoin.com"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 63); //address start letter 'S'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 18);
