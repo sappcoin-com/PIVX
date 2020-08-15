@@ -282,7 +282,7 @@ Sapphire Core integration/staging repository
  </tr>
  <tr height=21 style='mso-height-source:userset;height:15.75pt'>
   <td height=21 class=xl6417252 style='height:15.75pt'>1000001-</td>
-  <td class=xl6517252>50000</td>
+  <td class=xl6517252>200000</td>
   <td class=xl6617252>400</td>
   <td class=xl6617252>95</td>
   <td class=xl6617252>5</td>
