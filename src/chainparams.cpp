@@ -226,6 +226,7 @@ public:
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 63); //address start letter 'S'
         base58Prefixes[KYAN_PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 46); //address start letter 'K'
+        base58Prefixes[KYAN_TESTNET_PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 107); //address start letter 'k'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 18);
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 25); 
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x02)(0x2D)(0x25)(0x63).convert_to_container<std::vector<unsigned char> >();

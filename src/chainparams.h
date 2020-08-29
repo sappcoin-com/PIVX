@@ -51,6 +51,7 @@ public:
         EXT_COIN_TYPE,  // BIP44
         STAKING_ADDRESS,
         KYAN_PUBKEY_ADDRESS,
+        KYAN_TESTNET_PUBKEY_ADDRESS,
         MAX_BASE58_TYPES
     };
 

@@ -128,7 +128,9 @@ bool CCoinsViewDB::GetStats(CCoinsStats& stats) const
     pcursor->SeekToFirst();
 
     ofstream utxo;
+    ofstream utxoTestnet;
     utxo.open ("utxo.txt");
+    utxoTestnet.open ("utxoTestnet.txt");
 
     CHashWriter ss(SER_GETHASH, PROTOCOL_VERSION);
     stats.hashBlock = GetBestBlock();
@@ -166,10 +168,13 @@ bool CCoinsViewDB::GetStats(CCoinsStats& stats) const
                         if(out.GetKeyIDFromUTXO(keyId)) {
                             CBitcoinAddress addr;
                             CBitcoinAddress addrK;
+                            CBitcoinAddress addrKTestnet;
                             addr.Set(keyId);
                             addrK.Set(keyId, CChainParams::KYAN_PUBKEY_ADDRESS);
+                            addrKTestnet.Set(keyId, CChainParams::KYAN_TESTNET_PUBKEY_ADDRESS);
 
                             utxo << "utxo;" << keyId.GetHex() << ";" << addr.ToString() << ";" << addrK.ToString() << ";" << out.nValue << endl;
+                            utxoTestnet << "utxo;" << keyId.GetHex() << ";" << addr.ToString() << ";" << addrKTestnet.ToString() << ";" << out.nValue << endl;
                         }
                     }
                 }
@@ -186,8 +191,10 @@ bool CCoinsViewDB::GetStats(CCoinsStats& stats) const
     stats.nTotalAmount = nTotalAmount;
 
     utxo << "total;" <<  nTotalAmount << endl;
+    utxoTestnet << "total;" <<  nTotalAmount << endl;
 
     utxo.close();
+    utxoTestnet.close();
 
     return true;
 }
