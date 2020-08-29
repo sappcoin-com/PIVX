@@ -173,8 +173,8 @@ bool CCoinsViewDB::GetStats(CCoinsStats& stats) const
                             addrK.Set(keyId, CChainParams::KYAN_PUBKEY_ADDRESS);
                             addrKTestnet.Set(keyId, CChainParams::KYAN_TESTNET_PUBKEY_ADDRESS);
 
-                            utxo << "utxo;" << keyId.GetHex() << ";" << addr.ToString() << ";" << addrK.ToString() << ";" << out.nValue << endl;
-                            utxoTestnet << "utxo;" << keyId.GetHex() << ";" << addr.ToString() << ";" << addrKTestnet.ToString() << ";" << out.nValue << endl;
+                            utxo << "utxo;" << keyId.GetHex() << ";" << addr.ToString() << ";" << addrK.ToString() << ";" << out.nValue << std::endl;
+                            utxoTestnet << "utxo;" << keyId.GetHex() << ";" << addr.ToString() << ";" << addrKTestnet.ToString() << ";" << out.nValue << std::endl;
                         }
                     }
                 }
@@ -190,8 +190,8 @@ bool CCoinsViewDB::GetStats(CCoinsStats& stats) const
     stats.hashSerialized = ss.GetHash();
     stats.nTotalAmount = nTotalAmount;
 
-    utxo << "total;" <<  nTotalAmount << endl;
-    utxoTestnet << "total;" <<  nTotalAmount << endl;
+    utxo << "total;" <<  nTotalAmount << std::endl;
+    utxoTestnet << "total;" <<  nTotalAmount << std::endl;
 
     utxo.close();
     utxoTestnet.close();
