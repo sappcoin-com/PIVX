@@ -52,6 +52,8 @@ public:
         STAKING_ADDRESS,
         KYAN_PUBKEY_ADDRESS,
         KYAN_TESTNET_PUBKEY_ADDRESS,
+        KYAN_SECRET_KEY,
+        KYAN_TESTNET_SECRET_KEY,
         MAX_BASE58_TYPES
     };
 

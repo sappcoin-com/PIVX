@@ -19,6 +19,10 @@ namespace KeyIO {
 
     std::string EncodeSecret(const CKey &key);
 
+    std::string EncodeSecretK(const CKey &key);
+
+    std::string EncodeSecretKT(const CKey &key);
+
     CExtKey DecodeExtKey(const std::string &str);
 
     std::string EncodeExtKey(const CExtKey &extkey);
