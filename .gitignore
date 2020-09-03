@@ -146,3 +146,10 @@ src/qt/test/test_pivx-qt
 src/secp256k1/gen_context
 src/secp256k1/src/ecmult_static_context.h
 *~
+
+#vscode
+.vscode/*
+*.code-workspace
+
+# Local History for Visual Studio Code
+.history/

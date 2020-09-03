@@ -9,10 +9,14 @@
 #include "main.h"
 #include "pow.h"
 #include "uint256.h"
+#include "base58.h"
 
 #include <stdint.h>
 
 #include <boost/thread.hpp>
+
+#include <iostream>
+#include <fstream>
 
 using namespace std;
 
@@ -123,6 +127,11 @@ bool CCoinsViewDB::GetStats(CCoinsStats& stats) const
     boost::scoped_ptr<leveldb::Iterator> pcursor(const_cast<CLevelDBWrapper*>(&db)->NewIterator());
     pcursor->SeekToFirst();
 
+    // ofstream utxo;
+    // ofstream utxoTestnet;
+    // utxo.open ("utxo.txt");
+    // utxoTestnet.open ("utxoT.txt");
+
     CHashWriter ss(SER_GETHASH, PROTOCOL_VERSION);
     stats.hashBlock = GetBestBlock();
     ss << stats.hashBlock;
@@ -148,11 +157,25 @@ bool CCoinsViewDB::GetStats(CCoinsStats& stats) const
                 stats.nTransactions++;
                 for (unsigned int i = 0; i < coins.vout.size(); i++) {
                     const CTxOut& out = coins.vout[i];
-                    if (!out.IsNull()) {
+                    if (!out.IsNull() && !out.IsEmpty() && !out.scriptPubKey.IsUnspendable()) {
                         stats.nTransactionOutputs++;
                         ss << VARINT(i + 1);
                         ss << out;
                         nTotalAmount += out.nValue;
+
+                        //print UTXO
+                        // CKeyID keyId;
+                        // if(out.GetKeyIDFromUTXO(keyId)) {
+                        //     CBitcoinAddress addr;
+                        //     CBitcoinAddress addrK;
+                        //     CBitcoinAddress addrKTestnet;
+                        //     addr.Set(keyId);
+                        //     addrK.Set(keyId, CChainParams::KYAN_PUBKEY_ADDRESS);
+                        //     addrKTestnet.Set(keyId, CChainParams::KYAN_TESTNET_PUBKEY_ADDRESS);
+
+                        //     utxo << "utxo;" << keyId.GetHex() << ";" << addr.ToString() << ";" << addrK.ToString() << ";" << out.nValue << std::endl;
+                        //     utxoTestnet << "utxo;" << keyId.GetHex() << ";" << addr.ToString() << ";" << addrKTestnet.ToString() << ";" << out.nValue << std::endl;
+                        // }
                     }
                 }
                 stats.nSerializedSize += 32 + slValue.size();
@@ -166,6 +189,13 @@ bool CCoinsViewDB::GetStats(CCoinsStats& stats) const
     stats.nHeight = mapBlockIndex.find(GetBestBlock())->second->nHeight;
     stats.hashSerialized = ss.GetHash();
     stats.nTotalAmount = nTotalAmount;
+
+    // utxo << "total;" <<  nTotalAmount << std::endl;
+    // utxoTestnet << "total;" <<  nTotalAmount << std::endl;
+
+    // utxo.close();
+    // utxoTestnet.close();
+
     return true;
 }
 
