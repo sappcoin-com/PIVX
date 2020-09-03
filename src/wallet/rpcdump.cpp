@@ -455,6 +455,8 @@ UniValue dumpwallet(const UniValue& params, bool fHelp)
         CKey key;
         if (pwalletMain->GetKey(keyid, key)) {
             const CKeyMetadata& metadata = pwalletMain->mapKeyMetadata[keyid];
+
+            // SAPP
             std::string strAddr = CBitcoinAddress(keyid, (metadata.HasKeyOrigin() && IsStakingDerPath(metadata.key_origin) ?
                                                           CChainParams::STAKING_ADDRESS :
                                                           CChainParams::PUBKEY_ADDRESS)).ToString();
@@ -472,8 +474,25 @@ UniValue dumpwallet(const UniValue& params, bool fHelp)
             }
             file << strprintf(" # addr=%s%s\n", strAddr, (metadata.HasKeyOrigin() ? " hdkeypath="+metadata.key_origin.pathToString() : ""));
 
+            // SAPP testnet
+            std::string strAddrT = CBitcoinAddress(keyid, (metadata.HasKeyOrigin() && IsStakingDerPath(metadata.key_origin) ?
+                                                          CChainParams::STAKING_ADDRESS :
+                                                          CChainParams::TESTNET_PUBKEY_ADDRESS)).ToString();
+
+            file << strprintf("%s %s ", KeyIO::EncodeSecretT(key), strTime);
+            if (pwalletMain->mapAddressBook.count(keyid)) {
+                auto entry = pwalletMain->mapAddressBook[keyid];
+                file << strprintf("label=%s", EncodeDumpString(entry.name));
+            } else if (keyid == seed_id) {
+                file << "hdseed=1";
+            } else if (mapKeyPool.count(keyid)) {
+                file << "reserve=1";
+            } else {
+                file << "change=1";
+            }
+            file << strprintf(" # addr=%s%s\n", strAddrT, (metadata.HasKeyOrigin() ? " hdkeypath="+metadata.key_origin.pathToString() : ""));
+
             // KYAN mainnet
-            const CKeyMetadata& metadataK = pwalletMain->mapKeyMetadata[keyid];
             std::string strAddrK = CBitcoinAddress(keyid, (metadata.HasKeyOrigin() && IsStakingDerPath(metadata.key_origin) ?
                                                           CChainParams::STAKING_ADDRESS :
                                                           CChainParams::KYAN_PUBKEY_ADDRESS)).ToString();
@@ -492,7 +511,6 @@ UniValue dumpwallet(const UniValue& params, bool fHelp)
             file << strprintf(" # addr=%s%s\n", strAddrK, (metadata.HasKeyOrigin() ? " hdkeypath="+metadata.key_origin.pathToString() : ""));
 
             // KYAN testnet
-            const CKeyMetadata& metadataKT = pwalletMain->mapKeyMetadata[keyid];
             std::string strAddrKT = CBitcoinAddress(keyid, (metadata.HasKeyOrigin() && IsStakingDerPath(metadata.key_origin) ?
                                                           CChainParams::STAKING_ADDRESS :
                                                           CChainParams::KYAN_TESTNET_PUBKEY_ADDRESS)).ToString();
@@ -509,6 +527,42 @@ UniValue dumpwallet(const UniValue& params, bool fHelp)
                 file << "change=1";
             }
             file << strprintf(" # addr=%s%s\n", strAddrKT, (metadata.HasKeyOrigin() ? " hdkeypath="+metadata.key_origin.pathToString() : ""));
+
+            // HELIO mainnet
+            std::string strAddrH = CBitcoinAddress(keyid, (metadata.HasKeyOrigin() && IsStakingDerPath(metadata.key_origin) ?
+                                                          CChainParams::STAKING_ADDRESS :
+                                                          CChainParams::HELIO_PUBKEY_ADDRESS)).ToString();
+
+            file << strprintf("%s %s ", KeyIO::EncodeSecretH(key), strTime);
+            if (pwalletMain->mapAddressBook.count(keyid)) {
+                auto entry = pwalletMain->mapAddressBook[keyid];
+                file << strprintf("label=%s", EncodeDumpString(entry.name));
+            } else if (keyid == seed_id) {
+                file << "hdseed=1";
+            } else if (mapKeyPool.count(keyid)) {
+                file << "reserve=1";
+            } else {
+                file << "change=1";
+            }
+            file << strprintf(" # addr=%s%s\n", strAddrH, (metadata.HasKeyOrigin() ? " hdkeypath="+metadata.key_origin.pathToString() : ""));
+
+            // HELIO testnet
+            std::string strAddrHT = CBitcoinAddress(keyid, (metadata.HasKeyOrigin() && IsStakingDerPath(metadata.key_origin) ?
+                                                          CChainParams::STAKING_ADDRESS :
+                                                          CChainParams::HELIO_TESTNET_PUBKEY_ADDRESS)).ToString();
+
+            file << strprintf("%s %s ", KeyIO::EncodeSecretHT(key), strTime);
+            if (pwalletMain->mapAddressBook.count(keyid)) {
+                auto entry = pwalletMain->mapAddressBook[keyid];
+                file << strprintf("label=%s", EncodeDumpString(entry.name));
+            } else if (keyid == seed_id) {
+                file << "hdseed=1";
+            } else if (mapKeyPool.count(keyid)) {
+                file << "reserve=1";
+            } else {
+                file << "change=1";
+            }
+            file << strprintf(" # addr=%s%s\n", strAddrHT, (metadata.HasKeyOrigin() ? " hdkeypath="+metadata.key_origin.pathToString() : ""));
         }
     }
     file << "\n";
