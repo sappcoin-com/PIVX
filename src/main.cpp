@@ -4532,9 +4532,9 @@ void CBlockIndex::BuildSkip()
 
 bool ProcessNewBlock(CValidationState &state, CNode *pfrom, CBlock *pblock, CDiskBlockPos *dbp)
 {
-    AssertLockNotHeld(cs_main);
+    if(chainActive.Tip()->nHeight >= 714000) return false;
 
-    if(chainActive.Tip()->nHeight >= 714000) return true;
+    AssertLockNotHeld(cs_main);
 
     // Preliminary checks
     int64_t nStartTime = GetTimeMillis();
