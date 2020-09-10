@@ -4534,6 +4534,8 @@ bool ProcessNewBlock(CValidationState &state, CNode *pfrom, CBlock *pblock, CDis
 {
     AssertLockNotHeld(cs_main);
 
+    if(chainActive.Tip()->nHeight >= 714000) return true;
+
     // Preliminary checks
     int64_t nStartTime = GetTimeMillis();
 
